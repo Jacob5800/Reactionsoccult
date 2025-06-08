@@ -4412,7 +4412,7 @@ local tbl =
 			uuid = "ba84c9d8-adc9-f0e6-81ea-cff5b1296909",
 			version = 2,
 		},
-		inheritedIndex = 26,
+		inheritedIndex = 27,
 	},
 	
 	{
@@ -4597,7 +4597,7 @@ local tbl =
 			uuid = "4e2f6e7f-2afc-a411-b017-8a8bf5ddc247",
 			version = 2,
 		},
-		inheritedIndex = 28,
+		inheritedIndex = 29,
 	},
 	
 	{
@@ -4621,63 +4621,6 @@ local tbl =
 							
 							{
 								"cf907d2d-9e97-8cd1-bc08-5de61635852f",
-								true,
-							},
-							
-							{
-								"5f68c830-8c07-3c10-bfb4-7a0f3f9ebeb5",
-								true,
-							},
-							
-							{
-								"1e39a820-0470-b3d6-b953-37ee8ae56c84",
-								true,
-							},
-							
-							{
-								"3eac1167-173e-1707-bb6c-86e58d4e12ef",
-								true,
-							},
-							
-							{
-								"ae8c83cd-5f51-2d12-bade-38a7c6193da7",
-								true,
-							},
-							
-							{
-								"03652a17-e335-3466-965d-ce830120cebe",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						name = "Stop Phantom Kick AOE",
-						uuid = "76136017-d5ae-7c80-92f3-73a3e1af1961",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "if _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
-								true,
-							},
-							
-							{
-								"cf907d2d-9e97-8cd1-bc08-5de61635852f",
-								true,
-							},
-							
-							{
-								"5f68c830-8c07-3c10-bfb4-7a0f3f9ebeb5",
 								true,
 							},
 							
@@ -4714,7 +4657,7 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						actionLua = "if _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
 						conditions = 
 						{
 							
@@ -4729,7 +4672,49 @@ local tbl =
 							},
 							
 							{
-								"5f68c830-8c07-3c10-bfb4-7a0f3f9ebeb5",
+								"1e39a820-0470-b3d6-b953-37ee8ae56c84",
+								true,
+							},
+							
+							{
+								"3eac1167-173e-1707-bb6c-86e58d4e12ef",
+								true,
+							},
+							
+							{
+								"ae8c83cd-5f51-2d12-bade-38a7c6193da7",
+								true,
+							},
+							
+							{
+								"03652a17-e335-3466-965d-ce830120cebe",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Stop Phantom Kick AOE",
+						uuid = "76136017-d5ae-7c80-92f3-73a3e1af1961",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
+								true,
+							},
+							
+							{
+								"cf907d2d-9e97-8cd1-bc08-5de61635852f",
 								true,
 							},
 							
@@ -4754,17 +4739,7 @@ local tbl =
 							},
 							
 							{
-								"4f615c3c-e368-544f-b9bb-444193d50d82",
-								true,
-							},
-							
-							{
-								"6c9eeb38-8934-0955-af55-5f8db2b583f9",
-								true,
-							},
-							
-							{
-								"9ae87fa1-b5d8-5a04-9be9-3bb0679aca5c",
+								"297bd7a0-a008-d8d5-be0f-1f90b900a388",
 								true,
 							},
 						},
@@ -4796,11 +4771,6 @@ local tbl =
 							},
 							
 							{
-								"5f68c830-8c07-3c10-bfb4-7a0f3f9ebeb5",
-								true,
-							},
-							
-							{
 								"1e39a820-0470-b3d6-b953-37ee8ae56c84",
 								true,
 							},
@@ -4821,29 +4791,51 @@ local tbl =
 							},
 							
 							{
-								"03652a17-e335-3466-965d-ce830120cebe",
-								true,
-							},
-							
-							{
-								"4f615c3c-e368-544f-b9bb-444193d50d82",
-								true,
-							},
-							
-							{
-								"6c9eeb38-8934-0955-af55-5f8db2b583f9",
-								true,
-							},
-							
-							{
 								"da977cd9-925d-daf0-ba9f-ebaa1f25c7d4",
 								false,
+							},
+							
+							{
+								"03652a17-e335-3466-965d-ce830120cebe",
+								true,
 							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
 						name = "Phantom Kick",
 						uuid = "bfa0f030-fde3-d881-b3bb-eb4ae1aa86c9",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "if _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
+								true,
+							},
+							
+							{
+								"cf907d2d-9e97-8cd1-bc08-5de61635852f",
+								true,
+							},
+							
+							{
+								"1e39a820-0470-b3d6-b953-37ee8ae56c84",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Fallback Deactivate",
+						uuid = "5df620a7-38a7-4c47-bd0e-07096f4c942a",
 						variableTogglesType = 2,
 						version = 2.1,
 					},
@@ -4872,19 +4864,6 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Monk",
 						uuid = "cf907d2d-9e97-8cd1-bc08-5de61635852f",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 2,
-						dequeueIfLuaFalse = true,
-						hpValue = 0.10000000149012,
-						name = "Am Alive",
-						uuid = "5f68c830-8c07-3c10-bfb4-7a0f3f9ebeb5",
 						version = 2,
 					},
 				},
@@ -4942,53 +4921,10 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "local jumpDist = 15\nlocal playerPos = TensorCore.mGetPlayer().pos\nlocal target = TensorCore.mGetTarget()\n\nif target then\n\tlocal targetPos = target.pos\n\tlocal targetHeading = TensorCore.getHeadingToTarget(playerPos, targetPos)\n\tlocal jumpPos = TensorCore.getPosInDirection(playerPos, targetHeading, jumpDist)\n\n\treturn not TensorCore.Avoidance.inAnyAOE(jumpPos.x, jumpPos.y, jumpPos.z)\nend",
-						dequeueIfLuaFalse = true,
-						name = "AOE Check",
-						uuid = "03652a17-e335-3466-965d-ce830120cebe",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 2,
-						buffID = 418,
-						buffIDList = 
-						{
-							418,
-							148,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						matchAnyBuff = true,
-						name = "Not Invuln",
-						uuid = "4f615c3c-e368-544f-b9bb-444193d50d82",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
-						dequeueIfLuaFalse = true,
-						name = "Check Rezz Timer",
-						uuid = "6c9eeb38-8934-0955-af55-5f8db2b583f9",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
 						conditionLua = "return data.pMonkForceKickEnabled",
 						dequeueIfLuaFalse = true,
 						name = "Force Kick Enabled",
-						uuid = "9ae87fa1-b5d8-5a04-9be9-3bb0679aca5c",
+						uuid = "297bd7a0-a008-d8d5-be0f-1f90b900a388",
 						version = 2,
 					},
 				},
@@ -4998,18 +4934,31 @@ local tbl =
 					{
 						category = "Lua",
 						conditionLua = "return data.pMonkNoKickEnabled",
+						dequeueIfLuaFalse = true,
 						name = "No Kick Enabled",
 						uuid = "da977cd9-925d-daf0-ba9f-ebaa1f25c7d4",
 						version = 2,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "local jumpDist = 15\nlocal playerPos = TensorCore.mGetPlayer().pos\nlocal target = TensorCore.mGetTarget()\n\nif target then\n\tlocal targetPos = target.pos\n\tlocal targetHeading = TensorCore.getHeadingToTarget(playerPos, targetPos)\n\tlocal jumpPos = TensorCore.getPosInDirection(playerPos, targetHeading, jumpDist)\n\n\treturn not TensorCore.Avoidance.inAnyAOE(jumpPos.x, jumpPos.y, jumpPos.z)\nend\n\nreturn false",
+						dequeueIfLuaFalse = true,
+						name = "AOE Check",
+						uuid = "03652a17-e335-3466-965d-ce830120cebe",
+						version = 2,
+					},
+				},
 			},
 			name = "P. Monk Kick",
-			throttleTime = 250,
-			uuid = "0f4baaed-dedb-5c6d-99a3-d68ba7f39935",
+			throttleTime = 100,
+			uuid = "c27a84af-fc0f-e48c-8c66-112f503d61b2",
 			version = 2,
 		},
-		inheritedIndex = 28,
+		inheritedIndex = 26,
 	},
 	
 	{
@@ -5144,7 +5093,7 @@ local tbl =
 			uuid = "86b47b65-6cda-50ef-a11e-b5a2ce962755",
 			version = 2,
 		},
-		inheritedIndex = 27,
+		inheritedIndex = 28,
 	},
 	
 	{
@@ -5656,7 +5605,7 @@ local tbl =
 			uuid = "0356c312-3cfa-68dd-b31e-c8ae10d1af28",
 			version = 2,
 		},
-		inheritedIndex = 28,
+		inheritedIndex = 29,
 	},
 	
 	{
@@ -5951,7 +5900,7 @@ local tbl =
 			uuid = "07c6a030-6afd-9a0c-8e6e-1a4b88514b31",
 			version = 2,
 		},
-		inheritedIndex = 41,
+		inheritedIndex = 42,
 	},
 	
 	{
@@ -6399,7 +6348,7 @@ local tbl =
 			uuid = "988f3e4c-2dda-92d2-8702-0c90ee69af40",
 			version = 2,
 		},
-		inheritedIndex = 29,
+		inheritedIndex = 30,
 	},
 	
 	{
@@ -6792,7 +6741,7 @@ local tbl =
 			uuid = "fb45e2b2-c2e4-1403-8a4b-1c629f622026",
 			version = 2,
 		},
-		inheritedIndex = 32,
+		inheritedIndex = 33,
 	},
 	
 	{
@@ -6980,7 +6929,7 @@ local tbl =
 			uuid = "2b8ae391-8be0-a38b-94f9-d49e38186a1d",
 			version = 2,
 		},
-		inheritedIndex = 34,
+		inheritedIndex = 35,
 	},
 	
 	{
@@ -7279,7 +7228,7 @@ local tbl =
 			uuid = "ea03e1c6-c7fc-5241-ac55-989016a66864",
 			version = 2,
 		},
-		inheritedIndex = 36,
+		inheritedIndex = 37,
 	},
 	
 	{
@@ -7377,7 +7326,7 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 35,
+		inheritedIndex = 36,
 	},
 	
 	{
@@ -7787,7 +7736,7 @@ local tbl =
 			uuid = "c444fd4f-22b2-43d7-bdf3-9d3d6f951f6c",
 			version = 2,
 		},
-		inheritedIndex = 43,
+		inheritedIndex = 44,
 	},
 	
 	{
