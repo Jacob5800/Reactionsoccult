@@ -4412,7 +4412,7 @@ local tbl =
 			uuid = "ba84c9d8-adc9-f0e6-81ea-cff5b1296909",
 			version = 2,
 		},
-		inheritedIndex = 27,
+		inheritedIndex = 28,
 	},
 	
 	{
@@ -4597,7 +4597,7 @@ local tbl =
 			uuid = "4e2f6e7f-2afc-a411-b017-8a8bf5ddc247",
 			version = 2,
 		},
-		inheritedIndex = 29,
+		inheritedIndex = 30,
 	},
 	
 	{
@@ -4971,7 +4971,7 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "local jumpDist = 15\nlocal player = TensorCore.mGetPlayer()\nlocal target = TensorCore.mGetTarget()\n\nif not target or target.id == player.id then return end\n\nlocal playerPos = player.pos\nlocal targetPos = target.pos\nlocal targetHeading = TensorCore.getHeadingToTarget(playerPos, targetPos)\nlocal jumpPos = TensorCore.getPosInDirection(playerPos, targetHeading, jumpDist)\n\nlocal inAOE = TensorCore.Avoidance.inAnyAOE(jumpPos.x, jumpPos.y, jumpPos.z)\nlocal drawerID = (inAOE and 1677721855) or 1677786914\n\nlocal drawer = TensorCore.getStaticDrawer(drawerID)\ndrawer.colorOutline = 0xFFFFFFFF\ndrawer:addCircle(jumpPos.x, jumpPos.y, jumpPos.z, 0.5, true)\ndrawer.colorOutline = nil",
+						actionLua = "local jumpDist = 15\nlocal player = TensorCore.mGetPlayer()\nlocal target = TensorCore.mGetTarget()\n\nif not target or target.id == player.id then return end\n\nlocal playerPos = player.pos\nlocal targetPos = target.pos\nlocal targetHeading = TensorCore.getHeadingToTarget(playerPos, targetPos)\nlocal jumpPos = TensorCore.getPosInDirection(playerPos, targetHeading, jumpDist)\n\nlocal inAOE = TensorCore.Avoidance.inAnyAOE(jumpPos.x, jumpPos.y, jumpPos.z)\nlocal indicatorColor = (inAOE and 1677721855) or 1677786914\n\nlocal drawer = TensorCore.getStaticDrawer(indicatorColor)\ndrawer.colorOutline = 0xFFFFFFFF\ndrawer:addCircle(jumpPos.x, jumpPos.y, jumpPos.z, 0.5, true)\ndrawer.colorOutline = nil",
 						conditions = 
 						{
 							
@@ -5001,6 +5001,11 @@ local tbl =
 							},
 							
 							{
+								"3df80ec7-5864-f5e1-bb33-e7a93a2c5519",
+								true,
+							},
+							
+							{
 								"f543f117-46df-ba1c-a5c0-7dd9e1cee8f1",
 								true,
 							},
@@ -5008,6 +5013,57 @@ local tbl =
 						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
 						name = "Jump Indicator",
 						uuid = "bfa0f030-fde3-d881-b3bb-eb4ae1aa86c9",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local jumpDist = 15\nlocal player = TensorCore.mGetPlayer()\nlocal target = TensorCore.mGetTarget()\n\nif not target or target.id == player.id then return end\n\nlocal playerPos = player.pos\nlocal targetPos = target.pos\nlocal targetHeading = TensorCore.getHeadingToTarget(playerPos, targetPos)\nlocal jumpPos = TensorCore.getPosInDirection(playerPos, targetHeading, jumpDist)\n\nlocal inAOE = TensorCore.Avoidance.inAnyAOE(jumpPos.x, jumpPos.y, jumpPos.z)\nlocal indicatorColor = 1677787134\n\nlocal drawer = TensorCore.getStaticDrawer(indicatorColor)\ndrawer.colorOutline = 0xFFFFFFFF\ndrawer:addCircle(jumpPos.x, jumpPos.y, jumpPos.z, 0.5, true)\ndrawer.colorOutline = nil",
+						conditions = 
+						{
+							
+							{
+								"8cda3bac-be8c-b63c-8e06-ca48d73102b1",
+								true,
+							},
+							
+							{
+								"f8f04c24-0e45-7c68-b56f-c69a4ad2f7de",
+								true,
+							},
+							
+							{
+								"51b0116c-70ba-b338-bac7-0082efd72ccc",
+								true,
+							},
+							
+							{
+								"ce2478f3-6f7a-4f4d-9944-6b484c1303ab",
+								true,
+							},
+							
+							{
+								"e4fdc1a9-6695-72f4-a590-abd0c067c80c",
+								true,
+							},
+							
+							{
+								"3df80ec7-5864-f5e1-bb33-e7a93a2c5519",
+								false,
+							},
+							
+							{
+								"f543f117-46df-ba1c-a5c0-7dd9e1cee8f1",
+								true,
+							},
+						},
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Jump Indicator OOR",
+						uuid = "37651124-5042-908b-8bf4-b0824f1e01b5",
 						variableTogglesType = 2,
 						version = 2.1,
 					},
@@ -5076,6 +5132,19 @@ local tbl =
 				{
 					data = 
 					{
+						comparator = 2,
+						conditionType = 6,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 15,
+						name = "Target <= 15y",
+						uuid = "3df80ec7-5864-f5e1-bb33-e7a93a2c5519",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
 						actionCDValue = 10,
 						actionID = 41595,
 						category = "Self",
@@ -5090,10 +5159,10 @@ local tbl =
 			},
 			eventType = 12,
 			name = "P. Monk Jump Indicator",
-			uuid = "86b47b65-6cda-50ef-a11e-b5a2ce962755",
+			uuid = "d02f1d00-64c8-7239-8291-fef76f74db52",
 			version = 2,
 		},
-		inheritedIndex = 28,
+		inheritedIndex = 27,
 	},
 	
 	{
@@ -5605,7 +5674,7 @@ local tbl =
 			uuid = "0356c312-3cfa-68dd-b31e-c8ae10d1af28",
 			version = 2,
 		},
-		inheritedIndex = 29,
+		inheritedIndex = 30,
 	},
 	
 	{
@@ -5900,7 +5969,7 @@ local tbl =
 			uuid = "07c6a030-6afd-9a0c-8e6e-1a4b88514b31",
 			version = 2,
 		},
-		inheritedIndex = 42,
+		inheritedIndex = 43,
 	},
 	
 	{
@@ -6348,7 +6417,7 @@ local tbl =
 			uuid = "988f3e4c-2dda-92d2-8702-0c90ee69af40",
 			version = 2,
 		},
-		inheritedIndex = 30,
+		inheritedIndex = 31,
 	},
 	
 	{
@@ -6741,7 +6810,7 @@ local tbl =
 			uuid = "fb45e2b2-c2e4-1403-8a4b-1c629f622026",
 			version = 2,
 		},
-		inheritedIndex = 33,
+		inheritedIndex = 34,
 	},
 	
 	{
@@ -6929,7 +6998,7 @@ local tbl =
 			uuid = "2b8ae391-8be0-a38b-94f9-d49e38186a1d",
 			version = 2,
 		},
-		inheritedIndex = 35,
+		inheritedIndex = 36,
 	},
 	
 	{
@@ -7228,7 +7297,7 @@ local tbl =
 			uuid = "ea03e1c6-c7fc-5241-ac55-989016a66864",
 			version = 2,
 		},
-		inheritedIndex = 37,
+		inheritedIndex = 38,
 	},
 	
 	{
@@ -7326,7 +7395,7 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 36,
+		inheritedIndex = 37,
 	},
 	
 	{
@@ -7736,7 +7805,7 @@ local tbl =
 			uuid = "c444fd4f-22b2-43d7-bdf3-9d3d6f951f6c",
 			version = 2,
 		},
-		inheritedIndex = 44,
+		inheritedIndex = 45,
 	},
 	
 	{
