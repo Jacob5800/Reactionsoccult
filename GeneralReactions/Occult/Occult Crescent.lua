@@ -25,6 +25,1672 @@ local tbl =
 				{
 					data = 
 					{
+						actionID = 41590,
+						conditions = 
+						{
+							
+							{
+								"f4209989-03cd-661a-b174-709466776706",
+								true,
+							},
+							
+							{
+								"fc4b033f-a236-d271-893e-b6a0685a987b",
+								true,
+							},
+							
+							{
+								"fe18441a-be3b-f7ca-999a-87e58634239f",
+								true,
+							},
+							
+							{
+								"fd55e071-38c6-b8d4-a37d-7d73c5774bc4",
+								true,
+							},
+							
+							{
+								"860ec568-237b-5474-a555-6d7322eadd4e",
+								true,
+							},
+							
+							{
+								"8e8bebcf-8def-48b0-95df-ead928362b4a",
+								true,
+							},
+							
+							{
+								"e8c03b24-c5e0-e4e4-be4c-c62e9247e2a2",
+								true,
+							},
+							
+							{
+								"f53b0dc2-6eba-1d72-b91a-71833a2fe9cd",
+								true,
+							},
+							
+							{
+								"890d87a5-7537-851b-bb9a-cf6de8658bef",
+								true,
+							},
+						},
+						gVar = "ACR_TensorMagnum3_CD",
+						ignoreWeaveRules = true,
+						targetType = "Detection Target",
+						uuid = "fedf268d-51f4-43d2-b69e-eb93829982ba",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "f4209989-03cd-661a-b174-709466776706",
+						version = 2,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4358,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Knight",
+						uuid = "fc4b033f-a236-d271-893e-b6a0685a987b",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						name = "In Combat",
+						uuid = "fe18441a-be3b-f7ca-999a-87e58634239f",
+						version = 2,
+					},
+					inheritedIndex = 3,
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 1,
+						actionID = 41591,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Occult Heal CD <= 1s",
+						uuid = "fd55e071-38c6-b8d4-a37d-7d73c5774bc4",
+						version = 2,
+					},
+					inheritedIndex = 4,
+				},
+				
+				{
+					data = 
+					{
+						category = "Filter",
+						comparator = 2,
+						conditionType = 2,
+						conditions = 
+						{
+							
+							{
+								"a4770a8e-440e-b868-b0cc-7cada37d0cc0",
+								true,
+							},
+							
+							{
+								"19b10dcc-1465-7459-8e7d-1237fc6bde1c",
+								true,
+							},
+						},
+						dequeueIfLuaFalse = true,
+						filterTargetSubtype = "Lowest HP",
+						filterTargetType = "Party",
+						hpValue = 50,
+						name = "Party HP",
+						uuid = "860ec568-237b-5474-a555-6d7322eadd4e",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Party",
+						comparator = 2,
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 50,
+						name = "50% HP",
+						partyTargetType = "Detection Target",
+						uuid = "a4770a8e-440e-b868-b0cc-7cada37d0cc0",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Party",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 30,
+						name = "Within 30 Yards",
+						partyTargetType = "Detection Target",
+						uuid = "19b10dcc-1465-7459-8e7d-1237fc6bde1c",
+						version = 2,
+					},
+					inheritedIndex = 7,
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 3,
+						dequeueIfLuaFalse = true,
+						mpValue = 50,
+						name = "Have MP",
+						uuid = "8e8bebcf-8def-48b0-95df-ead928362b4a",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 14,
+						dequeueIfLuaFalse = true,
+						jobIDList = 
+						{
+							31,
+							21,
+						},
+						name = "No Mana Job",
+						uuid = "e8c03b24-c5e0-e4e4-be4c-c62e9247e2a2",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Not Invuln",
+						uuid = "f53b0dc2-6eba-1d72-b91a-71833a2fe9cd",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
+						dequeueIfLuaFalse = true,
+						name = "Check Rezz Timer",
+						uuid = "890d87a5-7537-851b-bb9a-cf6de8658bef",
+						version = 2,
+					},
+				},
+			},
+			name = "P. Knight Occult Heal",
+			throttleTime = 1250,
+			uuid = "d6d3830c-4f68-ae05-923c-9b2d8fd9bd5d",
+			version = 2,
+		},
+		inheritedIndex = 2,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						actionID = 41589,
+						conditions = 
+						{
+							
+							{
+								"db68b232-24e2-2a01-ac29-564ead6c714c",
+								true,
+							},
+							
+							{
+								"bdffe94e-ca3f-daa9-9315-d147de5104f1",
+								true,
+							},
+							
+							{
+								"0ac5688a-1497-b876-8173-72c5e7eedf35",
+								true,
+							},
+							
+							{
+								"e56f8f40-375d-f91d-8679-de1f67ac0ed9",
+								true,
+							},
+							
+							{
+								"e87ce4db-5846-ecda-afe6-4e02117886b7",
+								true,
+							},
+							
+							{
+								"411a9ae6-6ddc-6156-8c1f-fdb4c91029f4",
+								true,
+							},
+						},
+						gVar = "ACR_TensorMagnum3_CD",
+						name = "Pray",
+						uuid = "26bc4764-1c77-8b11-ac38-45f3ba906dd7",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "db68b232-24e2-2a01-ac29-564ead6c714c",
+						version = 2,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4358,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Knight",
+						uuid = "bdffe94e-ca3f-daa9-9315-d147de5104f1",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						name = "In Combat",
+						uuid = "0ac5688a-1497-b876-8173-72c5e7eedf35",
+						version = 2,
+					},
+					inheritedIndex = 3,
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						comparator = 2,
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 50,
+						name = "HP <= 50%",
+						uuid = "e56f8f40-375d-f91d-8679-de1f67ac0ed9",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Not Invuln",
+						uuid = "e87ce4db-5846-ecda-afe6-4e02117886b7",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
+						dequeueIfLuaFalse = true,
+						name = "Check Rezz Timer",
+						uuid = "411a9ae6-6ddc-6156-8c1f-fdb4c91029f4",
+						version = 2,
+					},
+				},
+			},
+			name = "P. Knight Pray",
+			throttleTime = 1250,
+			uuid = "e26a7d55-62ee-8f3a-a131-ad64aaef15c3",
+			version = 2,
+		},
+		inheritedIndex = 3,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						actionID = 41591,
+						conditions = 
+						{
+							
+							{
+								"db68b232-24e2-2a01-ac29-564ead6c714c",
+								true,
+							},
+							
+							{
+								"bdffe94e-ca3f-daa9-9315-d147de5104f1",
+								true,
+							},
+							
+							{
+								"0ac5688a-1497-b876-8173-72c5e7eedf35",
+								true,
+							},
+							
+							{
+								"72d1c6d2-76ad-d6a3-9775-15d5ad51adaa",
+								true,
+							},
+							
+							{
+								"e56f8f40-375d-f91d-8679-de1f67ac0ed9",
+								true,
+							},
+							
+							{
+								"7539c735-58d4-57fb-9e3d-feb5062367cf",
+								true,
+							},
+							
+							{
+								"4ff4a8ae-2218-199f-a6f3-0ecf3cd31311",
+								true,
+							},
+						},
+						gVar = "ACR_TensorMagnum3_CD",
+						name = "Pledge",
+						uuid = "26bc4764-1c77-8b11-ac38-45f3ba906dd7",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "db68b232-24e2-2a01-ac29-564ead6c714c",
+						version = 2,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4358,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Knight",
+						uuid = "bdffe94e-ca3f-daa9-9315-d147de5104f1",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						name = "In Combat",
+						uuid = "0ac5688a-1497-b876-8173-72c5e7eedf35",
+						version = 2,
+					},
+					inheritedIndex = 3,
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 41591,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Pledge CD <= 3s",
+						uuid = "72d1c6d2-76ad-d6a3-9775-15d5ad51adaa",
+						version = 2,
+					},
+					inheritedIndex = 4,
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						comparator = 2,
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 15,
+						name = "HP <= 15%",
+						uuid = "e56f8f40-375d-f91d-8679-de1f67ac0ed9",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Not Invuln",
+						uuid = "7539c735-58d4-57fb-9e3d-feb5062367cf",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
+						dequeueIfLuaFalse = true,
+						name = "Check Rezz Timer",
+						uuid = "4ff4a8ae-2218-199f-a6f3-0ecf3cd31311",
+						version = 2,
+					},
+				},
+			},
+			name = "P. Knight Pledge",
+			throttleTime = 1250,
+			uuid = "149b85a5-bf49-2e66-a0f5-cc126faf37a0",
+			version = 2,
+		},
+		inheritedIndex = 4,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						actionID = 41597,
+						actionLua = "return ActionList:Get(5,32),Player.id,false,false",
+						conditions = 
+						{
+							
+							{
+								"d6d91e2f-272b-5401-ad3f-f0a5c81c766e",
+								true,
+							},
+							
+							{
+								"53db5447-8ce7-e699-b734-b9c0a383b622",
+								true,
+							},
+							
+							{
+								"bcc88eba-f173-1e61-83c1-24f032463bc0",
+								true,
+							},
+							
+							{
+								"ae21189b-8797-1f06-95ff-b20fb8e26e69",
+								false,
+							},
+							
+							{
+								"1ceb8816-2ec9-abf4-9e91-eafe739ef659",
+								true,
+							},
+							
+							{
+								"21f5a719-634c-c348-b3f6-fe1f01b33d86",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction3",
+						luaNeedsWeaveWindow = true,
+						luaReturnsAction = true,
+						name = "Counterstance",
+						uuid = "71f18f33-b51d-5c63-9bfb-fd57b9b189ad",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "d6d91e2f-272b-5401-ad3f-f0a5c81c766e",
+						version = 2,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4360,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						filterTargetType = "ContentID",
+						name = "Is P. Monk",
+						uuid = "53db5447-8ce7-e699-b734-b9c0a383b622",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						inCombatType = 2,
+						name = "Not In Combat",
+						uuid = "bcc88eba-f173-1e61-83c1-24f032463bc0",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 3,
+						buffDuration = 3,
+						buffID = 4238,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Has Counterstance",
+						uuid = "ae21189b-8797-1f06-95ff-b20fb8e26e69",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Not Invuln",
+						uuid = "1ceb8816-2ec9-abf4-9e91-eafe739ef659",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
+						dequeueIfLuaFalse = true,
+						name = "Check Rezz Timer",
+						uuid = "21f5a719-634c-c348-b3f6-fe1f01b33d86",
+						version = 2,
+					},
+				},
+			},
+			name = "P. Monk Counterstance",
+			throttleTime = 1000,
+			uuid = "dc88144f-02eb-1ddc-af3f-db7d95ca782b",
+			version = 2,
+		},
+		inheritedIndex = 5,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						actionID = 41596,
+						actionLua = "return ActionList:Get(5,32),Player.id,false,false",
+						conditions = 
+						{
+							
+							{
+								"5236742b-6d45-ba4b-9afc-fb4fc5a75597",
+								true,
+							},
+							
+							{
+								"428912a9-77fd-3cdc-967f-f611e385b71d",
+								true,
+							},
+							
+							{
+								"3ecb5974-9132-edef-bc9c-2bbb38650199",
+								true,
+							},
+							
+							{
+								"e25da5a1-e09f-13f7-a76c-4d9eb83a6848",
+								true,
+							},
+							
+							{
+								"1c7f9078-12e7-990c-91ac-770991984265",
+								true,
+							},
+							
+							{
+								"f7205721-6955-3735-ba96-99ffa9c751fd",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction2",
+						luaNeedsWeaveWindow = true,
+						luaReturnsAction = true,
+						name = "Occult Counter",
+						targetType = "Current Target",
+						uuid = "46adab9a-0c98-5ad3-84c9-8f07366fc978",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "5236742b-6d45-ba4b-9afc-fb4fc5a75597",
+						version = 2,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4360,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						filterTargetType = "ContentID",
+						name = "Is P. Monk",
+						uuid = "428912a9-77fd-3cdc-967f-f611e385b71d",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						name = "In Combat",
+						uuid = "3ecb5974-9132-edef-bc9c-2bbb38650199",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 41596,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Occult Counter CD <= 3s",
+						uuid = "e25da5a1-e09f-13f7-a76c-4d9eb83a6848",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Not Invuln",
+						uuid = "1c7f9078-12e7-990c-91ac-770991984265",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
+						dequeueIfLuaFalse = true,
+						name = "Check Rezz Timer",
+						uuid = "f7205721-6955-3735-ba96-99ffa9c751fd",
+						version = 2,
+					},
+				},
+			},
+			name = "P. Monk Counter",
+			throttleTime = 1000,
+			uuid = "41d0f0ef-c4ea-6f7d-b4d5-b336f4d41284",
+			version = 2,
+		},
+		inheritedIndex = 6,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "if not data.pMonkTogglesInitialised then\n\tdata.pMonkForceKickEnabled = false\n\tdata.pMonkNoKickEnabled = false\n\tdata.pMonkTogglesInitialised = true\nend",
+						conditions = 
+						{
+							
+							{
+								"12bed729-8bf4-b235-b279-e5570f4b249b",
+								true,
+							},
+						},
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Init",
+						uuid = "f824ba34-7a6a-8f76-aa79-e805614d632f",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "GUI:SetNextWindowSize(225, 50, GUI.SetCond_Always)\nGUI:Begin(\"Monk Kick Toggles\", true, GUI.WindowFlags_NoTitleBar | GUI.WindowFlags_NoResize)\nlocal buttonWidth = 100\n\nif data.pMonkForceKickEnabled then\n\tGUI:PushStyleColor(GUI.Col_Button, 0.2, 0.7, 0.2, 1.0)\nend\n\nif GUI:Button(\"Force Kick\", buttonWidth, 35) then\n\tif data.pMonkNoKickEnabled then\n\t\tdata.pMonkNoKickEnabled = false\n\tend\n\n\tdata.pMonkForceKickEnabled = not data.pMonkForceKickEnabled\nend\n\nGUI:PopStyleColor()\n\nGUI:SameLine()\n\nif data.pMonkNoKickEnabled then\n\tGUI:PushStyleColor(GUI.Col_Button, 0.2, 0.7, 0.2, 1.0)\nend\n\nif GUI:Button(\"No Kick\", buttonWidth, 35) then\n\tif data.pMonkForceKickEnabled then\n\t\tdata.pMonkForceKickEnabled = false\n\tend\n\n\tdata.pMonkNoKickEnabled = not data.pMonkNoKickEnabled\nend\n\nGUI:PopStyleColor()\n\nGUI:End()",
+						conditions = 
+						{
+							
+							{
+								"12bed729-8bf4-b235-b279-e5570f4b249b",
+								true,
+							},
+						},
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Draw",
+						uuid = "b84116e5-badb-44c3-b04f-0a372aceb5b3",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						buffID = 4360,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Monk",
+						uuid = "12bed729-8bf4-b235-b279-e5570f4b249b",
+						version = 2,
+					},
+				},
+			},
+			eventType = 13,
+			name = "P. Monk Kick Toggle",
+			uuid = "4e2f6e7f-2afc-a411-b017-8a8bf5ddc247",
+			version = 2,
+		},
+		inheritedIndex = 7,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "if _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
+								true,
+							},
+							
+							{
+								"cf907d2d-9e97-8cd1-bc08-5de61635852f",
+								true,
+							},
+							
+							{
+								"1e39a820-0470-b3d6-b953-37ee8ae56c84",
+								true,
+							},
+							
+							{
+								"3eac1167-173e-1707-bb6c-86e58d4e12ef",
+								true,
+							},
+							
+							{
+								"ae8c83cd-5f51-2d12-bade-38a7c6193da7",
+								true,
+							},
+							
+							{
+								"da977cd9-925d-daf0-ba9f-ebaa1f25c7d4",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Stop Phantom Kick Toggle",
+						uuid = "ae921d8a-ff02-76e3-a1a4-663485d80bf7",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "if _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
+								true,
+							},
+							
+							{
+								"cf907d2d-9e97-8cd1-bc08-5de61635852f",
+								true,
+							},
+							
+							{
+								"1e39a820-0470-b3d6-b953-37ee8ae56c84",
+								true,
+							},
+							
+							{
+								"3eac1167-173e-1707-bb6c-86e58d4e12ef",
+								true,
+							},
+							
+							{
+								"ae8c83cd-5f51-2d12-bade-38a7c6193da7",
+								true,
+							},
+							
+							{
+								"03652a17-e335-3466-965d-ce830120cebe",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Stop Phantom Kick AOE",
+						uuid = "76136017-d5ae-7c80-92f3-73a3e1af1961",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
+								true,
+							},
+							
+							{
+								"cf907d2d-9e97-8cd1-bc08-5de61635852f",
+								true,
+							},
+							
+							{
+								"1e39a820-0470-b3d6-b953-37ee8ae56c84",
+								true,
+							},
+							
+							{
+								"3eac1167-173e-1707-bb6c-86e58d4e12ef",
+								true,
+							},
+							
+							{
+								"ae8c83cd-5f51-2d12-bade-38a7c6193da7",
+								true,
+							},
+							
+							{
+								"fe717d00-c7a5-f61e-be0a-4038932c2f67",
+								true,
+							},
+							
+							{
+								"297bd7a0-a008-d8d5-be0f-1f90b900a388",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Phantom Kick Forced",
+						uuid = "59161e23-4f81-7fe7-a42e-aeca951045b6",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
+								true,
+							},
+							
+							{
+								"cf907d2d-9e97-8cd1-bc08-5de61635852f",
+								true,
+							},
+							
+							{
+								"1e39a820-0470-b3d6-b953-37ee8ae56c84",
+								true,
+							},
+							
+							{
+								"3eac1167-173e-1707-bb6c-86e58d4e12ef",
+								true,
+							},
+							
+							{
+								"ae8c83cd-5f51-2d12-bade-38a7c6193da7",
+								true,
+							},
+							
+							{
+								"fe717d00-c7a5-f61e-be0a-4038932c2f67",
+								true,
+							},
+							
+							{
+								"da977cd9-925d-daf0-ba9f-ebaa1f25c7d4",
+								false,
+							},
+							
+							{
+								"03652a17-e335-3466-965d-ce830120cebe",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Phantom Kick",
+						uuid = "bfa0f030-fde3-d881-b3bb-eb4ae1aa86c9",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "if _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
+								true,
+							},
+							
+							{
+								"cf907d2d-9e97-8cd1-bc08-5de61635852f",
+								true,
+							},
+							
+							{
+								"1e39a820-0470-b3d6-b953-37ee8ae56c84",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Fallback Deactivate",
+						uuid = "5df620a7-38a7-4c47-bd0e-07096f4c942a",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4360,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Monk",
+						uuid = "cf907d2d-9e97-8cd1-bc08-5de61635852f",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "1e39a820-0470-b3d6-b953-37ee8ae56c84",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "3eac1167-173e-1707-bb6c-86e58d4e12ef",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 41595,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Kick CD <= 3s",
+						uuid = "ae8c83cd-5f51-2d12-bade-38a7c6193da7",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 15,
+						name = "Target <= 15y",
+						uuid = "fe717d00-c7a5-f61e-be0a-4038932c2f67",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.pMonkForceKickEnabled",
+						dequeueIfLuaFalse = true,
+						name = "Force Kick Enabled",
+						uuid = "297bd7a0-a008-d8d5-be0f-1f90b900a388",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.pMonkNoKickEnabled",
+						dequeueIfLuaFalse = true,
+						name = "No Kick Enabled",
+						uuid = "da977cd9-925d-daf0-ba9f-ebaa1f25c7d4",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "local jumpDist = 15\nlocal playerPos = TensorCore.mGetPlayer().pos\nlocal target = TensorCore.mGetTarget()\n\nif target then\n\tlocal targetPos = target.pos\n\tlocal targetHeading = TensorCore.getHeadingToTarget(playerPos, targetPos)\n\tlocal jumpPos = TensorCore.getPosInDirection(playerPos, targetHeading, jumpDist)\n\n\treturn not TensorCore.Avoidance.inAnyAOE(jumpPos.x, jumpPos.y, jumpPos.z)\nend\n\nreturn false",
+						dequeueIfLuaFalse = true,
+						name = "AOE Check",
+						uuid = "03652a17-e335-3466-965d-ce830120cebe",
+						version = 2,
+					},
+				},
+			},
+			name = "P. Monk Kick",
+			throttleTime = 100,
+			uuid = "c27a84af-fc0f-e48c-8c66-112f503d61b2",
+			version = 2,
+		},
+		inheritedIndex = 8,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local jumpDist = 15\nlocal player = TensorCore.mGetPlayer()\nlocal target = TensorCore.mGetTarget()\n\nif not target or target.id == player.id then return end\n\nlocal playerPos = player.pos\nlocal targetPos = target.pos\nlocal targetHeading = TensorCore.getHeadingToTarget(playerPos, targetPos)\nlocal jumpPos = TensorCore.getPosInDirection(playerPos, targetHeading, jumpDist)\n\nlocal inAOE = TensorCore.Avoidance.inAnyAOE(jumpPos.x, jumpPos.y, jumpPos.z)\nlocal indicatorColor = (inAOE and 1677721855) or 1677786914\n\nlocal drawer = TensorCore.getStaticDrawer(indicatorColor)\ndrawer.colorOutline = 0xFFFFFFFF\ndrawer:addCircle(jumpPos.x, jumpPos.y, jumpPos.z, 0.5, true)\ndrawer.colorOutline = nil",
+						conditions = 
+						{
+							
+							{
+								"8cda3bac-be8c-b63c-8e06-ca48d73102b1",
+								true,
+							},
+							
+							{
+								"f8f04c24-0e45-7c68-b56f-c69a4ad2f7de",
+								true,
+							},
+							
+							{
+								"51b0116c-70ba-b338-bac7-0082efd72ccc",
+								true,
+							},
+							
+							{
+								"ce2478f3-6f7a-4f4d-9944-6b484c1303ab",
+								true,
+							},
+							
+							{
+								"e4fdc1a9-6695-72f4-a590-abd0c067c80c",
+								true,
+							},
+							
+							{
+								"3df80ec7-5864-f5e1-bb33-e7a93a2c5519",
+								true,
+							},
+							
+							{
+								"f543f117-46df-ba1c-a5c0-7dd9e1cee8f1",
+								true,
+							},
+						},
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Jump Indicator",
+						uuid = "bfa0f030-fde3-d881-b3bb-eb4ae1aa86c9",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local jumpDist = 15\nlocal player = TensorCore.mGetPlayer()\nlocal target = TensorCore.mGetTarget()\n\nif not target or target.id == player.id then return end\n\nlocal playerPos = player.pos\nlocal targetPos = target.pos\nlocal targetHeading = TensorCore.getHeadingToTarget(playerPos, targetPos)\nlocal jumpPos = TensorCore.getPosInDirection(playerPos, targetHeading, jumpDist)\n\nlocal inAOE = TensorCore.Avoidance.inAnyAOE(jumpPos.x, jumpPos.y, jumpPos.z)\nlocal indicatorColor = 1677787134\n\nlocal drawer = TensorCore.getStaticDrawer(indicatorColor)\ndrawer.colorOutline = 0xFFFFFFFF\ndrawer:addCircle(jumpPos.x, jumpPos.y, jumpPos.z, 0.5, true)\ndrawer.colorOutline = nil",
+						conditions = 
+						{
+							
+							{
+								"8cda3bac-be8c-b63c-8e06-ca48d73102b1",
+								true,
+							},
+							
+							{
+								"f8f04c24-0e45-7c68-b56f-c69a4ad2f7de",
+								true,
+							},
+							
+							{
+								"51b0116c-70ba-b338-bac7-0082efd72ccc",
+								true,
+							},
+							
+							{
+								"ce2478f3-6f7a-4f4d-9944-6b484c1303ab",
+								true,
+							},
+							
+							{
+								"e4fdc1a9-6695-72f4-a590-abd0c067c80c",
+								true,
+							},
+							
+							{
+								"3df80ec7-5864-f5e1-bb33-e7a93a2c5519",
+								false,
+							},
+							
+							{
+								"f543f117-46df-ba1c-a5c0-7dd9e1cee8f1",
+								true,
+							},
+						},
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Jump Indicator OOR",
+						uuid = "37651124-5042-908b-8bf4-b0824f1e01b5",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "8cda3bac-be8c-b63c-8e06-ca48d73102b1",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4360,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Monk",
+						uuid = "f8f04c24-0e45-7c68-b56f-c69a4ad2f7de",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						name = "Am Alive",
+						uuid = "51b0116c-70ba-b338-bac7-0082efd72ccc",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "ce2478f3-6f7a-4f4d-9944-6b484c1303ab",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "e4fdc1a9-6695-72f4-a590-abd0c067c80c",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 15,
+						name = "Target <= 15y",
+						uuid = "3df80ec7-5864-f5e1-bb33-e7a93a2c5519",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 10,
+						actionID = 41595,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Kick CD <= 10s",
+						uuid = "f543f117-46df-ba1c-a5c0-7dd9e1cee8f1",
+						version = 2,
+					},
+				},
+			},
+			eventType = 12,
+			name = "P. Monk Jump Indicator",
+			uuid = "d02f1d00-64c8-7239-8291-fef76f74db52",
+			version = 2,
+		},
+		inheritedIndex = 9,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						actionID = 41598,
+						actionLua = "return ActionList:Get(5,32),Player.id,false,false",
+						conditions = 
+						{
+							
+							{
+								"5236742b-6d45-ba4b-9afc-fb4fc5a75597",
+								true,
+							},
+							
+							{
+								"428912a9-77fd-3cdc-967f-f611e385b71d",
+								true,
+							},
+							
+							{
+								"3ecb5974-9132-edef-bc9c-2bbb38650199",
+								true,
+							},
+							
+							{
+								"e25da5a1-e09f-13f7-a76c-4d9eb83a6848",
+								true,
+							},
+							
+							{
+								"33a629ca-2bb9-8afb-8998-af2275f38bbe",
+								true,
+							},
+							
+							{
+								"1c7f9078-12e7-990c-91ac-770991984265",
+								true,
+							},
+							
+							{
+								"f7205721-6955-3735-ba96-99ffa9c751fd",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction2",
+						luaNeedsWeaveWindow = true,
+						luaReturnsAction = true,
+						name = "Occult Chakra",
+						uuid = "46adab9a-0c98-5ad3-84c9-8f07366fc978",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "5236742b-6d45-ba4b-9afc-fb4fc5a75597",
+						version = 2,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4360,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						filterTargetType = "ContentID",
+						name = "Is P. Monk",
+						uuid = "428912a9-77fd-3cdc-967f-f611e385b71d",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						name = "In Combat",
+						uuid = "3ecb5974-9132-edef-bc9c-2bbb38650199",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 41598,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Occult Chakra CD <= 3s",
+						uuid = "e25da5a1-e09f-13f7-a76c-4d9eb83a6848",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						comparator = 2,
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 29.89999961853,
+						name = "HP < 30%",
+						uuid = "33a629ca-2bb9-8afb-8998-af2275f38bbe",
+						version = 2,
+					},
+					inheritedIndex = 5,
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Not Invuln",
+						uuid = "1c7f9078-12e7-990c-91ac-770991984265",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
+						dequeueIfLuaFalse = true,
+						name = "Check Rezz Timer",
+						uuid = "f7205721-6955-3735-ba96-99ffa9c751fd",
+						version = 2,
+					},
+				},
+			},
+			name = "P. Monk Occult Chakra",
+			throttleTime = 1000,
+			uuid = "002ce728-0d37-9d87-9218-caf9da0b1a65",
+			version = 2,
+		},
+		inheritedIndex = 10,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
 						actionID = 41647,
 						conditions = 
 						{
@@ -146,7 +1812,7 @@ local tbl =
 			uuid = "1017b58d-f39f-e551-a652-11aaff349c79",
 			version = 2,
 		},
-		inheritedIndex = 2,
+		inheritedIndex = 11,
 	},
 	
 	{
@@ -478,387 +2144,6 @@ local tbl =
 				{
 					data = 
 					{
-						actionID = 41589,
-						conditions = 
-						{
-							
-							{
-								"9264d31b-3803-87d5-9536-5aced64f9b6f",
-								true,
-							},
-							
-							{
-								"b2567050-4dd8-ed56-871f-fff1a4709330",
-								true,
-							},
-							
-							{
-								"59c01f22-3c48-7c09-8f4f-488a5d2cc0c5",
-								true,
-							},
-							
-							{
-								"4bb5f290-dabe-0a9c-9be6-4e253f0dd9ea",
-								true,
-							},
-							
-							{
-								"85eea024-c7c6-1858-a726-830c2ae2cc5e",
-								true,
-							},
-						},
-						gVar = "ACR_TensorMagnum3_CD",
-						uuid = "081a4ea3-8183-fcbd-a06e-5dbeb5843be7",
-						version = 2.1,
-					},
-					inheritedIndex = 1,
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1252,
-						name = "South Horn",
-						uuid = "9264d31b-3803-87d5-9536-5aced64f9b6f",
-						version = 2,
-					},
-					inheritedIndex = 1,
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4358,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Phantom Knight",
-						uuid = "b2567050-4dd8-ed56-871f-fff1a4709330",
-						version = 2,
-					},
-					inheritedIndex = 2,
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 2,
-						buffID = 4232,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Missing Pray",
-						uuid = "59c01f22-3c48-7c09-8f4f-488a5d2cc0c5",
-						version = 2,
-					},
-					inheritedIndex = 3,
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						comparator = 2,
-						conditionType = 2,
-						dequeueIfLuaFalse = true,
-						hpValue = 80,
-						uuid = "4bb5f290-dabe-0a9c-9be6-4e253f0dd9ea",
-						version = 2,
-					},
-					inheritedIndex = 4,
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
-						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "85eea024-c7c6-1858-a726-830c2ae2cc5e",
-						version = 2,
-					},
-					inheritedIndex = 4,
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 2,
-						buffID = 418,
-						buffIDList = 
-						{
-							418,
-							148,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						matchAnyBuff = true,
-						name = "Not Invuln",
-						uuid = "bbc3d2c6-a98e-f7d6-aa51-c8596288ae38",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
-						dequeueIfLuaFalse = true,
-						name = "Check Rezz Timer",
-						uuid = "ebbe2f64-269f-0b2a-a597-4d92403424e7",
-						version = 2,
-					},
-				},
-			},
-			name = "[Knight] Pray",
-			throttleTime = 1250,
-			uuid = "078ede44-5abe-caba-b0ec-5925bf1a9bca",
-			version = 2,
-		},
-		inheritedIndex = 13,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						actionID = 41590,
-						conditions = 
-						{
-							
-							{
-								"9264d31b-3803-87d5-9536-5aced64f9b6f",
-								true,
-							},
-							
-							{
-								"b2567050-4dd8-ed56-871f-fff1a4709330",
-								true,
-							},
-							
-							{
-								"4bb5f290-dabe-0a9c-9be6-4e253f0dd9ea",
-								true,
-							},
-							
-							{
-								"85eea024-c7c6-1858-a726-830c2ae2cc5e",
-								true,
-							},
-							
-							{
-								"6f481a47-96b3-7ace-88e9-45fcb2f41e79",
-								true,
-							},
-							
-							{
-								"ef8d2248-74eb-7468-9f0b-61b5fda63048",
-								true,
-							},
-						},
-						gVar = "ACR_TensorMagnum3_CD",
-						ignoreWeaveRules = true,
-						targetType = "Detection Target",
-						uuid = "081a4ea3-8183-fcbd-a06e-5dbeb5843be7",
-						version = 2.1,
-					},
-					inheritedIndex = 1,
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1252,
-						name = "South Horn",
-						uuid = "9264d31b-3803-87d5-9536-5aced64f9b6f",
-						version = 2,
-					},
-					inheritedIndex = 1,
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4358,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Phantom Knight",
-						uuid = "b2567050-4dd8-ed56-871f-fff1a4709330",
-						version = 2,
-					},
-					inheritedIndex = 2,
-				},
-				
-				{
-					data = 
-					{
-						category = "Filter",
-						comparator = 2,
-						conditionType = 2,
-						conditions = 
-						{
-							
-							{
-								"a3a52b44-da9e-230e-9471-98a2cd0ad572",
-								true,
-							},
-							
-							{
-								"81f47b5b-2bda-3072-b18b-ed66c5f07d51",
-								true,
-							},
-						},
-						dequeueIfLuaFalse = true,
-						filterTargetSubtype = "Lowest HP",
-						filterTargetType = "Party",
-						hpValue = 50,
-						name = "Party HP",
-						uuid = "4bb5f290-dabe-0a9c-9be6-4e253f0dd9ea",
-						version = 2,
-					},
-					inheritedIndex = 4,
-				},
-				
-				{
-					data = 
-					{
-						category = "Party",
-						comparator = 2,
-						conditionType = 2,
-						dequeueIfLuaFalse = true,
-						hpValue = 50,
-						name = "50% HP",
-						partyTargetType = "Detection Target",
-						uuid = "a3a52b44-da9e-230e-9471-98a2cd0ad572",
-						version = 2,
-					},
-					inheritedIndex = 5,
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 3,
-						dequeueIfLuaFalse = true,
-						mpValue = 50,
-						name = "Have MP",
-						uuid = "6f481a47-96b3-7ace-88e9-45fcb2f41e79",
-						version = 2,
-					},
-					inheritedIndex = 5,
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
-						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "85eea024-c7c6-1858-a726-830c2ae2cc5e",
-						version = 2,
-					},
-					inheritedIndex = 4,
-				},
-				
-				{
-					data = 
-					{
-						category = "Party",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						inRangeValue = 30,
-						name = "Within 30 Yards",
-						partyTargetType = "Detection Target",
-						uuid = "81f47b5b-2bda-3072-b18b-ed66c5f07d51",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 14,
-						dequeueIfLuaFalse = true,
-						jobIDList = 
-						{
-							31,
-							21,
-						},
-						name = "No Mana Job",
-						uuid = "ef8d2248-74eb-7468-9f0b-61b5fda63048",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 2,
-						buffID = 418,
-						buffIDList = 
-						{
-							418,
-							148,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						matchAnyBuff = true,
-						name = "Not Invuln",
-						uuid = "f5d38403-ce91-59a6-a56b-dc1b3d8029b8",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
-						dequeueIfLuaFalse = true,
-						name = "Check Rezz Timer",
-						uuid = "03fa0af8-31be-2951-a03d-8cb40e45ce07",
-						version = 2,
-					},
-				},
-			},
-			name = "[Knight] Heal",
-			throttleTime = 1250,
-			uuid = "11416d58-8f1e-d1bd-873c-a7ef151ed802",
-			version = 2,
-		},
-		inheritedIndex = 13,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
 						actionID = 41611,
 						conditions = 
 						{
@@ -1042,7 +2327,7 @@ local tbl =
 			uuid = "bdd49282-6293-25e3-a474-c8bd374e40f0",
 			version = 2,
 		},
-		inheritedIndex = 15,
+		inheritedIndex = 25,
 	},
 	
 	{
@@ -1249,310 +2534,6 @@ local tbl =
 				{
 					data = 
 					{
-						actionID = 41597,
-						actionLua = "return ActionList:Get(5,32),Player.id,false,false",
-						conditions = 
-						{
-							
-							{
-								"43d62be5-24e2-e81e-a40c-005512846ac8",
-								true,
-							},
-							
-							{
-								"f76d4aaf-0050-94c7-afe0-dbaa14992a51",
-								true,
-							},
-							
-							{
-								"fc80d092-1a1e-0465-bb68-4b91b7094a3b",
-								true,
-							},
-							
-							{
-								"8d956380-6d2f-62fd-9f43-2808f5a4de90",
-								true,
-							},
-							
-							{
-								"dd6e0788-7798-b735-a9db-761cde429c2f",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuDRK3_Hotbar_DutyAction3",
-						luaNeedsWeaveWindow = true,
-						luaReturnsAction = true,
-						uuid = "64e8a797-38f3-d5f7-bc98-8f93350269fd",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionID = 41597,
-						actionLua = "return ActionList:Get(5,32),Player.id,false,false",
-						conditions = 
-						{
-							
-							{
-								"43d62be5-24e2-e81e-a40c-005512846ac8",
-								true,
-							},
-							
-							{
-								"f76d4aaf-0050-94c7-afe0-dbaa14992a51",
-								true,
-							},
-							
-							{
-								"fc80d092-1a1e-0465-bb68-4b91b7094a3b",
-								true,
-							},
-							
-							{
-								"8d956380-6d2f-62fd-9f43-2808f5a4de90",
-								true,
-							},
-							
-							{
-								"b248e317-0aa6-e11d-aa28-4f64baec010e",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuDRK3_Hotbar_DutyAction3",
-						luaNeedsWeaveWindow = true,
-						luaReturnsAction = true,
-						uuid = "66278810-2849-be3f-b8d1-6baef98c5e69",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1252,
-						uuid = "43d62be5-24e2-e81e-a40c-005512846ac8",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning",
-						dequeueIfLuaFalse = true,
-						name = "Assist On",
-						uuid = "f76d4aaf-0050-94c7-afe0-dbaa14992a51",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4360,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						filterTargetType = "ContentID",
-						name = "Is Monk",
-						uuid = "fc80d092-1a1e-0465-bb68-4b91b7094a3b",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 7,
-						dequeueIfLuaFalse = true,
-						name = "In COmbat",
-						uuid = "8d956380-6d2f-62fd-9f43-2808f5a4de90",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 2,
-						buffID = 4238,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Missing Buff Counterstance",
-						uuid = "dd6e0788-7798-b735-a9db-761cde429c2f",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 3,
-						buffDuration = 3,
-						buffID = 4238,
-						category = "Self",
-						comparator = 2,
-						dequeueIfLuaFalse = true,
-						name = "Counterstance Duration < 3",
-						uuid = "b248e317-0aa6-e11d-aa28-4f64baec010e",
-						version = 2,
-					},
-				},
-			},
-			name = "[Monk] Counterstance",
-			throttleTime = 1000,
-			uuid = "9f9cae6c-c575-3948-89d1-fd42800991ff",
-			version = 2,
-		},
-		inheritedIndex = 9,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						actionID = 41596,
-						actionLua = "return ActionList:Get(5,32),Player.id,false,false",
-						conditions = 
-						{
-							
-							{
-								"43d62be5-24e2-e81e-a40c-005512846ac8",
-								true,
-							},
-							
-							{
-								"f76d4aaf-0050-94c7-afe0-dbaa14992a51",
-								true,
-							},
-							
-							{
-								"fc80d092-1a1e-0465-bb68-4b91b7094a3b",
-								true,
-							},
-							
-							{
-								"8d956380-6d2f-62fd-9f43-2808f5a4de90",
-								true,
-							},
-							
-							{
-								"1ab3ee94-d218-e0e3-91f0-ca8928ca7b6a",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuDRK3_Hotbar_DutyAction2",
-						luaNeedsWeaveWindow = true,
-						luaReturnsAction = true,
-						targetType = "Current Target",
-						uuid = "64e8a797-38f3-d5f7-bc98-8f93350269fd",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1252,
-						uuid = "43d62be5-24e2-e81e-a40c-005512846ac8",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning",
-						dequeueIfLuaFalse = true,
-						name = "Assist On",
-						uuid = "f76d4aaf-0050-94c7-afe0-dbaa14992a51",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4360,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						filterTargetType = "ContentID",
-						name = "Is Monk",
-						uuid = "fc80d092-1a1e-0465-bb68-4b91b7094a3b",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 7,
-						dequeueIfLuaFalse = true,
-						name = "In COmbat",
-						uuid = "8d956380-6d2f-62fd-9f43-2808f5a4de90",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionCDValue = 2,
-						actionID = 41596,
-						category = "Self",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						uuid = "1ab3ee94-d218-e0e3-91f0-ca8928ca7b6a",
-						version = 2,
-					},
-				},
-			},
-			name = "[Monk] Counter",
-			throttleTime = 1000,
-			uuid = "5ec3c4bc-96c4-4106-a515-d1d8721a9fa0",
-			version = 2,
-		},
-		inheritedIndex = 10,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
 						aType = "Lua",
 						actionLua = "local deadPlayers = TensorCore.entityList(\"chartype=4,los,dead,maxdistance=30\")\nlocal raisablePlayers = {}\nlocal raisableChemists = {}\nif (table.valid(deadPlayers)) then\n\tfor id, player in pairs(deadPlayers) do\n\t\tlocal buffs = player.buffs\n\t\tlocal raised = false\n        local outOfRaises = false\n\t\tlocal chemist = false \n\n\t\tif (TableSize(buffs) > 0) then\n\t\t\tfor id, b in pairs(buffs) do\n\t\t\t\tif (b.id == 148) then\n\t\t\t\t\traised = true\n\t\t\t\tend\n                if (b.id == 4263) then\n                    outOfRaises = true\n                end\n\t\t\t\tif (b.id == 4367) then\n\t\t\t\t\tchemist = true\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t\t\n\t\tif(raised == false and outOfRaises == false) then\n\t\t\tif (chemist == true) then\n\t\t\t\ttable.insert(raisableChemists, player)\n\t\t\telse\n\t\t\t\ttable.insert(raisablePlayers, player)\n\t\t\tend\n\t\tend\n\tend\nend\nif (table.valid(raisableChemists)) then\n\tfor id, player in pairs(raisableChemists) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \" <se.3>\")\n\t\tend\n\t\treturn ActionList:Get(1,41634), player.id, true, true\n\tend\nend\nif (table.valid(raisablePlayers)) then\n\tfor id, player in pairs(raisablePlayers) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \" <se.2>\")\n\t\tend\n\t\treturn ActionList:Get(1,41634), player.id, true, false\n\tend\nend\nself.used = true",
 						conditions = 
@@ -1666,7 +2647,7 @@ local tbl =
 			uuid = "c944e914-e7fe-ad3d-b61d-adeb57939f5f",
 			version = 2,
 		},
-		inheritedIndex = 11,
+		inheritedIndex = 20,
 	},
 	
 	{
@@ -1831,7 +2812,7 @@ local tbl =
 			uuid = "f002c1b7-06d1-6521-a194-18da8de47602",
 			version = 2,
 		},
-		inheritedIndex = 12,
+		inheritedIndex = 21,
 	},
 	
 	{
@@ -2520,7 +3501,179 @@ local tbl =
 			uuid = "a6c7e7ac-46cf-12e7-ae07-883da63ba66c",
 			version = 2,
 		},
-		inheritedIndex = 16,
+		inheritedIndex = 26,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						actionID = 41607,
+						conditions = 
+						{
+							
+							{
+								"8cd3436d-3f52-7195-90f3-7354696e0e09",
+								true,
+							},
+							
+							{
+								"5472c749-32d6-8d4c-b3dc-bd0a41b9787a",
+								true,
+							},
+							
+							{
+								"0d62082a-d701-5772-8641-fb8d84a24bf7",
+								true,
+							},
+							
+							{
+								"c0446da6-224a-0bad-b444-34dd96794f7a",
+								true,
+							},
+							
+							{
+								"cf49c056-57f6-b2f0-a13f-7c5b3f558a70",
+								true,
+							},
+							
+							{
+								"9c7bd453-33e3-3ea8-9777-3b6372f24f23",
+								true,
+							},
+							
+							{
+								"ab8ab672-de83-07a8-9e0d-d32ef9196663",
+								true,
+							},
+						},
+						gVar = "ACR_TensorMagnum3_CD",
+						name = "Mighty March",
+						uuid = "ddfada01-585e-ed16-bbb8-c1a4e7ebc51d",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "8cd3436d-3f52-7195-90f3-7354696e0e09",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4363,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Bard",
+						uuid = "5472c749-32d6-8d4c-b3dc-bd0a41b9787a",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						name = "In Combat",
+						uuid = "0d62082a-d701-5772-8641-fb8d84a24bf7",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 1,
+						actionID = 41607,
+						buffCheckType = 6,
+						buffDuration = 5,
+						buffID = 4247,
+						buffIDList = 
+						{
+							4247,
+						},
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Mighty March CD <= 1s",
+						uuid = "c0446da6-224a-0bad-b444-34dd96794f7a",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						comparator = 2,
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 50,
+						name = "HP <= 50%",
+						uuid = "cf49c056-57f6-b2f0-a13f-7c5b3f558a70",
+						version = 2,
+					},
+					inheritedIndex = 5,
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 30,
+						matchAnyBuff = true,
+						name = "Not Invuln",
+						uuid = "9c7bd453-33e3-3ea8-9777-3b6372f24f23",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
+						dequeueIfLuaFalse = true,
+						name = "Check Rezz Timer",
+						uuid = "ab8ab672-de83-07a8-9e0d-d32ef9196663",
+						version = 2,
+					},
+				},
+			},
+			name = "P. Bard Mighty March",
+			throttleTime = 1500,
+			uuid = "c18517b0-1e34-1d83-8176-9f1d38d51541",
+			version = 2,
+		},
+		inheritedIndex = 21,
 	},
 	
 	{
@@ -2670,7 +3823,7 @@ local tbl =
 			uuid = "9f00e291-a1de-4adf-8ae0-c21f1280e8d4",
 			version = 2,
 		},
-		inheritedIndex = 18,
+		inheritedIndex = 28,
 	},
 	
 	{
@@ -3260,7 +4413,7 @@ local tbl =
 			uuid = "dc304137-5b9c-951b-b18a-6efe4661c609",
 			version = 2,
 		},
-		inheritedIndex = 22,
+		inheritedIndex = 29,
 	},
 	
 	{
@@ -4412,7 +5565,7 @@ local tbl =
 			uuid = "ba84c9d8-adc9-f0e6-81ea-cff5b1296909",
 			version = 2,
 		},
-		inheritedIndex = 29,
+		inheritedIndex = 36,
 	},
 	
 	{
@@ -4529,640 +5682,6 @@ local tbl =
 			uuid = "f43ad7fe-48be-5bed-b215-288c4879c052",
 			version = 2,
 		},
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "if not data.pMonkTogglesInitialised then\n\tdata.pMonkForceKickEnabled = false\n\tdata.pMonkNoKickEnabled = false\n\tdata.pMonkTogglesInitialised = true\nend",
-						conditions = 
-						{
-							
-							{
-								"12bed729-8bf4-b235-b279-e5570f4b249b",
-								true,
-							},
-						},
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Init",
-						uuid = "f824ba34-7a6a-8f76-aa79-e805614d632f",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "GUI:SetNextWindowSize(225, 50, GUI.SetCond_Always)\nGUI:Begin(\"Monk Kick Toggles\", true, GUI.WindowFlags_NoTitleBar | GUI.WindowFlags_NoResize)\nlocal buttonWidth = 100\n\nif data.pMonkForceKickEnabled then\n\tGUI:PushStyleColor(GUI.Col_Button, 0.2, 0.7, 0.2, 1.0)\nend\n\nif GUI:Button(\"Force Kick\", buttonWidth, 35) then\n\tif data.pMonkNoKickEnabled then\n\t\tdata.pMonkNoKickEnabled = false\n\tend\n\n\tdata.pMonkForceKickEnabled = not data.pMonkForceKickEnabled\nend\n\nGUI:PopStyleColor()\n\nGUI:SameLine()\n\nif data.pMonkNoKickEnabled then\n\tGUI:PushStyleColor(GUI.Col_Button, 0.2, 0.7, 0.2, 1.0)\nend\n\nif GUI:Button(\"No Kick\", buttonWidth, 35) then\n\tif data.pMonkForceKickEnabled then\n\t\tdata.pMonkForceKickEnabled = false\n\tend\n\n\tdata.pMonkNoKickEnabled = not data.pMonkNoKickEnabled\nend\n\nGUI:PopStyleColor()\n\nGUI:End()",
-						conditions = 
-						{
-							
-							{
-								"12bed729-8bf4-b235-b279-e5570f4b249b",
-								true,
-							},
-						},
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Draw",
-						uuid = "b84116e5-badb-44c3-b04f-0a372aceb5b3",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						buffID = 4360,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Is P. Monk",
-						uuid = "12bed729-8bf4-b235-b279-e5570f4b249b",
-						version = 2,
-					},
-				},
-			},
-			eventType = 13,
-			name = "P. Monk Kick Toggle",
-			uuid = "4e2f6e7f-2afc-a411-b017-8a8bf5ddc247",
-			version = 2,
-		},
-		inheritedIndex = 31,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "if _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
-								true,
-							},
-							
-							{
-								"cf907d2d-9e97-8cd1-bc08-5de61635852f",
-								true,
-							},
-							
-							{
-								"1e39a820-0470-b3d6-b953-37ee8ae56c84",
-								true,
-							},
-							
-							{
-								"3eac1167-173e-1707-bb6c-86e58d4e12ef",
-								true,
-							},
-							
-							{
-								"ae8c83cd-5f51-2d12-bade-38a7c6193da7",
-								true,
-							},
-							
-							{
-								"da977cd9-925d-daf0-ba9f-ebaa1f25c7d4",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						name = "Stop Phantom Kick Toggle",
-						uuid = "ae921d8a-ff02-76e3-a1a4-663485d80bf7",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "if _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
-								true,
-							},
-							
-							{
-								"cf907d2d-9e97-8cd1-bc08-5de61635852f",
-								true,
-							},
-							
-							{
-								"1e39a820-0470-b3d6-b953-37ee8ae56c84",
-								true,
-							},
-							
-							{
-								"3eac1167-173e-1707-bb6c-86e58d4e12ef",
-								true,
-							},
-							
-							{
-								"ae8c83cd-5f51-2d12-bade-38a7c6193da7",
-								true,
-							},
-							
-							{
-								"03652a17-e335-3466-965d-ce830120cebe",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						name = "Stop Phantom Kick AOE",
-						uuid = "76136017-d5ae-7c80-92f3-73a3e1af1961",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
-								true,
-							},
-							
-							{
-								"cf907d2d-9e97-8cd1-bc08-5de61635852f",
-								true,
-							},
-							
-							{
-								"1e39a820-0470-b3d6-b953-37ee8ae56c84",
-								true,
-							},
-							
-							{
-								"3eac1167-173e-1707-bb6c-86e58d4e12ef",
-								true,
-							},
-							
-							{
-								"ae8c83cd-5f51-2d12-bade-38a7c6193da7",
-								true,
-							},
-							
-							{
-								"fe717d00-c7a5-f61e-be0a-4038932c2f67",
-								true,
-							},
-							
-							{
-								"297bd7a0-a008-d8d5-be0f-1f90b900a388",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						name = "Phantom Kick Forced",
-						uuid = "59161e23-4f81-7fe7-a42e-aeca951045b6",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
-								true,
-							},
-							
-							{
-								"cf907d2d-9e97-8cd1-bc08-5de61635852f",
-								true,
-							},
-							
-							{
-								"1e39a820-0470-b3d6-b953-37ee8ae56c84",
-								true,
-							},
-							
-							{
-								"3eac1167-173e-1707-bb6c-86e58d4e12ef",
-								true,
-							},
-							
-							{
-								"ae8c83cd-5f51-2d12-bade-38a7c6193da7",
-								true,
-							},
-							
-							{
-								"fe717d00-c7a5-f61e-be0a-4038932c2f67",
-								true,
-							},
-							
-							{
-								"da977cd9-925d-daf0-ba9f-ebaa1f25c7d4",
-								false,
-							},
-							
-							{
-								"03652a17-e335-3466-965d-ce830120cebe",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						name = "Phantom Kick",
-						uuid = "bfa0f030-fde3-d881-b3bb-eb4ae1aa86c9",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "if _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
-								true,
-							},
-							
-							{
-								"cf907d2d-9e97-8cd1-bc08-5de61635852f",
-								true,
-							},
-							
-							{
-								"1e39a820-0470-b3d6-b953-37ee8ae56c84",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						name = "Fallback Deactivate",
-						uuid = "5df620a7-38a7-4c47-bd0e-07096f4c942a",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
-						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4360,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Is P. Monk",
-						uuid = "cf907d2d-9e97-8cd1-bc08-5de61635852f",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 7,
-						dequeueIfLuaFalse = true,
-						uuid = "1e39a820-0470-b3d6-b953-37ee8ae56c84",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						conditionType = 5,
-						dequeueIfLuaFalse = true,
-						uuid = "3eac1167-173e-1707-bb6c-86e58d4e12ef",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionCDValue = 3,
-						actionID = 41595,
-						category = "Self",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						name = "Kick CD <= 3s",
-						uuid = "ae8c83cd-5f51-2d12-bade-38a7c6193da7",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						comparator = 2,
-						conditionType = 6,
-						dequeueIfLuaFalse = true,
-						inRangeValue = 15,
-						name = "Target <= 15y",
-						uuid = "fe717d00-c7a5-f61e-be0a-4038932c2f67",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return data.pMonkForceKickEnabled",
-						dequeueIfLuaFalse = true,
-						name = "Force Kick Enabled",
-						uuid = "297bd7a0-a008-d8d5-be0f-1f90b900a388",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return data.pMonkNoKickEnabled",
-						dequeueIfLuaFalse = true,
-						name = "No Kick Enabled",
-						uuid = "da977cd9-925d-daf0-ba9f-ebaa1f25c7d4",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "local jumpDist = 15\nlocal playerPos = TensorCore.mGetPlayer().pos\nlocal target = TensorCore.mGetTarget()\n\nif target then\n\tlocal targetPos = target.pos\n\tlocal targetHeading = TensorCore.getHeadingToTarget(playerPos, targetPos)\n\tlocal jumpPos = TensorCore.getPosInDirection(playerPos, targetHeading, jumpDist)\n\n\treturn not TensorCore.Avoidance.inAnyAOE(jumpPos.x, jumpPos.y, jumpPos.z)\nend\n\nreturn false",
-						dequeueIfLuaFalse = true,
-						name = "AOE Check",
-						uuid = "03652a17-e335-3466-965d-ce830120cebe",
-						version = 2,
-					},
-				},
-			},
-			name = "P. Monk Kick",
-			throttleTime = 100,
-			uuid = "c27a84af-fc0f-e48c-8c66-112f503d61b2",
-			version = 2,
-		},
-		inheritedIndex = 26,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local jumpDist = 15\nlocal player = TensorCore.mGetPlayer()\nlocal target = TensorCore.mGetTarget()\n\nif not target or target.id == player.id then return end\n\nlocal playerPos = player.pos\nlocal targetPos = target.pos\nlocal targetHeading = TensorCore.getHeadingToTarget(playerPos, targetPos)\nlocal jumpPos = TensorCore.getPosInDirection(playerPos, targetHeading, jumpDist)\n\nlocal inAOE = TensorCore.Avoidance.inAnyAOE(jumpPos.x, jumpPos.y, jumpPos.z)\nlocal indicatorColor = (inAOE and 1677721855) or 1677786914\n\nlocal drawer = TensorCore.getStaticDrawer(indicatorColor)\ndrawer.colorOutline = 0xFFFFFFFF\ndrawer:addCircle(jumpPos.x, jumpPos.y, jumpPos.z, 0.5, true)\ndrawer.colorOutline = nil",
-						conditions = 
-						{
-							
-							{
-								"8cda3bac-be8c-b63c-8e06-ca48d73102b1",
-								true,
-							},
-							
-							{
-								"f8f04c24-0e45-7c68-b56f-c69a4ad2f7de",
-								true,
-							},
-							
-							{
-								"51b0116c-70ba-b338-bac7-0082efd72ccc",
-								true,
-							},
-							
-							{
-								"ce2478f3-6f7a-4f4d-9944-6b484c1303ab",
-								true,
-							},
-							
-							{
-								"e4fdc1a9-6695-72f4-a590-abd0c067c80c",
-								true,
-							},
-							
-							{
-								"3df80ec7-5864-f5e1-bb33-e7a93a2c5519",
-								true,
-							},
-							
-							{
-								"f543f117-46df-ba1c-a5c0-7dd9e1cee8f1",
-								true,
-							},
-						},
-						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						name = "Jump Indicator",
-						uuid = "bfa0f030-fde3-d881-b3bb-eb4ae1aa86c9",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local jumpDist = 15\nlocal player = TensorCore.mGetPlayer()\nlocal target = TensorCore.mGetTarget()\n\nif not target or target.id == player.id then return end\n\nlocal playerPos = player.pos\nlocal targetPos = target.pos\nlocal targetHeading = TensorCore.getHeadingToTarget(playerPos, targetPos)\nlocal jumpPos = TensorCore.getPosInDirection(playerPos, targetHeading, jumpDist)\n\nlocal inAOE = TensorCore.Avoidance.inAnyAOE(jumpPos.x, jumpPos.y, jumpPos.z)\nlocal indicatorColor = 1677787134\n\nlocal drawer = TensorCore.getStaticDrawer(indicatorColor)\ndrawer.colorOutline = 0xFFFFFFFF\ndrawer:addCircle(jumpPos.x, jumpPos.y, jumpPos.z, 0.5, true)\ndrawer.colorOutline = nil",
-						conditions = 
-						{
-							
-							{
-								"8cda3bac-be8c-b63c-8e06-ca48d73102b1",
-								true,
-							},
-							
-							{
-								"f8f04c24-0e45-7c68-b56f-c69a4ad2f7de",
-								true,
-							},
-							
-							{
-								"51b0116c-70ba-b338-bac7-0082efd72ccc",
-								true,
-							},
-							
-							{
-								"ce2478f3-6f7a-4f4d-9944-6b484c1303ab",
-								true,
-							},
-							
-							{
-								"e4fdc1a9-6695-72f4-a590-abd0c067c80c",
-								true,
-							},
-							
-							{
-								"3df80ec7-5864-f5e1-bb33-e7a93a2c5519",
-								false,
-							},
-							
-							{
-								"f543f117-46df-ba1c-a5c0-7dd9e1cee8f1",
-								true,
-							},
-						},
-						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						name = "Jump Indicator OOR",
-						uuid = "37651124-5042-908b-8bf4-b0824f1e01b5",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
-						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "8cda3bac-be8c-b63c-8e06-ca48d73102b1",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4360,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Is P. Monk",
-						uuid = "f8f04c24-0e45-7c68-b56f-c69a4ad2f7de",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 2,
-						dequeueIfLuaFalse = true,
-						name = "Am Alive",
-						uuid = "51b0116c-70ba-b338-bac7-0082efd72ccc",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 7,
-						dequeueIfLuaFalse = true,
-						uuid = "ce2478f3-6f7a-4f4d-9944-6b484c1303ab",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						conditionType = 5,
-						dequeueIfLuaFalse = true,
-						uuid = "e4fdc1a9-6695-72f4-a590-abd0c067c80c",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						comparator = 2,
-						conditionType = 6,
-						dequeueIfLuaFalse = true,
-						inRangeValue = 15,
-						name = "Target <= 15y",
-						uuid = "3df80ec7-5864-f5e1-bb33-e7a93a2c5519",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionCDValue = 10,
-						actionID = 41595,
-						category = "Self",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						name = "Kick CD <= 10s",
-						uuid = "f543f117-46df-ba1c-a5c0-7dd9e1cee8f1",
-						version = 2,
-					},
-				},
-			},
-			eventType = 12,
-			name = "P. Monk Jump Indicator",
-			uuid = "d02f1d00-64c8-7239-8291-fef76f74db52",
-			version = 2,
-		},
-		inheritedIndex = 28,
 	},
 	
 	{
@@ -5674,7 +6193,7 @@ local tbl =
 			uuid = "8da73aae-57bf-86ea-9a65-353a607913dc",
 			version = 2,
 		},
-		inheritedIndex = 27,
+		inheritedIndex = 33,
 	},
 	
 	{
@@ -5969,7 +6488,7 @@ local tbl =
 			uuid = "07c6a030-6afd-9a0c-8e6e-1a4b88514b31",
 			version = 2,
 		},
-		inheritedIndex = 44,
+		inheritedIndex = 50,
 	},
 	
 	{
@@ -6417,7 +6936,7 @@ local tbl =
 			uuid = "988f3e4c-2dda-92d2-8702-0c90ee69af40",
 			version = 2,
 		},
-		inheritedIndex = 32,
+		inheritedIndex = 38,
 	},
 	
 	{
@@ -6810,7 +7329,7 @@ local tbl =
 			uuid = "fb45e2b2-c2e4-1403-8a4b-1c629f622026",
 			version = 2,
 		},
-		inheritedIndex = 35,
+		inheritedIndex = 41,
 	},
 	
 	{
@@ -6998,7 +7517,7 @@ local tbl =
 			uuid = "2b8ae391-8be0-a38b-94f9-d49e38186a1d",
 			version = 2,
 		},
-		inheritedIndex = 37,
+		inheritedIndex = 43,
 	},
 	
 	{
@@ -7297,7 +7816,7 @@ local tbl =
 			uuid = "ea03e1c6-c7fc-5241-ac55-989016a66864",
 			version = 2,
 		},
-		inheritedIndex = 39,
+		inheritedIndex = 45,
 	},
 	
 	{
@@ -7313,6 +7832,7 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
+		inheritedIndex = 35,
 	},
 	
 	{
@@ -7395,7 +7915,7 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 38,
+		inheritedIndex = 44,
 	},
 	
 	{
@@ -7672,280 +8192,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 47,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "data.ocGarulaMarkerBirdEntID = eventArgs.entityID\nself.used=true",
-						conditions = 
-						{
-							
-							{
-								"3d713919-4904-c97e-bb72-5fba1cc7d8d1",
-								true,
-							},
-							
-							{
-								"31ab17ca-1766-b858-8c32-5e1ede7eab12",
-								true,
-							},
-							
-							{
-								"831587ec-aa31-c05d-9716-7138cd1f2de9",
-								true,
-							},
-						},
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Record Bird Entity ID",
-						uuid = "cfc2248e-d420-e105-be82-c70775882def",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local pi = math.pi\nlocal frontRight = -pi / 4\nlocal frontLeft = pi / 4\nlocal backRight = -(3 * pi) / 4\nlocal backLeft = (3 * pi) / 4\n\nlocal coneAngle = 45\nlocal coneRad = coneAngle * (pi / 180)\nlocal coneLength = 70\nlocal circleRadius = 30\nlocal birdHitRadius = 6\n\nlocal drawDuration = 8250\nlocal drawDelay = 2000\n\nlocal function normalizeHeading(heading)\n    return ((heading + pi) % (2 * pi)) - pi\nend\n\nlocal chatterbirdEnt = TensorCore.mGetEntity(data.ocGarulaMarkerBirdEntID)\nlocal chatterbirdPos = chatterbirdEnt.pos\nlocal neoGarulaPos = data.ocGarulaPrevEndPoint\n\nif neoGarulaPos then\n\tlocal garulaEndPoint = TensorCore.getPosInDirection(chatterbirdPos, chatterbirdPos.h, birdHitRadius)\n\tdata.ocGarulaPrevEndPoint = garulaEndPoint\n\n\tlocal garulaToEndPointHeading = TensorCore.getHeadingToTarget(neoGarulaPos, garulaEndPoint)\n\t--local garulaFrontRight = normalizeHeading(garulaToEndPointHeading + frontRight)\n\t--local garulaFrontLeft = normalizeHeading(garulaToEndPointHeading + frontLeft)\n\tlocal garulaBackRight = normalizeHeading(garulaToEndPointHeading + backRight)\n\tlocal garulaBackLeft = normalizeHeading(garulaToEndPointHeading + backLeft)\n\n\tlocal moogleDrawer = TensorCore.getMoogleDrawer()\n\n\tmoogleDrawer:addTimedCone(drawDuration,garulaEndPoint.x,garulaEndPoint.y,garulaEndPoint.z,coneLength,coneRad,garulaBackRight, drawDelay)\n\tmoogleDrawer:addTimedCone(drawDuration,garulaEndPoint.x,garulaEndPoint.y,garulaEndPoint.z,coneLength,coneRad,garulaBackLeft, drawDelay)\n\tmoogleDrawer:addTimedCircle(drawDuration,garulaEndPoint.x,garulaEndPoint.y,garulaEndPoint.z,circleRadius, drawDelay)\n\n\tdata.ocGarulaChargeCount = data.ocGarulaChargeCount + 1\n\tif data.ocGarulaChargeCount >= 3 then\n\t\tdata.ocGarulaRushingRumbleRampage = false\n\tend\nend\n\nself.used=true",
-						conditions = 
-						{
-							
-							{
-								"3d713919-4904-c97e-bb72-5fba1cc7d8d1",
-								true,
-							},
-							
-							{
-								"31ab17ca-1766-b858-8c32-5e1ede7eab12",
-								true,
-							},
-							
-							{
-								"831587ec-aa31-c05d-9716-7138cd1f2de9",
-								true,
-							},
-							
-							{
-								"3d093ac1-e37c-273a-b7d2-8459b1579b66",
-								true,
-							},
-						},
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Draw AOE Charge 2 & 3",
-						uuid = "4dbf96b7-f4b8-ef35-9f71-4331b377f382",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1252,
-						name = "In OC",
-						uuid = "3d713919-4904-c97e-bb72-5fba1cc7d8d1",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Event",
-						dequeueIfLuaFalse = true,
-						eventArgType = 2,
-						eventMarkerID = 578,
-						name = "Marker ID",
-						uuid = "31ab17ca-1766-b858-8c32-5e1ede7eab12",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Event",
-						dequeueIfLuaFalse = true,
-						eventArgOptionType = 2,
-						eventEntityContentID = 13639,
-						name = "Marker On Bird",
-						uuid = "831587ec-aa31-c05d-9716-7138cd1f2de9",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return data.ocGarulaRushingRumbleRampage == true",
-						dequeueIfLuaFalse = true,
-						name = "Is Rushing Rumble Rampage",
-						uuid = "3d093ac1-e37c-273a-b7d2-8459b1579b66",
-						version = 2,
-					},
-				},
-			},
-			eventType = 4,
-			name = "[NeoGarula] Rushing Rumble Bird Marked",
-			uuid = "c444fd4f-22b2-43d7-bdf3-9d3d6f951f6c",
-			version = 2,
-		},
-		inheritedIndex = 46,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "data.ocGarulaRushingRumbleRampage = true\nself.used=true",
-						conditions = 
-						{
-							
-							{
-								"3d713919-4904-c97e-bb72-5fba1cc7d8d1",
-								true,
-							},
-							
-							{
-								"831587ec-aa31-c05d-9716-7138cd1f2de9",
-								true,
-							},
-							
-							{
-								"31ab17ca-1766-b858-8c32-5e1ede7eab12",
-								true,
-							},
-						},
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Record Rushing Rumble Rampage",
-						uuid = "cfc2248e-d420-e105-be82-c70775882def",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local pi = math.pi\nlocal frontRight = -pi / 4\nlocal frontLeft = pi / 4\nlocal backRight = -(3 * pi) / 4\nlocal backLeft = (3 * pi) / 4\n\nlocal coneAngle = 45\nlocal coneRad = coneAngle * (pi / 180)\nlocal coneLength = 70\nlocal circleRadius = 30\nlocal birdHitRadius = 6\n\nlocal drawDuration = 9250\n\nlocal function normalizeHeading(heading)\n    return ((heading + pi) % (2 * pi)) - pi\nend\n\nlocal neoGarulaPos\nfor _, foundEntity in pairs(TensorCore.entityList(\"contentid=13638,attackable\")) do\n\tneoGarulaPos = foundEntity.pos\n\tbreak\nend\n\nlocal chatterbirdEnt = TensorCore.mGetEntity(data.ocGarulaMarkerBirdEntID)\nlocal chatterbirdPos = chatterbirdEnt.pos\n\nlocal garulaEndPoint = TensorCore.getPosInDirection(chatterbirdPos, chatterbirdPos.h, birdHitRadius)\ndata.ocGarulaPrevEndPoint = garulaEndPoint\n\nlocal garulaToEndPointHeading = TensorCore.getHeadingToTarget(neoGarulaPos, garulaEndPoint)\n--local garulaFrontRight = normalizeHeading(garulaToEndPointHeading + frontRight)\n--local garulaFrontLeft = normalizeHeading(garulaToEndPointHeading + frontLeft)\nlocal garulaBackRight = normalizeHeading(garulaToEndPointHeading + backRight)\nlocal garulaBackLeft = normalizeHeading(garulaToEndPointHeading + backLeft)\n\nlocal moogleDrawer = TensorCore.getMoogleDrawer()\n\nmoogleDrawer:addTimedCone(drawDuration,garulaEndPoint.x,garulaEndPoint.y,garulaEndPoint.z,coneLength,coneRad,garulaBackRight)\nmoogleDrawer:addTimedCone(drawDuration,garulaEndPoint.x,garulaEndPoint.y,garulaEndPoint.z,coneLength,coneRad,garulaBackLeft)\nmoogleDrawer:addTimedCircle(drawDuration,garulaEndPoint.x,garulaEndPoint.y,garulaEndPoint.z,circleRadius)\n\ndata.ocGarulaChargeCount = 1\n\nself.used=true",
-						conditions = 
-						{
-							
-							{
-								"3d713919-4904-c97e-bb72-5fba1cc7d8d1",
-								true,
-							},
-							
-							{
-								"831587ec-aa31-c05d-9716-7138cd1f2de9",
-								true,
-							},
-							
-							{
-								"a1b5af49-de07-7460-9a69-50545e276d84",
-								true,
-							},
-						},
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Draw AOE Charge 1",
-						uuid = "c4f1f772-3f43-ca0d-9b65-950c281fa28c",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1252,
-						name = "In OC",
-						uuid = "3d713919-4904-c97e-bb72-5fba1cc7d8d1",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Event",
-						dequeueIfLuaFalse = true,
-						eventArgOptionType = 2,
-						eventEntityContentID = 13638,
-						name = "Is Neo Garula",
-						uuid = "831587ec-aa31-c05d-9716-7138cd1f2de9",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Event",
-						dequeueIfLuaFalse = true,
-						eventArgOptionType = 3,
-						eventArgType = 2,
-						eventMarkerID = 578,
-						name = "Is Rushing Rumble (Rampage)",
-						spellIDList = 
-						{
-							41175,
-							41177,
-						},
-						uuid = "a1b5af49-de07-7460-9a69-50545e276d84",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Event",
-						dequeueIfLuaFalse = true,
-						eventArgType = 2,
-						eventMarkerID = 578,
-						eventSpellID = 41177,
-						name = "Is Rushing Rumble Rampage",
-						spellIDList = 
-						{
-							41175,
-							41177,
-						},
-						uuid = "31ab17ca-1766-b858-8c32-5e1ede7eab12",
-						version = 2,
-					},
-				},
-			},
-			eventType = 3,
-			name = "[NeoGarula] Rushing Rumble Cast",
-			uuid = "d82cd16f-eb3c-fed7-8319-a2657db41004",
-			version = 2,
-		},
+		inheritedIndex = 50,
 	},
 	
 	{
@@ -8679,6 +8926,422 @@ local tbl =
 			uuid = "4164913b-c2d1-83e0-a80e-9b0173165d94",
 			version = 2,
 		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Record Inter\")\ndata.ocGarulaIntercardLightning = true\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"3d713919-4904-c97e-bb72-5fba1cc7d8d1",
+								true,
+							},
+							
+							{
+								"31ab17ca-1766-b858-8c32-5e1ede7eab12",
+								true,
+							},
+						},
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Record Intercard Lightning",
+						uuid = "cfc2248e-d420-e105-be82-c70775882def",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Record Not Inter\")\ndata.ocGarulaIntercardLightning = false\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"3d713919-4904-c97e-bb72-5fba1cc7d8d1",
+								true,
+							},
+							
+							{
+								"cd5ab771-4d08-f43f-9eb7-43101d1310df",
+								true,
+							},
+						},
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Record Not Intercard Lightning",
+						uuid = "76ae3e74-c328-cd8f-b2e3-b478824dc606",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "3d713919-4904-c97e-bb72-5fba1cc7d8d1",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return eventArgs.newActiveAura2 == 2395",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventMarkerID = 578,
+						name = "Is Intercard",
+						uuid = "31ab17ca-1766-b858-8c32-5e1ede7eab12",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return eventArgs.oldActiveAura2 == 2395 and eventArgs.newActiveAura2 == 0",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventMarkerID = 578,
+						name = "Is Not Intercard",
+						uuid = "cd5ab771-4d08-f43f-9eb7-43101d1310df",
+						version = 2,
+					},
+				},
+			},
+			eventType = 25,
+			name = "[NeoGarula] Rushing Rumble Lightning Cones",
+			uuid = "ea473f7f-d006-97c2-86f4-b1c7f3e68a81",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Reset Inter\")\ndata.ocGarulaIntercardLightning = nil\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"3d713919-4904-c97e-bb72-5fba1cc7d8d1",
+								true,
+							},
+							
+							{
+								"31ab17ca-1766-b858-8c32-5e1ede7eab12",
+								true,
+							},
+							
+							{
+								"831587ec-aa31-c05d-9716-7138cd1f2de9",
+								true,
+							},
+							
+							{
+								"3d093ac1-e37c-273a-b7d2-8459b1579b66",
+								false,
+							},
+						},
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Reset Intercard Lightning",
+						uuid = "cae35620-9631-5118-bd87-f6b2dde56b36",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "data.ocGarulaMarkerBirdEntID = eventArgs.entityID\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"3d713919-4904-c97e-bb72-5fba1cc7d8d1",
+								true,
+							},
+							
+							{
+								"31ab17ca-1766-b858-8c32-5e1ede7eab12",
+								true,
+							},
+							
+							{
+								"831587ec-aa31-c05d-9716-7138cd1f2de9",
+								true,
+							},
+						},
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Record Bird Entity ID",
+						uuid = "cfc2248e-d420-e105-be82-c70775882def",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local pi = math.pi\nlocal back = pi\nlocal left = pi / 2\nlocal right = -pi / 2\n\nlocal coneAngle = 45\nlocal coneRad = coneAngle * (pi / 180)\nlocal coneLength = 70\nlocal circleRadius = 30\nlocal birdHitRadius = 6\n\nlocal drawDuration = 8750\nlocal drawDelay = 2500\n\nlocal function normalizeHeading(heading)\n    return ((heading + pi) % (2 * pi)) - pi\nend\n\nlocal chatterbirdEnt = TensorCore.mGetEntity(data.ocGarulaMarkerBirdEntID)\nlocal chatterbirdPos = chatterbirdEnt.pos\nlocal neoGarulaPos = data.ocGarulaPrevEndPoint\n\nif neoGarulaPos then\n\tlocal garulaEndPoint = TensorCore.getPosInDirection(chatterbirdPos, chatterbirdPos.h, birdHitRadius)\n\tdata.ocGarulaPrevEndPoint = garulaEndPoint\n\n\tlocal garulaToEndPointHeading = TensorCore.getHeadingToTarget(neoGarulaPos, garulaEndPoint)\n\n\tlocal directionOffsets = { 0, pi, pi / 2, -pi / 2 }\n\tif data.ocGarulaIntercardLightning then\n\t\tfor i = 1, #directionOffsets do\n\t\t\tdirectionOffsets[i] = directionOffsets[i] - (pi / 4)\n\t\tend\n\tend\n\n\tlocal moogleDrawer = TensorCore.getMoogleDrawer()\n\tfor _, offset in ipairs(directionOffsets) do\n\t\tlocal coneHeading = normalizeHeading(garulaToEndPointHeading + offset)\n\t\tmoogleDrawer:addTimedCone(drawDuration, garulaEndPoint.x, garulaEndPoint.y, garulaEndPoint.z, coneLength, coneRad, coneHeading, drawDelay)\n\tend\n\tmoogleDrawer:addTimedCircle(drawDuration,garulaEndPoint.x,garulaEndPoint.y,garulaEndPoint.z,circleRadius, drawDelay)\n\n\tdata.ocGarulaChargeCount = data.ocGarulaChargeCount + 1\n\tif data.ocGarulaChargeCount >= 3 then\n\t\tdata.ocGarulaRushingRumbleRampage = false\n\tend\nend\n\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"3d713919-4904-c97e-bb72-5fba1cc7d8d1",
+								true,
+							},
+							
+							{
+								"31ab17ca-1766-b858-8c32-5e1ede7eab12",
+								true,
+							},
+							
+							{
+								"831587ec-aa31-c05d-9716-7138cd1f2de9",
+								true,
+							},
+							
+							{
+								"3d093ac1-e37c-273a-b7d2-8459b1579b66",
+								true,
+							},
+						},
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Draw AOE Charge 2 & 3",
+						uuid = "4dbf96b7-f4b8-ef35-9f71-4331b377f382",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "3d713919-4904-c97e-bb72-5fba1cc7d8d1",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventMarkerID = 578,
+						name = "Marker ID",
+						uuid = "31ab17ca-1766-b858-8c32-5e1ede7eab12",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 13639,
+						name = "Marker On Bird",
+						uuid = "831587ec-aa31-c05d-9716-7138cd1f2de9",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.ocGarulaRushingRumbleRampage == true",
+						dequeueIfLuaFalse = true,
+						name = "Is Rushing Rumble Rampage",
+						uuid = "3d093ac1-e37c-273a-b7d2-8459b1579b66",
+						version = 2,
+					},
+				},
+			},
+			eventType = 4,
+			name = "[NeoGarula] Rushing Rumble Bird Marked",
+			uuid = "928ccec3-5d5d-5ed9-92a8-c334d943ae52",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "data.ocGarulaRushingRumbleRampage = true\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"3d713919-4904-c97e-bb72-5fba1cc7d8d1",
+								true,
+							},
+							
+							{
+								"831587ec-aa31-c05d-9716-7138cd1f2de9",
+								true,
+							},
+							
+							{
+								"31ab17ca-1766-b858-8c32-5e1ede7eab12",
+								true,
+							},
+						},
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Record Rushing Rumble Rampage",
+						uuid = "cfc2248e-d420-e105-be82-c70775882def",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local pi = math.pi\nlocal back = pi\nlocal left = pi / 2\nlocal right = -pi / 2\n\nlocal coneAngle = 45\nlocal coneRad = coneAngle * (pi / 180)\nlocal coneLength = 70\nlocal circleRadius = 30\nlocal birdHitRadius = 6\n\nlocal drawDuration = 10000\n\nlocal function normalizeHeading(heading)\n    return ((heading + pi) % (2 * pi)) - pi\nend\n\nlocal neoGarulaPos\nfor _, foundEntity in pairs(TensorCore.entityList(\"contentid=13638,attackable\")) do\n\tneoGarulaPos = foundEntity.pos\n\tbreak\nend\n\nlocal chatterbirdEnt = TensorCore.mGetEntity(data.ocGarulaMarkerBirdEntID)\nlocal chatterbirdPos = chatterbirdEnt.pos\n\nlocal garulaEndPoint = TensorCore.getPosInDirection(chatterbirdPos, chatterbirdPos.h, birdHitRadius)\ndata.ocGarulaPrevEndPoint = garulaEndPoint\n\nlocal garulaToEndPointHeading = TensorCore.getHeadingToTarget(neoGarulaPos, garulaEndPoint)\n\nlocal directionOffsets = { 0, pi, pi / 2, -pi / 2 }\nif data.ocGarulaIntercardLightning then\n    for i = 1, #directionOffsets do\n        directionOffsets[i] = directionOffsets[i] - (pi / 4)\n    end\nend\n\nlocal moogleDrawer = TensorCore.getMoogleDrawer()\nfor _, offset in ipairs(directionOffsets) do\n    local coneHeading = normalizeHeading(garulaToEndPointHeading + offset)\n    moogleDrawer:addTimedCone(drawDuration, garulaEndPoint.x, garulaEndPoint.y, garulaEndPoint.z, coneLength, coneRad, coneHeading)\nend\nmoogleDrawer:addTimedCircle(drawDuration,garulaEndPoint.x,garulaEndPoint.y,garulaEndPoint.z,circleRadius)\n\ndata.ocGarulaChargeCount = 1\n\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"3d713919-4904-c97e-bb72-5fba1cc7d8d1",
+								true,
+							},
+							
+							{
+								"831587ec-aa31-c05d-9716-7138cd1f2de9",
+								true,
+							},
+							
+							{
+								"a1b5af49-de07-7460-9a69-50545e276d84",
+								true,
+							},
+						},
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Draw AOE Charge 1",
+						uuid = "c4f1f772-3f43-ca0d-9b65-950c281fa28c",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "3d713919-4904-c97e-bb72-5fba1cc7d8d1",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 13638,
+						name = "Is Neo Garula",
+						uuid = "831587ec-aa31-c05d-9716-7138cd1f2de9",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 3,
+						eventArgType = 2,
+						eventMarkerID = 578,
+						name = "Is Rushing Rumble (Rampage)",
+						spellIDList = 
+						{
+							41175,
+							41177,
+						},
+						uuid = "a1b5af49-de07-7460-9a69-50545e276d84",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventMarkerID = 578,
+						eventSpellID = 41177,
+						name = "Is Rushing Rumble Rampage",
+						spellIDList = 
+						{
+							41175,
+							41177,
+						},
+						uuid = "31ab17ca-1766-b858-8c32-5e1ede7eab12",
+						version = 2,
+					},
+				},
+			},
+			eventType = 3,
+			name = "[NeoGarula] Rushing Rumble Cast",
+			throttleTime = 250,
+			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
+			version = 2,
+		},
+		inheritedIndex = 49,
 	}, 
 	inheritedProfiles = 
 	{
