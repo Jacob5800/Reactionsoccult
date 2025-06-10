@@ -4412,7 +4412,7 @@ local tbl =
 			uuid = "ba84c9d8-adc9-f0e6-81ea-cff5b1296909",
 			version = 2,
 		},
-		inheritedIndex = 28,
+		inheritedIndex = 29,
 	},
 	
 	{
@@ -4597,7 +4597,7 @@ local tbl =
 			uuid = "4e2f6e7f-2afc-a411-b017-8a8bf5ddc247",
 			version = 2,
 		},
-		inheritedIndex = 30,
+		inheritedIndex = 31,
 	},
 	
 	{
@@ -5162,7 +5162,7 @@ local tbl =
 			uuid = "d02f1d00-64c8-7239-8291-fef76f74db52",
 			version = 2,
 		},
-		inheritedIndex = 27,
+		inheritedIndex = 28,
 	},
 	
 	{
@@ -5671,10 +5671,10 @@ local tbl =
 			},
 			name = "P. Cannoneer Cannons",
 			throttleTime = 1500,
-			uuid = "0356c312-3cfa-68dd-b31e-c8ae10d1af28",
+			uuid = "8da73aae-57bf-86ea-9a65-353a607913dc",
 			version = 2,
 		},
-		inheritedIndex = 30,
+		inheritedIndex = 27,
 	},
 	
 	{
@@ -5969,7 +5969,7 @@ local tbl =
 			uuid = "07c6a030-6afd-9a0c-8e6e-1a4b88514b31",
 			version = 2,
 		},
-		inheritedIndex = 43,
+		inheritedIndex = 44,
 	},
 	
 	{
@@ -6417,7 +6417,7 @@ local tbl =
 			uuid = "988f3e4c-2dda-92d2-8702-0c90ee69af40",
 			version = 2,
 		},
-		inheritedIndex = 31,
+		inheritedIndex = 32,
 	},
 	
 	{
@@ -6810,7 +6810,7 @@ local tbl =
 			uuid = "fb45e2b2-c2e4-1403-8a4b-1c629f622026",
 			version = 2,
 		},
-		inheritedIndex = 34,
+		inheritedIndex = 35,
 	},
 	
 	{
@@ -6998,7 +6998,7 @@ local tbl =
 			uuid = "2b8ae391-8be0-a38b-94f9-d49e38186a1d",
 			version = 2,
 		},
-		inheritedIndex = 36,
+		inheritedIndex = 37,
 	},
 	
 	{
@@ -7297,7 +7297,7 @@ local tbl =
 			uuid = "ea03e1c6-c7fc-5241-ac55-989016a66864",
 			version = 2,
 		},
-		inheritedIndex = 38,
+		inheritedIndex = 39,
 	},
 	
 	{
@@ -7395,7 +7395,7 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 37,
+		inheritedIndex = 38,
 	},
 	
 	{
@@ -7805,7 +7805,7 @@ local tbl =
 			uuid = "c444fd4f-22b2-43d7-bdf3-9d3d6f951f6c",
 			version = 2,
 		},
-		inheritedIndex = 45,
+		inheritedIndex = 46,
 	},
 	
 	{
@@ -8614,6 +8614,69 @@ local tbl =
 			name = "[DeathClaw] Crosshatch OnEntityChannel",
 			throttleTime = 500,
 			uuid = "0baa1914-abcd-7175-8f51-0d15fb256a1b",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local orange = TensorCore.getStaticDrawer(GUI:ColorConvertFloat4ToU32(255/255, 128/255, 0/255, .25), 2)\n   \n-- Get current Roundel position and rotation\nlocal entity = TensorCore.mGetEntity(eventArgs.entityID)\nlocal arenaCenter = { x = 636, y = 108, z = -54 }\n   \n-- Calculate distance and rotation angle\nlocal distance = TensorCore.getDistance2d(arenaCenter, entity.pos)\nlocal rotationAngle = distance < 15 and math.rad(280) or math.rad(150)\n\n-- Determine rotation direction based on entity facing\nif TensorCore.getHeadingToTarget(arenaCenter, entity.pos) + math.pi/2 > entity.pos.h then\n    rotationAngle = -rotationAngle\nend\nlocal finalPos = TensorCore.rotatePosAroundPos(arenaCenter, entity.pos, rotationAngle)\n\n-- Draw at predicted final position\nd(\"[Lj] Drawing Orb Predicted Location\")\norange:addTimedCircle(5200, finalPos.x, entity.pos.y, finalPos.z, 12, 0, false)\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"11223834-0fdb-af78-b3b5-d5100bfbfeef",
+								true,
+							},
+							
+							{
+								"550e20d9-f13d-9dc3-89be-04cde5829013",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						uuid = "3e66e0d7-7e02-875d-9c36-5a335bbdf2c9",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						uuid = "11223834-0fdb-af78-b3b5-d5100bfbfeef",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return eventArgs.entityContentID == 13812 and eventArgs.oldActiveAura1 == 2428 and eventArgs.newActiveAura1 == 2429",
+						dequeueIfLuaFalse = true,
+						uuid = "550e20d9-f13d-9dc3-89be-04cde5829013",
+						version = 2,
+					},
+				},
+			},
+			eventType = 25,
+			name = "[On The Hunt] Orbs",
+			uuid = "4164913b-c2d1-83e0-a80e-9b0173165d94",
 			version = 2,
 		},
 	}, 
