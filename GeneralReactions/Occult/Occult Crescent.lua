@@ -8008,6 +8008,212 @@ local tbl =
 		{
 			actions = 
 			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "if not data.pGeoTogglesInitialised then\n\tdata.pGeoLevitatePartyEnabled = false\n\tdata.pGeoTogglesInitialised = true\nend",
+						conditions = 
+						{
+							
+							{
+								"c8473c58-50b2-e36e-978e-97c251f2527d",
+								true,
+							},
+						},
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Init",
+						uuid = "f824ba34-7a6a-8f76-aa79-e805614d632f",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "GUI:SetNextWindowSize(140, 50, GUI.SetCond_Always)\nGUI:Begin(\"Geo Levitate Toggle\", true, GUI.WindowFlags_NoTitleBar | GUI.WindowFlags_NoResize)\n\nif data.pGeoLevitatePartyEnabled then\n    GUI:PushStyleColor(GUI.Col_Button, 0.2, 0.7, 0.2, 1.0) -- Green\nelse\n    GUI:PushStyleColor(GUI.Col_Button, 0.7, 0.2, 0.2, 1.0) -- Red\nend\n\nif GUI:Button(\"Levitate Party\", 120, 35) then\n    data.pGeoLevitatePartyEnabled = not data.pGeoLevitatePartyEnabled\nend\n\n\nGUI:PopStyleColor()\n\nGUI:End()",
+						conditions = 
+						{
+							
+							{
+								"c8473c58-50b2-e36e-978e-97c251f2527d",
+								true,
+							},
+						},
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Draw",
+						uuid = "b84116e5-badb-44c3-b04f-0a372aceb5b3",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						buffID = 4364,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Phantom Geomancer",
+						uuid = "c8473c58-50b2-e36e-978e-97c251f2527d",
+						version = 2,
+					},
+				},
+			},
+			eventType = 13,
+			name = "P. Geomancer Levitate Toggle",
+			uuid = "608ec0d1-adf2-ec9d-8f73-8e6c280fbb5d",
+			version = 2,
+		},
+		inheritedIndex = 36,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						actionID = 41620,
+						conditions = 
+						{
+							
+							{
+								"dc067595-2ebe-4625-a548-1a90499d46f1",
+								true,
+							},
+							
+							{
+								"5c84db7a-5a39-f23e-be46-a4cb18d08ff8",
+								true,
+							},
+							
+							{
+								"0a49f18a-75ad-dbf1-9ca1-e4c496d8eead",
+								true,
+							},
+							
+							{
+								"86e868dc-33c3-6f2a-9a8b-1a3eb2fffe94",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_Hotbar_ArmsLength",
+						targetType = "Detection Target",
+						uuid = "9ec06c4c-b371-6720-973e-2d03f423be2a",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						buffID = 4364,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Phantom Geomancer",
+						uuid = "dc067595-2ebe-4625-a548-1a90499d46f1",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.pGeoLevitatePartyEnabled",
+						dequeueIfLuaFalse = true,
+						name = "Button Enabled",
+						uuid = "5c84db7a-5a39-f23e-be46-a4cb18d08ff8",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning",
+						dequeueIfLuaFalse = true,
+						name = "Assist Enabled",
+						uuid = "0a49f18a-75ad-dbf1-9ca1-e4c496d8eead",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 4258,
+						category = "Party",
+						name = "Missing Suspend",
+						partyTargetType = "Detection Target",
+						uuid = "361e2e5c-7107-cff1-ae22-b1b9fdd09481",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Party",
+						comparator = 2,
+						conditionType = 4,
+						inRangeValue = 30,
+						partyTargetType = "Detection Target",
+						uuid = "4cb72cee-b39d-b031-b616-976f9db6d064",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Filter",
+						conditions = 
+						{
+							
+							{
+								"361e2e5c-7107-cff1-ae22-b1b9fdd09481",
+								true,
+							},
+							
+							{
+								"4cb72cee-b39d-b031-b616-976f9db6d064",
+								true,
+							},
+						},
+						filterTargetType = "Party",
+						name = "Filter",
+						uuid = "86e868dc-33c3-6f2a-9a8b-1a3eb2fffe94",
+						version = 2,
+					},
+				},
+			},
+			name = "P. Geomancer Levitate Party",
+			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
+			version = 2,
+		},
+		inheritedIndex = 37,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
 			},
 			conditions = 
 			{
