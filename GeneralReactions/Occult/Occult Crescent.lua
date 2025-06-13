@@ -5565,7 +5565,7 @@ local tbl =
 			uuid = "ba84c9d8-adc9-f0e6-81ea-cff5b1296909",
 			version = 2,
 		},
-		inheritedIndex = 36,
+		inheritedIndex = 38,
 	},
 	
 	{
@@ -6488,7 +6488,7 @@ local tbl =
 			uuid = "07c6a030-6afd-9a0c-8e6e-1a4b88514b31",
 			version = 2,
 		},
-		inheritedIndex = 50,
+		inheritedIndex = 52,
 	},
 	
 	{
@@ -6936,7 +6936,7 @@ local tbl =
 			uuid = "988f3e4c-2dda-92d2-8702-0c90ee69af40",
 			version = 2,
 		},
-		inheritedIndex = 38,
+		inheritedIndex = 40,
 	},
 	
 	{
@@ -7329,7 +7329,7 @@ local tbl =
 			uuid = "fb45e2b2-c2e4-1403-8a4b-1c629f622026",
 			version = 2,
 		},
-		inheritedIndex = 41,
+		inheritedIndex = 43,
 	},
 	
 	{
@@ -7377,11 +7377,6 @@ local tbl =
 							},
 							
 							{
-								"2d8e383b-1d88-807a-898f-3071b08f66cc",
-								true,
-							},
-							
-							{
 								"15012492-bdd7-fe2d-b135-055c116ce1a5",
 								true,
 							},
@@ -7396,6 +7391,42 @@ local tbl =
 						name = "Zeninage",
 						uuid = "b8fb2967-ec8b-3e1a-90c2-d4cc7d3703c8",
 						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction4\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"e7de50ca-b2f8-752a-b528-db724f2d7054",
+								true,
+							},
+							
+							{
+								"2312ae26-c802-ad39-bbbf-0830ed918dac",
+								true,
+							},
+							
+							{
+								"e27ae646-5033-f9d0-8f32-0bab1ca37b02",
+								false,
+							},
+							
+							{
+								"de338056-3eb8-8b00-bb1a-532dec264c1d",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorMagnum3_CD",
+						name = "Fallback Deactivate",
+						uuid = "db0c3649-f11c-972b-be2c-14b0b0daaaa7",
 						version = 2.1,
 					},
 				},
@@ -7475,18 +7506,6 @@ local tbl =
 				{
 					data = 
 					{
-						category = "Lua",
-						conditionLua = "return ActionList:Get(5,34):CanCastResult() ~= 583",
-						dequeueIfLuaFalse = true,
-						name = "Has Coffer",
-						uuid = "2d8e383b-1d88-807a-898f-3071b08f66cc",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
 						comparator = 2,
 						conditionType = 6,
 						dequeueIfLuaFalse = true,
@@ -7511,13 +7530,25 @@ local tbl =
 						version = 2,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction4\"] == true",
+						dequeueIfLuaFalse = true,
+						name = "Is Queued",
+						uuid = "de338056-3eb8-8b00-bb1a-532dec264c1d",
+						version = 2,
+					},
+				},
 			},
 			name = "P. Sam Zeninage",
 			throttleTime = 1500,
-			uuid = "2b8ae391-8be0-a38b-94f9-d49e38186a1d",
+			uuid = "7a1f87f1-0933-dc19-a27d-03a45a3815ff",
 			version = 2,
 		},
-		inheritedIndex = 43,
+		inheritedIndex = 34,
 	},
 	
 	{
@@ -7525,6 +7556,85 @@ local tbl =
 		{
 			actions = 
 			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction3\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"e7de50ca-b2f8-752a-b528-db724f2d7054",
+								true,
+							},
+							
+							{
+								"2312ae26-c802-ad39-bbbf-0830ed918dac",
+								true,
+							},
+							
+							{
+								"e27ae646-5033-f9d0-8f32-0bab1ca37b02",
+								true,
+							},
+							
+							{
+								"f121b876-3d81-67e4-984a-68f2324c3835",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Stop Iainuki Moving",
+						uuid = "541f6628-d221-a65d-a4af-fce55b8192c8",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction3\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"e7de50ca-b2f8-752a-b528-db724f2d7054",
+								true,
+							},
+							
+							{
+								"2312ae26-c802-ad39-bbbf-0830ed918dac",
+								true,
+							},
+							
+							{
+								"e27ae646-5033-f9d0-8f32-0bab1ca37b02",
+								true,
+							},
+							
+							{
+								"b89deb6f-ac1d-7569-98b2-ce63b9dc89ac",
+								true,
+							},
+							
+							{
+								"14adbf47-bc44-a663-8e4c-471c85a8fbbd",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Stop Iainuki Range",
+						uuid = "7a30586b-afb1-298b-b285-ccdc1d541f54",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
 				
 				{
 					data = 
@@ -7550,17 +7660,22 @@ local tbl =
 							},
 							
 							{
+								"f121b876-3d81-67e4-984a-68f2324c3835",
+								false,
+							},
+							
+							{
 								"b89deb6f-ac1d-7569-98b2-ce63b9dc89ac",
 								true,
 							},
 							
 							{
-								"de4e6705-29c7-f3bf-a84a-10d02f778ba5",
+								"14adbf47-bc44-a663-8e4c-471c85a8fbbd",
 								true,
 							},
 							
 							{
-								"14adbf47-bc44-a663-8e4c-471c85a8fbbd",
+								"de4e6705-29c7-f3bf-a84a-10d02f778ba5",
 								true,
 							},
 							
@@ -7612,17 +7727,27 @@ local tbl =
 							},
 							
 							{
+								"f121b876-3d81-67e4-984a-68f2324c3835",
+								false,
+							},
+							
+							{
 								"b89deb6f-ac1d-7569-98b2-ce63b9dc89ac",
 								true,
 							},
 							
 							{
-								"de4e6705-29c7-f3bf-a84a-10d02f778ba5",
-								false,
+								"14adbf47-bc44-a663-8e4c-471c85a8fbbd",
+								true,
 							},
 							
 							{
-								"14adbf47-bc44-a663-8e4c-471c85a8fbbd",
+								"de4e6705-29c7-f3bf-a84a-10d02f778ba5",
+								true,
+							},
+							
+							{
+								"ffb8a6c7-8f05-1845-a5ca-69b9bd2649ac",
 								true,
 							},
 							
@@ -7633,13 +7758,13 @@ local tbl =
 							
 							{
 								"f94fb16c-6146-98e5-b2ac-a3cfa72b0d77",
-								true,
+								false,
 							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						name = "Iainuki CD Disabled",
-						uuid = "1f0a505a-83c9-d6ba-bebf-c93081ace1bb",
+						name = "Iainuki No Zeni CD Enabled",
+						uuid = "a88eaab4-100a-40c6-a917-88acd6a0831c",
 						variableTogglesType = 2,
 						version = 2.1,
 					},
@@ -7669,6 +7794,11 @@ local tbl =
 							},
 							
 							{
+								"f121b876-3d81-67e4-984a-68f2324c3835",
+								false,
+							},
+							
+							{
 								"b89deb6f-ac1d-7569-98b2-ce63b9dc89ac",
 								true,
 							},
@@ -7679,20 +7809,51 @@ local tbl =
 							},
 							
 							{
-								"96f785c1-0050-2b7d-98a1-6cf5027042e8",
-								true,
+								"de4e6705-29c7-f3bf-a84a-10d02f778ba5",
+								false,
 							},
 							
 							{
-								"f94fb16c-6146-98e5-b2ac-a3cfa72b0d77",
-								false,
+								"96f785c1-0050-2b7d-98a1-6cf5027042e8",
+								true,
 							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						name = "Iainuki No Zeni",
-						uuid = "a88eaab4-100a-40c6-a917-88acd6a0831c",
+						name = "Iainuki CD Disabled",
+						uuid = "1f0a505a-83c9-d6ba-bebf-c93081ace1bb",
 						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction3\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"e7de50ca-b2f8-752a-b528-db724f2d7054",
+								true,
+							},
+							
+							{
+								"2312ae26-c802-ad39-bbbf-0830ed918dac",
+								true,
+							},
+							
+							{
+								"e27ae646-5033-f9d0-8f32-0bab1ca37b02",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorMagnum3_CD",
+						name = "Fallback Deactivate",
+						uuid = "26b5ad51-d25f-fa37-8f04-0835d8d85068",
 						version = 2.1,
 					},
 				},
@@ -7738,9 +7899,33 @@ local tbl =
 				{
 					data = 
 					{
+						category = "Lua",
+						conditionLua = "return TensorCore.mGetPlayer():IsMoving()",
+						name = "Am Moving",
+						uuid = "f121b876-3d81-67e4-984a-68f2324c3835",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
 						conditionType = 5,
 						dequeueIfLuaFalse = true,
 						uuid = "b89deb6f-ac1d-7569-98b2-ce63b9dc89ac",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 6,
+						name = "Target <= 6y",
+						uuid = "14adbf47-bc44-a663-8e4c-471c85a8fbbd",
 						version = 2,
 					},
 				},
@@ -7760,12 +7945,11 @@ local tbl =
 				{
 					data = 
 					{
-						comparator = 2,
-						conditionType = 6,
+						category = "Lua",
+						conditionLua = "return TensorReactions_CurrentCombatTimer > 4.0",
 						dequeueIfLuaFalse = true,
-						inRangeValue = 6,
-						name = "Target <= 6y",
-						uuid = "14adbf47-bc44-a663-8e4c-471c85a8fbbd",
+						name = "Combat >= 4s",
+						uuid = "ffb8a6c7-8f05-1845-a5ca-69b9bd2649ac",
 						version = 2,
 					},
 				},
@@ -7789,7 +7973,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return ActionList:Get(5,34):CanCastResult() ~= 579 and ActionList:Get(5,34):CanCastResult() ~= 583",
+						conditionLua = "return ActionList:Get(5,34):CanCastResult() ~= 579",
 						dequeueIfLuaFalse = true,
 						name = "Has Zeninage",
 						uuid = "f94fb16c-6146-98e5-b2ac-a3cfa72b0d77",
@@ -7812,11 +7996,11 @@ local tbl =
 				},
 			},
 			name = "P. Sam Iainuki",
-			throttleTime = 1500,
-			uuid = "ea03e1c6-c7fc-5241-ac55-989016a66864",
+			throttleTime = 100,
+			uuid = "340ed7d0-1aad-89f7-be46-d0978596d6c0",
 			version = 2,
 		},
-		inheritedIndex = 45,
+		inheritedIndex = 37,
 	},
 	
 	{
@@ -7832,7 +8016,7 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
-		inheritedIndex = 35,
+		inheritedIndex = 36,
 	},
 	
 	{
@@ -7915,7 +8099,7 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 44,
+		inheritedIndex = 46,
 	},
 	
 	{
@@ -8192,7 +8376,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 50,
+		inheritedIndex = 52,
 	},
 	
 	{
@@ -9341,7 +9525,488 @@ local tbl =
 			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
 			version = 2,
 		},
-		inheritedIndex = 49,
+		inheritedIndex = 51,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "data.ocFTBRedPuddleCount = 0\ndata.ocFTBBluePuddleCount = 0\ndata.ocFTBSnowballTether = false\ndata.ocFTBSnowballTetherEntID = nil\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
+								true,
+							},
+							
+							{
+								"9480ace0-1972-dafa-b418-a87dd2b5d565",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Reset State",
+						uuid = "3b6c0a31-376b-be60-9d39-8ccdce241b6d",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4442,
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventSpellID = 42490,
+						name = "Is Decisive Battle",
+						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
+						version = 2,
+					},
+				},
+			},
+			eventType = 3,
+			name = "[FTB] Boss 2 Reset",
+			uuid = "e4df0c75-0fec-4c79-9c55-f892facb8a5b",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Frozen Fallout\", source = \"OC: FTB\" }\n\nlocal initDrawDuration = 11500\nlocal subDrawDuration = 5500\nlocal green = 1845559113\n\nlocal puddleCount = data.ocFTBBluePuddleCount\nlocal subDrawDelay = 8900 + (3100 * (puddleCount - 1))\n\nlocal player = TensorCore.mGetPlayer()\nlocal redStacks = TensorCore.getBuff(player.id, 4441).stacks\n\nlocal drawer\nif puddleCount < redStacks then\n    drawer = TensorCore.getStaticDrawer(green)\nelse\n    drawer = TensorCore.getMoogleDrawer()\nend\n\nlocal drawDuration\nif puddleCount == 0 then\n    drawDuration = initDrawDuration\nelse\n    drawDuration = subDrawDuration\nend\nlocal drawDelay = ((puddleCount > 0) and subDrawDelay) or 0\n\ndrawer:addTimedCircle(drawDuration, eventArgs.x, eventArgs.y, eventArgs.z, eventArgs.aoeLength, drawDelay)\n\ndata.ocFTBluePuddleCount = data.ocFTBBluePuddleCount + 1\nif data.ocFTBBluePuddleCount >= 4 then\n\tdata.ocFTBBluePuddleCount = 0\nend\n\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
+								true,
+							},
+							
+							{
+								"59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
+								true,
+							},
+							
+							{
+								"6087d150-59a5-9917-b436-a8a1370ecc7a",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Draw Safe Blue",
+						uuid = "3b6c0a31-376b-be60-9d39-8ccdce241b6d",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Frozen Fallout\", source = \"OC: FTB\" }\n\nlocal initDrawDuration = 11500\nlocal subDrawDuration = 5500\nlocal red = 1845494015\n\nlocal puddleCount = data.ocFTBRedPuddleCount\nlocal subDrawDelay = 8900 + (3100 * (puddleCount - 1))\n\nlocal player = TensorCore.mGetPlayer()\nlocal redStacks = TensorCore.getBuff(player.id, 4441).stacks\n\nlocal drawer\nif puddleCount < redStacks then\n    drawer = TensorCore.getStaticDrawer(red)\nelse\n    drawer = TensorCore.getMoogleDrawer()\nend\n\nlocal drawDuration\nif puddleCount == 0 then\n    drawDuration = initDrawDuration\nelse\n    drawDuration = subDrawDuration\nend\nlocal drawDelay = ((puddleCount > 0) and subDrawDelay) or 0\n\ndrawer:addTimedCircle(drawDuration, eventArgs.x, eventArgs.y, eventArgs.z, eventArgs.aoeLength, drawDelay)\n\ndata.ocFTBRedPuddleCount = data.ocFTBRedPuddleCount + 1\nif data.ocFTBRedPuddleCount >= 4 then\n\tdata.ocFTBRedPuddleCount = 0\nend\n\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
+								true,
+							},
+							
+							{
+								"59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
+								true,
+							},
+							
+							{
+								"addac3ce-872f-d54a-8035-3e3d9ba538d3",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Draw Unsafe Red",
+						uuid = "0c0ef14a-70a8-2590-9882-4a0ef8045554",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Frozen Fallout\", source = \"OC: FTB\" }\n\nlocal initDrawDuration = 11500\nlocal subDrawDuration = 5500\nlocal green = 1845559113\n\nlocal puddleCount = data.ocFTBRedPuddleCount\nlocal subDrawDelay = 8900 + (3100 * (puddleCount - 1))\n\nlocal player = TensorCore.mGetPlayer()\nlocal blueStacks = TensorCore.getBuff(player.id, 4442).stacks\n\nlocal drawer\nif puddleCount < blueStacks then\n    drawer = TensorCore.getStaticDrawer(green)\nelse\n    drawer = TensorCore.getMoogleDrawer()\nend\n\nlocal drawDuration\nif puddleCount == 0 then\n    drawDuration = initDrawDuration\nelse\n    drawDuration = subDrawDuration\nend\nlocal drawDelay = ((puddleCount > 0) and subDrawDelay) or 0\n\ndrawer:addTimedCircle(drawDuration, eventArgs.x, eventArgs.y, eventArgs.z, eventArgs.aoeLength, drawDelay)\n\ndata.ocFTBRedPuddleCount = data.ocFTBRedPuddleCount + 1\nif data.ocFTBRedPuddleCount >= 4 then\n\tdata.ocFTBRedPuddleCount = 0\nend\n\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
+								true,
+							},
+							
+							{
+								"9480ace0-1972-dafa-b418-a87dd2b5d565",
+								true,
+							},
+							
+							{
+								"addac3ce-872f-d54a-8035-3e3d9ba538d3",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Draw Safe Red",
+						uuid = "d564de9b-69b5-dcad-a0e5-0e7ca51075ce",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Frozen Fallout\", source = \"OC: FTB\" }\n\nlocal initDrawDuration = 11500\nlocal subDrawDuration = 5500\nlocal red = 1845494015\n\nlocal puddleCount = data.ocFTBluePuddleCount\nlocal subDrawDelay = 8900 + (3100 * (puddleCount - 1))\n\nlocal player = TensorCore.mGetPlayer()\nlocal blueStacks = TensorCore.getBuff(player.id, 4442).stacks\n\nlocal drawer\nif puddleCount < blueStacks then\n    drawer = TensorCore.getStaticDrawer(red)\nelse\n    drawer = TensorCore.getMoogleDrawer()\nend\n\nlocal drawDuration\nif puddleCount == 0 then\n    drawDuration = initDrawDuration\nelse\n    drawDuration = subDrawDuration\nend\nlocal drawDelay = ((puddleCount > 0) and subDrawDelay) or 0\n\ndrawer:addTimedCircle(drawDuration, eventArgs.x, eventArgs.y, eventArgs.z, eventArgs.aoeLength, drawDelay)\n\ndata.ocFTBBluePuddleCount = data.ocFTBBluePuddleCount + 1\nif data.ocFTBBluePuddleCount >= 4 then\n\tdata.ocFTBBluePuddleCount = 0\nend\n\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
+								true,
+							},
+							
+							{
+								"9480ace0-1972-dafa-b418-a87dd2b5d565",
+								true,
+							},
+							
+							{
+								"6087d150-59a5-9917-b436-a8a1370ecc7a",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Draw Unsafe Blue",
+						uuid = "10a32660-5a08-5c09-8825-6aae2ed1503a",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "2abe0922-6a71-5ad7-8451-5db61edcb31b",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4441,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Has Nova Ooze",
+						uuid = "59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4442,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Has Ice Ooze",
+						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return eventArgs.aoeID == 42463",
+						dequeueIfLuaFalse = true,
+						name = "Is Red Puddle",
+						uuid = "addac3ce-872f-d54a-8035-3e3d9ba538d3",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return eventArgs.aoeID == 42464",
+						dequeueIfLuaFalse = true,
+						name = "Is Blue Puddle",
+						uuid = "6087d150-59a5-9917-b436-a8a1370ecc7a",
+						version = 2,
+					},
+				},
+			},
+			eventType = 18,
+			name = "[FTB] Boss 2 Puddles",
+			uuid = "dcb054fb-5688-57af-9235-97db9e5595e2",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "TensorCore.getStaticDrawer(1845559113):addTimedCircleOnEnt(10500, eventArgs.entityID, 5)\nself.used=true",
+						alertTTS = true,
+						alertText = "Tether on You",
+						conditions = 
+						{
+							
+							{
+								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
+								true,
+							},
+							
+							{
+								"59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Track Nereid",
+						uuid = "882c89d8-3cea-e041-9b35-6e9a2e49dba9",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "TensorCore.getStaticDrawer(1862205570):addTimedCircleOnEnt(10500, eventArgs.entityID, 5)\nself.used=true",
+						alertTTS = true,
+						alertText = "Tether on You",
+						conditions = 
+						{
+							
+							{
+								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
+								true,
+							},
+							
+							{
+								"833c5aa4-51fe-0b72-9f5e-1f711df544ba",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Track Phobos",
+						uuid = "6a7a9fbc-2ebf-56c6-9913-9811f3a2a25e",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "2abe0922-6a71-5ad7-8451-5db61edcb31b",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4441,
+						category = "Lua",
+						conditionLua = "return eventArgs.isVisible and TensorCore.mGetEntity(eventArgs.entityID).contentid == 13857",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 13730,
+						name = "Is Nereid (Green)",
+						uuid = "59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return eventArgs.isVisible and TensorCore.mGetEntity(eventArgs.entityID).contentid == 13733",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventSpellID = 42421,
+						name = "Is Phobos (Purple)",
+						uuid = "833c5aa4-51fe-0b72-9f5e-1f711df544ba",
+						version = 2,
+					},
+				},
+			},
+			eventType = 22,
+			name = "[FTB] Boss 2 Fireballs",
+			uuid = "49060241-9e3f-7cac-804b-00f22d16e051",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Alert",
+						actionLua = "AnyoneCore.Shotcall(\"Tether on You\", true, timer, important, volume)\nself.used=true",
+						alertTTS = true,
+						alertText = "Tether on You",
+						conditions = 
+						{
+							
+							{
+								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
+								true,
+							},
+							
+							{
+								"59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
+								true,
+							},
+						},
+						gVar = "ACR_TensorWeeb3_CD",
+						uuid = "882c89d8-3cea-e041-9b35-6e9a2e49dba9",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local snowballPos = TensorCore.mGetEntity(eventArgs.sourceEntityID).pos\n\nlocal nereidPos\nfor _, foundEntity in pairs(TensorCore.entityList(\"contentid=13731,attackable\")) do\n\tnereidPos = foundEntity.pos\n\tbreak\nend\n\nlocal snowballToNereidHeading = TensorCore.getHeadingToTarget(snowballPos, nereidPos)\nTensorCore.getStaticDrawer(1845559113):addTimedArrow(6000, nereidPos.x, nereidPos.y, nereidPos.z, snowballToNereidHeading, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t10, 1)\n\nself.used=true",
+						alertTTS = true,
+						alertText = "Tether on You",
+						conditions = 
+						{
+							
+							{
+								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
+								true,
+							},
+							
+							{
+								"59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Draw Arrow",
+						uuid = "6a7a9fbc-2ebf-56c6-9913-9811f3a2a25e",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "2abe0922-6a71-5ad7-8451-5db61edcb31b",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4441,
+						category = "Lua",
+						conditionLua = "local player = TensorCore.mGetPlayer()\nreturn eventArgs.newTargetID == player.id and eventArgs.newTetherID == 246",
+						dequeueIfLuaFalse = true,
+						name = "Has Tether",
+						uuid = "59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
+						version = 2,
+					},
+				},
+			},
+			eventType = 15,
+			name = "[FTB] Boss 2 Snowball Tether",
+			throttleTime = 1250,
+			uuid = "6f59f82c-6eca-9703-b3db-8c94e14d1ae8",
+			version = 2,
+		},
 	}, 
 	inheritedProfiles = 
 	{
