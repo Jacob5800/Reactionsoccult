@@ -875,7 +875,7 @@ local tbl =
 			uuid = "41d0f0ef-c4ea-6f7d-b4d5-b336f4d41284",
 			version = 2,
 		},
-		inheritedIndex = 6,
+		inheritedIndex = 7,
 	},
 	
 	{
@@ -944,7 +944,7 @@ local tbl =
 			uuid = "4e2f6e7f-2afc-a411-b017-8a8bf5ddc247",
 			version = 2,
 		},
-		inheritedIndex = 7,
+		inheritedIndex = 8,
 	},
 	
 	{
@@ -1305,7 +1305,7 @@ local tbl =
 			uuid = "c27a84af-fc0f-e48c-8c66-112f503d61b2",
 			version = 2,
 		},
-		inheritedIndex = 8,
+		inheritedIndex = 9,
 	},
 	
 	{
@@ -1509,7 +1509,7 @@ local tbl =
 			uuid = "d02f1d00-64c8-7239-8291-fef76f74db52",
 			version = 2,
 		},
-		inheritedIndex = 9,
+		inheritedIndex = 10,
 	},
 	
 	{
@@ -1679,7 +1679,7 @@ local tbl =
 			uuid = "002ce728-0d37-9d87-9218-caf9da0b1a65",
 			version = 2,
 		},
-		inheritedIndex = 10,
+		inheritedIndex = 11,
 	},
 	
 	{
@@ -1812,7 +1812,7 @@ local tbl =
 			uuid = "1017b58d-f39f-e551-a652-11aaff349c79",
 			version = 2,
 		},
-		inheritedIndex = 11,
+		inheritedIndex = 12,
 	},
 	
 	{
@@ -2149,33 +2149,39 @@ local tbl =
 						{
 							
 							{
-								"d8720967-962e-a798-b184-d2ca5366f741",
+								"a9b88350-2ec7-4cf1-b280-4a09d50599df",
 								true,
 							},
 							
 							{
-								"15447371-b7b2-205c-879f-6c9b8f3492f4",
+								"15e5b8fb-df9c-820c-b1a5-52018a844a0b",
 								true,
 							},
 							
 							{
-								"e930a2b8-8623-f4bd-a86a-4025d41e6e91",
+								"c9323a23-d798-92ea-a934-5808aff57633",
 								true,
 							},
 							
 							{
-								"4bf7209d-8c34-782c-a4dd-63b77e3e4ae6",
+								"c0b2345f-4fbe-2e11-883b-6f1a10584769",
+								false,
+							},
+							
+							{
+								"29f23351-52ca-b461-91cc-93f0b0e10321",
 								true,
 							},
 							
 							{
-								"545c4e2e-fb48-d9e3-b695-3ab27bf011ad",
+								"f66ceece-6cb6-90e8-b592-76a5836dbf06",
 								true,
 							},
 						},
 						gVar = "ACR_RikuWAR3_CD",
-						targetType = "Target of Current Target",
-						uuid = "8020dfc9-8a08-9162-91c4-c9a4a69daab4",
+						ignoreWeaveRules = true,
+						name = "Battle Bell Not In Combat",
+						uuid = "17997d14-5af1-4dea-9340-bdbc1e2c0b93",
 						version = 2.1,
 					},
 					inheritedIndex = 1,
@@ -2189,36 +2195,139 @@ local tbl =
 						{
 							
 							{
-								"d8720967-962e-a798-b184-d2ca5366f741",
+								"a9b88350-2ec7-4cf1-b280-4a09d50599df",
 								true,
 							},
 							
 							{
-								"15447371-b7b2-205c-879f-6c9b8f3492f4",
+								"15e5b8fb-df9c-820c-b1a5-52018a844a0b",
 								true,
 							},
 							
 							{
-								"e930a2b8-8623-f4bd-a86a-4025d41e6e91",
+								"bfce063d-cda4-aae4-8cb4-47aaa5bd4c9e",
 								true,
 							},
 							
 							{
-								"4bf7209d-8c34-782c-a4dd-63b77e3e4ae6",
+								"c9323a23-d798-92ea-a934-5808aff57633",
 								true,
 							},
 							
 							{
-								"545c4e2e-fb48-d9e3-b695-3ab27bf011ad",
-								false,
+								"c0b2345f-4fbe-2e11-883b-6f1a10584769",
+								true,
+							},
+							
+							{
+								"29f23351-52ca-b461-91cc-93f0b0e10321",
+								true,
+							},
+							
+							{
+								"f66ceece-6cb6-90e8-b592-76a5836dbf06",
+								true,
 							},
 						},
 						gVar = "ACR_RikuWAR3_CD",
-						ignoreWeaveRules = true,
-						uuid = "ba53d819-261f-6c17-aafe-5a272d9b52fd",
+						name = "Battle Bell In Combat",
+						uuid = "86fc8ed6-5ccb-dbf3-bcb5-e4e38d195053",
 						version = 2.1,
 					},
-					inheritedIndex = 1,
+					inheritedIndex = 2,
+					inheritedOverwrites = 
+					{
+						conditions = 
+						{
+							
+							{
+								type = "remove",
+								value = 
+								{
+									"d8720967-962e-a798-b184-d2ca5366f741",
+									true,
+								},
+							},
+							
+							{
+								position = 1,
+								type = "add",
+								value = 
+								{
+									"4bf7209d-8c34-782c-a4dd-63b77e3e4ae6",
+									true,
+								},
+							},
+							
+							{
+								type = "add",
+								value = 
+								{
+									"c4ae7583-ea9c-83b4-819e-c3f5d969fec1",
+									true,
+								},
+							},
+							
+							{
+								type = "add",
+								value = 
+								{
+									"1bd49bca-4e66-cdf9-b946-1b57d123c7d8",
+									true,
+								},
+							},
+						},
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 41611,
+						conditions = 
+						{
+							
+							{
+								"a9b88350-2ec7-4cf1-b280-4a09d50599df",
+								true,
+							},
+							
+							{
+								"15e5b8fb-df9c-820c-b1a5-52018a844a0b",
+								true,
+							},
+							
+							{
+								"bfce063d-cda4-aae4-8cb4-47aaa5bd4c9e",
+								true,
+							},
+							
+							{
+								"c9323a23-d798-92ea-a934-5808aff57633",
+								true,
+							},
+							
+							{
+								"c0b2345f-4fbe-2e11-883b-6f1a10584769",
+								true,
+							},
+							
+							{
+								"29f23351-52ca-b461-91cc-93f0b0e10321",
+								true,
+							},
+							
+							{
+								"f66ceece-6cb6-90e8-b592-76a5836dbf06",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Battle Bell Tank",
+						targetType = "Target of Current Target",
+						uuid = "8c8bb21a-4351-26f6-b8e2-4a528e484a5b",
+						version = 2.1,
+					},
 				},
 			},
 			conditions = 
@@ -2227,17 +2336,14 @@ local tbl =
 				{
 					data = 
 					{
-						category = "Self",
-						conditionType = 12,
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
 						dequeueIfLuaFalse = true,
-						localMapIDList = 
-						{
-							1252,
-						},
-						name = "South Horn",
-						uuid = "d8720967-962e-a798-b184-d2ca5366f741",
+						name = "Bot Running",
+						uuid = "a9b88350-2ec7-4cf1-b280-4a09d50599df",
 						version = 2,
 					},
+					inheritedIndex = 1,
 				},
 				
 				{
@@ -2246,8 +2352,8 @@ local tbl =
 						buffID = 4364,
 						category = "Self",
 						dequeueIfLuaFalse = true,
-						name = "Is Geomancer",
-						uuid = "15447371-b7b2-205c-879f-6c9b8f3492f4",
+						name = "Is P. Geomancer",
+						uuid = "15e5b8fb-df9c-820c-b1a5-52018a844a0b",
 						version = 2,
 					},
 				},
@@ -2255,12 +2361,11 @@ local tbl =
 				{
 					data = 
 					{
-						actionID = 41611,
 						category = "Self",
-						comparator = 2,
-						conditionType = 4,
+						conditionType = 7,
 						dequeueIfLuaFalse = true,
-						uuid = "e930a2b8-8623-f4bd-a86a-4025d41e6e91",
+						name = "In Combat",
+						uuid = "bfce063d-cda4-aae4-8cb4-47aaa5bd4c9e",
 						version = 2,
 					},
 					inheritedIndex = 3,
@@ -2269,25 +2374,28 @@ local tbl =
 				{
 					data = 
 					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						actionCDValue = 1.5,
+						actionID = 41611,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
 						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "4bf7209d-8c34-782c-a4dd-63b77e3e4ae6",
+						name = "Battle Bell CD <= 1.5s",
+						uuid = "c9323a23-d798-92ea-a934-5808aff57633",
 						version = 2,
 					},
-					inheritedIndex = 5,
 				},
 				
 				{
 					data = 
 					{
 						buffCheckType = 3,
-						buffDuration = 5,
+						buffDuration = 3,
 						buffID = 4251,
 						category = "Self",
+						dequeueIfLuaFalse = true,
 						name = "Has Battle Bell",
-						uuid = "545c4e2e-fb48-d9e3-b695-3ab27bf011ad",
+						uuid = "c0b2345f-4fbe-2e11-883b-6f1a10584769",
 						version = 2,
 					},
 				},
@@ -2306,7 +2414,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						matchAnyBuff = true,
 						name = "Not Invuln",
-						uuid = "c4ae7583-ea9c-83b4-819e-c3f5d969fec1",
+						uuid = "29f23351-52ca-b461-91cc-93f0b0e10321",
 						version = 2,
 					},
 				},
@@ -2318,16 +2426,17 @@ local tbl =
 						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
-						uuid = "1bd49bca-4e66-cdf9-b946-1b57d123c7d8",
+						uuid = "f66ceece-6cb6-90e8-b592-76a5836dbf06",
 						version = 2,
 					},
 				},
 			},
-			name = "[Geo] Battle Bell",
-			uuid = "bdd49282-6293-25e3-a474-c8bd374e40f0",
+			name = "P. Geomancer Battle Bell",
+			throttleTime = 1250,
+			uuid = "f54a354e-293a-9e76-98e9-0251950cb971",
 			version = 2,
 		},
-		inheritedIndex = 25,
+		inheritedIndex = 14,
 	},
 	
 	{
@@ -2647,7 +2756,7 @@ local tbl =
 			uuid = "c944e914-e7fe-ad3d-b61d-adeb57939f5f",
 			version = 2,
 		},
-		inheritedIndex = 20,
+		inheritedIndex = 21,
 	},
 	
 	{
@@ -2812,7 +2921,7 @@ local tbl =
 			uuid = "f002c1b7-06d1-6521-a194-18da8de47602",
 			version = 2,
 		},
-		inheritedIndex = 21,
+		inheritedIndex = 22,
 	},
 	
 	{
@@ -3501,7 +3610,7 @@ local tbl =
 			uuid = "a6c7e7ac-46cf-12e7-ae07-883da63ba66c",
 			version = 2,
 		},
-		inheritedIndex = 26,
+		inheritedIndex = 27,
 	},
 	
 	{
@@ -3673,7 +3782,7 @@ local tbl =
 			uuid = "c18517b0-1e34-1d83-8176-9f1d38d51541",
 			version = 2,
 		},
-		inheritedIndex = 21,
+		inheritedIndex = 22,
 	},
 	
 	{
@@ -3823,7 +3932,7 @@ local tbl =
 			uuid = "9f00e291-a1de-4adf-8ae0-c21f1280e8d4",
 			version = 2,
 		},
-		inheritedIndex = 28,
+		inheritedIndex = 29,
 	},
 	
 	{
@@ -4413,7 +4522,7 @@ local tbl =
 			uuid = "dc304137-5b9c-951b-b18a-6efe4661c609",
 			version = 2,
 		},
-		inheritedIndex = 29,
+		inheritedIndex = 30,
 	},
 	
 	{
@@ -5565,7 +5674,7 @@ local tbl =
 			uuid = "ba84c9d8-adc9-f0e6-81ea-cff5b1296909",
 			version = 2,
 		},
-		inheritedIndex = 38,
+		inheritedIndex = 39,
 	},
 	
 	{
@@ -6193,7 +6302,7 @@ local tbl =
 			uuid = "8da73aae-57bf-86ea-9a65-353a607913dc",
 			version = 2,
 		},
-		inheritedIndex = 33,
+		inheritedIndex = 34,
 	},
 	
 	{
@@ -6488,7 +6597,7 @@ local tbl =
 			uuid = "07c6a030-6afd-9a0c-8e6e-1a4b88514b31",
 			version = 2,
 		},
-		inheritedIndex = 52,
+		inheritedIndex = 53,
 	},
 	
 	{
@@ -6936,7 +7045,7 @@ local tbl =
 			uuid = "988f3e4c-2dda-92d2-8702-0c90ee69af40",
 			version = 2,
 		},
-		inheritedIndex = 40,
+		inheritedIndex = 41,
 	},
 	
 	{
@@ -7329,7 +7438,7 @@ local tbl =
 			uuid = "fb45e2b2-c2e4-1403-8a4b-1c629f622026",
 			version = 2,
 		},
-		inheritedIndex = 43,
+		inheritedIndex = 44,
 	},
 	
 	{
@@ -7548,7 +7657,7 @@ local tbl =
 			uuid = "7a1f87f1-0933-dc19-a27d-03a45a3815ff",
 			version = 2,
 		},
-		inheritedIndex = 34,
+		inheritedIndex = 35,
 	},
 	
 	{
@@ -8000,7 +8109,7 @@ local tbl =
 			uuid = "340ed7d0-1aad-89f7-be46-d0978596d6c0",
 			version = 2,
 		},
-		inheritedIndex = 37,
+		inheritedIndex = 38,
 	},
 	
 	{
@@ -8069,7 +8178,7 @@ local tbl =
 			uuid = "608ec0d1-adf2-ec9d-8f73-8e6c280fbb5d",
 			version = 2,
 		},
-		inheritedIndex = 36,
+		inheritedIndex = 37,
 	},
 	
 	{
@@ -8206,7 +8315,7 @@ local tbl =
 			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
 			version = 2,
 		},
-		inheritedIndex = 37,
+		inheritedIndex = 38,
 	},
 	
 	{
@@ -8222,7 +8331,7 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
-		inheritedIndex = 36,
+		inheritedIndex = 37,
 	},
 	
 	{
@@ -8305,7 +8414,7 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 46,
+		inheritedIndex = 47,
 	},
 	
 	{
@@ -8582,7 +8691,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 52,
+		inheritedIndex = 53,
 	},
 	
 	{
@@ -9731,7 +9840,7 @@ local tbl =
 			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
 			version = 2,
 		},
-		inheritedIndex = 51,
+		inheritedIndex = 52,
 	},
 	
 	{
@@ -9812,8 +9921,10 @@ local tbl =
 				{
 					data = 
 					{
-						aType = "Lua",
+						aType = "Alert",
 						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Frozen Fallout\", source = \"OC: FTB\" }\n\nlocal initDrawDuration = 11500\nlocal subDrawDuration = 5500\nlocal green = 1845559113\n\nlocal puddleCount = data.ocFTBBluePuddleCount\nlocal subDrawDelay = 8900 + (3100 * (puddleCount - 1))\n\nlocal player = TensorCore.mGetPlayer()\nlocal redStacks = TensorCore.getBuff(player.id, 4441).stacks\n\nlocal drawer\nif puddleCount < redStacks then\n    drawer = TensorCore.getStaticDrawer(green)\nelse\n    drawer = TensorCore.getMoogleDrawer()\nend\n\nlocal drawDuration\nif puddleCount == 0 then\n    drawDuration = initDrawDuration\nelse\n    drawDuration = subDrawDuration\nend\nlocal drawDelay = ((puddleCount > 0) and subDrawDelay) or 0\n\ndrawer:addTimedCircle(drawDuration, eventArgs.x, eventArgs.y, eventArgs.z, eventArgs.aoeLength, drawDelay)\n\ndata.ocFTBBluePuddleCount = data.ocFTBBluePuddleCount + 1\n\nself.used=true",
+						alertTTS = true,
+						alertText = "Stand in Green",
 						conditions = 
 						{
 							
@@ -9828,107 +9939,14 @@ local tbl =
 							},
 							
 							{
-								"6087d150-59a5-9917-b436-a8a1370ecc7a",
+								"9480ace0-1972-dafa-b418-a87dd2b5d565",
 								true,
 							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuMNK3_CD",
-						name = "Draw Safe Blue",
+						name = "TTS",
 						uuid = "3b6c0a31-376b-be60-9d39-8ccdce241b6d",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Frozen Fallout\", source = \"OC: FTB\" }\n\nlocal initDrawDuration = 11500\nlocal subDrawDuration = 5500\nlocal red = 1845494015\n\nlocal puddleCount = data.ocFTBRedPuddleCount\nlocal subDrawDelay = 8900 + (3100 * (puddleCount - 1))\n\nlocal player = TensorCore.mGetPlayer()\nlocal redStacks = TensorCore.getBuff(player.id, 4441).stacks\n\nlocal drawer\nif puddleCount < redStacks then\n    drawer = TensorCore.getStaticDrawer(red)\nelse\n    drawer = TensorCore.getMoogleDrawer()\nend\n\nlocal drawDuration\nif puddleCount == 0 then\n    drawDuration = initDrawDuration\nelse\n    drawDuration = subDrawDuration\nend\nlocal drawDelay = ((puddleCount > 0) and subDrawDelay) or 0\n\ndrawer:addTimedCircle(drawDuration, eventArgs.x, eventArgs.y, eventArgs.z, eventArgs.aoeLength, drawDelay)\n\ndata.ocFTBRedPuddleCount = data.ocFTBRedPuddleCount + 1\n\nself.used=true",
-						conditions = 
-						{
-							
-							{
-								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
-								true,
-							},
-							
-							{
-								"59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
-								true,
-							},
-							
-							{
-								"addac3ce-872f-d54a-8035-3e3d9ba538d3",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuMNK3_CD",
-						name = "Draw Unsafe Red",
-						uuid = "0c0ef14a-70a8-2590-9882-4a0ef8045554",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Frozen Fallout\", source = \"OC: FTB\" }\n\nlocal initDrawDuration = 11500\nlocal subDrawDuration = 5500\nlocal green = 1845559113\n\nlocal puddleCount = data.ocFTBRedPuddleCount\nlocal subDrawDelay = 8900 + (3100 * (puddleCount - 1))\n\nlocal player = TensorCore.mGetPlayer()\nlocal blueStacks = TensorCore.getBuff(player.id, 4442).stacks\n\nlocal drawer\nif puddleCount < blueStacks then\n    drawer = TensorCore.getStaticDrawer(green)\nelse\n    drawer = TensorCore.getMoogleDrawer()\nend\n\nlocal drawDuration\nif puddleCount == 0 then\n    drawDuration = initDrawDuration\nelse\n    drawDuration = subDrawDuration\nend\nlocal drawDelay = ((puddleCount > 0) and subDrawDelay) or 0\n\ndrawer:addTimedCircle(drawDuration, eventArgs.x, eventArgs.y, eventArgs.z, eventArgs.aoeLength, drawDelay)\n\ndata.ocFTBRedPuddleCount = data.ocFTBRedPuddleCount + 1\n\nself.used=true",
-						conditions = 
-						{
-							
-							{
-								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
-								true,
-							},
-							
-							{
-								"9480ace0-1972-dafa-b418-a87dd2b5d565",
-								true,
-							},
-							
-							{
-								"addac3ce-872f-d54a-8035-3e3d9ba538d3",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuMNK3_CD",
-						name = "Draw Safe Red",
-						uuid = "d564de9b-69b5-dcad-a0e5-0e7ca51075ce",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Frozen Fallout\", source = \"OC: FTB\" }\n\nlocal initDrawDuration = 11500\nlocal subDrawDuration = 5500\nlocal red = 1845494015\n\nlocal puddleCount = data.ocFTBBluePuddleCount\nlocal subDrawDelay = 8900 + (3100 * (puddleCount - 1))\n\nlocal player = TensorCore.mGetPlayer()\nlocal blueStacks = TensorCore.getBuff(player.id, 4442).stacks\n\nlocal drawer\nif puddleCount < blueStacks then\n    drawer = TensorCore.getStaticDrawer(red)\nelse\n    drawer = TensorCore.getMoogleDrawer()\nend\n\nlocal drawDuration\nif puddleCount == 0 then\n    drawDuration = initDrawDuration\nelse\n    drawDuration = subDrawDuration\nend\nlocal drawDelay = ((puddleCount > 0) and subDrawDelay) or 0\n\ndrawer:addTimedCircle(drawDuration, eventArgs.x, eventArgs.y, eventArgs.z, eventArgs.aoeLength, drawDelay)\n\ndata.ocFTBBluePuddleCount = data.ocFTBBluePuddleCount + 1\n\nself.used=true",
-						conditions = 
-						{
-							
-							{
-								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
-								true,
-							},
-							
-							{
-								"9480ace0-1972-dafa-b418-a87dd2b5d565",
-								true,
-							},
-							
-							{
-								"6087d150-59a5-9917-b436-a8a1370ecc7a",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuMNK3_CD",
-						name = "Draw Unsafe Blue",
-						uuid = "10a32660-5a08-5c09-8825-6aae2ed1503a",
 						version = 2.1,
 					},
 				},
@@ -9953,9 +9971,11 @@ local tbl =
 					data = 
 					{
 						buffID = 4441,
-						category = "Self",
+						category = "Event",
 						dequeueIfLuaFalse = true,
-						name = "Has Nova Ooze",
+						eventArgOptionType = 2,
+						eventEntityContentID = 13732,
+						name = "Is Phobos",
 						uuid = "59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
 						version = 2,
 					},
@@ -9965,44 +9985,23 @@ local tbl =
 					data = 
 					{
 						buffID = 4442,
-						category = "Self",
+						category = "Event",
 						dequeueIfLuaFalse = true,
-						name = "Has Ice Ooze",
+						eventArgType = 2,
+						eventSpellID = 42461,
+						eventSpellName = "-1",
+						name = "Is Frozen Fallout",
 						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
 						version = 2,
 					},
 				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return eventArgs.aoeID == 42463",
-						dequeueIfLuaFalse = true,
-						name = "Is Red Puddle",
-						uuid = "addac3ce-872f-d54a-8035-3e3d9ba538d3",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return eventArgs.aoeID == 42464",
-						dequeueIfLuaFalse = true,
-						name = "Is Blue Puddle",
-						uuid = "6087d150-59a5-9917-b436-a8a1370ecc7a",
-						version = 2,
-					},
-				},
 			},
-			eventType = 18,
-			name = "[FTB] Boss 2 Puddles",
-			uuid = "8451c8a2-ae08-61d7-b7f4-14db91faaf17",
+			eventType = 3,
+			name = "[FTB] Boss 2 Puddles TTS",
+			uuid = "06acd7e2-3a2b-4c8b-a09a-482655849fc6",
 			version = 2,
 		},
-		inheritedIndex = 54,
+		inheritedIndex = 56,
 	},
 	
 	{
@@ -10114,9 +10113,10 @@ local tbl =
 			},
 			eventType = 22,
 			name = "[FTB] Boss 2 Fireballs",
-			uuid = "49060241-9e3f-7cac-804b-00f22d16e051",
+			uuid = "ae235d51-4679-9c09-8261-885a05bc74bb",
 			version = 2,
 		},
+		inheritedIndex = 55,
 	},
 	
 	{
@@ -10212,6 +10212,363 @@ local tbl =
 			name = "[FTB] Boss 2 Snowball Tether",
 			throttleTime = 1250,
 			uuid = "6f59f82c-6eca-9703-b3db-8c94e14d1ae8",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[30210] = { label = \"Imitation Blizzard\", source = \"OC: FTB\" }\n\nlocal drawDuration = 4000\nlocal circleRadius = 20\n\nTensorCore.getMoogleDrawer():addTimedCircleOnEnt(drawDuration, eventArgs.entityID, circleRadius)\n\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
+								true,
+							},
+							
+							{
+								"cf4289c9-28f0-8a1c-94fc-a51d35542198",
+								true,
+							},
+							
+							{
+								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Draw AOE",
+						uuid = "3c79ce5c-7f8d-7951-826a-d9fbeb724463",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[30228] = { label = \"Imitation Blizzard\", source = \"OC: FTB\" }\n\nlocal drawDuration = 4000\nlocal aoeLength = 60\nlocal aoeWidth = 16\n\nTensorCore.getMoogleDrawer():addTimedCrossOnEnt(drawDuration, eventArgs.entityID, aoeLength, aoeWidth)\n\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
+								true,
+							},
+							
+							{
+								"dc629907-0710-3bbd-9a10-7bad90cba281",
+								true,
+							},
+							
+							{
+								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Draw Cross",
+						uuid = "a840192c-7690-8d23-9d81-af3723905db6",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4442,
+						category = "Lua",
+						conditionLua = "local entity = TensorCore.mGetEntity(eventArgs.entityID)\nreturn entity.contentid == 2014546",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventSpellID = 41569,
+						name = "Is AOE Puddle",
+						uuid = "cf4289c9-28f0-8a1c-94fc-a51d35542198",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4442,
+						category = "Lua",
+						conditionLua = "local entity = TensorCore.mGetEntity(eventArgs.entityID)\nreturn entity.contentid == 2014547",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventSpellID = 41569,
+						name = "Is Cross Puddle",
+						uuid = "dc629907-0710-3bbd-9a10-7bad90cba281",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return eventArgs.a2 == 16 and eventArgs.a3 == 32 and eventArgs.a4 == 0",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 13950,
+						name = "Is Puddle Freezing",
+						uuid = "5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
+						version = 2,
+					},
+				},
+			},
+			eventType = 19,
+			name = "[FTB] Boss 3 Puddles",
+			uuid = "65c65955-c622-bb22-b8e8-dffca6394876",
+			version = 2,
+		},
+		inheritedIndex = 58,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Assassin's Dagger\", source = \"OC: FTB\" }\n\nlocal lineLength = eventArgs.aoeLength\nlocal lineWidth = eventArgs.aoeWidth\n\nlocal daggerCast = 5000\nlocal daggerDelay = 2000\n\nlocal drawDuration = 2000\n\nlocal originalHeading = eventArgs.heading\nlocal daggerRotation = math.rad(50)\n\nlocal magitaurPos = { x = 700.0, y = -476.0, z = -674.0 }\nlocal drawer = TensorCore.getMoogleDrawer()\n\nlocal function drawDagger(daggerSet, drawDelay)\n\tlocal daggerHeading = originalHeading - (daggerRotation * daggerSet)\n\tdrawer:addTimedRect(drawDuration, magitaurPos.x, magitaurPos.y, magitaurPos.z, lineLength, lineWidth, daggerHeading, drawDelay)\nend\n\nfor daggerSet = 0, 5 do\n\tif daggerSet == 0 then\n\t\tlocal daggerHeading = originalHeading\n\t\tdrawer:addTimedRect(daggerCast, magitaurPos.x, magitaurPos.y, magitaurPos.z, lineLength, lineWidth, daggerHeading)\n\t\tdrawer:addTimedRect(drawDuration, magitaurPos.x, magitaurPos.y, magitaurPos.z, lineLength, lineWidth, daggerHeading, daggerCast)\n\telse\n\t\tfor i = 1, 2 do\n\t\t\tlocal drawDelay = daggerCast + daggerDelay * (((daggerSet - 1) * 2) + i)\n\t\t\tdrawDagger(daggerSet, drawDelay)\n\t\tend\n\tend\nend\n\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
+								true,
+							},
+							
+							{
+								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
+								true,
+							},
+							
+							{
+								"dc629907-0710-3bbd-9a10-7bad90cba281",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Draw Daggers",
+						uuid = "a840192c-7690-8d23-9d81-af3723905db6",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return eventArgs.contentID == 13950",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 13950,
+						name = "Is Dagger",
+						uuid = "5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4442,
+						category = "Lua",
+						conditionLua = "return eventArgs.aoeID == 41569",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventSpellID = 41569,
+						name = "Is Assassin's Dagger",
+						uuid = "dc629907-0710-3bbd-9a10-7bad90cba281",
+						version = 2,
+					},
+				},
+			},
+			eventType = 18,
+			name = "[FTB] Boss 4 Daggers",
+			uuid = "2f0e26c9-d9fc-79b6-add7-bac559401508",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local drawDuration = 6100\nlocal rectLength = 20\nlocal headings = {\n\tsouth = math.rad(45),\n\tnorthEast = math.rad(165),\n\tnorthWest = math.rad(285)\n}\n\nlocal entityPos = TensorCore.mGetEntity(eventArgs.entityID).pos\n\nlocal drawer = TensorCore.getStaticDrawer(1845559113)\nfor _, heading in pairs(headings) do\n\tlocal dx = ((rectLength / 2) * math.cos(heading))\n\tlocal dz = ((rectLength / 2) * math.sin(heading))\n\tdrawer:addTimedRect(drawDuration, entityPos.x - dx, entityPos.y, entityPos.z + dz, rectLength, rectLength, heading)\nend\nTensorCore.getMoogleDrawer():addTimedCircle(drawDuration, entityPos.x, entityPos.y, entityPos.z, rectLength)\n\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
+								true,
+							},
+							
+							{
+								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
+								true,
+							},
+							
+							{
+								"9480ace0-1972-dafa-b418-a87dd2b5d565",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Draw Axeblow",
+						uuid = "3b6c0a31-376b-be60-9d39-8ccdce241b6d",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local drawDuration = 6100\nlocal rectLength = 20\nlocal headings = {\n\tsouth = math.rad(45),\n\tnorthEast = math.rad(165),\n\tnorthWest = math.rad(285)\n}\n\nlocal entityPos = TensorCore.mGetEntity(eventArgs.entityID).pos\n\nlocal drawer = TensorCore.getMoogleDrawer()\nfor _, heading in pairs(headings) do\n\tlocal dx = ((rectLength / 2) * math.cos(heading))\n\tlocal dz = ((rectLength / 2) * math.sin(heading))\n\tdrawer:addTimedRect(drawDuration, entityPos.x - dx, entityPos.y, entityPos.z + dz, rectLength, rectLength, heading)\nend\ndrawer:addTimedDonut(drawDuration, entityPos.x, entityPos.y, entityPos.z, rectLength / 2, 32)\n\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
+								true,
+							},
+							
+							{
+								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
+								true,
+							},
+							
+							{
+								"dc629907-0710-3bbd-9a10-7bad90cba281",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Draw Lanceblow",
+						uuid = "a840192c-7690-8d23-9d81-af3723905db6",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 13947,
+						name = "Is Magitaur",
+						uuid = "5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4442,
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventSpellID = 41543,
+						name = "Is Axeblow",
+						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4442,
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventSpellID = 41547,
+						name = "Is Lanceblow",
+						uuid = "dc629907-0710-3bbd-9a10-7bad90cba281",
+						version = 2,
+					},
+				},
+			},
+			eventType = 3,
+			name = "[FTB] Boss 4 Axe/Lanceblow",
+			uuid = "d4e1f2e7-ce77-30ee-9a49-c8e249350bd1",
 			version = 2,
 		},
 	}, 
