@@ -9922,29 +9922,29 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Frozen Fallout\", source = \"OC: FTB\" }\n\nlocal initDrawDuration = 11500\nlocal subDrawDuration = 5500\nlocal green = 1845559113\n\nlocal puddleCount = data.ocFTBBluePuddleCount\nlocal subDrawDelay = 8900 + (3100 * (puddleCount - 1))\n\nlocal player = TensorCore.mGetPlayer()\nlocal redStacks = TensorCore.getBuff(player.id, 4441).stacks\n\nlocal drawer\nif puddleCount < redStacks then\n    drawer = TensorCore.getStaticDrawer(green)\nelse\n    drawer = TensorCore.getMoogleDrawer()\nend\n\nlocal drawDuration\nif puddleCount == 0 then\n    drawDuration = initDrawDuration\nelse\n    drawDuration = subDrawDuration\nend\nlocal drawDelay = ((puddleCount > 0) and subDrawDelay) or 0\n\ndrawer:addTimedCircle(drawDuration, eventArgs.x, eventArgs.y, eventArgs.z, eventArgs.aoeLength, drawDelay)\n\ndata.ocFTBluePuddleCount = data.ocFTBBluePuddleCount + 1\nif data.ocFTBBluePuddleCount >= 4 then\n\tdata.ocFTBBluePuddleCount = 0\nend\n\nself.used=true",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Frozen Fallout\", source = \"OC: FTB\" }\n\nlocal initDrawDuration = 11500\nlocal subDrawDuration = 5500\nlocal green = 1845559113\n\nlocal puddleCount = data.ocFTBBluePuddleCount\nlocal subDrawDelay = 8900 + (3100 * (puddleCount - 1))\n\nlocal player = TensorCore.mGetPlayer()\nlocal redStacks = TensorCore.getBuff(player.id, 4441).stacks\n\nlocal drawer\nif puddleCount < redStacks then\n    drawer = TensorCore.getStaticDrawer(green)\nelse\n    drawer = TensorCore.getMoogleDrawer()\nend\n\nlocal drawDuration\nif puddleCount == 0 then\n    drawDuration = initDrawDuration\nelse\n    drawDuration = subDrawDuration\nend\nlocal drawDelay = ((puddleCount > 0) and subDrawDelay) or 0\n\ndrawer:addTimedCircle(drawDuration, eventArgs.x, eventArgs.y, eventArgs.z, eventArgs.aoeLength, drawDelay)\n\ndata.ocFTBBluePuddleCount = data.ocFTBBluePuddleCount + 1\n\nself.used=true",
 						conditions = 
 						{
 							
 							{
-								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
+								"9f7f42af-5bfa-0639-8083-1d406a4d052a",
 								true,
 							},
 							
 							{
-								"59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
+								"92535bff-ee3c-5f24-bbd0-46bcbfa14b73",
 								true,
 							},
 							
 							{
-								"6087d150-59a5-9917-b436-a8a1370ecc7a",
+								"9b30be4d-a71e-5880-8e8f-3b0a6fab5391",
 								true,
 							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuMNK3_CD",
 						name = "Draw Safe Blue",
-						uuid = "3b6c0a31-376b-be60-9d39-8ccdce241b6d",
+						uuid = "f2b9facf-0284-5480-8d8e-cb01c5f469ec",
 						version = 2.1,
 					},
 				},
@@ -9953,29 +9953,29 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Frozen Fallout\", source = \"OC: FTB\" }\n\nlocal initDrawDuration = 11500\nlocal subDrawDuration = 5500\nlocal red = 1845494015\n\nlocal puddleCount = data.ocFTBRedPuddleCount\nlocal subDrawDelay = 8900 + (3100 * (puddleCount - 1))\n\nlocal player = TensorCore.mGetPlayer()\nlocal redStacks = TensorCore.getBuff(player.id, 4441).stacks\n\nlocal drawer\nif puddleCount < redStacks then\n    drawer = TensorCore.getStaticDrawer(red)\nelse\n    drawer = TensorCore.getMoogleDrawer()\nend\n\nlocal drawDuration\nif puddleCount == 0 then\n    drawDuration = initDrawDuration\nelse\n    drawDuration = subDrawDuration\nend\nlocal drawDelay = ((puddleCount > 0) and subDrawDelay) or 0\n\ndrawer:addTimedCircle(drawDuration, eventArgs.x, eventArgs.y, eventArgs.z, eventArgs.aoeLength, drawDelay)\n\ndata.ocFTBRedPuddleCount = data.ocFTBRedPuddleCount + 1\nif data.ocFTBRedPuddleCount >= 4 then\n\tdata.ocFTBRedPuddleCount = 0\nend\n\nself.used=true",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Frozen Fallout\", source = \"OC: FTB\" }\n\nlocal initDrawDuration = 11500\nlocal subDrawDuration = 5500\nlocal red = 1845494015\n\nlocal puddleCount = data.ocFTBRedPuddleCount\nlocal subDrawDelay = 8900 + (3100 * (puddleCount - 1))\n\nlocal player = TensorCore.mGetPlayer()\nlocal redStacks = TensorCore.getBuff(player.id, 4441).stacks\n\nlocal drawer\nif puddleCount < redStacks then\n    drawer = TensorCore.getStaticDrawer(red)\nelse\n    drawer = TensorCore.getMoogleDrawer()\nend\n\nlocal drawDuration\nif puddleCount == 0 then\n    drawDuration = initDrawDuration\nelse\n    drawDuration = subDrawDuration\nend\nlocal drawDelay = ((puddleCount > 0) and subDrawDelay) or 0\n\ndrawer:addTimedCircle(drawDuration, eventArgs.x, eventArgs.y, eventArgs.z, eventArgs.aoeLength, drawDelay)\n\ndata.ocFTBRedPuddleCount = data.ocFTBRedPuddleCount + 1\n\nself.used=true",
 						conditions = 
 						{
 							
 							{
-								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
+								"9f7f42af-5bfa-0639-8083-1d406a4d052a",
 								true,
 							},
 							
 							{
-								"59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
+								"92535bff-ee3c-5f24-bbd0-46bcbfa14b73",
 								true,
 							},
 							
 							{
-								"addac3ce-872f-d54a-8035-3e3d9ba538d3",
+								"10cee0f3-7bdb-91eb-a9fc-b62b8e793715",
 								true,
 							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuMNK3_CD",
 						name = "Draw Unsafe Red",
-						uuid = "0c0ef14a-70a8-2590-9882-4a0ef8045554",
+						uuid = "3c23b6ba-7d70-00c8-bae5-0ae01d1e095e",
 						version = 2.1,
 					},
 				},
@@ -9984,29 +9984,29 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Frozen Fallout\", source = \"OC: FTB\" }\n\nlocal initDrawDuration = 11500\nlocal subDrawDuration = 5500\nlocal green = 1845559113\n\nlocal puddleCount = data.ocFTBRedPuddleCount\nlocal subDrawDelay = 8900 + (3100 * (puddleCount - 1))\n\nlocal player = TensorCore.mGetPlayer()\nlocal blueStacks = TensorCore.getBuff(player.id, 4442).stacks\n\nlocal drawer\nif puddleCount < blueStacks then\n    drawer = TensorCore.getStaticDrawer(green)\nelse\n    drawer = TensorCore.getMoogleDrawer()\nend\n\nlocal drawDuration\nif puddleCount == 0 then\n    drawDuration = initDrawDuration\nelse\n    drawDuration = subDrawDuration\nend\nlocal drawDelay = ((puddleCount > 0) and subDrawDelay) or 0\n\ndrawer:addTimedCircle(drawDuration, eventArgs.x, eventArgs.y, eventArgs.z, eventArgs.aoeLength, drawDelay)\n\ndata.ocFTBRedPuddleCount = data.ocFTBRedPuddleCount + 1\nif data.ocFTBRedPuddleCount >= 4 then\n\tdata.ocFTBRedPuddleCount = 0\nend\n\nself.used=true",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Frozen Fallout\", source = \"OC: FTB\" }\n\nlocal initDrawDuration = 11500\nlocal subDrawDuration = 5500\nlocal green = 1845559113\n\nlocal puddleCount = data.ocFTBRedPuddleCount\nlocal subDrawDelay = 8900 + (3100 * (puddleCount - 1))\n\nlocal player = TensorCore.mGetPlayer()\nlocal blueStacks = TensorCore.getBuff(player.id, 4442).stacks\n\nlocal drawer\nif puddleCount < blueStacks then\n    drawer = TensorCore.getStaticDrawer(green)\nelse\n    drawer = TensorCore.getMoogleDrawer()\nend\n\nlocal drawDuration\nif puddleCount == 0 then\n    drawDuration = initDrawDuration\nelse\n    drawDuration = subDrawDuration\nend\nlocal drawDelay = ((puddleCount > 0) and subDrawDelay) or 0\n\ndrawer:addTimedCircle(drawDuration, eventArgs.x, eventArgs.y, eventArgs.z, eventArgs.aoeLength, drawDelay)\n\ndata.ocFTBRedPuddleCount = data.ocFTBRedPuddleCount + 1\n\nself.used=true",
 						conditions = 
 						{
 							
 							{
-								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
+								"9f7f42af-5bfa-0639-8083-1d406a4d052a",
 								true,
 							},
 							
 							{
-								"9480ace0-1972-dafa-b418-a87dd2b5d565",
+								"fa6aeb73-f777-ef1a-9c66-6b243dd22c87",
 								true,
 							},
 							
 							{
-								"addac3ce-872f-d54a-8035-3e3d9ba538d3",
+								"10cee0f3-7bdb-91eb-a9fc-b62b8e793715",
 								true,
 							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuMNK3_CD",
 						name = "Draw Safe Red",
-						uuid = "d564de9b-69b5-dcad-a0e5-0e7ca51075ce",
+						uuid = "8f8164d4-5036-a159-aa46-fc1cc49c5fe0",
 						version = 2.1,
 					},
 				},
@@ -10015,29 +10015,29 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Frozen Fallout\", source = \"OC: FTB\" }\n\nlocal initDrawDuration = 11500\nlocal subDrawDuration = 5500\nlocal red = 1845494015\n\nlocal puddleCount = data.ocFTBluePuddleCount\nlocal subDrawDelay = 8900 + (3100 * (puddleCount - 1))\n\nlocal player = TensorCore.mGetPlayer()\nlocal blueStacks = TensorCore.getBuff(player.id, 4442).stacks\n\nlocal drawer\nif puddleCount < blueStacks then\n    drawer = TensorCore.getStaticDrawer(red)\nelse\n    drawer = TensorCore.getMoogleDrawer()\nend\n\nlocal drawDuration\nif puddleCount == 0 then\n    drawDuration = initDrawDuration\nelse\n    drawDuration = subDrawDuration\nend\nlocal drawDelay = ((puddleCount > 0) and subDrawDelay) or 0\n\ndrawer:addTimedCircle(drawDuration, eventArgs.x, eventArgs.y, eventArgs.z, eventArgs.aoeLength, drawDelay)\n\ndata.ocFTBBluePuddleCount = data.ocFTBBluePuddleCount + 1\nif data.ocFTBBluePuddleCount >= 4 then\n\tdata.ocFTBBluePuddleCount = 0\nend\n\nself.used=true",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Frozen Fallout\", source = \"OC: FTB\" }\n\nlocal initDrawDuration = 11500\nlocal subDrawDuration = 5500\nlocal red = 1845494015\n\nlocal puddleCount = data.ocFTBBluePuddleCount\nlocal subDrawDelay = 8900 + (3100 * (puddleCount - 1))\n\nlocal player = TensorCore.mGetPlayer()\nlocal blueStacks = TensorCore.getBuff(player.id, 4442).stacks\n\nlocal drawer\nif puddleCount < blueStacks then\n    drawer = TensorCore.getStaticDrawer(red)\nelse\n    drawer = TensorCore.getMoogleDrawer()\nend\n\nlocal drawDuration\nif puddleCount == 0 then\n    drawDuration = initDrawDuration\nelse\n    drawDuration = subDrawDuration\nend\nlocal drawDelay = ((puddleCount > 0) and subDrawDelay) or 0\n\ndrawer:addTimedCircle(drawDuration, eventArgs.x, eventArgs.y, eventArgs.z, eventArgs.aoeLength, drawDelay)\n\ndata.ocFTBBluePuddleCount = data.ocFTBBluePuddleCount + 1\n\nself.used=true",
 						conditions = 
 						{
 							
 							{
-								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
+								"9f7f42af-5bfa-0639-8083-1d406a4d052a",
 								true,
 							},
 							
 							{
-								"9480ace0-1972-dafa-b418-a87dd2b5d565",
+								"fa6aeb73-f777-ef1a-9c66-6b243dd22c87",
 								true,
 							},
 							
 							{
-								"6087d150-59a5-9917-b436-a8a1370ecc7a",
+								"9b30be4d-a71e-5880-8e8f-3b0a6fab5391",
 								true,
 							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuMNK3_CD",
 						name = "Draw Unsafe Blue",
-						uuid = "10a32660-5a08-5c09-8825-6aae2ed1503a",
+						uuid = "f46e4807-f590-208e-b1df-df44fe58aa8e",
 						version = 2.1,
 					},
 				},
@@ -10053,7 +10053,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						localmapid = 1252,
 						name = "In OC",
-						uuid = "2abe0922-6a71-5ad7-8451-5db61edcb31b",
+						uuid = "9f7f42af-5bfa-0639-8083-1d406a4d052a",
 						version = 2,
 					},
 				},
@@ -10065,7 +10065,7 @@ local tbl =
 						category = "Self",
 						dequeueIfLuaFalse = true,
 						name = "Has Nova Ooze",
-						uuid = "59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
+						uuid = "92535bff-ee3c-5f24-bbd0-46bcbfa14b73",
 						version = 2,
 					},
 				},
@@ -10077,7 +10077,7 @@ local tbl =
 						category = "Self",
 						dequeueIfLuaFalse = true,
 						name = "Has Ice Ooze",
-						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
+						uuid = "fa6aeb73-f777-ef1a-9c66-6b243dd22c87",
 						version = 2,
 					},
 				},
@@ -10089,7 +10089,7 @@ local tbl =
 						conditionLua = "return eventArgs.aoeID == 42463",
 						dequeueIfLuaFalse = true,
 						name = "Is Red Puddle",
-						uuid = "addac3ce-872f-d54a-8035-3e3d9ba538d3",
+						uuid = "10cee0f3-7bdb-91eb-a9fc-b62b8e793715",
 						version = 2,
 					},
 				},
@@ -10101,14 +10101,14 @@ local tbl =
 						conditionLua = "return eventArgs.aoeID == 42464",
 						dequeueIfLuaFalse = true,
 						name = "Is Blue Puddle",
-						uuid = "6087d150-59a5-9917-b436-a8a1370ecc7a",
+						uuid = "9b30be4d-a71e-5880-8e8f-3b0a6fab5391",
 						version = 2,
 					},
 				},
 			},
 			eventType = 18,
 			name = "[FTB] Boss 2 Puddles",
-			uuid = "9837058d-0a7d-d388-abf2-bef20b586bf5",
+			uuid = "bfd39011-66e4-7ebc-a314-9350aaa99856",
 			version = 2,
 		},
 		inheritedIndex = 54,
@@ -10203,7 +10203,7 @@ local tbl =
 			uuid = "06acd7e2-3a2b-4c8b-a09a-482655849fc6",
 			version = 2,
 		},
-		inheritedIndex = 57,
+		inheritedIndex = 59,
 	},
 	
 	{
@@ -10318,7 +10318,7 @@ local tbl =
 			uuid = "ae235d51-4679-9c09-8261-885a05bc74bb",
 			version = 2,
 		},
-		inheritedIndex = 56,
+		inheritedIndex = 58,
 	},
 	
 	{
@@ -10551,7 +10551,7 @@ local tbl =
 			uuid = "65c65955-c622-bb22-b8e8-dffca6394876",
 			version = 2,
 		},
-		inheritedIndex = 59,
+		inheritedIndex = 61,
 	},
 	
 	{
@@ -10891,7 +10891,7 @@ local tbl =
 			uuid = "de5a2ddc-3857-a719-a3b4-f711d8645e26",
 			version = 2,
 		},
-		inheritedIndex = 61,
+		inheritedIndex = 62,
 	}, 
 	inheritedProfiles = 
 	{
