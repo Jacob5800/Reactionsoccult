@@ -3993,1816 +3993,6 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "data.oraclePredictJudgement = false\ndata.oraclePredictBlessing = false\ndata.oraclePredictCleansing = false\ndata.oraclePredictStarfall = false\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"2f5da793-8d62-b900-91b7-d2287c31ad94",
-								true,
-							},
-							
-							{
-								"689d986b-3892-68da-9d97-7ffdb0c20ed3",
-								true,
-							},
-							
-							{
-								"19d6b4d2-cb63-d3a0-9701-23ac8a56f8d4",
-								true,
-							},
-							
-							{
-								"7a9be408-97e3-401a-a51a-b2d1c1da02d1",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_CD",
-						name = "Set New Predict",
-						uuid = "f2218a47-49cc-308a-8bbe-71548f36c847",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
-						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "2f5da793-8d62-b900-91b7-d2287c31ad94",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4368,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Is P. Oracle",
-						uuid = "689d986b-3892-68da-9d97-7ffdb0c20ed3",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4265,
-						buffIDList = 
-						{
-							4265,
-							4266,
-							4267,
-						},
-						category = "Self",
-						conditionType = 5,
-						dequeueIfLuaFalse = true,
-						lastSkillID = 41636,
-						matchAnyBuff = true,
-						name = "Used Predict",
-						uuid = "19d6b4d2-cb63-d3a0-9701-23ac8a56f8d4",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 5,
-						buffIDList = 
-						{
-							4265,
-							4266,
-							4267,
-							4268,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						uuid = "7a9be408-97e3-401a-a51a-b2d1c1da02d1",
-						version = 2,
-					},
-				},
-			},
-			name = "P. Oracle New Predict",
-			throttleTime = 5000,
-			uuid = "c0c15129-4bca-c1c3-b7ef-380107a82ec0",
-			version = 2,
-		},
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "if data.oraclePredictJudgement == false then\n    if data.oraclePredictCounter == nil then\n        data.oraclePredictCounter = 1\n    else\n        data.oraclePredictCounter = data.oraclePredictCounter + 1\n    end\n\n    data.oraclePredictJudgement = true\nend\n\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"c98fc8ca-3024-f3e1-b80d-5a6ca8a4846b",
-								true,
-							},
-							
-							{
-								"689d986b-3892-68da-9d97-7ffdb0c20ed3",
-								true,
-							},
-							
-							{
-								"da2fea5f-44e3-b375-9f26-908381110868",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_CD",
-						name = "Count Judgement",
-						uuid = "f2218a47-49cc-308a-8bbe-71548f36c847",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "if data.oraclePredictCleansing == false then\n    if data.oraclePredictCounter == nil then\n        data.oraclePredictCounter = 1\n    else\n        data.oraclePredictCounter = data.oraclePredictCounter + 1\n    end\n\n    data.oraclePredictCleansing = true\nend\n\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"c98fc8ca-3024-f3e1-b80d-5a6ca8a4846b",
-								true,
-							},
-							
-							{
-								"689d986b-3892-68da-9d97-7ffdb0c20ed3",
-								true,
-							},
-							
-							{
-								"f9772982-5571-e7ca-8ce8-d0b95106091b",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_CD",
-						name = "Count Cleansing",
-						uuid = "ecdfcd96-d545-614a-90e9-e8d1b9b60fc9",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "if data.oraclePredictBlessing == false then\n    if data.oraclePredictCounter == nil then\n        data.oraclePredictCounter = 1\n    else\n        data.oraclePredictCounter = data.oraclePredictCounter + 1\n    end\n\n    data.oraclePredictBlessing = true\nend\n\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"c98fc8ca-3024-f3e1-b80d-5a6ca8a4846b",
-								true,
-							},
-							
-							{
-								"689d986b-3892-68da-9d97-7ffdb0c20ed3",
-								true,
-							},
-							
-							{
-								"ffe9b916-3ab0-da65-92bd-6fc5317d7207",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_CD",
-						name = "Count Blessing",
-						uuid = "8644771d-e09e-cec0-9719-c9b5718640ef",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "if data.oraclePredictStarfall == false then\n    if data.oraclePredictCounter == nil then\n        data.oraclePredictCounter = 1\n    else\n        data.oraclePredictCounter = data.oraclePredictCounter + 1\n    end\n\n    data.oraclePredictStarfall = true\nend\n\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"c98fc8ca-3024-f3e1-b80d-5a6ca8a4846b",
-								true,
-							},
-							
-							{
-								"689d986b-3892-68da-9d97-7ffdb0c20ed3",
-								true,
-							},
-							
-							{
-								"8e665495-c2d2-d8bc-bcd2-4047503e7449",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_CD",
-						name = "Count Starfall",
-						uuid = "212bae4d-09cb-b35f-90ba-98f73e3908bc",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
-						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "c98fc8ca-3024-f3e1-b80d-5a6ca8a4846b",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4368,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Is P. Oracle",
-						uuid = "689d986b-3892-68da-9d97-7ffdb0c20ed3",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4265,
-						buffIDList = 
-						{
-							4265,
-							4266,
-							4267,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						matchAnyBuff = true,
-						name = "Has Judgement",
-						uuid = "da2fea5f-44e3-b375-9f26-908381110868",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4266,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Has Cleansing",
-						uuid = "f9772982-5571-e7ca-8ce8-d0b95106091b",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4267,
-						buffIDList = 
-						{
-							4265,
-							4266,
-							4267,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						matchAnyBuff = true,
-						name = "Has Blessing",
-						uuid = "ffe9b916-3ab0-da65-92bd-6fc5317d7207",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4268,
-						buffIDList = 
-						{
-							4265,
-							4266,
-							4267,
-							4268,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						matchAnyBuff = true,
-						name = "Has Starfall",
-						uuid = "8e665495-c2d2-d8bc-bcd2-4047503e7449",
-						version = 2,
-					},
-				},
-			},
-			name = "P. Oracle Record Predict Count",
-			throttleTime = 250,
-			uuid = "05cc6353-51fa-5b8d-bf3a-86629e0af099",
-			version = 2,
-		},
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"2ade3bb0-fe6c-ce0d-8fb3-6e7565b3a2e2",
-								true,
-							},
-							
-							{
-								"ac335586-7de4-5e38-b9da-8495a9efdd41",
-								true,
-							},
-							
-							{
-								"12a0f8c6-a507-a2e4-9c4a-c1dc0385b35d",
-								true,
-							},
-							
-							{
-								"4ad26c8e-1973-b537-836b-8dec4032deef",
-								true,
-							},
-							
-							{
-								"ef2c81f6-7b6a-3ed2-ac82-95bca89dccb2",
-								true,
-							},
-							
-							{
-								"adea2d2c-d0b5-b568-9ad7-b74b309a9b6b",
-								true,
-							},
-							
-							{
-								"6c4525ee-9fd0-41dd-bc57-c766de237b22",
-								true,
-							},
-							
-							{
-								"20fa62b1-a245-0e9c-af9b-4fabfedcb7b6",
-								true,
-							},
-							
-							{
-								"5d1b2ae3-f7bd-35b6-8cfc-33cc3f39b9c9",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Predict",
-						uuid = "5072d63a-a97a-96e3-9571-5609b0c0c8aa",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
-						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "2ade3bb0-fe6c-ce0d-8fb3-6e7565b3a2e2",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4368,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Is P. Oracle",
-						uuid = "ac335586-7de4-5e38-b9da-8495a9efdd41",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 2,
-						dequeueIfLuaFalse = true,
-						name = "Am Alive",
-						uuid = "12a0f8c6-a507-a2e4-9c4a-c1dc0385b35d",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 7,
-						dequeueIfLuaFalse = true,
-						uuid = "4ad26c8e-1973-b537-836b-8dec4032deef",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						conditionType = 5,
-						dequeueIfLuaFalse = true,
-						uuid = "ef2c81f6-7b6a-3ed2-ac82-95bca89dccb2",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_CD\"]",
-						dequeueIfLuaFalse = true,
-						name = "CD Enabled",
-						uuid = "adea2d2c-d0b5-b568-9ad7-b74b309a9b6b",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionCDValue = 3,
-						actionID = 41636,
-						category = "Self",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						name = "Predict CD <= 3s",
-						uuid = "6c4525ee-9fd0-41dd-bc57-c766de237b22",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 2,
-						buffID = 418,
-						buffIDList = 
-						{
-							418,
-							148,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						matchAnyBuff = true,
-						name = "Not Invuln",
-						uuid = "20fa62b1-a245-0e9c-af9b-4fabfedcb7b6",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
-						dequeueIfLuaFalse = true,
-						name = "Check Rezz Timer",
-						uuid = "5d1b2ae3-f7bd-35b6-8cfc-33cc3f39b9c9",
-						version = 2,
-					},
-				},
-			},
-			name = "P. Oracle Use Predict",
-			throttleTime = 1500,
-			uuid = "dc304137-5b9c-951b-b18a-6efe4661c609",
-			version = 2,
-		},
-		inheritedIndex = 30,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Avoid Suicide\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"3d9c3f4a-8ce0-f2d3-b8b1-12171b7f545a",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Avoid Suicide",
-						uuid = "9fbf0baa-858f-9f38-908e-a73861e24981",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Avoid Starfall HP\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"90bd2c89-b805-648a-943e-2651ec846a83",
-								true,
-							},
-							
-							{
-								"d0114ab1-f77d-bcda-b85a-1193128632d9",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Avoid Starfall HP",
-						uuid = "3b198a46-3c08-ea17-9888-3e563681bb74",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Avoid Starfall AOE\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"90bd2c89-b805-648a-943e-2651ec846a83",
-								true,
-							},
-							
-							{
-								"fca8e097-eb58-55db-8cbe-c09478e3b8c4",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Avoid Starfall Incoming AOE",
-						uuid = "c9e48789-caa4-8e96-8c32-da86be522993",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Avoid Starfall Raidwide\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"90bd2c89-b805-648a-943e-2651ec846a83",
-								true,
-							},
-							
-							{
-								"5f8d1ae3-46bc-c924-b723-8fcaf972e588",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Avoid Starfall Incoming Raidwide",
-						uuid = "b5b4d8fb-a955-df08-bdab-846e151c3443",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Stop Judgement Expiring\")\nif _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"93783665-3a39-218a-b4c7-05aeb1a3a810",
-								true,
-							},
-							
-							{
-								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Stop Judgement Expiring",
-						uuid = "d16d64a3-4a34-d445-a679-a04eb6ee71f4",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Stop Judgement Heal Self\")\nif _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"93783665-3a39-218a-b4c7-05aeb1a3a810",
-								true,
-							},
-							
-							{
-								"8b811cff-e495-3a1a-82de-ac18b1db3488",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Stop Judgement Heal Self",
-						uuid = "a2e00158-dfb3-0cf7-bf6f-b7c07d984820",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Stop Judgement Heal Party\")\nif _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"93783665-3a39-218a-b4c7-05aeb1a3a810",
-								true,
-							},
-							
-							{
-								"c5a030dc-35ca-0d59-b78b-5192da2dbeb1",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Stop Judgement Heal Party",
-						uuid = "0aaea4ed-72b9-6d8d-8dcf-01d93020b077",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Stop Judgement Range\")\nif _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"93783665-3a39-218a-b4c7-05aeb1a3a810",
-								true,
-							},
-							
-							{
-								"03bfca6e-1de2-8b8d-aff6-d37b42f92737",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Stop Judgement Range",
-						uuid = "28391740-dbc0-873f-863b-1be55a9ae95c",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Judgement Heal Self\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"93783665-3a39-218a-b4c7-05aeb1a3a810",
-								true,
-							},
-							
-							{
-								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
-								true,
-							},
-							
-							{
-								"8b811cff-e495-3a1a-82de-ac18b1db3488",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Judgement Heal Self",
-						uuid = "9ea53d04-334f-976b-ab7f-01a100e1184b",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Judgement Heal Party\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"93783665-3a39-218a-b4c7-05aeb1a3a810",
-								true,
-							},
-							
-							{
-								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
-								true,
-							},
-							
-							{
-								"c5a030dc-35ca-0d59-b78b-5192da2dbeb1",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Judgement Heal Party",
-						uuid = "d3445634-2d11-25bd-a024-2b2201d290bc",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Stop Cleansing Expiring\")\nif _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"93bd23e8-5273-57ec-8a76-b5c3e6af25c2",
-								true,
-							},
-							
-							{
-								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Stop Cleansing Expiring",
-						uuid = "f5e195a1-40b1-0d84-86ec-3593694c1212",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Stop Cleansing HP\")\nif _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"93bd23e8-5273-57ec-8a76-b5c3e6af25c2",
-								true,
-							},
-							
-							{
-								"45342af4-4935-a543-888f-f175121b510a",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Stop Cleansing HP",
-						uuid = "00e024d7-2e1c-1da2-a10b-730f4be95b89",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Stop Cleansing Range\")\nif _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"93bd23e8-5273-57ec-8a76-b5c3e6af25c2",
-								true,
-							},
-							
-							{
-								"03bfca6e-1de2-8b8d-aff6-d37b42f92737",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Stop Cleansing Range",
-						uuid = "bf160465-9564-9a60-b273-2e9f28a05f7d",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Cleansing\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"93bd23e8-5273-57ec-8a76-b5c3e6af25c2",
-								true,
-							},
-							
-							{
-								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
-								true,
-							},
-							
-							{
-								"03bfca6e-1de2-8b8d-aff6-d37b42f92737",
-								true,
-							},
-							
-							{
-								"45342af4-4935-a543-888f-f175121b510a",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Cleansing",
-						uuid = "926853c0-f80c-8b24-ab70-7b8d0536d818",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Stop Blessing Expiring\")\nif _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"902b4fee-08f0-ccc3-93e5-8387b8bdba36",
-								true,
-							},
-							
-							{
-								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Stop Blessing Expiring",
-						uuid = "9d73265f-54c8-35b6-a024-2af1c9f72da4",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Stop Blessing Heal Self\")\nif _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"902b4fee-08f0-ccc3-93e5-8387b8bdba36",
-								true,
-							},
-							
-							{
-								"ca2e91c7-e9ed-3e99-86e7-f8e32e91062f",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Stop Blessing Heal Self",
-						uuid = "b21145a4-b38d-b20e-909f-2232eba0b2df",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Stop Blessing Heal Party\")\nif _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"902b4fee-08f0-ccc3-93e5-8387b8bdba36",
-								true,
-							},
-							
-							{
-								"e5546d6b-eaa9-44d6-84f5-dd3c73e379d2",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Stop Blessing Heal Party",
-						uuid = "80d1e0ab-2bf4-d8b1-ab19-2f6888beab95",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Blessing Heal Self\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"902b4fee-08f0-ccc3-93e5-8387b8bdba36",
-								true,
-							},
-							
-							{
-								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
-								true,
-							},
-							
-							{
-								"ca2e91c7-e9ed-3e99-86e7-f8e32e91062f",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Blessing Heal Self",
-						uuid = "5d2b3e66-2450-2444-97a1-9c8a9814c7c4",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Blessing Heal Party\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"902b4fee-08f0-ccc3-93e5-8387b8bdba36",
-								true,
-							},
-							
-							{
-								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
-								true,
-							},
-							
-							{
-								"e5546d6b-eaa9-44d6-84f5-dd3c73e379d2",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Blessing Heal Party",
-						uuid = "3558f6d8-52e5-f450-9a27-564a190a0aad",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Stop Starfall Expiring\")\nif _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"90d5d356-377c-d333-89cc-42097385bb58",
-								true,
-							},
-							
-							{
-								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Stop Starfall Expiring",
-						uuid = "07d9df36-64fb-a3fc-bf11-2af4a56c8607",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Stop Starfall HP\")\nif _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"90d5d356-377c-d333-89cc-42097385bb58",
-								true,
-							},
-							
-							{
-								"d0114ab1-f77d-bcda-b85a-1193128632d9",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Stop Starfall HP",
-						uuid = "7d46c830-898c-cc59-b6f3-47f2ee061469",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Stop Starfall AOE\")\nif _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"90d5d356-377c-d333-89cc-42097385bb58",
-								true,
-							},
-							
-							{
-								"fca8e097-eb58-55db-8cbe-c09478e3b8c4",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Stop Starfall AOE",
-						uuid = "482c679c-a9d1-7f4e-bf19-279621eef893",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Stop Starfall Raidwide\")\nif _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"90d5d356-377c-d333-89cc-42097385bb58",
-								true,
-							},
-							
-							{
-								"5f8d1ae3-46bc-c924-b723-8fcaf972e588",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Stop Starfall Raidwide",
-						uuid = "84a31664-323c-6654-9adc-682f7e81ff77",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Stop Starfall Range\")\nif _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"90d5d356-377c-d333-89cc-42097385bb58",
-								true,
-							},
-							
-							{
-								"03bfca6e-1de2-8b8d-aff6-d37b42f92737",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Stop Starfall Range",
-						uuid = "78d6fb3f-532d-bc68-aff0-574ba9347f40",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Starfall\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"90d5d356-377c-d333-89cc-42097385bb58",
-								true,
-							},
-							
-							{
-								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
-								true,
-							},
-							
-							{
-								"03bfca6e-1de2-8b8d-aff6-d37b42f92737",
-								true,
-							},
-							
-							{
-								"d0114ab1-f77d-bcda-b85a-1193128632d9",
-								true,
-							},
-							
-							{
-								"fca8e097-eb58-55db-8cbe-c09478e3b8c4",
-								false,
-							},
-							
-							{
-								"5f8d1ae3-46bc-c924-b723-8fcaf972e588",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Starfall",
-						uuid = "03079be3-c6fc-b719-b08f-870e71da59ce",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						buffID = 4368,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Is P. Oracle",
-						uuid = "b7995653-e4e2-e753-91d9-89e71703711c",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4265,
-						buffIDList = 
-						{
-							4265,
-							4266,
-							4267,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						matchAnyBuff = true,
-						name = "Has Judgement",
-						uuid = "93783665-3a39-218a-b4c7-05aeb1a3a810",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4266,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Has Cleansing",
-						uuid = "93bd23e8-5273-57ec-8a76-b5c3e6af25c2",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4267,
-						buffIDList = 
-						{
-							4265,
-							4266,
-							4267,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						matchAnyBuff = true,
-						name = "Has Blessing",
-						uuid = "902b4fee-08f0-ccc3-93e5-8387b8bdba36",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Party",
-						comparator = 2,
-						conditionType = 4,
-						inRangeValue = 20,
-						name = "Range - 20y",
-						partyTargetType = "Detection Target",
-						uuid = "6c75bd01-ee49-a6f7-9621-25854eb1a9d9",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4268,
-						buffIDList = 
-						{
-							4265,
-							4266,
-							4267,
-							4268,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						matchAnyBuff = true,
-						name = "Has Starfall",
-						uuid = "90d5d356-377c-d333-89cc-42097385bb58",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 6,
-						buffDuration = 0.80000001192093,
-						buffIDList = 
-						{
-							4265,
-							4266,
-							4267,
-							4268,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						matchAnyBuff = true,
-						name = "Predict Not Expiring",
-						uuid = "7ff1f06b-6b0b-6d46-9485-a73af78c7796",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						comparator = 2,
-						conditionType = 6,
-						dequeueIfLuaFalse = true,
-						inRangeValue = 20,
-						name = "Target <= 20y",
-						uuid = "03bfca6e-1de2-8b8d-aff6-d37b42f92737",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 2,
-						dequeueIfLuaFalse = true,
-						hpValue = 95,
-						name = "Self HP >= 95%",
-						uuid = "d0114ab1-f77d-bcda-b85a-1193128632d9",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						comparator = 2,
-						conditionType = 2,
-						dequeueIfLuaFalse = true,
-						hpValue = 92,
-						name = "Self HP <= 92%",
-						uuid = "45342af4-4935-a543-888f-f175121b510a",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						comparator = 2,
-						conditionType = 2,
-						dequeueIfLuaFalse = true,
-						hpValue = 60,
-						name = "Self HP <= 60%",
-						uuid = "8b811cff-e495-3a1a-82de-ac18b1db3488",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						comparator = 2,
-						conditionType = 2,
-						dequeueIfLuaFalse = true,
-						hpValue = 30,
-						name = "Self HP <= 30%",
-						uuid = "ca2e91c7-e9ed-3e99-86e7-f8e32e91062f",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Party",
-						comparator = 2,
-						conditionType = 2,
-						hpValue = 60,
-						name = "HP - 60%",
-						partyTargetType = "Detection Target",
-						uuid = "719eacd0-1e7f-4dc5-b935-49c94ac8e657",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Party",
-						comparator = 2,
-						conditionType = 2,
-						hpValue = 30,
-						name = "HP - 30%",
-						partyTargetType = "Detection Target",
-						uuid = "b8396ed7-b2fe-05d8-a878-4de57d821578",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Filter",
-						conditionType = 2,
-						conditions = 
-						{
-							
-							{
-								"6c75bd01-ee49-a6f7-9621-25854eb1a9d9",
-								true,
-							},
-							
-							{
-								"719eacd0-1e7f-4dc5-b935-49c94ac8e657",
-								true,
-							},
-						},
-						dequeueIfLuaFalse = true,
-						filterTargetType = "Party",
-						name = "AOE 60% @ 20y",
-						partyTargetNumber = 5,
-						uuid = "c5a030dc-35ca-0d59-b78b-5192da2dbeb1",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Filter",
-						conditionType = 2,
-						conditions = 
-						{
-							
-							{
-								"6c75bd01-ee49-a6f7-9621-25854eb1a9d9",
-								true,
-							},
-							
-							{
-								"b8396ed7-b2fe-05d8-a878-4de57d821578",
-								true,
-							},
-						},
-						dequeueIfLuaFalse = true,
-						filterTargetType = "Party",
-						name = "AOE 30% @ 20y",
-						partyTargetNumber = 5,
-						uuid = "e5546d6b-eaa9-44d6-84f5-dd3c73e379d2",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return data.oraclePredictCounter == 3 and data.oraclePredictStarfall == false",
-						dequeueIfLuaFalse = true,
-						name = "Starfall Is Last",
-						uuid = "90bd2c89-b805-648a-943e-2651ec846a83",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return data.oraclePredictCounter == 4",
-						dequeueIfLuaFalse = true,
-						name = "Is Last Predict",
-						uuid = "3d9c3f4a-8ce0-f2d3-b8b1-12171b7f545a",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "local dangerTime = 1.5\nlocal safetyTime = 3\n\nlocal player = TensorCore.mGetPlayer()\nlocal playerPos = player.pos\n\nlocal function getRemainingTime(entity)\n\tif not entity then return nil end\n\treturn entity.castinginfo.casttime - entity.castinginfo.channeltime\nend\n\nlocal function getPredictDuration()\n\tfor _, buffID in ipairs({4265, 4266, 4267}) do\n\t\tlocal buff = TensorCore.getBuff(player.id, buffID)\n\t\tif buff then\n\t\t\treturn buff.duration\n\t\tend\n\tend\n\treturn 0\nend\n\nlocal function willBoom(remainingTime, aoeType)\n\tif remainingTime <= dangerTime then\n\t\td(aoeType .. \" AOE GONNA GO BOOM!!!\")\n\t\treturn true\n\telseif data.oraclePredictCounter == 3 and not data.oraclePredictStarfall then\n\t\tlocal predictDuration = getPredictDuration()\n\t\tif remainingTime > predictDuration and remainingTime <= safetyTime then\n\t\t\td(aoeType .. \" AOE GONNA GO BOOM DURING STARFALL!!!\")\n\t\t\treturn true\n\t\tend\n\tend\n\treturn false\nend\n\nif TensorCore.Avoidance.inAnyAOE(playerPos.x, playerPos.y, playerPos.z) and table.size(data.ocAOETbl) > 0 then\n\tfor _, aoe in pairs(data.ocAOETbl) do\n\t\tlocal entityID, aoePos, aoeLength, aoeWidth = aoe.entityID, aoe.aoePos, aoe.aoeLength, aoe.aoeWidth\n\t\tlocal distToAOE = TensorCore.getDistance2d(playerPos, aoePos)\n\t\tlocal entity = TensorCore.mGetEntity(entityID)\n\t\tlocal remainingTime = getRemainingTime(entity)\n\n\t\tif aoeWidth > 0 or castType == 11 then -- Line/Cross\n\t\t\tif distToAOE <= aoeLength then\n\t\t\t\tlocal heading = aoe.aoeHeading\n\t\t\t\tlocal dirX, dirZ = math.sin(heading), math.cos(heading)\n\t\t\t\tlocal relX, relZ = playerPos.x - aoePos.x, playerPos.z - aoePos.z\n\t\t\t\tlocal forward = (relX * dirX) + (relZ * dirZ)\n\t\t\t\tlocal side = (-relX * dirZ) + (relZ * dirX)\n\t\t\t\tlocal halfWidth = aoeWidth / 2\n\t\t\t\t\n\t\t\t\tif castType == 11 then\n\t\t\t\t\tlocal inVertical = math.abs(forward) <= aoeLength and math.abs(side) <= halfWidth\n\t\t\t\t\tlocal inHorizontal = math.abs(side) <= aoeLength and math.abs(forward) <= halfWidth\n\n\t\t\t\t\tif inVertical or inHorizontal then\n\t\t\t\t\t\tif willBoom(remainingTime, \"Cross\") then return true end\n\t\t\t\t\tend\n\t\t\t\telse\n\t\t\t\t\tif forward >= 0 and forward <= aoeLength and math.abs(side) <= (halfWidth) then\n\t\t\t\t\t\tif willBoom(remainingTime, \"Line\") then return true end\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\tend\n\t\telse\n\t\t\tlocal omen = aoe.aoeOmen or \"\"\n\t\t\tlocal subStr = omen:gsub(\"o\", \"\"):sub(6)\n\t\t\tlocal omenInfo = subStr:match(\"%D(%d+)%D\") or \"\"\n\t\t\tlocal aoeID = aoe.aoeID\n\t\t\tlocal castType = aoe.aoeCastType\n\n\t\t\tif #omenInfo == 4 or omen:match(\"don\") or omen:match(\"sircle\") or castType == 10 then -- Donut\n\t\t\t\tlocal omenInnerRadius = tonumber(omenInfo:sub(-2)) or 0\n\t\t\t\tlocal innerRadius = 10\n\t\t\t\tlocal telegraphDonut = MoogleTelegraphs.Settings.aoeIDUserSetDonuts[aoeID]\n\t\t\t\tif telegraphDonut then innerRadius = telegraphDonut.radius\n\t\t\t\telseif omenInnerRadius > 0 then innerRadius = omenInnerRadius\n\t\t\t\tend\n\n\t\t\t\tif distToAOE >= innerRadius and distToAOE <= aoeLength then\n\t\t\t\t\tif willBoom(remainingTime, \"Donut\") then return true end\n\t\t\t\tend\n\t\t\telseif (#omenInfo == 3 and not aoe.aoeIsAreaTarget) or omen:match(\"fan\") or castType == 3 or castType == 13 then -- Cone\n\t\t\t\tlocal omenAngle = tonumber(omenInfo) or 0\n\t\t\t\tlocal angle = 90\n\t\t\t\tlocal telegraphCone = MoogleTelegraphs.Settings.aoeIDUserSetCones[aoeID]\n\t\t\t\tif telegraphCone then angle = telegraphCone.angle\n\t\t\t\telseif omenAngle > 0 then angle = omenAngle\n\t\t\t\tend\n\n\t\t\t\tlocal heading = aoe.aoeHeading\n\t\t\t\tlocal dirX, dirZ = math.sin(heading), math.cos(heading)\n\t\t\t\tlocal relX, relZ = playerPos.x - aoePos.x, playerPos.z - aoePos.z\n\t\t\t\tlocal forward = (relX * dirX) + (relZ * dirZ)\n\t\t\t\tlocal halfAngle = angle / 2\n\t\t\t\tlocal cosAngle = math.cos(math.rad(halfAngle))\n\t\t\t\t\n\t\t\t\tif angle <= 180 then\n\t\t\t\t\tif (forward / distToAOE) >= cosAngle then\n\t\t\t\t\t\tif willBoom(remainingTime, \"Cone\") then return true end\n\t\t\t\t\tend\n\t\t\t\telse\n\t\t\t\t\tlocal invertedConeAngle = 180 - halfAngle\n    \t\t\t\tlocal cosInverted = math.cos(math.rad(invertedConeAngle))\n\n    \t\t\t\tif (forward / distToAOE) >= -cosInverted then\n        \t\t\t\tif willBoom(remainingTime, \"Cone\") then return true end\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\telse -- Circle/Meteor\n\t\t\t\tif distToAOE <= aoeLength then\n\t\t\t\t\tif willBoom(remainingTime, \"Circle\") then return true end\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\tend\nend\n\nreturn false",
-						dequeueIfLuaFalse = true,
-						name = "AOE Check",
-						uuid = "fca8e097-eb58-55db-8cbe-c09478e3b8c4",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "local dangerTime = 1.5\nlocal safetyTime = 3\n\nlocal raidwideIDs = { 41138, 41141, 41381, 41279, 41336, 41361, 41528, 41167, 41171, 41188, 41424 }\n\nlocal player = TensorCore.mGetPlayer()\nlocal target = TensorCore.mGetTarget()\n\nlocal function getPredictDuration()\n\tfor _, buffID in ipairs({4265, 4266, 4267}) do\n\t\tlocal buff = TensorCore.getBuff(player.id, buffID)\n\t\tif buff then\n\t\t\treturn buff.duration\n\t\tend\n\tend\n\treturn 0\nend\n\nlocal function willRaidwideBoom(remainingTime)\n\tif remainingTime <= dangerTime then\n\t\td(\"Raidwide GONNA GO BOOM!!!\")\n\t\treturn true\n\telseif data.oraclePredictCounter == 3 and not data.oraclePredictStarfall then\n\t\tlocal predictDuration = getPredictDuration()\n\t\tif remainingTime > predictDuration and remainingTime <= safetyTime then\n\t\t\td(\"Raidwide GONNA GO BOOM DURING STARFALL!!!\")\n\t\t\treturn true\n\t\tend\n\tend\n\treturn false\nend\n\nif target then\n\tlocal castingInfo = target.castinginfo\n\n\tfor _, raidwideID in ipairs(raidwideIDs) do\n\t\tif castingInfo.channelingid == raidwideID then\n\t\t\tlocal remainingTime = castingInfo.casttime - castingInfo.channeltime\n\t\t\tif willRaidwideBoom(remainingTime) then\n\t\t\t\treturn true\n\t\t\tend\n\t\tend\n\tend\nend\n\nreturn false",
-						dequeueIfLuaFalse = true,
-						name = "Raidwide Check",
-						uuid = "5f8d1ae3-46bc-c924-b723-8fcaf972e588",
-						version = 2,
-					},
-				},
-			},
-			name = "P. Oracle Predict",
-			throttleTime = 100,
-			uuid = "ba84c9d8-adc9-f0e6-81ea-cff5b1296909",
-			version = 2,
-		},
-		inheritedIndex = 39,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "if _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\ndata.oraclePredictCounter = 0\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"ffbc6bd6-f41a-fea3-a827-6c080a314acc",
-								true,
-							},
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"93783665-3a39-218a-b4c7-05aeb1a3a810",
-								true,
-							},
-							
-							{
-								"5ad64f50-a902-e2f8-9be5-cd7055460245",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Reset Predict",
-						uuid = "d3445634-2d11-25bd-a024-2b2201d290bc",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
-						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "ffbc6bd6-f41a-fea3-a827-6c080a314acc",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4368,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Is P. Oracle",
-						uuid = "b7995653-e4e2-e753-91d9-89e71703711c",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 5,
-						buffID = 4265,
-						buffIDList = 
-						{
-							4265,
-							4266,
-							4267,
-							4268,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "No Predicts",
-						uuid = "93783665-3a39-218a-b4c7-05aeb1a3a810",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 5,
-						buffIDList = 
-						{
-							4265,
-							4266,
-							4267,
-							4268,
-						},
-						category = "Lua",
-						conditionLua = "return data.oraclePredictCounter ~= nil and data.oraclePredictCounter > 0",
-						dequeueIfLuaFalse = true,
-						name = "Predict Counter > 0",
-						uuid = "5ad64f50-a902-e2f8-9be5-cd7055460245",
-						version = 2,
-					},
-				},
-			},
-			name = "P. Oracle Reset Predict",
-			throttleTime = 250,
-			uuid = "f43ad7fe-48be-5bed-b215-288c4879c052",
-			version = 2,
-		},
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
 						actionLua = "d(\"Stop Silver\")\nif _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\"] = false\nend\nself.used = true",
 						conditions = 
 						{
@@ -6597,7 +4787,7 @@ local tbl =
 			uuid = "07c6a030-6afd-9a0c-8e6e-1a4b88514b31",
 			version = 2,
 		},
-		inheritedIndex = 53,
+		inheritedIndex = 57,
 	},
 	
 	{
@@ -7045,7 +5235,7 @@ local tbl =
 			uuid = "988f3e4c-2dda-92d2-8702-0c90ee69af40",
 			version = 2,
 		},
-		inheritedIndex = 41,
+		inheritedIndex = 45,
 	},
 	
 	{
@@ -7438,7 +5628,7 @@ local tbl =
 			uuid = "fb45e2b2-c2e4-1403-8a4b-1c629f622026",
 			version = 2,
 		},
-		inheritedIndex = 44,
+		inheritedIndex = 48,
 	},
 	
 	{
@@ -8109,7 +6299,7 @@ local tbl =
 			uuid = "340ed7d0-1aad-89f7-be46-d0978596d6c0",
 			version = 2,
 		},
-		inheritedIndex = 38,
+		inheritedIndex = 41,
 	},
 	
 	{
@@ -8315,7 +6505,1949 @@ local tbl =
 			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
 			version = 2,
 		},
+		inheritedIndex = 41,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "data.oraclePredictJudgement = false\ndata.oraclePredictBlessing = false\ndata.oraclePredictCleansing = false\ndata.oraclePredictStarfall = false\ndata.oraclePredictTimer = Now()\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"2f5da793-8d62-b900-91b7-d2287c31ad94",
+								true,
+							},
+							
+							{
+								"689d986b-3892-68da-9d97-7ffdb0c20ed3",
+								true,
+							},
+							
+							{
+								"19d6b4d2-cb63-d3a0-9701-23ac8a56f8d4",
+								true,
+							},
+							
+							{
+								"7a9be408-97e3-401a-a51a-b2d1c1da02d1",
+								true,
+							},
+							
+							{
+								"2a2d8a92-e6f1-b50a-b6a4-0102a46eae94",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_CD",
+						name = "Set New Predict",
+						uuid = "f2218a47-49cc-308a-8bbe-71548f36c847",
+						version = 2.1,
+					},
+					inheritedIndex = 1,
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "2f5da793-8d62-b900-91b7-d2287c31ad94",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4368,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Oracle",
+						uuid = "689d986b-3892-68da-9d97-7ffdb0c20ed3",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4265,
+						buffIDList = 
+						{
+							4265,
+							4266,
+							4267,
+						},
+						category = "Self",
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						lastSkillID = 41636,
+						matchAnyBuff = true,
+						name = "Used Predict",
+						uuid = "19d6b4d2-cb63-d3a0-9701-23ac8a56f8d4",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 5,
+						buffIDList = 
+						{
+							4265,
+							4266,
+							4267,
+							4268,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "No Predicts",
+						uuid = "7a9be408-97e3-401a-a51a-b2d1c1da02d1",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 5,
+						buffIDList = 
+						{
+							4265,
+							4266,
+							4267,
+							4268,
+						},
+						category = "Lua",
+						conditionLua = "return data.oraclePredictTimer == nil or TimeSince(data.oraclePredictTimer) >= 20000",
+						dequeueIfLuaFalse = true,
+						name = "Current Predict Over",
+						uuid = "2a2d8a92-e6f1-b50a-b6a4-0102a46eae94",
+						version = 2,
+					},
+				},
+			},
+			name = "P. Oracle New Predict",
+			uuid = "b175b050-f2bb-2ffe-bd7e-bff2941f8634",
+			version = 2,
+		},
 		inheritedIndex = 38,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "if data.oraclePredictJudgement == false then\n    if data.oraclePredictCounter == nil then\n        data.oraclePredictCounter = 1\n    else\n        data.oraclePredictCounter = data.oraclePredictCounter + 1\n    end\n\n    data.oraclePredictJudgement = true\nend\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"c98fc8ca-3024-f3e1-b80d-5a6ca8a4846b",
+								true,
+							},
+							
+							{
+								"689d986b-3892-68da-9d97-7ffdb0c20ed3",
+								true,
+							},
+							
+							{
+								"da2fea5f-44e3-b375-9f26-908381110868",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_CD",
+						name = "Count Judgement",
+						uuid = "f2218a47-49cc-308a-8bbe-71548f36c847",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "if data.oraclePredictCleansing == false then\n    if data.oraclePredictCounter == nil then\n        data.oraclePredictCounter = 1\n    else\n        data.oraclePredictCounter = data.oraclePredictCounter + 1\n    end\n\n    data.oraclePredictCleansing = true\nend\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"c98fc8ca-3024-f3e1-b80d-5a6ca8a4846b",
+								true,
+							},
+							
+							{
+								"689d986b-3892-68da-9d97-7ffdb0c20ed3",
+								true,
+							},
+							
+							{
+								"f9772982-5571-e7ca-8ce8-d0b95106091b",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_CD",
+						name = "Count Cleansing",
+						uuid = "ecdfcd96-d545-614a-90e9-e8d1b9b60fc9",
+						version = 2.1,
+					},
+					inheritedIndex = 2,
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "if data.oraclePredictBlessing == false then\n    if data.oraclePredictCounter == nil then\n        data.oraclePredictCounter = 1\n    else\n        data.oraclePredictCounter = data.oraclePredictCounter + 1\n    end\n\n    data.oraclePredictBlessing = true\nend\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"c98fc8ca-3024-f3e1-b80d-5a6ca8a4846b",
+								true,
+							},
+							
+							{
+								"689d986b-3892-68da-9d97-7ffdb0c20ed3",
+								true,
+							},
+							
+							{
+								"ffe9b916-3ab0-da65-92bd-6fc5317d7207",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_CD",
+						name = "Count Blessing",
+						uuid = "8644771d-e09e-cec0-9719-c9b5718640ef",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "if data.oraclePredictStarfall == false then\n    if data.oraclePredictCounter == nil then\n        data.oraclePredictCounter = 1\n    else\n        data.oraclePredictCounter = data.oraclePredictCounter + 1\n    end\n\n    data.oraclePredictStarfall = true\nend\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"c98fc8ca-3024-f3e1-b80d-5a6ca8a4846b",
+								true,
+							},
+							
+							{
+								"689d986b-3892-68da-9d97-7ffdb0c20ed3",
+								true,
+							},
+							
+							{
+								"8e665495-c2d2-d8bc-bcd2-4047503e7449",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_CD",
+						name = "Count Starfall",
+						uuid = "212bae4d-09cb-b35f-90ba-98f73e3908bc",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "c98fc8ca-3024-f3e1-b80d-5a6ca8a4846b",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4368,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Oracle",
+						uuid = "689d986b-3892-68da-9d97-7ffdb0c20ed3",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4268,
+						buffIDList = 
+						{
+							4265,
+							4266,
+							4267,
+							4268,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Has Starfall",
+						uuid = "8e665495-c2d2-d8bc-bcd2-4047503e7449",
+						version = 2,
+					},
+					inheritedIndex = 3,
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4265,
+						buffIDList = 
+						{
+							4265,
+							4266,
+							4267,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Has Judgement",
+						uuid = "da2fea5f-44e3-b375-9f26-908381110868",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4266,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Has Cleansing",
+						uuid = "f9772982-5571-e7ca-8ce8-d0b95106091b",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4267,
+						buffIDList = 
+						{
+							4265,
+							4266,
+							4267,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Has Blessing",
+						uuid = "ffe9b916-3ab0-da65-92bd-6fc5317d7207",
+						version = 2,
+					},
+				},
+			},
+			name = "P. Oracle Record Predict Count",
+			uuid = "9278be18-034c-9f92-abab-1d3e0055a418",
+			version = 2,
+		},
+		inheritedIndex = 39,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"2ade3bb0-fe6c-ce0d-8fb3-6e7565b3a2e2",
+								true,
+							},
+							
+							{
+								"ac335586-7de4-5e38-b9da-8495a9efdd41",
+								true,
+							},
+							
+							{
+								"12a0f8c6-a507-a2e4-9c4a-c1dc0385b35d",
+								true,
+							},
+							
+							{
+								"20fa62b1-a245-0e9c-af9b-4fabfedcb7b6",
+								true,
+							},
+							
+							{
+								"5d1b2ae3-f7bd-35b6-8cfc-33cc3f39b9c9",
+								true,
+							},
+							
+							{
+								"4ad26c8e-1973-b537-836b-8dec4032deef",
+								true,
+							},
+							
+							{
+								"ef2c81f6-7b6a-3ed2-ac82-95bca89dccb2",
+								true,
+							},
+							
+							{
+								"adea2d2c-d0b5-b568-9ad7-b74b309a9b6b",
+								true,
+							},
+							
+							{
+								"6c4525ee-9fd0-41dd-bc57-c766de237b22",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Predict",
+						uuid = "5072d63a-a97a-96e3-9571-5609b0c0c8aa",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"2ade3bb0-fe6c-ce0d-8fb3-6e7565b3a2e2",
+								true,
+							},
+							
+							{
+								"ac335586-7de4-5e38-b9da-8495a9efdd41",
+								true,
+							},
+							
+							{
+								"4ad26c8e-1973-b537-836b-8dec4032deef",
+								false,
+							},
+							
+							{
+								"5360af84-5d13-5563-bcbe-976e9652e09c",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorMagnum3_CD",
+						name = "Fallback Deactivate",
+						uuid = "f28ce769-ec22-0f59-b972-92cd768a38ab",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "2ade3bb0-fe6c-ce0d-8fb3-6e7565b3a2e2",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4368,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Oracle",
+						uuid = "ac335586-7de4-5e38-b9da-8495a9efdd41",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TensorCore.mGetPlayer().alive",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 0.10000000149012,
+						name = "Am Alive",
+						uuid = "12a0f8c6-a507-a2e4-9c4a-c1dc0385b35d",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Not Invuln",
+						uuid = "20fa62b1-a245-0e9c-af9b-4fabfedcb7b6",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
+						dequeueIfLuaFalse = true,
+						name = "Check Rezz Timer",
+						uuid = "5d1b2ae3-f7bd-35b6-8cfc-33cc3f39b9c9",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "4ad26c8e-1973-b537-836b-8dec4032deef",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "ef2c81f6-7b6a-3ed2-ac82-95bca89dccb2",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_CD\"]",
+						dequeueIfLuaFalse = true,
+						name = "CD Enabled",
+						uuid = "adea2d2c-d0b5-b568-9ad7-b74b309a9b6b",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 41636,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Predict CD <= 3s",
+						uuid = "6c4525ee-9fd0-41dd-bc57-c766de237b22",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true",
+						dequeueIfLuaFalse = true,
+						name = "Is Queued",
+						uuid = "5360af84-5d13-5563-bcbe-976e9652e09c",
+						version = 2,
+					},
+				},
+			},
+			name = "P. Oracle Use Predict[NOT SAFE]",
+			throttleTime = 1500,
+			uuid = "4c3d9549-4ff9-6f51-a0a1-292851ddf5a7",
+			version = 2,
+		},
+		inheritedIndex = 40,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Avoid Starfall AOE\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"90bd2c89-b805-648a-943e-2651ec846a83",
+								true,
+							},
+							
+							{
+								"fca8e097-eb58-55db-8cbe-c09478e3b8c4",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Avoid Starfall Incoming AOE",
+						uuid = "c9e48789-caa4-8e96-8c32-da86be522993",
+						version = 2.1,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Avoid Suicide\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"3d9c3f4a-8ce0-f2d3-b8b1-12171b7f545a",
+								true,
+							},
+							
+							{
+								"89cd4f40-9c8d-d5df-9afd-70c398c173b4",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Avoid Suicide",
+						uuid = "9fbf0baa-858f-9f38-908e-a73861e24981",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Avoid Starfall HP\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"90bd2c89-b805-648a-943e-2651ec846a83",
+								true,
+							},
+							
+							{
+								"d0114ab1-f77d-bcda-b85a-1193128632d9",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Avoid Starfall HP",
+						uuid = "3b198a46-3c08-ea17-9888-3e563681bb74",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Avoid Starfall Raidwide\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"90bd2c89-b805-648a-943e-2651ec846a83",
+								true,
+							},
+							
+							{
+								"5f8d1ae3-46bc-c924-b723-8fcaf972e588",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Avoid Starfall Incoming Raidwide",
+						uuid = "b5b4d8fb-a955-df08-bdab-846e151c3443",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Stop Judgement Expiring\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"93783665-3a39-218a-b4c7-05aeb1a3a810",
+								true,
+							},
+							
+							{
+								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Stop Judgement Expiring",
+						uuid = "d16d64a3-4a34-d445-a679-a04eb6ee71f4",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Stop Judgement Heal Self\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"93783665-3a39-218a-b4c7-05aeb1a3a810",
+								true,
+							},
+							
+							{
+								"8b811cff-e495-3a1a-82de-ac18b1db3488",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Stop Judgement Heal Self",
+						uuid = "a2e00158-dfb3-0cf7-bf6f-b7c07d984820",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Stop Judgement Heal Party\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"93783665-3a39-218a-b4c7-05aeb1a3a810",
+								true,
+							},
+							
+							{
+								"c5a030dc-35ca-0d59-b78b-5192da2dbeb1",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Stop Judgement Heal Party",
+						uuid = "0aaea4ed-72b9-6d8d-8dcf-01d93020b077",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Stop Judgement Range\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"93783665-3a39-218a-b4c7-05aeb1a3a810",
+								true,
+							},
+							
+							{
+								"03bfca6e-1de2-8b8d-aff6-d37b42f92737",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Stop Judgement Range",
+						uuid = "28391740-dbc0-873f-863b-1be55a9ae95c",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Judgement Heal Self\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"93783665-3a39-218a-b4c7-05aeb1a3a810",
+								true,
+							},
+							
+							{
+								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
+								true,
+							},
+							
+							{
+								"8b811cff-e495-3a1a-82de-ac18b1db3488",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Judgement Heal Self",
+						uuid = "9ea53d04-334f-976b-ab7f-01a100e1184b",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Judgement Heal Party\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"93783665-3a39-218a-b4c7-05aeb1a3a810",
+								true,
+							},
+							
+							{
+								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
+								true,
+							},
+							
+							{
+								"c5a030dc-35ca-0d59-b78b-5192da2dbeb1",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Judgement Heal Party",
+						uuid = "d3445634-2d11-25bd-a024-2b2201d290bc",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Stop Cleansing Expiring\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"93bd23e8-5273-57ec-8a76-b5c3e6af25c2",
+								true,
+							},
+							
+							{
+								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Stop Cleansing Expiring",
+						uuid = "f5e195a1-40b1-0d84-86ec-3593694c1212",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Stop Cleansing HP\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"93bd23e8-5273-57ec-8a76-b5c3e6af25c2",
+								true,
+							},
+							
+							{
+								"45342af4-4935-a543-888f-f175121b510a",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Stop Cleansing HP",
+						uuid = "00e024d7-2e1c-1da2-a10b-730f4be95b89",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Stop Cleansing Range\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"93bd23e8-5273-57ec-8a76-b5c3e6af25c2",
+								true,
+							},
+							
+							{
+								"03bfca6e-1de2-8b8d-aff6-d37b42f92737",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Stop Cleansing Range",
+						uuid = "bf160465-9564-9a60-b273-2e9f28a05f7d",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Cleansing\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"93bd23e8-5273-57ec-8a76-b5c3e6af25c2",
+								true,
+							},
+							
+							{
+								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
+								true,
+							},
+							
+							{
+								"03bfca6e-1de2-8b8d-aff6-d37b42f92737",
+								true,
+							},
+							
+							{
+								"45342af4-4935-a543-888f-f175121b510a",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Cleansing",
+						uuid = "926853c0-f80c-8b24-ab70-7b8d0536d818",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Stop Blessing Expiring\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"902b4fee-08f0-ccc3-93e5-8387b8bdba36",
+								true,
+							},
+							
+							{
+								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Stop Blessing Expiring",
+						uuid = "9d73265f-54c8-35b6-a024-2af1c9f72da4",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Stop Blessing Heal Self\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"902b4fee-08f0-ccc3-93e5-8387b8bdba36",
+								true,
+							},
+							
+							{
+								"ca2e91c7-e9ed-3e99-86e7-f8e32e91062f",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Stop Blessing Heal Self",
+						uuid = "b21145a4-b38d-b20e-909f-2232eba0b2df",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Stop Blessing Heal Party\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"902b4fee-08f0-ccc3-93e5-8387b8bdba36",
+								true,
+							},
+							
+							{
+								"e5546d6b-eaa9-44d6-84f5-dd3c73e379d2",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Stop Blessing Heal Party",
+						uuid = "80d1e0ab-2bf4-d8b1-ab19-2f6888beab95",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Blessing Heal Self\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"902b4fee-08f0-ccc3-93e5-8387b8bdba36",
+								true,
+							},
+							
+							{
+								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
+								true,
+							},
+							
+							{
+								"ca2e91c7-e9ed-3e99-86e7-f8e32e91062f",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Blessing Heal Self",
+						uuid = "5d2b3e66-2450-2444-97a1-9c8a9814c7c4",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Blessing Heal Party\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"902b4fee-08f0-ccc3-93e5-8387b8bdba36",
+								true,
+							},
+							
+							{
+								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
+								true,
+							},
+							
+							{
+								"e5546d6b-eaa9-44d6-84f5-dd3c73e379d2",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Blessing Heal Party",
+						uuid = "3558f6d8-52e5-f450-9a27-564a190a0aad",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Stop Starfall Expiring\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"90d5d356-377c-d333-89cc-42097385bb58",
+								true,
+							},
+							
+							{
+								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Stop Starfall Expiring",
+						uuid = "07d9df36-64fb-a3fc-bf11-2af4a56c8607",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Stop Starfall HP\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"90d5d356-377c-d333-89cc-42097385bb58",
+								true,
+							},
+							
+							{
+								"d0114ab1-f77d-bcda-b85a-1193128632d9",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Stop Starfall HP",
+						uuid = "7d46c830-898c-cc59-b6f3-47f2ee061469",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Stop Starfall AOE\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"90d5d356-377c-d333-89cc-42097385bb58",
+								true,
+							},
+							
+							{
+								"fca8e097-eb58-55db-8cbe-c09478e3b8c4",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Stop Starfall AOE",
+						uuid = "482c679c-a9d1-7f4e-bf19-279621eef893",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Stop Starfall Raidwide\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"90d5d356-377c-d333-89cc-42097385bb58",
+								true,
+							},
+							
+							{
+								"5f8d1ae3-46bc-c924-b723-8fcaf972e588",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Stop Starfall Raidwide",
+						uuid = "84a31664-323c-6654-9adc-682f7e81ff77",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Stop Starfall Range\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"90d5d356-377c-d333-89cc-42097385bb58",
+								true,
+							},
+							
+							{
+								"03bfca6e-1de2-8b8d-aff6-d37b42f92737",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Stop Starfall Range",
+						uuid = "78d6fb3f-532d-bc68-aff0-574ba9347f40",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Starfall\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"90d5d356-377c-d333-89cc-42097385bb58",
+								true,
+							},
+							
+							{
+								"7ff1f06b-6b0b-6d46-9485-a73af78c7796",
+								true,
+							},
+							
+							{
+								"03bfca6e-1de2-8b8d-aff6-d37b42f92737",
+								true,
+							},
+							
+							{
+								"d0114ab1-f77d-bcda-b85a-1193128632d9",
+								true,
+							},
+							
+							{
+								"fca8e097-eb58-55db-8cbe-c09478e3b8c4",
+								false,
+							},
+							
+							{
+								"5f8d1ae3-46bc-c924-b723-8fcaf972e588",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Starfall",
+						uuid = "03079be3-c6fc-b719-b08f-870e71da59ce",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						buffID = 4368,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Oracle",
+						uuid = "b7995653-e4e2-e753-91d9-89e71703711c",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4265,
+						buffIDList = 
+						{
+							4265,
+							4266,
+							4267,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Has Judgement",
+						uuid = "93783665-3a39-218a-b4c7-05aeb1a3a810",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4266,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Has Cleansing",
+						uuid = "93bd23e8-5273-57ec-8a76-b5c3e6af25c2",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4267,
+						buffIDList = 
+						{
+							4265,
+							4266,
+							4267,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Has Blessing",
+						uuid = "902b4fee-08f0-ccc3-93e5-8387b8bdba36",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4268,
+						buffIDList = 
+						{
+							4265,
+							4266,
+							4267,
+							4268,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Has Starfall",
+						uuid = "90d5d356-377c-d333-89cc-42097385bb58",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 4,
+						buffID = 4265,
+						buffIDList = 
+						{
+							4265,
+							4266,
+							4267,
+							4268,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Has Predicts",
+						uuid = "89cd4f40-9c8d-d5df-9afd-70c398c173b4",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Party",
+						comparator = 2,
+						conditionType = 4,
+						inRangeValue = 20,
+						name = "Range - 20y",
+						partyTargetType = "Detection Target",
+						uuid = "6c75bd01-ee49-a6f7-9621-25854eb1a9d9",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 6,
+						buffDuration = 0.80000001192093,
+						buffIDList = 
+						{
+							4265,
+							4266,
+							4267,
+							4268,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Predict Not Expiring",
+						uuid = "7ff1f06b-6b0b-6d46-9485-a73af78c7796",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 20,
+						name = "Target <= 20y",
+						uuid = "03bfca6e-1de2-8b8d-aff6-d37b42f92737",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 95,
+						name = "Self HP >= 95%",
+						uuid = "d0114ab1-f77d-bcda-b85a-1193128632d9",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						comparator = 2,
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 92,
+						name = "Self HP <= 92%",
+						uuid = "45342af4-4935-a543-888f-f175121b510a",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						comparator = 2,
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 60,
+						name = "Self HP <= 60%",
+						uuid = "8b811cff-e495-3a1a-82de-ac18b1db3488",
+						version = 2,
+					},
+					inheritedIndex = 12,
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						comparator = 2,
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 30,
+						name = "Self HP <= 30%",
+						uuid = "ca2e91c7-e9ed-3e99-86e7-f8e32e91062f",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Party",
+						comparator = 2,
+						conditionType = 2,
+						hpValue = 60,
+						name = "HP - 60%",
+						partyTargetType = "Detection Target",
+						uuid = "719eacd0-1e7f-4dc5-b935-49c94ac8e657",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Party",
+						comparator = 2,
+						conditionType = 2,
+						hpValue = 30,
+						name = "HP - 30%",
+						partyTargetType = "Detection Target",
+						uuid = "b8396ed7-b2fe-05d8-a878-4de57d821578",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Filter",
+						conditionType = 2,
+						conditions = 
+						{
+							
+							{
+								"6c75bd01-ee49-a6f7-9621-25854eb1a9d9",
+								true,
+							},
+							
+							{
+								"719eacd0-1e7f-4dc5-b935-49c94ac8e657",
+								true,
+							},
+						},
+						dequeueIfLuaFalse = true,
+						filterTargetType = "Party",
+						name = "AOE 60% @ 20y",
+						partyTargetNumber = 5,
+						uuid = "c5a030dc-35ca-0d59-b78b-5192da2dbeb1",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Filter",
+						conditionType = 2,
+						conditions = 
+						{
+							
+							{
+								"6c75bd01-ee49-a6f7-9621-25854eb1a9d9",
+								true,
+							},
+							
+							{
+								"b8396ed7-b2fe-05d8-a878-4de57d821578",
+								true,
+							},
+						},
+						dequeueIfLuaFalse = true,
+						filterTargetType = "Party",
+						name = "AOE 30% @ 20y",
+						partyTargetNumber = 5,
+						uuid = "e5546d6b-eaa9-44d6-84f5-dd3c73e379d2",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.oraclePredictCounter == 3 and data.oraclePredictStarfall == false",
+						dequeueIfLuaFalse = true,
+						name = "Starfall Is Last",
+						uuid = "90bd2c89-b805-648a-943e-2651ec846a83",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.oraclePredictCounter == 4",
+						dequeueIfLuaFalse = true,
+						name = "Is Last Predict",
+						uuid = "3d9c3f4a-8ce0-f2d3-b8b1-12171b7f545a",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "local dangerTime = 1.5\nlocal safetyTime = 3\n\nlocal player = TensorCore.mGetPlayer()\nlocal playerPos = player.pos\n\nlocal function getRemainingTime(entity)\n\tif not entity then return nil end\n\treturn entity.castinginfo.casttime - entity.castinginfo.channeltime\nend\n\nlocal function getPredictDuration()\n\tfor _, buffID in ipairs({4265, 4266, 4267}) do\n\t\tlocal buff = TensorCore.getBuff(player.id, buffID)\n\t\tif buff then\n\t\t\treturn buff.duration\n\t\tend\n\tend\n\treturn 0\nend\n\nlocal function willBoom(remainingTime, aoeType)\n\tif remainingTime <= dangerTime then\n\t\td(aoeType .. \" AOE GONNA GO BOOM!!!\")\n\t\treturn true\n\telseif data.oraclePredictCounter == 3 and not data.oraclePredictStarfall then\n\t\tlocal predictDuration = getPredictDuration()\n\t\tif remainingTime > predictDuration and remainingTime <= safetyTime then\n\t\t\td(aoeType .. \" AOE GONNA GO BOOM DURING STARFALL!!!\")\n\t\t\treturn true\n\t\tend\n\tend\n\treturn false\nend\n\nif TensorCore.Avoidance.inAnyAOE(playerPos.x, playerPos.y, playerPos.z) and table.size(data.ocAOETbl) > 0 then\n\tfor _, aoe in pairs(data.ocAOETbl) do\n\t\tlocal entityID, aoePos, aoeLength, aoeWidth = aoe.entityID, aoe.aoePos, aoe.aoeLength, aoe.aoeWidth\n\t\tlocal distToAOE = TensorCore.getDistance2d(playerPos, aoePos)\n\t\tlocal entity = TensorCore.mGetEntity(entityID)\n\t\tlocal remainingTime = getRemainingTime(entity)\n\n\t\tif aoeWidth > 0 or castType == 11 then -- Line/Cross\n\t\t\tif distToAOE <= aoeLength then\n\t\t\t\tlocal heading = aoe.aoeHeading\n\t\t\t\tlocal dirX, dirZ = math.sin(heading), math.cos(heading)\n\t\t\t\tlocal relX, relZ = playerPos.x - aoePos.x, playerPos.z - aoePos.z\n\t\t\t\tlocal forward = (relX * dirX) + (relZ * dirZ)\n\t\t\t\tlocal side = (-relX * dirZ) + (relZ * dirX)\n\t\t\t\tlocal halfWidth = aoeWidth / 2\n\t\t\t\t\n\t\t\t\tif castType == 11 then\n\t\t\t\t\tlocal inVertical = math.abs(forward) <= aoeLength and math.abs(side) <= halfWidth\n\t\t\t\t\tlocal inHorizontal = math.abs(side) <= aoeLength and math.abs(forward) <= halfWidth\n\n\t\t\t\t\tif inVertical or inHorizontal then\n\t\t\t\t\t\tif willBoom(remainingTime, \"Cross\") then return true end\n\t\t\t\t\tend\n\t\t\t\telse\n\t\t\t\t\tif forward >= 0 and forward <= aoeLength and math.abs(side) <= (halfWidth) then\n\t\t\t\t\t\tif willBoom(remainingTime, \"Line\") then return true end\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\tend\n\t\telse\n\t\t\tlocal omen = aoe.aoeOmen or \"\"\n\t\t\tlocal subStr = omen:gsub(\"o\", \"\"):sub(6)\n\t\t\tlocal omenInfo = subStr:match(\"%D(%d+)%D\") or \"\"\n\t\t\tlocal aoeID = aoe.aoeID\n\t\t\tlocal castType = aoe.aoeCastType\n\n\t\t\tif #omenInfo == 4 or omen:match(\"don\") or omen:match(\"sircle\") or castType == 10 then -- Donut\n\t\t\t\tlocal omenInnerRadius = tonumber(omenInfo:sub(-2)) or 0\n\t\t\t\tlocal innerRadius = 10\n\t\t\t\tlocal telegraphDonut = MoogleTelegraphs.Settings.aoeIDUserSetDonuts[aoeID]\n\t\t\t\tif telegraphDonut then innerRadius = telegraphDonut.radius\n\t\t\t\telseif omenInnerRadius > 0 then innerRadius = omenInnerRadius\n\t\t\t\tend\n\n\t\t\t\tif distToAOE >= innerRadius and distToAOE <= aoeLength then\n\t\t\t\t\tif willBoom(remainingTime, \"Donut\") then return true end\n\t\t\t\tend\n\t\t\telseif (#omenInfo == 3 and not aoe.aoeIsAreaTarget) or omen:match(\"fan\") or castType == 3 or castType == 13 then -- Cone\n\t\t\t\tlocal omenAngle = tonumber(omenInfo) or 0\n\t\t\t\tlocal angle = 90\n\t\t\t\tlocal telegraphCone = MoogleTelegraphs.Settings.aoeIDUserSetCones[aoeID]\n\t\t\t\tif telegraphCone then angle = telegraphCone.angle\n\t\t\t\telseif omenAngle > 0 then angle = omenAngle\n\t\t\t\tend\n\n\t\t\t\tlocal heading = aoe.aoeHeading\n\t\t\t\tlocal dirX, dirZ = math.sin(heading), math.cos(heading)\n\t\t\t\tlocal relX, relZ = playerPos.x - aoePos.x, playerPos.z - aoePos.z\n\t\t\t\tlocal forward = (relX * dirX) + (relZ * dirZ)\n\t\t\t\tlocal halfAngle = angle / 2\n\t\t\t\tlocal cosAngle = math.cos(math.rad(halfAngle))\n\t\t\t\t\n\t\t\t\tif angle <= 180 then\n\t\t\t\t\tif (forward / distToAOE) >= cosAngle then\n\t\t\t\t\t\tif willBoom(remainingTime, \"Cone\") then return true end\n\t\t\t\t\tend\n\t\t\t\telse\n\t\t\t\t\tlocal invertedConeAngle = 180 - halfAngle\n    \t\t\t\tlocal cosInverted = math.cos(math.rad(invertedConeAngle))\n\n    \t\t\t\tif (forward / distToAOE) >= -cosInverted then\n        \t\t\t\tif willBoom(remainingTime, \"Cone\") then return true end\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\telse -- Circle/Meteor\n\t\t\t\tif distToAOE <= aoeLength then\n\t\t\t\t\tif willBoom(remainingTime, \"Circle\") then return true end\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\tend\nend\n\nreturn false",
+						dequeueIfLuaFalse = true,
+						name = "AOE Check",
+						uuid = "fca8e097-eb58-55db-8cbe-c09478e3b8c4",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "local dangerTime = 1.5\nlocal safetyTime = 3\n\nlocal raidwideIDs = { 41138, 41141, 41381, 41279, 41336, 41361, 41528, 41167, 41171, 41188, 41424, 41762, 37809, \n\t\t\t\t\t\t30790, 30788, 41333, 41412, 41689 }\n\nlocal target = TensorCore.mGetTarget()\n\nlocal function getPredictDuration()\n\tlocal playerID = TensorCore.mGetPlayer().id\n\tfor _, buffID in ipairs({4265, 4266, 4267}) do\n\t\tlocal buff = TensorCore.getBuff(playerID, buffID)\n\t\tif buff then\n\t\t\treturn buff.duration\n\t\tend\n\tend\n\treturn 0\nend\n\nlocal function willRaidwideBoom(remainingTime)\n\tif remainingTime <= dangerTime then\n\t\td(\"Raidwide GONNA GO BOOM!!!\")\n\t\treturn true\n\telseif data.oraclePredictCounter == 3 and not data.oraclePredictStarfall then\n\t\tlocal predictDuration = getPredictDuration()\n\t\tif remainingTime > predictDuration and remainingTime <= safetyTime then\n\t\t\td(\"Raidwide GONNA GO BOOM DURING STARFALL!!!\")\n\t\t\treturn true\n\t\tend\n\tend\n\treturn false\nend\n\nif target then\n\tlocal castingInfo = target.castinginfo\n\n\tfor _, raidwideID in ipairs(raidwideIDs) do\n\t\tif castingInfo.channelingid == raidwideID then\n\t\t\tlocal remainingTime = castingInfo.casttime - castingInfo.channeltime\n\t\t\tif willRaidwideBoom(remainingTime) then\n\t\t\t\treturn true\n\t\t\tend\n\t\tend\n\tend\nend\n\nreturn false",
+						dequeueIfLuaFalse = true,
+						name = "Raidwide Check",
+						uuid = "5f8d1ae3-46bc-c924-b723-8fcaf972e588",
+						version = 2,
+					},
+				},
+			},
+			name = "P. Oracle Predict",
+			throttleTime = 100,
+			uuid = "7a8b0ac9-1ab5-9b70-9c4c-08d91cc31515",
+			version = 2,
+		},
+		inheritedIndex = 41,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "if _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nend\ndata.oraclePredictCounter = 0\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"ffbc6bd6-f41a-fea3-a827-6c080a314acc",
+								true,
+							},
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"93783665-3a39-218a-b4c7-05aeb1a3a810",
+								true,
+							},
+							
+							{
+								"5ad64f50-a902-e2f8-9be5-cd7055460245",
+								true,
+							},
+							
+							{
+								"198fa4c6-d68a-4051-93d7-325f5ecef315",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Reset Predict",
+						uuid = "d3445634-2d11-25bd-a024-2b2201d290bc",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "ffbc6bd6-f41a-fea3-a827-6c080a314acc",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4368,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Oracle",
+						uuid = "b7995653-e4e2-e753-91d9-89e71703711c",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 5,
+						buffID = 4265,
+						buffIDList = 
+						{
+							4265,
+							4266,
+							4267,
+							4268,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "No Predicts",
+						uuid = "93783665-3a39-218a-b4c7-05aeb1a3a810",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 5,
+						buffIDList = 
+						{
+							4265,
+							4266,
+							4267,
+							4268,
+						},
+						category = "Lua",
+						conditionLua = "return data.oraclePredictCounter ~= nil and data.oraclePredictCounter > 0",
+						dequeueIfLuaFalse = true,
+						name = "Predict Counter > 0",
+						uuid = "5ad64f50-a902-e2f8-9be5-cd7055460245",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 5,
+						buffIDList = 
+						{
+							4265,
+							4266,
+							4267,
+							4268,
+						},
+						category = "Lua",
+						conditionLua = "return TimeSince(data.oraclePredictTimer) >= 20000",
+						dequeueIfLuaFalse = true,
+						name = "Current Predict Over",
+						uuid = "198fa4c6-d68a-4051-93d7-325f5ecef315",
+						version = 2,
+					},
+				},
+			},
+			name = "P. Oracle Reset Predict",
+			uuid = "978328eb-ccac-48cf-bcfc-9c31d4cf6f4d",
+			version = 2,
+		},
+		inheritedIndex = 42,
 	},
 	
 	{
@@ -8414,7 +8546,7 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 47,
+		inheritedIndex = 51,
 	},
 	
 	{
@@ -8691,7 +8823,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 53,
+		inheritedIndex = 57,
 	},
 	
 	{
@@ -9840,7 +9972,7 @@ local tbl =
 			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
 			version = 2,
 		},
-		inheritedIndex = 52,
+		inheritedIndex = 56,
 	},
 	
 	{
@@ -10111,7 +10243,7 @@ local tbl =
 			uuid = "bfd39011-66e4-7ebc-a314-9350aaa99856",
 			version = 2,
 		},
-		inheritedIndex = 54,
+		inheritedIndex = 58,
 	},
 	
 	{
@@ -10203,7 +10335,7 @@ local tbl =
 			uuid = "06acd7e2-3a2b-4c8b-a09a-482655849fc6",
 			version = 2,
 		},
-		inheritedIndex = 59,
+		inheritedIndex = 63,
 	},
 	
 	{
@@ -10318,7 +10450,7 @@ local tbl =
 			uuid = "ae235d51-4679-9c09-8261-885a05bc74bb",
 			version = 2,
 		},
-		inheritedIndex = 58,
+		inheritedIndex = 62,
 	},
 	
 	{
@@ -10551,7 +10683,7 @@ local tbl =
 			uuid = "65c65955-c622-bb22-b8e8-dffca6394876",
 			version = 2,
 		},
-		inheritedIndex = 61,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -10815,7 +10947,7 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "local players = TensorCore.entityList(\"chartype=4,alive,maxdistance=30\")\n\nlocal drawDuration = 8000\nlocal aoeRadius = 5\nlocal buffIDs = {4336, 4337, 4338}\n\nlocal drawer = TensorCore.getStaticDrawer(1677787134)\n\nfor playerEntID, _ in pairs(players) do\n\tfor _, buffID in ipairs(buffIDs) do\n\t\tif TensorCore.hasBuff(playerEntID, buffID) then\n\t\t\tlocal buff = TensorCore.getBuff(playerEntID, buffID)\n\t\t\tlocal buffDuration = buff.duration * 1000\n\t\t\tlocal drawDelay = buffDuration - drawDuration\n\t\t\tdrawer:addTimedCircleOnEnt(drawDuration, playerEntID, aoeRadius, drawDelay)\n\n\t\t\tbreak\n\t\tend\n\tend\nend\n\nself.used=true",
+						actionLua = "local players = TensorCore.entityList(\"chartype=4,alive,maxdistance=30\")\n\nlocal drawDuration = 8000\nlocal aoeRadius = 7\nlocal buffIDs = {4336, 4337, 4338}\n\nlocal drawer = TensorCore.getStaticDrawer(1677787134)\n\nfor playerEntID, _ in pairs(players) do\n\tfor _, buffID in ipairs(buffIDs) do\n\t\tif TensorCore.hasBuff(playerEntID, buffID) then\n\t\t\tlocal buff = TensorCore.getBuff(playerEntID, buffID)\n\t\t\tlocal buffDuration = buff.duration * 1000\n\t\t\tlocal drawDelay = buffDuration - drawDuration\n\t\t\tdrawer:addTimedCircleOnEnt(drawDuration, playerEntID, aoeRadius, drawDelay)\n\n\t\t\tbreak\n\t\tend\n\tend\nend\n\nself.used=true",
 						conditions = 
 						{
 							
@@ -10888,10 +11020,10 @@ local tbl =
 			eventType = 2,
 			name = "[FTB] Boss 4 Holy Lance",
 			throttleTime = 2000,
-			uuid = "de5a2ddc-3857-a719-a3b4-f711d8645e26",
+			uuid = "6da23011-c20f-3513-be02-02cd680bf19c",
 			version = 2,
 		},
-		inheritedIndex = 62,
+		inheritedIndex = 65,
 	}, 
 	inheritedProfiles = 
 	{
