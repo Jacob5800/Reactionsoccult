@@ -4505,1142 +4505,6 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "self.used=true",
-						conditions = 
-						{
-							
-							{
-								"e7de50ca-b2f8-752a-b528-db724f2d7054",
-								true,
-							},
-							
-							{
-								"2312ae26-c802-ad39-bbbf-0830ed918dac",
-								true,
-							},
-							
-							{
-								"a4bae7f0-15e7-e380-89ed-28e6f8f500ff",
-								true,
-							},
-							
-							{
-								"e27ae646-5033-f9d0-8f32-0bab1ca37b02",
-								true,
-							},
-							
-							{
-								"b89deb6f-ac1d-7569-98b2-ce63b9dc89ac",
-								true,
-							},
-							
-							{
-								"1e471142-f907-e1dd-abd5-6325e970db36",
-								true,
-							},
-							
-							{
-								"b3f3779f-97e1-26c8-aab2-1d54bd11306a",
-								true,
-							},
-							
-							{
-								"0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
-								true,
-							},
-							
-							{
-								"68842e46-8c8e-f38e-80f1-1c565d84de04",
-								true,
-							},
-							
-							{
-								"36e0cdc9-6f67-832d-af9d-962934e8d8cc",
-								true,
-							},
-							
-							{
-								"3d57020f-4be1-81fb-ba65-a4dd88929867",
-								true,
-							},
-						},
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Throttle",
-						uuid = "f1083890-32a9-f34d-a028-55dcbfea6a81",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"e7de50ca-b2f8-752a-b528-db724f2d7054",
-								true,
-							},
-							
-							{
-								"2312ae26-c802-ad39-bbbf-0830ed918dac",
-								true,
-							},
-							
-							{
-								"a4bae7f0-15e7-e380-89ed-28e6f8f500ff",
-								true,
-							},
-							
-							{
-								"e27ae646-5033-f9d0-8f32-0bab1ca37b02",
-								true,
-							},
-							
-							{
-								"b89deb6f-ac1d-7569-98b2-ce63b9dc89ac",
-								true,
-							},
-							
-							{
-								"1e471142-f907-e1dd-abd5-6325e970db36",
-								true,
-							},
-							
-							{
-								"b3f3779f-97e1-26c8-aab2-1d54bd11306a",
-								true,
-							},
-							
-							{
-								"0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
-								true,
-							},
-							
-							{
-								"68842e46-8c8e-f38e-80f1-1c565d84de04",
-								true,
-							},
-							
-							{
-								"36e0cdc9-6f67-832d-af9d-962934e8d8cc",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						name = "Quick",
-						uuid = "b8fb2967-ec8b-3e1a-90c2-d4cc7d3703c8",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
-						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "e7de50ca-b2f8-752a-b528-db724f2d7054",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4365,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Is P. TMage",
-						uuid = "2312ae26-c802-ad39-bbbf-0830ed918dac",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 2,
-						dequeueIfLuaFalse = true,
-						hpValue = 0.10000000149012,
-						name = "Am Alive",
-						uuid = "a4bae7f0-15e7-e380-89ed-28e6f8f500ff",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 7,
-						dequeueIfLuaFalse = true,
-						uuid = "e27ae646-5033-f9d0-8f32-0bab1ca37b02",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						conditionType = 5,
-						dequeueIfLuaFalse = true,
-						uuid = "b89deb6f-ac1d-7569-98b2-ce63b9dc89ac",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_CD\"]",
-						dequeueIfLuaFalse = true,
-						name = "CD Enabled",
-						uuid = "1e471142-f907-e1dd-abd5-6325e970db36",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 2,
-						buffID = 4260,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Missing Quick",
-						uuid = "b3f3779f-97e1-26c8-aab2-1d54bd11306a",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionCDValue = 3,
-						actionID = 41625,
-						category = "Self",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						name = "Quick CD <= 3s",
-						uuid = "0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 2,
-						buffID = 418,
-						buffIDList = 
-						{
-							418,
-							148,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						matchAnyBuff = true,
-						name = "Not Invuln",
-						uuid = "68842e46-8c8e-f38e-80f1-1c565d84de04",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
-						dequeueIfLuaFalse = true,
-						name = "Check Rezz Timer",
-						uuid = "36e0cdc9-6f67-832d-af9d-962934e8d8cc",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return data.isFirstCombat ~= false",
-						dequeueIfLuaFalse = true,
-						name = "Check 1st Combat",
-						uuid = "3d57020f-4be1-81fb-ba65-a4dd88929867",
-						version = 2,
-					},
-				},
-			},
-			name = "P. TMage Quick",
-			throttleTime = 2000,
-			uuid = "07c6a030-6afd-9a0c-8e6e-1a4b88514b31",
-			version = 2,
-		},
-		inheritedIndex = 57,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionID = 41623,
-						actionLua = "if _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = false\nend\nself.used = true",
-						clusterMinTarget = 0,
-						clusterRadius = 10,
-						conditions = 
-						{
-							
-							{
-								"41ab0a49-62c5-52d4-978d-155a55d6a6c7",
-								true,
-							},
-							
-							{
-								"adbe9e8b-9a2b-fd78-87f7-56a690e17642",
-								true,
-							},
-							
-							{
-								"308c346a-2c62-5d76-b2ad-c6645ddfa62d",
-								true,
-							},
-							
-							{
-								"57f6c1cb-2102-c54d-a980-75f7e523a670",
-								true,
-							},
-							
-							{
-								"147342c4-a3e4-eff5-9753-fb57920c3499",
-								true,
-							},
-							
-							{
-								"e5913dde-025c-ead9-a7ac-3122391bd47a",
-								false,
-							},
-							
-							{
-								"21f1c825-85ff-d38b-9b4e-b426a892b5fb",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						name = "Stop Comet AOE",
-						targetType = "Most Clustered Enemy",
-						uuid = "f6099d22-555d-b551-b832-565ee809b7ca",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionID = 41623,
-						actionLua = "if _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = false\nend\nself.used = true",
-						clusterMinTarget = 0,
-						clusterRadius = 10,
-						conditions = 
-						{
-							
-							{
-								"41ab0a49-62c5-52d4-978d-155a55d6a6c7",
-								true,
-							},
-							
-							{
-								"adbe9e8b-9a2b-fd78-87f7-56a690e17642",
-								true,
-							},
-							
-							{
-								"308c346a-2c62-5d76-b2ad-c6645ddfa62d",
-								true,
-							},
-							
-							{
-								"57f6c1cb-2102-c54d-a980-75f7e523a670",
-								true,
-							},
-							
-							{
-								"147342c4-a3e4-eff5-9753-fb57920c3499",
-								true,
-							},
-							
-							{
-								"6c4aaa8c-60a7-5160-b18c-1cee39774401",
-								false,
-							},
-							
-							{
-								"21f1c825-85ff-d38b-9b4e-b426a892b5fb",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						name = "Stop Comet InstaCast",
-						targetType = "Most Clustered Enemy",
-						uuid = "a8c020bf-922b-0968-a931-c8602273ccad",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionID = 41623,
-						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = true\nself.used = true",
-						clusterMinTarget = 0,
-						clusterRadius = 10,
-						conditions = 
-						{
-							
-							{
-								"41ab0a49-62c5-52d4-978d-155a55d6a6c7",
-								true,
-							},
-							
-							{
-								"adbe9e8b-9a2b-fd78-87f7-56a690e17642",
-								true,
-							},
-							
-							{
-								"308c346a-2c62-5d76-b2ad-c6645ddfa62d",
-								true,
-							},
-							
-							{
-								"57f6c1cb-2102-c54d-a980-75f7e523a670",
-								true,
-							},
-							
-							{
-								"147342c4-a3e4-eff5-9753-fb57920c3499",
-								true,
-							},
-							
-							{
-								"e5913dde-025c-ead9-a7ac-3122391bd47a",
-								true,
-							},
-							
-							{
-								"733afe48-2ab5-b95d-99bc-604180e694ad",
-								true,
-							},
-							
-							{
-								"ef99c6a8-372b-66b4-88d2-b810434077c3",
-								true,
-							},
-							
-							{
-								"30fb22ab-fb03-bcfd-ad9a-24dbfe7479c4",
-								true,
-							},
-							
-							{
-								"6c4aaa8c-60a7-5160-b18c-1cee39774401",
-								true,
-							},
-							
-							{
-								"21f1c825-85ff-d38b-9b4e-b426a892b5fb",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						name = "Comet CD Enabled",
-						targetType = "Most Clustered Enemy",
-						uuid = "af829564-0f32-f9af-9cae-55b0489438ce",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionID = 41623,
-						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = true\nself.used = true",
-						clusterMinTarget = 0,
-						clusterRadius = 10,
-						conditions = 
-						{
-							
-							{
-								"41ab0a49-62c5-52d4-978d-155a55d6a6c7",
-								true,
-							},
-							
-							{
-								"adbe9e8b-9a2b-fd78-87f7-56a690e17642",
-								true,
-							},
-							
-							{
-								"308c346a-2c62-5d76-b2ad-c6645ddfa62d",
-								true,
-							},
-							
-							{
-								"57f6c1cb-2102-c54d-a980-75f7e523a670",
-								true,
-							},
-							
-							{
-								"147342c4-a3e4-eff5-9753-fb57920c3499",
-								true,
-							},
-							
-							{
-								"e5913dde-025c-ead9-a7ac-3122391bd47a",
-								true,
-							},
-							
-							{
-								"733afe48-2ab5-b95d-99bc-604180e694ad",
-								false,
-							},
-							
-							{
-								"30fb22ab-fb03-bcfd-ad9a-24dbfe7479c4",
-								true,
-							},
-							
-							{
-								"6c4aaa8c-60a7-5160-b18c-1cee39774401",
-								true,
-							},
-							
-							{
-								"21f1c825-85ff-d38b-9b4e-b426a892b5fb",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						name = "Comet CD Disabled",
-						targetType = "Most Clustered Enemy",
-						uuid = "5621be61-580f-4ba8-b090-0970702821f5",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "if _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] == true then\n\t_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = false\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"41ab0a49-62c5-52d4-978d-155a55d6a6c7",
-								true,
-							},
-							
-							{
-								"adbe9e8b-9a2b-fd78-87f7-56a690e17642",
-								true,
-							},
-							
-							{
-								"21f1c825-85ff-d38b-9b4e-b426a892b5fb",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Fallback Deactivate",
-						uuid = "199058eb-0e6b-7d9f-b4f3-7ecfd1b2be5a",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
-						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "41ab0a49-62c5-52d4-978d-155a55d6a6c7",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4365,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Is P. TMage",
-						uuid = "adbe9e8b-9a2b-fd78-87f7-56a690e17642",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 7,
-						dequeueIfLuaFalse = true,
-						uuid = "308c346a-2c62-5d76-b2ad-c6645ddfa62d",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						conditionType = 5,
-						dequeueIfLuaFalse = true,
-						uuid = "57f6c1cb-2102-c54d-a980-75f7e523a670",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return ActionList:Get(5,32):CanCastResult() ~= 579",
-						dequeueIfLuaFalse = true,
-						name = "Has Comet",
-						uuid = "147342c4-a3e4-eff5-9753-fb57920c3499",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_AOE\"]",
-						dequeueIfLuaFalse = true,
-						name = "AOE Enabled",
-						uuid = "e5913dde-025c-ead9-a7ac-3122391bd47a",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_CD\"]",
-						dequeueIfLuaFalse = true,
-						name = "CD Enabled",
-						uuid = "733afe48-2ab5-b95d-99bc-604180e694ad",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return TensorReactions_CurrentCombatTimer > 4.0",
-						dequeueIfLuaFalse = true,
-						name = "Combat >= 4s",
-						uuid = "ef99c6a8-372b-66b4-88d2-b810434077c3",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						comparator = 2,
-						conditionType = 6,
-						dequeueIfLuaFalse = true,
-						inRangeValue = 28,
-						name = "Target <= 28y",
-						uuid = "30fb22ab-fb03-bcfd-ad9a-24dbfe7479c4",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 4,
-						buffID = 4260,
-						buffIDList = 
-						{
-							167,
-							4260,
-							1211,
-							1249,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						matchAnyBuff = true,
-						name = "Has InstaCast",
-						uuid = "6c4aaa8c-60a7-5160-b18c-1cee39774401",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionID = 41623,
-						category = "Self",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						name = "Comet Not CD",
-						uuid = "21f1c825-85ff-d38b-9b4e-b426a892b5fb",
-						version = 2,
-					},
-				},
-			},
-			name = "P. TMage Comet",
-			throttleTime = 100,
-			uuid = "988f3e4c-2dda-92d2-8702-0c90ee69af40",
-			version = 2,
-		},
-		inheritedIndex = 45,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						actionID = 7561,
-						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"e7de50ca-b2f8-752a-b528-db724f2d7054",
-								true,
-							},
-							
-							{
-								"2312ae26-c802-ad39-bbbf-0830ed918dac",
-								true,
-							},
-							
-							{
-								"a4bae7f0-15e7-e380-89ed-28e6f8f500ff",
-								true,
-							},
-							
-							{
-								"e27ae646-5033-f9d0-8f32-0bab1ca37b02",
-								true,
-							},
-							
-							{
-								"b89deb6f-ac1d-7569-98b2-ce63b9dc89ac",
-								true,
-							},
-							
-							{
-								"d776f17c-758b-4921-9144-157ce819e49f",
-								true,
-							},
-							
-							{
-								"066cc251-0be0-1ddd-8963-58a814259fbd",
-								true,
-							},
-							
-							{
-								"1e471142-f907-e1dd-abd5-6325e970db36",
-								true,
-							},
-							
-							{
-								"15e16ad4-c97f-fcfe-949e-c60c37b28519",
-								true,
-							},
-							
-							{
-								"d037fcde-5780-d93b-9db9-0bd05e6004b1",
-								true,
-							},
-							
-							{
-								"4497846d-7152-a5f9-8eec-2d45e16ccb82",
-								true,
-							},
-							
-							{
-								"0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
-								true,
-							},
-							
-							{
-								"65026472-ef44-c2dc-a211-9b5279bcfa9c",
-								true,
-							},
-							
-							{
-								"68842e46-8c8e-f38e-80f1-1c565d84de04",
-								true,
-							},
-							
-							{
-								"36e0cdc9-6f67-832d-af9d-962934e8d8cc",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						ignoreWeaveRules = true,
-						name = "Swiftcast CD Enabled",
-						uuid = "b8fb2967-ec8b-3e1a-90c2-d4cc7d3703c8",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionID = 7561,
-						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"e7de50ca-b2f8-752a-b528-db724f2d7054",
-								true,
-							},
-							
-							{
-								"2312ae26-c802-ad39-bbbf-0830ed918dac",
-								true,
-							},
-							
-							{
-								"a4bae7f0-15e7-e380-89ed-28e6f8f500ff",
-								true,
-							},
-							
-							{
-								"e27ae646-5033-f9d0-8f32-0bab1ca37b02",
-								true,
-							},
-							
-							{
-								"b89deb6f-ac1d-7569-98b2-ce63b9dc89ac",
-								true,
-							},
-							
-							{
-								"066cc251-0be0-1ddd-8963-58a814259fbd",
-								true,
-							},
-							
-							{
-								"1e471142-f907-e1dd-abd5-6325e970db36",
-								true,
-							},
-							
-							{
-								"15e16ad4-c97f-fcfe-949e-c60c37b28519",
-								false,
-							},
-							
-							{
-								"d037fcde-5780-d93b-9db9-0bd05e6004b1",
-								true,
-							},
-							
-							{
-								"4497846d-7152-a5f9-8eec-2d45e16ccb82",
-								true,
-							},
-							
-							{
-								"0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
-								true,
-							},
-							
-							{
-								"65026472-ef44-c2dc-a211-9b5279bcfa9c",
-								true,
-							},
-							
-							{
-								"68842e46-8c8e-f38e-80f1-1c565d84de04",
-								true,
-							},
-							
-							{
-								"36e0cdc9-6f67-832d-af9d-962934e8d8cc",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						ignoreWeaveRules = true,
-						name = "Swiftcast CD Disabled",
-						uuid = "ee46b937-034e-1ffb-84ed-9beca8a8c1fe",
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
-						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "e7de50ca-b2f8-752a-b528-db724f2d7054",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4365,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Is P. TMage",
-						uuid = "2312ae26-c802-ad39-bbbf-0830ed918dac",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 2,
-						dequeueIfLuaFalse = true,
-						name = "Am Alive",
-						uuid = "a4bae7f0-15e7-e380-89ed-28e6f8f500ff",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 7,
-						dequeueIfLuaFalse = true,
-						uuid = "e27ae646-5033-f9d0-8f32-0bab1ca37b02",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						conditionType = 5,
-						dequeueIfLuaFalse = true,
-						uuid = "b89deb6f-ac1d-7569-98b2-ce63b9dc89ac",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return TensorReactions_CurrentCombatTimer > 4.0",
-						dequeueIfLuaFalse = true,
-						name = "Combat >= 4s",
-						uuid = "d776f17c-758b-4921-9144-157ce819e49f",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return ActionList:Get(5,32):CanCastResult() ~= 579",
-						dequeueIfLuaFalse = true,
-						name = "Has Comet",
-						uuid = "066cc251-0be0-1ddd-8963-58a814259fbd",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_AOE\"]",
-						dequeueIfLuaFalse = true,
-						name = "AOE Enabled",
-						uuid = "1e471142-f907-e1dd-abd5-6325e970db36",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_CD\"]",
-						dequeueIfLuaFalse = true,
-						name = "CD Enabled",
-						uuid = "15e16ad4-c97f-fcfe-949e-c60c37b28519",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						comparator = 2,
-						conditionType = 6,
-						dequeueIfLuaFalse = true,
-						inRangeValue = 28,
-						name = "Target <= 28y",
-						uuid = "d037fcde-5780-d93b-9db9-0bd05e6004b1",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionID = 7561,
-						category = "Self",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						name = "Swiftcast Not CD",
-						uuid = "4497846d-7152-a5f9-8eec-2d45e16ccb82",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionID = 41623,
-						category = "Self",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						name = "Comet Not CD",
-						uuid = "0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 5,
-						buffIDList = 
-						{
-							4260,
-							1211,
-							1249,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Missing InstaCast",
-						uuid = "65026472-ef44-c2dc-a211-9b5279bcfa9c",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 2,
-						buffID = 418,
-						buffIDList = 
-						{
-							418,
-							148,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						matchAnyBuff = true,
-						name = "Not Invuln",
-						uuid = "68842e46-8c8e-f38e-80f1-1c565d84de04",
-						version = 2,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
-						dequeueIfLuaFalse = true,
-						name = "Check Rezz Timer",
-						uuid = "36e0cdc9-6f67-832d-af9d-962934e8d8cc",
-						version = 2,
-					},
-				},
-			},
-			name = "P. TMage Comet Swiftcast",
-			throttleTime = 1500,
-			uuid = "fb45e2b2-c2e4-1403-8a4b-1c629f622026",
-			version = 2,
-		},
-		inheritedIndex = 48,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
 						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction4\"] = true\nself.used = true",
 						conditions = 
 						{
@@ -5847,7 +4711,7 @@ local tbl =
 			uuid = "7a1f87f1-0933-dc19-a27d-03a45a3815ff",
 			version = 2,
 		},
-		inheritedIndex = 35,
+		inheritedIndex = 39,
 	},
 	
 	{
@@ -6299,7 +5163,7 @@ local tbl =
 			uuid = "340ed7d0-1aad-89f7-be46-d0978596d6c0",
 			version = 2,
 		},
-		inheritedIndex = 41,
+		inheritedIndex = 45,
 	},
 	
 	{
@@ -6368,7 +5232,7 @@ local tbl =
 			uuid = "608ec0d1-adf2-ec9d-8f73-8e6c280fbb5d",
 			version = 2,
 		},
-		inheritedIndex = 37,
+		inheritedIndex = 41,
 	},
 	
 	{
@@ -6505,7 +5369,7 @@ local tbl =
 			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
 			version = 2,
 		},
-		inheritedIndex = 41,
+		inheritedIndex = 45,
 	},
 	
 	{
@@ -6647,7 +5511,7 @@ local tbl =
 			uuid = "b175b050-f2bb-2ffe-bd7e-bff2941f8634",
 			version = 2,
 		},
-		inheritedIndex = 38,
+		inheritedIndex = 42,
 	},
 	
 	{
@@ -6883,7 +5747,7 @@ local tbl =
 			uuid = "9278be18-034c-9f92-abab-1d3e0055a418",
 			version = 2,
 		},
-		inheritedIndex = 39,
+		inheritedIndex = 43,
 	},
 	
 	{
@@ -7126,7 +5990,7 @@ local tbl =
 			uuid = "4c3d9549-4ff9-6f51-a0a1-292851ddf5a7",
 			version = 2,
 		},
-		inheritedIndex = 40,
+		inheritedIndex = 44,
 	},
 	
 	{
@@ -8306,7 +7170,7 @@ local tbl =
 			uuid = "7a8b0ac9-1ab5-9b70-9c4c-08d91cc31515",
 			version = 2,
 		},
-		inheritedIndex = 41,
+		inheritedIndex = 45,
 	},
 	
 	{
@@ -8447,7 +7311,1575 @@ local tbl =
 			uuid = "978328eb-ccac-48cf-bcfc-9c31d4cf6f4d",
 			version = 2,
 		},
-		inheritedIndex = 42,
+		inheritedIndex = 46,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						actionID = 7561,
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"e4e05685-bc66-ebd6-bcaa-3234310a63dc",
+								true,
+							},
+							
+							{
+								"1dc9de45-2b3a-ed51-94aa-113535f573be",
+								true,
+							},
+							
+							{
+								"8ec8f963-54d3-0c71-99c5-4b36841caddc",
+								true,
+							},
+							
+							{
+								"887213f1-a5e7-eb24-957d-e094d3fa94f4",
+								true,
+							},
+							
+							{
+								"0d117016-f3ce-cdea-a793-55f733ea79e6",
+								true,
+							},
+							
+							{
+								"2effcdbd-6564-e8d3-93c7-b1141d7caf40",
+								true,
+							},
+							
+							{
+								"9f9db30b-71b8-96ec-bdde-3f3f5aa43ddf",
+								true,
+							},
+							
+							{
+								"c24d8869-bbca-3099-a2bc-3ff7b5f7bd85",
+								true,
+							},
+							
+							{
+								"957da3eb-171c-72c6-8af0-76b3c63c2cb2",
+								true,
+							},
+							
+							{
+								"2763b763-0269-bc99-b898-2ace4b46ab18",
+								true,
+							},
+							
+							{
+								"d90b1366-d1b5-049e-8ed8-ef6965deb25f",
+								true,
+							},
+							
+							{
+								"c9a0433a-a1f2-c7b9-965a-ac0bfed07681",
+								true,
+							},
+							
+							{
+								"fb553d2c-8741-9603-8d98-dec844883172",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						ignoreWeaveRules = true,
+						name = "Swiftcast",
+						uuid = "9f65abd9-2d0e-36d9-a862-20159fe97e51",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "e4e05685-bc66-ebd6-bcaa-3234310a63dc",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4365,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. TMage",
+						uuid = "1dc9de45-2b3a-ed51-94aa-113535f573be",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TensorCore.mGetPlayer().alive",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 0.10000000149012,
+						name = "Am Alive",
+						uuid = "8ec8f963-54d3-0c71-99c5-4b36841caddc",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Not Invuln",
+						uuid = "887213f1-a5e7-eb24-957d-e094d3fa94f4",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
+						dequeueIfLuaFalse = true,
+						name = "Check Rezz Timer",
+						uuid = "0d117016-f3ce-cdea-a793-55f733ea79e6",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "2effcdbd-6564-e8d3-93c7-b1141d7caf40",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "9f9db30b-71b8-96ec-bdde-3f3f5aa43ddf",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TensorReactions_CurrentCombatTimer > 2.0",
+						dequeueIfLuaFalse = true,
+						name = "Combat > 2s",
+						uuid = "c24d8869-bbca-3099-a2bc-3ff7b5f7bd85",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,35):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Quick",
+						uuid = "957da3eb-171c-72c6-8af0-76b3c63c2cb2",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_CD\"]",
+						dequeueIfLuaFalse = true,
+						name = "CD Enabled",
+						uuid = "2763b763-0269-bc99-b898-2ace4b46ab18",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 7561,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Swiftcast Not CD",
+						uuid = "d90b1366-d1b5-049e-8ed8-ef6965deb25f",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 41625,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Quick Not CD",
+						uuid = "c9a0433a-a1f2-c7b9-965a-ac0bfed07681",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 5,
+						buffIDList = 
+						{
+							1211,
+							1249,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Missing InstaCast",
+						uuid = "fb553d2c-8741-9603-8d98-dec844883172",
+						version = 2,
+					},
+				},
+			},
+			name = "P. TMage Quick Swiftcast",
+			throttleTime = 1500,
+			uuid = "99e3b5fa-ea0f-0ff4-acfc-0bd7046faf10",
+			version = 2,
+		},
+		inheritedIndex = 35,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b8923872-1fb3-0d14-953a-5a59cfe3365f",
+								true,
+							},
+							
+							{
+								"9391590a-8077-de76-9f34-229c08b59c27",
+								true,
+							},
+							
+							{
+								"5e68025e-ce67-ff76-8db8-a2558f9db1c8",
+								true,
+							},
+							
+							{
+								"5d39d9fa-bd15-9eac-a5b7-7186b000de2c",
+								true,
+							},
+							
+							{
+								"e69edef5-3f2d-bd30-9022-881c5890bc0a",
+								true,
+							},
+							
+							{
+								"62302ce7-6c2c-339d-9a66-0459d9ae948a",
+								true,
+							},
+							
+							{
+								"6d9c1fb7-adf4-08d3-88c5-7e2bb287bbb3",
+								true,
+							},
+							
+							{
+								"6604bd49-b854-b314-98bf-f92803e2a578",
+								true,
+							},
+							
+							{
+								"5b882274-6f10-5ab9-b035-94f13c039d11",
+								true,
+							},
+							
+							{
+								"13b6da88-9ded-47a6-a0f5-c3bf23303c50",
+								true,
+							},
+							
+							{
+								"173dc089-d73e-fda7-a9cb-fdf0bbd71eb5",
+								true,
+							},
+							
+							{
+								"1e5db786-add6-8f4c-aa6e-50191086c393",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Quick Swiftcast",
+						uuid = "990ec262-0b4d-5446-abf5-09d617f1a31a",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b8923872-1fb3-0d14-953a-5a59cfe3365f",
+								true,
+							},
+							
+							{
+								"9391590a-8077-de76-9f34-229c08b59c27",
+								true,
+							},
+							
+							{
+								"5e68025e-ce67-ff76-8db8-a2558f9db1c8",
+								true,
+							},
+							
+							{
+								"5d39d9fa-bd15-9eac-a5b7-7186b000de2c",
+								true,
+							},
+							
+							{
+								"e69edef5-3f2d-bd30-9022-881c5890bc0a",
+								true,
+							},
+							
+							{
+								"62302ce7-6c2c-339d-9a66-0459d9ae948a",
+								true,
+							},
+							
+							{
+								"6d9c1fb7-adf4-08d3-88c5-7e2bb287bbb3",
+								true,
+							},
+							
+							{
+								"6604bd49-b854-b314-98bf-f92803e2a578",
+								true,
+							},
+							
+							{
+								"5b882274-6f10-5ab9-b035-94f13c039d11",
+								true,
+							},
+							
+							{
+								"13b6da88-9ded-47a6-a0f5-c3bf23303c50",
+								true,
+							},
+							
+							{
+								"50fb50b1-5694-c1ba-98b6-eff17972bdd4",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Quick Hardcast",
+						uuid = "29754fd4-b447-f237-a599-59c6ff3f8118",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b8923872-1fb3-0d14-953a-5a59cfe3365f",
+								true,
+							},
+							
+							{
+								"9391590a-8077-de76-9f34-229c08b59c27",
+								true,
+							},
+							
+							{
+								"62302ce7-6c2c-339d-9a66-0459d9ae948a",
+								false,
+							},
+							
+							{
+								"4d30d9c1-a076-184f-b7a8-938c9e233abf",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorMagnum3_CD",
+						name = "Fallback Deactivate",
+						uuid = "4a05b560-3269-0307-ace8-c351ec90f709",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "b8923872-1fb3-0d14-953a-5a59cfe3365f",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4365,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. TMage",
+						uuid = "9391590a-8077-de76-9f34-229c08b59c27",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 41625,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Quick CD <= 3s",
+						uuid = "50fb50b1-5694-c1ba-98b6-eff17972bdd4",
+						version = 2,
+					},
+					inheritedIndex = 3,
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TensorCore.mGetPlayer().alive",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 0.10000000149012,
+						name = "Am Alive",
+						uuid = "5e68025e-ce67-ff76-8db8-a2558f9db1c8",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Not Invuln",
+						uuid = "5d39d9fa-bd15-9eac-a5b7-7186b000de2c",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
+						dequeueIfLuaFalse = true,
+						name = "Check Rezz Timer",
+						uuid = "e69edef5-3f2d-bd30-9022-881c5890bc0a",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "62302ce7-6c2c-339d-9a66-0459d9ae948a",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "6d9c1fb7-adf4-08d3-88c5-7e2bb287bbb3",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TensorReactions_CurrentCombatTimer > 2.0",
+						dequeueIfLuaFalse = true,
+						name = "Combat > 2s",
+						uuid = "6604bd49-b854-b314-98bf-f92803e2a578",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\"] == true",
+						dequeueIfLuaFalse = true,
+						name = "Is Queued",
+						uuid = "4d30d9c1-a076-184f-b7a8-938c9e233abf",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_CD\"]",
+						dequeueIfLuaFalse = true,
+						name = "CD Enabled",
+						uuid = "5b882274-6f10-5ab9-b035-94f13c039d11",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 4260,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Missing Quick",
+						uuid = "13b6da88-9ded-47a6-a0f5-c3bf23303c50",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 4,
+						buffID = 4260,
+						buffIDList = 
+						{
+							167,
+							1211,
+							1249,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Has InstaCast",
+						uuid = "173dc089-d73e-fda7-a9cb-fdf0bbd71eb5",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 41625,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Quick Not CD",
+						uuid = "1e5db786-add6-8f4c-aa6e-50191086c393",
+						version = 2,
+					},
+				},
+			},
+			name = "P. TMage Quick",
+			throttleTime = 1500,
+			uuid = "131e9c6c-3378-3b49-8814-8e54f4c84177",
+			version = 2,
+		},
+		inheritedIndex = 36,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						actionID = 7561,
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"863f9088-7ff2-33c1-87a4-17fa3f5600fc",
+								true,
+							},
+							
+							{
+								"2efec3ba-6677-7291-aab2-5b3d127d272b",
+								true,
+							},
+							
+							{
+								"888144e8-9f0b-59e7-8ba2-b68e03ffe39c",
+								true,
+							},
+							
+							{
+								"6f3bed59-4ccb-8959-98e0-5682ebf0be93",
+								true,
+							},
+							
+							{
+								"18ef603d-8111-6dca-b205-ae9196e7a4e5",
+								true,
+							},
+							
+							{
+								"1b1b6092-1106-01ef-a6d5-fc0abb86b1eb",
+								true,
+							},
+							
+							{
+								"452d61af-d863-2369-8420-15c95ea596dc",
+								true,
+							},
+							
+							{
+								"ac2be677-3caa-46c6-8ff9-5e87946a58e1",
+								true,
+							},
+							
+							{
+								"4c57161c-be68-5a19-8c6b-fc821d354def",
+								true,
+							},
+							
+							{
+								"f051d150-9578-6600-a8ba-672d4453b323",
+								true,
+							},
+							
+							{
+								"07a40558-d7d3-50f0-bf6a-f7945bb5dde8",
+								true,
+							},
+							
+							{
+								"08451440-8ac0-8cb4-8075-bb2ede73eab1",
+								true,
+							},
+							
+							{
+								"66b5eee2-60e9-f0f4-99ad-fededa0abf2f",
+								true,
+							},
+							
+							{
+								"83031a3d-29f3-73fc-82f4-32235c5f0295",
+								true,
+							},
+							
+							{
+								"796fb099-755c-e1ce-ad7b-3a54f56f07bb",
+								true,
+							},
+							
+							{
+								"91aaf36f-19a9-6f25-ae07-c0e3a24d7400",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						ignoreWeaveRules = true,
+						name = "Swiftcast CD Enabled",
+						uuid = "660c68d9-620f-9fbb-add7-7d85a42ef469",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 7561,
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"863f9088-7ff2-33c1-87a4-17fa3f5600fc",
+								true,
+							},
+							
+							{
+								"2efec3ba-6677-7291-aab2-5b3d127d272b",
+								true,
+							},
+							
+							{
+								"888144e8-9f0b-59e7-8ba2-b68e03ffe39c",
+								true,
+							},
+							
+							{
+								"6f3bed59-4ccb-8959-98e0-5682ebf0be93",
+								true,
+							},
+							
+							{
+								"18ef603d-8111-6dca-b205-ae9196e7a4e5",
+								true,
+							},
+							
+							{
+								"1b1b6092-1106-01ef-a6d5-fc0abb86b1eb",
+								true,
+							},
+							
+							{
+								"452d61af-d863-2369-8420-15c95ea596dc",
+								true,
+							},
+							
+							{
+								"4c57161c-be68-5a19-8c6b-fc821d354def",
+								true,
+							},
+							
+							{
+								"f051d150-9578-6600-a8ba-672d4453b323",
+								true,
+							},
+							
+							{
+								"07a40558-d7d3-50f0-bf6a-f7945bb5dde8",
+								false,
+							},
+							
+							{
+								"08451440-8ac0-8cb4-8075-bb2ede73eab1",
+								true,
+							},
+							
+							{
+								"66b5eee2-60e9-f0f4-99ad-fededa0abf2f",
+								true,
+							},
+							
+							{
+								"83031a3d-29f3-73fc-82f4-32235c5f0295",
+								true,
+							},
+							
+							{
+								"796fb099-755c-e1ce-ad7b-3a54f56f07bb",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						ignoreWeaveRules = true,
+						name = "Swiftcast CD Disabled",
+						uuid = "234fb9cd-8773-0887-a0fc-22b5b357827f",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+					inheritedIndex = 2,
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "863f9088-7ff2-33c1-87a4-17fa3f5600fc",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4365,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. TMage",
+						uuid = "2efec3ba-6677-7291-aab2-5b3d127d272b",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 7561,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Swiftcast Not CD",
+						uuid = "66b5eee2-60e9-f0f4-99ad-fededa0abf2f",
+						version = 2,
+					},
+					inheritedIndex = 3,
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TensorCore.mGetPlayer().alive",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 0.10000000149012,
+						name = "Am Alive",
+						uuid = "888144e8-9f0b-59e7-8ba2-b68e03ffe39c",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Not Invuln",
+						uuid = "6f3bed59-4ccb-8959-98e0-5682ebf0be93",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
+						dequeueIfLuaFalse = true,
+						name = "Check Rezz Timer",
+						uuid = "18ef603d-8111-6dca-b205-ae9196e7a4e5",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "1b1b6092-1106-01ef-a6d5-fc0abb86b1eb",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "452d61af-d863-2369-8420-15c95ea596dc",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TensorReactions_CurrentCombatTimer > 4.0",
+						dequeueIfLuaFalse = true,
+						name = "Combat > 4s",
+						uuid = "ac2be677-3caa-46c6-8ff9-5e87946a58e1",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,32):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Comet",
+						uuid = "4c57161c-be68-5a19-8c6b-fc821d354def",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_AOE\"]",
+						dequeueIfLuaFalse = true,
+						name = "AOE Enabled",
+						uuid = "f051d150-9578-6600-a8ba-672d4453b323",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_CD\"]",
+						dequeueIfLuaFalse = true,
+						name = "CD Enabled",
+						uuid = "07a40558-d7d3-50f0-bf6a-f7945bb5dde8",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 28,
+						name = "Target <= 28y",
+						uuid = "08451440-8ac0-8cb4-8075-bb2ede73eab1",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 41623,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Comet Not CD",
+						uuid = "83031a3d-29f3-73fc-82f4-32235c5f0295",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 5,
+						buffIDList = 
+						{
+							4260,
+							1211,
+							1249,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Missing InstaCast",
+						uuid = "796fb099-755c-e1ce-ad7b-3a54f56f07bb",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\"] == false",
+						dequeueIfLuaFalse = true,
+						name = "Quick Not Queued",
+						uuid = "91aaf36f-19a9-6f25-ae07-c0e3a24d7400",
+						version = 2,
+					},
+				},
+			},
+			name = "P. TMage Comet Swiftcast",
+			throttleTime = 1500,
+			uuid = "89b57fd9-204e-7a6d-b023-f4bcb9a02018",
+			version = 2,
+		},
+		inheritedIndex = 37,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionID = 41623,
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = false\nself.used = true",
+						clusterMinTarget = 0,
+						clusterRadius = 10,
+						conditions = 
+						{
+							
+							{
+								"581d3b72-ff53-5465-8f80-501487c5185e",
+								true,
+							},
+							
+							{
+								"bb99aace-f644-c63f-9e9e-cb2f398cd4b9",
+								true,
+							},
+							
+							{
+								"05747767-f3da-4e44-b853-44c4787286b7",
+								true,
+							},
+							
+							{
+								"70378384-e3de-d091-9c9e-2e9cca82a975",
+								true,
+							},
+							
+							{
+								"4a4f31ae-f496-f995-854f-7fb3703a6e94",
+								true,
+							},
+							
+							{
+								"f4401a93-0711-a1ef-8364-92bde684311c",
+								false,
+							},
+							
+							{
+								"ad0e3e8c-923f-87c9-ad77-52c0cbae8304",
+								true,
+							},
+							
+							{
+								"42c0a7df-98bd-e66b-a99a-07bec9cf8cf8",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Stop Comet AOE",
+						targetType = "Most Clustered Enemy",
+						uuid = "096d4315-7fa6-40fa-9846-b541c934a7e6",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionID = 41623,
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = false\nself.used = true",
+						clusterMinTarget = 0,
+						clusterRadius = 10,
+						conditions = 
+						{
+							
+							{
+								"581d3b72-ff53-5465-8f80-501487c5185e",
+								true,
+							},
+							
+							{
+								"bb99aace-f644-c63f-9e9e-cb2f398cd4b9",
+								true,
+							},
+							
+							{
+								"05747767-f3da-4e44-b853-44c4787286b7",
+								true,
+							},
+							
+							{
+								"70378384-e3de-d091-9c9e-2e9cca82a975",
+								true,
+							},
+							
+							{
+								"4a4f31ae-f496-f995-854f-7fb3703a6e94",
+								true,
+							},
+							
+							{
+								"b8c07692-8f6c-859c-bdc0-de67aa600c45",
+								false,
+							},
+							
+							{
+								"ad0e3e8c-923f-87c9-ad77-52c0cbae8304",
+								true,
+							},
+							
+							{
+								"42c0a7df-98bd-e66b-a99a-07bec9cf8cf8",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Stop Comet InstaCast",
+						targetType = "Most Clustered Enemy",
+						uuid = "6c0c31a1-caa8-c9b5-bcab-42a009672eda",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionID = 41623,
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = true\nself.used = true",
+						clusterMinTarget = 0,
+						clusterRadius = 10,
+						conditions = 
+						{
+							
+							{
+								"581d3b72-ff53-5465-8f80-501487c5185e",
+								true,
+							},
+							
+							{
+								"bb99aace-f644-c63f-9e9e-cb2f398cd4b9",
+								true,
+							},
+							
+							{
+								"05747767-f3da-4e44-b853-44c4787286b7",
+								true,
+							},
+							
+							{
+								"70378384-e3de-d091-9c9e-2e9cca82a975",
+								true,
+							},
+							
+							{
+								"4a4f31ae-f496-f995-854f-7fb3703a6e94",
+								true,
+							},
+							
+							{
+								"f4401a93-0711-a1ef-8364-92bde684311c",
+								true,
+							},
+							
+							{
+								"4741e70b-bbcf-faac-87b0-8fb03eb7b81c",
+								true,
+							},
+							
+							{
+								"2700c255-ec45-90ae-a29c-750594b04c5f",
+								true,
+							},
+							
+							{
+								"4a656ec3-893e-39a9-ba9c-911adb6201a0",
+								true,
+							},
+							
+							{
+								"b8c07692-8f6c-859c-bdc0-de67aa600c45",
+								true,
+							},
+							
+							{
+								"ad0e3e8c-923f-87c9-ad77-52c0cbae8304",
+								true,
+							},
+							
+							{
+								"a7f0b14a-cc2e-2473-ae9c-799f61e425ce",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Comet CD Enabled",
+						targetType = "Most Clustered Enemy",
+						uuid = "620a60d1-e88f-fc95-a614-fd8e12625b52",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionID = 41623,
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = true\nself.used = true",
+						clusterMinTarget = 0,
+						clusterRadius = 10,
+						conditions = 
+						{
+							
+							{
+								"581d3b72-ff53-5465-8f80-501487c5185e",
+								true,
+							},
+							
+							{
+								"bb99aace-f644-c63f-9e9e-cb2f398cd4b9",
+								true,
+							},
+							
+							{
+								"05747767-f3da-4e44-b853-44c4787286b7",
+								true,
+							},
+							
+							{
+								"70378384-e3de-d091-9c9e-2e9cca82a975",
+								true,
+							},
+							
+							{
+								"4a4f31ae-f496-f995-854f-7fb3703a6e94",
+								true,
+							},
+							
+							{
+								"f4401a93-0711-a1ef-8364-92bde684311c",
+								true,
+							},
+							
+							{
+								"4741e70b-bbcf-faac-87b0-8fb03eb7b81c",
+								false,
+							},
+							
+							{
+								"4a656ec3-893e-39a9-ba9c-911adb6201a0",
+								true,
+							},
+							
+							{
+								"b8c07692-8f6c-859c-bdc0-de67aa600c45",
+								true,
+							},
+							
+							{
+								"ad0e3e8c-923f-87c9-ad77-52c0cbae8304",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Comet CD Disabled",
+						targetType = "Most Clustered Enemy",
+						uuid = "6bc086c6-66f7-24d0-823e-138fbc3d09db",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"581d3b72-ff53-5465-8f80-501487c5185e",
+								true,
+							},
+							
+							{
+								"bb99aace-f644-c63f-9e9e-cb2f398cd4b9",
+								true,
+							},
+							
+							{
+								"05747767-f3da-4e44-b853-44c4787286b7",
+								false,
+							},
+							
+							{
+								"42c0a7df-98bd-e66b-a99a-07bec9cf8cf8",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorMagnum3_CD",
+						name = "Fallback Deactivate",
+						uuid = "50c928f5-7bb6-9f58-918f-f8419b183c6b",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "581d3b72-ff53-5465-8f80-501487c5185e",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4365,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. TMage",
+						uuid = "bb99aace-f644-c63f-9e9e-cb2f398cd4b9",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "05747767-f3da-4e44-b853-44c4787286b7",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "70378384-e3de-d091-9c9e-2e9cca82a975",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,32):CanCastResult() ~= 579 or ActionList:Get(5,34):CanCastResult() == 582",
+						dequeueIfLuaFalse = true,
+						name = "Has Comet",
+						uuid = "4a4f31ae-f496-f995-854f-7fb3703a6e94",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_AOE\"]",
+						dequeueIfLuaFalse = true,
+						name = "AOE Enabled",
+						uuid = "f4401a93-0711-a1ef-8364-92bde684311c",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_CD\"]",
+						dequeueIfLuaFalse = true,
+						name = "CD Enabled",
+						uuid = "4741e70b-bbcf-faac-87b0-8fb03eb7b81c",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TensorReactions_CurrentCombatTimer > 4.0",
+						dequeueIfLuaFalse = true,
+						name = "Combat > 4s",
+						uuid = "2700c255-ec45-90ae-a29c-750594b04c5f",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 28,
+						name = "Target <= 28y",
+						uuid = "4a656ec3-893e-39a9-ba9c-911adb6201a0",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 4,
+						buffID = 4260,
+						buffIDList = 
+						{
+							167,
+							4260,
+							1211,
+							1249,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Has InstaCast",
+						uuid = "b8c07692-8f6c-859c-bdc0-de67aa600c45",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 41623,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Comet Not CD",
+						uuid = "ad0e3e8c-923f-87c9-ad77-52c0cbae8304",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] == true",
+						dequeueIfLuaFalse = true,
+						name = "Is Queued",
+						uuid = "42c0a7df-98bd-e66b-a99a-07bec9cf8cf8",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\"] == false",
+						dequeueIfLuaFalse = true,
+						name = "Quick Not Queued",
+						uuid = "a7f0b14a-cc2e-2473-ae9c-799f61e425ce",
+						version = 2,
+					},
+				},
+			},
+			name = "P. TMage Comet",
+			throttleTime = 100,
+			uuid = "3d061d7d-cbe4-dea9-8efa-4f16cbe464ef",
+			version = 2,
+		},
+		inheritedIndex = 38,
 	},
 	
 	{
@@ -8463,7 +8895,7 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
-		inheritedIndex = 37,
+		inheritedIndex = 41,
 	},
 	
 	{
@@ -8546,7 +8978,7 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 51,
+		inheritedIndex = 55,
 	},
 	
 	{
@@ -8823,7 +9255,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 57,
+		inheritedIndex = 64,
 	},
 	
 	{
@@ -9972,7 +10404,348 @@ local tbl =
 			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
 			version = 2,
 		},
-		inheritedIndex = 56,
+		inheritedIndex = 63,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Alert",
+						actionLua = "data.ocFTBRedPuddleCount = 0\ndata.ocFTBBluePuddleCount = 0\ndata.ocFTBSnowballTether = false\ndata.ocFTBSnowballTetherEntID = nil\nself.used=true",
+						alertTTS = true,
+						alertText = "Knockback",
+						conditions = 
+						{
+							
+							{
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
+								true,
+							},
+							
+							{
+								"9480ace0-1972-dafa-b418-a87dd2b5d565",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Alert",
+						uuid = "3b6c0a31-376b-be60-9d39-8ccdce241b6d",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_ArmsLength\"] = true\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_Surecast\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
+								true,
+							},
+							
+							{
+								"c0e6fa19-888b-1651-bcac-ba7d8c305266",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "KB Immune",
+						uuid = "89cb112f-541c-3035-8577-d0e5dd91a902",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4442,
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 3,
+						eventArgType = 2,
+						eventSpellID = 41719,
+						eventSpellName = "-1",
+						name = "Is Expulsion Afar",
+						spellIDList = 
+						{
+							41719,
+							41701,
+						},
+						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4442,
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventSpellID = 41719,
+						eventSpellName = "-1",
+						name = "Is Ray",
+						spellIDList = 
+						{
+							41719,
+							41701,
+						},
+						uuid = "c0e6fa19-888b-1651-bcac-ba7d8c305266",
+						version = 2,
+					},
+				},
+			},
+			eventType = 3,
+			name = "[FTB] Boss 1 KB",
+			throttleTime = 5000,
+			uuid = "8c8fa722-c18c-28e8-8b7b-99150f94b8ee",
+			version = 2,
+		},
+		inheritedIndex = 57,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Alert",
+						actionLua = "data.ocFTBRedPuddleCount = 0\ndata.ocFTBBluePuddleCount = 0\ndata.ocFTBSnowballTether = false\ndata.ocFTBSnowballTetherEntID = nil\nself.used=true",
+						alertTTS = true,
+						alertText = "Meteor On You",
+						conditions = 
+						{
+							
+							{
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
+								true,
+							},
+							
+							{
+								"9480ace0-1972-dafa-b418-a87dd2b5d565",
+								true,
+							},
+							
+							{
+								"c0e6fa19-888b-1651-bcac-ba7d8c305266",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Alert",
+						uuid = "3b6c0a31-376b-be60-9d39-8ccdce241b6d",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4442,
+						category = "Lua",
+						conditionLua = "return eventArgs.newActiveAura1 == 2452",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 3,
+						eventArgType = 2,
+						eventSpellID = 41719,
+						eventSpellName = "-1",
+						name = "Is Meteor",
+						spellIDList = 
+						{
+							41719,
+							41701,
+						},
+						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4442,
+						category = "Lua",
+						conditionLua = "return eventArgs.entityID == TensorCore.mGetPlayer().id",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventSpellID = 41719,
+						eventSpellName = "-1",
+						name = "Is On You",
+						spellIDList = 
+						{
+							41719,
+							41701,
+						},
+						uuid = "c0e6fa19-888b-1651-bcac-ba7d8c305266",
+						version = 2,
+					},
+				},
+			},
+			eventType = 25,
+			name = "[FTB] Boss 1 Meteor",
+			uuid = "99980e5a-5d62-8ea2-ad9f-9eb9bb611f5d",
+			version = 2,
+		},
+		inheritedIndex = 58,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Alert",
+						actionLua = "data.ocFTBRedPuddleCount = 0\ndata.ocFTBBluePuddleCount = 0\ndata.ocFTBSnowballTether = false\ndata.ocFTBSnowballTetherEntID = nil\nself.used=true",
+						alertTTS = true,
+						alertText = "Stack On You",
+						conditions = 
+						{
+							
+							{
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
+								true,
+							},
+							
+							{
+								"9480ace0-1972-dafa-b418-a87dd2b5d565",
+								true,
+							},
+							
+							{
+								"c0e6fa19-888b-1651-bcac-ba7d8c305266",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Alert",
+						uuid = "3b6c0a31-376b-be60-9d39-8ccdce241b6d",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4442,
+						category = "Event",
+						conditionLua = "return eventArgs.markerID == 575",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 3,
+						eventArgType = 3,
+						eventSpellID = 41719,
+						eventSpellName = "-1",
+						markerIDList = 
+						{
+							574,
+							575,
+						},
+						name = "Is Stack Marker",
+						spellIDList = 
+						{
+							41719,
+							41701,
+						},
+						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4442,
+						category = "Lua",
+						conditionLua = "return eventArgs.entityID == TensorCore.mGetPlayer().id",
+						dequeueIfLuaFalse = true,
+						eventSpellID = 41719,
+						eventSpellName = "-1",
+						name = "Is On You",
+						spellIDList = 
+						{
+							41719,
+							41701,
+						},
+						uuid = "c0e6fa19-888b-1651-bcac-ba7d8c305266",
+						version = 2,
+					},
+				},
+			},
+			eventType = 4,
+			name = "[FTB] Boss 1 Stack",
+			uuid = "2bf12c39-8141-a40f-8e46-28ac954808e0",
+			version = 2,
+		},
+		inheritedIndex = 59,
 	},
 	
 	{
@@ -10243,7 +11016,7 @@ local tbl =
 			uuid = "bfd39011-66e4-7ebc-a314-9350aaa99856",
 			version = 2,
 		},
-		inheritedIndex = 58,
+		inheritedIndex = 65,
 	},
 	
 	{
@@ -10335,7 +11108,7 @@ local tbl =
 			uuid = "06acd7e2-3a2b-4c8b-a09a-482655849fc6",
 			version = 2,
 		},
-		inheritedIndex = 63,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -10450,7 +11223,7 @@ local tbl =
 			uuid = "ae235d51-4679-9c09-8261-885a05bc74bb",
 			version = 2,
 		},
-		inheritedIndex = 62,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -10917,7 +11690,7 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "self.used=true",
+						actionLua = "local rectLength = 20\nlocal magitaurPos = { x = 700.0, y = -476.0, z = -674.0 }\nlocal headings = {\n\tsouth = math.rad(45),\n\tnorthEast = math.rad(165),\n\tnorthWest = math.rad(285)\n}\nlocal lanceSquare = {\n\t[1] = headings.northEast,\n\t[2] = headings.northEast,\n\t[3] = headings.northEast,\n\t[5] = headings.south,\n\t[6] = headings.south,\n\t[7] = headings.south,\n\t[9] = headings.northWest,\n\t[10] = headings.northWest,\n\t[11] = headings.northWest\n}\n\nlocal baseDrawDelay = 12125\nlocal drawDuration = 2000\nlocal staticDrawer = TensorCore.getStaticDrawer(1845559113)\nlocal moogleDrawer = TensorCore.getMoogleDrawer()\n\nlocal function drawSquare(drawer, heading, drawDelay)\n    local dx = (rectLength / 2) * math.cos(heading)\n    local dz = (rectLength / 2) * math.sin(heading)\n    drawer:addTimedRect(drawDuration, magitaurPos.x - dx, magitaurPos.y, magitaurPos.z + dz, rectLength, rectLength, heading, drawDelay)\nend\n\nfor lanceCount = 0, 11 do\n\tlocal drawDelay = baseDrawDelay + (drawDuration * lanceCount)\n\n\tif lanceCount == 0 or lanceCount == 4 or lanceCount == 8 then\n\t\tfor _, heading in pairs(headings) do\n\t\t\tdrawSquare(staticDrawer, heading, drawDelay)\n\t\tend\n\telse\n\t\tlocal lanceSquareHeading = lanceSquare[lanceCount]\n\t\tif lanceSquareHeading then\n\t\t\tdrawSquare(moogleDrawer, lanceSquareHeading, drawDelay)\n\t\tend\n\tend\nend\n\nself.used=true",
 						conditions = 
 						{
 							
@@ -11020,10 +11793,10 @@ local tbl =
 			eventType = 2,
 			name = "[FTB] Boss 4 Holy Lance",
 			throttleTime = 2000,
-			uuid = "6da23011-c20f-3513-be02-02cd680bf19c",
+			uuid = "ca2ed4c5-1790-ab33-930e-7944b6c02ebf",
 			version = 2,
 		},
-		inheritedIndex = 65,
+		inheritedIndex = 64,
 	}, 
 	inheritedProfiles = 
 	{
