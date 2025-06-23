@@ -2801,6 +2801,11 @@ local tbl =
 								"0871ec24-fb24-fa3d-97e0-3425718700b7",
 								true,
 							},
+							
+							{
+								"785c1f3a-3ab7-c292-b8e0-7a39c641af49",
+								true,
+							},
 						},
 						gVar = "ACR_TensorMagnum3_CD",
 						targetType = "Current Target",
@@ -2865,7 +2870,7 @@ local tbl =
 					data = 
 					{
 						buffCheckType = 3,
-						buffDuration = 10,
+						buffDuration = 7,
 						buffID = 4259,
 						uuid = "a81e78f1-987b-edbd-a012-344d8863f871",
 						version = 2,
@@ -2914,8 +2919,19 @@ local tbl =
 						version = 2,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TensorReactions_CurrentCombatTimer > 12.5",
+						dequeueIfLuaFalse = true,
+						name = "Combat > 10s",
+						uuid = "785c1f3a-3ab7-c292-b8e0-7a39c641af49",
+						version = 2,
+					},
+				},
 			},
-			enabled = false,
 			name = "[Time mage] Mage Masher",
 			throttleTime = 1250,
 			uuid = "f002c1b7-06d1-6521-a194-18da8de47602",
@@ -9255,7 +9271,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 64,
+		inheritedIndex = 65,
 	},
 	
 	{
@@ -11016,7 +11032,7 @@ local tbl =
 			uuid = "bfd39011-66e4-7ebc-a314-9350aaa99856",
 			version = 2,
 		},
-		inheritedIndex = 65,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -11576,11 +11592,52 @@ local tbl =
 								"9480ace0-1972-dafa-b418-a87dd2b5d565",
 								true,
 							},
+							
+							{
+								"e2528b8f-60d9-2cbe-aed2-09c6c8aa177f",
+								false,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuMNK3_CD",
 						name = "Draw Axeblow",
 						uuid = "3b6c0a31-376b-be60-9d39-8ccdce241b6d",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local drawDuration = 6100\nlocal lanceDelay = 3250\nlocal rectLength = 20\nlocal headings = {\n\tsouth = math.rad(45),\n\tnorthEast = math.rad(165),\n\tnorthWest = math.rad(285)\n}\n\nlocal entityPos = TensorCore.mGetEntity(eventArgs.entityID).pos\n\nlocal drawer = TensorCore.getStaticDrawer(1845559113)\nfor direction, heading in pairs(headings) do\n\tlocal dx = ((rectLength / 2) * math.cos(heading))\n\tlocal dz = ((rectLength / 2) * math.sin(heading))\n\n\tif direction == \"northWest\" then\n\t\tdrawer:addTimedRect(drawDuration - lanceDelay, entityPos.x - dx, entityPos.y, entityPos.z + dz, rectLength, rectLength, heading, lanceDelay)\n\telse\n\t\tdrawer:addTimedRect(drawDuration, entityPos.x - dx, entityPos.y, entityPos.z + dz, rectLength, rectLength, heading)\n\tend\nend\nTensorCore.getMoogleDrawer():addTimedCircle(drawDuration, entityPos.x, entityPos.y, entityPos.z, rectLength)\n\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
+								true,
+							},
+							
+							{
+								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
+								true,
+							},
+							
+							{
+								"9480ace0-1972-dafa-b418-a87dd2b5d565",
+								true,
+							},
+							
+							{
+								"e2528b8f-60d9-2cbe-aed2-09c6c8aa177f",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Draw Lance Axeblow",
+						uuid = "ab05f2c5-3015-451c-b4f8-3a8b606fe634",
 						version = 2.1,
 					},
 				},
@@ -11672,12 +11729,25 @@ local tbl =
 						version = 2,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return table.size(TensorCore.entityList(\"contentid=13948\")) > 0",
+						dequeueIfLuaFalse = true,
+						name = "Has Lance",
+						uuid = "e2528b8f-60d9-2cbe-aed2-09c6c8aa177f",
+						version = 2,
+					},
+				},
 			},
 			eventType = 3,
 			name = "[FTB] Boss 4 Axe/Lanceblow",
-			uuid = "d4e1f2e7-ce77-30ee-9a49-c8e249350bd1",
+			uuid = "de4b11dc-cace-5590-b9b4-6d768416d2c9",
 			version = 2,
 		},
+		inheritedIndex = 64,
 	},
 	
 	{
@@ -11796,7 +11866,7 @@ local tbl =
 			uuid = "ca2ed4c5-1790-ab33-930e-7944b6c02ebf",
 			version = 2,
 		},
-		inheritedIndex = 64,
+		inheritedIndex = 65,
 	}, 
 	inheritedProfiles = 
 	{
