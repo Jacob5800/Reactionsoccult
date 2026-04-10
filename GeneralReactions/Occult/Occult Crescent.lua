@@ -8905,6 +8905,11 @@ local tbl =
 							},
 							
 							{
+								"c3d8a1f7-5e92-4b3a-9c16-8f2d0e7a4b59",
+								true,
+							},
+							
+							{
 								"d81c6985-e446-ec27-a6f7-63bff52ae445",
 								true,
 							},
@@ -8960,6 +8965,11 @@ local tbl =
 							
 							{
 								"bd520528-de6e-dd63-8c2f-b13e1078b8d5",
+								true,
+							},
+							
+							{
+								"c3d8a1f7-5e92-4b3a-9c16-8f2d0e7a4b59",
 								true,
 							},
 							
@@ -9023,6 +9033,11 @@ local tbl =
 							},
 							
 							{
+								"c3d8a1f7-5e92-4b3a-9c16-8f2d0e7a4b59",
+								true,
+							},
+							
+							{
 								"d81c6985-e446-ec27-a6f7-63bff52ae445",
 								true,
 							},
@@ -9078,6 +9093,75 @@ local tbl =
 							
 							{
 								"bd520528-de6e-dd63-8c2f-b13e1078b8d5",
+								true,
+							},
+							
+							{
+								"c3d8a1f7-5e92-4b3a-9c16-8f2d0e7a4b59",
+								true,
+							},
+							
+							{
+								"d81c6985-e446-ec27-a6f7-63bff52ae445",
+								true,
+							},
+							
+							{
+								"daacf4f1-a442-964a-be27-431565da9a6d",
+								true,
+							},
+							
+							{
+								"a5553312-db6f-f02c-bb2c-8850332433a2",
+								true,
+							},
+							
+							{
+								"951c9b82-5570-bfd1-bfd6-30d778f703f4",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorMagnum3_CD",
+						name = "Holy Blade (no Blazing)",
+						uuid = "a7f3c1d2-9e84-4b56-8c21-5d7a0e3f9b12",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction3\"] = true\nself.used = true",
+						alertColor = -1,
+						alertPriority = 3,
+						alertText = "Low Spellblade",
+						conditions = 
+						{
+							
+							{
+								"646f4741-2189-523d-b322-d342eff3b1ac",
+								true,
+							},
+							
+							{
+								"56223365-8388-f8e6-85ad-ad4ae4271380",
+								true,
+							},
+							
+							{
+								"6500ed18-f48e-10a5-9639-02727a1485c8",
+								true,
+							},
+							
+							{
+								"bd520528-de6e-dd63-8c2f-b13e1078b8d5",
+								true,
+							},
+							
+							{
+								"c3d8a1f7-5e92-4b3a-9c16-8f2d0e7a4b59",
 								true,
 							},
 							
@@ -9143,6 +9227,11 @@ local tbl =
 							},
 							
 							{
+								"c3d8a1f7-5e92-4b3a-9c16-8f2d0e7a4b59",
+								true,
+							},
+							
+							{
 								"d81c6985-e446-ec27-a6f7-63bff52ae445",
 								true,
 							},
@@ -9155,16 +9244,6 @@ local tbl =
 							{
 								"fb8ebcda-f865-6a5c-a568-729538b3195d",
 								true,
-							},
-							
-							{
-								"daacf4f1-a442-964a-be27-431565da9a6d",
-								false,
-							},
-							
-							{
-								"951c9b82-5570-bfd1-bfd6-30d778f703f4",
-								false,
 							},
 						},
 						endIfUsed = true,
@@ -9382,6 +9461,18 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Target Blazing Duration",
 						uuid = "155d1018-9e67-71a0-9ae4-89f9065d67f6",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "local target = TensorCore.mGetTarget()\nif not target then return false end\nreturn TensorCore.getDistance2d(TensorCore.mGetPlayer().pos, target.pos) <= 5",
+						dequeueIfLuaFalse = true,
+						name = "Target In Range (5y)",
+						uuid = "c3d8a1f7-5e92-4b3a-9c16-8f2d0e7a4b59",
 						version = 2,
 					},
 				},
