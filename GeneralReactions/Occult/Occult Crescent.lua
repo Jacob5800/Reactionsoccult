@@ -90,7 +90,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "01f3fe13-c40c-3ce8-8d19-23ddba44f5bb",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -103,7 +103,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "c0885fdc-b761-e898-bcc3-c2982938e5b6",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -114,7 +114,7 @@ local tbl =
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
 						uuid = "ffa93cf7-1588-f5be-ab51-e43b5b424dd6",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -126,7 +126,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Combat Timer Started",
 						uuid = "cc96ea40-8454-5c36-bc90-9f13fc20a510",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -181,7 +181,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Variable",
 						uuid = "9e45f944-072d-e047-b62e-393353080bac",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -193,7 +193,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Rezzed",
 						uuid = "0ace1003-5839-1467-a022-b288a25b9b23",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -252,7 +252,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Variable",
 						uuid = "2fa68570-4c16-0b05-8ff2-41fdb94e5df0",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -265,7 +265,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Been Rezzed",
 						uuid = "0ace1003-5839-1467-a022-b288a25b9b23",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -278,7 +278,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Rezzing",
 						uuid = "ef2ee77d-190e-cd39-a12d-01014fccf2ca",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -327,7 +327,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Was Rezzed >= 5s",
 						uuid = "dd1ab9c9-a03e-cece-b5a1-c2d2a386a331",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -392,7 +392,7 @@ local tbl =
 						localmapid = 1252,
 						name = "South Horn",
 						uuid = "bead46c3-17fe-4bf8-a9cb-2e315439988f",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -404,7 +404,7 @@ local tbl =
 						inCombatType = 2,
 						name = "Out of Combat",
 						uuid = "43b369ad-2b19-c673-8478-6db60cf737fb",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -416,7 +416,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Phantom Thief",
 						uuid = "b35fdc9a-5bdd-3401-aab1-7b46c2f170ed",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -428,7 +428,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "77b8eed8-0cfb-695a-a37c-568bb356cfeb",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -447,7 +447,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "269ed8e2-ad8e-db38-bd40-81e0877c72b2",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -459,7 +459,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "162cf644-0e36-bb8c-bd7f-20fa627e9638",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -531,7 +531,7 @@ local tbl =
 						localmapid = 1252,
 						name = "South Horn",
 						uuid = "bead46c3-17fe-4bf8-a9cb-2e315439988f",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 1,
 				},
@@ -543,7 +543,7 @@ local tbl =
 						conditionType = 7,
 						name = "In Combat",
 						uuid = "43b369ad-2b19-c673-8478-6db60cf737fb",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -555,7 +555,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Phantom Thief",
 						uuid = "b35fdc9a-5bdd-3401-aab1-7b46c2f170ed",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -569,7 +569,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Not on CD",
 						uuid = "efaf9868-fc91-e133-b7ee-62e8133bbcc0",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -581,7 +581,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "5fdd4621-9183-81d3-a553-2ad42b69ce8d",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -600,7 +600,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "7c1ff095-31ec-f18b-a239-a2c53c4b9b18",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -612,7 +612,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "371775fb-5512-90e4-9fa6-988f18d03203",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -687,7 +687,7 @@ local tbl =
 						localmapid = 1252,
 						name = "South Horn",
 						uuid = "f63493bb-f733-119c-a758-9b0599d8d1bc",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 1,
 				},
@@ -700,7 +700,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Phantom Thief",
 						uuid = "183e2fda-dc8b-df87-805b-a860fc5177a9",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -712,7 +712,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "In Combat",
 						uuid = "c3f5e16a-bd98-c5b2-8260-e5b2d04a1ed0",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -726,7 +726,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Not on CD",
 						uuid = "58f4e568-e03e-81de-9f7a-54fcb24e80ed",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -738,7 +738,7 @@ local tbl =
 						buffID = 4279,
 						dequeueIfLuaFalse = true,
 						uuid = "a81e78f1-987b-edbd-a012-344d8863f871",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -750,7 +750,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "0871ec24-fb24-fa3d-97e0-3425718700b7",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -769,7 +769,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "e9f60f80-5778-5e4b-ba59-cd5f54756373",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -781,7 +781,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "b706117d-8923-19ff-bc0b-fa0c15b28328",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -870,7 +870,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "f4209989-03cd-661a-b174-709466776706",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 1,
 				},
@@ -883,7 +883,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Knight",
 						uuid = "fc4b033f-a236-d271-893e-b6a0685a987b",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -895,7 +895,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "In Combat",
 						uuid = "fe18441a-be3b-f7ca-999a-87e58634239f",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 3,
 				},
@@ -911,7 +911,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Occult Heal CD <= 1s",
 						uuid = "fd55e071-38c6-b8d4-a37d-7d73c5774bc4",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 4,
 				},
@@ -941,7 +941,7 @@ local tbl =
 						hpValue = 50,
 						name = "Party HP",
 						uuid = "860ec568-237b-5474-a555-6d7322eadd4e",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -956,7 +956,7 @@ local tbl =
 						name = "50% HP",
 						partyTargetType = "Detection Target",
 						uuid = "a4770a8e-440e-b868-b0cc-7cada37d0cc0",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -971,7 +971,7 @@ local tbl =
 						name = "Within 30 Yards",
 						partyTargetType = "Detection Target",
 						uuid = "19b10dcc-1465-7459-8e7d-1237fc6bde1c",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 7,
 				},
@@ -985,7 +985,7 @@ local tbl =
 						mpValue = 50,
 						name = "Have MP",
 						uuid = "8e8bebcf-8def-48b0-95df-ead928362b4a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1002,7 +1002,7 @@ local tbl =
 						},
 						name = "No Mana Job",
 						uuid = "e8c03b24-c5e0-e4e4-be4c-c62e9247e2a2",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1021,7 +1021,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "f53b0dc2-6eba-1d72-b91a-71833a2fe9cd",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1033,7 +1033,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "890d87a5-7537-851b-bb9a-cf6de8658bef",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -1106,7 +1106,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "db68b232-24e2-2a01-ac29-564ead6c714c",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 1,
 				},
@@ -1119,7 +1119,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Knight",
 						uuid = "bdffe94e-ca3f-daa9-9315-d147de5104f1",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1131,7 +1131,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "In Combat",
 						uuid = "0ac5688a-1497-b876-8173-72c5e7eedf35",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 3,
 				},
@@ -1146,7 +1146,7 @@ local tbl =
 						hpValue = 50,
 						name = "HP <= 50%",
 						uuid = "e56f8f40-375d-f91d-8679-de1f67ac0ed9",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1165,7 +1165,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "e87ce4db-5846-ecda-afe6-4e02117886b7",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1177,7 +1177,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "411a9ae6-6ddc-6156-8c1f-fdb4c91029f4",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -1255,7 +1255,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "db68b232-24e2-2a01-ac29-564ead6c714c",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 1,
 				},
@@ -1268,7 +1268,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Knight",
 						uuid = "bdffe94e-ca3f-daa9-9315-d147de5104f1",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1280,7 +1280,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "In Combat",
 						uuid = "0ac5688a-1497-b876-8173-72c5e7eedf35",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 3,
 				},
@@ -1296,7 +1296,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Pledge CD <= 3s",
 						uuid = "72d1c6d2-76ad-d6a3-9775-15d5ad51adaa",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 4,
 				},
@@ -1311,7 +1311,7 @@ local tbl =
 						hpValue = 15,
 						name = "HP <= 15%",
 						uuid = "e56f8f40-375d-f91d-8679-de1f67ac0ed9",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1330,7 +1330,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "7539c735-58d4-57fb-9e3d-feb5062367cf",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1342,7 +1342,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "4ff4a8ae-2218-199f-a6f3-0ecf3cd31311",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -1420,7 +1420,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "d6d91e2f-272b-5401-ad3f-f0a5c81c766e",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 1,
 				},
@@ -1434,7 +1434,7 @@ local tbl =
 						filterTargetType = "ContentID",
 						name = "Is P. Monk",
 						uuid = "53db5447-8ce7-e699-b734-b9c0a383b622",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1447,7 +1447,7 @@ local tbl =
 						inCombatType = 2,
 						name = "Not In Combat",
 						uuid = "bcc88eba-f173-1e61-83c1-24f032463bc0",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1461,7 +1461,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Counterstance",
 						uuid = "ae21189b-8797-1f06-95ff-b20fb8e26e69",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1480,7 +1480,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "1ceb8816-2ec9-abf4-9e91-eafe739ef659",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1492,7 +1492,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "21f5a719-634c-c348-b3f6-fe1f01b33d86",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -1571,7 +1571,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "5236742b-6d45-ba4b-9afc-fb4fc5a75597",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 1,
 				},
@@ -1585,7 +1585,7 @@ local tbl =
 						filterTargetType = "ContentID",
 						name = "Is P. Monk",
 						uuid = "428912a9-77fd-3cdc-967f-f611e385b71d",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1597,7 +1597,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "In Combat",
 						uuid = "3ecb5974-9132-edef-bc9c-2bbb38650199",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1612,7 +1612,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Occult Counter CD <= 3s",
 						uuid = "e25da5a1-e09f-13f7-a76c-4d9eb83a6848",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1631,7 +1631,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "1c7f9078-12e7-990c-91ac-770991984265",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1643,7 +1643,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "f7205721-6955-3735-ba96-99ffa9c751fd",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -1712,7 +1712,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Monk",
 						uuid = "12bed729-8bf4-b235-b279-e5570f4b249b",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -1976,7 +1976,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1988,7 +1988,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Monk",
 						uuid = "cf907d2d-9e97-8cd1-bc08-5de61635852f",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -1999,7 +1999,7 @@ local tbl =
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
 						uuid = "1e39a820-0470-b3d6-b953-37ee8ae56c84",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2009,7 +2009,7 @@ local tbl =
 						conditionType = 5,
 						dequeueIfLuaFalse = true,
 						uuid = "3eac1167-173e-1707-bb6c-86e58d4e12ef",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2024,7 +2024,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Kick CD <= 3s",
 						uuid = "ae8c83cd-5f51-2d12-bade-38a7c6193da7",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2037,7 +2037,7 @@ local tbl =
 						inRangeValue = 15,
 						name = "Target <= 15y",
 						uuid = "fe717d00-c7a5-f61e-be0a-4038932c2f67",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2049,7 +2049,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Force Kick Enabled",
 						uuid = "297bd7a0-a008-d8d5-be0f-1f90b900a388",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2061,7 +2061,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "No Kick Enabled",
 						uuid = "da977cd9-925d-daf0-ba9f-ebaa1f25c7d4",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2073,7 +2073,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "AOE Check",
 						uuid = "03652a17-e335-3466-965d-ce830120cebe",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -2204,7 +2204,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "8cda3bac-be8c-b63c-8e06-ca48d73102b1",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2216,7 +2216,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Monk",
 						uuid = "f8f04c24-0e45-7c68-b56f-c69a4ad2f7de",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2228,7 +2228,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Am Alive",
 						uuid = "51b0116c-70ba-b338-bac7-0082efd72ccc",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2239,7 +2239,7 @@ local tbl =
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
 						uuid = "ce2478f3-6f7a-4f4d-9944-6b484c1303ab",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2249,7 +2249,7 @@ local tbl =
 						conditionType = 5,
 						dequeueIfLuaFalse = true,
 						uuid = "e4fdc1a9-6695-72f4-a590-abd0c067c80c",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2262,7 +2262,7 @@ local tbl =
 						inRangeValue = 15,
 						name = "Target <= 15y",
 						uuid = "3df80ec7-5864-f5e1-bb33-e7a93a2c5519",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2277,7 +2277,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Kick CD <= 10s",
 						uuid = "f543f117-46df-ba1c-a5c0-7dd9e1cee8f1",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -2360,7 +2360,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "5236742b-6d45-ba4b-9afc-fb4fc5a75597",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 1,
 				},
@@ -2374,7 +2374,7 @@ local tbl =
 						filterTargetType = "ContentID",
 						name = "Is P. Monk",
 						uuid = "428912a9-77fd-3cdc-967f-f611e385b71d",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2386,7 +2386,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "In Combat",
 						uuid = "3ecb5974-9132-edef-bc9c-2bbb38650199",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2401,7 +2401,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Occult Chakra CD <= 3s",
 						uuid = "e25da5a1-e09f-13f7-a76c-4d9eb83a6848",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2415,7 +2415,7 @@ local tbl =
 						hpValue = 29.89999961853,
 						name = "HP < 30%",
 						uuid = "33a629ca-2bb9-8afb-8998-af2275f38bbe",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 5,
 				},
@@ -2435,7 +2435,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "1c7f9078-12e7-990c-91ac-770991984265",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2447,7 +2447,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "f7205721-6955-3735-ba96-99ffa9c751fd",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -2665,7 +2665,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "a9b88350-2ec7-4cf1-b280-4a09d50599df",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 1,
 				},
@@ -2678,7 +2678,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Geomancer",
 						uuid = "15e5b8fb-df9c-820c-b1a5-52018a844a0b",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2690,7 +2690,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "In Combat",
 						uuid = "bfce063d-cda4-aae4-8cb4-47aaa5bd4c9e",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 3,
 				},
@@ -2706,7 +2706,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Battle Bell CD <= 1.5s",
 						uuid = "c9323a23-d798-92ea-a934-5808aff57633",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2720,7 +2720,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Battle Bell",
 						uuid = "c0b2345f-4fbe-2e11-883b-6f1a10584769",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2739,7 +2739,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "29f23351-52ca-b461-91cc-93f0b0e10321",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2751,7 +2751,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "f66ceece-6cb6-90e8-b592-76a5836dbf06",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -2888,7 +2888,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "e7de50ca-b2f8-752a-b528-db724f2d7054",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2900,7 +2900,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Bard",
 						uuid = "2312ae26-c802-ad39-bbbf-0830ed918dac",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2914,7 +2914,7 @@ local tbl =
 						hpValue = 0.10000000149012,
 						name = "Am Alive",
 						uuid = "a4bae7f0-15e7-e380-89ed-28e6f8f500ff",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2933,7 +2933,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "68842e46-8c8e-f38e-80f1-1c565d84de04",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2945,7 +2945,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "36e0cdc9-6f67-832d-af9d-962934e8d8cc",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2956,7 +2956,7 @@ local tbl =
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
 						uuid = "e27ae646-5033-f9d0-8f32-0bab1ca37b02",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2966,7 +2966,7 @@ local tbl =
 						conditionType = 5,
 						dequeueIfLuaFalse = true,
 						uuid = "b89deb6f-ac1d-7569-98b2-ce63b9dc89ac",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2978,7 +2978,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Combat > 4s",
 						uuid = "8b24e3a8-4d01-e274-9392-a43ce99fca3a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -2990,7 +2990,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "CD Enabled",
 						uuid = "1e471142-f907-e1dd-abd5-6325e970db36",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3003,7 +3003,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Missing Hero's Rime",
 						uuid = "b3f3779f-97e1-26c8-aab2-1d54bd11306a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3018,7 +3018,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Hero's Rime CD <= 3s",
 						uuid = "0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3030,7 +3030,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Queued",
 						uuid = "bee58c45-7380-26ed-a78a-2011ff91536c",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -3104,7 +3104,7 @@ local tbl =
 						},
 						name = "South Horn",
 						uuid = "47e6a211-bd39-977b-a824-489c3cf0978a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3116,7 +3116,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Chemist",
 						uuid = "598575f8-788c-e333-afb1-b0807ff3b36b",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3129,7 +3129,7 @@ local tbl =
 						filterTargetType = "Party",
 						name = "Dead Player",
 						uuid = "dcc00f33-64a3-4d4c-8a66-3bd6d9e905aa",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3142,7 +3142,7 @@ local tbl =
 						conditionType = 4,
 						dequeueIfLuaFalse = true,
 						uuid = "3dae1027-5a9e-e761-bd88-4af39d6b83dc",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3154,7 +3154,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "17813282-8c8c-d3b1-a141-96800344f60b",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -3234,7 +3234,7 @@ local tbl =
 						localmapid = 1252,
 						name = "South Horn",
 						uuid = "f63493bb-f733-119c-a758-9b0599d8d1bc",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3246,7 +3246,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Time Mage",
 						uuid = "183e2fda-dc8b-df87-805b-a860fc5177a9",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3257,7 +3257,7 @@ local tbl =
 						conditionType = 7,
 						name = "In Combat",
 						uuid = "c3f5e16a-bd98-c5b2-8260-e5b2d04a1ed0",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3270,7 +3270,7 @@ local tbl =
 						conditionType = 4,
 						name = "Not on CD",
 						uuid = "58f4e568-e03e-81de-9f7a-54fcb24e80ed",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3281,7 +3281,7 @@ local tbl =
 						buffDuration = 7,
 						buffID = 4259,
 						uuid = "a81e78f1-987b-edbd-a012-344d8863f871",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3293,7 +3293,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "0871ec24-fb24-fa3d-97e0-3425718700b7",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3312,7 +3312,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "e9f60f80-5778-5e4b-ba59-cd5f54756373",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3324,7 +3324,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "b706117d-8923-19ff-bc0b-fa0c15b28328",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3336,7 +3336,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Combat > 10s",
 						uuid = "785c1f3a-3ab7-c292-b8e0-7a39c641af49",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -3414,7 +3414,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "8cd3436d-3f52-7195-90f3-7354696e0e09",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3426,7 +3426,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Bard",
 						uuid = "5472c749-32d6-8d4c-b3dc-bd0a41b9787a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3438,7 +3438,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "In Combat",
 						uuid = "0d62082a-d701-5772-8641-fb8d84a24bf7",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3447,7 +3447,7 @@ local tbl =
 					{
 						actionCDValue = 1,
 						actionID = 41607,
-						buffCheckType = 6,
+						buffCheckType = 7,
 						buffDuration = 5,
 						buffID = 4247,
 						buffIDList = 
@@ -3460,7 +3460,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Mighty March CD <= 1s",
 						uuid = "c0446da6-224a-0bad-b444-34dd96794f7a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3474,7 +3474,7 @@ local tbl =
 						hpValue = 50,
 						name = "HP <= 50%",
 						uuid = "cf49c056-57f6-b2f0-a13f-7c5b3f558a70",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 5,
 				},
@@ -3496,7 +3496,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "9c7bd453-33e3-3ea8-9777-3b6372f24f23",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3508,7 +3508,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "ab8ab672-de83-07a8-9e0d-d32ef9196663",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -3666,7 +3666,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "9f487160-bb6b-c2c6-9ed3-d248843da14e",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3678,7 +3678,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Bard",
 						uuid = "560745ad-72be-9478-9030-f84b2e588114",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3691,7 +3691,7 @@ local tbl =
 						hpValue = 0.10000000149012,
 						name = "Am Alive",
 						uuid = "86359e53-d419-7fc3-be4f-446c03d27d6a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3702,7 +3702,7 @@ local tbl =
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
 						uuid = "7fb3672e-4cb4-359f-96c7-9d17abfd989d",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3712,7 +3712,7 @@ local tbl =
 						conditionType = 5,
 						dequeueIfLuaFalse = true,
 						uuid = "4aba1362-c85a-a3c9-96c8-5cc50660875f",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3725,14 +3725,14 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Missing Hero's Rime",
 						uuid = "a1a93af6-59f8-c186-bee4-8f08721cf800",
-						version = 2,
+						version = 3,
 					},
 				},
 				
 				{
 					data = 
 					{
-						buffCheckType = 6,
+						buffCheckType = 7,
 						buffDuration = 5,
 						buffID = 4247,
 						buffIDList = 
@@ -3744,7 +3744,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Aria <= 5s",
 						uuid = "c36577af-0090-d074-a4e6-1ab4f07eab99",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3756,7 +3756,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Aria Belongs To Me",
 						uuid = "c4c610e0-470e-2610-bd7f-52d1f5c17a0c",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3769,7 +3769,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Missing Aria",
 						uuid = "3907f741-1e38-d5dd-837f-97a9b20d6992",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3790,7 +3790,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "4a74a1ed-df08-9e67-b4de-a00f7e3e1512",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -3802,7 +3802,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "f94d6587-e826-5a9f-8436-eafbd600aa75",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -4157,7 +4157,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "6ede6f2b-f21f-34fc-ac8f-17712a883aee",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4169,7 +4169,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Cannoneer",
 						uuid = "d0b43e22-df2c-0f03-8be1-bdf2445b9955",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4180,7 +4180,7 @@ local tbl =
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
 						uuid = "77dacb34-4585-2f97-b047-6d25037d5a9d",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4190,7 +4190,7 @@ local tbl =
 						conditionType = 5,
 						dequeueIfLuaFalse = true,
 						uuid = "49cb19e1-4a1a-e643-887b-eb61c1a7bd65",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4203,14 +4203,14 @@ local tbl =
 						inRangeValue = 30,
 						name = "Target <= 30y",
 						uuid = "66bc9b98-7d55-baeb-b9e2-e1aa2b7051a8",
-						version = 2,
+						version = 3,
 					},
 				},
 				
 				{
 					data = 
 					{
-						buffCheckType = 6,
+						buffCheckType = 7,
 						buffDuration = 35,
 						buffID = 4264,
 						buffIDList = 
@@ -4221,7 +4221,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Silver Sickness <= 35s",
 						uuid = "5a850803-fc48-8ace-a599-32068f92f43f",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4233,7 +4233,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Silver Cannon",
 						uuid = "f3f536e5-c709-78f6-add9-bf5e997cf396",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4245,7 +4245,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Holy Cannon",
 						uuid = "9d90a354-122d-1e4a-9766-d03e2dce7797",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4260,7 +4260,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "G1 Cannons CD <= 3s",
 						uuid = "6105b516-3945-472a-ac0d-73d1c8d2ca9a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4272,7 +4272,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Dark Cannon",
 						uuid = "1d7f30fc-f7cf-3867-a8b8-6601387d3fa4",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4284,7 +4284,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Shock Cannon",
 						uuid = "2365f6f4-9905-7276-a633-a8945808890d",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4299,7 +4299,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "G2 Cannons CD <= 3s",
 						uuid = "5b3f266a-5288-d0e4-80b4-04427cb46548",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4314,7 +4314,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Phantom Fire CD <= 3s",
 						uuid = "e7a10bc3-099f-e3a0-9120-15eaf7e935ea",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -4323,7 +4323,7 @@ local tbl =
 			uuid = "8da73aae-57bf-86ea-9a65-353a607913dc",
 			version = 2,
 		},
-		inheritedIndex = 35,
+		inheritedIndex = 36,
 	},
 	
 	{
@@ -4441,7 +4441,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "c4e0c01f-1174-3e48-956e-41193f15da26",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4453,7 +4453,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Sam",
 						uuid = "6c9b174b-99cb-cae5-aadf-346ce19a8a9c",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4464,7 +4464,7 @@ local tbl =
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
 						uuid = "70555a3a-b123-ba76-913e-346182583ae8",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4474,7 +4474,7 @@ local tbl =
 						conditionType = 5,
 						dequeueIfLuaFalse = true,
 						uuid = "2733c6f2-6f59-93bd-886c-ea28fb65c82a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4486,7 +4486,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Combat > 4s",
 						uuid = "0d707741-2c82-6078-a931-df5d8a736d54",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4498,7 +4498,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "CD Enabled",
 						uuid = "f77fa5a1-7ba0-ca82-8f70-b3c44b524f4d",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4511,7 +4511,7 @@ local tbl =
 						inRangeValue = 30,
 						name = "Target <= 30y",
 						uuid = "e9d7b04c-9bb3-ade5-b6db-807a7af7c557",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4526,7 +4526,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Zeninage CD <= 3s",
 						uuid = "e2a71f48-06c8-7be8-a9db-5e32cb0d02b5",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4538,7 +4538,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Coffer",
 						uuid = "0a770e84-bd54-271b-b944-bfe7f6c48928",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4550,7 +4550,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Queued",
 						uuid = "f0aae32a-c66e-5c82-b91d-50d40a1e8a56",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -4972,7 +4972,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "25526db7-3e90-fe08-8df1-b0585e2b38fc",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4984,7 +4984,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Sam",
 						uuid = "238bd975-3871-5e12-8e53-399adacd89cb",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -4995,7 +4995,7 @@ local tbl =
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
 						uuid = "51aea656-8161-48f6-98c9-2780a53bb551",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5006,7 +5006,7 @@ local tbl =
 						conditionLua = "return TensorCore.mGetPlayer():IsMoving()",
 						name = "Am Moving",
 						uuid = "e93e0795-5d96-f49a-97dc-02316f17965a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5016,7 +5016,7 @@ local tbl =
 						conditionType = 5,
 						dequeueIfLuaFalse = true,
 						uuid = "35c868d1-cb26-30cb-a430-945a4811f795",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5029,7 +5029,7 @@ local tbl =
 						inRangeValue = 6,
 						name = "Target <= 6y",
 						uuid = "ddedae86-779e-6aa5-9fe4-86b438c454f2",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5041,7 +5041,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "CD Enabled",
 						uuid = "25447249-e9f0-b7d2-b94a-938e145b5eb9",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5053,7 +5053,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Combat > 4s",
 						uuid = "8d184850-ef21-2ff2-9291-f8902f0860bc",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5068,7 +5068,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Iainuki CD <= 3s",
 						uuid = "308fe1f4-9f25-e900-a28a-288e162e0fbb",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5080,7 +5080,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Zeninage",
 						uuid = "0fea0543-e595-327d-80dd-e9f35b887881",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5094,7 +5094,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Zeninage Off CD",
 						uuid = "3ddb4886-849a-2357-8122-cf3399f46e5a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5106,7 +5106,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Coffer",
 						uuid = "d4aba7ee-408d-54ee-9a80-7a426d556e85",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5118,7 +5118,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Queued",
 						uuid = "ae3f970e-106c-6ba7-b96b-bcb05559eb8e",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -5333,7 +5333,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "e7de50ca-b2f8-752a-b528-db724f2d7054",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5345,7 +5345,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. TMage",
 						uuid = "2312ae26-c802-ad39-bbbf-0830ed918dac",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5359,7 +5359,7 @@ local tbl =
 						hpValue = 0.10000000149012,
 						name = "Am Alive",
 						uuid = "a4bae7f0-15e7-e380-89ed-28e6f8f500ff",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5378,7 +5378,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "68842e46-8c8e-f38e-80f1-1c565d84de04",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5390,7 +5390,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "36e0cdc9-6f67-832d-af9d-962934e8d8cc",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5401,7 +5401,7 @@ local tbl =
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
 						uuid = "e27ae646-5033-f9d0-8f32-0bab1ca37b02",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5411,7 +5411,7 @@ local tbl =
 						conditionType = 5,
 						dequeueIfLuaFalse = true,
 						uuid = "b89deb6f-ac1d-7569-98b2-ce63b9dc89ac",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5423,7 +5423,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Combat > 4s",
 						uuid = "d776f17c-758b-4921-9144-157ce819e49f",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5435,7 +5435,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Comet",
 						uuid = "066cc251-0be0-1ddd-8963-58a814259fbd",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5447,7 +5447,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "AOE Enabled",
 						uuid = "1e471142-f907-e1dd-abd5-6325e970db36",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5459,7 +5459,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "CD Enabled",
 						uuid = "15e16ad4-c97f-fcfe-949e-c60c37b28519",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5472,7 +5472,7 @@ local tbl =
 						inRangeValue = 28,
 						name = "Target <= 28y",
 						uuid = "d037fcde-5780-d93b-9db9-0bd05e6004b1",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5486,7 +5486,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Swiftcast Not CD",
 						uuid = "4497846d-7152-a5f9-8eec-2d45e16ccb82",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5500,14 +5500,14 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Comet Not CD",
 						uuid = "0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
-						version = 2,
+						version = 3,
 					},
 				},
 				
 				{
 					data = 
 					{
-						buffCheckType = 5,
+						buffCheckType = 6,
 						buffIDList = 
 						{
 							4260,
@@ -5518,7 +5518,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Missing InstaCast",
 						uuid = "65026472-ef44-c2dc-a211-9b5279bcfa9c",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5530,7 +5530,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Quick Not Queued",
 						uuid = "396394da-16bb-d2ab-a20c-1c1083191a95",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -5642,7 +5642,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "e7de50ca-b2f8-752a-b528-db724f2d7054",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5654,7 +5654,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. TMage",
 						uuid = "2312ae26-c802-ad39-bbbf-0830ed918dac",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5668,7 +5668,7 @@ local tbl =
 						hpValue = 0.10000000149012,
 						name = "Am Alive",
 						uuid = "a4bae7f0-15e7-e380-89ed-28e6f8f500ff",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5687,7 +5687,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "68842e46-8c8e-f38e-80f1-1c565d84de04",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5699,7 +5699,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "36e0cdc9-6f67-832d-af9d-962934e8d8cc",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5710,7 +5710,7 @@ local tbl =
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
 						uuid = "e27ae646-5033-f9d0-8f32-0bab1ca37b02",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5720,7 +5720,7 @@ local tbl =
 						conditionType = 5,
 						dequeueIfLuaFalse = true,
 						uuid = "7cda01fc-abb8-7f7b-b78d-6ec0522771a2",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5732,7 +5732,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Combat > 2s",
 						uuid = "8ef4627a-d7bb-0732-93fc-5d32cd4e013b",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5744,7 +5744,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Quick",
 						uuid = "066cc251-0be0-1ddd-8963-58a814259fbd",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5756,7 +5756,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "CD Enabled",
 						uuid = "15e16ad4-c97f-fcfe-949e-c60c37b28519",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5770,7 +5770,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Swiftcast Not CD",
 						uuid = "4497846d-7152-a5f9-8eec-2d45e16ccb82",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -5784,14 +5784,14 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Quick Not CD",
 						uuid = "0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
-						version = 2,
+						version = 3,
 					},
 				},
 				
 				{
 					data = 
 					{
-						buffCheckType = 5,
+						buffCheckType = 6,
 						buffIDList = 
 						{
 							1211,
@@ -5801,7 +5801,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Missing InstaCast",
 						uuid = "65026472-ef44-c2dc-a211-9b5279bcfa9c",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -6025,7 +6025,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "e7de50ca-b2f8-752a-b528-db724f2d7054",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6037,7 +6037,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. TMage",
 						uuid = "2312ae26-c802-ad39-bbbf-0830ed918dac",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6051,7 +6051,7 @@ local tbl =
 						hpValue = 0.10000000149012,
 						name = "Am Alive",
 						uuid = "a4bae7f0-15e7-e380-89ed-28e6f8f500ff",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6070,7 +6070,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "68842e46-8c8e-f38e-80f1-1c565d84de04",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6082,7 +6082,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "36e0cdc9-6f67-832d-af9d-962934e8d8cc",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6093,7 +6093,7 @@ local tbl =
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
 						uuid = "e27ae646-5033-f9d0-8f32-0bab1ca37b02",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6103,7 +6103,7 @@ local tbl =
 						conditionType = 5,
 						dequeueIfLuaFalse = true,
 						uuid = "b89deb6f-ac1d-7569-98b2-ce63b9dc89ac",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6116,7 +6116,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Missing Quick",
 						uuid = "b3f3779f-97e1-26c8-aab2-1d54bd11306a",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 8,
 				},
@@ -6129,7 +6129,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Combat > 2s",
 						uuid = "7a1b35d4-b11f-bdcc-a54f-314ef5b4f5cb",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6141,7 +6141,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Quick",
 						uuid = "fdcbe872-f73b-6950-866f-abbc5cd004b9",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6153,14 +6153,14 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "CD Enabled",
 						uuid = "1e471142-f907-e1dd-abd5-6325e970db36",
-						version = 2,
+						version = 3,
 					},
 				},
 				
 				{
 					data = 
 					{
-						buffCheckType = 4,
+						buffCheckType = 5,
 						buffID = 4260,
 						buffIDList = 
 						{
@@ -6173,7 +6173,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Has InstaCast",
 						uuid = "2c3b763e-60cc-5072-92b9-f8232d3fbcd1",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6187,7 +6187,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Quick Not CD",
 						uuid = "b77c75a7-c8bf-d56b-9d04-5a7f236d29d5",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6202,7 +6202,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Quick CD <= 3s",
 						uuid = "0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6214,7 +6214,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Queued",
 						uuid = "099f59da-08f9-92fa-9fcf-a8dcb6b21ed6",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -6553,7 +6553,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "e7de50ca-b2f8-752a-b528-db724f2d7054",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6565,7 +6565,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. TMage",
 						uuid = "2312ae26-c802-ad39-bbbf-0830ed918dac",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6576,7 +6576,7 @@ local tbl =
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
 						uuid = "e27ae646-5033-f9d0-8f32-0bab1ca37b02",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6586,7 +6586,7 @@ local tbl =
 						conditionType = 5,
 						dequeueIfLuaFalse = true,
 						uuid = "b89deb6f-ac1d-7569-98b2-ce63b9dc89ac",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6598,7 +6598,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Comet",
 						uuid = "066cc251-0be0-1ddd-8963-58a814259fbd",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6610,7 +6610,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "AOE Enabled",
 						uuid = "1e471142-f907-e1dd-abd5-6325e970db36",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6622,7 +6622,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "CD Enabled",
 						uuid = "db326cd9-0771-af42-91e9-0687e5bd91f0",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6634,7 +6634,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Combat > 4s",
 						uuid = "fa8dce00-a664-d474-b1e8-0bb60572ebcf",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6647,14 +6647,14 @@ local tbl =
 						inRangeValue = 28,
 						name = "Target <= 28y",
 						uuid = "11c4ce1d-1541-1505-9090-f9e8ebef088d",
-						version = 2,
+						version = 3,
 					},
 				},
 				
 				{
 					data = 
 					{
-						buffCheckType = 4,
+						buffCheckType = 5,
 						buffID = 4260,
 						buffIDList = 
 						{
@@ -6668,7 +6668,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Has InstaCast",
 						uuid = "b3f3779f-97e1-26c8-aab2-1d54bd11306a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6682,7 +6682,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Comet Not CD",
 						uuid = "0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6694,7 +6694,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Queued",
 						uuid = "df310d5b-5794-9575-9601-ddca08c2fa44",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6706,7 +6706,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Quick Not Queued",
 						uuid = "79eb5ff3-df2c-678d-a1a8-a37bc9759ab1",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -6775,7 +6775,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Phantom Geomancer",
 						uuid = "c8473c58-50b2-e36e-978e-97c251f2527d",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -6846,7 +6846,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "2f5da793-8d62-b900-91b7-d2287c31ad94",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6858,7 +6858,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Oracle",
 						uuid = "689d986b-3892-68da-9d97-7ffdb0c20ed3",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -6879,14 +6879,14 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Used Predict",
 						uuid = "19d6b4d2-cb63-d3a0-9701-23ac8a56f8d4",
-						version = 2,
+						version = 3,
 					},
 				},
 				
 				{
 					data = 
 					{
-						buffCheckType = 5,
+						buffCheckType = 6,
 						buffIDList = 
 						{
 							4265,
@@ -6898,14 +6898,14 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "No Predicts",
 						uuid = "7a9be408-97e3-401a-a51a-b2d1c1da02d1",
-						version = 2,
+						version = 3,
 					},
 				},
 				
 				{
 					data = 
 					{
-						buffCheckType = 5,
+						buffCheckType = 6,
 						buffIDList = 
 						{
 							4265,
@@ -6918,7 +6918,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Current Predict Over",
 						uuid = "2a2d8a92-e6f1-b50a-b6a4-0102a46eae94",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -7071,7 +7071,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "c98fc8ca-3024-f3e1-b80d-5a6ca8a4846b",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7083,7 +7083,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Oracle",
 						uuid = "689d986b-3892-68da-9d97-7ffdb0c20ed3",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7103,7 +7103,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Has Starfall",
 						uuid = "8e665495-c2d2-d8bc-bcd2-4047503e7449",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 3,
 				},
@@ -7123,7 +7123,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Has Judgement",
 						uuid = "da2fea5f-44e3-b375-9f26-908381110868",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7135,7 +7135,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Cleansing",
 						uuid = "f9772982-5571-e7ca-8ce8-d0b95106091b",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7154,7 +7154,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Has Blessing",
 						uuid = "ffe9b916-3ab0-da65-92bd-6fc5317d7207",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -7279,7 +7279,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "2ade3bb0-fe6c-ce0d-8fb3-6e7565b3a2e2",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7291,7 +7291,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Oracle",
 						uuid = "ac335586-7de4-5e38-b9da-8495a9efdd41",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7305,7 +7305,7 @@ local tbl =
 						hpValue = 0.10000000149012,
 						name = "Am Alive",
 						uuid = "12a0f8c6-a507-a2e4-9c4a-c1dc0385b35d",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7324,7 +7324,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "20fa62b1-a245-0e9c-af9b-4fabfedcb7b6",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7336,7 +7336,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "5d1b2ae3-f7bd-35b6-8cfc-33cc3f39b9c9",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7347,7 +7347,7 @@ local tbl =
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
 						uuid = "4ad26c8e-1973-b537-836b-8dec4032deef",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7357,7 +7357,7 @@ local tbl =
 						conditionType = 5,
 						dequeueIfLuaFalse = true,
 						uuid = "ef2c81f6-7b6a-3ed2-ac82-95bca89dccb2",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7369,7 +7369,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "CD Enabled",
 						uuid = "adea2d2c-d0b5-b568-9ad7-b74b309a9b6b",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7384,7 +7384,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Predict CD <= 3s",
 						uuid = "6c4525ee-9fd0-41dd-bc57-c766de237b22",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7396,7 +7396,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Queued",
 						uuid = "5360af84-5d13-5563-bcbe-976e9652e09c",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -7461,7 +7461,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Phantom Geomancer",
 						uuid = "dc067595-2ebe-4625-a548-1a90499d46f1",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7473,7 +7473,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Button Enabled",
 						uuid = "5c84db7a-5a39-f23e-be46-a4cb18d08ff8",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7485,7 +7485,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Assist Enabled",
 						uuid = "0a49f18a-75ad-dbf1-9ca1-e4c496d8eead",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7498,7 +7498,7 @@ local tbl =
 						name = "Missing Suspend",
 						partyTargetType = "Detection Target",
 						uuid = "361e2e5c-7107-cff1-ae22-b1b9fdd09481",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7511,7 +7511,7 @@ local tbl =
 						inRangeValue = 30,
 						partyTargetType = "Detection Target",
 						uuid = "4cb72cee-b39d-b031-b616-976f9db6d064",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -7535,7 +7535,7 @@ local tbl =
 						filterTargetType = "Party",
 						name = "Filter",
 						uuid = "86e868dc-33c3-6f2a-9a8b-1a3eb2fffe94",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -7544,6 +7544,313 @@ local tbl =
 			version = 2,
 		},
 		inheritedIndex = 52,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						conditions = 
+						{
+							
+							{
+								"3ebc6543-c8e2-5c0a-b15e-32f7d07734a7",
+								true,
+							},
+							
+							{
+								"cc7e4724-c91b-2918-b01a-658bfe057266",
+								true,
+							},
+							
+							{
+								"ffcb081e-e4a0-b915-a944-7bd08ffdac93",
+								true,
+							},
+							
+							{
+								"c6d7e8d8-c757-16e7-8d01-e200423d2d85",
+								true,
+							},
+							
+							{
+								"979c090b-4949-cadf-9069-22b20ccc8b6a",
+								true,
+							},
+							
+							{
+								"bf68a577-031c-6da5-833a-a2af0df7dc0f",
+								true,
+							},
+							
+							{
+								"fbeaa2f7-5090-d378-bf73-25d56b3a0f9b",
+								true,
+							},
+							
+							{
+								"4d153190-820e-68f0-a7f6-cc91e785fd38",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction2",
+						name = "Quickstep",
+						uuid = "98b7a689-2218-a124-a57d-ffd7c6ed3ca1",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						conditions = 
+						{
+							
+							{
+								"3ebc6543-c8e2-5c0a-b15e-32f7d07734a7",
+								true,
+							},
+							
+							{
+								"cc7e4724-c91b-2918-b01a-658bfe057266",
+								true,
+							},
+							
+							{
+								"ffcb081e-e4a0-b915-a944-7bd08ffdac93",
+								true,
+							},
+							
+							{
+								"c6d7e8d8-c757-16e7-8d01-e200423d2d85",
+								true,
+							},
+							
+							{
+								"979c090b-4949-cadf-9069-22b20ccc8b6a",
+								true,
+							},
+							
+							{
+								"bf68a577-031c-6da5-833a-a2af0df7dc0f",
+								true,
+							},
+							
+							{
+								"777ee56d-c235-d1b0-8cc7-1d3437cb1a64",
+								true,
+							},
+							
+							{
+								"fbeaa2f7-5090-d378-bf73-25d56b3a0f9b",
+								false,
+							},
+							
+							{
+								"065204d3-f420-4bc2-9e2b-f6b0e4431e91",
+								true,
+							},
+							
+							{
+								"747b1c86-6e4b-ec5c-ae98-e8b9965f4da3",
+								true,
+							},
+							
+							{
+								"4d153190-820e-68f0-a7f6-cc91e785fd38",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction2",
+						name = "Refresh Quickstep",
+						uuid = "305589a3-0e79-790e-a227-ec3a250153b7",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+						},
+						name = "In Occult Crescent",
+						uuid = "3ebc6543-c8e2-5c0a-b15e-32f7d07734a7",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4805,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is Dancer",
+						uuid = "cc7e4724-c91b-2918-b01a-658bfe057266",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Is Bot Running",
+						uuid = "ffcb081e-e4a0-b915-a944-7bd08ffdac93",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "c6d7e8d8-c757-16e7-8d01-e200423d2d85",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						name = "Self Living",
+						uuid = "979c090b-4949-cadf-9069-22b20ccc8b6a",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 30,
+						matchAnyBuff = true,
+						name = "Self Missing Transcendent",
+						uuid = "bf68a577-031c-6da5-833a-a2af0df7dc0f",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "c2fdc327-8031-f6a9-adfe-685becae7175",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 46603,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Quickstep CD",
+						uuid = "747b1c86-6e4b-ec5c-ae98-e8b9965f4da3",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.ocCombatTimer ~= nil and TimeSince(data.ocCombatTimer) > 2400",
+						dequeueIfLuaFalse = true,
+						name = "Combat > 2.4s",
+						uuid = "777ee56d-c235-d1b0-8cc7-1d3437cb1a64",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return true",
+						dequeueIfLuaFalse = true,
+						name = "Flip To Disable Action",
+						uuid = "4d153190-820e-68f0-a7f6-cc91e785fd38",
+						version = 3,
+					},
+					inheritedIndex = 10,
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 4798,
+						category = "Self",
+						name = "Self Missing Quickstep",
+						uuid = "fbeaa2f7-5090-d378-bf73-25d56b3a0f9b",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 3,
+						buffDuration = 9.5030002593994,
+						buffID = 4798,
+						category = "Self",
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						name = "Self Quickstep Fading",
+						uuid = "065204d3-f420-4bc2-9e2b-f6b0e4431e91",
+						version = 3,
+					},
+				},
+			},
+			name = "P. Dancer Quickstep",
+			throttleTime = 100,
+			uuid = "440e18ac-f040-ecee-9e98-d8b712ea8b11",
+			version = 2,
+		},
+		inheritedIndex = 35,
 	},
 	
 	{
@@ -8389,7 +8696,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Oracle",
 						uuid = "b7995653-e4e2-e753-91d9-89e71703711c",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8408,7 +8715,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Has Judgement",
 						uuid = "93783665-3a39-218a-b4c7-05aeb1a3a810",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8420,7 +8727,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Cleansing",
 						uuid = "93bd23e8-5273-57ec-8a76-b5c3e6af25c2",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8439,7 +8746,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Has Blessing",
 						uuid = "902b4fee-08f0-ccc3-93e5-8387b8bdba36",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8459,14 +8766,14 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Has Starfall",
 						uuid = "90d5d356-377c-d333-89cc-42097385bb58",
-						version = 2,
+						version = 3,
 					},
 				},
 				
 				{
 					data = 
 					{
-						buffCheckType = 4,
+						buffCheckType = 5,
 						buffID = 4265,
 						buffIDList = 
 						{
@@ -8480,7 +8787,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Has Predicts",
 						uuid = "89cd4f40-9c8d-d5df-9afd-70c398c173b4",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8494,14 +8801,14 @@ local tbl =
 						name = "Range - 20y",
 						partyTargetType = "Detection Target",
 						uuid = "6c75bd01-ee49-a6f7-9621-25854eb1a9d9",
-						version = 2,
+						version = 3,
 					},
 				},
 				
 				{
 					data = 
 					{
-						buffCheckType = 6,
+						buffCheckType = 7,
 						buffDuration = 0.80000001192093,
 						buffIDList = 
 						{
@@ -8515,7 +8822,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Predict Not Expiring",
 						uuid = "7ff1f06b-6b0b-6d46-9485-a73af78c7796",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8528,7 +8835,7 @@ local tbl =
 						inRangeValue = 20,
 						name = "Target <= 20y",
 						uuid = "03bfca6e-1de2-8b8d-aff6-d37b42f92737",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8541,7 +8848,7 @@ local tbl =
 						hpValue = 95,
 						name = "Self HP >= 95%",
 						uuid = "d0114ab1-f77d-bcda-b85a-1193128632d9",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8555,7 +8862,7 @@ local tbl =
 						hpValue = 92,
 						name = "Self HP <= 92%",
 						uuid = "45342af4-4935-a543-888f-f175121b510a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8569,7 +8876,7 @@ local tbl =
 						hpValue = 60,
 						name = "Self HP <= 60%",
 						uuid = "8b811cff-e495-3a1a-82de-ac18b1db3488",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 12,
 				},
@@ -8584,7 +8891,7 @@ local tbl =
 						hpValue = 30,
 						name = "Self HP <= 30%",
 						uuid = "ca2e91c7-e9ed-3e99-86e7-f8e32e91062f",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8598,7 +8905,7 @@ local tbl =
 						name = "HP - 60%",
 						partyTargetType = "Detection Target",
 						uuid = "719eacd0-1e7f-4dc5-b935-49c94ac8e657",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8612,7 +8919,7 @@ local tbl =
 						name = "HP - 30%",
 						partyTargetType = "Detection Target",
 						uuid = "b8396ed7-b2fe-05d8-a878-4de57d821578",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8639,7 +8946,7 @@ local tbl =
 						name = "AOE 60% @ 20y",
 						partyTargetNumber = 5,
 						uuid = "c5a030dc-35ca-0d59-b78b-5192da2dbeb1",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8666,7 +8973,7 @@ local tbl =
 						name = "AOE 30% @ 20y",
 						partyTargetNumber = 5,
 						uuid = "e5546d6b-eaa9-44d6-84f5-dd3c73e379d2",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8678,7 +8985,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Starfall Is Last",
 						uuid = "90bd2c89-b805-648a-943e-2651ec846a83",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8690,7 +8997,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Last Predict",
 						uuid = "3d9c3f4a-8ce0-f2d3-b8b1-12171b7f545a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8702,7 +9009,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "AOE Check",
 						uuid = "fca8e097-eb58-55db-8cbe-c09478e3b8c4",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8714,7 +9021,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Raidwide Check",
 						uuid = "5f8d1ae3-46bc-c924-b723-8fcaf972e588",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -8784,7 +9091,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "ffbc6bd6-f41a-fea3-a827-6c080a314acc",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -8796,14 +9103,14 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Oracle",
 						uuid = "b7995653-e4e2-e753-91d9-89e71703711c",
-						version = 2,
+						version = 3,
 					},
 				},
 				
 				{
 					data = 
 					{
-						buffCheckType = 5,
+						buffCheckType = 6,
 						buffID = 4265,
 						buffIDList = 
 						{
@@ -8816,14 +9123,14 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "No Predicts",
 						uuid = "93783665-3a39-218a-b4c7-05aeb1a3a810",
-						version = 2,
+						version = 3,
 					},
 				},
 				
 				{
 					data = 
 					{
-						buffCheckType = 5,
+						buffCheckType = 6,
 						buffIDList = 
 						{
 							4265,
@@ -8836,14 +9143,14 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Predict Counter > 0",
 						uuid = "5ad64f50-a902-e2f8-9be5-cd7055460245",
-						version = 2,
+						version = 3,
 					},
 				},
 				
 				{
 					data = 
 					{
-						buffCheckType = 5,
+						buffCheckType = 6,
 						buffIDList = 
 						{
 							4265,
@@ -8856,7 +9163,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Current Predict Over",
 						uuid = "198fa4c6-d68a-4051-93d7-325f5ecef315",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -9269,7 +9576,7 @@ local tbl =
 						},
 						name = "Occult Crescent",
 						uuid = "646f4741-2189-523d-b322-d342eff3b1ac",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9281,7 +9588,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Mystic Knight",
 						uuid = "56223365-8388-f8e6-85ad-ad4ae4271380",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9293,7 +9600,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "6500ed18-f48e-10a5-9639-02727a1485c8",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9304,7 +9611,7 @@ local tbl =
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
 						uuid = "bd520528-de6e-dd63-8c2f-b13e1078b8d5",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9316,7 +9623,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Toggle",
 						uuid = "d81c6985-e446-ec27-a6f7-63bff52ae445",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9328,7 +9635,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Sundering Unlocked",
 						uuid = "f660e488-8ee9-147a-a731-27ff9701aaf6",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9345,7 +9652,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Sundering Available",
 						uuid = "fb8ebcda-f865-6a5c-a568-729538b3195d",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9357,7 +9664,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Holy Unlocked",
 						uuid = "daacf4f1-a442-964a-be27-431565da9a6d",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9374,7 +9681,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Holy Available",
 						uuid = "a5553312-db6f-f02c-bb2c-8850332433a2",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9386,7 +9693,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Blazing Unlocked",
 						uuid = "951c9b82-5570-bfd1-bfd6-30d778f703f4",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9403,7 +9710,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Blazing Available",
 						uuid = "66a0e6e1-3fbc-1f2e-926b-1a64f77b30be",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9418,7 +9725,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Self Blazing Missing",
 						uuid = "b2873652-fafa-8116-85c3-0bcf9e9f225e",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9433,7 +9740,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Self Blazing Duration",
 						uuid = "e69d5f82-fbef-17bd-8b3a-06007b5000ad",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9447,7 +9754,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Target Blazing Missing",
 						uuid = "76763df1-edbf-8932-8e24-33bea7bf4fc3",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9461,7 +9768,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Target Blazing Duration",
 						uuid = "155d1018-9e67-71a0-9ae4-89f9065d67f6",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9473,7 +9780,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Target In Range (5y)",
 						uuid = "c3d8a1f7-5e92-4b3a-9c16-8f2d0e7a4b59",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -9663,7 +9970,7 @@ local tbl =
 						},
 						name = "Occult Crescent",
 						uuid = "d42e14d2-ed16-3edb-98f6-0a083b58318d",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9675,7 +9982,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Gladiator",
 						uuid = "2807a4f9-c8e6-6040-ab35-7bc0de28267d",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9687,7 +9994,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "99c73f6d-ab4e-f13c-a138-49090c198497",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9698,7 +10005,7 @@ local tbl =
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
 						uuid = "5a5c0cef-f7f6-5c41-ba57-b7b6911c1582",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9710,7 +10017,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Toggle",
 						uuid = "ff1a3ca1-0c40-0c0a-838e-3eb07775a30f",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9727,7 +10034,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Finisher CD",
 						uuid = "931a6cca-b9e9-75cb-8765-316b65bda5f0",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9740,7 +10047,7 @@ local tbl =
 						inRangeValue = 5,
 						name = "Finisher Range",
 						uuid = "3467bf01-4832-8358-bfb3-087527be05c8",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9752,7 +10059,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Long Reach Unlocked",
 						uuid = "2fb0faf9-ba0b-afef-b63f-3ba4d7840c17",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9769,7 +10076,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Long Reach CD",
 						uuid = "7ffacc39-e30e-5ce9-b423-8c90e71fb765",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9781,7 +10088,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bladeblitz Unlocked",
 						uuid = "0c941677-20dd-2f9a-9190-fd0d3020aa19",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9798,7 +10105,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bladeblitz CD",
 						uuid = "bd807658-3923-e607-b150-436ec62d5681",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9811,7 +10118,7 @@ local tbl =
 						inRangeValue = 8,
 						name = "Bladeblitz Range",
 						uuid = "7e7e1198-54bb-5886-bf01-c3736b9fb5be",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -9910,7 +10217,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9933,7 +10240,7 @@ local tbl =
 							43521,
 						},
 						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -9954,7 +10261,7 @@ local tbl =
 							41716,
 						},
 						uuid = "c0e6fa19-888b-1651-bcac-ba7d8c305266",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -10111,7 +10418,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -10139,7 +10446,7 @@ local tbl =
 							41701,
 						},
 						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -10167,7 +10474,7 @@ local tbl =
 							41701,
 						},
 						uuid = "a535218f-b5b9-a148-bece-48e45ad8a1aa",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -10187,7 +10494,7 @@ local tbl =
 							41701,
 						},
 						uuid = "c0e6fa19-888b-1651-bcac-ba7d8c305266",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -10260,7 +10567,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						localmapid = 1252,
 						uuid = "6cdcc0ad-fa02-e3af-97af-f926c182182f",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -10270,7 +10577,7 @@ local tbl =
 						category = "Lua",
 						conditionLua = "return data.dedoArrowTime == nil or TimeSince(data.dedoArrowTime) > 1000",
 						uuid = "c7b2860b-8289-7795-a478-9d3865187c43",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -10331,7 +10638,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -10359,7 +10666,7 @@ local tbl =
 							41701,
 						},
 						uuid = "a535218f-b5b9-a148-bece-48e45ad8a1aa",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -10379,7 +10686,7 @@ local tbl =
 							41701,
 						},
 						uuid = "c0e6fa19-888b-1651-bcac-ba7d8c305266",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -10442,7 +10749,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -10464,7 +10771,7 @@ local tbl =
 							41701,
 						},
 						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -10485,7 +10792,7 @@ local tbl =
 							41701,
 						},
 						uuid = "c0e6fa19-888b-1651-bcac-ba7d8c305266",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -10565,7 +10872,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "a21dd969-932e-6398-8760-438fd6c6737d",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -10577,7 +10884,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Wind",
 						uuid = "84173e32-97e2-9885-bf35-7bc51c1c6c91",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -10589,7 +10896,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Earth",
 						uuid = "2015fdfa-2327-1a4f-b24c-255145965531",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -10679,7 +10986,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "3d713919-4904-c97e-bb72-5fba1cc7d8d1",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -10692,7 +10999,7 @@ local tbl =
 						eventEntityContentID = 13638,
 						name = "Is Neo Garula",
 						uuid = "831587ec-aa31-c05d-9716-7138cd1f2de9",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -10711,7 +11018,7 @@ local tbl =
 							41177,
 						},
 						uuid = "a1b5af49-de07-7460-9a69-50545e276d84",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -10730,7 +11037,7 @@ local tbl =
 							41177,
 						},
 						uuid = "31ab17ca-1766-b858-8c32-5e1ede7eab12",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -10885,7 +11192,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "9f7f42af-5bfa-0639-8083-1d406a4d052a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -10897,7 +11204,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Nova Ooze",
 						uuid = "92535bff-ee3c-5f24-bbd0-46bcbfa14b73",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -10909,7 +11216,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Ice Ooze",
 						uuid = "fa6aeb73-f777-ef1a-9c66-6b243dd22c87",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -10921,7 +11228,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Red Puddle",
 						uuid = "10cee0f3-7bdb-91eb-a9fc-b62b8e793715",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -10933,7 +11240,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Blue Puddle",
 						uuid = "9b30be4d-a71e-5880-8e8f-3b0a6fab5391",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -10996,7 +11303,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "2abe0922-6a71-5ad7-8451-5db61edcb31b",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11010,7 +11317,7 @@ local tbl =
 						eventEntityContentID = 13732,
 						name = "Is Phobos",
 						uuid = "59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11025,7 +11332,7 @@ local tbl =
 						eventSpellName = "-1",
 						name = "Is Frozen Fallout",
 						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -11111,7 +11418,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "2abe0922-6a71-5ad7-8451-5db61edcb31b",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11126,7 +11433,7 @@ local tbl =
 						eventEntityContentID = 13730,
 						name = "Is Nereid (Green)",
 						uuid = "59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11140,7 +11447,7 @@ local tbl =
 						eventSpellID = 42421,
 						name = "Is Phobos (Purple)",
 						uuid = "833c5aa4-51fe-0b72-9f5e-1f711df544ba",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -11232,7 +11539,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11247,7 +11554,7 @@ local tbl =
 						eventSpellID = 41569,
 						name = "Is AOE Puddle",
 						uuid = "cf4289c9-28f0-8a1c-94fc-a51d35542198",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11262,7 +11569,7 @@ local tbl =
 						eventSpellID = 41569,
 						name = "Is Cross Puddle",
 						uuid = "dc629907-0710-3bbd-9a10-7bad90cba281",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11276,7 +11583,7 @@ local tbl =
 						eventEntityContentID = 13950,
 						name = "Is Puddle Freezing",
 						uuid = "5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -11409,7 +11716,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11422,7 +11729,7 @@ local tbl =
 						eventEntityContentID = 13947,
 						name = "Is Magitaur",
 						uuid = "5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11436,7 +11743,7 @@ local tbl =
 						eventSpellID = 41543,
 						name = "Is Axeblow",
 						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11450,7 +11757,7 @@ local tbl =
 						eventSpellID = 41547,
 						name = "Is Lanceblow",
 						uuid = "dc629907-0710-3bbd-9a10-7bad90cba281",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11462,7 +11769,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Lance",
 						uuid = "e2528b8f-60d9-2cbe-aed2-09c6c8aa177f",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -11553,7 +11860,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11566,7 +11873,7 @@ local tbl =
 						eventEntityContentID = 13947,
 						name = "Is Magitaur",
 						uuid = "5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11580,7 +11887,7 @@ local tbl =
 						eventSpellID = 41557,
 						name = "Is Holy Lance",
 						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -11687,7 +11994,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11701,7 +12008,7 @@ local tbl =
 						eventEntityContentID = 13947,
 						name = "Is Magitaur",
 						uuid = "5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11716,7 +12023,7 @@ local tbl =
 						eventSpellID = 41562,
 						name = "Is Aura Burst",
 						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11728,7 +12035,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Yellow",
 						uuid = "d198bb84-9cec-393c-b3bf-3115b23f937c",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11740,7 +12047,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Blue",
 						uuid = "ab6a34ae-b2b2-a44d-ad9b-5c06d99e0b0d",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -11868,7 +12175,7 @@ local tbl =
 						},
 						name = "South Horn",
 						uuid = "d8720967-962e-a798-b184-d2ca5366f741",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11880,7 +12187,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Geomancer",
 						uuid = "15447371-b7b2-205c-879f-6c9b8f3492f4",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11894,7 +12201,7 @@ local tbl =
 						conditionType = 4,
 						dequeueIfLuaFalse = true,
 						uuid = "e930a2b8-8623-f4bd-a86a-4025d41e6e91",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 3,
 				},
@@ -11907,7 +12214,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "4bf7209d-8c34-782c-a4dd-63b77e3e4ae6",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 5,
 				},
@@ -11921,7 +12228,7 @@ local tbl =
 						category = "Self",
 						name = "Has Ringing Respite",
 						uuid = "545c4e2e-fb48-d9e3-b695-3ab27bf011ad",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11940,7 +12247,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "9e163534-7e2d-de04-9fca-c1039077a3ef",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -11952,7 +12259,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "ad5d769a-5e84-6753-a3d4-8b35add04643",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -12041,7 +12348,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is P. Ranger",
 						uuid = "2312ae26-c802-ad39-bbbf-0830ed918dac",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12054,7 +12361,7 @@ local tbl =
 						hpValue = 0.10000000149012,
 						name = "Am Alive",
 						uuid = "a4bae7f0-15e7-e380-89ed-28e6f8f500ff",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12065,7 +12372,7 @@ local tbl =
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
 						uuid = "e27ae646-5033-f9d0-8f32-0bab1ca37b02",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12075,7 +12382,7 @@ local tbl =
 						conditionType = 5,
 						dequeueIfLuaFalse = true,
 						uuid = "cf209713-cd07-baf7-af6e-1000879b86cb",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12087,14 +12394,14 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "CD Enabled",
 						uuid = "1e471142-f907-e1dd-abd5-6325e970db36",
-						version = 2,
+						version = 3,
 					},
 				},
 				
 				{
 					data = 
 					{
-						buffCheckType = 5,
+						buffCheckType = 6,
 						buffID = 4240,
 						buffIDList = 
 						{
@@ -12105,7 +12412,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Missing Phantom Aim",
 						uuid = "b3f3779f-97e1-26c8-aab2-1d54bd11306a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12120,7 +12427,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Phantom Aim CD <= 3s",
 						uuid = "0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12139,7 +12446,7 @@ local tbl =
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "68842e46-8c8e-f38e-80f1-1c565d84de04",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12151,7 +12458,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Check Rezz Timer",
 						uuid = "36e0cdc9-6f67-832d-af9d-962934e8d8cc",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -12242,7 +12549,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "tetherID",
 						uuid = "710d381b-ee90-f727-8e57-5926dbc9e986",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12254,7 +12561,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Target contentID",
 						uuid = "288e0df2-3cf0-27dc-a47c-64b16757ff8e",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12266,7 +12573,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Source contentID",
 						uuid = "b6691996-e299-9531-91cd-2d466669ab9b",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12278,7 +12585,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						localmapid = 1252,
 						uuid = "c50e5927-3e81-3a21-95f3-843678ef1597",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -12324,7 +12631,7 @@ local tbl =
 						conditionLua = "return eventArgs.aoeID == 41135 and eventArgs.contentID == 13726",
 						dequeueIfLuaFalse = true,
 						uuid = "12da2296-f5d5-dfb8-bd33-ea1afc255f47",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -12390,7 +12697,7 @@ local tbl =
 							41319,
 						},
 						uuid = "ebed26f6-d5ad-9622-9e62-354e7fe6cb2b",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12402,7 +12709,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						localmapid = 1252,
 						uuid = "77a3f58d-a783-7f7b-9181-a985b5f28107",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12414,7 +12721,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "In Deathclaw Arena",
 						uuid = "433c299f-65b9-c062-9c25-547f4bab7dbf",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -12470,7 +12777,7 @@ local tbl =
 						conditionLua = "return eventArgs.entityContentID == 13658 and eventArgs.wasVisible == false",
 						dequeueIfLuaFalse = true,
 						uuid = "89d0322d-b87a-4c69-b831-9bbd35a00e84",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12482,7 +12789,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						localmapid = 1252,
 						uuid = "fa4c3f2f-af19-5d4e-8fe7-38d0482c47a6",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12494,7 +12801,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "In Deathclaw Arena",
 						uuid = "82f9e7f1-321f-5461-b8b3-4cadcadae348",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -12584,7 +12891,7 @@ local tbl =
 						conditionLua = "return eventArgs.a2 == 16 and eventArgs.a3 == 32 and eventArgs.a4 == 0",
 						dequeueIfLuaFalse = true,
 						uuid = "3dff59b3-6552-44b6-8ffe-d03350028d33",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12595,7 +12902,7 @@ local tbl =
 						conditionLua = "return eventArgs.a2 == 4 and eventArgs.a3 == 8 and eventArgs.a4 == 0\n\n",
 						dequeueIfLuaFalse = true,
 						uuid = "92a83f85-62aa-4c5d-9041-216f3cffad2d",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12605,7 +12912,7 @@ local tbl =
 						category = "Lua",
 						conditionLua = "return data.deathclawCones == nil or table.size(data.deathclawCones) < 2",
 						uuid = "3101f3ac-f676-087b-a530-94ebe04426dc",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12617,7 +12924,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						localmapid = 1252,
 						uuid = "af7e015f-e56c-b02f-bffa-6d35e42d7467",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12629,7 +12936,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "In Deathclaw Arena",
 						uuid = "617b5141-a395-cb8e-a507-3ef77774b1d8",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -12768,7 +13075,7 @@ local tbl =
 							41331,
 						},
 						uuid = "d87b88ed-15b7-3126-8ab9-02a737bc5b37",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12787,7 +13094,7 @@ local tbl =
 							41330,
 						},
 						uuid = "89351613-c8ea-8c06-a135-184e8bd4eec9",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12799,7 +13106,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						localmapid = 1252,
 						uuid = "162641a4-b299-b4e9-83a0-bd3da968ac8a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12811,7 +13118,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "In Deathclaw Arena",
 						uuid = "0e9fa33a-38c1-2338-9f85-75d9ce25bc7c",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -12950,7 +13257,7 @@ local tbl =
 							41331,
 						},
 						uuid = "d87b88ed-15b7-3126-8ab9-02a737bc5b37",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12969,7 +13276,7 @@ local tbl =
 							41330,
 						},
 						uuid = "89351613-c8ea-8c06-a135-184e8bd4eec9",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12981,7 +13288,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						localmapid = 1252,
 						uuid = "162641a4-b299-b4e9-83a0-bd3da968ac8a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -12993,7 +13300,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "In Deathclaw Arena",
 						uuid = "0e9fa33a-38c1-2338-9f85-75d9ce25bc7c",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -13046,7 +13353,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						localmapid = 1252,
 						uuid = "11223834-0fdb-af78-b3b5-d5100bfbfeef",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -13057,7 +13364,7 @@ local tbl =
 						conditionLua = "return eventArgs.entityContentID == 13812 and eventArgs.oldActiveAura1 == 2428 and eventArgs.newActiveAura1 == 2429",
 						dequeueIfLuaFalse = true,
 						uuid = "550e20d9-f13d-9dc3-89be-04cde5829013",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -13136,7 +13443,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "3d713919-4904-c97e-bb72-5fba1cc7d8d1",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -13150,7 +13457,7 @@ local tbl =
 						eventMarkerID = 578,
 						name = "Is Intercard",
 						uuid = "31ab17ca-1766-b858-8c32-5e1ede7eab12",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -13164,7 +13471,7 @@ local tbl =
 						eventMarkerID = 578,
 						name = "Is Not Intercard",
 						uuid = "cd5ab771-4d08-f43f-9eb7-43101d1310df",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -13293,7 +13600,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "3d713919-4904-c97e-bb72-5fba1cc7d8d1",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -13306,7 +13613,7 @@ local tbl =
 						eventMarkerID = 578,
 						name = "Marker ID",
 						uuid = "31ab17ca-1766-b858-8c32-5e1ede7eab12",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -13319,7 +13626,7 @@ local tbl =
 						eventEntityContentID = 13639,
 						name = "Marker On Bird",
 						uuid = "831587ec-aa31-c05d-9716-7138cd1f2de9",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -13331,7 +13638,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Rushing Rumble Rampage",
 						uuid = "3d093ac1-e37c-273a-b7d2-8459b1579b66",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -13386,7 +13693,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -13400,7 +13707,7 @@ local tbl =
 						eventSpellID = 42490,
 						name = "Is Decisive Battle",
 						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -13483,7 +13790,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "2abe0922-6a71-5ad7-8451-5db61edcb31b",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -13496,7 +13803,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Has Tether",
 						uuid = "59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -13557,7 +13864,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -13571,7 +13878,7 @@ local tbl =
 						eventEntityContentID = 13950,
 						name = "Is Dagger",
 						uuid = "5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -13586,7 +13893,7 @@ local tbl =
 						eventSpellID = 41569,
 						name = "Is Assassin's Dagger",
 						uuid = "dc629907-0710-3bbd-9a10-7bad90cba281",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -13646,7 +13953,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -13660,7 +13967,7 @@ local tbl =
 						eventEntityContentID = 13947,
 						name = "Is Magitaur",
 						uuid = "5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -13681,7 +13988,7 @@ local tbl =
 							41538,
 						},
 						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -13834,7 +14141,7 @@ local tbl =
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -13848,7 +14155,7 @@ local tbl =
 						eventEntityContentID = 13947,
 						name = "Is Magitaur",
 						uuid = "5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -13863,7 +14170,7 @@ local tbl =
 						eventSpellID = 41537,
 						name = "Is Yellow",
 						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -13876,7 +14183,7 @@ local tbl =
 						eventSpellID = 41538,
 						name = "Is Blue",
 						uuid = "a878103b-a511-fffd-bfca-5a55f901aa54",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
