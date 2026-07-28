@@ -3039,7 +3039,7 @@ local tbl =
 			uuid = "89545ebd-870b-9599-8f64-ead285ce22cd",
 			version = 2,
 		},
-		inheritedIndex = 22,
+		inheritedIndex = 25,
 	},
 	
 	{
@@ -3158,13 +3158,232 @@ local tbl =
 					},
 				},
 			},
+			enabled = false,
 			mechanicTime = 433,
-			name = "[Chemist] Rez",
+			name = "[Chemist OLD] Rez",
 			timelineIndex = 74,
 			uuid = "c944e914-e7fe-ad3d-b61d-adeb57939f5f",
 			version = 2,
 		},
-		inheritedIndex = 24,
+		inheritedIndex = 27,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local deadPlayers = TensorCore.entityList(\"chartype=4,los,dead,maxdistance=30\")\nlocal raisablePlayers = {}\nlocal raisableChemists = {}\nif (table.valid(deadPlayers)) then\n\tfor id, player in pairs(deadPlayers) do\n\t\tlocal buffs = player.buffs\n\t\tlocal raised = false\n        local outOfRaises = false\n\t\tlocal chemist = false \n\n\t\tif (TableSize(buffs) > 0) then\n\t\t\tfor id, b in pairs(buffs) do\n\t\t\t\tif (b.id == 148) then\n\t\t\t\t\traised = true\n\t\t\t\tend\n                if (b.id == 4263) then\n                    outOfRaises = true\n                end\n\t\t\t\tif (b.id == 4367) then\n\t\t\t\t\tchemist = true\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t\t\n\t\tif(raised == false and outOfRaises == false) then\n\t\t\tif (chemist == true) then\n\t\t\t\ttable.insert(raisableChemists, player)\n\t\t\telse\n\t\t\t\ttable.insert(raisablePlayers, player)\n\t\t\tend\n\t\tend\n\tend\nend\nif (table.valid(raisableChemists)) then\n\tfor id, player in pairs(raisableChemists) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \" (Chemist)\")\n\t\tend\n\t\treturn ActionList:Get(1,41634), player.id, true, true\n\tend\nend\nif (table.valid(raisablePlayers)) then\n\tfor id, player in pairs(raisablePlayers) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \"\")\n\t\tend\n\t\treturn ActionList:Get(1,41634), player.id, true, false\n\tend\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b03aac2a-016b-2f26-a5c1-2548777d6f97",
+								true,
+							},
+							
+							{
+								"07ce03aa-d311-aeb9-b4fd-db197c2e53b8",
+								true,
+							},
+							
+							{
+								"1dbbf1df-c207-113b-8789-5b1dc0f4c77e",
+								true,
+							},
+							
+							{
+								"214333af-724c-d8c7-bc32-505803dec7ff",
+								true,
+							},
+							
+							{
+								"53a42934-6ab6-14a3-96e9-c921a5497ccc",
+								true,
+							},
+							
+							{
+								"203788d4-5555-4dc5-9150-53a4e73f8ca9",
+								true,
+							},
+							
+							{
+								"bfddab2c-d0ed-0214-8f2c-19399c9e83ff",
+								true,
+							},
+							
+							{
+								"f4134215-666b-a827-a19b-25d2f60e72a2",
+								true,
+							},
+							
+							{
+								"9f0a3c38-9a4e-d767-b930-2a10131c4ce2",
+								true,
+							},
+							
+							{
+								"5b9ed4c1-4133-fce0-9f9a-9db445c50390",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_CD",
+						luaReturnsAction = true,
+						uuid = "fd116bd7-85d4-2c0e-b230-7cfb407015d7",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+						},
+						name = "In Occult Crescent",
+						uuid = "07ce03aa-d311-aeb9-b4fd-db197c2e53b8",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4367,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is Chemist",
+						uuid = "1dbbf1df-c207-113b-8789-5b1dc0f4c77e",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "214333af-724c-d8c7-bc32-505803dec7ff",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "53a42934-6ab6-14a3-96e9-c921a5497ccc",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						name = "Self Living",
+						uuid = "203788d4-5555-4dc5-9150-53a4e73f8ca9",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 30,
+						matchAnyBuff = true,
+						name = "Self Missing Transcendent",
+						uuid = "bfddab2c-d0ed-0214-8f2c-19399c9e83ff",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 41634,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Revive CD",
+						uuid = "9f0a3c38-9a4e-d767-b930-2a10131c4ce2",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return (ActionList:Get(5,33):CanCastResult() ~= 579)",
+						dequeueIfLuaFalse = true,
+						name = "Revive Unlocked",
+						uuid = "f4134215-666b-a827-a19b-25d2f60e72a2",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TableSize(TensorCore.entityList(\"chartype=4,los,dead,maxdistance=30\")) ~= 0",
+						dequeueIfLuaFalse = true,
+						filterTargetType = "Party",
+						name = "Dead Player",
+						uuid = "5b9ed4c1-4133-fce0-9f9a-9db445c50390",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return true",
+						dequeueIfLuaFalse = true,
+						name = "Flip To Disable Action",
+						uuid = "b03aac2a-016b-2f26-a5c1-2548777d6f97",
+						version = 3,
+					},
+				},
+			},
+			name = "P. Chemist Rez",
+			throttleTime = 1000,
+			uuid = "81a55341-b483-4aea-a0bc-9664bb0d30a7",
+			version = 2,
+		},
+		inheritedIndex = 20,
 	},
 	
 	{
@@ -3345,7 +3564,248 @@ local tbl =
 			uuid = "f002c1b7-06d1-6521-a194-18da8de47602",
 			version = 2,
 		},
-		inheritedIndex = 25,
+		inheritedIndex = 28,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"3ebc6543-c8e2-5c0a-b15e-32f7d07734a7",
+								true,
+							},
+							
+							{
+								"cc7e4724-c91b-2918-b01a-658bfe057266",
+								true,
+							},
+							
+							{
+								"ffcb081e-e4a0-b915-a944-7bd08ffdac93",
+								true,
+							},
+							
+							{
+								"c6d7e8d8-c757-16e7-8d01-e200423d2d85",
+								true,
+							},
+							
+							{
+								"979c090b-4949-cadf-9069-22b20ccc8b6a",
+								true,
+							},
+							
+							{
+								"bf68a577-031c-6da5-833a-a2af0df7dc0f",
+								true,
+							},
+							
+							{
+								"b80e29ff-4548-ddeb-bec1-d7c2c95ecde3",
+								true,
+							},
+							
+							{
+								"3fd43f44-9d54-5f0a-8bbb-fd9b4d494836",
+								true,
+							},
+							
+							{
+								"4d153190-820e-68f0-a7f6-cc91e785fd38",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction2",
+						name = "Deadly Blow",
+						targetType = "Current Target",
+						uuid = "e68bd3d3-bf3f-0cca-8b76-fa15c75071d4",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "In Occult Crescent",
+						uuid = "3ebc6543-c8e2-5c0a-b15e-32f7d07734a7",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4359,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is Berserker",
+						uuid = "cc7e4724-c91b-2918-b01a-658bfe057266",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Is Bot Running",
+						uuid = "ffcb081e-e4a0-b915-a944-7bd08ffdac93",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "c6d7e8d8-c757-16e7-8d01-e200423d2d85",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						name = "Self Living",
+						uuid = "979c090b-4949-cadf-9069-22b20ccc8b6a",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 30,
+						matchAnyBuff = true,
+						name = "Self Missing Transcendent",
+						uuid = "bf68a577-031c-6da5-833a-a2af0df7dc0f",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "c2fdc327-8031-f6a9-adfe-685becae7175",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_CD\"]",
+						dequeueIfLuaFalse = true,
+						name = "CD Enabled",
+						uuid = "b80e29ff-4548-ddeb-bec1-d7c2c95ecde3",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 41594,
+						buffCheckType = 2,
+						buffID = 4232,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Deadly Blow CD",
+						uuid = "3fd43f44-9d54-5f0a-8bbb-fd9b4d494836",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						inRangeValue = 5,
+						name = "Target <= 5y",
+						uuid = "e1546784-6031-f108-9f38-babbba729c86",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.ocCombatTimer ~= nil and TimeSince(data.ocCombatTimer) > 2400",
+						dequeueIfLuaFalse = true,
+						name = "Combat > 2.4s",
+						uuid = "777ee56d-c235-d1b0-8cc7-1d3437cb1a64",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return true",
+						dequeueIfLuaFalse = true,
+						name = "Flip To Disable Action",
+						uuid = "4d153190-820e-68f0-a7f6-cc91e785fd38",
+						version = 3,
+					},
+				},
+			},
+			name = "P. Berserker Deadly Blow",
+			throttleTime = 100,
+			uuid = "5ba3375d-fe3c-b0f3-b109-b09825fc872b",
+			version = 2,
+		},
+		inheritedIndex = 23,
 	},
 	
 	{
@@ -3517,7 +3977,7 @@ local tbl =
 			uuid = "c18517b0-1e34-1d83-8176-9f1d38d51541",
 			version = 2,
 		},
-		inheritedIndex = 26,
+		inheritedIndex = 29,
 	},
 	
 	{
@@ -3811,7 +4271,7 @@ local tbl =
 			uuid = "a6c7e7ac-46cf-12e7-ae07-883da63ba66c",
 			version = 2,
 		},
-		inheritedIndex = 28,
+		inheritedIndex = 31,
 	},
 	
 	{
@@ -4323,7 +4783,7 @@ local tbl =
 			uuid = "8da73aae-57bf-86ea-9a65-353a607913dc",
 			version = 2,
 		},
-		inheritedIndex = 36,
+		inheritedIndex = 38,
 	},
 	
 	{
@@ -4559,7 +5019,7 @@ local tbl =
 			uuid = "041c7437-3947-cc16-a091-e42259dcf340",
 			version = 2,
 		},
-		inheritedIndex = 40,
+		inheritedIndex = 42,
 	},
 	
 	{
@@ -5127,7 +5587,7 @@ local tbl =
 			uuid = "19fa42df-39c6-8e18-b0a7-836c2e7a745e",
 			version = 2,
 		},
-		inheritedIndex = 41,
+		inheritedIndex = 43,
 	},
 	
 	{
@@ -5539,7 +5999,7 @@ local tbl =
 			uuid = "c9178b74-f32c-817a-950c-32b1fc0a7ee8",
 			version = 2,
 		},
-		inheritedIndex = 43,
+		inheritedIndex = 44,
 	},
 	
 	{
@@ -5810,7 +6270,7 @@ local tbl =
 			uuid = "eb688e35-87ab-c255-a605-63f5423c3c0a",
 			version = 2,
 		},
-		inheritedIndex = 44,
+		inheritedIndex = 45,
 	},
 	
 	{
@@ -7850,7 +8310,623 @@ local tbl =
 			uuid = "440e18ac-f040-ecee-9e98-d8b712ea8b11",
 			version = 2,
 		},
-		inheritedIndex = 35,
+		inheritedIndex = 38,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"3ebc6543-c8e2-5c0a-b15e-32f7d07734a7",
+								true,
+							},
+							
+							{
+								"cc7e4724-c91b-2918-b01a-658bfe057266",
+								true,
+							},
+							
+							{
+								"ffcb081e-e4a0-b915-a944-7bd08ffdac93",
+								true,
+							},
+							
+							{
+								"c6d7e8d8-c757-16e7-8d01-e200423d2d85",
+								true,
+							},
+							
+							{
+								"979c090b-4949-cadf-9069-22b20ccc8b6a",
+								true,
+							},
+							
+							{
+								"bf68a577-031c-6da5-833a-a2af0df7dc0f",
+								true,
+							},
+							
+							{
+								"3fd43f44-9d54-5f0a-8bbb-fd9b4d494836",
+								true,
+							},
+							
+							{
+								"4d153190-820e-68f0-a7f6-cc91e785fd38",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction1",
+						name = "Dance",
+						uuid = "e68bd3d3-bf3f-0cca-8b76-fa15c75071d4",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						conditions = 
+						{
+							
+							{
+								"3ebc6543-c8e2-5c0a-b15e-32f7d07734a7",
+								true,
+							},
+							
+							{
+								"cc7e4724-c91b-2918-b01a-658bfe057266",
+								true,
+							},
+							
+							{
+								"ffcb081e-e4a0-b915-a944-7bd08ffdac93",
+								true,
+							},
+							
+							{
+								"c6d7e8d8-c757-16e7-8d01-e200423d2d85",
+								true,
+							},
+							
+							{
+								"979c090b-4949-cadf-9069-22b20ccc8b6a",
+								true,
+							},
+							
+							{
+								"bf68a577-031c-6da5-833a-a2af0df7dc0f",
+								true,
+							},
+							
+							{
+								"d3e9d860-2ff5-bbdc-831b-c5f4d700c6dc",
+								true,
+							},
+							
+							{
+								"c2fdc327-8031-f6a9-adfe-685becae7175",
+								true,
+							},
+							
+							{
+								"777ee56d-c235-d1b0-8cc7-1d3437cb1a64",
+								true,
+							},
+							
+							{
+								"e1546784-6031-f108-9f38-babbba729c86",
+								true,
+							},
+							
+							{
+								"4d153190-820e-68f0-a7f6-cc91e785fd38",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction1",
+						name = "Dance: Phantom Sword",
+						targetType = "Current Target",
+						uuid = "9b67dafc-7341-6c66-8766-79dcb2d58c53",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						conditions = 
+						{
+							
+							{
+								"3ebc6543-c8e2-5c0a-b15e-32f7d07734a7",
+								true,
+							},
+							
+							{
+								"cc7e4724-c91b-2918-b01a-658bfe057266",
+								true,
+							},
+							
+							{
+								"ffcb081e-e4a0-b915-a944-7bd08ffdac93",
+								true,
+							},
+							
+							{
+								"c6d7e8d8-c757-16e7-8d01-e200423d2d85",
+								true,
+							},
+							
+							{
+								"979c090b-4949-cadf-9069-22b20ccc8b6a",
+								true,
+							},
+							
+							{
+								"bf68a577-031c-6da5-833a-a2af0df7dc0f",
+								true,
+							},
+							
+							{
+								"5c7be5da-34bf-34f8-951a-a6dae5fe0f36",
+								true,
+							},
+							
+							{
+								"c2fdc327-8031-f6a9-adfe-685becae7175",
+								true,
+							},
+							
+							{
+								"777ee56d-c235-d1b0-8cc7-1d3437cb1a64",
+								true,
+							},
+							
+							{
+								"e1546784-6031-f108-9f38-babbba729c86",
+								true,
+							},
+							
+							{
+								"4d153190-820e-68f0-a7f6-cc91e785fd38",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction1",
+						name = "Dance: Tempting Tango",
+						targetType = "Current Target",
+						uuid = "1d306c69-bc8c-9496-8052-629eff7be9ff",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						conditions = 
+						{
+							
+							{
+								"3ebc6543-c8e2-5c0a-b15e-32f7d07734a7",
+								true,
+							},
+							
+							{
+								"cc7e4724-c91b-2918-b01a-658bfe057266",
+								true,
+							},
+							
+							{
+								"ffcb081e-e4a0-b915-a944-7bd08ffdac93",
+								true,
+							},
+							
+							{
+								"c6d7e8d8-c757-16e7-8d01-e200423d2d85",
+								true,
+							},
+							
+							{
+								"979c090b-4949-cadf-9069-22b20ccc8b6a",
+								true,
+							},
+							
+							{
+								"bf68a577-031c-6da5-833a-a2af0df7dc0f",
+								true,
+							},
+							
+							{
+								"bae16e82-5245-c811-8148-2f59e592582a",
+								true,
+							},
+							
+							{
+								"c2fdc327-8031-f6a9-adfe-685becae7175",
+								true,
+							},
+							
+							{
+								"777ee56d-c235-d1b0-8cc7-1d3437cb1a64",
+								true,
+							},
+							
+							{
+								"e1546784-6031-f108-9f38-babbba729c86",
+								true,
+							},
+							
+							{
+								"4d153190-820e-68f0-a7f6-cc91e785fd38",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction1",
+						name = "Dance: Jitterbug",
+						targetType = "Current Target",
+						uuid = "6bcaf85b-a8ce-e946-8294-e4f709a95fce",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						conditions = 
+						{
+							
+							{
+								"3ebc6543-c8e2-5c0a-b15e-32f7d07734a7",
+								true,
+							},
+							
+							{
+								"cc7e4724-c91b-2918-b01a-658bfe057266",
+								true,
+							},
+							
+							{
+								"ffcb081e-e4a0-b915-a944-7bd08ffdac93",
+								true,
+							},
+							
+							{
+								"c6d7e8d8-c757-16e7-8d01-e200423d2d85",
+								true,
+							},
+							
+							{
+								"979c090b-4949-cadf-9069-22b20ccc8b6a",
+								true,
+							},
+							
+							{
+								"bf68a577-031c-6da5-833a-a2af0df7dc0f",
+								true,
+							},
+							
+							{
+								"5b9e741d-4130-3110-bf65-b4b6212e7ca2",
+								true,
+							},
+							
+							{
+								"c2fdc327-8031-f6a9-adfe-685becae7175",
+								true,
+							},
+							
+							{
+								"777ee56d-c235-d1b0-8cc7-1d3437cb1a64",
+								true,
+							},
+							
+							{
+								"e1546784-6031-f108-9f38-babbba729c86",
+								true,
+							},
+							
+							{
+								"4d153190-820e-68f0-a7f6-cc91e785fd38",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction1",
+						name = "Dance: Mystery Waltz",
+						targetType = "Current Target",
+						uuid = "4b1b3f6a-c3fe-f4c4-9b56-a28d7b170a4f",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"3ebc6543-c8e2-5c0a-b15e-32f7d07734a7",
+								true,
+							},
+							
+							{
+								"cc7e4724-c91b-2918-b01a-658bfe057266",
+								true,
+							},
+							
+							{
+								"500e7941-74f4-d140-9059-c4f298bc2c3f",
+								true,
+							},
+							
+							{
+								"c6d7e8d8-c757-16e7-8d01-e200423d2d85",
+								false,
+							},
+							
+							{
+								"4d153190-820e-68f0-a7f6-cc91e785fd38",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorMagnum3_CD",
+						name = "Dequeue Dance OOC",
+						uuid = "0e9fbbc8-ce8f-3328-9cee-1359861f2397",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "In Occult Crescent",
+						uuid = "3ebc6543-c8e2-5c0a-b15e-32f7d07734a7",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4805,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is Dancer",
+						uuid = "cc7e4724-c91b-2918-b01a-658bfe057266",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Is Bot Running",
+						uuid = "ffcb081e-e4a0-b915-a944-7bd08ffdac93",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "c6d7e8d8-c757-16e7-8d01-e200423d2d85",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						name = "Self Living",
+						uuid = "979c090b-4949-cadf-9069-22b20ccc8b6a",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 30,
+						matchAnyBuff = true,
+						name = "Self Missing Transcendent",
+						uuid = "bf68a577-031c-6da5-833a-a2af0df7dc0f",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "c2fdc327-8031-f6a9-adfe-685becae7175",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 46598,
+						buffCheckType = 2,
+						buffID = 4232,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Dance CD",
+						uuid = "3fd43f44-9d54-5f0a-8bbb-fd9b4d494836",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						inRangeValue = 30,
+						name = "Target <= 30y",
+						uuid = "e1546784-6031-f108-9f38-babbba729c86",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.ocCombatTimer ~= nil and TimeSince(data.ocCombatTimer) > 2400",
+						dequeueIfLuaFalse = true,
+						name = "Combat > 2.4s",
+						uuid = "777ee56d-c235-d1b0-8cc7-1d3437cb1a64",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4794,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Can Dance: Phantom Sword",
+						uuid = "d3e9d860-2ff5-bbdc-831b-c5f4d700c6dc",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4795,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Can Dance: Tempting Tango",
+						uuid = "5c7be5da-34bf-34f8-951a-a6dae5fe0f36",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4796,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Can Dance: Jitterbug",
+						uuid = "bae16e82-5245-c811-8148-2f59e592582a",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4797,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Can Dance: Mystery Waltz",
+						uuid = "5b9e741d-4130-3110-bf65-b4b6212e7ca2",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] == true",
+						dequeueIfLuaFalse = true,
+						name = "Is Dance Queued",
+						uuid = "500e7941-74f4-d140-9059-c4f298bc2c3f",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return true",
+						dequeueIfLuaFalse = true,
+						name = "Flip To Disable Action",
+						uuid = "4d153190-820e-68f0-a7f6-cc91e785fd38",
+						version = 3,
+					},
+				},
+			},
+			name = "P. Dancer Dance",
+			throttleTime = 100,
+			uuid = "cad90044-bdeb-56c9-ae85-48db84ef4abc",
+			version = 2,
+		},
+		inheritedIndex = 40,
 	},
 	
 	{
@@ -7918,37 +8994,6 @@ local tbl =
 						gVar = "ACR_TensorWeeb3_CD",
 						name = "Avoid Suicide",
 						uuid = "9fbf0baa-858f-9f38-908e-a73861e24981",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Avoid Starfall HP\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b7995653-e4e2-e753-91d9-89e71703711c",
-								true,
-							},
-							
-							{
-								"90bd2c89-b805-648a-943e-2651ec846a83",
-								true,
-							},
-							
-							{
-								"d0114ab1-f77d-bcda-b85a-1193128632d9",
-								false,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Avoid Starfall HP",
-						uuid = "3b198a46-3c08-ea17-9888-3e563681bb74",
 						version = 2.1,
 					},
 				},
@@ -8209,6 +9254,38 @@ local tbl =
 						uuid = "f5e195a1-40b1-0d84-86ec-3593694c1212",
 						version = 2.1,
 					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Avoid Starfall HP\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"90bd2c89-b805-648a-943e-2651ec846a83",
+								true,
+							},
+							
+							{
+								"d0114ab1-f77d-bcda-b85a-1193128632d9",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Avoid Starfall HP",
+						uuid = "3b198a46-3c08-ea17-9888-3e563681bb74",
+						version = 2.1,
+					},
+					inheritedIndex = 11,
 				},
 				
 				{
@@ -9030,7 +10107,7 @@ local tbl =
 			uuid = "7a8b0ac9-1ab5-9b70-9c4c-08d91cc31515",
 			version = 2,
 		},
-		inheritedIndex = 53,
+		inheritedIndex = 40,
 	},
 	
 	{
@@ -9172,6 +10249,438 @@ local tbl =
 			version = 2,
 		},
 		inheritedIndex = 54,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionID = 41630,
+						actionLua = "d(\"Fuma Shuriken\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						atomicPriority = true,
+						clusterMinTarget = 0,
+						clusterRadius = 5,
+						conditions = 
+						{
+							
+							{
+								"eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
+								true,
+							},
+							
+							{
+								"20de6216-c9b7-63c0-aa12-6f3bf6328b56",
+								true,
+							},
+							
+							{
+								"413ab30e-5df3-2576-be9b-e6f0766a4e1c",
+								true,
+							},
+							
+							{
+								"d6faff61-6e41-4419-a74c-ad11a7cfa344",
+								true,
+							},
+							
+							{
+								"5efc2993-627e-22b8-97b6-14b91275d1ce",
+								true,
+							},
+							
+							{
+								"91456766-cb80-a551-ae24-079ee8928b40",
+								true,
+							},
+							
+							{
+								"407cb2a4-43fa-1a39-b3e4-2340f7c3711d",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorMagnum3_CD",
+						ignoreWeaveRules = true,
+						name = "Fuma Shuriken",
+						targetType = "Current Target",
+						uuid = "ebf644a2-9f1d-a660-9d02-ad52513db9b3",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionID = 41630,
+						actionLua = "d(\"Lightning Scroll\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction3\"] = true\nself.used = true",
+						atomicPriority = true,
+						clusterMinTarget = 0,
+						clusterRadius = 5,
+						conditions = 
+						{
+							
+							{
+								"eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
+								true,
+							},
+							
+							{
+								"20de6216-c9b7-63c0-aa12-6f3bf6328b56",
+								true,
+							},
+							
+							{
+								"413ab30e-5df3-2576-be9b-e6f0766a4e1c",
+								true,
+							},
+							
+							{
+								"d6faff61-6e41-4419-a74c-ad11a7cfa344",
+								true,
+							},
+							
+							{
+								"5efc2993-627e-22b8-97b6-14b91275d1ce",
+								true,
+							},
+							
+							{
+								"e1a2766c-501a-0c89-831e-2146d6bae119",
+								true,
+							},
+							
+							{
+								"475c4ff9-1c1a-9878-821b-6576f35b3d53",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorMagnum3_CD",
+						ignoreWeaveRules = true,
+						name = "Lightning Scroll",
+						targetType = "Current Target",
+						uuid = "38328af4-057a-a8f9-93af-dd4ba67e12d3",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionID = 41630,
+						actionLua = "d(\"Flame Scroll\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction4\"] = true\nself.used = true",
+						atomicPriority = true,
+						clusterMinTarget = 0,
+						clusterRadius = 5,
+						conditions = 
+						{
+							
+							{
+								"eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
+								true,
+							},
+							
+							{
+								"20de6216-c9b7-63c0-aa12-6f3bf6328b56",
+								true,
+							},
+							
+							{
+								"413ab30e-5df3-2576-be9b-e6f0766a4e1c",
+								true,
+							},
+							
+							{
+								"d6faff61-6e41-4419-a74c-ad11a7cfa344",
+								true,
+							},
+							
+							{
+								"5efc2993-627e-22b8-97b6-14b91275d1ce",
+								true,
+							},
+							
+							{
+								"c8c4c4ed-c14e-fae8-9770-ecd7145873a9",
+								true,
+							},
+							
+							{
+								"81bc93ec-9729-d286-b830-236c236d9ceb",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorMagnum3_CD",
+						ignoreWeaveRules = true,
+						name = "Flame Scroll",
+						targetType = "Current Target",
+						uuid = "5b471398-f336-5fd2-a86d-d717d0878fb1",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "d(\"Smoke\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
+								true,
+							},
+							
+							{
+								"20de6216-c9b7-63c0-aa12-6f3bf6328b56",
+								true,
+							},
+							
+							{
+								"413ab30e-5df3-2576-be9b-e6f0766a4e1c",
+								true,
+							},
+							
+							{
+								"6150078d-4c7c-9781-86cb-cd1d8f0563ff",
+								true,
+							},
+							
+							{
+								"64ec0aae-a61e-8a4a-8be8-dfabf7eb0b79",
+								true,
+							},
+						},
+						gVar = "ACR_RikuSGE3_CD",
+						name = "Smoke",
+						uuid = "87bd0a34-244e-a260-8444-c0204c42b24c",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5328,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Ninja",
+						uuid = "20de6216-c9b7-63c0-aa12-6f3bf6328b56",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "413ab30e-5df3-2576-be9b-e6f0766a4e1c",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "d6faff61-6e41-4419-a74c-ad11a7cfa344",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 30,
+						name = "Target <= 30y",
+						uuid = "5efc2993-627e-22b8-97b6-14b91275d1ce",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,31):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Fuma Shuriken",
+						uuid = "91456766-cb80-a551-ae24-079ee8928b40",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,32):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Smoke",
+						uuid = "6150078d-4c7c-9781-86cb-cd1d8f0563ff",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,33):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Lightning Scroll",
+						uuid = "e1a2766c-501a-0c89-831e-2146d6bae119",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,34):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Flame Scroll",
+						uuid = "c8c4c4ed-c14e-fae8-9770-ecd7145873a9",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49062,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Fuma Shuriken CD <= 3s",
+						uuid = "407cb2a4-43fa-1a39-b3e4-2340f7c3711d",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49064,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Lightning Scroll CD <= 3s",
+						uuid = "475c4ff9-1c1a-9878-821b-6576f35b3d53",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49065,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Flame Scroll CD <= 3s",
+						uuid = "81bc93ec-9729-d286-b830-236c236d9ceb",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 5327,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Missing Buff: Smoke",
+						uuid = "da90157b-ddee-665e-954b-c11eab3ac1ac",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 3,
+						buffDuration = 10,
+						buffID = 5327,
+						category = "Self",
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						name = "Buff Dur.: Smoke <= 10s",
+						uuid = "b6b87162-540a-11db-a585-67788318d29c",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Filter",
+						conditions = 
+						{
+							
+							{
+								"da90157b-ddee-665e-954b-c11eab3ac1ac",
+								true,
+							},
+							
+							{
+								"b6b87162-540a-11db-a585-67788318d29c",
+								true,
+							},
+						},
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "F: Smoke Buff",
+						uuid = "64ec0aae-a61e-8a4a-8be8-dfabf7eb0b79",
+						version = 3,
+					},
+				},
+			},
+			name = "P. Ninja",
+			throttleTime = 1500,
+			uuid = "a6fc3db6-5f9c-308e-87df-e4628ef21a05",
+			version = 2,
+		},
+		inheritedIndex = 42,
 	},
 	
 	{
@@ -9789,7 +11298,7 @@ local tbl =
 			uuid = "092d9f5c-6e07-66c0-99d7-4ff225118861",
 			version = 2,
 		},
-		inheritedIndex = 37,
+		inheritedIndex = 39,
 	},
 	
 	{
@@ -10127,7 +11636,7 @@ local tbl =
 			uuid = "7a4dbf72-e16b-7baf-8724-7fb5955cb362",
 			version = 2,
 		},
-		inheritedIndex = 38,
+		inheritedIndex = 41,
 	},
 	
 	{
