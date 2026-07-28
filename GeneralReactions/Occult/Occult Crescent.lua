@@ -387,8 +387,13 @@ local tbl =
 					data = 
 					{
 						category = "Self",
-						conditionType = 8,
+						conditionType = 12,
 						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
 						localmapid = 1252,
 						name = "South Horn",
 						uuid = "bead46c3-17fe-4bf8-a9cb-2e315439988f",
@@ -526,8 +531,13 @@ local tbl =
 					data = 
 					{
 						category = "Self",
-						conditionType = 8,
+						conditionType = 12,
 						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
 						localmapid = 1252,
 						name = "South Horn",
 						uuid = "bead46c3-17fe-4bf8-a9cb-2e315439988f",
@@ -682,8 +692,13 @@ local tbl =
 					data = 
 					{
 						category = "Self",
-						conditionType = 8,
+						conditionType = 12,
 						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
 						localmapid = 1252,
 						name = "South Horn",
 						uuid = "f63493bb-f733-119c-a758-9b0599d8d1bc",
@@ -3252,6 +3267,7 @@ local tbl =
 						localMapIDList = 
 						{
 							1252,
+							1346,
 						},
 						name = "In Occult Crescent",
 						uuid = "07ce03aa-d311-aeb9-b4fd-db197c2e53b8",
@@ -3448,8 +3464,13 @@ local tbl =
 					data = 
 					{
 						category = "Self",
-						conditionType = 8,
+						conditionType = 12,
 						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
 						localmapid = 1252,
 						name = "South Horn",
 						uuid = "f63493bb-f733-119c-a758-9b0599d8d1bc",
@@ -5019,7 +5040,7 @@ local tbl =
 			uuid = "041c7437-3947-cc16-a091-e42259dcf340",
 			version = 2,
 		},
-		inheritedIndex = 42,
+		inheritedIndex = 44,
 	},
 	
 	{
@@ -5587,7 +5608,7 @@ local tbl =
 			uuid = "19fa42df-39c6-8e18-b0a7-836c2e7a745e",
 			version = 2,
 		},
-		inheritedIndex = 43,
+		inheritedIndex = 47,
 	},
 	
 	{
@@ -5999,7 +6020,7 @@ local tbl =
 			uuid = "c9178b74-f32c-817a-950c-32b1fc0a7ee8",
 			version = 2,
 		},
-		inheritedIndex = 44,
+		inheritedIndex = 50,
 	},
 	
 	{
@@ -6270,7 +6291,7 @@ local tbl =
 			uuid = "eb688e35-87ab-c255-a605-63f5423c3c0a",
 			version = 2,
 		},
-		inheritedIndex = 45,
+		inheritedIndex = 51,
 	},
 	
 	{
@@ -6683,7 +6704,7 @@ local tbl =
 			uuid = "1c6bbd54-6018-485a-9f05-9819fa8aa68e",
 			version = 2,
 		},
-		inheritedIndex = 45,
+		inheritedIndex = 51,
 	},
 	
 	{
@@ -7175,7 +7196,7 @@ local tbl =
 			uuid = "9c5b9d73-ae0e-195a-940a-540bca4454b2",
 			version = 2,
 		},
-		inheritedIndex = 46,
+		inheritedIndex = 52,
 	},
 	
 	{
@@ -7244,7 +7265,7 @@ local tbl =
 			uuid = "608ec0d1-adf2-ec9d-8f73-8e6c280fbb5d",
 			version = 2,
 		},
-		inheritedIndex = 48,
+		inheritedIndex = 53,
 	},
 	
 	{
@@ -7386,7 +7407,7 @@ local tbl =
 			uuid = "b175b050-f2bb-2ffe-bd7e-bff2941f8634",
 			version = 2,
 		},
-		inheritedIndex = 49,
+		inheritedIndex = 54,
 	},
 	
 	{
@@ -7622,7 +7643,7 @@ local tbl =
 			uuid = "9278be18-034c-9f92-abab-1d3e0055a418",
 			version = 2,
 		},
-		inheritedIndex = 50,
+		inheritedIndex = 55,
 	},
 	
 	{
@@ -7866,7 +7887,7 @@ local tbl =
 			uuid = "4c3d9549-4ff9-6f51-a0a1-292851ddf5a7",
 			version = 2,
 		},
-		inheritedIndex = 51,
+		inheritedIndex = 56,
 	},
 	
 	{
@@ -8003,7 +8024,7 @@ local tbl =
 			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
 			version = 2,
 		},
-		inheritedIndex = 52,
+		inheritedIndex = 57,
 	},
 	
 	{
@@ -8154,6 +8175,7 @@ local tbl =
 						localMapIDList = 
 						{
 							1252,
+							1346,
 						},
 						name = "In Occult Crescent",
 						uuid = "3ebc6543-c8e2-5c0a-b15e-32f7d07734a7",
@@ -10248,439 +10270,7 @@ local tbl =
 			uuid = "978328eb-ccac-48cf-bcfc-9c31d4cf6f4d",
 			version = 2,
 		},
-		inheritedIndex = 54,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionID = 41630,
-						actionLua = "d(\"Fuma Shuriken\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
-						atomicPriority = true,
-						clusterMinTarget = 0,
-						clusterRadius = 5,
-						conditions = 
-						{
-							
-							{
-								"eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
-								true,
-							},
-							
-							{
-								"20de6216-c9b7-63c0-aa12-6f3bf6328b56",
-								true,
-							},
-							
-							{
-								"413ab30e-5df3-2576-be9b-e6f0766a4e1c",
-								true,
-							},
-							
-							{
-								"d6faff61-6e41-4419-a74c-ad11a7cfa344",
-								true,
-							},
-							
-							{
-								"5efc2993-627e-22b8-97b6-14b91275d1ce",
-								true,
-							},
-							
-							{
-								"91456766-cb80-a551-ae24-079ee8928b40",
-								true,
-							},
-							
-							{
-								"407cb2a4-43fa-1a39-b3e4-2340f7c3711d",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorMagnum3_CD",
-						ignoreWeaveRules = true,
-						name = "Fuma Shuriken",
-						targetType = "Current Target",
-						uuid = "ebf644a2-9f1d-a660-9d02-ad52513db9b3",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionID = 41630,
-						actionLua = "d(\"Lightning Scroll\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction3\"] = true\nself.used = true",
-						atomicPriority = true,
-						clusterMinTarget = 0,
-						clusterRadius = 5,
-						conditions = 
-						{
-							
-							{
-								"eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
-								true,
-							},
-							
-							{
-								"20de6216-c9b7-63c0-aa12-6f3bf6328b56",
-								true,
-							},
-							
-							{
-								"413ab30e-5df3-2576-be9b-e6f0766a4e1c",
-								true,
-							},
-							
-							{
-								"d6faff61-6e41-4419-a74c-ad11a7cfa344",
-								true,
-							},
-							
-							{
-								"5efc2993-627e-22b8-97b6-14b91275d1ce",
-								true,
-							},
-							
-							{
-								"e1a2766c-501a-0c89-831e-2146d6bae119",
-								true,
-							},
-							
-							{
-								"475c4ff9-1c1a-9878-821b-6576f35b3d53",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorMagnum3_CD",
-						ignoreWeaveRules = true,
-						name = "Lightning Scroll",
-						targetType = "Current Target",
-						uuid = "38328af4-057a-a8f9-93af-dd4ba67e12d3",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionID = 41630,
-						actionLua = "d(\"Flame Scroll\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction4\"] = true\nself.used = true",
-						atomicPriority = true,
-						clusterMinTarget = 0,
-						clusterRadius = 5,
-						conditions = 
-						{
-							
-							{
-								"eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
-								true,
-							},
-							
-							{
-								"20de6216-c9b7-63c0-aa12-6f3bf6328b56",
-								true,
-							},
-							
-							{
-								"413ab30e-5df3-2576-be9b-e6f0766a4e1c",
-								true,
-							},
-							
-							{
-								"d6faff61-6e41-4419-a74c-ad11a7cfa344",
-								true,
-							},
-							
-							{
-								"5efc2993-627e-22b8-97b6-14b91275d1ce",
-								true,
-							},
-							
-							{
-								"c8c4c4ed-c14e-fae8-9770-ecd7145873a9",
-								true,
-							},
-							
-							{
-								"81bc93ec-9729-d286-b830-236c236d9ceb",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorMagnum3_CD",
-						ignoreWeaveRules = true,
-						name = "Flame Scroll",
-						targetType = "Current Target",
-						uuid = "5b471398-f336-5fd2-a86d-d717d0878fb1",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "d(\"Smoke\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
-								true,
-							},
-							
-							{
-								"20de6216-c9b7-63c0-aa12-6f3bf6328b56",
-								true,
-							},
-							
-							{
-								"413ab30e-5df3-2576-be9b-e6f0766a4e1c",
-								true,
-							},
-							
-							{
-								"6150078d-4c7c-9781-86cb-cd1d8f0563ff",
-								true,
-							},
-							
-							{
-								"64ec0aae-a61e-8a4a-8be8-dfabf7eb0b79",
-								true,
-							},
-						},
-						gVar = "ACR_RikuSGE3_CD",
-						name = "Smoke",
-						uuid = "87bd0a34-244e-a260-8444-c0204c42b24c",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
-						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 5328,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Is P. Ninja",
-						uuid = "20de6216-c9b7-63c0-aa12-6f3bf6328b56",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 7,
-						dequeueIfLuaFalse = true,
-						uuid = "413ab30e-5df3-2576-be9b-e6f0766a4e1c",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						conditionType = 5,
-						dequeueIfLuaFalse = true,
-						uuid = "d6faff61-6e41-4419-a74c-ad11a7cfa344",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						comparator = 2,
-						conditionType = 6,
-						dequeueIfLuaFalse = true,
-						inRangeValue = 30,
-						name = "Target <= 30y",
-						uuid = "5efc2993-627e-22b8-97b6-14b91275d1ce",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return ActionList:Get(5,31):CanCastResult() ~= 579",
-						dequeueIfLuaFalse = true,
-						name = "Has Fuma Shuriken",
-						uuid = "91456766-cb80-a551-ae24-079ee8928b40",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return ActionList:Get(5,32):CanCastResult() ~= 579",
-						dequeueIfLuaFalse = true,
-						name = "Has Smoke",
-						uuid = "6150078d-4c7c-9781-86cb-cd1d8f0563ff",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return ActionList:Get(5,33):CanCastResult() ~= 579",
-						dequeueIfLuaFalse = true,
-						name = "Has Lightning Scroll",
-						uuid = "e1a2766c-501a-0c89-831e-2146d6bae119",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return ActionList:Get(5,34):CanCastResult() ~= 579",
-						dequeueIfLuaFalse = true,
-						name = "Has Flame Scroll",
-						uuid = "c8c4c4ed-c14e-fae8-9770-ecd7145873a9",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionCDValue = 3,
-						actionID = 49062,
-						category = "Self",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						name = "Fuma Shuriken CD <= 3s",
-						uuid = "407cb2a4-43fa-1a39-b3e4-2340f7c3711d",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionCDValue = 3,
-						actionID = 49064,
-						category = "Self",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						name = "Lightning Scroll CD <= 3s",
-						uuid = "475c4ff9-1c1a-9878-821b-6576f35b3d53",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionCDValue = 3,
-						actionID = 49065,
-						category = "Self",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						name = "Flame Scroll CD <= 3s",
-						uuid = "81bc93ec-9729-d286-b830-236c236d9ceb",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 2,
-						buffID = 5327,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Missing Buff: Smoke",
-						uuid = "da90157b-ddee-665e-954b-c11eab3ac1ac",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 3,
-						buffDuration = 10,
-						buffID = 5327,
-						category = "Self",
-						comparator = 2,
-						dequeueIfLuaFalse = true,
-						name = "Buff Dur.: Smoke <= 10s",
-						uuid = "b6b87162-540a-11db-a585-67788318d29c",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Filter",
-						conditions = 
-						{
-							
-							{
-								"da90157b-ddee-665e-954b-c11eab3ac1ac",
-								true,
-							},
-							
-							{
-								"b6b87162-540a-11db-a585-67788318d29c",
-								true,
-							},
-						},
-						dequeueIfLuaFalse = true,
-						matchAnyBuff = true,
-						name = "F: Smoke Buff",
-						uuid = "64ec0aae-a61e-8a4a-8be8-dfabf7eb0b79",
-						version = 3,
-					},
-				},
-			},
-			name = "P. Ninja",
-			throttleTime = 1500,
-			uuid = "a6fc3db6-5f9c-308e-87df-e4628ef21a05",
-			version = 2,
-		},
-		inheritedIndex = 42,
+		inheritedIndex = 60,
 	},
 	
 	{
@@ -11082,6 +10672,7 @@ local tbl =
 						localMapIDList = 
 						{
 							1252,
+							1346,
 						},
 						name = "Occult Crescent",
 						uuid = "646f4741-2189-523d-b322-d342eff3b1ac",
@@ -11310,6 +10901,958 @@ local tbl =
 				{
 					data = 
 					{
+						aType = "ACR",
+						actionID = 41630,
+						actionLua = "d(\"Fuma Shuriken\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						atomicPriority = true,
+						clusterMinTarget = 0,
+						clusterRadius = 5,
+						conditions = 
+						{
+							
+							{
+								"eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
+								true,
+							},
+							
+							{
+								"20de6216-c9b7-63c0-aa12-6f3bf6328b56",
+								true,
+							},
+							
+							{
+								"413ab30e-5df3-2576-be9b-e6f0766a4e1c",
+								true,
+							},
+							
+							{
+								"d6faff61-6e41-4419-a74c-ad11a7cfa344",
+								true,
+							},
+							
+							{
+								"5efc2993-627e-22b8-97b6-14b91275d1ce",
+								true,
+							},
+							
+							{
+								"91456766-cb80-a551-ae24-079ee8928b40",
+								true,
+							},
+							
+							{
+								"407cb2a4-43fa-1a39-b3e4-2340f7c3711d",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuSGE3_Hotbar_DutyAction1",
+						ignoreWeaveRules = true,
+						name = "Fuma Shuriken",
+						targetType = "Current Target",
+						uuid = "ebf644a2-9f1d-a660-9d02-ad52513db9b3",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						actionID = 41630,
+						actionLua = "d(\"Lightning Scroll\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction3\"] = true\nself.used = true",
+						atomicPriority = true,
+						clusterMinTarget = 0,
+						clusterRadius = 5,
+						conditions = 
+						{
+							
+							{
+								"eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
+								true,
+							},
+							
+							{
+								"20de6216-c9b7-63c0-aa12-6f3bf6328b56",
+								true,
+							},
+							
+							{
+								"413ab30e-5df3-2576-be9b-e6f0766a4e1c",
+								true,
+							},
+							
+							{
+								"d6faff61-6e41-4419-a74c-ad11a7cfa344",
+								true,
+							},
+							
+							{
+								"5efc2993-627e-22b8-97b6-14b91275d1ce",
+								true,
+							},
+							
+							{
+								"e1a2766c-501a-0c89-831e-2146d6bae119",
+								true,
+							},
+							
+							{
+								"475c4ff9-1c1a-9878-821b-6576f35b3d53",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuSGE3_Hotbar_DutyAction3",
+						ignoreWeaveRules = true,
+						name = "Lightning Scroll",
+						targetType = "Most Clustered Enemy",
+						uuid = "38328af4-057a-a8f9-93af-dd4ba67e12d3",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						actionID = 41630,
+						actionLua = "d(\"Flame Scroll\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction4\"] = true\nself.used = true",
+						atomicPriority = true,
+						clusterMinTarget = 0,
+						clusterRadius = 5,
+						conditions = 
+						{
+							
+							{
+								"eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
+								true,
+							},
+							
+							{
+								"20de6216-c9b7-63c0-aa12-6f3bf6328b56",
+								true,
+							},
+							
+							{
+								"413ab30e-5df3-2576-be9b-e6f0766a4e1c",
+								true,
+							},
+							
+							{
+								"d6faff61-6e41-4419-a74c-ad11a7cfa344",
+								true,
+							},
+							
+							{
+								"5efc2993-627e-22b8-97b6-14b91275d1ce",
+								true,
+							},
+							
+							{
+								"c8c4c4ed-c14e-fae8-9770-ecd7145873a9",
+								true,
+							},
+							
+							{
+								"81bc93ec-9729-d286-b830-236c236d9ceb",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuSGE3_Hotbar_DutyAction4",
+						ignoreWeaveRules = true,
+						name = "Flame Scroll",
+						targetType = "Most Clustered Enemy",
+						uuid = "5b471398-f336-5fd2-a86d-d717d0878fb1",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						actionLua = "d(\"Smoke\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
+								true,
+							},
+							
+							{
+								"20de6216-c9b7-63c0-aa12-6f3bf6328b56",
+								true,
+							},
+							
+							{
+								"413ab30e-5df3-2576-be9b-e6f0766a4e1c",
+								true,
+							},
+							
+							{
+								"6150078d-4c7c-9781-86cb-cd1d8f0563ff",
+								true,
+							},
+							
+							{
+								"693b377f-0e37-f1fa-837d-0d0e1593a732",
+								true,
+							},
+							
+							{
+								"64ec0aae-a61e-8a4a-8be8-dfabf7eb0b79",
+								true,
+							},
+						},
+						gVar = "ACR_RikuSGE3_Hotbar_DutyAction2",
+						name = "Smoke",
+						uuid = "87bd0a34-244e-a260-8444-c0204c42b24c",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5328,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Ninja",
+						uuid = "20de6216-c9b7-63c0-aa12-6f3bf6328b56",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "413ab30e-5df3-2576-be9b-e6f0766a4e1c",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "d6faff61-6e41-4419-a74c-ad11a7cfa344",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 30,
+						name = "Target <= 30y",
+						uuid = "5efc2993-627e-22b8-97b6-14b91275d1ce",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,31):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Fuma Shuriken",
+						uuid = "91456766-cb80-a551-ae24-079ee8928b40",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,32):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Smoke",
+						uuid = "6150078d-4c7c-9781-86cb-cd1d8f0563ff",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,33):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Lightning Scroll",
+						uuid = "e1a2766c-501a-0c89-831e-2146d6bae119",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,34):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Flame Scroll",
+						uuid = "c8c4c4ed-c14e-fae8-9770-ecd7145873a9",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49062,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Fuma Shuriken CD <= 3s",
+						uuid = "407cb2a4-43fa-1a39-b3e4-2340f7c3711d",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49064,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Lightning Scroll CD <= 3s",
+						uuid = "475c4ff9-1c1a-9878-821b-6576f35b3d53",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49065,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Flame Scroll CD <= 3s",
+						uuid = "81bc93ec-9729-d286-b830-236c236d9ceb",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 49063,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Smoke CD <= 0s",
+						uuid = "693b377f-0e37-f1fa-837d-0d0e1593a732",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 5327,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Missing Buff: Smoke",
+						uuid = "da90157b-ddee-665e-954b-c11eab3ac1ac",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 3,
+						buffDuration = 10,
+						buffID = 5327,
+						category = "Self",
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						name = "Buff Dur.: Smoke <= 10s",
+						uuid = "b6b87162-540a-11db-a585-67788318d29c",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Filter",
+						conditions = 
+						{
+							
+							{
+								"da90157b-ddee-665e-954b-c11eab3ac1ac",
+								true,
+							},
+							
+							{
+								"b6b87162-540a-11db-a585-67788318d29c",
+								true,
+							},
+						},
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "F: Smoke Buff",
+						partyTargetNumber = 0,
+						uuid = "64ec0aae-a61e-8a4a-8be8-dfabf7eb0b79",
+						version = 3,
+					},
+				},
+			},
+			name = "P. Ninja",
+			throttleTime = 250,
+			timeout = 2.5,
+			uuid = "d2e727cd-fcd5-e189-a64c-96e07f69315a",
+			version = 2,
+		},
+		inheritedIndex = 42,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						actionID = 41630,
+						actionLua = "d(\"Fuma Shuriken\")\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						atomicPriority = true,
+						clusterMinTarget = 0,
+						clusterRadius = 12,
+						conditions = 
+						{
+							
+							{
+								"eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
+								true,
+							},
+							
+							{
+								"20de6216-c9b7-63c0-aa12-6f3bf6328b56",
+								true,
+							},
+							
+							{
+								"413ab30e-5df3-2576-be9b-e6f0766a4e1c",
+								true,
+							},
+							
+							{
+								"d6faff61-6e41-4419-a74c-ad11a7cfa344",
+								true,
+							},
+							
+							{
+								"5efc2993-627e-22b8-97b6-14b91275d1ce",
+								true,
+							},
+							
+							{
+								"91456766-cb80-a551-ae24-079ee8928b40",
+								true,
+							},
+							
+							{
+								"407cb2a4-43fa-1a39-b3e4-2340f7c3711d",
+								true,
+							},
+							
+							{
+								"cf5239f2-9d9e-f65c-af83-b9fa6b0b7a4e",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuSGE3_Hotbar_DutyAction1",
+						ignoreWeaveRules = true,
+						name = "Hellfire",
+						targetType = "Most Clustered Enemy",
+						uuid = "ebf644a2-9f1d-a660-9d02-ad52513db9b3",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						clusterMinTarget = 0,
+						clusterRadius = 12,
+						conditions = 
+						{
+							
+							{
+								"eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
+								true,
+							},
+							
+							{
+								"20de6216-c9b7-63c0-aa12-6f3bf6328b56",
+								true,
+							},
+							
+							{
+								"413ab30e-5df3-2576-be9b-e6f0766a4e1c",
+								true,
+							},
+							
+							{
+								"d6faff61-6e41-4419-a74c-ad11a7cfa344",
+								true,
+							},
+							
+							{
+								"5efc2993-627e-22b8-97b6-14b91275d1ce",
+								true,
+							},
+							
+							{
+								"6150078d-4c7c-9781-86cb-cd1d8f0563ff",
+								true,
+							},
+							
+							{
+								"475c4ff9-1c1a-9878-821b-6576f35b3d53",
+								true,
+							},
+							
+							{
+								"cf5239f2-9d9e-f65c-af83-b9fa6b0b7a4e",
+								true,
+							},
+						},
+						gVar = "ACR_RikuSGE3_Hotbar_DutyAction2",
+						name = "Judgement Bolt",
+						targetType = "Most Clustered Enemy",
+						uuid = "0ed36ada-0cc4-f5e4-a3e6-e5f9367c16c5",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						conditions = 
+						{
+							
+							{
+								"eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
+								true,
+							},
+							
+							{
+								"20de6216-c9b7-63c0-aa12-6f3bf6328b56",
+								true,
+							},
+							
+							{
+								"413ab30e-5df3-2576-be9b-e6f0766a4e1c",
+								true,
+							},
+							
+							{
+								"d6faff61-6e41-4419-a74c-ad11a7cfa344",
+								true,
+							},
+							
+							{
+								"5efc2993-627e-22b8-97b6-14b91275d1ce",
+								true,
+							},
+							
+							{
+								"e1a2766c-501a-0c89-831e-2146d6bae119",
+								true,
+							},
+							
+							{
+								"693b377f-0e37-f1fa-837d-0d0e1593a732",
+								true,
+							},
+							
+							{
+								"cf5239f2-9d9e-f65c-af83-b9fa6b0b7a4e",
+								true,
+							},
+						},
+						gVar = "ACR_RikuSGE3_Hotbar_DutyAction4",
+						name = "Thunderstorm",
+						targetSubType = "Most Clustered",
+						targetType = "Current Target",
+						uuid = "2b34e615-dce6-b796-bf3c-ff68d6829d4b",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						clusterMinTarget = 0,
+						clusterRadius = 15,
+						conditions = 
+						{
+							
+							{
+								"eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
+								true,
+							},
+							
+							{
+								"20de6216-c9b7-63c0-aa12-6f3bf6328b56",
+								true,
+							},
+							
+							{
+								"413ab30e-5df3-2576-be9b-e6f0766a4e1c",
+								true,
+							},
+							
+							{
+								"d6faff61-6e41-4419-a74c-ad11a7cfa344",
+								true,
+							},
+							
+							{
+								"5efc2993-627e-22b8-97b6-14b91275d1ce",
+								true,
+							},
+							
+							{
+								"c8c4c4ed-c14e-fae8-9770-ecd7145873a9",
+								true,
+							},
+							
+							{
+								"19f88a8a-17c4-eea8-bef5-a2b7c28b1f19",
+								true,
+							},
+							
+							{
+								"cf5239f2-9d9e-f65c-af83-b9fa6b0b7a4e",
+								true,
+							},
+						},
+						gVar = "ACR_RikuSGE3_Hotbar_DutyAction5",
+						name = "Megaflare",
+						targetType = "Most Clustered Enemy",
+						uuid = "272b0e75-50b8-27ac-aa36-27f1c5824fd3",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5332,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Summoner",
+						uuid = "20de6216-c9b7-63c0-aa12-6f3bf6328b56",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "413ab30e-5df3-2576-be9b-e6f0766a4e1c",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "d6faff61-6e41-4419-a74c-ad11a7cfa344",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 30,
+						name = "Target <= 30y",
+						uuid = "5efc2993-627e-22b8-97b6-14b91275d1ce",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,31):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Hellfire",
+						uuid = "91456766-cb80-a551-ae24-079ee8928b40",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,32):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Judgement Bolt",
+						uuid = "6150078d-4c7c-9781-86cb-cd1d8f0563ff",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,34):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Thunderstorm",
+						uuid = "e1a2766c-501a-0c89-831e-2146d6bae119",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,35):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Megaflare",
+						uuid = "c8c4c4ed-c14e-fae8-9770-ecd7145873a9",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49080,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Hellfire CD <= 3s",
+						uuid = "407cb2a4-43fa-1a39-b3e4-2340f7c3711d",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49081,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Judgement Bolt CD <= 3s",
+						uuid = "475c4ff9-1c1a-9878-821b-6576f35b3d53",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49083,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Thunderstorm CD <= 3s",
+						uuid = "693b377f-0e37-f1fa-837d-0d0e1593a732",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49084,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Megaflare CD <= 3s",
+						uuid = "19f88a8a-17c4-eea8-bef5-a2b7c28b1f19",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TensorCore.getEntitySpeed(TensorCore.mGetPlayer().id) > 0",
+						dequeueIfLuaFalse = true,
+						name = "Player moving",
+						uuid = "b6bb4c57-7e34-3a45-8351-e0cab17dfbaf",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 167,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Player swiftcast buff",
+						uuid = "33b94d4f-59e0-89cd-baa2-8a3ca334fa6e",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 1249,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Player dualcast buff",
+						uuid = "99d904ea-d9cc-3781-8d57-63723fab0fff",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Filter",
+						conditions = 
+						{
+							
+							{
+								"33b94d4f-59e0-89cd-baa2-8a3ca334fa6e",
+								true,
+							},
+							
+							{
+								"99d904ea-d9cc-3781-8d57-63723fab0fff",
+								true,
+							},
+							
+							{
+								"b6bb4c57-7e34-3a45-8351-e0cab17dfbaf",
+								false,
+							},
+						},
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "F: movement",
+						partyTargetNumber = 0,
+						uuid = "cf5239f2-9d9e-f65c-af83-b9fa6b0b7a4e",
+						version = 3,
+					},
+				},
+			},
+			name = "P. Summoner",
+			throttleTime = 250,
+			timeout = 2.5,
+			uuid = "18a3b2ec-0e97-c813-8922-b9f15ba79ac7",
+			version = 2,
+		},
+		inheritedIndex = 43,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
 						aType = "Lua",
 						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
 						conditions = 
@@ -11476,6 +12019,7 @@ local tbl =
 						localMapIDList = 
 						{
 							1252,
+							1346,
 						},
 						name = "Occult Crescent",
 						uuid = "d42e14d2-ed16-3edb-98f6-0a083b58318d",
@@ -11644,6 +12188,404 @@ local tbl =
 		{
 			actions = 
 			{
+				
+				{
+					data = 
+					{
+						actionID = 41619,
+						conditions = 
+						{
+							
+							{
+								"d8720967-962e-a798-b184-d2ca5366f741",
+								true,
+							},
+							
+							{
+								"15447371-b7b2-205c-879f-6c9b8f3492f4",
+								true,
+							},
+							
+							{
+								"e930a2b8-8623-f4bd-a86a-4025d41e6e91",
+								true,
+							},
+							
+							{
+								"4bf7209d-8c34-782c-a4dd-63b77e3e4ae6",
+								true,
+							},
+							
+							{
+								"545c4e2e-fb48-d9e3-b695-3ab27bf011ad",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						targetType = "Target of Current Target",
+						uuid = "8020dfc9-8a08-9162-91c4-c9a4a69daab4",
+						version = 2.1,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						actionID = 41619,
+						conditions = 
+						{
+							
+							{
+								"d8720967-962e-a798-b184-d2ca5366f741",
+								true,
+							},
+							
+							{
+								"15447371-b7b2-205c-879f-6c9b8f3492f4",
+								true,
+							},
+							
+							{
+								"e930a2b8-8623-f4bd-a86a-4025d41e6e91",
+								true,
+							},
+							
+							{
+								"4bf7209d-8c34-782c-a4dd-63b77e3e4ae6",
+								true,
+							},
+							
+							{
+								"545c4e2e-fb48-d9e3-b695-3ab27bf011ad",
+								false,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						ignoreWeaveRules = true,
+						uuid = "ba53d819-261f-6c17-aafe-5a272d9b52fd",
+						version = 2.1,
+					},
+					inheritedIndex = 1,
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "South Horn",
+						uuid = "d8720967-962e-a798-b184-d2ca5366f741",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4364,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is Geomancer",
+						uuid = "15447371-b7b2-205c-879f-6c9b8f3492f4",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 2.5,
+						actionID = 41619,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						uuid = "e930a2b8-8623-f4bd-a86a-4025d41e6e91",
+						version = 3,
+					},
+					inheritedIndex = 3,
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "4bf7209d-8c34-782c-a4dd-63b77e3e4ae6",
+						version = 3,
+					},
+					inheritedIndex = 5,
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 3,
+						buffDuration = 5,
+						buffID = 4257,
+						category = "Self",
+						name = "Has Ringing Respite",
+						uuid = "545c4e2e-fb48-d9e3-b695-3ab27bf011ad",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Not Invuln",
+						uuid = "9e163534-7e2d-de04-9fca-c1039077a3ef",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
+						dequeueIfLuaFalse = true,
+						name = "Check Rezz Timer",
+						uuid = "ad5d769a-5e84-6753-a3d4-8b35add04643",
+						version = 3,
+					},
+				},
+			},
+			name = "[Geo] Ringing Respite",
+			uuid = "124cd983-fe7a-d7f9-9ed9-ad6f8a38cf30",
+			version = 2,
+		},
+		inheritedIndex = 45,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"2312ae26-c802-ad39-bbbf-0830ed918dac",
+								true,
+							},
+							
+							{
+								"a4bae7f0-15e7-e380-89ed-28e6f8f500ff",
+								true,
+							},
+							
+							{
+								"e27ae646-5033-f9d0-8f32-0bab1ca37b02",
+								true,
+							},
+							
+							{
+								"cf209713-cd07-baf7-af6e-1000879b86cb",
+								true,
+							},
+							
+							{
+								"1e471142-f907-e1dd-abd5-6325e970db36",
+								true,
+							},
+							
+							{
+								"b3f3779f-97e1-26c8-aab2-1d54bd11306a",
+								true,
+							},
+							
+							{
+								"0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
+								true,
+							},
+							
+							{
+								"68842e46-8c8e-f38e-80f1-1c565d84de04",
+								true,
+							},
+							
+							{
+								"36e0cdc9-6f67-832d-af9d-962934e8d8cc",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Phantom Aim",
+						uuid = "b8fb2967-ec8b-3e1a-90c2-d4cc7d3703c8",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						buffID = 4361,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Ranger",
+						uuid = "2312ae26-c802-ad39-bbbf-0830ed918dac",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 0.10000000149012,
+						name = "Am Alive",
+						uuid = "a4bae7f0-15e7-e380-89ed-28e6f8f500ff",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "e27ae646-5033-f9d0-8f32-0bab1ca37b02",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "cf209713-cd07-baf7-af6e-1000879b86cb",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_CD\"]",
+						dequeueIfLuaFalse = true,
+						name = "CD Enabled",
+						uuid = "1e471142-f907-e1dd-abd5-6325e970db36",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 6,
+						buffID = 4240,
+						buffIDList = 
+						{
+							4240,
+							4241,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Missing Phantom Aim",
+						uuid = "b3f3779f-97e1-26c8-aab2-1d54bd11306a",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 41599,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Phantom Aim CD <= 3s",
+						uuid = "0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Not Invuln",
+						uuid = "68842e46-8c8e-f38e-80f1-1c565d84de04",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
+						dequeueIfLuaFalse = true,
+						name = "Check Rezz Timer",
+						uuid = "36e0cdc9-6f67-832d-af9d-962934e8d8cc",
+						version = 3,
+					},
+				},
+			},
+			name = "P. Ranger Phantom Aim",
+			throttleTime = 1000,
+			uuid = "a2c85c0f-8023-3f9f-803e-b42c3527bb7a",
+			version = 2,
+		},
+		inheritedIndex = 46,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
 			},
 			conditions = 
 			{
@@ -11652,7 +12594,111 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
-		inheritedIndex = 55,
+		inheritedIndex = 61,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local green,yellow,red,blue = 1677786914,1677787134,1677721855,1694449152\ndata.dedoTargetNames = data.dedoTargetNames or {\n-- Add names or contentid you want to track here\n-- after modifying the table you have to trigger onwipe under Debug tab \n-- or reload lua for it to reflect\n\n-- the value can either be a color or a table if you want to force to show invisible ents\n\n    [\"treasure coffer\"] = green,\n    [\"survey point\"] = yellow,\n    [\"2010139\"] = {color = red, forceVisible = true}, \n   -- [\"Random Test Name\"] = blue,\n    \n    \n-- if you want other colors than those 4 you can just put in a u32 color value\n-- color codes can be found in Anyone's Dev Monitor > Tools & Debugging Helper > Color Picker \n-- its the U32 Value you want.\n\n}\n\ndata.dedoArrowEnts = data.dedoArrowEnts or {}\ndata.dedoArrowTime = Now()\ntable.clear(data.dedoArrowEnts)\n\nfor id, ent in pairs(TensorCore.entityList(\"\")) do\n    local lowerName = string.lower(ent.name)\n    local targetConfig = data.dedoTargetNames[lowerName] or data.dedoTargetNames[tostring(ent.contentid)]\n    \n    if targetConfig then\n        local color, forceVisible\n        if type(targetConfig) == \"table\" then\n            color = targetConfig.color\n            forceVisible = targetConfig.forceVisible or false\n        else\n            color = targetConfig\n            forceVisible = false\n        end\n        \n        local dist = TensorCore.getDistance2d(TensorCore.mGetPlayer().pos, ent.pos)\n        local isVisible = Argus.isEntityVisible(ent)\n        \n        if dist > 5 and (isVisible or forceVisible) then\n            data.dedoArrowEnts[id] = {name = ent.name,pos = ent.pos,color = color,dist = dist,}\n        end\n    end\nend\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"6cdcc0ad-fa02-e3af-97af-f926c182182f",
+								true,
+							},
+							
+							{
+								"c7b2860b-8289-7795-a478-9d3865187c43",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Modify List",
+						uuid = "dc3172cf-0216-5185-925c-d466070e4db1",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local player = TensorCore.mGetPlayer()\nfor id, ent in pairs(data.dedoArrowEnts) do\n\tlocal g = TensorCore.getStaticDrawer(ent.color)\n\tg.colorOutline = 4294967295\n\tg:addArrow(player.pos.x, player.pos.y, player.pos.z,TensorCore.getHeadingToTarget(player.pos, ent.pos),1.5, 0.25, nil, nil, true)\n\tg:addCircle(ent.pos.x, ent.pos.y, ent.pos.z, 1, true)\n\tg.colorOutline = nil\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"6cdcc0ad-fa02-e3af-97af-f926c182182f",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						uuid = "c27fb81b-9bdc-0481-a815-bbb07fe0385b",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						localmapid = 1252,
+						uuid = "6cdcc0ad-fa02-e3af-97af-f926c182182f",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.dedoArrowTime == nil or TimeSince(data.dedoArrowTime) > 1000",
+						uuid = "c7b2860b-8289-7795-a478-9d3865187c43",
+						version = 3,
+					},
+				},
+			},
+			eventType = 12,
+			name = "[OC] Draw Arrow",
+			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
+			version = 2,
+		},
+		inheritedIndex = 48,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+			},
+			conditions = 
+			{
+			},
+			name = "-- Occulant Crescent",
+			uuid = "7affaeba-16a3-388a-9c7a-193cccdb0287",
+			version = 2,
+		},
+		inheritedIndex = 49,
 	},
 	
 	{
@@ -11780,7 +12826,7 @@ local tbl =
 			uuid = "d21f4c04-282f-d94a-9897-db3b516a5b14",
 			version = 2,
 		},
-		inheritedIndex = 58,
+		inheritedIndex = 64,
 	},
 	
 	{
@@ -12012,90 +13058,7 @@ local tbl =
 			uuid = "a7831eef-4074-1c28-879e-0f89fe93b737",
 			version = 2,
 		},
-		inheritedIndex = 59,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local green,yellow,red,blue = 1677786914,1677787134,1677721855,1694449152\ndata.dedoTargetNames = data.dedoTargetNames or {\n-- Add names or contentid you want to track here\n-- after modifying the table you have to trigger onwipe under Debug tab \n-- or reload lua for it to reflect\n\n-- the value can either be a color or a table if you want to force to show invisible ents\n\n    [\"treasure coffer\"] = green,\n    [\"survey point\"] = yellow,\n    [\"2010139\"] = {color = red, forceVisible = true}, \n   -- [\"Random Test Name\"] = blue,\n    \n    \n-- if you want other colors than those 4 you can just put in a u32 color value\n-- color codes can be found in Anyone's Dev Monitor > Tools & Debugging Helper > Color Picker \n-- its the U32 Value you want.\n\n}\n\ndata.dedoArrowEnts = data.dedoArrowEnts or {}\ndata.dedoArrowTime = Now()\ntable.clear(data.dedoArrowEnts)\n\nfor id, ent in pairs(TensorCore.entityList(\"\")) do\n    local lowerName = string.lower(ent.name)\n    local targetConfig = data.dedoTargetNames[lowerName] or data.dedoTargetNames[tostring(ent.contentid)]\n    \n    if targetConfig then\n        local color, forceVisible\n        if type(targetConfig) == \"table\" then\n            color = targetConfig.color\n            forceVisible = targetConfig.forceVisible or false\n        else\n            color = targetConfig\n            forceVisible = false\n        end\n        \n        local dist = TensorCore.getDistance2d(TensorCore.mGetPlayer().pos, ent.pos)\n        local isVisible = Argus.isEntityVisible(ent)\n        \n        if dist > 5 and (isVisible or forceVisible) then\n            data.dedoArrowEnts[id] = {name = ent.name,pos = ent.pos,color = color,dist = dist,}\n        end\n    end\nend\n\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"6cdcc0ad-fa02-e3af-97af-f926c182182f",
-								true,
-							},
-							
-							{
-								"c7b2860b-8289-7795-a478-9d3865187c43",
-								true,
-							},
-						},
-						gVar = "ACR_RikuMNK3_CD",
-						name = "Modify List",
-						uuid = "dc3172cf-0216-5185-925c-d466070e4db1",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local player = TensorCore.mGetPlayer()\nfor id, ent in pairs(data.dedoArrowEnts) do\n\tlocal g = TensorCore.getStaticDrawer(ent.color)\n\tg.colorOutline = 4294967295\n\tg:addArrow(player.pos.x, player.pos.y, player.pos.z,TensorCore.getHeadingToTarget(player.pos, ent.pos),1.5, 0.25, nil, nil, true)\n\tg:addCircle(ent.pos.x, ent.pos.y, ent.pos.z, 1, true)\n\tg.colorOutline = nil\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"6cdcc0ad-fa02-e3af-97af-f926c182182f",
-								true,
-							},
-						},
-						gVar = "ACR_RikuMNK3_CD",
-						uuid = "c27fb81b-9bdc-0481-a815-bbb07fe0385b",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1252,
-						uuid = "6cdcc0ad-fa02-e3af-97af-f926c182182f",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return data.dedoArrowTime == nil or TimeSince(data.dedoArrowTime) > 1000",
-						uuid = "c7b2860b-8289-7795-a478-9d3865187c43",
-						version = 3,
-					},
-				},
-			},
-			eventType = 12,
-			name = "[OC] Draw Arrow",
-			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
-			version = 2,
-		},
-		inheritedIndex = 64,
+		inheritedIndex = 68,
 	},
 	
 	{
@@ -12204,7 +13167,7 @@ local tbl =
 			uuid = "1df0282e-0a27-b51a-a199-bd462057c267",
 			version = 2,
 		},
-		inheritedIndex = 66,
+		inheritedIndex = 72,
 	},
 	
 	{
@@ -12310,7 +13273,7 @@ local tbl =
 			uuid = "99980e5a-5d62-8ea2-ad9f-9eb9bb611f5d",
 			version = 2,
 		},
-		inheritedIndex = 68,
+		inheritedIndex = 74,
 	},
 	
 	{
@@ -12414,7 +13377,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 73,
+		inheritedIndex = 79,
 	},
 	
 	{
@@ -12556,7 +13519,7 @@ local tbl =
 			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
 			version = 2,
 		},
-		inheritedIndex = 73,
+		inheritedIndex = 79,
 	},
 	
 	{
@@ -12758,7 +13721,7 @@ local tbl =
 			uuid = "bfd39011-66e4-7ebc-a314-9350aaa99856",
 			version = 2,
 		},
-		inheritedIndex = 73,
+		inheritedIndex = 79,
 	},
 	
 	{
@@ -12850,7 +13813,7 @@ local tbl =
 			uuid = "06acd7e2-3a2b-4c8b-a09a-482655849fc6",
 			version = 2,
 		},
-		inheritedIndex = 74,
+		inheritedIndex = 79,
 	},
 	
 	{
@@ -12965,7 +13928,175 @@ local tbl =
 			uuid = "ae235d51-4679-9c09-8261-885a05bc74bb",
 			version = 2,
 		},
-		inheritedIndex = 75,
+		inheritedIndex = 79,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Alert",
+						actionLua = "AnyoneCore.Shotcall(\"Tether on You\", true, timer, important, volume)\nself.used=true",
+						alertTTS = true,
+						alertText = "Tether on You",
+						conditions = 
+						{
+							
+							{
+								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
+								true,
+							},
+							
+							{
+								"59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
+								true,
+							},
+						},
+						gVar = "ACR_TensorWeeb3_CD",
+						uuid = "882c89d8-3cea-e041-9b35-6e9a2e49dba9",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local snowballPos = TensorCore.mGetEntity(eventArgs.sourceEntityID).pos\n\nlocal nereidPos\nfor _, foundEntity in pairs(TensorCore.entityList(\"contentid=13731,attackable\")) do\n\tnereidPos = foundEntity.pos\n\tbreak\nend\n\nlocal snowballToNereidHeading = TensorCore.getHeadingToTarget(snowballPos, nereidPos)\nTensorCore.getStaticDrawer(1845559113):addTimedArrow(6000, nereidPos.x, nereidPos.y, nereidPos.z, snowballToNereidHeading, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t10, 1)\n\nself.used=true",
+						alertTTS = true,
+						alertText = "Tether on You",
+						conditions = 
+						{
+							
+							{
+								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
+								true,
+							},
+							
+							{
+								"59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Draw Arrow",
+						uuid = "6a7a9fbc-2ebf-56c6-9913-9811f3a2a25e",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "2abe0922-6a71-5ad7-8451-5db61edcb31b",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4441,
+						category = "Lua",
+						conditionLua = "local player = TensorCore.mGetPlayer()\nreturn eventArgs.newTargetID == player.id and eventArgs.newTetherID == 246",
+						dequeueIfLuaFalse = true,
+						name = "Has Tether",
+						uuid = "59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
+						version = 3,
+					},
+				},
+			},
+			eventType = 15,
+			name = "[FTB] Boss 2 Snowball Tether",
+			throttleTime = 1250,
+			uuid = "6f59f82c-6eca-9703-b3db-8c94e14d1ae8",
+			version = 2,
+		},
+		inheritedIndex = 59,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "data.ocFTBRedPuddleCount = 0\ndata.ocFTBBluePuddleCount = 0\ndata.ocFTBSnowballTether = false\ndata.ocFTBSnowballTetherEntID = nil\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
+								true,
+							},
+							
+							{
+								"9480ace0-1972-dafa-b418-a87dd2b5d565",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Reset State",
+						uuid = "3b6c0a31-376b-be60-9d39-8ccdce241b6d",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4442,
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventSpellID = 42490,
+						name = "Is Decisive Battle",
+						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
+						version = 3,
+					},
+				},
+			},
+			eventType = 3,
+			name = "[FTB] Boss 2 Reset",
+			uuid = "e4df0c75-0fec-4c79-9c55-f892facb8a5b",
+			version = 2,
+		},
+		inheritedIndex = 60,
 	},
 	
 	{
@@ -13101,7 +14232,7 @@ local tbl =
 			uuid = "65c65955-c622-bb22-b8e8-dffca6394876",
 			version = 2,
 		},
-		inheritedIndex = 76,
+		inheritedIndex = 79,
 	},
 	
 	{
@@ -13287,7 +14418,7 @@ local tbl =
 			uuid = "de4b11dc-cace-5590-b9b4-6d768416d2c9",
 			version = 2,
 		},
-		inheritedIndex = 77,
+		inheritedIndex = 79,
 	},
 	
 	{
@@ -13406,7 +14537,7 @@ local tbl =
 			uuid = "ca2ed4c5-1790-ab33-930e-7944b6c02ebf",
 			version = 2,
 		},
-		inheritedIndex = 78,
+		inheritedIndex = 79,
 	},
 	
 	{
@@ -13573,100 +14704,36 @@ local tbl =
 		{
 			actions = 
 			{
-			},
-			conditions = 
-			{
-			},
-			name = "-- Occulant Crescent",
-			uuid = "7affaeba-16a3-388a-9c7a-193cccdb0287",
-			version = 2,
-		},
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
 				
 				{
 					data = 
 					{
-						actionID = 41619,
+						aType = "Lua",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Assassin's Dagger\", source = \"OC: FTB\" }\n\nlocal lineLength = eventArgs.aoeLength\nlocal lineWidth = eventArgs.aoeWidth\n\nlocal daggerCast = 5000\nlocal daggerDelay = 2000\n\nlocal drawDuration = 2000\n\nlocal originalHeading = eventArgs.heading\nlocal daggerRotation = math.rad(50)\n\nlocal magitaurPos = { x = 700.0, y = -476.0, z = -674.0 }\nlocal drawer = TensorCore.getMoogleDrawer()\n\nlocal function drawDagger(daggerSet, drawDelay)\n\tlocal daggerHeading = originalHeading - (daggerRotation * daggerSet)\n\tdrawer:addTimedRect(drawDuration, magitaurPos.x, magitaurPos.y, magitaurPos.z, lineLength, lineWidth, daggerHeading, drawDelay)\nend\n\nfor daggerSet = 0, 5 do\n\tif daggerSet == 0 then\n\t\tlocal daggerHeading = originalHeading\n\t\tdrawer:addTimedRect(daggerCast, magitaurPos.x, magitaurPos.y, magitaurPos.z, lineLength, lineWidth, daggerHeading)\n\t\tdrawer:addTimedRect(drawDuration, magitaurPos.x, magitaurPos.y, magitaurPos.z, lineLength, lineWidth, daggerHeading, daggerCast)\n\telse\n\t\tfor i = 1, 2 do\n\t\t\tlocal drawDelay = daggerCast + daggerDelay * (((daggerSet - 1) * 2) + i)\n\t\t\tdrawDagger(daggerSet, drawDelay)\n\t\tend\n\tend\nend\n\nself.used=true",
 						conditions = 
 						{
 							
 							{
-								"d8720967-962e-a798-b184-d2ca5366f741",
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
 								true,
 							},
 							
 							{
-								"15447371-b7b2-205c-879f-6c9b8f3492f4",
+								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
 								true,
 							},
 							
 							{
-								"e930a2b8-8623-f4bd-a86a-4025d41e6e91",
-								true,
-							},
-							
-							{
-								"4bf7209d-8c34-782c-a4dd-63b77e3e4ae6",
-								true,
-							},
-							
-							{
-								"545c4e2e-fb48-d9e3-b695-3ab27bf011ad",
+								"dc629907-0710-3bbd-9a10-7bad90cba281",
 								true,
 							},
 						},
-						gVar = "ACR_RikuWAR3_CD",
-						targetType = "Target of Current Target",
-						uuid = "8020dfc9-8a08-9162-91c4-c9a4a69daab4",
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Draw Daggers",
+						uuid = "a840192c-7690-8d23-9d81-af3723905db6",
 						version = 2.1,
 					},
-					inheritedIndex = 1,
-				},
-				
-				{
-					data = 
-					{
-						actionID = 41619,
-						conditions = 
-						{
-							
-							{
-								"d8720967-962e-a798-b184-d2ca5366f741",
-								true,
-							},
-							
-							{
-								"15447371-b7b2-205c-879f-6c9b8f3492f4",
-								true,
-							},
-							
-							{
-								"e930a2b8-8623-f4bd-a86a-4025d41e6e91",
-								true,
-							},
-							
-							{
-								"4bf7209d-8c34-782c-a4dd-63b77e3e4ae6",
-								true,
-							},
-							
-							{
-								"545c4e2e-fb48-d9e3-b695-3ab27bf011ad",
-								false,
-							},
-						},
-						gVar = "ACR_RikuWAR3_CD",
-						ignoreWeaveRules = true,
-						uuid = "ba53d819-261f-6c17-aafe-5a272d9b52fd",
-						version = 2.1,
-					},
-					inheritedIndex = 1,
 				},
 			},
 			conditions = 
@@ -13676,86 +14743,11 @@ local tbl =
 					data = 
 					{
 						category = "Self",
-						conditionType = 12,
+						conditionType = 8,
 						dequeueIfLuaFalse = true,
-						localMapIDList = 
-						{
-							1252,
-						},
-						name = "South Horn",
-						uuid = "d8720967-962e-a798-b184-d2ca5366f741",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4364,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Is Geomancer",
-						uuid = "15447371-b7b2-205c-879f-6c9b8f3492f4",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionCDValue = 2.5,
-						actionID = 41619,
-						category = "Self",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						uuid = "e930a2b8-8623-f4bd-a86a-4025d41e6e91",
-						version = 3,
-					},
-					inheritedIndex = 3,
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
-						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "4bf7209d-8c34-782c-a4dd-63b77e3e4ae6",
-						version = 3,
-					},
-					inheritedIndex = 5,
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 3,
-						buffDuration = 5,
-						buffID = 4257,
-						category = "Self",
-						name = "Has Ringing Respite",
-						uuid = "545c4e2e-fb48-d9e3-b695-3ab27bf011ad",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 2,
-						buffID = 418,
-						buffIDList = 
-						{
-							418,
-							148,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						matchAnyBuff = true,
-						name = "Not Invuln",
-						uuid = "9e163534-7e2d-de04-9fca-c1039077a3ef",
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
 						version = 3,
 					},
 				},
@@ -13764,18 +14756,37 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
+						conditionLua = "return eventArgs.contentID == 13950",
 						dequeueIfLuaFalse = true,
-						name = "Check Rezz Timer",
-						uuid = "ad5d769a-5e84-6753-a3d4-8b35add04643",
+						eventArgOptionType = 2,
+						eventEntityContentID = 13950,
+						name = "Is Dagger",
+						uuid = "5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4442,
+						category = "Lua",
+						conditionLua = "return eventArgs.aoeID == 41569",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventSpellID = 41569,
+						name = "Is Assassin's Dagger",
+						uuid = "dc629907-0710-3bbd-9a10-7bad90cba281",
 						version = 3,
 					},
 				},
 			},
-			name = "[Geo] Ringing Respite",
-			uuid = "124cd983-fe7a-d7f9-9ed9-ad6f8a38cf30",
+			eventType = 18,
+			name = "[FTB] Boss 4 Daggers",
+			uuid = "2f0e26c9-d9fc-79b6-add7-bac559401508",
 			version = 2,
 		},
+		inheritedIndex = 65,
 	},
 	
 	{
@@ -13788,60 +14799,29 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						actionLua = "data.ocMagitaurIsYellow = false\ndata.ocMagitaurIsBlue = false\nself.used=true",
 						conditions = 
 						{
 							
 							{
-								"2312ae26-c802-ad39-bbbf-0830ed918dac",
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
 								true,
 							},
 							
 							{
-								"a4bae7f0-15e7-e380-89ed-28e6f8f500ff",
+								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
 								true,
 							},
 							
 							{
-								"e27ae646-5033-f9d0-8f32-0bab1ca37b02",
-								true,
-							},
-							
-							{
-								"cf209713-cd07-baf7-af6e-1000879b86cb",
-								true,
-							},
-							
-							{
-								"1e471142-f907-e1dd-abd5-6325e970db36",
-								true,
-							},
-							
-							{
-								"b3f3779f-97e1-26c8-aab2-1d54bd11306a",
-								true,
-							},
-							
-							{
-								"0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
-								true,
-							},
-							
-							{
-								"68842e46-8c8e-f38e-80f1-1c565d84de04",
-								true,
-							},
-							
-							{
-								"36e0cdc9-6f67-832d-af9d-962934e8d8cc",
+								"9480ace0-1972-dafa-b418-a87dd2b5d565",
 								true,
 							},
 						},
 						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
-						name = "Phantom Aim",
-						uuid = "b8fb2967-ec8b-3e1a-90c2-d4cc7d3703c8",
-						variableTogglesType = 2,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Reset State",
+						uuid = "b43d4611-558a-5db0-b85b-fe143bda937f",
 						version = 2.1,
 					},
 				},
@@ -13852,11 +14832,12 @@ local tbl =
 				{
 					data = 
 					{
-						buffID = 4361,
 						category = "Self",
+						conditionType = 8,
 						dequeueIfLuaFalse = true,
-						name = "Is P. Ranger",
-						uuid = "2312ae26-c802-ad39-bbbf-0830ed918dac",
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
 						version = 3,
 					},
 				},
@@ -13864,12 +14845,13 @@ local tbl =
 				{
 					data = 
 					{
-						category = "Self",
-						conditionType = 2,
+						category = "Event",
+						conditionLua = "return eventArgs.entityContentID == 13947",
 						dequeueIfLuaFalse = true,
-						hpValue = 0.10000000149012,
-						name = "Am Alive",
-						uuid = "a4bae7f0-15e7-e380-89ed-28e6f8f500ff",
+						eventArgOptionType = 2,
+						eventEntityContentID = 13947,
+						name = "Is Magitaur",
+						uuid = "5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
 						version = 3,
 					},
 				},
@@ -13877,105 +14859,226 @@ local tbl =
 				{
 					data = 
 					{
-						category = "Self",
-						conditionType = 7,
+						buffID = 4442,
+						category = "Event",
+						conditionLua = "return eventArgs.newActiveAura1 == 2387",
 						dequeueIfLuaFalse = true,
-						uuid = "e27ae646-5033-f9d0-8f32-0bab1ca37b02",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						conditionType = 5,
-						dequeueIfLuaFalse = true,
-						uuid = "cf209713-cd07-baf7-af6e-1000879b86cb",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_CD\"]",
-						dequeueIfLuaFalse = true,
-						name = "CD Enabled",
-						uuid = "1e471142-f907-e1dd-abd5-6325e970db36",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 6,
-						buffID = 4240,
-						buffIDList = 
+						eventArgOptionType = 3,
+						eventArgType = 2,
+						eventSpellID = 41537,
+						name = "Is Unseal",
+						spellIDList = 
 						{
-							4240,
-							4241,
+							41537,
+							41538,
 						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Missing Phantom Aim",
-						uuid = "b3f3779f-97e1-26c8-aab2-1d54bd11306a",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionCDValue = 3,
-						actionID = 41599,
-						category = "Self",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						name = "Phantom Aim CD <= 3s",
-						uuid = "0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 2,
-						buffID = 418,
-						buffIDList = 
-						{
-							418,
-							148,
-						},
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						matchAnyBuff = true,
-						name = "Not Invuln",
-						uuid = "68842e46-8c8e-f38e-80f1-1c565d84de04",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
-						dequeueIfLuaFalse = true,
-						name = "Check Rezz Timer",
-						uuid = "36e0cdc9-6f67-832d-af9d-962934e8d8cc",
+						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
 						version = 3,
 					},
 				},
 			},
-			name = "P. Ranger Phantom Aim",
-			throttleTime = 1000,
-			uuid = "a2c85c0f-8023-3f9f-803e-b42c3527bb7a",
+			eventType = 3,
+			name = "[FTB] Boss 4 Reset",
+			uuid = "d44cca76-d6a5-bed0-a773-b841eccd6f5e",
 			version = 2,
 		},
+		inheritedIndex = 66,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "data.ocMagitaurIsYellow = true\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
+								true,
+							},
+							
+							{
+								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
+								true,
+							},
+							
+							{
+								"9480ace0-1972-dafa-b418-a87dd2b5d565",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Record Yellow",
+						uuid = "b43d4611-558a-5db0-b85b-fe143bda937f",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Alert",
+						alertTTS = true,
+						alertText = "Party Out, Tanks In",
+						conditions = 
+						{
+							
+							{
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
+								true,
+							},
+							
+							{
+								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
+								true,
+							},
+							
+							{
+								"9480ace0-1972-dafa-b418-a87dd2b5d565",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Yellow Alert",
+						uuid = "415ba831-e576-22b6-b689-833500a62ca3",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "data.ocMagitaurIsBlue = true\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
+								true,
+							},
+							
+							{
+								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
+								true,
+							},
+							
+							{
+								"a878103b-a511-fffd-bfca-5a55f901aa54",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Record Blue",
+						uuid = "3abb03fb-8362-ee3e-a34a-1bacd4e1738d",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Alert",
+						alertTTS = true,
+						alertText = "Party In, Tanks Out",
+						conditions = 
+						{
+							
+							{
+								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
+								true,
+							},
+							
+							{
+								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
+								true,
+							},
+							
+							{
+								"a878103b-a511-fffd-bfca-5a55f901aa54",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Blue Alert",
+						uuid = "6ba6c4e2-9d93-8c04-b587-7bef1ef9b047",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						conditionLua = "return eventArgs.entityContentID == 13947",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 13947,
+						name = "Is Magitaur",
+						uuid = "5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4442,
+						category = "Event",
+						conditionLua = "return eventArgs.newActiveAura1 == 2387",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventSpellID = 41537,
+						name = "Is Yellow",
+						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventSpellID = 41538,
+						name = "Is Blue",
+						uuid = "a878103b-a511-fffd-bfca-5a55f901aa54",
+						version = 3,
+					},
+				},
+			},
+			eventType = 2,
+			name = "[FTB] Boss 4 Blue/Yellow",
+			uuid = "2573b380-d312-118e-890b-67fb131aeaa9",
+			version = 2,
+		},
+		inheritedIndex = 67,
 	},
 	
 	{
@@ -15156,552 +16259,6 @@ local tbl =
 			uuid = "928ccec3-5d5d-5ed9-92a8-c334d943ae52",
 			version = 2,
 		},
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "data.ocFTBRedPuddleCount = 0\ndata.ocFTBBluePuddleCount = 0\ndata.ocFTBSnowballTether = false\ndata.ocFTBSnowballTetherEntID = nil\nself.used=true",
-						conditions = 
-						{
-							
-							{
-								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
-								true,
-							},
-							
-							{
-								"9480ace0-1972-dafa-b418-a87dd2b5d565",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuMNK3_CD",
-						name = "Reset State",
-						uuid = "3b6c0a31-376b-be60-9d39-8ccdce241b6d",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1252,
-						name = "In OC",
-						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4442,
-						category = "Event",
-						dequeueIfLuaFalse = true,
-						eventArgType = 2,
-						eventSpellID = 42490,
-						name = "Is Decisive Battle",
-						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
-						version = 3,
-					},
-				},
-			},
-			eventType = 3,
-			name = "[FTB] Boss 2 Reset",
-			uuid = "e4df0c75-0fec-4c79-9c55-f892facb8a5b",
-			version = 2,
-		},
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Alert",
-						actionLua = "AnyoneCore.Shotcall(\"Tether on You\", true, timer, important, volume)\nself.used=true",
-						alertTTS = true,
-						alertText = "Tether on You",
-						conditions = 
-						{
-							
-							{
-								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
-								true,
-							},
-							
-							{
-								"59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
-								true,
-							},
-						},
-						gVar = "ACR_TensorWeeb3_CD",
-						uuid = "882c89d8-3cea-e041-9b35-6e9a2e49dba9",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local snowballPos = TensorCore.mGetEntity(eventArgs.sourceEntityID).pos\n\nlocal nereidPos\nfor _, foundEntity in pairs(TensorCore.entityList(\"contentid=13731,attackable\")) do\n\tnereidPos = foundEntity.pos\n\tbreak\nend\n\nlocal snowballToNereidHeading = TensorCore.getHeadingToTarget(snowballPos, nereidPos)\nTensorCore.getStaticDrawer(1845559113):addTimedArrow(6000, nereidPos.x, nereidPos.y, nereidPos.z, snowballToNereidHeading, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t10, 1)\n\nself.used=true",
-						alertTTS = true,
-						alertText = "Tether on You",
-						conditions = 
-						{
-							
-							{
-								"2abe0922-6a71-5ad7-8451-5db61edcb31b",
-								true,
-							},
-							
-							{
-								"59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Draw Arrow",
-						uuid = "6a7a9fbc-2ebf-56c6-9913-9811f3a2a25e",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1252,
-						name = "In OC",
-						uuid = "2abe0922-6a71-5ad7-8451-5db61edcb31b",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4441,
-						category = "Lua",
-						conditionLua = "local player = TensorCore.mGetPlayer()\nreturn eventArgs.newTargetID == player.id and eventArgs.newTetherID == 246",
-						dequeueIfLuaFalse = true,
-						name = "Has Tether",
-						uuid = "59c785d8-4b80-a0b1-8a9c-8c8cf80848e4",
-						version = 3,
-					},
-				},
-			},
-			eventType = 15,
-			name = "[FTB] Boss 2 Snowball Tether",
-			throttleTime = 1250,
-			uuid = "6f59f82c-6eca-9703-b3db-8c94e14d1ae8",
-			version = 2,
-		},
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[eventArgs.aoeID] = { label = \"Assassin's Dagger\", source = \"OC: FTB\" }\n\nlocal lineLength = eventArgs.aoeLength\nlocal lineWidth = eventArgs.aoeWidth\n\nlocal daggerCast = 5000\nlocal daggerDelay = 2000\n\nlocal drawDuration = 2000\n\nlocal originalHeading = eventArgs.heading\nlocal daggerRotation = math.rad(50)\n\nlocal magitaurPos = { x = 700.0, y = -476.0, z = -674.0 }\nlocal drawer = TensorCore.getMoogleDrawer()\n\nlocal function drawDagger(daggerSet, drawDelay)\n\tlocal daggerHeading = originalHeading - (daggerRotation * daggerSet)\n\tdrawer:addTimedRect(drawDuration, magitaurPos.x, magitaurPos.y, magitaurPos.z, lineLength, lineWidth, daggerHeading, drawDelay)\nend\n\nfor daggerSet = 0, 5 do\n\tif daggerSet == 0 then\n\t\tlocal daggerHeading = originalHeading\n\t\tdrawer:addTimedRect(daggerCast, magitaurPos.x, magitaurPos.y, magitaurPos.z, lineLength, lineWidth, daggerHeading)\n\t\tdrawer:addTimedRect(drawDuration, magitaurPos.x, magitaurPos.y, magitaurPos.z, lineLength, lineWidth, daggerHeading, daggerCast)\n\telse\n\t\tfor i = 1, 2 do\n\t\t\tlocal drawDelay = daggerCast + daggerDelay * (((daggerSet - 1) * 2) + i)\n\t\t\tdrawDagger(daggerSet, drawDelay)\n\t\tend\n\tend\nend\n\nself.used=true",
-						conditions = 
-						{
-							
-							{
-								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
-								true,
-							},
-							
-							{
-								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
-								true,
-							},
-							
-							{
-								"dc629907-0710-3bbd-9a10-7bad90cba281",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuMNK3_CD",
-						name = "Draw Daggers",
-						uuid = "a840192c-7690-8d23-9d81-af3723905db6",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1252,
-						name = "In OC",
-						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return eventArgs.contentID == 13950",
-						dequeueIfLuaFalse = true,
-						eventArgOptionType = 2,
-						eventEntityContentID = 13950,
-						name = "Is Dagger",
-						uuid = "5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4442,
-						category = "Lua",
-						conditionLua = "return eventArgs.aoeID == 41569",
-						dequeueIfLuaFalse = true,
-						eventArgType = 2,
-						eventSpellID = 41569,
-						name = "Is Assassin's Dagger",
-						uuid = "dc629907-0710-3bbd-9a10-7bad90cba281",
-						version = 3,
-					},
-				},
-			},
-			eventType = 18,
-			name = "[FTB] Boss 4 Daggers",
-			uuid = "2f0e26c9-d9fc-79b6-add7-bac559401508",
-			version = 2,
-		},
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "data.ocMagitaurIsYellow = false\ndata.ocMagitaurIsBlue = false\nself.used=true",
-						conditions = 
-						{
-							
-							{
-								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
-								true,
-							},
-							
-							{
-								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
-								true,
-							},
-							
-							{
-								"9480ace0-1972-dafa-b418-a87dd2b5d565",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuMNK3_CD",
-						name = "Reset State",
-						uuid = "b43d4611-558a-5db0-b85b-fe143bda937f",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1252,
-						name = "In OC",
-						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Event",
-						conditionLua = "return eventArgs.entityContentID == 13947",
-						dequeueIfLuaFalse = true,
-						eventArgOptionType = 2,
-						eventEntityContentID = 13947,
-						name = "Is Magitaur",
-						uuid = "5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4442,
-						category = "Event",
-						conditionLua = "return eventArgs.newActiveAura1 == 2387",
-						dequeueIfLuaFalse = true,
-						eventArgOptionType = 3,
-						eventArgType = 2,
-						eventSpellID = 41537,
-						name = "Is Unseal",
-						spellIDList = 
-						{
-							41537,
-							41538,
-						},
-						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
-						version = 3,
-					},
-				},
-			},
-			eventType = 3,
-			name = "[FTB] Boss 4 Reset",
-			uuid = "d44cca76-d6a5-bed0-a773-b841eccd6f5e",
-			version = 2,
-		},
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "data.ocMagitaurIsYellow = true\nself.used=true",
-						conditions = 
-						{
-							
-							{
-								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
-								true,
-							},
-							
-							{
-								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
-								true,
-							},
-							
-							{
-								"9480ace0-1972-dafa-b418-a87dd2b5d565",
-								true,
-							},
-						},
-						gVar = "ACR_RikuMNK3_CD",
-						name = "Record Yellow",
-						uuid = "b43d4611-558a-5db0-b85b-fe143bda937f",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Alert",
-						alertTTS = true,
-						alertText = "Party Out, Tanks In",
-						conditions = 
-						{
-							
-							{
-								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
-								true,
-							},
-							
-							{
-								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
-								true,
-							},
-							
-							{
-								"9480ace0-1972-dafa-b418-a87dd2b5d565",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuMNK3_CD",
-						name = "Yellow Alert",
-						uuid = "415ba831-e576-22b6-b689-833500a62ca3",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "data.ocMagitaurIsBlue = true\nself.used=true",
-						conditions = 
-						{
-							
-							{
-								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
-								true,
-							},
-							
-							{
-								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
-								true,
-							},
-							
-							{
-								"a878103b-a511-fffd-bfca-5a55f901aa54",
-								true,
-							},
-						},
-						gVar = "ACR_RikuMNK3_CD",
-						name = "Record Blue",
-						uuid = "3abb03fb-8362-ee3e-a34a-1bacd4e1738d",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Alert",
-						alertTTS = true,
-						alertText = "Party In, Tanks Out",
-						conditions = 
-						{
-							
-							{
-								"d1e8a078-4fba-bdfe-837b-46756b2095f8",
-								true,
-							},
-							
-							{
-								"5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
-								true,
-							},
-							
-							{
-								"a878103b-a511-fffd-bfca-5a55f901aa54",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuMNK3_CD",
-						name = "Blue Alert",
-						uuid = "6ba6c4e2-9d93-8c04-b587-7bef1ef9b047",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1252,
-						name = "In OC",
-						uuid = "d1e8a078-4fba-bdfe-837b-46756b2095f8",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Event",
-						conditionLua = "return eventArgs.entityContentID == 13947",
-						dequeueIfLuaFalse = true,
-						eventArgOptionType = 2,
-						eventEntityContentID = 13947,
-						name = "Is Magitaur",
-						uuid = "5b1c757b-6687-3ee9-8daf-eb3da43eb1c0",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4442,
-						category = "Event",
-						conditionLua = "return eventArgs.newActiveAura1 == 2387",
-						dequeueIfLuaFalse = true,
-						eventArgType = 2,
-						eventSpellID = 41537,
-						name = "Is Yellow",
-						uuid = "9480ace0-1972-dafa-b418-a87dd2b5d565",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Event",
-						dequeueIfLuaFalse = true,
-						eventArgType = 2,
-						eventSpellID = 41538,
-						name = "Is Blue",
-						uuid = "a878103b-a511-fffd-bfca-5a55f901aa54",
-						version = 3,
-					},
-				},
-			},
-			eventType = 2,
-			name = "[FTB] Boss 4 Blue/Yellow",
-			uuid = "2573b380-d312-118e-890b-67fb131aeaa9",
-			version = 2,
-		},
-		inheritedIndex = 72,
 	}, 
 	inheritedProfiles = 
 	{
