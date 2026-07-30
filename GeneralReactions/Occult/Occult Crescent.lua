@@ -98,8 +98,13 @@ local tbl =
 					data = 
 					{
 						category = "Self",
-						conditionType = 8,
+						conditionType = 12,
 						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
 						localmapid = 1252,
 						name = "In OC",
 						uuid = "c0885fdc-b761-e898-bcc3-c2982938e5b6",
@@ -3643,6 +3648,11 @@ local tbl =
 							},
 							
 							{
+								"777ee56d-c235-d1b0-8cc7-1d3437cb1a64",
+								true,
+							},
+							
+							{
 								"4d153190-820e-68f0-a7f6-cc91e785fd38",
 								true,
 							},
@@ -3781,18 +3791,6 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Deadly Blow CD",
 						uuid = "3fd43f44-9d54-5f0a-8bbb-fd9b4d494836",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						comparator = 2,
-						conditionType = 6,
-						inRangeValue = 5,
-						name = "Target <= 5y",
-						uuid = "e1546784-6031-f108-9f38-babbba729c86",
 						version = 3,
 					},
 				},
@@ -5452,7 +5450,7 @@ local tbl =
 			uuid = "c9178b74-f32c-817a-950c-32b1fc0a7ee8",
 			version = 2,
 		},
-		inheritedIndex = 50,
+		inheritedIndex = 59,
 	},
 	
 	{
@@ -5723,7 +5721,7 @@ local tbl =
 			uuid = "eb688e35-87ab-c255-a605-63f5423c3c0a",
 			version = 2,
 		},
-		inheritedIndex = 51,
+		inheritedIndex = 60,
 	},
 	
 	{
@@ -6136,7 +6134,7 @@ local tbl =
 			uuid = "1c6bbd54-6018-485a-9f05-9819fa8aa68e",
 			version = 2,
 		},
-		inheritedIndex = 51,
+		inheritedIndex = 60,
 	},
 	
 	{
@@ -6628,7 +6626,7 @@ local tbl =
 			uuid = "9c5b9d73-ae0e-195a-940a-540bca4454b2",
 			version = 2,
 		},
-		inheritedIndex = 52,
+		inheritedIndex = 61,
 	},
 	
 	{
@@ -6697,7 +6695,7 @@ local tbl =
 			uuid = "608ec0d1-adf2-ec9d-8f73-8e6c280fbb5d",
 			version = 2,
 		},
-		inheritedIndex = 53,
+		inheritedIndex = 62,
 	},
 	
 	{
@@ -6839,7 +6837,7 @@ local tbl =
 			uuid = "b175b050-f2bb-2ffe-bd7e-bff2941f8634",
 			version = 2,
 		},
-		inheritedIndex = 54,
+		inheritedIndex = 63,
 	},
 	
 	{
@@ -7075,7 +7073,7 @@ local tbl =
 			uuid = "9278be18-034c-9f92-abab-1d3e0055a418",
 			version = 2,
 		},
-		inheritedIndex = 55,
+		inheritedIndex = 64,
 	},
 	
 	{
@@ -7319,7 +7317,7 @@ local tbl =
 			uuid = "4c3d9549-4ff9-6f51-a0a1-292851ddf5a7",
 			version = 2,
 		},
-		inheritedIndex = 56,
+		inheritedIndex = 65,
 	},
 	
 	{
@@ -7456,7 +7454,7 @@ local tbl =
 			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
 			version = 2,
 		},
-		inheritedIndex = 57,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -9702,7 +9700,7 @@ local tbl =
 			uuid = "978328eb-ccac-48cf-bcfc-9c31d4cf6f4d",
 			version = 2,
 		},
-		inheritedIndex = 60,
+		inheritedIndex = 69,
 	},
 	
 	{
@@ -10308,7 +10306,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "local target = TensorCore.mGetTarget()\nif not target then return false end\nreturn TensorCore.getDistance2d(TensorCore.mGetPlayer().pos, target.pos) <= 7",
+						conditionLua = "local target = TensorCore.mGetTarget()\nif not target then return false end\nreturn TensorCore.getDistance2d(TensorCore.mGetPlayer().pos, target.pos) <= 8",
 						dequeueIfLuaFalse = true,
 						name = "Target In Range (5y)",
 						uuid = "c3d8a1f7-5e92-4b3a-9c16-8f2d0e7a4b59",
@@ -11318,6 +11316,225 @@ local tbl =
 			uuid = "124cd983-fe7a-d7f9-9ed9-ad6f8a38cf30",
 			version = 2,
 		},
+		inheritedIndex = 45,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local deadPlayers = TensorCore.entityList(\"chartype=4,los,dead,maxdistance=30\")\nlocal raisablePlayers = {}\nlocal raisableChemists = {}\nlocal raisableWhitemages = {}\n\nif (table.valid(deadPlayers)) then\n\tfor id, player in pairs(deadPlayers) do\n\t\tlocal buffs = player.buffs\n\t\tlocal raised = false\n        local outOfRaises = false\n\t\tlocal chemist = false\n\t\tlocal whitemage = false\n\n\t\tif (TableSize(buffs) > 0) then\n\t\t\tfor id, b in pairs(buffs) do\n\t\t\t\tif (b.id == 148) then\n\t\t\t\t\traised = true\n\t\t\t\tend\n                if (b.id == 4263) then\n                    outOfRaises = true\n                end\n\t\t\t\tif (b.id == 4367) then\n\t\t\t\t\tchemist = true\n\t\t\t\tend\n\t\t\t\tif (b.id == 5329) then\n\t\t\t\t\twhitemage = true\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t\t\n\t\tif (raised == false and outOfRaises == false) then\n\t\t\tif (chemist == true) then\n\t\t\t\ttable.insert(raisableChemists, player)\n\t\t\telseif (whitemage == true) then\n\t\t\t\ttable.insert(raisableWhitemages, player)\n\t\t\telse\n\t\t\t\ttable.insert(raisablePlayers, player)\n\t\t\tend\n\t\tend\n\tend\nend\n\nif (table.valid(raisableChemists)) then\n\tfor id, player in pairs(raisableChemists) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \" (Chemist)\")\n\t\tend\n\t\treturn ActionList:Get(1,49070), player.id, true, true\n\tend\nend\n\nif (table.valid(raisableWhitemages)) then\n\tfor id, player in pairs(raisableWhitemages) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \" (White Mage)\")\n\t\tend\n\t\treturn ActionList:Get(1,49070), player.id, true, true\n\tend\nend\n\nif (table.valid(raisablePlayers)) then\n\tfor id, player in pairs(raisablePlayers) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \"\")\n\t\tend\n\t\treturn ActionList:Get(1,49070), player.id, true, false\n\tend\nend\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"135feabc-9bd3-e3c0-9956-e3c5296cc9a0",
+								true,
+							},
+							
+							{
+								"b266d672-d12b-c4e2-bf46-9d6a5c1c4421",
+								true,
+							},
+							
+							{
+								"b55eb4b2-2639-1487-a8f3-84b0810d33bd",
+								true,
+							},
+							
+							{
+								"dac3a662-cbbc-5380-bf5c-b3b426b3a06f",
+								true,
+							},
+							
+							{
+								"890a5cc1-67dd-2df3-bdf4-30a6d720c7f4",
+								true,
+							},
+							
+							{
+								"b69cd3ad-a036-be49-83bb-1d09d3417aaa",
+								true,
+							},
+							
+							{
+								"dffdf3bf-9498-b918-b66e-d05c66169936",
+								true,
+							},
+							
+							{
+								"c267341f-ea64-3f2c-8c8c-d471ddd8504f",
+								true,
+							},
+							
+							{
+								"5cc9293c-20bb-d3a1-9967-19b87112bac8",
+								true,
+							},
+							
+							{
+								"77df8e9c-1eae-ffe2-8b89-c6e8fc362fd9",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_CD",
+						luaReturnsAction = true,
+						uuid = "805bf7b7-68a9-5984-b5d6-0fd784ff8deb",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "In Occult Crescent",
+						uuid = "b266d672-d12b-c4e2-bf46-9d6a5c1c4421",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5329,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is White Mage",
+						uuid = "b55eb4b2-2639-1487-a8f3-84b0810d33bd",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "dac3a662-cbbc-5380-bf5c-b3b426b3a06f",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "890a5cc1-67dd-2df3-bdf4-30a6d720c7f4",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						name = "Self Living",
+						uuid = "b69cd3ad-a036-be49-83bb-1d09d3417aaa",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 30,
+						matchAnyBuff = true,
+						name = "Self Missing Transcendent",
+						uuid = "dffdf3bf-9498-b918-b66e-d05c66169936",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 49070,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Raise CD",
+						uuid = "5cc9293c-20bb-d3a1-9967-19b87112bac8",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return (ActionList:Get(5,34):CanCastResult() ~= 579)",
+						dequeueIfLuaFalse = true,
+						name = "Raise Unlocked",
+						uuid = "c267341f-ea64-3f2c-8c8c-d471ddd8504f",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TableSize(TensorCore.entityList(\"chartype=4,los,dead,maxdistance=30\")) ~= 0",
+						dequeueIfLuaFalse = true,
+						filterTargetType = "Party",
+						name = "Dead Player",
+						uuid = "77df8e9c-1eae-ffe2-8b89-c6e8fc362fd9",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return true",
+						dequeueIfLuaFalse = true,
+						name = "Flip To Disable Action",
+						uuid = "135feabc-9bd3-e3c0-9956-e3c5296cc9a0",
+						version = 3,
+					},
+				},
+			},
+			name = "P. White Mage Rez",
+			throttleTime = 1000,
+			uuid = "fe836297-24da-534d-8323-f069c2e03c59",
+			version = 2,
+		},
 		inheritedIndex = 44,
 	},
 	
@@ -12105,7 +12322,7 @@ local tbl =
 			uuid = "e81c0ba8-5548-a1f1-b801-970c817fc455",
 			version = 2,
 		},
-		inheritedIndex = 44,
+		inheritedIndex = 45,
 	},
 	
 	{
@@ -12306,7 +12523,1299 @@ local tbl =
 			uuid = "a2c85c0f-8023-3f9f-803e-b42c3527bb7a",
 			version = 2,
 		},
-		inheritedIndex = 45,
+		inheritedIndex = 46,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+			},
+			conditions = 
+			{
+			},
+			name = "p. Dragoon (nothing yet)",
+			uuid = "3bfe4444-df82-7f20-b900-794335d94680",
+			version = 2,
+		},
+		inheritedIndex = 47,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+			},
+			conditions = 
+			{
+			},
+			name = "P. BLM (nothing yet)",
+			uuid = "36b5f8c2-36c2-2b09-922f-d521c5603d23",
+			version = 2,
+		},
+		inheritedIndex = 50,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction3\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"1e7919a1-6e5f-2acd-ac59-94cfa6d99365",
+								true,
+							},
+							
+							{
+								"a053ee8a-0f3d-e8ec-928f-353a1bba7a96",
+								true,
+							},
+							
+							{
+								"3f8c09fd-599e-e425-935a-4a2e47b26bb7",
+								true,
+							},
+							
+							{
+								"41488e26-0694-059b-bd0c-61b4e51917af",
+								true,
+							},
+							
+							{
+								"09d2463d-fbb9-bc41-affd-1a796e900b59",
+								true,
+							},
+							
+							{
+								"88a0ee56-2ae6-6a84-9cbb-dc57270d5c5c",
+								true,
+							},
+							
+							{
+								"09162f46-edd0-e0ab-a575-e9cbe3ddec4d",
+								true,
+							},
+							
+							{
+								"69db96b4-50c5-b63f-8302-96b4a12c36e6",
+								true,
+							},
+							
+							{
+								"eaf33b66-cfeb-0183-ba40-33027700e29a",
+								true,
+							},
+							
+							{
+								"09e738b2-8ab5-5736-ba29-5a36d8384456",
+								true,
+							},
+							
+							{
+								"7c1c9a3e-654e-c38a-8a7a-42752dec5c88",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction3",
+						name = "Refresh Libra",
+						targetType = "Current Target",
+						uuid = "5d8b9137-6dbc-aa88-bd40-52a5c22ab550",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction3\"] = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"1e7919a1-6e5f-2acd-ac59-94cfa6d99365",
+								true,
+							},
+							
+							{
+								"a053ee8a-0f3d-e8ec-928f-353a1bba7a96",
+								true,
+							},
+							
+							{
+								"3f8c09fd-599e-e425-935a-4a2e47b26bb7",
+								true,
+							},
+							
+							{
+								"41488e26-0694-059b-bd0c-61b4e51917af",
+								true,
+							},
+							
+							{
+								"09d2463d-fbb9-bc41-affd-1a796e900b59",
+								true,
+							},
+							
+							{
+								"88a0ee56-2ae6-6a84-9cbb-dc57270d5c5c",
+								true,
+							},
+							
+							{
+								"69db96b4-50c5-b63f-8302-96b4a12c36e6",
+								true,
+							},
+							
+							{
+								"eaf33b66-cfeb-0183-ba40-33027700e29a",
+								true,
+							},
+							
+							{
+								"09e738b2-8ab5-5736-ba29-5a36d8384456",
+								true,
+							},
+							
+							{
+								"fbb59714-adb4-fad6-aa1e-0d35e6c6f5a6",
+								true,
+							},
+							
+							{
+								"44c9ceba-564a-3630-8970-d25e51cb9847",
+								false,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction3",
+						name = "Libra",
+						targetType = "Current Target",
+						uuid = "9379030c-f4ec-bca7-a30e-56af272d741c",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "1e7919a1-6e5f-2acd-ac59-94cfa6d99365",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5334,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Red Mage",
+						uuid = "a053ee8a-0f3d-e8ec-928f-353a1bba7a96",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						name = "Self Living",
+						uuid = "3f8c09fd-599e-e425-935a-4a2e47b26bb7",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 30,
+						matchAnyBuff = true,
+						name = "Self Missing Transcendent",
+						uuid = "41488e26-0694-059b-bd0c-61b4e51917af",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "09d2463d-fbb9-bc41-affd-1a796e900b59",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "88a0ee56-2ae6-6a84-9cbb-dc57270d5c5c",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.ocCombatTimer ~= nil and TimeSince(data.ocCombatTimer) > 2400",
+						dequeueIfLuaFalse = true,
+						name = "Combat > 2.4s",
+						uuid = "09162f46-edd0-e0ab-a575-e9cbe3ddec4d",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 30,
+						name = "Target <= 30y",
+						uuid = "69db96b4-50c5-b63f-8302-96b4a12c36e6",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,33):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Libra Unlocked",
+						uuid = "eaf33b66-cfeb-0183-ba40-33027700e29a",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 1,
+						actionID = 49094,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Libra CD <= 1s",
+						uuid = "09e738b2-8ab5-5736-ba29-5a36d8384456",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 6,
+						buffIDList = 
+						{
+							5322,
+							5323,
+							5324,
+							5325,
+						},
+						matchAnyBuff = true,
+						name = "Target Missing Libra",
+						uuid = "fbb59714-adb4-fad6-aa1e-0d35e6c6f5a6",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 5,
+						buffIDList = 
+						{
+							5322,
+							5323,
+							5324,
+							5325,
+						},
+						matchAnyBuff = true,
+						name = "Target Has Libra",
+						uuid = "44c9ceba-564a-3630-8970-d25e51cb9847",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 7,
+						buffDuration = 20,
+						buffIDList = 
+						{
+							5322,
+							5323,
+							5324,
+							5325,
+						},
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Libra Duration <= 20s",
+						uuid = "7c1c9a3e-654e-c38a-8a7a-42752dec5c88",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TensorCore.getEntitySpeed(TensorCore.mGetPlayer().id) > 0",
+						dequeueIfLuaFalse = true,
+						name = "Player moving",
+						uuid = "e9b651dc-8d33-d497-9404-f0701a646dcc",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TensorCore.mGetPlayer():IsMoving()",
+						name = "Self Moving",
+						uuid = "f1fcce61-dd9c-69d0-92e1-cc90b93ebdd5",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\" ] or _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\" ] or _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction4\" ] or _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\" ] == true",
+						dequeueIfLuaFalse = true,
+						name = "Is Queued",
+						uuid = "6b6b1fde-3d0c-43eb-88ba-0ebf9586a230",
+						version = 3,
+					},
+				},
+			},
+			name = "P. Red Mage Libra",
+			throttleTime = 1250,
+			timeout = 2.5,
+			uuid = "384be111-76d5-d45b-af4a-8643d34d5822",
+			version = 2,
+		},
+		inheritedIndex = 52,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction4\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"1e7919a1-6e5f-2acd-ac59-94cfa6d99365",
+								true,
+							},
+							
+							{
+								"a053ee8a-0f3d-e8ec-928f-353a1bba7a96",
+								true,
+							},
+							
+							{
+								"09d2463d-fbb9-bc41-affd-1a796e900b59",
+								true,
+							},
+							
+							{
+								"f1fcce61-dd9c-69d0-92e1-cc90b93ebdd5",
+								true,
+							},
+							
+							{
+								"6b6b1fde-3d0c-43eb-88ba-0ebf9586a230",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Stop Casting",
+						uuid = "5457814d-3ddf-07ea-b993-3178136c2e34",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						clusterMinTarget = 0,
+						clusterRadius = 5,
+						conditions = 
+						{
+							
+							{
+								"1e7919a1-6e5f-2acd-ac59-94cfa6d99365",
+								true,
+							},
+							
+							{
+								"a053ee8a-0f3d-e8ec-928f-353a1bba7a96",
+								true,
+							},
+							
+							{
+								"3f8c09fd-599e-e425-935a-4a2e47b26bb7",
+								true,
+							},
+							
+							{
+								"41488e26-0694-059b-bd0c-61b4e51917af",
+								true,
+							},
+							
+							{
+								"09d2463d-fbb9-bc41-affd-1a796e900b59",
+								true,
+							},
+							
+							{
+								"88a0ee56-2ae6-6a84-9cbb-dc57270d5c5c",
+								true,
+							},
+							
+							{
+								"34195b16-5994-1b85-bb59-e9f2f302e007",
+								true,
+							},
+							
+							{
+								"69db96b4-50c5-b63f-8302-96b4a12c36e6",
+								true,
+							},
+							
+							{
+								"09e738b2-8ab5-5736-ba29-5a36d8384456",
+								true,
+							},
+							
+							{
+								"7ae11b51-a023-a1a9-a351-9c4827a33a82",
+								true,
+							},
+							
+							{
+								"aacd0685-3c44-ba18-86ef-df2d9f1c8a3b",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction1",
+						name = "Occult Fire",
+						targetType = "Most Clustered Enemy",
+						uuid = "6ff99f53-6a37-b32b-8bca-25dc1664fa5f",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction4\"] = true\nself.used = true",
+						clusterMinTarget = 0,
+						clusterRadius = 5,
+						conditions = 
+						{
+							
+							{
+								"1e7919a1-6e5f-2acd-ac59-94cfa6d99365",
+								true,
+							},
+							
+							{
+								"a053ee8a-0f3d-e8ec-928f-353a1bba7a96",
+								true,
+							},
+							
+							{
+								"3f8c09fd-599e-e425-935a-4a2e47b26bb7",
+								true,
+							},
+							
+							{
+								"41488e26-0694-059b-bd0c-61b4e51917af",
+								true,
+							},
+							
+							{
+								"09d2463d-fbb9-bc41-affd-1a796e900b59",
+								true,
+							},
+							
+							{
+								"88a0ee56-2ae6-6a84-9cbb-dc57270d5c5c",
+								true,
+							},
+							
+							{
+								"34195b16-5994-1b85-bb59-e9f2f302e007",
+								true,
+							},
+							
+							{
+								"69db96b4-50c5-b63f-8302-96b4a12c36e6",
+								true,
+							},
+							
+							{
+								"eaf33b66-cfeb-0183-ba40-33027700e29a",
+								true,
+							},
+							
+							{
+								"09e738b2-8ab5-5736-ba29-5a36d8384456",
+								true,
+							},
+							
+							{
+								"7bc51f84-db08-eecf-a9ac-eade5b39d44a",
+								true,
+							},
+							
+							{
+								"aacd0685-3c44-ba18-86ef-df2d9f1c8a3b",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction4",
+						name = "Occult Blizzard",
+						targetType = "Most Clustered Enemy",
+						uuid = "710fde25-ef3c-7f43-8a9c-0ad0cccc378f",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\"] = true\nself.used = true",
+						clusterMinTarget = 0,
+						clusterRadius = 5,
+						conditions = 
+						{
+							
+							{
+								"1e7919a1-6e5f-2acd-ac59-94cfa6d99365",
+								true,
+							},
+							
+							{
+								"a053ee8a-0f3d-e8ec-928f-353a1bba7a96",
+								true,
+							},
+							
+							{
+								"3f8c09fd-599e-e425-935a-4a2e47b26bb7",
+								true,
+							},
+							
+							{
+								"41488e26-0694-059b-bd0c-61b4e51917af",
+								true,
+							},
+							
+							{
+								"09d2463d-fbb9-bc41-affd-1a796e900b59",
+								true,
+							},
+							
+							{
+								"88a0ee56-2ae6-6a84-9cbb-dc57270d5c5c",
+								true,
+							},
+							
+							{
+								"34195b16-5994-1b85-bb59-e9f2f302e007",
+								true,
+							},
+							
+							{
+								"69db96b4-50c5-b63f-8302-96b4a12c36e6",
+								true,
+							},
+							
+							{
+								"b8bba6c4-6253-6d3f-aaf9-ad5b06c59bf8",
+								true,
+							},
+							
+							{
+								"09e738b2-8ab5-5736-ba29-5a36d8384456",
+								true,
+							},
+							
+							{
+								"7bc51f84-db08-eecf-a9ac-eade5b39d44a",
+								true,
+							},
+							
+							{
+								"aacd0685-3c44-ba18-86ef-df2d9f1c8a3b",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction5",
+						name = "Occult Thunder",
+						targetSubType = "Most Clustered",
+						targetType = "Most Clustered Enemy",
+						uuid = "4ace2d05-8a41-264c-8499-e010902045cf",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						actionID = 41630,
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = true\nself.used = true",
+						atomicPriority = true,
+						clusterMinTarget = 0,
+						clusterRadius = 5,
+						conditions = 
+						{
+							
+							{
+								"1e7919a1-6e5f-2acd-ac59-94cfa6d99365",
+								true,
+							},
+							
+							{
+								"a053ee8a-0f3d-e8ec-928f-353a1bba7a96",
+								true,
+							},
+							
+							{
+								"3f8c09fd-599e-e425-935a-4a2e47b26bb7",
+								true,
+							},
+							
+							{
+								"41488e26-0694-059b-bd0c-61b4e51917af",
+								true,
+							},
+							
+							{
+								"09d2463d-fbb9-bc41-affd-1a796e900b59",
+								true,
+							},
+							
+							{
+								"88a0ee56-2ae6-6a84-9cbb-dc57270d5c5c",
+								true,
+							},
+							
+							{
+								"34195b16-5994-1b85-bb59-e9f2f302e007",
+								true,
+							},
+							
+							{
+								"69db96b4-50c5-b63f-8302-96b4a12c36e6",
+								true,
+							},
+							
+							{
+								"09e738b2-8ab5-5736-ba29-5a36d8384456",
+								true,
+							},
+							
+							{
+								"aacd0685-3c44-ba18-86ef-df2d9f1c8a3b",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction1",
+						ignoreWeaveRules = true,
+						name = "Occult Fire (No Vuln)",
+						targetType = "Most Clustered Enemy",
+						uuid = "e2706396-3fe7-767e-a3e6-15d3144d1c6b",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+					inheritedOverwrites = 
+					{
+						conditions = 
+						{
+							
+							{
+								type = "add",
+								value = 
+								{
+									"80ab686f-c3ab-907f-b320-9a079f92fd11",
+									true,
+								},
+							},
+						},
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction4\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"a053ee8a-0f3d-e8ec-928f-353a1bba7a96",
+								true,
+							},
+							
+							{
+								"09d2463d-fbb9-bc41-affd-1a796e900b59",
+								false,
+							},
+							
+							{
+								"6b6b1fde-3d0c-43eb-88ba-0ebf9586a230",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuDRK3_CD",
+						name = "Fallback Dequeue",
+						uuid = "06e8f51b-eb9f-0f9e-8809-24b51ec83945",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "1e7919a1-6e5f-2acd-ac59-94cfa6d99365",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5334,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Red Mage",
+						uuid = "a053ee8a-0f3d-e8ec-928f-353a1bba7a96",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						name = "Self Living",
+						uuid = "3f8c09fd-599e-e425-935a-4a2e47b26bb7",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 30,
+						matchAnyBuff = true,
+						name = "Self Missing Transcendent",
+						uuid = "41488e26-0694-059b-bd0c-61b4e51917af",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "09d2463d-fbb9-bc41-affd-1a796e900b59",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "88a0ee56-2ae6-6a84-9cbb-dc57270d5c5c",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.ocCombatTimer ~= nil and TimeSince(data.ocCombatTimer) > 2400",
+						dequeueIfLuaFalse = true,
+						name = "Combat > 2.4s",
+						uuid = "34195b16-5994-1b85-bb59-e9f2f302e007",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 30,
+						name = "Target <= 30y",
+						uuid = "69db96b4-50c5-b63f-8302-96b4a12c36e6",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,34):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Blizzard",
+						uuid = "eaf33b66-cfeb-0183-ba40-33027700e29a",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,35):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Thunder",
+						uuid = "b8bba6c4-6253-6d3f-aaf9-ad5b06c59bf8",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49092,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Fire/Blizz/Thunder CD <= 3s",
+						uuid = "09e738b2-8ab5-5736-ba29-5a36d8384456",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5322,
+						name = "Target Fire Weak",
+						uuid = "7ae11b51-a023-a1a9-a351-9c4827a33a82",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5323,
+						name = "Target Ice Weak",
+						uuid = "7bc51f84-db08-eecf-a9ac-eade5b39d44a",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5324,
+						name = "Target Lightning Weak",
+						uuid = "a18d17a7-36b7-b794-8e24-938c04369a92",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TensorCore.getEntitySpeed(TensorCore.mGetPlayer().id) > 0",
+						dequeueIfLuaFalse = true,
+						name = "Player moving",
+						uuid = "e9b651dc-8d33-d497-9404-f0701a646dcc",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Filter",
+						conditions = 
+						{
+							
+							{
+								"e9b651dc-8d33-d497-9404-f0701a646dcc",
+								false,
+							},
+						},
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "F: movement",
+						partyTargetNumber = 0,
+						uuid = "aacd0685-3c44-ba18-86ef-df2d9f1c8a3b",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TensorCore.mGetPlayer():IsMoving()",
+						name = "Self Moving",
+						uuid = "f1fcce61-dd9c-69d0-92e1-cc90b93ebdd5",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\" ] or _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\" ] or _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction4\" ] or _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\" ] == true",
+						dequeueIfLuaFalse = true,
+						name = "Is Queued",
+						uuid = "6b6b1fde-3d0c-43eb-88ba-0ebf9586a230",
+						version = 3,
+					},
+				},
+			},
+			name = "P. Red Mage",
+			throttleTime = 250,
+			timeout = 2.5,
+			uuid = "b154c88e-e0cd-2b0c-bdd5-5a5cb8dc7300",
+			version = 2,
+		},
+		inheritedIndex = 51,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+			},
+			conditions = 
+			{
+			},
+			name = "P. Necromancer (nothing yet)",
+			uuid = "001e8bf0-9e11-b65b-8fc4-327132fb50f2",
+			version = 2,
+		},
+		inheritedIndex = 53,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+			},
+			conditions = 
+			{
+			},
+			name = "P. BLU (nothing yet)",
+			uuid = "359d3292-46ca-6740-9bd4-5e4e6bfa6acc",
+			version = 2,
+		},
+		inheritedIndex = 54,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						actionID = 49097,
+						conditions = 
+						{
+							
+							{
+								"20740ce7-cdb3-97bf-9b81-9c410fc83e5c",
+								true,
+							},
+							
+							{
+								"a51d26c1-7fc1-6540-a3cc-03be8dea15a8",
+								true,
+							},
+							
+							{
+								"f24daf54-6067-71ab-a584-757a29445a83",
+								true,
+							},
+							
+							{
+								"62c17b9a-2c02-06c5-b811-941a048134d9",
+								true,
+							},
+							
+							{
+								"06156a3b-a878-5be8-931b-f77af014d2dc",
+								true,
+							},
+							
+							{
+								"cdb26cce-0ad5-fffd-b52d-7b0a3b8fc5a7",
+								true,
+							},
+							
+							{
+								"226548b2-a460-63fe-a1ae-a347ee634c6c",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_Hotbar_SixSidedStar",
+						targetType = "Current Target",
+						uuid = "ced6f3ef-1c02-46ff-8a81-0dbc5fdd2f56",
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						gVar = "ACR_RikuMNK3_CD",
+						uuid = "4157bd7c-b075-a0d1-8ba7-e5fe2785b6d6",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "In Occult Crescent",
+						uuid = "20740ce7-cdb3-97bf-9b81-9c410fc83e5c",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5335,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is Necro",
+						uuid = "a51d26c1-7fc1-6540-a3cc-03be8dea15a8",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Is Bot Running",
+						uuid = "f24daf54-6067-71ab-a584-757a29445a83",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "62c17b9a-2c02-06c5-b811-941a048134d9",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						name = "Self Living",
+						uuid = "06156a3b-a878-5be8-931b-f77af014d2dc",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49097,
+						buffCheckType = 2,
+						buffID = 4232,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "On CD",
+						uuid = "cdb26cce-0ad5-fffd-b52d-7b0a3b8fc5a7",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						inRangeValue = 30,
+						name = "Target <= 30y",
+						uuid = "226548b2-a460-63fe-a1ae-a347ee634c6c",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 49098,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						uuid = "91035cbb-cb0b-3140-b245-0be25ea084ed",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 2,
+						hpValue = 100,
+						uuid = "fbcbafde-bc71-6922-ab95-9b7a66c86263",
+						version = 3,
+					},
+				},
+			},
+			name = "P. Necro (USE on warrior)",
+			uuid = "78a6c2ef-7e57-09cd-b705-562934c6bedc",
+			version = 2,
+		},
+		inheritedIndex = 55,
 	},
 	
 	{
@@ -12874,7 +14383,7 @@ local tbl =
 			uuid = "19fa42df-39c6-8e18-b0a7-836c2e7a745e",
 			version = 2,
 		},
-		inheritedIndex = 46,
+		inheritedIndex = 49,
 	},
 	
 	{
@@ -12890,7 +14399,7 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
-		inheritedIndex = 61,
+		inheritedIndex = 70,
 	},
 	
 	{
@@ -12978,7 +14487,7 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 48,
+		inheritedIndex = 57,
 	},
 	
 	{
@@ -12994,7 +14503,7 @@ local tbl =
 			uuid = "7affaeba-16a3-388a-9c7a-193cccdb0287",
 			version = 2,
 		},
-		inheritedIndex = 49,
+		inheritedIndex = 58,
 	},
 	
 	{
@@ -13122,7 +14631,7 @@ local tbl =
 			uuid = "d21f4c04-282f-d94a-9897-db3b516a5b14",
 			version = 2,
 		},
-		inheritedIndex = 64,
+		inheritedIndex = 73,
 	},
 	
 	{
@@ -13354,7 +14863,7 @@ local tbl =
 			uuid = "a7831eef-4074-1c28-879e-0f89fe93b737",
 			version = 2,
 		},
-		inheritedIndex = 68,
+		inheritedIndex = 77,
 	},
 	
 	{
@@ -13463,7 +14972,7 @@ local tbl =
 			uuid = "1df0282e-0a27-b51a-a199-bd462057c267",
 			version = 2,
 		},
-		inheritedIndex = 72,
+		inheritedIndex = 81,
 	},
 	
 	{
@@ -13569,7 +15078,7 @@ local tbl =
 			uuid = "99980e5a-5d62-8ea2-ad9f-9eb9bb611f5d",
 			version = 2,
 		},
-		inheritedIndex = 74,
+		inheritedIndex = 83,
 	},
 	
 	{
@@ -13673,7 +15182,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 79,
+		inheritedIndex = 88,
 	},
 	
 	{
@@ -13815,7 +15324,7 @@ local tbl =
 			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
 			version = 2,
 		},
-		inheritedIndex = 79,
+		inheritedIndex = 88,
 	},
 	
 	{
@@ -14017,7 +15526,7 @@ local tbl =
 			uuid = "bfd39011-66e4-7ebc-a314-9350aaa99856",
 			version = 2,
 		},
-		inheritedIndex = 79,
+		inheritedIndex = 88,
 	},
 	
 	{
@@ -14109,7 +15618,7 @@ local tbl =
 			uuid = "06acd7e2-3a2b-4c8b-a09a-482655849fc6",
 			version = 2,
 		},
-		inheritedIndex = 79,
+		inheritedIndex = 88,
 	},
 	
 	{
@@ -14224,7 +15733,7 @@ local tbl =
 			uuid = "ae235d51-4679-9c09-8261-885a05bc74bb",
 			version = 2,
 		},
-		inheritedIndex = 79,
+		inheritedIndex = 88,
 	},
 	
 	{
@@ -14322,7 +15831,7 @@ local tbl =
 			uuid = "6f59f82c-6eca-9703-b3db-8c94e14d1ae8",
 			version = 2,
 		},
-		inheritedIndex = 59,
+		inheritedIndex = 68,
 	},
 	
 	{
@@ -14392,7 +15901,7 @@ local tbl =
 			uuid = "e4df0c75-0fec-4c79-9c55-f892facb8a5b",
 			version = 2,
 		},
-		inheritedIndex = 60,
+		inheritedIndex = 69,
 	},
 	
 	{
@@ -14528,7 +16037,7 @@ local tbl =
 			uuid = "65c65955-c622-bb22-b8e8-dffca6394876",
 			version = 2,
 		},
-		inheritedIndex = 79,
+		inheritedIndex = 88,
 	},
 	
 	{
@@ -14714,7 +16223,7 @@ local tbl =
 			uuid = "de4b11dc-cace-5590-b9b4-6d768416d2c9",
 			version = 2,
 		},
-		inheritedIndex = 79,
+		inheritedIndex = 88,
 	},
 	
 	{
@@ -14833,7 +16342,7 @@ local tbl =
 			uuid = "ca2ed4c5-1790-ab33-930e-7944b6c02ebf",
 			version = 2,
 		},
-		inheritedIndex = 79,
+		inheritedIndex = 88,
 	},
 	
 	{
@@ -14992,7 +16501,7 @@ local tbl =
 			uuid = "6d93ba14-1d65-6f32-a578-e5194a8f4fdd",
 			version = 2,
 		},
-		inheritedIndex = 79,
+		inheritedIndex = 88,
 	},
 	
 	{
@@ -15082,7 +16591,7 @@ local tbl =
 			uuid = "2f0e26c9-d9fc-79b6-add7-bac559401508",
 			version = 2,
 		},
-		inheritedIndex = 65,
+		inheritedIndex = 74,
 	},
 	
 	{
@@ -15178,7 +16687,7 @@ local tbl =
 			uuid = "d44cca76-d6a5-bed0-a773-b841eccd6f5e",
 			version = 2,
 		},
-		inheritedIndex = 66,
+		inheritedIndex = 75,
 	},
 	
 	{
@@ -15374,7 +16883,7 @@ local tbl =
 			uuid = "2573b380-d312-118e-890b-67fb131aeaa9",
 			version = 2,
 		},
-		inheritedIndex = 67,
+		inheritedIndex = 76,
 	},
 	
 	{
@@ -16553,6 +18062,71 @@ local tbl =
 			eventType = 4,
 			name = "[NeoGarula] Rushing Rumble Bird Marked",
 			uuid = "928ccec3-5d5d-5ed9-92a8-c334d943ae52",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local golems = TensorCore.entityList(\"contentid=14510\")\nlocal drawer = TensorCore.getMoogleDrawer()\n\nif golems then\n    for _, ent in pairs(golems) do\n        if Argus.isEntityVisible(ent) then\n            local heading = ent.pos.h or 0\n            local radius = 35\n            local angle = math.rad(90)\n\n            drawer:addCone(ent.pos.x, ent.pos.y, ent.pos.z, radius, angle, heading)\n        end\n    end\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"774eac16-bb4e-24df-8a8c-8473fb20d9ca",
+								true,
+							},
+							
+							{
+								"feb6418a-08ec-14c4-abaf-322a531c4a40",
+								true,
+							},
+						},
+						gVar = "ACR_RikuSGE3_CD",
+						name = "draw cone on golem",
+						uuid = "33279f1c-79c5-4430-a39f-2832e4e9474a",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "local player = TensorCore.mGetPlayer()\nreturn TensorCore.getDistance2d(player.pos, { h = 0, x = -518.5, y = 48, z = -641.5 }) < 33.5",
+						dequeueIfLuaFalse = true,
+						name = "check arena",
+						uuid = "774eac16-bb4e-24df-8a8c-8473fb20d9ca",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "local el = TensorCore.entityList(\"contentid=14510\")\nif el then\n    for _, ent in pairs(el) do\n        if Argus.isEntityVisible(ent) then\n            return true\n        end\n    end\nend\nreturn false",
+						dequeueIfLuaFalse = true,
+						name = "check golem visibility",
+						uuid = "feb6418a-08ec-14c4-abaf-322a531c4a40",
+						version = 3,
+					},
+				},
+			},
+			eventType = 12,
+			name = "[QuarriedAway] Draw Golem Cone",
+			uuid = "0ea5ceab-d365-3875-a292-b1cf6abe1cc3",
 			version = 2,
 		},
 	}, 
