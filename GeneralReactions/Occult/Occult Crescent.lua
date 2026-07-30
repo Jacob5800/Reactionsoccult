@@ -13680,16 +13680,6 @@ local tbl =
 						version = 2.1,
 					},
 				},
-				
-				{
-					data = 
-					{
-						aType = "ACR",
-						gVar = "ACR_RikuMNK3_CD",
-						uuid = "4157bd7c-b075-a0d1-8ba7-e5fe2785b6d6",
-						version = 2.1,
-					},
-				},
 			},
 			conditions = 
 			{
