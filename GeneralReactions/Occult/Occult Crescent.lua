@@ -6018,7 +6018,7 @@ local tbl =
 			uuid = "c9178b74-f32c-817a-950c-32b1fc0a7ee8",
 			version = 2,
 		},
-		inheritedIndex = 59,
+		inheritedIndex = 60,
 	},
 	
 	{
@@ -6289,7 +6289,7 @@ local tbl =
 			uuid = "eb688e35-87ab-c255-a605-63f5423c3c0a",
 			version = 2,
 		},
-		inheritedIndex = 60,
+		inheritedIndex = 61,
 	},
 	
 	{
@@ -6702,7 +6702,7 @@ local tbl =
 			uuid = "1c6bbd54-6018-485a-9f05-9819fa8aa68e",
 			version = 2,
 		},
-		inheritedIndex = 60,
+		inheritedIndex = 61,
 	},
 	
 	{
@@ -7194,7 +7194,7 @@ local tbl =
 			uuid = "9c5b9d73-ae0e-195a-940a-540bca4454b2",
 			version = 2,
 		},
-		inheritedIndex = 61,
+		inheritedIndex = 62,
 	},
 	
 	{
@@ -7336,7 +7336,7 @@ local tbl =
 			uuid = "b175b050-f2bb-2ffe-bd7e-bff2941f8634",
 			version = 2,
 		},
-		inheritedIndex = 63,
+		inheritedIndex = 64,
 	},
 	
 	{
@@ -7572,7 +7572,7 @@ local tbl =
 			uuid = "9278be18-034c-9f92-abab-1d3e0055a418",
 			version = 2,
 		},
-		inheritedIndex = 64,
+		inheritedIndex = 65,
 	},
 	
 	{
@@ -7816,7 +7816,7 @@ local tbl =
 			uuid = "4c3d9549-4ff9-6f51-a0a1-292851ddf5a7",
 			version = 2,
 		},
-		inheritedIndex = 65,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -8022,7 +8022,7 @@ local tbl =
 			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
 			version = 2,
 		},
-		inheritedIndex = 66,
+		inheritedIndex = 67,
 	},
 	
 	{
@@ -10465,7 +10465,7 @@ local tbl =
 			uuid = "978328eb-ccac-48cf-bcfc-9c31d4cf6f4d",
 			version = 2,
 		},
-		inheritedIndex = 69,
+		inheritedIndex = 70,
 	},
 	
 	{
@@ -14971,7 +14971,7 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
-		inheritedIndex = 70,
+		inheritedIndex = 71,
 	},
 	
 	{
@@ -15059,6 +15059,61 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
+		inheritedIndex = 58,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[47308] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47309] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47311] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47312] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47313] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47314] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50554] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50555] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50557] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50558] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50559] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50560] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50561] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41284] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41395] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41315] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41316] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41317] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41830] = {label = \"Barefisted Death\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47073] = {label = \"Garrote\", source = \"Occult Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47152] = {label = \"Sinister Sight\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47191] = {label = \"Stunning Sheen\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49879] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"3539b51e-5ea4-9713-9356-7f44a0a0bab4",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						uuid = "c8a70073-5277-c09f-9529-db7c9ea85b0a",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "In Occult Crescent",
+						uuid = "3539b51e-5ea4-9713-9356-7f44a0a0bab4",
+						version = 3,
+					},
+				},
+			},
+			enabled = false,
+			eventType = 11,
+			name = "Blacklist moogle (enable this)",
+			uuid = "0c591123-b2c0-d2e0-aca9-9e17cf24d43e",
+			version = 2,
+		},
 		inheritedIndex = 57,
 	},
 	
@@ -15075,7 +15130,7 @@ local tbl =
 			uuid = "7affaeba-16a3-388a-9c7a-193cccdb0287",
 			version = 2,
 		},
-		inheritedIndex = 58,
+		inheritedIndex = 59,
 	},
 	
 	{
@@ -15203,7 +15258,7 @@ local tbl =
 			uuid = "d21f4c04-282f-d94a-9897-db3b516a5b14",
 			version = 2,
 		},
-		inheritedIndex = 73,
+		inheritedIndex = 74,
 	},
 	
 	{
@@ -15435,7 +15490,7 @@ local tbl =
 			uuid = "a7831eef-4074-1c28-879e-0f89fe93b737",
 			version = 2,
 		},
-		inheritedIndex = 77,
+		inheritedIndex = 78,
 	},
 	
 	{
@@ -15544,7 +15599,7 @@ local tbl =
 			uuid = "1df0282e-0a27-b51a-a199-bd462057c267",
 			version = 2,
 		},
-		inheritedIndex = 81,
+		inheritedIndex = 82,
 	},
 	
 	{
@@ -15650,7 +15705,7 @@ local tbl =
 			uuid = "99980e5a-5d62-8ea2-ad9f-9eb9bb611f5d",
 			version = 2,
 		},
-		inheritedIndex = 83,
+		inheritedIndex = 84,
 	},
 	
 	{
@@ -15754,7 +15809,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 88,
+		inheritedIndex = 89,
 	},
 	
 	{
@@ -15896,7 +15951,7 @@ local tbl =
 			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
 			version = 2,
 		},
-		inheritedIndex = 88,
+		inheritedIndex = 89,
 	},
 	
 	{
@@ -16098,7 +16153,7 @@ local tbl =
 			uuid = "bfd39011-66e4-7ebc-a314-9350aaa99856",
 			version = 2,
 		},
-		inheritedIndex = 88,
+		inheritedIndex = 89,
 	},
 	
 	{
@@ -16190,7 +16245,7 @@ local tbl =
 			uuid = "06acd7e2-3a2b-4c8b-a09a-482655849fc6",
 			version = 2,
 		},
-		inheritedIndex = 88,
+		inheritedIndex = 89,
 	},
 	
 	{
@@ -16305,7 +16360,7 @@ local tbl =
 			uuid = "ae235d51-4679-9c09-8261-885a05bc74bb",
 			version = 2,
 		},
-		inheritedIndex = 88,
+		inheritedIndex = 89,
 	},
 	
 	{
@@ -16403,7 +16458,7 @@ local tbl =
 			uuid = "6f59f82c-6eca-9703-b3db-8c94e14d1ae8",
 			version = 2,
 		},
-		inheritedIndex = 68,
+		inheritedIndex = 69,
 	},
 	
 	{
@@ -16473,7 +16528,7 @@ local tbl =
 			uuid = "e4df0c75-0fec-4c79-9c55-f892facb8a5b",
 			version = 2,
 		},
-		inheritedIndex = 69,
+		inheritedIndex = 70,
 	},
 	
 	{
@@ -16609,7 +16664,7 @@ local tbl =
 			uuid = "65c65955-c622-bb22-b8e8-dffca6394876",
 			version = 2,
 		},
-		inheritedIndex = 88,
+		inheritedIndex = 89,
 	},
 	
 	{
@@ -16795,7 +16850,7 @@ local tbl =
 			uuid = "de4b11dc-cace-5590-b9b4-6d768416d2c9",
 			version = 2,
 		},
-		inheritedIndex = 88,
+		inheritedIndex = 89,
 	},
 	
 	{
@@ -16914,7 +16969,7 @@ local tbl =
 			uuid = "ca2ed4c5-1790-ab33-930e-7944b6c02ebf",
 			version = 2,
 		},
-		inheritedIndex = 88,
+		inheritedIndex = 89,
 	},
 	
 	{
@@ -17073,7 +17128,7 @@ local tbl =
 			uuid = "6d93ba14-1d65-6f32-a578-e5194a8f4fdd",
 			version = 2,
 		},
-		inheritedIndex = 88,
+		inheritedIndex = 89,
 	},
 	
 	{
@@ -17163,7 +17218,7 @@ local tbl =
 			uuid = "2f0e26c9-d9fc-79b6-add7-bac559401508",
 			version = 2,
 		},
-		inheritedIndex = 74,
+		inheritedIndex = 75,
 	},
 	
 	{
@@ -17259,7 +17314,7 @@ local tbl =
 			uuid = "d44cca76-d6a5-bed0-a773-b841eccd6f5e",
 			version = 2,
 		},
-		inheritedIndex = 75,
+		inheritedIndex = 76,
 	},
 	
 	{
@@ -17455,7 +17510,7 @@ local tbl =
 			uuid = "2573b380-d312-118e-890b-67fb131aeaa9",
 			version = 2,
 		},
-		inheritedIndex = 76,
+		inheritedIndex = 77,
 	},
 	
 	{
