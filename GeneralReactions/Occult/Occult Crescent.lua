@@ -13136,6 +13136,16 @@ local tbl =
 								"385293ab-d5d7-e2a6-8a36-8a2a08e9f522",
 								true,
 							},
+							
+							{
+								"7acdaefc-5897-7460-b999-7e5d968a67c3",
+								true,
+							},
+							
+							{
+								"7da229c0-f7ce-9c1c-966d-53b7f743c519",
+								true,
+							},
 						},
 						gVar = "ACR_RikuMNK3_CD",
 						targetType = "Current Target",
@@ -13178,6 +13188,16 @@ local tbl =
 							
 							{
 								"385293ab-d5d7-e2a6-8a36-8a2a08e9f522",
+								true,
+							},
+							
+							{
+								"7acdaefc-5897-7460-b999-7e5d968a67c3",
+								true,
+							},
+							
+							{
+								"7da229c0-f7ce-9c1c-966d-53b7f743c519",
 								true,
 							},
 						},
@@ -13279,6 +13299,40 @@ local tbl =
 						category = "Self",
 						name = "Is DRG",
 						uuid = "385293ab-d5d7-e2a6-8a36-8a2a08e9f522",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 30,
+						matchAnyBuff = true,
+						name = "Self Missing Transcendent",
+						uuid = "7acdaefc-5897-7460-b999-7e5d968a67c3",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 30,
+						name = "Target <= 30y",
+						uuid = "7da229c0-f7ce-9c1c-966d-53b7f743c519",
 						version = 3,
 					},
 				},
@@ -14404,6 +14458,11 @@ local tbl =
 								"226548b2-a460-63fe-a1ae-a347ee634c6c",
 								true,
 							},
+							
+							{
+								"4eefd4f3-8b3d-f524-b53a-fd0b29a1c402",
+								true,
+							},
 						},
 						gVar = "ACR_RikuMNK3_Hotbar_SixSidedStar",
 						targetType = "Current Target",
@@ -14522,6 +14581,27 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 30,
+						matchAnyBuff = true,
+						name = "Self Missing Transcendent",
+						uuid = "4eefd4f3-8b3d-f524-b53a-fd0b29a1c402",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Necromancer (USE on warrior)",
 			uuid = "78a6c2ef-7e57-09cd-b705-562934c6bedc",
@@ -14577,6 +14657,11 @@ local tbl =
 								"acfab9f6-e13a-546f-8cdd-f508c1da8a2a",
 								true,
 							},
+							
+							{
+								"4118ed3d-9985-9fed-ba1b-0692f3d87ef3",
+								true,
+							},
 						},
 						gVar = "ACR_RikuMNK3_CD",
 						targetType = "Current Target",
@@ -14626,6 +14711,11 @@ local tbl =
 								"e9a87634-6087-4465-bbf0-e0c7a8b4e2c4",
 								true,
 							},
+							
+							{
+								"4118ed3d-9985-9fed-ba1b-0692f3d87ef3",
+								true,
+							},
 						},
 						gVar = "ACR_RikuMNK3_CD",
 						targetType = "Current Target",
@@ -14673,6 +14763,11 @@ local tbl =
 							
 							{
 								"723894dc-b212-6550-a413-ce46a9457bff",
+								true,
+							},
+							
+							{
+								"4118ed3d-9985-9fed-ba1b-0692f3d87ef3",
 								true,
 							},
 						},
@@ -14830,6 +14925,27 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Target Wind Weak",
 						uuid = "e9a87634-6087-4465-bbf0-e0c7a8b4e2c4",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 30,
+						matchAnyBuff = true,
+						name = "Self Missing Transcendent",
+						uuid = "4118ed3d-9985-9fed-ba1b-0692f3d87ef3",
 						version = 3,
 					},
 				},
@@ -18606,6 +18722,211 @@ local tbl =
 			eventType = 12,
 			name = "[QuarriedAway] Draw Golem Cone",
 			uuid = "0ea5ceab-d365-3875-a292-b1cf6abe1cc3",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "-- A list of used data variables:\n-- data.ocCombatTimer: Combat Timer. Used to determine if there are 2 or 3 entities (first cast <40s if always 2 entities)\n-- data.ocLevel: the GUI inputted to specify the player level (optifine things..)\n-- data.ocAdjustedLevel: used to calculate the player's new adjusted level with the buffs. This is cached so we only call it once instead of 3 times\n-- data.ocFoliosCache: a Now() to determine how long ago we cached buff levels\n-- data.ocPrimes: Prime numbers from 20-45\n\nlocal angle = math.rad(120)\nlocal arenapos = { x = 659, y = 132, z = 659 }\nlocal id = eventArgs.spellID\nlocal entity = TensorCore.mGetEntity(eventArgs.entityID)\nlocal currentLevel = data.ocLevel\n\nlocal debug = true\n\nlocal function calculateLevel()\n\tlocal p = TensorCore.mGetPlayer().id\n\tdata.ocAdjustedLevel = data.ocLevel\n\tfor i = 5014, 5018 do\n\t\tif (TensorCore.hasBuff(p, i)) then\n\t\t\tdata.ocAdjustedLevel = data.ocLevel + (i - 5013)\n\t\t\tbreak\n\t\tend\n\tend\n\tdata.ocFoliosCache = Now()\nend\n\nif (data.ocAdjustedLevel == nil or data.ocFoliosCache == nil) or TimeSince(data.ocFoliosCache) > 5000 then\n\tcalculateLevel()\nend\n\nif debug then d(\"data.ocCombatTimer: \" .. tostring(data.ocCombatTimer)) end\nif (data.ocCombatTimer ~= nil) then\n\tif TimeSince(data.ocCombatTimer) < 40000 then angle = math.pi end\nelse\n\tif TensorReactions_CurrentTimer < 40 then angle = math.pi end\nend\n\nlocal primes = data.ocPrimes\nif (primes == nil) then\n\tprimes = { [23] = true, [29] = true, [31] = true, [37] = true, [41] = true, [43] = true }\n\tdata.ocPrimes = primes\nend\n\n-- Functions to calculate safety.\nlocal function drawUnsafe(ent)\n\tlocal h = TensorCore.getHeadingToTarget(arenapos, ent.pos)\n\tlocal red = TensorCore.getStaticFlatDrawer(2818572543)\n\tlocal size = 25\n\tred:addTimedCone(10700, arenapos.x, arenapos.y + 0.05, arenapos.z, size, angle, h)\nend\n\nlocal lvl = data.ocAdjustedLevel\nlocal unsafe = false\n\nif debug then d(\"level: \" .. tostring(lvl)) end\nif (id == 47317) then      -- Page 8: Knowledge Level 4 Holy\n\tunsafe = (lvl % 4 == 0)\n\tif debug then d(\"Page 8 unsafe: \" .. tostring(unsafe)) end\nelseif (id == 47316) then  -- Page 16: Knowledge Level 3 Flare\n\tunsafe = (lvl % 3 == 0)\n\tif debug then d(\"Page 16 unsafe: \" .. tostring(unsafe)) end\nelseif (id == 47315) then  -- Page 64: Knowledge Level 5 Death\n\tunsafe = (lvl % 5 == 0)\n\tif debug then d(\"Page 64 unsafe: \" .. tostring(unsafe)) end\nelseif (id == 47318) then  -- Page 512: Prime Knowledge Level Death\n\tunsafe = primes[lvl] == true\n\tif debug then d(\"Page 512 unsafe: \" .. tostring(unsafe)) end\nend\n\nif (unsafe) then drawUnsafe(entity) end\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"629912c2-8b53-4871-bd8f-2b4fc518cfbb",
+								true,
+							},
+							
+							{
+								"87155c2c-0862-9d65-aa3c-a42fbdf1bf15",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						uuid = "64b07f6d-06c8-ded2-a0a4-709139e41524",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "In North Horn",
+						uuid = "629912c2-8b53-4871-bd8f-2b4fc518cfbb",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 3,
+						eventArgType = 2,
+						name = "Channels",
+						spellIDList = 
+						{
+							47315,
+							47316,
+							47317,
+							47318,
+						},
+						uuid = "87155c2c-0862-9d65-aa3c-a42fbdf1bf15",
+						version = 3,
+					},
+				},
+			},
+			eventType = 3,
+			name = "[CE] Forbidden Folios",
+			uuid = "ccc2cae0-35cf-0c50-932d-ef8d760c5c9f",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "-- Number UpDown -> shared global.  Read anywhere as: data.ocLevel\nlocal GUI_FLAGS = 97\n\nif data.ocLevel == nil then data.ocLevel = 20 end\n\nGUI:Begin(\"OCLevelBox#Cherry\", true, GUI_FLAGS)\n\nGUI:SetWindowFontSize(1.25)\nGUI:TextColored(0, 1, 1, 1.0, \"Forbidden Folios CE Helper\")\nGUI:SetWindowFontSize(1.0)\nGUI:Text(\"Input your base level here\\n(Not your buffed level)\")\nGUI:PushItemWidth(90)\ndata.ocLevel = GUI:InputInt(\"##ocLevel\", data.ocLevel, 1, 5)\nGUI:PopItemWidth()\n\n-- Clamping values\nif data.ocLevel < 20  then data.ocLevel = 20  end\nif data.ocLevel > 40 then data.ocLevel = 40 end\n\nGUI:End()\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"2666de35-d0cd-9a8c-8403-c340979cf748",
+								true,
+							},
+							
+							{
+								"2b880874-422f-5e17-92a3-84357c871511",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						uuid = "6074fa81-0521-884d-b9c4-c5f18bd1fbd7",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						uuid = "2666de35-d0cd-9a8c-8403-c340979cf748",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "if data.ocFoliosGUICheck ~= nil then\n\tif TimeSince(data.ocFoliosGUICheck) < 5000 then\n\t\treturn data.ocFoliosGUIStatus\n\telse\n\t\tlocal playerpos = TensorCore.mGetPlayer().pos\n\t\tlocal arenapos = { x = 659, y = 132, z = 659 }\n\n\t\tdata.ocFoliosGUICheck = Now()\n\t\tdata.ocFoliosGUIStatus = TensorCore.getDistance2d(playerpos, arenapos) < 30\n\n\t\tif (data.ocFoliosGUIStatus ~= nil) then\n\t\t\treturn data.ocFoliosGUIStatus\n\t\telse\n\t\t\treturn false\n\t\tend\n\tend\nend\n\ndata.ocFoliosGUICheck = Now()\ndata.ocFoliosGUIStatus = false\nreturn false",
+						name = "Throttle",
+						uuid = "2b880874-422f-5e17-92a3-84357c871511",
+						version = 3,
+					},
+				},
+			},
+			eventType = 12,
+			name = "[CE] Forbidden Folios GUI",
+			uuid = "2677ee8f-eb49-ba55-a3d6-ff9a427fa66d",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local currentWeather = GetCurrentWeather()\n\nif GlobalCurrentWeather == nil or GlobalCurrentWeather ~= currentWeather then\n    GlobalCurrentWeather = currentWeather\n    if currentWeather == 192 then\n        AnyoneCore.Shotcall(\"Weather for Forked Tower spawned.\", false, 8, true)\n        TensorCore.sendParsedChatMessage(\"/e {color:228,208,10}[Occult Crescent Notification]{color:255,255,255} Weather for forked tower spawned! <se.9>\")\n    end\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"bcca0f60-82e7-833b-ad3e-08fe2b194132",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Weather Shotcall",
+						uuid = "e907fad8-1f1d-e527-921c-763fe3fb1e6e",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "self.used = true",
+						conditions = 
+						{
+							
+							{
+								"bcca0f60-82e7-833b-ad3e-08fe2b194132",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "empty reaction for throttle",
+						uuid = "67d56c9c-13f2-7092-ac36-25425bedd3e4",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "North Horn",
+						uuid = "bcca0f60-82e7-833b-ad3e-08fe2b194132",
+						version = 3,
+					},
+				},
+			},
+			name = "[OC] Weather Shotcall",
+			throttleTime = 5000,
+			uuid = "0af766b8-0fb8-288b-82a9-c371617753a4",
 			version = 2,
 		},
 	}, 
