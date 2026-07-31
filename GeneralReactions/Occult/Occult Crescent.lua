@@ -15109,12 +15109,83 @@ local tbl =
 					},
 				},
 			},
+			enabled = false,
 			eventType = 11,
 			name = "Blacklist+draws moogle (enable this)",
 			uuid = "0c591123-b2c0-d2e0-aca9-9e17cf24d43e",
 			version = 2,
 		},
 		inheritedIndex = 57,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local currentWeather = GetCurrentWeather()\n\nif GlobalCurrentWeather == nil or GlobalCurrentWeather ~= currentWeather then\n    GlobalCurrentWeather = currentWeather\n    if currentWeather == 192 then\n        TensorCore.showRaidWarning(\"Weather for Forked Tower spawned!\", 0, 15)\n    end\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"4b9ce06b-2e8a-4bb6-aef8-63b65ecbe699",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Weather Shotcall",
+						uuid = "e25652c9-033a-4802-8191-96fe1fc4ed69",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "self.used = true",
+						conditions = 
+						{
+							
+							{
+								"4b9ce06b-2e8a-4bb6-aef8-63b65ecbe699",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "empty reaction for throttle",
+						uuid = "ed9f9916-a111-4703-8ea8-2ee55de2e3a0",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "North Horn",
+						uuid = "4b9ce06b-2e8a-4bb6-aef8-63b65ecbe699",
+						version = 3,
+					},
+				},
+			},
+			name = "[OC] Weather Shotcall",
+			throttleTime = 5000,
+			uuid = "5dc65816-0d2a-4fd3-9218-ad0eb935e372",
+			version = 2,
+		},
+		inheritedIndex = 58,
 	},
 	
 	{
@@ -18913,75 +18984,6 @@ local tbl =
 			eventType = 12,
 			name = "[CE] Forbidden Folios GUI",
 			uuid = "2677ee8f-eb49-ba55-a3d6-ff9a427fa66d",
-			version = 2,
-		},
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local currentWeather = GetCurrentWeather()\n\nif GlobalCurrentWeather == nil or GlobalCurrentWeather ~= currentWeather then\n    GlobalCurrentWeather = currentWeather\n    if currentWeather == 192 then\n        AnyoneCore.Shotcall(\"Weather for Forked Tower spawned.\", false, 8, true)\n        TensorCore.sendParsedChatMessage(\"/e {color:228,208,10}[Occult Crescent Notification]{color:255,255,255} Weather for forked tower spawned! <se.9>\")\n    end\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"bcca0f60-82e7-833b-ad3e-08fe2b194132",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_CD",
-						name = "Weather Shotcall",
-						uuid = "e907fad8-1f1d-e527-921c-763fe3fb1e6e",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "self.used = true",
-						conditions = 
-						{
-							
-							{
-								"bcca0f60-82e7-833b-ad3e-08fe2b194132",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_CD",
-						name = "empty reaction for throttle",
-						uuid = "67d56c9c-13f2-7092-ac36-25425bedd3e4",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1346,
-						name = "North Horn",
-						uuid = "bcca0f60-82e7-833b-ad3e-08fe2b194132",
-						version = 3,
-					},
-				},
-			},
-			name = "[OC] Weather Shotcall",
-			throttleTime = 5000,
-			uuid = "0af766b8-0fb8-288b-82a9-c371617753a4",
 			version = 2,
 		},
 	}, 
