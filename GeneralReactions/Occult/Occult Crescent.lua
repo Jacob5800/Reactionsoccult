@@ -18365,6 +18365,11 @@ local tbl =
 								"feb6418a-08ec-14c4-abaf-322a531c4a40",
 								true,
 							},
+							
+							{
+								"439ef45f-289c-0ed2-bf31-25624bd1e31a",
+								true,
+							},
 						},
 						gVar = "ACR_RikuSGE3_CD",
 						name = "draw cone on golem",
@@ -18396,6 +18401,24 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "check golem visibility",
 						uuid = "feb6418a-08ec-14c4-abaf-322a531c4a40",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1346,
+							1252,
+						},
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "439ef45f-289c-0ed2-bf31-25624bd1e31a",
 						version = 3,
 					},
 				},
