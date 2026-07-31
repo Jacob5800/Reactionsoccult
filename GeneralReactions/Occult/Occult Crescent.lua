@@ -11801,7 +11801,7 @@ local tbl =
 						comparator = 2,
 						conditionType = 6,
 						dequeueIfLuaFalse = true,
-						inRangeValue = 6,
+						inRangeValue = 7,
 						name = "Finisher Range",
 						uuid = "3467bf01-4832-8358-bfb3-087527be05c8",
 						version = 3,
@@ -13099,11 +13099,191 @@ local tbl =
 		{
 			actions = 
 			{
+				
+				{
+					data = 
+					{
+						actionID = 49077,
+						conditions = 
+						{
+							
+							{
+								"cd3de24c-bd19-c8b3-acdc-269ffe017e3a",
+								true,
+							},
+							
+							{
+								"3f34d46e-8ad1-9e64-abed-166c78a10efe",
+								true,
+							},
+							
+							{
+								"eb19d322-6f8b-acb5-a881-7228eff84b51",
+								true,
+							},
+							
+							{
+								"3eb0c4c8-227d-313a-86c7-6d9400d5c777",
+								true,
+							},
+							
+							{
+								"a80a59b2-e621-1d41-9f36-14e543a6cd8a",
+								true,
+							},
+							
+							{
+								"385293ab-d5d7-e2a6-8a36-8a2a08e9f522",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						targetType = "Current Target",
+						uuid = "f7e9adee-e49b-d4c0-ae44-a5001cfc9103",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 49079,
+						conditions = 
+						{
+							
+							{
+								"cd3de24c-bd19-c8b3-acdc-269ffe017e3a",
+								true,
+							},
+							
+							{
+								"3f34d46e-8ad1-9e64-abed-166c78a10efe",
+								true,
+							},
+							
+							{
+								"eb19d322-6f8b-acb5-a881-7228eff84b51",
+								true,
+							},
+							
+							{
+								"3eb0c4c8-227d-313a-86c7-6d9400d5c777",
+								true,
+							},
+							
+							{
+								"8566b987-8453-9004-bb17-6d93d00bec3e",
+								true,
+							},
+							
+							{
+								"385293ab-d5d7-e2a6-8a36-8a2a08e9f522",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						targetType = "Current Target",
+						uuid = "1357e8ec-d52e-f63f-83d2-476ca2d9e7de",
+						version = 2.1,
+					},
+				},
 			},
 			conditions = 
 			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "In Occult Crescent",
+						uuid = "cd3de24c-bd19-c8b3-acdc-269ffe017e3a",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Is Bot Running",
+						uuid = "3f34d46e-8ad1-9e64-abed-166c78a10efe",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "eb19d322-6f8b-acb5-a881-7228eff84b51",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						name = "Self Living",
+						uuid = "3eb0c4c8-227d-313a-86c7-6d9400d5c777",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49077,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Check jump cd",
+						uuid = "a80a59b2-e621-1d41-9f36-14e543a6cd8a",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49079,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						name = "Check Lance cd",
+						uuid = "8566b987-8453-9004-bb17-6d93d00bec3e",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5331,
+						category = "Self",
+						name = "Is DRG",
+						uuid = "385293ab-d5d7-e2a6-8a36-8a2a08e9f522",
+						version = 3,
+					},
+				},
 			},
-			name = "p. Dragoon (nothing yet)",
+			name = "p. Dragoon",
 			uuid = "3bfe4444-df82-7f20-b900-794335d94680",
 			version = 2,
 		},
