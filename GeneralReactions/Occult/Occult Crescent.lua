@@ -13212,7 +13212,7 @@ local tbl =
 							},
 							
 							{
-								"7bc51f84-db08-eecf-a9ac-eade5b39d44a",
+								"a18d17a7-36b7-b794-8e24-938c04369a92",
 								true,
 							},
 							
@@ -13602,22 +13602,6 @@ local tbl =
 			conditions = 
 			{
 			},
-			name = "P. Necromancer (nothing yet)",
-			uuid = "001e8bf0-9e11-b65b-8fc4-327132fb50f2",
-			version = 2,
-		},
-		inheritedIndex = 53,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-			},
-			conditions = 
-			{
-			},
 			name = "P. BLU (nothing yet)",
 			uuid = "359d3292-46ca-6740-9bd4-5e4e6bfa6acc",
 			version = 2,
@@ -13770,6 +13754,7 @@ local tbl =
 					{
 						comparator = 2,
 						conditionType = 6,
+						dequeueIfLuaFalse = true,
 						inRangeValue = 30,
 						name = "Target <= 30y",
 						uuid = "226548b2-a460-63fe-a1ae-a347ee634c6c",
@@ -13789,23 +13774,324 @@ local tbl =
 						version = 3,
 					},
 				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 2,
-						hpValue = 100,
-						uuid = "fbcbafde-bc71-6922-ab95-9b7a66c86263",
-						version = 3,
-					},
-				},
 			},
 			name = "P. Necro (USE on warrior)",
 			uuid = "78a6c2ef-7e57-09cd-b705-562934c6bedc",
 			version = 2,
 		},
 		inheritedIndex = 55,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						actionID = 49098,
+						conditions = 
+						{
+							
+							{
+								"08200ceb-e12f-422c-996e-47fcdd5dc467",
+								true,
+							},
+							
+							{
+								"10a8596d-b51f-0488-bc9e-80f55d2995cf",
+								true,
+							},
+							
+							{
+								"3b59fa48-57ef-5088-aebb-bb740a04587b",
+								true,
+							},
+							
+							{
+								"d41beda5-2a4b-487c-80a9-a29bb94e874d",
+								true,
+							},
+							
+							{
+								"1cdfbfad-9abd-890b-959c-0a1a7d59d407",
+								true,
+							},
+							
+							{
+								"779ef1d5-2e1c-6eb4-aba8-5538338ab096",
+								true,
+							},
+							
+							{
+								"acfab9f6-e13a-546f-8cdd-f508c1da8a2a",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						targetType = "Current Target",
+						uuid = "14f615a5-006b-56d2-aefc-3156425b6b23",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 49099,
+						conditions = 
+						{
+							
+							{
+								"08200ceb-e12f-422c-996e-47fcdd5dc467",
+								true,
+							},
+							
+							{
+								"10a8596d-b51f-0488-bc9e-80f55d2995cf",
+								true,
+							},
+							
+							{
+								"3b59fa48-57ef-5088-aebb-bb740a04587b",
+								true,
+							},
+							
+							{
+								"d41beda5-2a4b-487c-80a9-a29bb94e874d",
+								true,
+							},
+							
+							{
+								"1cdfbfad-9abd-890b-959c-0a1a7d59d407",
+								true,
+							},
+							
+							{
+								"49226ef3-e891-e41d-9506-4602c4259620",
+								true,
+							},
+							
+							{
+								"e9a87634-6087-4465-bbf0-e0c7a8b4e2c4",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						targetType = "Current Target",
+						uuid = "b5fa4cd7-7330-7354-878e-f32d9a5a1120",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 49100,
+						conditions = 
+						{
+							
+							{
+								"08200ceb-e12f-422c-996e-47fcdd5dc467",
+								true,
+							},
+							
+							{
+								"10a8596d-b51f-0488-bc9e-80f55d2995cf",
+								true,
+							},
+							
+							{
+								"3b59fa48-57ef-5088-aebb-bb740a04587b",
+								true,
+							},
+							
+							{
+								"d41beda5-2a4b-487c-80a9-a29bb94e874d",
+								true,
+							},
+							
+							{
+								"1cdfbfad-9abd-890b-959c-0a1a7d59d407",
+								true,
+							},
+							
+							{
+								"dd0e530f-6084-ce35-89bf-553e8012c13e",
+								true,
+							},
+							
+							{
+								"723894dc-b212-6550-a413-ce46a9457bff",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						targetType = "Current Target",
+						uuid = "5f2f0901-df39-1c03-95da-15664fcbd24d",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "In Occult Crescent",
+						uuid = "08200ceb-e12f-422c-996e-47fcdd5dc467",
+						version = 3,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 99,
+						uuid = "10a8596d-b51f-0488-bc9e-80f55d2995cf",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5335,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is Necro",
+						uuid = "3b59fa48-57ef-5088-aebb-bb740a04587b",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "d41beda5-2a4b-487c-80a9-a29bb94e874d",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 30,
+						name = "Target <= 30y",
+						uuid = "1cdfbfad-9abd-890b-959c-0a1a7d59d407",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49098,
+						buffCheckType = 2,
+						buffID = 4232,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Deep freeze on CD",
+						uuid = "779ef1d5-2e1c-6eb4-aba8-5538338ab096",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49099,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Hell wind on cd",
+						uuid = "49226ef3-e891-e41d-9506-4602c4259620",
+						version = 3,
+					},
+					inheritedIndex = 7,
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49100,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Chaos Drive on cd",
+						uuid = "dd0e530f-6084-ce35-89bf-553e8012c13e",
+						version = 3,
+					},
+					inheritedIndex = 8,
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5324,
+						dequeueIfLuaFalse = true,
+						name = "Target Lightning Weak",
+						uuid = "723894dc-b212-6550-a413-ce46a9457bff",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5323,
+						dequeueIfLuaFalse = true,
+						name = "Target Ice Weak",
+						uuid = "acfab9f6-e13a-546f-8cdd-f508c1da8a2a",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5325,
+						dequeueIfLuaFalse = true,
+						name = "Target Wind Weak",
+						uuid = "e9a87634-6087-4465-bbf0-e0c7a8b4e2c4",
+						version = 3,
+					},
+				},
+			},
+			enabled = false,
+			name = "P. Necromancer (Disabled by def)",
+			uuid = "001e8bf0-9e11-b65b-8fc4-327132fb50f2",
+			version = 2,
+		},
+		inheritedIndex = 53,
 	},
 	
 	{
