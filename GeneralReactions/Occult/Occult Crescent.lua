@@ -16427,7 +16427,6 @@ local tbl =
 					},
 				},
 			},
-			enabled = false,
 			eventType = 11,
 			name = "Blacklist+draws moogle (enable this)",
 			uuid = "0c591123-b2c0-d2e0-aca9-9e17cf24d43e",
