@@ -13950,7 +13950,6 @@ local tbl =
 					},
 				},
 			},
-			enabled = false,
 			name = "p. Dragoon (Jump not safe)",
 			uuid = "3bfe4444-df82-7f20-b900-794335d94680",
 			version = 2,
