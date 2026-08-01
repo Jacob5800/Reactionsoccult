@@ -3072,132 +3072,6 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "local deadPlayers = TensorCore.entityList(\"chartype=4,los,dead,maxdistance=30\")\nlocal raisablePlayers = {}\nlocal raisableChemists = {}\nif (table.valid(deadPlayers)) then\n\tfor id, player in pairs(deadPlayers) do\n\t\tlocal buffs = player.buffs\n\t\tlocal raised = false\n        local outOfRaises = false\n\t\tlocal chemist = false \n\n\t\tif (TableSize(buffs) > 0) then\n\t\t\tfor id, b in pairs(buffs) do\n\t\t\t\tif (b.id == 148) then\n\t\t\t\t\traised = true\n\t\t\t\tend\n                if (b.id == 4263) then\n                    outOfRaises = true\n                end\n\t\t\t\tif (b.id == 4367) then\n\t\t\t\t\tchemist = true\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t\t\n\t\tif(raised == false and outOfRaises == false) then\n\t\t\tif (chemist == true) then\n\t\t\t\ttable.insert(raisableChemists, player)\n\t\t\telse\n\t\t\t\ttable.insert(raisablePlayers, player)\n\t\t\tend\n\t\tend\n\tend\nend\nif (table.valid(raisableChemists)) then\n\tfor id, player in pairs(raisableChemists) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \" <se.3>\")\n\t\tend\n\t\treturn ActionList:Get(1,41634), player.id, true, true\n\tend\nend\nif (table.valid(raisablePlayers)) then\n\tfor id, player in pairs(raisablePlayers) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \" <se.2>\")\n\t\tend\n\t\treturn ActionList:Get(1,41634), player.id, true, false\n\tend\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"47e6a211-bd39-977b-a824-489c3cf0978a",
-								true,
-							},
-							
-							{
-								"598575f8-788c-e333-afb1-b0807ff3b36b",
-								true,
-							},
-							
-							{
-								"dcc00f33-64a3-4d4c-8a66-3bd6d9e905aa",
-								true,
-							},
-							
-							{
-								"3dae1027-5a9e-e761-bd88-4af39d6b83dc",
-								true,
-							},
-							
-							{
-								"17813282-8c8c-d3b1-a141-96800344f60b",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_CD",
-						luaReturnsAction = true,
-						uuid = "9ef9392a-2098-01bc-9da6-ec288fb7b803",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 12,
-						dequeueIfLuaFalse = true,
-						localMapIDList = 
-						{
-							1252,
-						},
-						name = "South Horn",
-						uuid = "47e6a211-bd39-977b-a824-489c3cf0978a",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4367,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Is Chemist",
-						uuid = "598575f8-788c-e333-afb1-b0807ff3b36b",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return TableSize(TensorCore.entityList(\"chartype=4,los,dead,maxdistance=30\")) ~= 0",
-						dequeueIfLuaFalse = true,
-						filterTargetType = "Party",
-						name = "Dead Player",
-						uuid = "dcc00f33-64a3-4d4c-8a66-3bd6d9e905aa",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionID = 41634,
-						category = "Self",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						uuid = "3dae1027-5a9e-e761-bd88-4af39d6b83dc",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
-						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "17813282-8c8c-d3b1-a141-96800344f60b",
-						version = 3,
-					},
-				},
-			},
-			enabled = false,
-			mechanicTime = 433,
-			name = "[Chemist OLD] Rez",
-			timelineIndex = 74,
-			uuid = "c944e914-e7fe-ad3d-b61d-adeb57939f5f",
-			version = 2,
-		},
-		inheritedIndex = 24,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
 						actionLua = "local deadPlayers = TensorCore.entityList(\"chartype=4,los,dead,maxdistance=30\")\nlocal raisablePlayers = {}\nlocal raisableChemists = {}\nif (table.valid(deadPlayers)) then\n\tfor id, player in pairs(deadPlayers) do\n\t\tlocal buffs = player.buffs\n\t\tlocal raised = false\n        local outOfRaises = false\n\t\tlocal chemist = false \n\n\t\tif (TableSize(buffs) > 0) then\n\t\t\tfor id, b in pairs(buffs) do\n\t\t\t\tif (b.id == 148) then\n\t\t\t\t\traised = true\n\t\t\t\tend\n                if (b.id == 4263) then\n                    outOfRaises = true\n                end\n\t\t\t\tif (b.id == 4367) then\n\t\t\t\t\tchemist = true\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t\t\n\t\tif(raised == false and outOfRaises == false) then\n\t\t\tif (chemist == true) then\n\t\t\t\ttable.insert(raisableChemists, player)\n\t\t\telse\n\t\t\t\ttable.insert(raisablePlayers, player)\n\t\t\tend\n\t\tend\n\tend\nend\nif (table.valid(raisableChemists)) then\n\tfor id, player in pairs(raisableChemists) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \" (Chemist)\")\n\t\tend\n\t\treturn ActionList:Get(1,41634), player.id, true, true\n\tend\nend\nif (table.valid(raisablePlayers)) then\n\tfor id, player in pairs(raisablePlayers) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \"\")\n\t\tend\n\t\treturn ActionList:Get(1,41634), player.id, true, false\n\tend\nend\nself.used = true",
 						conditions = 
 						{
@@ -7194,7 +7068,7 @@ local tbl =
 			uuid = "9c5b9d73-ae0e-195a-940a-540bca4454b2",
 			version = 2,
 		},
-		inheritedIndex = 67,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -7336,7 +7210,7 @@ local tbl =
 			uuid = "b175b050-f2bb-2ffe-bd7e-bff2941f8634",
 			version = 2,
 		},
-		inheritedIndex = 69,
+		inheritedIndex = 67,
 	},
 	
 	{
@@ -7572,7 +7446,7 @@ local tbl =
 			uuid = "9278be18-034c-9f92-abab-1d3e0055a418",
 			version = 2,
 		},
-		inheritedIndex = 70,
+		inheritedIndex = 68,
 	},
 	
 	{
@@ -7816,7 +7690,7 @@ local tbl =
 			uuid = "4c3d9549-4ff9-6f51-a0a1-292851ddf5a7",
 			version = 2,
 		},
-		inheritedIndex = 71,
+		inheritedIndex = 69,
 	},
 	
 	{
@@ -8022,7 +7896,7 @@ local tbl =
 			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
 			version = 2,
 		},
-		inheritedIndex = 72,
+		inheritedIndex = 70,
 	},
 	
 	{
@@ -10465,7 +10339,7 @@ local tbl =
 			uuid = "978328eb-ccac-48cf-bcfc-9c31d4cf6f4d",
 			version = 2,
 		},
-		inheritedIndex = 75,
+		inheritedIndex = 73,
 	},
 	
 	{
@@ -16289,7 +16163,7 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
-		inheritedIndex = 76,
+		inheritedIndex = 74,
 	},
 	
 	{
@@ -16717,7 +16591,7 @@ local tbl =
 			uuid = "d21f4c04-282f-d94a-9897-db3b516a5b14",
 			version = 2,
 		},
-		inheritedIndex = 79,
+		inheritedIndex = 77,
 	},
 	
 	{
@@ -17165,252 +17039,6 @@ local tbl =
 			version = 2,
 		},
 		inheritedIndex = 89,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local aoePos = {x = eventArgs.x, y = eventArgs.y, z = eventArgs.z}\nlocal aoeHeading = eventArgs.heading\nlocal aoeAngle = 60\n\nlocal dirX, dirZ = math.sin(aoeHeading), math.cos(aoeHeading)\nlocal cosAngle = math.cos(math.rad(aoeAngle/2))\n\nlocal isDoubleCast = eventArgs.duration > 5\n\nfor _, entity in pairs(TensorCore.entityList(\"contentid=13651\")) do\n\tlocal entityPos = entity.pos\n\tlocal relX, relZ = entityPos.x - aoePos.x, entityPos.z - aoePos.z\n\tlocal forward = (relX * dirX) + (relZ * dirZ)\n\tlocal distToAOE = TensorCore.getDistance2d(aoePos, entityPos)\n\tif (forward / distToAOE) >= cosAngle then\n\t\tlocal drawDelay = (isDoubleCast and 7000) or 0\n\t\tlocal orbExplosionDelay = 2500\n\t\tTensorCore.getMoogleDrawer():addTimedCircleOnEnt((eventArgs.duration*1000)+orbExplosionDelay-drawDelay,entity.id,15,drawDelay)\n\tend\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"a21dd969-932e-6398-8760-438fd6c6737d",
-								true,
-							},
-							
-							{
-								"84173e32-97e2-9885-bf35-7bc51c1c6c91",
-								true,
-							},
-						},
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Wind Orb",
-						uuid = "a1d006ec-9474-4c7c-8b0d-a34f4c004099",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local aoePos = {x = eventArgs.x, y = eventArgs.y, z = eventArgs.z}\nlocal aoeHeading = eventArgs.heading\nlocal aoeAngle = 60\n\nlocal dirX, dirZ = math.sin(aoeHeading), math.cos(aoeHeading)\nlocal cosAngle = math.cos(math.rad(aoeAngle/2))\n\nlocal isDoubleCast = eventArgs.duration > 5\n\nfor _, entity in pairs(TensorCore.entityList(\"contentid=13652\")) do\n\tlocal entityPos = entity.pos\n\tlocal relX, relZ = entityPos.x - aoePos.x, entityPos.z - aoePos.z\n\tlocal forward = (relX * dirX) + (relZ * dirZ)\n\tlocal distToAOE = TensorCore.getDistance2d(aoePos, entityPos)\n\tif (forward / distToAOE) >= cosAngle then\n\t\tlocal drawDelay = (isDoubleCast and 7000) or 0\n\t\tlocal orbExplosionDelay = 2500\n\t\tTensorCore.getMoogleDrawer():addTimedCircleOnEnt((eventArgs.duration*1000)+orbExplosionDelay-drawDelay,entity.id,15,drawDelay)\n\tend\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"a21dd969-932e-6398-8760-438fd6c6737d",
-								true,
-							},
-							
-							{
-								"2015fdfa-2327-1a4f-b24c-255145965531",
-								true,
-							},
-						},
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Earth Orb",
-						uuid = "8b88c007-2f89-e57d-9b54-d424d2c3316e",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1252,
-						name = "In OC",
-						uuid = "a21dd969-932e-6398-8760-438fd6c6737d",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return eventArgs.aoeName == \"Ancient Aero III\"",
-						dequeueIfLuaFalse = true,
-						name = "Is Wind",
-						uuid = "84173e32-97e2-9885-bf35-7bc51c1c6c91",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return eventArgs.aoeName == \"Ancient Stone III\"",
-						dequeueIfLuaFalse = true,
-						name = "Is Earth",
-						uuid = "2015fdfa-2327-1a4f-b24c-255145965531",
-						version = 3,
-					},
-				},
-			},
-			eventType = 18,
-			name = "[RepairedLion] Orb AoE",
-			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
-			version = 2,
-		},
-		inheritedIndex = 94,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "data.ocGarulaRushingRumbleRampage = true\nself.used=true",
-						conditions = 
-						{
-							
-							{
-								"3d713919-4904-c97e-bb72-5fba1cc7d8d1",
-								true,
-							},
-							
-							{
-								"831587ec-aa31-c05d-9716-7138cd1f2de9",
-								true,
-							},
-							
-							{
-								"31ab17ca-1766-b858-8c32-5e1ede7eab12",
-								true,
-							},
-						},
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Record Rushing Rumble Rampage",
-						uuid = "cfc2248e-d420-e105-be82-c70775882def",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local pi = math.pi\nlocal back = pi\nlocal left = pi / 2\nlocal right = -pi / 2\n\nlocal coneAngle = 45\nlocal coneRad = coneAngle * (pi / 180)\nlocal coneLength = 70\nlocal circleRadius = 30\nlocal birdHitRadius = 6\n\nlocal drawDuration = 10000\n\nlocal function normalizeHeading(heading)\n    return ((heading + pi) % (2 * pi)) - pi\nend\n\nlocal neoGarulaPos\nfor _, foundEntity in pairs(TensorCore.entityList(\"contentid=13638,attackable\")) do\n\tneoGarulaPos = foundEntity.pos\n\tbreak\nend\n\nlocal chatterbirdEnt = TensorCore.mGetEntity(data.ocGarulaMarkerBirdEntID)\nlocal chatterbirdPos = chatterbirdEnt.pos\n\nlocal garulaEndPoint = TensorCore.getPosInDirection(chatterbirdPos, chatterbirdPos.h, birdHitRadius)\ndata.ocGarulaPrevEndPoint = garulaEndPoint\n\nlocal garulaToEndPointHeading = TensorCore.getHeadingToTarget(neoGarulaPos, garulaEndPoint)\n\nlocal directionOffsets = { 0, pi, pi / 2, -pi / 2 }\nif data.ocGarulaIntercardLightning then\n    for i = 1, #directionOffsets do\n        directionOffsets[i] = directionOffsets[i] - (pi / 4)\n    end\nend\n\nlocal moogleDrawer = TensorCore.getMoogleDrawer()\nfor _, offset in ipairs(directionOffsets) do\n    local coneHeading = normalizeHeading(garulaToEndPointHeading + offset)\n    moogleDrawer:addTimedCone(drawDuration, garulaEndPoint.x, garulaEndPoint.y, garulaEndPoint.z, coneLength, coneRad, coneHeading)\nend\nmoogleDrawer:addTimedCircle(drawDuration,garulaEndPoint.x,garulaEndPoint.y,garulaEndPoint.z,circleRadius)\n\ndata.ocGarulaChargeCount = 1\n\nself.used=true",
-						conditions = 
-						{
-							
-							{
-								"3d713919-4904-c97e-bb72-5fba1cc7d8d1",
-								true,
-							},
-							
-							{
-								"831587ec-aa31-c05d-9716-7138cd1f2de9",
-								true,
-							},
-							
-							{
-								"a1b5af49-de07-7460-9a69-50545e276d84",
-								true,
-							},
-						},
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Draw AOE Charge 1",
-						uuid = "c4f1f772-3f43-ca0d-9b65-950c281fa28c",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1252,
-						name = "In OC",
-						uuid = "3d713919-4904-c97e-bb72-5fba1cc7d8d1",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Event",
-						dequeueIfLuaFalse = true,
-						eventArgOptionType = 2,
-						eventEntityContentID = 13638,
-						name = "Is Neo Garula",
-						uuid = "831587ec-aa31-c05d-9716-7138cd1f2de9",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Event",
-						dequeueIfLuaFalse = true,
-						eventArgOptionType = 3,
-						eventArgType = 2,
-						eventMarkerID = 578,
-						name = "Is Rushing Rumble (Rampage)",
-						spellIDList = 
-						{
-							41175,
-							41177,
-						},
-						uuid = "a1b5af49-de07-7460-9a69-50545e276d84",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Event",
-						dequeueIfLuaFalse = true,
-						eventArgType = 2,
-						eventMarkerID = 578,
-						eventSpellID = 41177,
-						name = "Is Rushing Rumble Rampage",
-						spellIDList = 
-						{
-							41175,
-							41177,
-						},
-						uuid = "31ab17ca-1766-b858-8c32-5e1ede7eab12",
-						version = 3,
-					},
-				},
-			},
-			eventType = 3,
-			name = "[NeoGarula] Rushing Rumble Cast",
-			throttleTime = 250,
-			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
-			version = 2,
-		},
-		inheritedIndex = 94,
 	},
 	
 	{
@@ -17917,7 +17545,7 @@ local tbl =
 			uuid = "6f59f82c-6eca-9703-b3db-8c94e14d1ae8",
 			version = 2,
 		},
-		inheritedIndex = 74,
+		inheritedIndex = 72,
 	},
 	
 	{
@@ -17987,7 +17615,7 @@ local tbl =
 			uuid = "e4df0c75-0fec-4c79-9c55-f892facb8a5b",
 			version = 2,
 		},
-		inheritedIndex = 75,
+		inheritedIndex = 73,
 	},
 	
 	{
@@ -18677,7 +18305,7 @@ local tbl =
 			uuid = "2f0e26c9-d9fc-79b6-add7-bac559401508",
 			version = 2,
 		},
-		inheritedIndex = 80,
+		inheritedIndex = 78,
 	},
 	
 	{
@@ -18773,7 +18401,7 @@ local tbl =
 			uuid = "d44cca76-d6a5-bed0-a773-b841eccd6f5e",
 			version = 2,
 		},
-		inheritedIndex = 81,
+		inheritedIndex = 79,
 	},
 	
 	{
@@ -18985,6 +18613,252 @@ local tbl =
 			uuid = "0bc71c45-b3d2-c6f5-9741-0c714a0380a6",
 			version = 2,
 		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local aoePos = {x = eventArgs.x, y = eventArgs.y, z = eventArgs.z}\nlocal aoeHeading = eventArgs.heading\nlocal aoeAngle = 60\n\nlocal dirX, dirZ = math.sin(aoeHeading), math.cos(aoeHeading)\nlocal cosAngle = math.cos(math.rad(aoeAngle/2))\n\nlocal isDoubleCast = eventArgs.duration > 5\n\nfor _, entity in pairs(TensorCore.entityList(\"contentid=13651\")) do\n\tlocal entityPos = entity.pos\n\tlocal relX, relZ = entityPos.x - aoePos.x, entityPos.z - aoePos.z\n\tlocal forward = (relX * dirX) + (relZ * dirZ)\n\tlocal distToAOE = TensorCore.getDistance2d(aoePos, entityPos)\n\tif (forward / distToAOE) >= cosAngle then\n\t\tlocal drawDelay = (isDoubleCast and 7000) or 0\n\t\tlocal orbExplosionDelay = 2500\n\t\tTensorCore.getMoogleDrawer():addTimedCircleOnEnt((eventArgs.duration*1000)+orbExplosionDelay-drawDelay,entity.id,15,drawDelay)\n\tend\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"a21dd969-932e-6398-8760-438fd6c6737d",
+								true,
+							},
+							
+							{
+								"84173e32-97e2-9885-bf35-7bc51c1c6c91",
+								true,
+							},
+						},
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Wind Orb",
+						uuid = "a1d006ec-9474-4c7c-8b0d-a34f4c004099",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local aoePos = {x = eventArgs.x, y = eventArgs.y, z = eventArgs.z}\nlocal aoeHeading = eventArgs.heading\nlocal aoeAngle = 60\n\nlocal dirX, dirZ = math.sin(aoeHeading), math.cos(aoeHeading)\nlocal cosAngle = math.cos(math.rad(aoeAngle/2))\n\nlocal isDoubleCast = eventArgs.duration > 5\n\nfor _, entity in pairs(TensorCore.entityList(\"contentid=13652\")) do\n\tlocal entityPos = entity.pos\n\tlocal relX, relZ = entityPos.x - aoePos.x, entityPos.z - aoePos.z\n\tlocal forward = (relX * dirX) + (relZ * dirZ)\n\tlocal distToAOE = TensorCore.getDistance2d(aoePos, entityPos)\n\tif (forward / distToAOE) >= cosAngle then\n\t\tlocal drawDelay = (isDoubleCast and 7000) or 0\n\t\tlocal orbExplosionDelay = 2500\n\t\tTensorCore.getMoogleDrawer():addTimedCircleOnEnt((eventArgs.duration*1000)+orbExplosionDelay-drawDelay,entity.id,15,drawDelay)\n\tend\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"a21dd969-932e-6398-8760-438fd6c6737d",
+								true,
+							},
+							
+							{
+								"2015fdfa-2327-1a4f-b24c-255145965531",
+								true,
+							},
+						},
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Earth Orb",
+						uuid = "8b88c007-2f89-e57d-9b54-d424d2c3316e",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "a21dd969-932e-6398-8760-438fd6c6737d",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return eventArgs.aoeName == \"Ancient Aero III\"",
+						dequeueIfLuaFalse = true,
+						name = "Is Wind",
+						uuid = "84173e32-97e2-9885-bf35-7bc51c1c6c91",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return eventArgs.aoeName == \"Ancient Stone III\"",
+						dequeueIfLuaFalse = true,
+						name = "Is Earth",
+						uuid = "2015fdfa-2327-1a4f-b24c-255145965531",
+						version = 3,
+					},
+				},
+			},
+			eventType = 18,
+			name = "[RepairedLion] Orb AoE",
+			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
+			version = 2,
+		},
+		inheritedIndex = 80,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "data.ocGarulaRushingRumbleRampage = true\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"3d713919-4904-c97e-bb72-5fba1cc7d8d1",
+								true,
+							},
+							
+							{
+								"831587ec-aa31-c05d-9716-7138cd1f2de9",
+								true,
+							},
+							
+							{
+								"31ab17ca-1766-b858-8c32-5e1ede7eab12",
+								true,
+							},
+						},
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Record Rushing Rumble Rampage",
+						uuid = "cfc2248e-d420-e105-be82-c70775882def",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local pi = math.pi\nlocal back = pi\nlocal left = pi / 2\nlocal right = -pi / 2\n\nlocal coneAngle = 45\nlocal coneRad = coneAngle * (pi / 180)\nlocal coneLength = 70\nlocal circleRadius = 30\nlocal birdHitRadius = 6\n\nlocal drawDuration = 10000\n\nlocal function normalizeHeading(heading)\n    return ((heading + pi) % (2 * pi)) - pi\nend\n\nlocal neoGarulaPos\nfor _, foundEntity in pairs(TensorCore.entityList(\"contentid=13638,attackable\")) do\n\tneoGarulaPos = foundEntity.pos\n\tbreak\nend\n\nlocal chatterbirdEnt = TensorCore.mGetEntity(data.ocGarulaMarkerBirdEntID)\nlocal chatterbirdPos = chatterbirdEnt.pos\n\nlocal garulaEndPoint = TensorCore.getPosInDirection(chatterbirdPos, chatterbirdPos.h, birdHitRadius)\ndata.ocGarulaPrevEndPoint = garulaEndPoint\n\nlocal garulaToEndPointHeading = TensorCore.getHeadingToTarget(neoGarulaPos, garulaEndPoint)\n\nlocal directionOffsets = { 0, pi, pi / 2, -pi / 2 }\nif data.ocGarulaIntercardLightning then\n    for i = 1, #directionOffsets do\n        directionOffsets[i] = directionOffsets[i] - (pi / 4)\n    end\nend\n\nlocal moogleDrawer = TensorCore.getMoogleDrawer()\nfor _, offset in ipairs(directionOffsets) do\n    local coneHeading = normalizeHeading(garulaToEndPointHeading + offset)\n    moogleDrawer:addTimedCone(drawDuration, garulaEndPoint.x, garulaEndPoint.y, garulaEndPoint.z, coneLength, coneRad, coneHeading)\nend\nmoogleDrawer:addTimedCircle(drawDuration,garulaEndPoint.x,garulaEndPoint.y,garulaEndPoint.z,circleRadius)\n\ndata.ocGarulaChargeCount = 1\n\nself.used=true",
+						conditions = 
+						{
+							
+							{
+								"3d713919-4904-c97e-bb72-5fba1cc7d8d1",
+								true,
+							},
+							
+							{
+								"831587ec-aa31-c05d-9716-7138cd1f2de9",
+								true,
+							},
+							
+							{
+								"a1b5af49-de07-7460-9a69-50545e276d84",
+								true,
+							},
+						},
+						gVar = "ACR_TensorWeeb3_CD",
+						name = "Draw AOE Charge 1",
+						uuid = "c4f1f772-3f43-ca0d-9b65-950c281fa28c",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1252,
+						name = "In OC",
+						uuid = "3d713919-4904-c97e-bb72-5fba1cc7d8d1",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 13638,
+						name = "Is Neo Garula",
+						uuid = "831587ec-aa31-c05d-9716-7138cd1f2de9",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 3,
+						eventArgType = 2,
+						eventMarkerID = 578,
+						name = "Is Rushing Rumble (Rampage)",
+						spellIDList = 
+						{
+							41175,
+							41177,
+						},
+						uuid = "a1b5af49-de07-7460-9a69-50545e276d84",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventMarkerID = 578,
+						eventSpellID = 41177,
+						name = "Is Rushing Rumble Rampage",
+						spellIDList = 
+						{
+							41175,
+							41177,
+						},
+						uuid = "31ab17ca-1766-b858-8c32-5e1ede7eab12",
+						version = 3,
+					},
+				},
+			},
+			eventType = 3,
+			name = "[NeoGarula] Rushing Rumble Cast",
+			throttleTime = 250,
+			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
+			version = 2,
+		},
+		inheritedIndex = 81,
 	},
 	
 	{
