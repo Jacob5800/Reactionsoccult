@@ -20241,7 +20241,7 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "-- A list of used data variables:\n-- data.ocCombatTimer: Combat Timer. Used to determine if there are 2 or 3 entities (first cast <40s if always 2 entities)\n-- data.ocLevel: the GUI inputted to specify the player level (optifine things..)\n-- data.ocAdjustedLevel: used to calculate the player's new adjusted level with the buffs. This is cached so we only call it once instead of 3 times\n-- data.ocFoliosCache: a Now() to determine how long ago we cached buff levels\n-- data.ocPrimes: Prime numbers from 20-45\n\nlocal angle = math.rad(120)\nlocal arenapos = { x = 659, y = 132, z = 659 }\nlocal id = eventArgs.spellID\nlocal entity = TensorCore.mGetEntity(eventArgs.entityID)\nlocal currentLevel = data.ocLevel\n\nlocal debug = true\n\nlocal function calculateLevel()\n\tlocal p = TensorCore.mGetPlayer().id\n\tdata.ocAdjustedLevel = data.ocLevel\n\tfor i = 5014, 5018 do\n\t\tif (TensorCore.hasBuff(p, i)) then\n\t\t\tdata.ocAdjustedLevel = data.ocLevel + (i - 5013)\n\t\t\tbreak\n\t\tend\n\tend\n\tdata.ocFoliosCache = Now()\nend\n\nif (data.ocAdjustedLevel == nil or data.ocFoliosCache == nil) or TimeSince(data.ocFoliosCache) > 5000 then\n\tcalculateLevel()\nend\n\nif debug then d(\"data.ocCombatTimer: \" .. tostring(data.ocCombatTimer)) end\nif (data.ocCombatTimer ~= nil) then\n\tif TimeSince(data.ocCombatTimer) < 40000 then angle = math.pi end\nelse\n\tif TensorReactions_CurrentTimer < 40 then angle = math.pi end\nend\n\nlocal primes = data.ocPrimes\nif (primes == nil) then\n\tprimes = { [23] = true, [29] = true, [31] = true, [37] = true, [41] = true, [43] = true }\n\tdata.ocPrimes = primes\nend\n\n-- Functions to calculate safety.\nlocal function drawUnsafe(ent)\n\tlocal h = TensorCore.getHeadingToTarget(arenapos, ent.pos)\n\tlocal red = TensorCore.getStaticFlatDrawer(2818572543)\n\tlocal size = 25\n\tred:addTimedCone(10700, arenapos.x, arenapos.y + 0.05, arenapos.z, size, angle, h)\nend\n\nlocal lvl = data.ocAdjustedLevel\nlocal unsafe = false\n\nif debug then d(\"level: \" .. tostring(lvl)) end\nif (id == 47317) then      -- Page 8: Knowledge Level 4 Holy\n\tunsafe = (lvl % 4 == 0)\n\tif debug then d(\"Page 8 unsafe: \" .. tostring(unsafe)) end\nelseif (id == 47316) then  -- Page 16: Knowledge Level 3 Flare\n\tunsafe = (lvl % 3 == 0)\n\tif debug then d(\"Page 16 unsafe: \" .. tostring(unsafe)) end\nelseif (id == 47315) then  -- Page 64: Knowledge Level 5 Death\n\tunsafe = (lvl % 5 == 0)\n\tif debug then d(\"Page 64 unsafe: \" .. tostring(unsafe)) end\nelseif (id == 47318) then  -- Page 512: Prime Knowledge Level Death\n\tunsafe = primes[lvl] == true\n\tif debug then d(\"Page 512 unsafe: \" .. tostring(unsafe)) end\nend\n\nif (unsafe) then drawUnsafe(entity) end\n\nself.used = true",
+						actionLua = "-- A list of the data variables:\n-- data.ocCombatTimer: Combat Timer. Used to determine if there are 2 or 3 entities (first cast <40s if always 2 entities)\n-- data.ocLevel: The player's new adjusted level with the buffs. This is cached so we only call it once instead of 3 times for performance\n-- data.ocFoliosCache: a Now() to determine how long ago we cached buff levels\n-- data.ocPrimes: Prime numbers from 20-45\n\nlocal angle = math.rad(120)\nlocal arenapos = { x = 659, y = 132, z = 659 }\nlocal id = eventArgs.spellID\nlocal entity = TensorCore.mGetEntity(eventArgs.entityID)\nlocal currentLevel = data.ocLevel\n\nlocal function calculateLevel()\n\tlocal _, _, _, effectiveKnowledgeLevel = TensorCore.getOccultCrescentInfo()\n\tdata.ocLevel = effectiveKnowledgeLevel\n\tdata.ocFoliosCache = Now()\nend\n\nif (data.ocLevel == nil or data.ocFoliosCache == nil) or TimeSince(data.ocFoliosCache) > 5000 then\n\tcalculateLevel()\nend\n\nif (data.ocCombatTimer ~= nil) then\n\tif TimeSince(data.ocCombatTimer) < 40000 then angle = math.pi end\nelse\n\tif TensorReactions_CurrentTimer < 40 then angle = math.pi end\nend\n\nlocal primes = data.ocPrimes\nif (primes == nil) then\n\tprimes = { [23] = true, [29] = true, [31] = true, [37] = true, [41] = true, [43] = true }\n\tdata.ocPrimes = primes\nend\n\n-- Unsafe books checks\nlocal function drawUnsafe(ent)\n\tlocal h = TensorCore.getHeadingToTarget(arenapos, ent.pos)\n\tlocal red = TensorCore.getStaticFlatDrawer(2818572543)\n\tlocal size = 25\n\tred:addTimedCone(10700, arenapos.x, arenapos.y + 0.05, arenapos.z, size, angle, h)\nend\n\nlocal lvl = data.ocLevel\nlocal unsafe = false\n\nif (id == 47317) then      -- Page 8: Knowledge Level 4 Holy\n\tunsafe = (lvl % 4 == 0)\nelseif (id == 47316) then  -- Page 16: Knowledge Level 3 Flare\n\tunsafe = (lvl % 3 == 0)\nelseif (id == 47315) then  -- Page 64: Knowledge Level 5 Death\n\tunsafe = (lvl % 5 == 0)\nelseif (id == 47318) then  -- Page 512: Prime Knowledge Level Death\n\tunsafe = primes[lvl] == true\nend\n\nif (unsafe) then drawUnsafe(entity) end\n\nself.used = true",
 						conditions = 
 						{
 							
@@ -20298,71 +20298,8 @@ local tbl =
 				},
 			},
 			eventType = 3,
-			name = "[CE] Forbidden Folios",
-			uuid = "ccc2cae0-35cf-0c50-932d-ef8d760c5c9f",
-			version = 2,
-		},
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "-- Number UpDown -> shared global.  Read anywhere as: data.ocLevel\nlocal GUI_FLAGS = 97\n\nif data.ocLevel == nil then data.ocLevel = 20 end\n\nGUI:Begin(\"OCLevelBox#Cherry\", true, GUI_FLAGS)\n\nGUI:SetWindowFontSize(1.25)\nGUI:TextColored(0, 1, 1, 1.0, \"Forbidden Folios CE Helper\")\nGUI:SetWindowFontSize(1.0)\nGUI:Text(\"Input your base level here\\n(Not your buffed level)\")\nGUI:PushItemWidth(90)\ndata.ocLevel = GUI:InputInt(\"##ocLevel\", data.ocLevel, 1, 5)\nGUI:PopItemWidth()\n\n-- Clamping values\nif data.ocLevel < 20  then data.ocLevel = 20  end\nif data.ocLevel > 40 then data.ocLevel = 40 end\n\nGUI:End()\n\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"2666de35-d0cd-9a8c-8403-c340979cf748",
-								true,
-							},
-							
-							{
-								"2b880874-422f-5e17-92a3-84357c871511",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_CD",
-						uuid = "6074fa81-0521-884d-b9c4-c5f18bd1fbd7",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1346,
-						uuid = "2666de35-d0cd-9a8c-8403-c340979cf748",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "if data.ocFoliosGUICheck ~= nil then\n\tif TimeSince(data.ocFoliosGUICheck) < 5000 then\n\t\treturn data.ocFoliosGUIStatus\n\telse\n\t\tlocal playerpos = TensorCore.mGetPlayer().pos\n\t\tlocal arenapos = { x = 659, y = 132, z = 659 }\n\n\t\tdata.ocFoliosGUICheck = Now()\n\t\tdata.ocFoliosGUIStatus = TensorCore.getDistance2d(playerpos, arenapos) < 30\n\n\t\tif (data.ocFoliosGUIStatus ~= nil) then\n\t\t\treturn data.ocFoliosGUIStatus\n\t\telse\n\t\t\treturn false\n\t\tend\n\tend\nend\n\ndata.ocFoliosGUICheck = Now()\ndata.ocFoliosGUIStatus = false\nreturn false",
-						name = "Throttle",
-						uuid = "2b880874-422f-5e17-92a3-84357c871511",
-						version = 3,
-					},
-				},
-			},
-			eventType = 12,
-			name = "[CE] Forbidden Folios GUI",
-			uuid = "2677ee8f-eb49-ba55-a3d6-ff9a427fa66d",
+			name = "[Forbidden Folios] Draws",
+			uuid = "9836e89a-9906-e9ba-8aa9-4739b26436b3",
 			version = 2,
 		},
 	}, 
