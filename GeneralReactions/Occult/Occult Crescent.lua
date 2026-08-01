@@ -6018,7 +6018,7 @@ local tbl =
 			uuid = "c9178b74-f32c-817a-950c-32b1fc0a7ee8",
 			version = 2,
 		},
-		inheritedIndex = 64,
+		inheritedIndex = 65,
 	},
 	
 	{
@@ -6289,7 +6289,7 @@ local tbl =
 			uuid = "eb688e35-87ab-c255-a605-63f5423c3c0a",
 			version = 2,
 		},
-		inheritedIndex = 65,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -6702,7 +6702,7 @@ local tbl =
 			uuid = "1c6bbd54-6018-485a-9f05-9819fa8aa68e",
 			version = 2,
 		},
-		inheritedIndex = 65,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -7194,7 +7194,7 @@ local tbl =
 			uuid = "9c5b9d73-ae0e-195a-940a-540bca4454b2",
 			version = 2,
 		},
-		inheritedIndex = 66,
+		inheritedIndex = 67,
 	},
 	
 	{
@@ -7336,7 +7336,7 @@ local tbl =
 			uuid = "b175b050-f2bb-2ffe-bd7e-bff2941f8634",
 			version = 2,
 		},
-		inheritedIndex = 68,
+		inheritedIndex = 69,
 	},
 	
 	{
@@ -7572,7 +7572,7 @@ local tbl =
 			uuid = "9278be18-034c-9f92-abab-1d3e0055a418",
 			version = 2,
 		},
-		inheritedIndex = 69,
+		inheritedIndex = 70,
 	},
 	
 	{
@@ -7816,7 +7816,7 @@ local tbl =
 			uuid = "4c3d9549-4ff9-6f51-a0a1-292851ddf5a7",
 			version = 2,
 		},
-		inheritedIndex = 70,
+		inheritedIndex = 71,
 	},
 	
 	{
@@ -8022,7 +8022,7 @@ local tbl =
 			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
 			version = 2,
 		},
-		inheritedIndex = 71,
+		inheritedIndex = 72,
 	},
 	
 	{
@@ -10465,7 +10465,7 @@ local tbl =
 			uuid = "978328eb-ccac-48cf-bcfc-9c31d4cf6f4d",
 			version = 2,
 		},
-		inheritedIndex = 74,
+		inheritedIndex = 75,
 	},
 	
 	{
@@ -16279,7 +16279,7 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
-		inheritedIndex = 75,
+		inheritedIndex = 76,
 	},
 	
 	{
@@ -16367,7 +16367,7 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 62,
+		inheritedIndex = 63,
 	},
 	
 	{
@@ -16436,7 +16436,7 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "local currentWeather = GetCurrentWeather()\n\nif GlobalCurrentWeather == nil or GlobalCurrentWeather ~= currentWeather then\n    GlobalCurrentWeather = currentWeather\n    if currentWeather == 192 then\n        TensorCore.showRaidWarning(\"Weather for Forked Tower spawned!\", 0, 15)\n    end\nend\nself.used = true",
+						actionLua = "local currentWeather = GetCurrentWeather()\n\nif GlobalCurrentWeather == nil or GlobalCurrentWeather ~= currentWeather then\n    GlobalCurrentWeather = currentWeather\n    if currentWeather == 192 then\n       TensorCore.showRaidWarning(\"Weather for Forked Tower spawned!\", 0, 15)\n    end\nend\nself.used = true",
 						conditions = 
 						{
 							
@@ -16488,9 +16488,80 @@ local tbl =
 					},
 				},
 			},
-			name = "[OC] Weather Shotcall",
+			enabled = false,
+			name = "[OC] Weather Text Shotcall",
 			throttleTime = 5000,
 			uuid = "5dc65816-0d2a-4fd3-9218-ad0eb935e372",
+			version = 2,
+		},
+		inheritedIndex = 63,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local currentWeather = GetCurrentWeather()\n\nif GlobalCurrentWeather == nil or GlobalCurrentWeather ~= currentWeather then\n    GlobalCurrentWeather = currentWeather\n    if currentWeather == 192 then\n        AnyoneCore.Shotcall(\"Weather for Forked Tower spawned.\", false, 8, true)\n        TensorCore.sendParsedChatMessage(\"/e {color:228,208,10}[Occult Crescent Notification]{color:255,255,255} Weather for forked tower spawned! <se.9>\")\n    end\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"bcca0f60-82e7-833b-ad3e-08fe2b194132",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Weather Shotcall",
+						uuid = "e907fad8-1f1d-e527-921c-763fe3fb1e6e",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "self.used = true",
+						conditions = 
+						{
+							
+							{
+								"bcca0f60-82e7-833b-ad3e-08fe2b194132",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "empty reaction for throttle",
+						uuid = "67d56c9c-13f2-7092-ac36-25425bedd3e4",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "North Horn",
+						uuid = "bcca0f60-82e7-833b-ad3e-08fe2b194132",
+						version = 3,
+					},
+				},
+			},
+			name = "[OC] Weather sound shotcall",
+			throttleTime = 5000,
+			uuid = "9ba5faa6-7acc-ce33-8f9a-0e4357579a21",
 			version = 2,
 		},
 		inheritedIndex = 62,
@@ -16509,7 +16580,7 @@ local tbl =
 			uuid = "7affaeba-16a3-388a-9c7a-193cccdb0287",
 			version = 2,
 		},
-		inheritedIndex = 63,
+		inheritedIndex = 64,
 	},
 	
 	{
@@ -16637,7 +16708,7 @@ local tbl =
 			uuid = "d21f4c04-282f-d94a-9897-db3b516a5b14",
 			version = 2,
 		},
-		inheritedIndex = 78,
+		inheritedIndex = 79,
 	},
 	
 	{
@@ -16869,7 +16940,7 @@ local tbl =
 			uuid = "a7831eef-4074-1c28-879e-0f89fe93b737",
 			version = 2,
 		},
-		inheritedIndex = 82,
+		inheritedIndex = 83,
 	},
 	
 	{
@@ -16978,7 +17049,7 @@ local tbl =
 			uuid = "1df0282e-0a27-b51a-a199-bd462057c267",
 			version = 2,
 		},
-		inheritedIndex = 86,
+		inheritedIndex = 87,
 	},
 	
 	{
@@ -17084,7 +17155,7 @@ local tbl =
 			uuid = "99980e5a-5d62-8ea2-ad9f-9eb9bb611f5d",
 			version = 2,
 		},
-		inheritedIndex = 88,
+		inheritedIndex = 89,
 	},
 	
 	{
@@ -17188,7 +17259,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 93,
+		inheritedIndex = 94,
 	},
 	
 	{
@@ -17330,7 +17401,7 @@ local tbl =
 			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
 			version = 2,
 		},
-		inheritedIndex = 93,
+		inheritedIndex = 94,
 	},
 	
 	{
@@ -17532,7 +17603,7 @@ local tbl =
 			uuid = "bfd39011-66e4-7ebc-a314-9350aaa99856",
 			version = 2,
 		},
-		inheritedIndex = 93,
+		inheritedIndex = 94,
 	},
 	
 	{
@@ -17624,7 +17695,7 @@ local tbl =
 			uuid = "06acd7e2-3a2b-4c8b-a09a-482655849fc6",
 			version = 2,
 		},
-		inheritedIndex = 93,
+		inheritedIndex = 94,
 	},
 	
 	{
@@ -17739,7 +17810,7 @@ local tbl =
 			uuid = "ae235d51-4679-9c09-8261-885a05bc74bb",
 			version = 2,
 		},
-		inheritedIndex = 93,
+		inheritedIndex = 94,
 	},
 	
 	{
@@ -17837,7 +17908,7 @@ local tbl =
 			uuid = "6f59f82c-6eca-9703-b3db-8c94e14d1ae8",
 			version = 2,
 		},
-		inheritedIndex = 73,
+		inheritedIndex = 74,
 	},
 	
 	{
@@ -17907,7 +17978,7 @@ local tbl =
 			uuid = "e4df0c75-0fec-4c79-9c55-f892facb8a5b",
 			version = 2,
 		},
-		inheritedIndex = 74,
+		inheritedIndex = 75,
 	},
 	
 	{
@@ -18043,7 +18114,7 @@ local tbl =
 			uuid = "65c65955-c622-bb22-b8e8-dffca6394876",
 			version = 2,
 		},
-		inheritedIndex = 93,
+		inheritedIndex = 94,
 	},
 	
 	{
@@ -18229,7 +18300,7 @@ local tbl =
 			uuid = "de4b11dc-cace-5590-b9b4-6d768416d2c9",
 			version = 2,
 		},
-		inheritedIndex = 93,
+		inheritedIndex = 94,
 	},
 	
 	{
@@ -18348,7 +18419,7 @@ local tbl =
 			uuid = "ca2ed4c5-1790-ab33-930e-7944b6c02ebf",
 			version = 2,
 		},
-		inheritedIndex = 93,
+		inheritedIndex = 94,
 	},
 	
 	{
@@ -18507,7 +18578,7 @@ local tbl =
 			uuid = "6d93ba14-1d65-6f32-a578-e5194a8f4fdd",
 			version = 2,
 		},
-		inheritedIndex = 93,
+		inheritedIndex = 94,
 	},
 	
 	{
@@ -18597,7 +18668,7 @@ local tbl =
 			uuid = "2f0e26c9-d9fc-79b6-add7-bac559401508",
 			version = 2,
 		},
-		inheritedIndex = 79,
+		inheritedIndex = 80,
 	},
 	
 	{
@@ -18693,7 +18764,7 @@ local tbl =
 			uuid = "d44cca76-d6a5-bed0-a773-b841eccd6f5e",
 			version = 2,
 		},
-		inheritedIndex = 80,
+		inheritedIndex = 81,
 	},
 	
 	{
@@ -18889,7 +18960,7 @@ local tbl =
 			uuid = "2573b380-d312-118e-890b-67fb131aeaa9",
 			version = 2,
 		},
-		inheritedIndex = 81,
+		inheritedIndex = 82,
 	},
 	
 	{
