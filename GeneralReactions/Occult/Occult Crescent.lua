@@ -12495,6 +12495,11 @@ local tbl =
 								"4422212c-3126-2a92-a5fe-15dcceb5fb00",
 								false,
 							},
+							
+							{
+								"e2762103-a99f-86dc-ad49-b79f66f96561",
+								true,
+							},
 						},
 						gVar = "ACR_RikuWAR3_Hotbar_DutyAction1",
 						name = "Occult Cure II",
@@ -12541,6 +12546,11 @@ local tbl =
 							{
 								"4422212c-3126-2a92-a5fe-15dcceb5fb00",
 								false,
+							},
+							
+							{
+								"e2762103-a99f-86dc-ad49-b79f66f96561",
+								true,
 							},
 						},
 						gVar = "ACR_RikuWAR3_Hotbar_DutyAction2",
@@ -16436,7 +16446,7 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "local currentWeather = GetCurrentWeather()\n\nif GlobalCurrentWeather == nil or GlobalCurrentWeather ~= currentWeather then\n    GlobalCurrentWeather = currentWeather\n    if currentWeather == 192 then\n       TensorCore.showRaidWarning(\"Weather for Forked Tower spawned!\", 0, 15)\n    end\nend\nself.used = true",
+						actionLua = "local currentWeather = GetCurrentWeather()\n\nif GlobalCurrentWeather == nil or GlobalCurrentWeather ~= currentWeather then\n    GlobalCurrentWeather = currentWeather\n    if currentWeather == 192 then\n       TensorCore.showRaidWarning(\"Weather for Forked Tower spawned!\", 0, 15)\n\t   TensorCore.sendParsedChatMessage(\"/e {color:228,208,10}[Occult Crescent Notification]{color:255,255,255} Weather for forked tower spawned!\")\n    end\nend\nself.used = true",
 						conditions = 
 						{
 							
