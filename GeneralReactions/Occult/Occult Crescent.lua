@@ -6018,7 +6018,7 @@ local tbl =
 			uuid = "c9178b74-f32c-817a-950c-32b1fc0a7ee8",
 			version = 2,
 		},
-		inheritedIndex = 63,
+		inheritedIndex = 64,
 	},
 	
 	{
@@ -6289,7 +6289,7 @@ local tbl =
 			uuid = "eb688e35-87ab-c255-a605-63f5423c3c0a",
 			version = 2,
 		},
-		inheritedIndex = 64,
+		inheritedIndex = 65,
 	},
 	
 	{
@@ -6702,7 +6702,7 @@ local tbl =
 			uuid = "1c6bbd54-6018-485a-9f05-9819fa8aa68e",
 			version = 2,
 		},
-		inheritedIndex = 64,
+		inheritedIndex = 65,
 	},
 	
 	{
@@ -7194,7 +7194,7 @@ local tbl =
 			uuid = "9c5b9d73-ae0e-195a-940a-540bca4454b2",
 			version = 2,
 		},
-		inheritedIndex = 65,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -7336,7 +7336,7 @@ local tbl =
 			uuid = "b175b050-f2bb-2ffe-bd7e-bff2941f8634",
 			version = 2,
 		},
-		inheritedIndex = 67,
+		inheritedIndex = 68,
 	},
 	
 	{
@@ -7572,7 +7572,7 @@ local tbl =
 			uuid = "9278be18-034c-9f92-abab-1d3e0055a418",
 			version = 2,
 		},
-		inheritedIndex = 68,
+		inheritedIndex = 69,
 	},
 	
 	{
@@ -7816,7 +7816,7 @@ local tbl =
 			uuid = "4c3d9549-4ff9-6f51-a0a1-292851ddf5a7",
 			version = 2,
 		},
-		inheritedIndex = 69,
+		inheritedIndex = 70,
 	},
 	
 	{
@@ -8022,7 +8022,7 @@ local tbl =
 			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
 			version = 2,
 		},
-		inheritedIndex = 70,
+		inheritedIndex = 71,
 	},
 	
 	{
@@ -10465,7 +10465,7 @@ local tbl =
 			uuid = "978328eb-ccac-48cf-bcfc-9c31d4cf6f4d",
 			version = 2,
 		},
-		inheritedIndex = 73,
+		inheritedIndex = 74,
 	},
 	
 	{
@@ -14061,22 +14061,6 @@ local tbl =
 		{
 			actions = 
 			{
-			},
-			conditions = 
-			{
-			},
-			name = "P. BLM (nothing yet)",
-			uuid = "36b5f8c2-36c2-2b09-922f-d521c5603d23",
-			version = 2,
-		},
-		inheritedIndex = 53,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
 				
 				{
 					data = 
@@ -15319,7 +15303,7 @@ local tbl =
 			uuid = "78a6c2ef-7e57-09cd-b705-562934c6bedc",
 			version = 2,
 		},
-		inheritedIndex = 59,
+		inheritedIndex = 60,
 	},
 	
 	{
@@ -15675,6 +15659,618 @@ local tbl =
 		{
 			actions = 
 			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction3\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction4\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\"] = false\nself.used = true",
+						clusterMinTarget = 0,
+						conditions = 
+						{
+							
+							{
+								"9352f316-0b87-58b2-9925-9e52f9eaf999",
+								true,
+							},
+							
+							{
+								"57557896-4ccd-2e37-8814-6c11a09cc2d8",
+								true,
+							},
+							
+							{
+								"d89d9a36-ce2b-8495-a04d-0a5bdd112475",
+								true,
+							},
+							
+							{
+								"3d42f605-8171-63e2-9b6b-3ea6dc26f1aa",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_Hotbar_DutyAction5",
+						gVarValue = 2,
+						name = "Stop Cast - Movement",
+						targetType = "Most Clustered Enemy",
+						uuid = "a2823257-b5f5-3535-896c-015822a25e77",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						clusterMinTarget = 0,
+						conditions = 
+						{
+							
+							{
+								"9352f316-0b87-58b2-9925-9e52f9eaf999",
+								true,
+							},
+							
+							{
+								"85b87344-fdd0-770a-bf60-c7dbd58164f8",
+								true,
+							},
+							
+							{
+								"1155fc61-31e5-cd70-a00b-9991dc48a34d",
+								true,
+							},
+							
+							{
+								"74748392-3717-36df-a079-fc75a02dcf22",
+								true,
+							},
+							
+							{
+								"57557896-4ccd-2e37-8814-6c11a09cc2d8",
+								true,
+							},
+							
+							{
+								"65c23125-414a-35fc-aa05-29de4729582e",
+								true,
+							},
+							
+							{
+								"d89d9a36-ce2b-8495-a04d-0a5bdd112475",
+								false,
+							},
+							
+							{
+								"7f6fb411-f42d-391a-aa0e-da3549b1f675",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_Hotbar_DutyAction5",
+						name = "Occult Flare",
+						targetType = "Most Clustered Enemy",
+						uuid = "8da363d4-4840-39a3-af43-3c389ed4f3a8",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						clusterMinTarget = 0,
+						clusterRadius = 5,
+						conditions = 
+						{
+							
+							{
+								"9352f316-0b87-58b2-9925-9e52f9eaf999",
+								true,
+							},
+							
+							{
+								"ac93c2a5-f3d6-b8d8-9253-e1a5fcbf0119",
+								true,
+							},
+							
+							{
+								"68ffdc57-38d6-2993-be46-969f767c278d",
+								true,
+							},
+							
+							{
+								"74748392-3717-36df-a079-fc75a02dcf22",
+								true,
+							},
+							
+							{
+								"57557896-4ccd-2e37-8814-6c11a09cc2d8",
+								true,
+							},
+							
+							{
+								"65c23125-414a-35fc-aa05-29de4729582e",
+								true,
+							},
+							
+							{
+								"d89d9a36-ce2b-8495-a04d-0a5bdd112475",
+								false,
+							},
+							
+							{
+								"7f6fb411-f42d-391a-aa0e-da3549b1f675",
+								true,
+							},
+							
+							{
+								"70c6f43f-b954-5fe2-9bab-cdad00513a82",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_Hotbar_DutyAction1",
+						name = "Occult Fire III",
+						targetType = "Most Clustered Enemy",
+						uuid = "9faf8761-62d7-b561-b503-4da02506936f",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						clusterMinTarget = 0,
+						clusterRadius = 5,
+						conditions = 
+						{
+							
+							{
+								"9352f316-0b87-58b2-9925-9e52f9eaf999",
+								true,
+							},
+							
+							{
+								"6bdf3b44-44df-040b-843d-d21c34fb88b2",
+								true,
+							},
+							
+							{
+								"68ffdc57-38d6-2993-be46-969f767c278d",
+								true,
+							},
+							
+							{
+								"74748392-3717-36df-a079-fc75a02dcf22",
+								true,
+							},
+							
+							{
+								"57557896-4ccd-2e37-8814-6c11a09cc2d8",
+								true,
+							},
+							
+							{
+								"65c23125-414a-35fc-aa05-29de4729582e",
+								true,
+							},
+							
+							{
+								"d89d9a36-ce2b-8495-a04d-0a5bdd112475",
+								false,
+							},
+							
+							{
+								"7f6fb411-f42d-391a-aa0e-da3549b1f675",
+								true,
+							},
+							
+							{
+								"b2d42f2b-3438-a153-b386-ed63324010cd",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_Hotbar_DutyAction2",
+						name = "Occult Blizzard III",
+						targetType = "Most Clustered Enemy",
+						uuid = "0ced8d07-c5a6-c2ae-a5cf-c84350318918",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						clusterMinTarget = 0,
+						clusterRadius = 5,
+						conditions = 
+						{
+							
+							{
+								"9352f316-0b87-58b2-9925-9e52f9eaf999",
+								true,
+							},
+							
+							{
+								"fa12a1b5-576e-c38b-962f-cd36b59c3686",
+								true,
+							},
+							
+							{
+								"68ffdc57-38d6-2993-be46-969f767c278d",
+								true,
+							},
+							
+							{
+								"74748392-3717-36df-a079-fc75a02dcf22",
+								true,
+							},
+							
+							{
+								"57557896-4ccd-2e37-8814-6c11a09cc2d8",
+								true,
+							},
+							
+							{
+								"65c23125-414a-35fc-aa05-29de4729582e",
+								true,
+							},
+							
+							{
+								"d89d9a36-ce2b-8495-a04d-0a5bdd112475",
+								false,
+							},
+							
+							{
+								"7f6fb411-f42d-391a-aa0e-da3549b1f675",
+								true,
+							},
+							
+							{
+								"f02cb8c6-8caa-a0f8-bf06-93dcd07d6986",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_Hotbar_DutyAction3",
+						name = "Occult Thunder III",
+						targetType = "Most Clustered Enemy",
+						uuid = "d6b5e0d2-6979-f582-be5f-dd16a09be702",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						clusterMinTarget = 0,
+						clusterRadius = 5,
+						conditions = 
+						{
+							
+							{
+								"9352f316-0b87-58b2-9925-9e52f9eaf999",
+								true,
+							},
+							
+							{
+								"ac93c2a5-f3d6-b8d8-9253-e1a5fcbf0119",
+								true,
+							},
+							
+							{
+								"68ffdc57-38d6-2993-be46-969f767c278d",
+								true,
+							},
+							
+							{
+								"74748392-3717-36df-a079-fc75a02dcf22",
+								true,
+							},
+							
+							{
+								"57557896-4ccd-2e37-8814-6c11a09cc2d8",
+								true,
+							},
+							
+							{
+								"65c23125-414a-35fc-aa05-29de4729582e",
+								true,
+							},
+							
+							{
+								"d89d9a36-ce2b-8495-a04d-0a5bdd112475",
+								false,
+							},
+							
+							{
+								"7f6fb411-f42d-391a-aa0e-da3549b1f675",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_Hotbar_DutyAction1",
+						name = "Fallback Occult Fire III",
+						targetType = "Most Clustered Enemy",
+						uuid = "fc646d71-001f-5bc7-9377-aeebc1491ff9",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction3\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction4\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\"] = false\nself.used = true",
+						clusterMinTarget = 0,
+						conditions = 
+						{
+							
+							{
+								"9352f316-0b87-58b2-9925-9e52f9eaf999",
+								true,
+							},
+							
+							{
+								"74748392-3717-36df-a079-fc75a02dcf22",
+								true,
+							},
+							
+							{
+								"57557896-4ccd-2e37-8814-6c11a09cc2d8",
+								false,
+							},
+							
+							{
+								"3d42f605-8171-63e2-9b6b-3ea6dc26f1aa",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_Hotbar_DutyAction5",
+						gVarValue = 2,
+						name = "Fallback Deactivate",
+						targetType = "Most Clustered Enemy",
+						uuid = "67c5d075-39c7-011d-bcf9-6d966fdc7af9",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						buffID = 5330,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is BLM",
+						uuid = "9352f316-0b87-58b2-9925-9e52f9eaf999",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,31):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Occult Fire III",
+						uuid = "ac93c2a5-f3d6-b8d8-9253-e1a5fcbf0119",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,32):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Occult Blizzard III",
+						uuid = "6bdf3b44-44df-040b-843d-d21c34fb88b2",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,33):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Occult Thunder III",
+						uuid = "fa12a1b5-576e-c38b-962f-cd36b59c3686",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,34):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Occult Toad",
+						uuid = "52e5a69a-024c-45f9-a6cd-bb49d85f9a37",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,35):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Occult Flare",
+						uuid = "85b87344-fdd0-770a-bf60-c7dbd58164f8",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49072,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Fire/Blizzard/Thunder CD <= 3s",
+						uuid = "68ffdc57-38d6-2993-be46-969f767c278d",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49076,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Occult Flare CD <= 3s",
+						uuid = "1155fc61-31e5-cd70-a00b-9991dc48a34d",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "74748392-3717-36df-a079-fc75a02dcf22",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "57557896-4ccd-2e37-8814-6c11a09cc2d8",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "65c23125-414a-35fc-aa05-29de4729582e",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TensorCore.mGetPlayer():IsMoving()",
+						dequeueIfLuaFalse = true,
+						name = "Player Moving",
+						uuid = "d89d9a36-ce2b-8495-a04d-0a5bdd112475",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 30,
+						name = "Target <= 30y",
+						uuid = "7f6fb411-f42d-391a-aa0e-da3549b1f675",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"]\nor _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"]\nor _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction3\"]\nor _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction4\"]\nor _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\"]",
+						dequeueIfLuaFalse = true,
+						name = "Is Cast queued",
+						uuid = "3d42f605-8171-63e2-9b6b-3ea6dc26f1aa",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5322,
+						dequeueIfLuaFalse = true,
+						name = "Target - Fire Weak",
+						uuid = "70c6f43f-b954-5fe2-9bab-cdad00513a82",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5323,
+						dequeueIfLuaFalse = true,
+						name = "Target - Ice Weak",
+						uuid = "b2d42f2b-3438-a153-b386-ed63324010cd",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5324,
+						dequeueIfLuaFalse = true,
+						name = "Target - Lightning Weak",
+						uuid = "f02cb8c6-8caa-a0f8-bf06-93dcd07d6986",
+						version = 3,
+					},
+				},
+			},
+			name = "P. BLM",
+			throttleTime = 100,
+			timeout = 2.75,
+			uuid = "caa3b091-3ad6-f0cd-a769-4a79b53f5634",
+			version = 2,
+		},
+		inheritedIndex = 58,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
 			},
 			conditions = 
 			{
@@ -15683,7 +16279,7 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
-		inheritedIndex = 74,
+		inheritedIndex = 75,
 	},
 	
 	{
@@ -15771,7 +16367,7 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 61,
+		inheritedIndex = 62,
 	},
 	
 	{
@@ -15827,7 +16423,7 @@ local tbl =
 			uuid = "0c591123-b2c0-d2e0-aca9-9e17cf24d43e",
 			version = 2,
 		},
-		inheritedIndex = 60,
+		inheritedIndex = 61,
 	},
 	
 	{
@@ -15897,7 +16493,7 @@ local tbl =
 			uuid = "5dc65816-0d2a-4fd3-9218-ad0eb935e372",
 			version = 2,
 		},
-		inheritedIndex = 61,
+		inheritedIndex = 62,
 	},
 	
 	{
@@ -15913,7 +16509,7 @@ local tbl =
 			uuid = "7affaeba-16a3-388a-9c7a-193cccdb0287",
 			version = 2,
 		},
-		inheritedIndex = 62,
+		inheritedIndex = 63,
 	},
 	
 	{
@@ -16041,7 +16637,7 @@ local tbl =
 			uuid = "d21f4c04-282f-d94a-9897-db3b516a5b14",
 			version = 2,
 		},
-		inheritedIndex = 77,
+		inheritedIndex = 78,
 	},
 	
 	{
@@ -16273,7 +16869,7 @@ local tbl =
 			uuid = "a7831eef-4074-1c28-879e-0f89fe93b737",
 			version = 2,
 		},
-		inheritedIndex = 81,
+		inheritedIndex = 82,
 	},
 	
 	{
@@ -16382,7 +16978,7 @@ local tbl =
 			uuid = "1df0282e-0a27-b51a-a199-bd462057c267",
 			version = 2,
 		},
-		inheritedIndex = 85,
+		inheritedIndex = 86,
 	},
 	
 	{
@@ -16488,7 +17084,7 @@ local tbl =
 			uuid = "99980e5a-5d62-8ea2-ad9f-9eb9bb611f5d",
 			version = 2,
 		},
-		inheritedIndex = 87,
+		inheritedIndex = 88,
 	},
 	
 	{
@@ -16592,7 +17188,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 92,
+		inheritedIndex = 93,
 	},
 	
 	{
@@ -16734,7 +17330,7 @@ local tbl =
 			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
 			version = 2,
 		},
-		inheritedIndex = 92,
+		inheritedIndex = 93,
 	},
 	
 	{
@@ -16936,7 +17532,7 @@ local tbl =
 			uuid = "bfd39011-66e4-7ebc-a314-9350aaa99856",
 			version = 2,
 		},
-		inheritedIndex = 92,
+		inheritedIndex = 93,
 	},
 	
 	{
@@ -17028,7 +17624,7 @@ local tbl =
 			uuid = "06acd7e2-3a2b-4c8b-a09a-482655849fc6",
 			version = 2,
 		},
-		inheritedIndex = 92,
+		inheritedIndex = 93,
 	},
 	
 	{
@@ -17143,7 +17739,7 @@ local tbl =
 			uuid = "ae235d51-4679-9c09-8261-885a05bc74bb",
 			version = 2,
 		},
-		inheritedIndex = 92,
+		inheritedIndex = 93,
 	},
 	
 	{
@@ -17241,7 +17837,7 @@ local tbl =
 			uuid = "6f59f82c-6eca-9703-b3db-8c94e14d1ae8",
 			version = 2,
 		},
-		inheritedIndex = 72,
+		inheritedIndex = 73,
 	},
 	
 	{
@@ -17311,7 +17907,7 @@ local tbl =
 			uuid = "e4df0c75-0fec-4c79-9c55-f892facb8a5b",
 			version = 2,
 		},
-		inheritedIndex = 73,
+		inheritedIndex = 74,
 	},
 	
 	{
@@ -17447,7 +18043,7 @@ local tbl =
 			uuid = "65c65955-c622-bb22-b8e8-dffca6394876",
 			version = 2,
 		},
-		inheritedIndex = 92,
+		inheritedIndex = 93,
 	},
 	
 	{
@@ -17633,7 +18229,7 @@ local tbl =
 			uuid = "de4b11dc-cace-5590-b9b4-6d768416d2c9",
 			version = 2,
 		},
-		inheritedIndex = 92,
+		inheritedIndex = 93,
 	},
 	
 	{
@@ -17752,7 +18348,7 @@ local tbl =
 			uuid = "ca2ed4c5-1790-ab33-930e-7944b6c02ebf",
 			version = 2,
 		},
-		inheritedIndex = 92,
+		inheritedIndex = 93,
 	},
 	
 	{
@@ -17911,7 +18507,7 @@ local tbl =
 			uuid = "6d93ba14-1d65-6f32-a578-e5194a8f4fdd",
 			version = 2,
 		},
-		inheritedIndex = 92,
+		inheritedIndex = 93,
 	},
 	
 	{
@@ -18001,7 +18597,7 @@ local tbl =
 			uuid = "2f0e26c9-d9fc-79b6-add7-bac559401508",
 			version = 2,
 		},
-		inheritedIndex = 78,
+		inheritedIndex = 79,
 	},
 	
 	{
@@ -18097,7 +18693,7 @@ local tbl =
 			uuid = "d44cca76-d6a5-bed0-a773-b841eccd6f5e",
 			version = 2,
 		},
-		inheritedIndex = 79,
+		inheritedIndex = 80,
 	},
 	
 	{
@@ -18293,7 +18889,7 @@ local tbl =
 			uuid = "2573b380-d312-118e-890b-67fb131aeaa9",
 			version = 2,
 		},
-		inheritedIndex = 80,
+		inheritedIndex = 81,
 	},
 	
 	{
