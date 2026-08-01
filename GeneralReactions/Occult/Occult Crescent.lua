@@ -6018,7 +6018,7 @@ local tbl =
 			uuid = "c9178b74-f32c-817a-950c-32b1fc0a7ee8",
 			version = 2,
 		},
-		inheritedIndex = 60,
+		inheritedIndex = 63,
 	},
 	
 	{
@@ -6289,7 +6289,7 @@ local tbl =
 			uuid = "eb688e35-87ab-c255-a605-63f5423c3c0a",
 			version = 2,
 		},
-		inheritedIndex = 61,
+		inheritedIndex = 64,
 	},
 	
 	{
@@ -6702,7 +6702,7 @@ local tbl =
 			uuid = "1c6bbd54-6018-485a-9f05-9819fa8aa68e",
 			version = 2,
 		},
-		inheritedIndex = 61,
+		inheritedIndex = 64,
 	},
 	
 	{
@@ -7194,7 +7194,7 @@ local tbl =
 			uuid = "9c5b9d73-ae0e-195a-940a-540bca4454b2",
 			version = 2,
 		},
-		inheritedIndex = 62,
+		inheritedIndex = 65,
 	},
 	
 	{
@@ -7336,7 +7336,7 @@ local tbl =
 			uuid = "b175b050-f2bb-2ffe-bd7e-bff2941f8634",
 			version = 2,
 		},
-		inheritedIndex = 64,
+		inheritedIndex = 67,
 	},
 	
 	{
@@ -7572,7 +7572,7 @@ local tbl =
 			uuid = "9278be18-034c-9f92-abab-1d3e0055a418",
 			version = 2,
 		},
-		inheritedIndex = 65,
+		inheritedIndex = 68,
 	},
 	
 	{
@@ -7816,7 +7816,7 @@ local tbl =
 			uuid = "4c3d9549-4ff9-6f51-a0a1-292851ddf5a7",
 			version = 2,
 		},
-		inheritedIndex = 66,
+		inheritedIndex = 69,
 	},
 	
 	{
@@ -8022,7 +8022,7 @@ local tbl =
 			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
 			version = 2,
 		},
-		inheritedIndex = 67,
+		inheritedIndex = 70,
 	},
 	
 	{
@@ -10465,7 +10465,7 @@ local tbl =
 			uuid = "978328eb-ccac-48cf-bcfc-9c31d4cf6f4d",
 			version = 2,
 		},
-		inheritedIndex = 70,
+		inheritedIndex = 73,
 	},
 	
 	{
@@ -12115,6 +12115,718 @@ local tbl =
 				{
 					data = 
 					{
+						aType = "ACR",
+						clusterMinTarget = 0,
+						conditions = 
+						{
+							
+							{
+								"97b4fbc4-3d22-e8e1-8baf-951f815047e9",
+								true,
+							},
+							
+							{
+								"ae040a9d-860d-0b4b-a55f-c82b4035177a",
+								true,
+							},
+							
+							{
+								"20840724-ed31-adac-bb7f-9a94958e814e",
+								true,
+							},
+							
+							{
+								"93b471e5-9a85-d70d-b386-507f7561930c",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_Hotbar_DutyAction5",
+						gVarValue = 2,
+						name = "Stop Occult Holy - Movement",
+						targetType = "Most Clustered Enemy",
+						uuid = "d20b0408-f597-62b5-ba94-b703f298b7dd",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						clusterMinTarget = 0,
+						conditions = 
+						{
+							
+							{
+								"00099e85-cb04-54af-86e6-bc086ac50320",
+								true,
+							},
+							
+							{
+								"13937b42-ea6b-0ff6-8de3-df1fb92b7c6e",
+								true,
+							},
+							
+							{
+								"2313ec24-56c9-f3da-9dae-cd45fa21c991",
+								true,
+							},
+							
+							{
+								"ae040a9d-860d-0b4b-a55f-c82b4035177a",
+								true,
+							},
+							
+							{
+								"722134e6-20ae-466b-a92d-b4c23b7c6ec6",
+								true,
+							},
+							
+							{
+								"bb5c6c03-8599-914d-ad3f-b7f753e6cbf0",
+								true,
+							},
+							
+							{
+								"97b4fbc4-3d22-e8e1-8baf-951f815047e9",
+								true,
+							},
+							
+							{
+								"20840724-ed31-adac-bb7f-9a94958e814e",
+								false,
+							},
+						},
+						gVar = "ACR_RikuWAR3_Hotbar_DutyAction5",
+						name = "Occult Holy",
+						targetType = "Most Clustered Enemy",
+						uuid = "11c26eb8-9bb6-f750-84d1-f96b3c1daaac",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = false\nself.used = true",
+						clusterMinTarget = 0,
+						conditions = 
+						{
+							
+							{
+								"97b4fbc4-3d22-e8e1-8baf-951f815047e9",
+								true,
+							},
+							
+							{
+								"2313ec24-56c9-f3da-9dae-cd45fa21c991",
+								true,
+							},
+							
+							{
+								"ae040a9d-860d-0b4b-a55f-c82b4035177a",
+								false,
+							},
+							
+							{
+								"93b471e5-9a85-d70d-b386-507f7561930c",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_Hotbar_DutyAction5",
+						gVarValue = 2,
+						name = "Fallback Deactivate",
+						targetType = "Most Clustered Enemy",
+						uuid = "56c20222-a360-74d5-8006-a9729dc0af2f",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						buffID = 5329,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is WHM",
+						uuid = "97b4fbc4-3d22-e8e1-8baf-951f815047e9",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,35):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Occult Holy",
+						uuid = "00099e85-cb04-54af-86e6-bc086ac50320",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49071,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Occult Holy CD <= 3s",
+						uuid = "13937b42-ea6b-0ff6-8de3-df1fb92b7c6e",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "2313ec24-56c9-f3da-9dae-cd45fa21c991",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "ae040a9d-860d-0b4b-a55f-c82b4035177a",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
+						dequeueIfLuaFalse = true,
+						uuid = "722134e6-20ae-466b-a92d-b4c23b7c6ec6",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 30,
+						name = "Target <= 30y",
+						uuid = "bb5c6c03-8599-914d-ad3f-b7f753e6cbf0",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TensorCore.mGetPlayer():IsMoving()",
+						dequeueIfLuaFalse = true,
+						name = "Player Moving",
+						uuid = "20840724-ed31-adac-bb7f-9a94958e814e",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\"]",
+						dequeueIfLuaFalse = true,
+						name = "Is Occult Holy queued",
+						uuid = "93b471e5-9a85-d70d-b386-507f7561930c",
+						version = 3,
+					},
+				},
+			},
+			name = "P. WHM - Attacks",
+			throttleTime = 100,
+			timeout = 2.75,
+			uuid = "337763c3-1547-f9b4-bd94-5d27cdf7d7ee",
+			version = 2,
+		},
+		inheritedIndex = 46,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local GUI_FLAGS = 97\n\n-- Initialize table and toggle states if they don't exist yet\nPWHMToggles = PWHMToggles or {}\nif PWHMToggles.ST == nil then PWHMToggles.ST = true end\nif PWHMToggles.AOE == nil then PWHMToggles.AOE = true end\nif PWHMToggles.Rez == nil then PWHMToggles.Rez = true end\n\nGUI:Begin(\"OCWHMBox#ton618\", true, GUI_FLAGS)\n\n-- Header Title (2 Lines)\nGUI:SetWindowFontSize(1.3)\nGUI:TextColored(0, 1, 1, 1.0, \"Phantom WHM\\nHeal Toggles\")\nGUI:Separator()\n\n-- Set font size for the toggle buttons\nGUI:SetWindowFontSize(1.25)\n\n-- Helper function to draw dynamic toggle buttons\nlocal function DrawToggleButton(label, key, width, height)\n    width = width or 120\n    height = height or 30\n\n    if PWHMToggles[key] then\n        -- Darker Green when ON (Normal, Hovered, Active)\n        GUI:PushStyleColor(GUI.Col_Button,        0.10, 0.45, 0.10, 1.0)\n        GUI:PushStyleColor(GUI.Col_ButtonHovered, 0.15, 0.55, 0.15, 1.0)\n        GUI:PushStyleColor(GUI.Col_ButtonActive,  0.05, 0.35, 0.05, 1.0)\n    else\n        -- Dark Grey when OFF (Normal, Hovered, Active)\n        GUI:PushStyleColor(GUI.Col_Button,        0.30, 0.30, 0.30, 1.0)\n        GUI:PushStyleColor(GUI.Col_ButtonHovered, 0.40, 0.40, 0.40, 1.0)\n        GUI:PushStyleColor(GUI.Col_ButtonActive,  0.20, 0.20, 0.20, 1.0)\n    end\n\n    -- Toggle the state when clicked\n    if GUI:Button(label, width, height) then\n        PWHMToggles[key] = not PWHMToggles[key]\n    end\n\n    -- Clean up all 3 pushed colors\n    GUI:PopStyleColor(3)\nend\n\n-- Render Toggle Buttons (Label, Table Key, Width, Height)\nDrawToggleButton(\"ST\", \"ST\", 120, 30)\nDrawToggleButton(\"AOE\", \"AOE\", 120, 30)\nDrawToggleButton(\"Rez\", \"Rez\", 120, 30)\n\n-- Reset font size back to default\nGUI:SetWindowFontSize(1.0)\n\nGUI:End()\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"55457aa9-df38-a8bc-90ab-eb59b9f7655c",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						uuid = "1de7001f-cf04-925a-9f7d-9d6e45feba63",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						buffID = 5329,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is WHM",
+						uuid = "55457aa9-df38-a8bc-90ab-eb59b9f7655c",
+						version = 3,
+					},
+				},
+			},
+			eventType = 13,
+			name = "P. WHM - UI",
+			uuid = "c2d39c48-9f66-9027-921f-e77b0d24dce1",
+			version = 2,
+		},
+		inheritedIndex = 47,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"e2762103-a99f-86dc-ad49-b79f66f96561",
+								true,
+							},
+							
+							{
+								"3ca882ee-8189-76a0-b3ca-e126e1a77551",
+								true,
+							},
+							
+							{
+								"4422212c-3126-2a92-a5fe-15dcceb5fb00",
+								true,
+							},
+							
+							{
+								"c225207c-fb94-0582-8b77-6b69080b1b3c",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Stop Heal - Movement",
+						uuid = "7c2a4c96-d765-31c1-807a-9b37b287b54f",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						conditions = 
+						{
+							
+							{
+								"3ca882ee-8189-76a0-b3ca-e126e1a77551",
+								true,
+							},
+							
+							{
+								"205ce590-576c-805f-bb70-b65b01a445fe",
+								true,
+							},
+							
+							{
+								"505e3dab-394d-8421-81ad-d9ecf712590a",
+								true,
+							},
+							
+							{
+								"ab85b088-5413-02bf-8b95-ea4abcf8e1d5",
+								true,
+							},
+							
+							{
+								"73fada43-7a3e-1eb8-bcbb-9c455c2e639b",
+								true,
+							},
+							
+							{
+								"4422212c-3126-2a92-a5fe-15dcceb5fb00",
+								false,
+							},
+						},
+						gVar = "ACR_RikuWAR3_Hotbar_DutyAction1",
+						name = "Occult Cure II",
+						targetType = "Detection Target",
+						uuid = "d7d9d7b2-357e-4e4e-8f79-21252924b15b",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						conditions = 
+						{
+							
+							{
+								"3ca882ee-8189-76a0-b3ca-e126e1a77551",
+								true,
+							},
+							
+							{
+								"205ce590-576c-805f-bb70-b65b01a445fe",
+								true,
+							},
+							
+							{
+								"50a18b96-eaba-3dbe-a1de-80acadb5c7d7",
+								true,
+							},
+							
+							{
+								"59a38c75-1a1a-984b-9728-4c51ae771b49",
+								true,
+							},
+							
+							{
+								"c42bc024-b3fc-93de-b4ab-3a9ee2948f9d",
+								true,
+							},
+							
+							{
+								"4422212c-3126-2a92-a5fe-15dcceb5fb00",
+								false,
+							},
+						},
+						gVar = "ACR_RikuWAR3_Hotbar_DutyAction2",
+						name = "Occult Cure III",
+						uuid = "06ac1aba-4f61-2150-a12e-2b131ff31b87",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"e2762103-a99f-86dc-ad49-b79f66f96561",
+								true,
+							},
+							
+							{
+								"3ca882ee-8189-76a0-b3ca-e126e1a77551",
+								false,
+							},
+							
+							{
+								"205ce590-576c-805f-bb70-b65b01a445fe",
+								true,
+							},
+							
+							{
+								"c225207c-fb94-0582-8b77-6b69080b1b3c",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Fallback Deactivate",
+						uuid = "f80fcf7c-232e-7d53-bea6-34e07dd86596",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						buffID = 5329,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is WHM",
+						uuid = "e2762103-a99f-86dc-ad49-b79f66f96561",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "3ca882ee-8189-76a0-b3ca-e126e1a77551",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "205ce590-576c-805f-bb70-b65b01a445fe",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Party",
+						comparator = 2,
+						conditionType = 4,
+						inRangeValue = 15,
+						name = "Range - 15 yalms",
+						partyTargetType = "Detection Target",
+						uuid = "9e180cea-980c-71f5-963e-b57f98e6d536",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Party",
+						comparator = 2,
+						conditionType = 4,
+						inRangeValue = 30,
+						name = "Range - 30 yalms",
+						partyTargetType = "Detection Target",
+						uuid = "2dd5888f-d9af-4062-a698-1ae78e2d2b6c",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Party",
+						comparator = 2,
+						conditionType = 2,
+						hpValue = 50,
+						name = "HP - 50%",
+						partyTargetType = "Detection Target",
+						uuid = "cd643437-cbe4-9fd5-bfd9-546de754b118",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Party",
+						comparator = 2,
+						conditionType = 2,
+						hpValue = 75,
+						name = "HP - 75%",
+						partyTargetType = "Detection Target",
+						uuid = "3a745689-e1b3-4404-8721-e462780db477",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Filter",
+						conditions = 
+						{
+							
+							{
+								"9e180cea-980c-71f5-963e-b57f98e6d536",
+								true,
+							},
+							
+							{
+								"3a745689-e1b3-4404-8721-e462780db477",
+								true,
+							},
+						},
+						dequeueIfLuaFalse = true,
+						filterTargetType = "Party",
+						name = "F - Occult Cure III",
+						partyTargetNumber = 3,
+						uuid = "50a18b96-eaba-3dbe-a1de-80acadb5c7d7",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Filter",
+						conditions = 
+						{
+							
+							{
+								"2dd5888f-d9af-4062-a698-1ae78e2d2b6c",
+								true,
+							},
+							
+							{
+								"cd643437-cbe4-9fd5-bfd9-546de754b118",
+								true,
+							},
+						},
+						dequeueIfLuaFalse = true,
+						filterTargetSubtype = "Lowest HP",
+						filterTargetType = "Party",
+						name = "F - 50% @ 30y",
+						uuid = "505e3dab-394d-8421-81ad-d9ecf712590a",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 3,
+						dequeueIfLuaFalse = true,
+						mpType = 2,
+						mpValue = 1500,
+						name = "MP >= 1500",
+						uuid = "ab85b088-5413-02bf-8b95-ea4abcf8e1d5",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 3,
+						dequeueIfLuaFalse = true,
+						mpType = 2,
+						mpValue = 3000,
+						name = "MP >= 3000",
+						uuid = "59a38c75-1a1a-984b-9728-4c51ae771b49",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return PWHMToggles.ST ~= nil and PWHMToggles.ST",
+						dequeueIfLuaFalse = true,
+						name = "Toggle - ST",
+						uuid = "73fada43-7a3e-1eb8-bcbb-9c455c2e639b",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return PWHMToggles.AOE ~= nil and PWHMToggles.AOE",
+						dequeueIfLuaFalse = true,
+						name = "Toggle - AOE",
+						uuid = "c42bc024-b3fc-93de-b4ab-3a9ee2948f9d",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TensorCore.mGetPlayer():IsMoving()",
+						dequeueIfLuaFalse = true,
+						name = "Player Moving",
+						uuid = "4422212c-3126-2a92-a5fe-15dcceb5fb00",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"]\n       or _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"]",
+						dequeueIfLuaFalse = true,
+						name = "Is Heal queued",
+						uuid = "c225207c-fb94-0582-8b77-6b69080b1b3c",
+						version = 3,
+					},
+				},
+			},
+			name = "P. WHM - Heals",
+			throttleTime = 100,
+			timeout = 2.75,
+			uuid = "9d280002-40a4-9e37-b14e-081affb3b3ea",
+			version = 2,
+		},
+		inheritedIndex = 48,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
 						aType = "Lua",
 						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction4\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\"] = false\nself.used = true",
 						conditions = 
@@ -13091,7 +13803,7 @@ local tbl =
 			uuid = "a2c85c0f-8023-3f9f-803e-b42c3527bb7a",
 			version = 2,
 		},
-		inheritedIndex = 46,
+		inheritedIndex = 49,
 	},
 	
 	{
@@ -13341,7 +14053,7 @@ local tbl =
 			uuid = "3bfe4444-df82-7f20-b900-794335d94680",
 			version = 2,
 		},
-		inheritedIndex = 47,
+		inheritedIndex = 50,
 	},
 	
 	{
@@ -13357,7 +14069,7 @@ local tbl =
 			uuid = "36b5f8c2-36c2-2b09-922f-d521c5603d23",
 			version = 2,
 		},
-		inheritedIndex = 50,
+		inheritedIndex = 53,
 	},
 	
 	{
@@ -13745,7 +14457,7 @@ local tbl =
 			uuid = "384be111-76d5-d45b-af4a-8643d34d5822",
 			version = 2,
 		},
-		inheritedIndex = 52,
+		inheritedIndex = 55,
 	},
 	
 	{
@@ -14392,7 +15104,7 @@ local tbl =
 			uuid = "b154c88e-e0cd-2b0c-bdd5-5a5cb8dc7300",
 			version = 2,
 		},
-		inheritedIndex = 51,
+		inheritedIndex = 54,
 	},
 	
 	{
@@ -14408,7 +15120,7 @@ local tbl =
 			uuid = "359d3292-46ca-6740-9bd4-5e4e6bfa6acc",
 			version = 2,
 		},
-		inheritedIndex = 54,
+		inheritedIndex = 57,
 	},
 	
 	{
@@ -14607,7 +15319,7 @@ local tbl =
 			uuid = "78a6c2ef-7e57-09cd-b705-562934c6bedc",
 			version = 2,
 		},
-		inheritedIndex = 55,
+		inheritedIndex = 59,
 	},
 	
 	{
@@ -14955,7 +15667,7 @@ local tbl =
 			uuid = "001e8bf0-9e11-b65b-8fc4-327132fb50f2",
 			version = 2,
 		},
-		inheritedIndex = 53,
+		inheritedIndex = 56,
 	},
 	
 	{
@@ -14971,7 +15683,7 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
-		inheritedIndex = 71,
+		inheritedIndex = 74,
 	},
 	
 	{
@@ -15059,7 +15771,7 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 58,
+		inheritedIndex = 61,
 	},
 	
 	{
@@ -15115,7 +15827,7 @@ local tbl =
 			uuid = "0c591123-b2c0-d2e0-aca9-9e17cf24d43e",
 			version = 2,
 		},
-		inheritedIndex = 57,
+		inheritedIndex = 60,
 	},
 	
 	{
@@ -15185,7 +15897,7 @@ local tbl =
 			uuid = "5dc65816-0d2a-4fd3-9218-ad0eb935e372",
 			version = 2,
 		},
-		inheritedIndex = 58,
+		inheritedIndex = 61,
 	},
 	
 	{
@@ -15201,7 +15913,7 @@ local tbl =
 			uuid = "7affaeba-16a3-388a-9c7a-193cccdb0287",
 			version = 2,
 		},
-		inheritedIndex = 59,
+		inheritedIndex = 62,
 	},
 	
 	{
@@ -15329,7 +16041,7 @@ local tbl =
 			uuid = "d21f4c04-282f-d94a-9897-db3b516a5b14",
 			version = 2,
 		},
-		inheritedIndex = 74,
+		inheritedIndex = 77,
 	},
 	
 	{
@@ -15561,7 +16273,7 @@ local tbl =
 			uuid = "a7831eef-4074-1c28-879e-0f89fe93b737",
 			version = 2,
 		},
-		inheritedIndex = 78,
+		inheritedIndex = 81,
 	},
 	
 	{
@@ -15670,7 +16382,7 @@ local tbl =
 			uuid = "1df0282e-0a27-b51a-a199-bd462057c267",
 			version = 2,
 		},
-		inheritedIndex = 82,
+		inheritedIndex = 85,
 	},
 	
 	{
@@ -15776,7 +16488,7 @@ local tbl =
 			uuid = "99980e5a-5d62-8ea2-ad9f-9eb9bb611f5d",
 			version = 2,
 		},
-		inheritedIndex = 84,
+		inheritedIndex = 87,
 	},
 	
 	{
@@ -15880,7 +16592,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 89,
+		inheritedIndex = 92,
 	},
 	
 	{
@@ -16022,7 +16734,7 @@ local tbl =
 			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
 			version = 2,
 		},
-		inheritedIndex = 89,
+		inheritedIndex = 92,
 	},
 	
 	{
@@ -16224,7 +16936,7 @@ local tbl =
 			uuid = "bfd39011-66e4-7ebc-a314-9350aaa99856",
 			version = 2,
 		},
-		inheritedIndex = 89,
+		inheritedIndex = 92,
 	},
 	
 	{
@@ -16316,7 +17028,7 @@ local tbl =
 			uuid = "06acd7e2-3a2b-4c8b-a09a-482655849fc6",
 			version = 2,
 		},
-		inheritedIndex = 89,
+		inheritedIndex = 92,
 	},
 	
 	{
@@ -16431,7 +17143,7 @@ local tbl =
 			uuid = "ae235d51-4679-9c09-8261-885a05bc74bb",
 			version = 2,
 		},
-		inheritedIndex = 89,
+		inheritedIndex = 92,
 	},
 	
 	{
@@ -16529,7 +17241,7 @@ local tbl =
 			uuid = "6f59f82c-6eca-9703-b3db-8c94e14d1ae8",
 			version = 2,
 		},
-		inheritedIndex = 69,
+		inheritedIndex = 72,
 	},
 	
 	{
@@ -16599,7 +17311,7 @@ local tbl =
 			uuid = "e4df0c75-0fec-4c79-9c55-f892facb8a5b",
 			version = 2,
 		},
-		inheritedIndex = 70,
+		inheritedIndex = 73,
 	},
 	
 	{
@@ -16735,7 +17447,7 @@ local tbl =
 			uuid = "65c65955-c622-bb22-b8e8-dffca6394876",
 			version = 2,
 		},
-		inheritedIndex = 89,
+		inheritedIndex = 92,
 	},
 	
 	{
@@ -16921,7 +17633,7 @@ local tbl =
 			uuid = "de4b11dc-cace-5590-b9b4-6d768416d2c9",
 			version = 2,
 		},
-		inheritedIndex = 89,
+		inheritedIndex = 92,
 	},
 	
 	{
@@ -17040,7 +17752,7 @@ local tbl =
 			uuid = "ca2ed4c5-1790-ab33-930e-7944b6c02ebf",
 			version = 2,
 		},
-		inheritedIndex = 89,
+		inheritedIndex = 92,
 	},
 	
 	{
@@ -17199,7 +17911,7 @@ local tbl =
 			uuid = "6d93ba14-1d65-6f32-a578-e5194a8f4fdd",
 			version = 2,
 		},
-		inheritedIndex = 89,
+		inheritedIndex = 92,
 	},
 	
 	{
@@ -17289,7 +18001,7 @@ local tbl =
 			uuid = "2f0e26c9-d9fc-79b6-add7-bac559401508",
 			version = 2,
 		},
-		inheritedIndex = 75,
+		inheritedIndex = 78,
 	},
 	
 	{
@@ -17385,7 +18097,7 @@ local tbl =
 			uuid = "d44cca76-d6a5-bed0-a773-b841eccd6f5e",
 			version = 2,
 		},
-		inheritedIndex = 76,
+		inheritedIndex = 79,
 	},
 	
 	{
@@ -17581,7 +18293,7 @@ local tbl =
 			uuid = "2573b380-d312-118e-890b-67fb131aeaa9",
 			version = 2,
 		},
-		inheritedIndex = 77,
+		inheritedIndex = 80,
 	},
 	
 	{
