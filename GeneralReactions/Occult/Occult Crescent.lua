@@ -13699,60 +13699,6 @@ local tbl =
 				{
 					data = 
 					{
-						actionID = 49077,
-						conditions = 
-						{
-							
-							{
-								"cd3de24c-bd19-c8b3-acdc-269ffe017e3a",
-								true,
-							},
-							
-							{
-								"3f34d46e-8ad1-9e64-abed-166c78a10efe",
-								true,
-							},
-							
-							{
-								"eb19d322-6f8b-acb5-a881-7228eff84b51",
-								true,
-							},
-							
-							{
-								"3eb0c4c8-227d-313a-86c7-6d9400d5c777",
-								true,
-							},
-							
-							{
-								"a80a59b2-e621-1d41-9f36-14e543a6cd8a",
-								true,
-							},
-							
-							{
-								"385293ab-d5d7-e2a6-8a36-8a2a08e9f522",
-								true,
-							},
-							
-							{
-								"7acdaefc-5897-7460-b999-7e5d968a67c3",
-								true,
-							},
-							
-							{
-								"7da229c0-f7ce-9c1c-966d-53b7f743c519",
-								true,
-							},
-						},
-						gVar = "ACR_RikuMNK3_CD",
-						targetType = "Current Target",
-						uuid = "f7e9adee-e49b-d4c0-ae44-a5001cfc9103",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
 						actionID = 49079,
 						conditions = 
 						{
@@ -13800,6 +13746,66 @@ local tbl =
 						gVar = "ACR_RikuMNK3_CD",
 						targetType = "Current Target",
 						uuid = "1357e8ec-d52e-f63f-83d2-476ca2d9e7de",
+						version = 2.1,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						actionID = 49077,
+						conditions = 
+						{
+							
+							{
+								"cd3de24c-bd19-c8b3-acdc-269ffe017e3a",
+								true,
+							},
+							
+							{
+								"3f34d46e-8ad1-9e64-abed-166c78a10efe",
+								true,
+							},
+							
+							{
+								"eb19d322-6f8b-acb5-a881-7228eff84b51",
+								true,
+							},
+							
+							{
+								"3eb0c4c8-227d-313a-86c7-6d9400d5c777",
+								true,
+							},
+							
+							{
+								"a80a59b2-e621-1d41-9f36-14e543a6cd8a",
+								true,
+							},
+							
+							{
+								"385293ab-d5d7-e2a6-8a36-8a2a08e9f522",
+								true,
+							},
+							
+							{
+								"7acdaefc-5897-7460-b999-7e5d968a67c3",
+								true,
+							},
+							
+							{
+								"7da229c0-f7ce-9c1c-966d-53b7f743c519",
+								true,
+							},
+							
+							{
+								"fb768e06-4ba1-09fc-867c-44a0ee607360",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						targetType = "Current Target",
+						uuid = "f7e9adee-e49b-d4c0-ae44-a5001cfc9103",
 						version = 2.1,
 					},
 				},
@@ -13932,8 +13938,20 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "TensorDrift_SlidecastForceHold = false",
+						dequeueIfLuaFalse = true,
+						uuid = "fb768e06-4ba1-09fc-867c-44a0ee607360",
+						version = 3,
+					},
+				},
 			},
-			name = "p. Dragoon",
+			enabled = false,
+			name = "p. Dragoon (Jump not safe)",
 			uuid = "3bfe4444-df82-7f20-b900-794335d94680",
 			version = 2,
 		},
