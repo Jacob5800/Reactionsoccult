@@ -13797,11 +13797,6 @@ local tbl =
 								"7da229c0-f7ce-9c1c-966d-53b7f743c519",
 								true,
 							},
-							
-							{
-								"fb768e06-4ba1-09fc-867c-44a0ee607360",
-								true,
-							},
 						},
 						gVar = "ACR_RikuMNK3_CD",
 						targetType = "Current Target",
@@ -13938,18 +13933,8 @@ local tbl =
 						version = 3,
 					},
 				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "TensorDrift_SlidecastForceHold = false",
-						dequeueIfLuaFalse = true,
-						uuid = "fb768e06-4ba1-09fc-867c-44a0ee607360",
-						version = 3,
-					},
-				},
 			},
+			enabled = false,
 			name = "p. Dragoon (Jump not safe)",
 			uuid = "3bfe4444-df82-7f20-b900-794335d94680",
 			version = 2,
