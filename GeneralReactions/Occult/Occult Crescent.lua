@@ -5892,7 +5892,7 @@ local tbl =
 			uuid = "c9178b74-f32c-817a-950c-32b1fc0a7ee8",
 			version = 2,
 		},
-		inheritedIndex = 65,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -6163,7 +6163,7 @@ local tbl =
 			uuid = "eb688e35-87ab-c255-a605-63f5423c3c0a",
 			version = 2,
 		},
-		inheritedIndex = 66,
+		inheritedIndex = 67,
 	},
 	
 	{
@@ -6576,7 +6576,7 @@ local tbl =
 			uuid = "1c6bbd54-6018-485a-9f05-9819fa8aa68e",
 			version = 2,
 		},
-		inheritedIndex = 66,
+		inheritedIndex = 67,
 	},
 	
 	{
@@ -7068,7 +7068,7 @@ local tbl =
 			uuid = "9c5b9d73-ae0e-195a-940a-540bca4454b2",
 			version = 2,
 		},
-		inheritedIndex = 66,
+		inheritedIndex = 67,
 	},
 	
 	{
@@ -7210,7 +7210,7 @@ local tbl =
 			uuid = "b175b050-f2bb-2ffe-bd7e-bff2941f8634",
 			version = 2,
 		},
-		inheritedIndex = 67,
+		inheritedIndex = 68,
 	},
 	
 	{
@@ -7424,7 +7424,7 @@ local tbl =
 			uuid = "9278be18-034c-9f92-abab-1d3e0055a418",
 			version = 2,
 		},
-		inheritedIndex = 68,
+		inheritedIndex = 69,
 	},
 	
 	{
@@ -7668,7 +7668,7 @@ local tbl =
 			uuid = "4c3d9549-4ff9-6f51-a0a1-292851ddf5a7",
 			version = 2,
 		},
-		inheritedIndex = 69,
+		inheritedIndex = 70,
 	},
 	
 	{
@@ -7874,7 +7874,7 @@ local tbl =
 			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
 			version = 2,
 		},
-		inheritedIndex = 70,
+		inheritedIndex = 71,
 	},
 	
 	{
@@ -10295,7 +10295,7 @@ local tbl =
 			uuid = "978328eb-ccac-48cf-bcfc-9c31d4cf6f4d",
 			version = 2,
 		},
-		inheritedIndex = 73,
+		inheritedIndex = 74,
 	},
 	
 	{
@@ -11726,225 +11726,6 @@ local tbl =
 				{
 					data = 
 					{
-						aType = "Lua",
-						actionLua = "local deadPlayers = TensorCore.entityList(\"chartype=4,los,dead,maxdistance=30\")\nlocal raisablePlayers = {}\nlocal raisableChemists = {}\nlocal raisableWhitemages = {}\n\nif (table.valid(deadPlayers)) then\n\tfor id, player in pairs(deadPlayers) do\n\t\tlocal buffs = player.buffs\n\t\tlocal raised = false\n        local outOfRaises = false\n\t\tlocal chemist = false\n\t\tlocal whitemage = false\n\n\t\tif (TableSize(buffs) > 0) then\n\t\t\tfor id, b in pairs(buffs) do\n\t\t\t\tif (b.id == 148) then\n\t\t\t\t\traised = true\n\t\t\t\tend\n                if (b.id == 4263) then\n                    outOfRaises = true\n                end\n\t\t\t\tif (b.id == 4367) then\n\t\t\t\t\tchemist = true\n\t\t\t\tend\n\t\t\t\tif (b.id == 5329) then\n\t\t\t\t\twhitemage = true\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t\t\n\t\tif (raised == false and outOfRaises == false) then\n\t\t\tif (chemist == true) then\n\t\t\t\ttable.insert(raisableChemists, player)\n\t\t\telseif (whitemage == true) then\n\t\t\t\ttable.insert(raisableWhitemages, player)\n\t\t\telse\n\t\t\t\ttable.insert(raisablePlayers, player)\n\t\t\tend\n\t\tend\n\tend\nend\n\nif (table.valid(raisableChemists)) then\n\tfor id, player in pairs(raisableChemists) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \" (Chemist)\")\n\t\tend\n\t\treturn ActionList:Get(1,49070), player.id, true, true\n\tend\nend\n\nif (table.valid(raisableWhitemages)) then\n\tfor id, player in pairs(raisableWhitemages) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \" (White Mage)\")\n\t\tend\n\t\treturn ActionList:Get(1,49070), player.id, true, true\n\tend\nend\n\nif (table.valid(raisablePlayers)) then\n\tfor id, player in pairs(raisablePlayers) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \"\")\n\t\tend\n\t\treturn ActionList:Get(1,49070), player.id, true, false\n\tend\nend\n\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"135feabc-9bd3-e3c0-9956-e3c5296cc9a0",
-								true,
-							},
-							
-							{
-								"b266d672-d12b-c4e2-bf46-9d6a5c1c4421",
-								true,
-							},
-							
-							{
-								"b55eb4b2-2639-1487-a8f3-84b0810d33bd",
-								true,
-							},
-							
-							{
-								"dac3a662-cbbc-5380-bf5c-b3b426b3a06f",
-								true,
-							},
-							
-							{
-								"890a5cc1-67dd-2df3-bdf4-30a6d720c7f4",
-								true,
-							},
-							
-							{
-								"b69cd3ad-a036-be49-83bb-1d09d3417aaa",
-								true,
-							},
-							
-							{
-								"dffdf3bf-9498-b918-b66e-d05c66169936",
-								true,
-							},
-							
-							{
-								"c267341f-ea64-3f2c-8c8c-d471ddd8504f",
-								true,
-							},
-							
-							{
-								"5cc9293c-20bb-d3a1-9967-19b87112bac8",
-								true,
-							},
-							
-							{
-								"77df8e9c-1eae-ffe2-8b89-c6e8fc362fd9",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_CD",
-						luaReturnsAction = true,
-						uuid = "805bf7b7-68a9-5984-b5d6-0fd784ff8deb",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 12,
-						dequeueIfLuaFalse = true,
-						localMapIDList = 
-						{
-							1252,
-							1346,
-						},
-						name = "In Occult Crescent",
-						uuid = "b266d672-d12b-c4e2-bf46-9d6a5c1c4421",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 5329,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Is White Mage",
-						uuid = "b55eb4b2-2639-1487-a8f3-84b0810d33bd",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
-						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "dac3a662-cbbc-5380-bf5c-b3b426b3a06f",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 7,
-						dequeueIfLuaFalse = true,
-						uuid = "890a5cc1-67dd-2df3-bdf4-30a6d720c7f4",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 2,
-						dequeueIfLuaFalse = true,
-						name = "Self Living",
-						uuid = "b69cd3ad-a036-be49-83bb-1d09d3417aaa",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 2,
-						buffID = 418,
-						buffIDList = 
-						{
-							418,
-							148,
-						},
-						category = "Self",
-						comparator = 2,
-						dequeueIfLuaFalse = true,
-						hpValue = 30,
-						matchAnyBuff = true,
-						name = "Self Missing Transcendent",
-						uuid = "dffdf3bf-9498-b918-b66e-d05c66169936",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionID = 49070,
-						category = "Self",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						name = "Raise CD",
-						uuid = "5cc9293c-20bb-d3a1-9967-19b87112bac8",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return (ActionList:Get(5,34):CanCastResult() ~= 579)",
-						dequeueIfLuaFalse = true,
-						name = "Raise Unlocked",
-						uuid = "c267341f-ea64-3f2c-8c8c-d471ddd8504f",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return TableSize(TensorCore.entityList(\"chartype=4,los,dead,maxdistance=30\")) ~= 0",
-						dequeueIfLuaFalse = true,
-						filterTargetType = "Party",
-						name = "Dead Player",
-						uuid = "77df8e9c-1eae-ffe2-8b89-c6e8fc362fd9",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return true",
-						dequeueIfLuaFalse = true,
-						name = "Flip To Disable Action",
-						uuid = "135feabc-9bd3-e3c0-9956-e3c5296cc9a0",
-						version = 3,
-					},
-				},
-			},
-			name = "P. White Mage Rez",
-			throttleTime = 1000,
-			uuid = "fe836297-24da-534d-8323-f069c2e03c59",
-			version = 2,
-		},
-		inheritedIndex = 44,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
 						aType = "ACR",
 						clusterMinTarget = 0,
 						conditions = 
@@ -12653,6 +12434,289 @@ local tbl =
 			throttleTime = 100,
 			timeout = 2.75,
 			uuid = "9d280002-40a4-9e37-b14e-081affb3b3ea",
+			version = 2,
+		},
+		inheritedIndex = 49,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "if (data.lastRun ~= nil and TimeSince(data.lastRun) < 1500) then\n    return\nend\n\nlocal deadPlayers = TensorCore.entityList(\"chartype=4,los,dead,maxdistance=30\")\n\nlocal bestTarget = nil\nlocal highestPriority = 0\n\nif table.valid(deadPlayers) then\n    for _, player in pairs(deadPlayers) do\n        -- Skip if already raised (148) or out of raises (4263)\n        if not TensorCore.hasBuff(player, 148) and not TensorCore.hasBuff(player, 4263) then\n            -- Assign priority score: Chemist (3) > White Mage (2) > Standard (1)\n            local priority = 1\n            if TensorCore.hasBuff(player, 4367) then\n                priority = 3\n            elseif TensorCore.hasBuff(player, 5329) then\n                priority = 2\n            end\n\n            -- Track highest priority found\n            if priority > highestPriority then\n                highestPriority = priority\n                bestTarget = player\n            end\n        end\n    end\nend\n\n-- If a valid target was found, process the raise and return the player ID\nif bestTarget then\n    local jobLabel = \"\"\n    if highestPriority == 3 then jobLabel = \" (Chemist)\" end\n    if highestPriority == 2 then jobLabel = \" (White Mage)\" end\n    local rezMessage = \"Raising \" .. bestTarget.name .. jobLabel\n\n    eventArgs.detectionTargetID = bestTarget.id\n    data.rezMessage = rezMessage\n    d(\"set target to rez: \" .. bestTarget.name)\nelse\n    eventArgs.detectionTargetID = nil\nend\n\ndata.lastRun = Now()\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"8932cec1-d110-be6c-8549-832c96c2f81f",
+								true,
+							},
+							
+							{
+								"b50f7454-821a-9ac2-9385-6e4ab6cd8506",
+								true,
+							},
+							
+							{
+								"16f4dfef-1b6b-fc77-b547-814ee2ac39a4",
+								true,
+							},
+							
+							{
+								"4232a585-e0da-30d7-9db0-2fb1e588513c",
+								true,
+							},
+							
+							{
+								"74f495a6-8cbc-e212-95dd-7fe47b47f817",
+								true,
+							},
+							
+							{
+								"0ac69ed7-0bd3-2295-bbb9-13e0fbe2ce86",
+								true,
+							},
+							
+							{
+								"e9bfbe47-e08d-28e8-939a-b4a325a77760",
+								true,
+							},
+							
+							{
+								"d6bd6de2-7c2e-1cd1-baa7-df189d738b97",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Set Rez Target",
+						uuid = "65981774-cada-1187-b757-b80415751cbf",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						actionID = 49070,
+						conditions = 
+						{
+							
+							{
+								"8932cec1-d110-be6c-8549-832c96c2f81f",
+								true,
+							},
+							
+							{
+								"b50f7454-821a-9ac2-9385-6e4ab6cd8506",
+								true,
+							},
+							
+							{
+								"16f4dfef-1b6b-fc77-b547-814ee2ac39a4",
+								true,
+							},
+							
+							{
+								"4232a585-e0da-30d7-9db0-2fb1e588513c",
+								true,
+							},
+							
+							{
+								"74f495a6-8cbc-e212-95dd-7fe47b47f817",
+								true,
+							},
+							
+							{
+								"0ac69ed7-0bd3-2295-bbb9-13e0fbe2ce86",
+								true,
+							},
+							
+							{
+								"e9bfbe47-e08d-28e8-939a-b4a325a77760",
+								true,
+							},
+							
+							{
+								"62d1c136-27c2-976c-a86e-7f0062efe2f4",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_Hotbar_DutyAction4",
+						targetType = "Detection Target",
+						uuid = "82f832f6-fea4-d466-a009-8d7c8ea10540",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"8932cec1-d110-be6c-8549-832c96c2f81f",
+								true,
+							},
+							
+							{
+								"b50f7454-821a-9ac2-9385-6e4ab6cd8506",
+								true,
+							},
+							
+							{
+								"16f4dfef-1b6b-fc77-b547-814ee2ac39a4",
+								false,
+							},
+						},
+						gVar = "ACR_RikuWAR3_Hotbar_DutyAction4",
+						gVarValue = 2,
+						name = "Fallback Deactivate",
+						targetType = "Detection Target",
+						uuid = "319c6dce-fe0b-615f-a695-7f25e95940f4",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						buffID = 5329,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is WHM",
+						uuid = "8932cec1-d110-be6c-8549-832c96c2f81f",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "b50f7454-821a-9ac2-9385-6e4ab6cd8506",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "16f4dfef-1b6b-fc77-b547-814ee2ac39a4",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 30,
+						matchAnyBuff = true,
+						name = "Self Missing Transcendent",
+						uuid = "4232a585-e0da-30d7-9db0-2fb1e588513c",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 0.20000000298023,
+						actionID = 49070,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Occult Raise CD",
+						uuid = "74f495a6-8cbc-e212-95dd-7fe47b47f817",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return (ActionList:Get(5,34):CanCastResult() ~= 579)",
+						dequeueIfLuaFalse = true,
+						name = "Occult Raise Unlocked",
+						uuid = "0ac69ed7-0bd3-2295-bbb9-13e0fbe2ce86",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return PWHMToggles.Rez ~= nil and PWHMToggles.Rez",
+						dequeueIfLuaFalse = true,
+						name = "Toggle - Rez",
+						uuid = "e9bfbe47-e08d-28e8-939a-b4a325a77760",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "local deadPlayers = TensorCore.entityList(\"chartype=4,los,dead,maxdistance=30\")\nfor _, player in pairs(deadPlayers) do\n    if not TensorCore.hasBuff(player, 148) and not TensorCore.hasBuff(player, 4263) then\n        return true\n    end\nend\nreturn false",
+						dequeueIfLuaFalse = true,
+						filterTargetType = "Party",
+						name = "Dead Player Check",
+						uuid = "d6bd6de2-7c2e-1cd1-baa7-df189d738b97",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return eventArgs.detectionTargetID ~= nil",
+						dequeueIfLuaFalse = true,
+						name = "Has Detection Target",
+						uuid = "62d1c136-27c2-976c-a86e-7f0062efe2f4",
+						version = 3,
+					},
+				},
+			},
+			name = "P. WHM - Rez",
+			throttleTime = 200,
+			uuid = "c1e2e2ba-7ea0-520b-91ff-cb92e4676842",
 			version = 2,
 		},
 		inheritedIndex = 48,
@@ -13643,7 +13707,7 @@ local tbl =
 			uuid = "a2c85c0f-8023-3f9f-803e-b42c3527bb7a",
 			version = 2,
 		},
-		inheritedIndex = 49,
+		inheritedIndex = 50,
 	},
 	
 	{
@@ -13895,7 +13959,7 @@ local tbl =
 			uuid = "3bfe4444-df82-7f20-b900-794335d94680",
 			version = 2,
 		},
-		inheritedIndex = 50,
+		inheritedIndex = 51,
 	},
 	
 	{
@@ -14283,7 +14347,7 @@ local tbl =
 			uuid = "384be111-76d5-d45b-af4a-8643d34d5822",
 			version = 2,
 		},
-		inheritedIndex = 55,
+		inheritedIndex = 56,
 	},
 	
 	{
@@ -14930,7 +14994,7 @@ local tbl =
 			uuid = "b154c88e-e0cd-2b0c-bdd5-5a5cb8dc7300",
 			version = 2,
 		},
-		inheritedIndex = 54,
+		inheritedIndex = 55,
 	},
 	
 	{
@@ -14946,7 +15010,7 @@ local tbl =
 			uuid = "359d3292-46ca-6740-9bd4-5e4e6bfa6acc",
 			version = 2,
 		},
-		inheritedIndex = 57,
+		inheritedIndex = 58,
 	},
 	
 	{
@@ -15145,7 +15209,7 @@ local tbl =
 			uuid = "78a6c2ef-7e57-09cd-b705-562934c6bedc",
 			version = 2,
 		},
-		inheritedIndex = 60,
+		inheritedIndex = 61,
 	},
 	
 	{
@@ -15493,7 +15557,7 @@ local tbl =
 			uuid = "001e8bf0-9e11-b65b-8fc4-327132fb50f2",
 			version = 2,
 		},
-		inheritedIndex = 56,
+		inheritedIndex = 57,
 	},
 	
 	{
@@ -16105,7 +16169,7 @@ local tbl =
 			uuid = "caa3b091-3ad6-f0cd-a769-4a79b53f5634",
 			version = 2,
 		},
-		inheritedIndex = 58,
+		inheritedIndex = 59,
 	},
 	
 	{
@@ -16121,7 +16185,7 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
-		inheritedIndex = 74,
+		inheritedIndex = 75,
 	},
 	
 	{
@@ -16209,7 +16273,7 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 63,
+		inheritedIndex = 64,
 	},
 	
 	{
@@ -16264,7 +16328,7 @@ local tbl =
 			uuid = "0c591123-b2c0-d2e0-aca9-9e17cf24d43e",
 			version = 2,
 		},
-		inheritedIndex = 61,
+		inheritedIndex = 62,
 	},
 	
 	{
@@ -16335,7 +16399,7 @@ local tbl =
 			uuid = "5dc65816-0d2a-4fd3-9218-ad0eb935e372",
 			version = 2,
 		},
-		inheritedIndex = 63,
+		inheritedIndex = 64,
 	},
 	
 	{
@@ -16405,7 +16469,7 @@ local tbl =
 			uuid = "9ba5faa6-7acc-ce33-8f9a-0e4357579a21",
 			version = 2,
 		},
-		inheritedIndex = 62,
+		inheritedIndex = 63,
 	},
 	
 	{
@@ -16421,7 +16485,7 @@ local tbl =
 			uuid = "7affaeba-16a3-388a-9c7a-193cccdb0287",
 			version = 2,
 		},
-		inheritedIndex = 64,
+		inheritedIndex = 65,
 	},
 	
 	{
@@ -16549,7 +16613,7 @@ local tbl =
 			uuid = "d21f4c04-282f-d94a-9897-db3b516a5b14",
 			version = 2,
 		},
-		inheritedIndex = 77,
+		inheritedIndex = 78,
 	},
 	
 	{
@@ -16781,7 +16845,7 @@ local tbl =
 			uuid = "a7831eef-4074-1c28-879e-0f89fe93b737",
 			version = 2,
 		},
-		inheritedIndex = 83,
+		inheritedIndex = 84,
 	},
 	
 	{
@@ -16890,7 +16954,7 @@ local tbl =
 			uuid = "1df0282e-0a27-b51a-a199-bd462057c267",
 			version = 2,
 		},
-		inheritedIndex = 87,
+		inheritedIndex = 88,
 	},
 	
 	{
@@ -16996,7 +17060,7 @@ local tbl =
 			uuid = "99980e5a-5d62-8ea2-ad9f-9eb9bb611f5d",
 			version = 2,
 		},
-		inheritedIndex = 89,
+		inheritedIndex = 90,
 	},
 	
 	{
@@ -17198,7 +17262,7 @@ local tbl =
 			uuid = "bfd39011-66e4-7ebc-a314-9350aaa99856",
 			version = 2,
 		},
-		inheritedIndex = 94,
+		inheritedIndex = 95,
 	},
 	
 	{
@@ -17290,7 +17354,7 @@ local tbl =
 			uuid = "06acd7e2-3a2b-4c8b-a09a-482655849fc6",
 			version = 2,
 		},
-		inheritedIndex = 94,
+		inheritedIndex = 95,
 	},
 	
 	{
@@ -17405,7 +17469,7 @@ local tbl =
 			uuid = "ae235d51-4679-9c09-8261-885a05bc74bb",
 			version = 2,
 		},
-		inheritedIndex = 94,
+		inheritedIndex = 95,
 	},
 	
 	{
@@ -17503,7 +17567,7 @@ local tbl =
 			uuid = "6f59f82c-6eca-9703-b3db-8c94e14d1ae8",
 			version = 2,
 		},
-		inheritedIndex = 72,
+		inheritedIndex = 73,
 	},
 	
 	{
@@ -17573,7 +17637,7 @@ local tbl =
 			uuid = "e4df0c75-0fec-4c79-9c55-f892facb8a5b",
 			version = 2,
 		},
-		inheritedIndex = 73,
+		inheritedIndex = 74,
 	},
 	
 	{
@@ -17709,7 +17773,7 @@ local tbl =
 			uuid = "65c65955-c622-bb22-b8e8-dffca6394876",
 			version = 2,
 		},
-		inheritedIndex = 94,
+		inheritedIndex = 95,
 	},
 	
 	{
@@ -17895,7 +17959,7 @@ local tbl =
 			uuid = "de4b11dc-cace-5590-b9b4-6d768416d2c9",
 			version = 2,
 		},
-		inheritedIndex = 94,
+		inheritedIndex = 95,
 	},
 	
 	{
@@ -18014,7 +18078,7 @@ local tbl =
 			uuid = "ca2ed4c5-1790-ab33-930e-7944b6c02ebf",
 			version = 2,
 		},
-		inheritedIndex = 94,
+		inheritedIndex = 95,
 	},
 	
 	{
@@ -18173,7 +18237,7 @@ local tbl =
 			uuid = "6d93ba14-1d65-6f32-a578-e5194a8f4fdd",
 			version = 2,
 		},
-		inheritedIndex = 94,
+		inheritedIndex = 95,
 	},
 	
 	{
@@ -18263,7 +18327,7 @@ local tbl =
 			uuid = "2f0e26c9-d9fc-79b6-add7-bac559401508",
 			version = 2,
 		},
-		inheritedIndex = 78,
+		inheritedIndex = 79,
 	},
 	
 	{
@@ -18359,7 +18423,7 @@ local tbl =
 			uuid = "d44cca76-d6a5-bed0-a773-b841eccd6f5e",
 			version = 2,
 		},
-		inheritedIndex = 79,
+		inheritedIndex = 80,
 	},
 	
 	{
@@ -18555,7 +18619,7 @@ local tbl =
 			uuid = "2573b380-d312-118e-890b-67fb131aeaa9",
 			version = 2,
 		},
-		inheritedIndex = 82,
+		inheritedIndex = 83,
 	},
 	
 	{
@@ -18674,7 +18738,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 80,
+		inheritedIndex = 81,
 	},
 	
 	{
@@ -18816,7 +18880,7 @@ local tbl =
 			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
 			version = 2,
 		},
-		inheritedIndex = 81,
+		inheritedIndex = 82,
 	},
 	
 	{
