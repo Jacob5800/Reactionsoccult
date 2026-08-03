@@ -5892,7 +5892,7 @@ local tbl =
 			uuid = "c9178b74-f32c-817a-950c-32b1fc0a7ee8",
 			version = 2,
 		},
-		inheritedIndex = 66,
+		inheritedIndex = 69,
 	},
 	
 	{
@@ -6163,7 +6163,7 @@ local tbl =
 			uuid = "eb688e35-87ab-c255-a605-63f5423c3c0a",
 			version = 2,
 		},
-		inheritedIndex = 67,
+		inheritedIndex = 70,
 	},
 	
 	{
@@ -6576,7 +6576,7 @@ local tbl =
 			uuid = "1c6bbd54-6018-485a-9f05-9819fa8aa68e",
 			version = 2,
 		},
-		inheritedIndex = 67,
+		inheritedIndex = 70,
 	},
 	
 	{
@@ -7068,7 +7068,7 @@ local tbl =
 			uuid = "9c5b9d73-ae0e-195a-940a-540bca4454b2",
 			version = 2,
 		},
-		inheritedIndex = 67,
+		inheritedIndex = 70,
 	},
 	
 	{
@@ -7210,7 +7210,7 @@ local tbl =
 			uuid = "b175b050-f2bb-2ffe-bd7e-bff2941f8634",
 			version = 2,
 		},
-		inheritedIndex = 68,
+		inheritedIndex = 71,
 	},
 	
 	{
@@ -7424,7 +7424,7 @@ local tbl =
 			uuid = "9278be18-034c-9f92-abab-1d3e0055a418",
 			version = 2,
 		},
-		inheritedIndex = 69,
+		inheritedIndex = 72,
 	},
 	
 	{
@@ -7668,7 +7668,7 @@ local tbl =
 			uuid = "4c3d9549-4ff9-6f51-a0a1-292851ddf5a7",
 			version = 2,
 		},
-		inheritedIndex = 70,
+		inheritedIndex = 73,
 	},
 	
 	{
@@ -7874,7 +7874,7 @@ local tbl =
 			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
 			version = 2,
 		},
-		inheritedIndex = 71,
+		inheritedIndex = 74,
 	},
 	
 	{
@@ -10295,7 +10295,7 @@ local tbl =
 			uuid = "978328eb-ccac-48cf-bcfc-9c31d4cf6f4d",
 			version = 2,
 		},
-		inheritedIndex = 74,
+		inheritedIndex = 77,
 	},
 	
 	{
@@ -16185,7 +16185,7 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
-		inheritedIndex = 75,
+		inheritedIndex = 78,
 	},
 	
 	{
@@ -16273,7 +16273,7 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 64,
+		inheritedIndex = 67,
 	},
 	
 	{
@@ -16328,7 +16328,7 @@ local tbl =
 			uuid = "0c591123-b2c0-d2e0-aca9-9e17cf24d43e",
 			version = 2,
 		},
-		inheritedIndex = 62,
+		inheritedIndex = 64,
 	},
 	
 	{
@@ -16399,7 +16399,7 @@ local tbl =
 			uuid = "5dc65816-0d2a-4fd3-9218-ad0eb935e372",
 			version = 2,
 		},
-		inheritedIndex = 64,
+		inheritedIndex = 67,
 	},
 	
 	{
@@ -16469,7 +16469,287 @@ local tbl =
 			uuid = "9ba5faa6-7acc-ce33-8f9a-0e4357579a21",
 			version = 2,
 		},
+		inheritedIndex = 66,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local id = eventArgs.entityID\nlocal e = TensorCore.mGetEntity(id)\n\nlocal gaze = {\n    id          = id,\n    addedAt     = Now(),\n    channelTime = (eventArgs.channelTimeMax + .25 ) * 1000,\n    pos         = e.pos,\n}\n\nif data.gaze1 == nil then\n    data.gaze1 = gaze\nelseif data.gaze2 == nil then\n    data.gaze2 = gaze\nelseif data.gaze1.addedAt <= data.gaze2.addedAt then\n    data.gaze1 = gaze\nelse\n    data.gaze2 = gaze\nend\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"580991dc-6fa1-8a65-a6ab-73874302a058",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						uuid = "2be71a66-6f6f-9645-991c-6b5ef5206778",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "Occult Crescent",
+						uuid = "8585bf26-81c3-8633-a4a7-6fa2ea58a7b5",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						eventArgOptionType = 3,
+						eventArgType = 2,
+						eventSpellID = 47152,
+						name = "Gaze Channels",
+						spellIDList = 
+						{
+							47152,
+							47148,
+							47191,
+						},
+						uuid = "580991dc-6fa1-8a65-a6ab-73874302a058",
+						version = 3,
+					},
+				},
+			},
+			eventType = 3,
+			name = "[Extra] Gaze Tracker",
+			uuid = "ef41ca3b-b8b3-b055-9750-acd44ba586ba",
+			version = 2,
+		},
+		inheritedIndex = 62,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local g1, g2 = data.gaze1, data.gaze2\n\nif g1 ~= nil and TimeSince(g1.addedAt) >= g1.channelTime then\n    data.gaze1, g1 = nil, nil\nend\nif g2 ~= nil and TimeSince(g2.addedAt) >= g2.channelTime then\n    data.gaze2, g2 = nil, nil\nend\n\nif g1 == nil and g2 == nil then\n    -- nothing live -- release the lock, but only if we were the one holding it\n    if data.gazeLocked then\n        TensorCore.API.TensorACR.toggleLockFace(false)\n        data.gazeLocked = nil\n    end\nelse\n    local h\n    local p = TensorCore.mGetPlayer()\n   \n\n    if g1 ~= nil and g2 ~= nil then\n        h = TensorCore.Avoidance.getHeadingBetweenPos(p.pos, TensorCore.mGetEntity(g1.id).pos, TensorCore.mGetEntity(g2.id).pos)\n    elseif g1 ~= nil then\n        h = TensorCore.getHeadingToTarget(p.pos, TensorCore.mGetEntity(g1.id).pos)\n    elseif g2 ~= nil then\n        h = TensorCore.getHeadingToTarget(p.pos, TensorCore.mGetEntity(g2.id).pos)\n\tend\n\n    h = h + math.pi\n    TensorCore.API.TensorACR.setLockFaceHeading(h)\n\n    if not data.gazeLocked then\n        TensorCore.API.TensorACR.toggleLockFace(true)\n        data.gazeLocked = true\n    end\nend\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"82688da5-fbc1-d9ce-8558-f22096750a4b",
+								true,
+							},
+							
+							{
+								"c466a5b4-da07-b94c-8d31-302e253a99d0",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						uuid = "5e58978f-57b2-7b38-8327-6269b5b4be39",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "Occult Crescent",
+						uuid = "82688da5-fbc1-d9ce-8558-f22096750a4b",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						name = "Bot Running",
+						uuid = "c466a5b4-da07-b94c-8d31-302e253a99d0",
+						version = 3,
+					},
+				},
+			},
+			eventType = 12,
+			name = "[Extra] Gaze Resolver",
+			uuid = "eb4b56b6-2b74-6468-8fba-53017fc139c8",
+			version = 2,
+		},
 		inheritedIndex = 63,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "-- Gaze Tracker display  (companion to the channel-event tracker)\n-- Reads the shared globals: data.gaze1 / data.gaze2\nlocal GUI_FLAGS = 97\n\n-- ── tuning ──────────────────────────────────────────────────────────\nlocal WARN_MS   = 2000    -- remaining <= this -> yellow\nlocal DANGER_MS = 750     -- remaining <= this -> red\n-- ────────────────────────────────────────────────────────────────────\n\nif data.gazeAutoClear == nil then data.gazeAutoClear = true end\n\nlocal function fmtPos(p)\n    if p == nil then return \"n/a\" end\n    return string.format(\"%.1f, %.1f, %.1f\", p.x or 0, p.y or 0, p.z or 0)\nend\n\n-- entity may have despawned since it was captured, so guard the lookup\nlocal function liveEntity(id)\n    local ok, e = pcall(TensorCore.mGetEntity, id)\n    if ok then return e end\n    return nil\nend\n\nlocal function drawSlot(label, g)\n    GUI:TextColored(0.55, 0.55, 0.55, 1.0, label)\n\n    if g == nil then\n        GUI:Text(\"   -- empty --\")\n        return nil\n    end\n\n    local remaining = (g.addedAt + g.channelTime) - Now()\n    if remaining < 0 then remaining = 0 end\n\n    local r, gr, b = 0.3, 1.0, 0.4\n    if remaining <= DANGER_MS then\n        r, gr, b = 1.0, 0.25, 0.25\n    elseif remaining <= WARN_MS then\n        r, gr, b = 1.0, 0.85, 0.2\n    end\n\n    local e    = liveEntity(g.id)\n    local name = (e and e.name) or \"?\"\n\n    GUI:Text(string.format(\"   %s  (id %d)\", tostring(name), g.id))\n    GUI:TextColored(r, gr, b, 1.0,\n        string.format(\"   %.2fs left  /  %.2fs total\",\n            remaining / 1000, g.channelTime / 1000))\n    GUI:Text(\"   spawn pos: \" .. fmtPos(g.pos))\n    if e and e.pos then\n        GUI:Text(\"   live  pos: \" .. fmtPos(e.pos))\n    else\n        GUI:TextColored(0.8, 0.5, 0.5, 1.0, \"   live  pos: entity gone\")\n    end\n\n    return remaining\nend\n\nGUI:Begin(\"GazeTracker#Cherry\", true, GUI_FLAGS)\n\nGUI:SetWindowFontSize(1.25)\nGUI:TextColored(0, 1, 1, 1.0, \"Gaze Tracker\")\nGUI:SetWindowFontSize(1.0)\n\nlocal rem1 = drawSlot(\"Gaze 1\", data.gaze1)\nGUI:Separator()\nlocal rem2 = drawSlot(\"Gaze 2\", data.gaze2)\nGUI:Separator()\n\ndata.gazeAutoClear = GUI:Checkbox(\"Auto-clear expired\", data.gazeAutoClear)\nif GUI:Button(\"Clear both\") then\n    data.gaze1 = nil\n    data.gaze2 = nil\nend\n\nif data.gazeAutoClear then\n    if rem1 ~= nil and rem1 <= 0 then data.gaze1 = nil end\n    if rem2 ~= nil and rem2 <= 0 then data.gaze2 = nil end\nend\n\nGUI:End()\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"054370dc-acb1-d5a6-bf38-116bddca4aae",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						uuid = "dc89f476-dba2-4fde-9e93-74c9f1654c5c",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "Occult Crescent",
+						uuid = "054370dc-acb1-d5a6-bf38-116bddca4aae",
+						version = 3,
+					},
+				},
+			},
+			eventType = 12,
+			name = "[Extra] Gaze Display",
+			uuid = "ccc078bf-d8c3-16bf-a777-ce9c90a5be43",
+			version = 2,
+		},
+		inheritedIndex = 64,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local green,yellow,red,blue = 1677786914,1677787134,1677721855,1694449152\ndata.dedoTargetNames = data.dedoTargetNames or {\n-- Add names or contentid you want to track here\n-- after modifying the table you have to trigger onwipe under Debug tab \n-- or reload lua for it to reflect\n\n-- the value can either be a color or a table if you want to force to show invisible ents\n\n    [\"treasure coffer\"] = green,\n\t[\"personal spoils\"] = green,\n    [\"survey point\"] = yellow,\n    [\"2010139\"] = {color = red, forceVisible = true}, \n   -- [\"Random Test Name\"] = blue,\n    \n    \n-- if you want other colors than those 4 you can just put in a u32 color value\n-- color codes can be found in Anyone's Dev Monitor > Tools & Debugging Helper > Color Picker \n-- its the U32 Value you want.\n\n}\n\ndata.dedoArrowEnts = data.dedoArrowEnts or {}\ndata.dedoArrowTime = Now()\ntable.clear(data.dedoArrowEnts)\n\nfor id, ent in pairs(TensorCore.entityList(\"\")) do\n    local lowerName = string.lower(ent.name)\n    local targetConfig = data.dedoTargetNames[lowerName] or data.dedoTargetNames[tostring(ent.contentid)]\n    \n    if targetConfig then\n        local color, forceVisible\n        if type(targetConfig) == \"table\" then\n            color = targetConfig.color\n            forceVisible = targetConfig.forceVisible or false\n        else\n            color = targetConfig\n            forceVisible = false\n        end\n        \n        local dist = TensorCore.getDistance2d(TensorCore.mGetPlayer().pos, ent.pos)\n        local isVisible = Argus.isEntityVisible(ent)\n        \n        if dist > 5 and (isVisible or forceVisible) then\n            data.dedoArrowEnts[id] = {name = ent.name,pos = ent.pos,color = color,dist = dist,}\n        end\n    end\nend\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"2daac994-6b45-bc9f-a201-75cf47112acf",
+								true,
+							},
+							
+							{
+								"76cf4cc7-0310-8b22-89b8-9ca4d11dfd4c",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Modify List",
+						uuid = "cd63cd05-6492-be10-a239-d2c45dd18bfa",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local player = TensorCore.mGetPlayer()\nfor id, ent in pairs(data.dedoArrowEnts) do\n\tlocal g = TensorCore.getStaticDrawer(ent.color)\n\tg.colorOutline = 4294967295\n\tg:addArrow(player.pos.x, player.pos.y, player.pos.z,TensorCore.getHeadingToTarget(player.pos, ent.pos),1.5, 0.25, nil, nil, true)\n\tg:addCircle(ent.pos.x, ent.pos.y, ent.pos.z, 1, true)\n\tg.colorOutline = nil\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"2daac994-6b45-bc9f-a201-75cf47112acf",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						uuid = "b8f1e279-9905-2a5c-9953-de97dcb3a596",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						localmapid = 1252,
+						uuid = "2daac994-6b45-bc9f-a201-75cf47112acf",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.dedoArrowTime == nil or TimeSince(data.dedoArrowTime) > 1000",
+						uuid = "76cf4cc7-0310-8b22-89b8-9ca4d11dfd4c",
+						version = 3,
+					},
+				},
+			},
+			enabled = false,
+			eventType = 12,
+			name = "Arrow objects",
+			uuid = "b4dea9fb-caa4-148e-9ae8-92c5564e94af",
+			version = 2,
+		},
+		inheritedIndex = 65,
 	},
 	
 	{
@@ -16485,7 +16765,7 @@ local tbl =
 			uuid = "7affaeba-16a3-388a-9c7a-193cccdb0287",
 			version = 2,
 		},
-		inheritedIndex = 65,
+		inheritedIndex = 68,
 	},
 	
 	{
@@ -16613,7 +16893,7 @@ local tbl =
 			uuid = "d21f4c04-282f-d94a-9897-db3b516a5b14",
 			version = 2,
 		},
-		inheritedIndex = 78,
+		inheritedIndex = 81,
 	},
 	
 	{
@@ -16845,7 +17125,7 @@ local tbl =
 			uuid = "a7831eef-4074-1c28-879e-0f89fe93b737",
 			version = 2,
 		},
-		inheritedIndex = 84,
+		inheritedIndex = 87,
 	},
 	
 	{
@@ -16954,7 +17234,7 @@ local tbl =
 			uuid = "1df0282e-0a27-b51a-a199-bd462057c267",
 			version = 2,
 		},
-		inheritedIndex = 88,
+		inheritedIndex = 91,
 	},
 	
 	{
@@ -17060,7 +17340,7 @@ local tbl =
 			uuid = "99980e5a-5d62-8ea2-ad9f-9eb9bb611f5d",
 			version = 2,
 		},
-		inheritedIndex = 90,
+		inheritedIndex = 93,
 	},
 	
 	{
@@ -17262,7 +17542,7 @@ local tbl =
 			uuid = "bfd39011-66e4-7ebc-a314-9350aaa99856",
 			version = 2,
 		},
-		inheritedIndex = 95,
+		inheritedIndex = 97,
 	},
 	
 	{
@@ -17354,7 +17634,7 @@ local tbl =
 			uuid = "06acd7e2-3a2b-4c8b-a09a-482655849fc6",
 			version = 2,
 		},
-		inheritedIndex = 95,
+		inheritedIndex = 97,
 	},
 	
 	{
@@ -17469,7 +17749,7 @@ local tbl =
 			uuid = "ae235d51-4679-9c09-8261-885a05bc74bb",
 			version = 2,
 		},
-		inheritedIndex = 95,
+		inheritedIndex = 97,
 	},
 	
 	{
@@ -17567,7 +17847,7 @@ local tbl =
 			uuid = "6f59f82c-6eca-9703-b3db-8c94e14d1ae8",
 			version = 2,
 		},
-		inheritedIndex = 73,
+		inheritedIndex = 76,
 	},
 	
 	{
@@ -17637,7 +17917,7 @@ local tbl =
 			uuid = "e4df0c75-0fec-4c79-9c55-f892facb8a5b",
 			version = 2,
 		},
-		inheritedIndex = 74,
+		inheritedIndex = 77,
 	},
 	
 	{
@@ -17773,7 +18053,7 @@ local tbl =
 			uuid = "65c65955-c622-bb22-b8e8-dffca6394876",
 			version = 2,
 		},
-		inheritedIndex = 95,
+		inheritedIndex = 97,
 	},
 	
 	{
@@ -17959,7 +18239,7 @@ local tbl =
 			uuid = "de4b11dc-cace-5590-b9b4-6d768416d2c9",
 			version = 2,
 		},
-		inheritedIndex = 95,
+		inheritedIndex = 97,
 	},
 	
 	{
@@ -18078,7 +18358,7 @@ local tbl =
 			uuid = "ca2ed4c5-1790-ab33-930e-7944b6c02ebf",
 			version = 2,
 		},
-		inheritedIndex = 95,
+		inheritedIndex = 97,
 	},
 	
 	{
@@ -18237,7 +18517,7 @@ local tbl =
 			uuid = "6d93ba14-1d65-6f32-a578-e5194a8f4fdd",
 			version = 2,
 		},
-		inheritedIndex = 95,
+		inheritedIndex = 97,
 	},
 	
 	{
@@ -18327,7 +18607,7 @@ local tbl =
 			uuid = "2f0e26c9-d9fc-79b6-add7-bac559401508",
 			version = 2,
 		},
-		inheritedIndex = 79,
+		inheritedIndex = 82,
 	},
 	
 	{
@@ -18423,7 +18703,7 @@ local tbl =
 			uuid = "d44cca76-d6a5-bed0-a773-b841eccd6f5e",
 			version = 2,
 		},
-		inheritedIndex = 80,
+		inheritedIndex = 83,
 	},
 	
 	{
@@ -18619,7 +18899,7 @@ local tbl =
 			uuid = "2573b380-d312-118e-890b-67fb131aeaa9",
 			version = 2,
 		},
-		inheritedIndex = 83,
+		inheritedIndex = 86,
 	},
 	
 	{
@@ -18738,7 +19018,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 81,
+		inheritedIndex = 84,
 	},
 	
 	{
@@ -18880,7 +19160,7 @@ local tbl =
 			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
 			version = 2,
 		},
-		inheritedIndex = 82,
+		inheritedIndex = 85,
 	},
 	
 	{
