@@ -5892,7 +5892,7 @@ local tbl =
 			uuid = "c9178b74-f32c-817a-950c-32b1fc0a7ee8",
 			version = 2,
 		},
-		inheritedIndex = 69,
+		inheritedIndex = 70,
 	},
 	
 	{
@@ -6163,7 +6163,7 @@ local tbl =
 			uuid = "eb688e35-87ab-c255-a605-63f5423c3c0a",
 			version = 2,
 		},
-		inheritedIndex = 70,
+		inheritedIndex = 71,
 	},
 	
 	{
@@ -6576,7 +6576,7 @@ local tbl =
 			uuid = "1c6bbd54-6018-485a-9f05-9819fa8aa68e",
 			version = 2,
 		},
-		inheritedIndex = 70,
+		inheritedIndex = 71,
 	},
 	
 	{
@@ -7068,7 +7068,7 @@ local tbl =
 			uuid = "9c5b9d73-ae0e-195a-940a-540bca4454b2",
 			version = 2,
 		},
-		inheritedIndex = 70,
+		inheritedIndex = 71,
 	},
 	
 	{
@@ -7210,7 +7210,7 @@ local tbl =
 			uuid = "b175b050-f2bb-2ffe-bd7e-bff2941f8634",
 			version = 2,
 		},
-		inheritedIndex = 71,
+		inheritedIndex = 72,
 	},
 	
 	{
@@ -7424,7 +7424,7 @@ local tbl =
 			uuid = "9278be18-034c-9f92-abab-1d3e0055a418",
 			version = 2,
 		},
-		inheritedIndex = 72,
+		inheritedIndex = 73,
 	},
 	
 	{
@@ -7668,7 +7668,7 @@ local tbl =
 			uuid = "4c3d9549-4ff9-6f51-a0a1-292851ddf5a7",
 			version = 2,
 		},
-		inheritedIndex = 73,
+		inheritedIndex = 74,
 	},
 	
 	{
@@ -7874,7 +7874,7 @@ local tbl =
 			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
 			version = 2,
 		},
-		inheritedIndex = 74,
+		inheritedIndex = 75,
 	},
 	
 	{
@@ -10295,7 +10295,7 @@ local tbl =
 			uuid = "978328eb-ccac-48cf-bcfc-9c31d4cf6f4d",
 			version = 2,
 		},
-		inheritedIndex = 77,
+		inheritedIndex = 78,
 	},
 	
 	{
@@ -15010,7 +15010,7 @@ local tbl =
 			uuid = "359d3292-46ca-6740-9bd4-5e4e6bfa6acc",
 			version = 2,
 		},
-		inheritedIndex = 58,
+		inheritedIndex = 59,
 	},
 	
 	{
@@ -15209,7 +15209,7 @@ local tbl =
 			uuid = "78a6c2ef-7e57-09cd-b705-562934c6bedc",
 			version = 2,
 		},
-		inheritedIndex = 61,
+		inheritedIndex = 62,
 	},
 	
 	{
@@ -16169,7 +16169,7 @@ local tbl =
 			uuid = "caa3b091-3ad6-f0cd-a769-4a79b53f5634",
 			version = 2,
 		},
-		inheritedIndex = 59,
+		inheritedIndex = 60,
 	},
 	
 	{
@@ -16185,7 +16185,90 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
-		inheritedIndex = 78,
+		inheritedIndex = 79,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "-- Version 1.0\nOCElementalWeakness = {}\n\nOCElementalWeakness.FireTable = {[13741]=true,[13871]=true,[13874]=true,[13875]=true,[13877]=true,[13878]=true,[13884]=true,[13886]=true,[13887]=true,[13890]=true,[13893]=true,[13894]=true,[13895]=true,[13900]=true,[13911]=true,[13919]=true,[13925]=true,[13926]=true,[13931]=true,[13932]=true,[13941]=true,[14491]=true,[14518]=true,[14520]=true,[14714]=true,[14717]=true,[14726]=true,[14735]=true,[14738]=true,[14762]=true,[14765]=true,[14771]=true,[14776]=true,[14785]=true,[14787]=true,[14789]=true,[14790]=true,[14860]=true,[14861]=true,[14862]=true,[14865]=true,[14866]=true,[14869]=true,[14870]=true,[14871]=true,[14878]=true,[14880]=true,[14882]=true,[14885]=true,[14886]=true,[14887]=true,[14888]=true,[14892]=true,[14893]=true,[14894]=true,[14909]=true,[14913]=true,[14915]=true,[14916]=true,[14919]=true,[14929]=true,[14931]=true}\nOCElementalWeakness.IceTable = {[13819]=true,[13873]=true,[13880]=true,[13882]=true,[13885]=true,[13888]=true,[13896]=true,[13897]=true,[13902]=true,[13904]=true,[13907]=true,[13908]=true,[13909]=true,[13914]=true,[13916]=true,[13918]=true,[13920]=true,[13930]=true,[13938]=true,[13939]=true,[14503]=true,[14523]=true,[14719]=true,[14736]=true,[14772]=true,[14791]=true,[14805]=true,[14840]=true,[14841]=true,[14863]=true,[14867]=true,[14869]=true,[14875]=true,[14879]=true,[14881]=true,[14883]=true,[14889]=true,[14895]=true,[14897]=true,[14898]=true,[14902]=true,[14906]=true,[14908]=true,[14914]=true,[14920]=true,[14932]=true}\nOCElementalWeakness.LightningTable = {[13636]=true,[13637]=true,[13702]=true,[13726]=true,[13728]=true,[13729]=true,[13809]=true,[13814]=true,[13815]=true,[13876]=true,[13879]=true,[13881]=true,[13883]=true,[13891]=true,[13903]=true,[13912]=true,[13913]=true,[13915]=true,[13917]=true,[13924]=true,[13928]=true,[13929]=true,[13933]=true,[13934]=true,[13936]=true,[13937]=true,[13942]=true,[14505]=true,[14508]=true,[14509]=true,[14728]=true,[14764]=true,[14774]=true,[14775]=true,[14795]=true,[14799]=true,[14800]=true,[14802]=true,[14804]=true,[14806]=true,[14809]=true,[14817]=true,[14820]=true,[14857]=true,[14858]=true,[14859]=true,[14868]=true,[14874]=true,[14875]=true,[14876]=true,[14877]=true,[14890]=true,[14891]=true,[14900]=true,[14901]=true,[14905]=true,[14922]=true}\nOCElementalWeakness.WindTable = {[13739]=true,[13855]=true,[13856]=true,[13872]=true,[13892]=true,[13898]=true,[13899]=true,[13901]=true,[13905]=true,[13910]=true,[13921]=true,[13922]=true,[13923]=true,[13935]=true,[13940]=true,[14490]=true,[14511]=true,[14512]=true,[14517]=true,[14717]=true,[14764]=true,[14767]=true,[14801]=true,[14864]=true,[14872]=true,[14873]=true,[14878]=true,[14883]=true,[14884]=true,[14896]=true,[14899]=true,[14903]=true,[14904]=true,[14907]=true,[14908]=true,[14910]=true,[14911]=true,[14912]=true,[14917]=true,[14918]=true,[14921]=true,[14923]=true,[14930]=true}\n\nlocal WeaknessLookup = {\n    {table = OCElementalWeakness.FireTable,      element = \"Fire\"},\n    {table = OCElementalWeakness.IceTable,       element = \"Ice\"},\n    {table = OCElementalWeakness.LightningTable, element = \"Lightning\"},\n    {table = OCElementalWeakness.WindTable,      element = \"Wind\"},\n}\n\n\nlocal function entityIsInTable(entity, weaknessTable)\n    if not entity then return false end\n    return weaknessTable[entity.contentid] == true\nend\n\nfunction OCElementalWeakness.returnWeakness(entityid)\n    local isWeak = false\n    local element1 = nil\n    local element2 = nil\n    local entity = TensorCore.mGetEntity(entityid)\n\n    if not entity then return isWeak, element1, element2 end\n\n    for _, entry in ipairs(WeaknessLookup) do\n        if entry.table[entity.contentid] then\n            isWeak = true\n            if element1 == nil then\n                element1 = entry.element\n            else\n                element2 = entry.element\n            end\n        end\n    end\n\n    return isWeak, element1, element2\nend\n\nfunction OCElementalWeakness.returnTargetWeakness()\n    local isWeak = false\n    local element1 = nil\n    local element2 = nil\n    local entity = TensorCore.mGetTarget()\n\n    if not entity then return isWeak, element1, element2 end\n\n    for _, entry in ipairs(WeaknessLookup) do\n        if entry.table[entity.contentid] then\n            isWeak = true\n            if element1 == nil then\n                element1 = entry.element\n            else\n                element2 = entry.element\n            end\n        end\n    end\n\n    return isWeak, element1, element2\nend\n\nfunction OCElementalWeakness.hasFireWeakness(entityid)\n    local entity = TensorCore.mGetEntity(entityid)\n    if entity == nil then return false end\n    return entityIsInTable(entity, OCElementalWeakness.FireTable)\nend\n\nfunction OCElementalWeakness.hasFireWeaknessTarget()\n    local target = TensorCore.mGetTarget()\n    if target == nil then return false end\n    return entityIsInTable(target, OCElementalWeakness.FireTable)\nend\n\nfunction OCElementalWeakness.hasIceWeakness(entityid)\n    local entity = TensorCore.mGetEntity(entityid)\n    if entity == nil then return false end\n    return entityIsInTable(entity, OCElementalWeakness.IceTable)\nend\n\nfunction OCElementalWeakness.hasIceWeaknessTarget()\n    local target = TensorCore.mGetTarget()\n    if target == nil then return false end\n    return entityIsInTable(target, OCElementalWeakness.IceTable)\nend\n\nfunction OCElementalWeakness.hasLightningWeakness(entityid)\n    local entity = TensorCore.mGetEntity(entityid)\n    if entity == nil then return false end\n    return entityIsInTable(entity, OCElementalWeakness.LightningTable)\nend\n\nfunction OCElementalWeakness.hasLightningWeaknessTarget()\n    local target = TensorCore.mGetTarget()\n    if target == nil then return false end\n    return entityIsInTable(target, OCElementalWeakness.LightningTable)\nend\n\nfunction OCElementalWeakness.hasWindWeakness(entityid)\n    local entity = TensorCore.mGetEntity(entityid)\n    if entity == nil then return false end\n    return entityIsInTable(entity, OCElementalWeakness.WindTable)\nend\n\nfunction OCElementalWeakness.hasWindWeaknessTarget()\n    local target = TensorCore.mGetTarget()\n    if target == nil then return false end\n    return entityIsInTable(target, OCElementalWeakness.WindTable)\nend\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"a097f95b-d712-26bb-bc3c-67e7d96a3d54",
+								true,
+							},
+							
+							{
+								"a9e10e6e-ef84-7cd4-a7d7-87aa1d246d21",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						uuid = "171ad113-405d-9cc2-a0c3-98ef6411eff2",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "Occult Crescent",
+						uuid = "a097f95b-d712-26bb-bc3c-67e7d96a3d54",
+						version = 3,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCElementalWeakness == nil",
+						dequeueIfLuaFalse = true,
+						name = "Is Loaded",
+						uuid = "a9e10e6e-ef84-7cd4-a7d7-87aa1d246d21",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return true",
+						name = "Version 1.0",
+						uuid = "ccbb38f1-0010-7282-8939-ac5c809936e9",
+						version = 3,
+					},
+				},
+			},
+			eventType = 12,
+			name = "[Misc] Elemental Weakness Funcs",
+			throttleTime = 1000,
+			uuid = "c7932cb2-aedb-9f4c-8d8b-c5f9c3b85e62",
+			version = 2,
+		},
+		inheritedIndex = 58,
 	},
 	
 	{
@@ -16273,7 +16356,7 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 67,
+		inheritedIndex = 68,
 	},
 	
 	{
@@ -16328,7 +16411,7 @@ local tbl =
 			uuid = "0c591123-b2c0-d2e0-aca9-9e17cf24d43e",
 			version = 2,
 		},
-		inheritedIndex = 64,
+		inheritedIndex = 65,
 	},
 	
 	{
@@ -16399,7 +16482,7 @@ local tbl =
 			uuid = "5dc65816-0d2a-4fd3-9218-ad0eb935e372",
 			version = 2,
 		},
-		inheritedIndex = 67,
+		inheritedIndex = 68,
 	},
 	
 	{
@@ -16469,7 +16552,7 @@ local tbl =
 			uuid = "9ba5faa6-7acc-ce33-8f9a-0e4357579a21",
 			version = 2,
 		},
-		inheritedIndex = 66,
+		inheritedIndex = 67,
 	},
 	
 	{
@@ -16540,7 +16623,7 @@ local tbl =
 			uuid = "ef41ca3b-b8b3-b055-9750-acd44ba586ba",
 			version = 2,
 		},
-		inheritedIndex = 62,
+		inheritedIndex = 63,
 	},
 	
 	{
@@ -16608,7 +16691,7 @@ local tbl =
 			uuid = "eb4b56b6-2b74-6468-8fba-53017fc139c8",
 			version = 2,
 		},
-		inheritedIndex = 63,
+		inheritedIndex = 64,
 	},
 	
 	{
@@ -16660,7 +16743,7 @@ local tbl =
 			uuid = "ccc078bf-d8c3-16bf-a777-ce9c90a5be43",
 			version = 2,
 		},
-		inheritedIndex = 64,
+		inheritedIndex = 65,
 	},
 	
 	{
@@ -16749,7 +16832,7 @@ local tbl =
 			uuid = "b4dea9fb-caa4-148e-9ae8-92c5564e94af",
 			version = 2,
 		},
-		inheritedIndex = 65,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -16765,7 +16848,7 @@ local tbl =
 			uuid = "7affaeba-16a3-388a-9c7a-193cccdb0287",
 			version = 2,
 		},
-		inheritedIndex = 68,
+		inheritedIndex = 69,
 	},
 	
 	{
