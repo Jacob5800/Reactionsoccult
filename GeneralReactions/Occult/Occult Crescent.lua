@@ -15009,43 +15009,46 @@ local tbl =
 				{
 					data = 
 					{
-						actionID = 49085,
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction3\"] = false\nself.used = true",
 						conditions = 
 						{
 							
 							{
-								"1b713d82-f3fd-a968-9bc3-fd90412b3fc1",
+								"3d3f3ae3-e9c5-84d0-bf4e-f87d1173e936",
 								true,
 							},
 							
 							{
-								"a5bec332-6e8c-0651-ba21-336af81c7cb7",
+								"7fdcd281-14f9-063b-a49d-42de65643f64",
 								true,
 							},
 							
 							{
-								"63586d37-f376-4257-b580-a343d97ea198",
+								"a69e6d29-6193-591f-996c-098369216467",
 								true,
 							},
 							
 							{
-								"dd920840-15ef-ddcf-88c5-2a66d33c887f",
+								"c92a4d44-16a6-d650-b672-b51b4bed0124",
 								true,
 							},
 							
 							{
-								"17132334-66c0-fef3-84b4-f9cc99b536d4",
+								"93801b13-1545-e36f-9b18-eb9b1a889481",
 								true,
 							},
 							
 							{
-								"aeb0d686-d670-5649-8ee7-978d608939b2",
+								"6d66f9d6-18f2-eb73-a646-84cbae9d3e07",
 								true,
 							},
 						},
-						gVar = "ACR_RikuMNK3_CD",
-						targetType = "Current Target",
-						uuid = "285cc345-9ad1-342f-af7f-0cec092afc5b",
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Movement Stop Queue",
+						uuid = "bbcb446f-2129-16a9-8294-e90d8b94942e",
+						variableTogglesType = 2,
 						version = 2.1,
 					},
 				},
@@ -15053,48 +15056,190 @@ local tbl =
 				{
 					data = 
 					{
-						actionID = 49087,
+						aType = "ACR",
+						actionID = 49085,
+						clusterMinTarget = 0,
+						clusterRadius = 5,
 						conditions = 
 						{
 							
 							{
-								"1b713d82-f3fd-a968-9bc3-fd90412b3fc1",
+								"3d3f3ae3-e9c5-84d0-bf4e-f87d1173e936",
 								true,
 							},
 							
 							{
-								"a5bec332-6e8c-0651-ba21-336af81c7cb7",
+								"7fdcd281-14f9-063b-a49d-42de65643f64",
 								true,
 							},
 							
 							{
-								"63586d37-f376-4257-b580-a343d97ea198",
+								"a69e6d29-6193-591f-996c-098369216467",
 								true,
 							},
 							
 							{
-								"dd920840-15ef-ddcf-88c5-2a66d33c887f",
+								"c92a4d44-16a6-d650-b672-b51b4bed0124",
 								true,
 							},
 							
 							{
-								"17132334-66c0-fef3-84b4-f9cc99b536d4",
+								"4a596d22-916f-45a6-95f2-47ab2042221d",
 								true,
 							},
 							
 							{
-								"aeb0d686-d670-5649-8ee7-978d608939b2",
+								"67b2e0d8-515e-9e87-88fd-548d7eefc9c0",
 								true,
 							},
 							
 							{
-								"34e8bddc-8f84-e4b5-9064-e70ed61da718",
+								"93801b13-1545-e36f-9b18-eb9b1a889481",
+								false,
+							},
+							
+							{
+								"dc85700f-2280-7145-bbaf-8044ba6b5887",
+								true,
+							},
+							
+							{
+								"94c640c7-3c36-bf3a-bd37-4e63b2ae7ba7",
+								true,
+							},
+							
+							{
+								"75b86d7a-236c-2270-bc01-c8fd9529e6a5",
+								true,
+							},
+							
+							{
+								"89eb4ac1-6022-83e2-9bee-122b96f1155e",
 								true,
 							},
 						},
-						gVar = "ACR_RikuMNK3_CD",
-						targetType = "Current Target",
-						uuid = "e5a7fd30-82e0-d92e-a5af-1cfa54845abe",
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction1",
+						name = "Occult Aero",
+						targetType = "Most Clustered Enemy",
+						uuid = "9d8fcec8-5d03-69b1-9d2f-4726835a21d6",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						clusterMinTarget = 0,
+						clusterRadius = 5,
+						conditions = 
+						{
+							
+							{
+								"3d3f3ae3-e9c5-84d0-bf4e-f87d1173e936",
+								true,
+							},
+							
+							{
+								"7fdcd281-14f9-063b-a49d-42de65643f64",
+								true,
+							},
+							
+							{
+								"a69e6d29-6193-591f-996c-098369216467",
+								true,
+							},
+							
+							{
+								"c92a4d44-16a6-d650-b672-b51b4bed0124",
+								true,
+							},
+							
+							{
+								"4a596d22-916f-45a6-95f2-47ab2042221d",
+								true,
+							},
+							
+							{
+								"67b2e0d8-515e-9e87-88fd-548d7eefc9c0",
+								true,
+							},
+							
+							{
+								"93801b13-1545-e36f-9b18-eb9b1a889481",
+								false,
+							},
+							
+							{
+								"dc85700f-2280-7145-bbaf-8044ba6b5887",
+								true,
+							},
+							
+							{
+								"94c640c7-3c36-bf3a-bd37-4e63b2ae7ba7",
+								true,
+							},
+							
+							{
+								"75b86d7a-236c-2270-bc01-c8fd9529e6a5",
+								true,
+							},
+							
+							{
+								"1054feaa-4e56-666a-854e-872911eedc5d",
+								true,
+							},
+							
+							{
+								"2574fb19-5341-c062-8474-3a4d6622758e",
+								true,
+							},
+						},
+						gVar = "ACR_RikuDRK3_Hotbar_DutyAction3",
+						name = "Occult Aqua Breath",
+						targetType = "Most Clustered Enemy",
+						uuid = "58a6e5a9-9550-80df-be06-16e2ecc614bc",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\"] = false\n_G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction3\"] = false\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"3d3f3ae3-e9c5-84d0-bf4e-f87d1173e936",
+								true,
+							},
+							
+							{
+								"a69e6d29-6193-591f-996c-098369216467",
+								true,
+							},
+							
+							{
+								"c92a4d44-16a6-d650-b672-b51b4bed0124",
+								false,
+							},
+							
+							{
+								"6d66f9d6-18f2-eb73-a646-84cbae9d3e07",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
+						name = "Fallback Dequeue",
+						uuid = "52d07027-c0d7-2216-9c91-a90c49137b39",
+						variableTogglesType = 2,
 						version = 2.1,
 					},
 				},
@@ -15105,14 +15250,30 @@ local tbl =
 				{
 					data = 
 					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "In Occult Crescent",
+						uuid = "3d3f3ae3-e9c5-84d0-bf4e-f87d1173e936",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
 						category = "Lua",
 						conditionLua = "return FFXIV_Common_BotRunning == true",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
-						uuid = "1b713d82-f3fd-a968-9bc3-fd90412b3fc1",
+						uuid = "7fdcd281-14f9-063b-a49d-42de65643f64",
 						version = 3,
 					},
-					inheritedIndex = 1,
 				},
 				
 				{
@@ -15122,7 +15283,7 @@ local tbl =
 						category = "Self",
 						dequeueIfLuaFalse = true,
 						name = "Is P. Blu mage",
-						uuid = "a5bec332-6e8c-0651-ba21-336af81c7cb7",
+						uuid = "a69e6d29-6193-591f-996c-098369216467",
 						version = 3,
 					},
 				},
@@ -15133,7 +15294,19 @@ local tbl =
 						category = "Self",
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
-						uuid = "63586d37-f376-4257-b580-a343d97ea198",
+						uuid = "c92a4d44-16a6-d650-b672-b51b4bed0124",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						name = "Self Living",
+						uuid = "4a596d22-916f-45a6-95f2-47ab2042221d",
 						version = 3,
 					},
 				},
@@ -15154,7 +15327,7 @@ local tbl =
 						hpValue = 30,
 						matchAnyBuff = true,
 						name = "Self Missing Transcendent",
-						uuid = "dd920840-15ef-ddcf-88c5-2a66d33c887f",
+						uuid = "67b2e0d8-515e-9e87-88fd-548d7eefc9c0",
 						version = 3,
 					},
 				},
@@ -15162,58 +15335,75 @@ local tbl =
 				{
 					data = 
 					{
-						category = "Self",
-						conditionType = 12,
+						category = "Lua",
+						conditionLua = "return TensorCore.mGetPlayer():IsMoving()",
+						name = "Self Moving",
+						uuid = "93801b13-1545-e36f-9b18-eb9b1a889481",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						conditionType = 5,
 						dequeueIfLuaFalse = true,
-						localMapIDList = 
+						uuid = "dc85700f-2280-7145-bbaf-8044ba6b5887",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.ocCombatTimer ~= nil and TimeSince(data.ocCombatTimer) > 2400",
+						dequeueIfLuaFalse = true,
+						name = "Combat > 2.4s",
+						uuid = "94c640c7-3c36-bf3a-bd37-4e63b2ae7ba7",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						comparator = 2,
+						conditionType = 6,
+						dequeueIfLuaFalse = true,
+						inRangeValue = 30,
+						name = "Target <= 30y",
+						uuid = "75b86d7a-236c-2270-bc01-c8fd9529e6a5",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Filter",
+						conditions = 
 						{
-							1252,
-							1346,
+							
+							{
+								"026e8745-0b51-40e1-8d72-c01188dec537",
+								true,
+							},
+							
+							{
+								"706bf814-096f-1ff8-b3ea-79ab2ec93733",
+								true,
+							},
+							
+							{
+								"704657c1-2bea-4355-8f93-1944fb839aa2",
+								true,
+							},
 						},
-						name = "In Occult Crescent",
-						uuid = "17132334-66c0-fef3-84b4-f9cc99b536d4",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 5323,
-						name = "Target Ice Weak",
-						uuid = "6912b02e-fc58-3a53-9ee7-7786e8411b9c",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 5322,
-						name = "Target Fire Weak",
-						uuid = "0467d545-a0a4-9777-8775-5a451efe7204",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 5324,
-						name = "Target Lightning Weak",
-						uuid = "e0b19b63-72b9-92a9-be07-8ace5a33c23a",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 2,
 						dequeueIfLuaFalse = true,
-						name = "Self Living",
-						uuid = "aeb0d686-d670-5649-8ee7-978d608939b2",
+						name = "Aero I/II/III CD",
+						partyTargetNumber = 0,
+						uuid = "89eb4ac1-6022-83e2-9bee-122b96f1155e",
 						version = 3,
 					},
 				},
@@ -15227,11 +15417,52 @@ local tbl =
 						comparator = 2,
 						conditionType = 4,
 						dequeueIfLuaFalse = true,
-						name = "Aero on cd",
-						uuid = "8812f170-324a-9bd8-aaa1-377bcda5c300",
+						name = "Aero I CD <= 3",
+						uuid = "026e8745-0b51-40e1-8d72-c01188dec537",
 						version = 3,
 					},
-					inheritedIndex = 8,
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49089,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Aero II CD <= 3",
+						uuid = "706bf814-096f-1ff8-b3ea-79ab2ec93733",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49091,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Aero III CD <=3",
+						uuid = "704657c1-2bea-4355-8f93-1944fb839aa2",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return ActionList:Get(5,33):CanCastResult() ~= 579",
+						dequeueIfLuaFalse = true,
+						name = "Has Aqua Breath",
+						uuid = "1054feaa-4e56-666a-854e-872911eedc5d",
+						version = 3,
+					},
 				},
 				
 				{
@@ -15243,16 +15474,30 @@ local tbl =
 						comparator = 2,
 						conditionType = 4,
 						dequeueIfLuaFalse = true,
-						uuid = "34e8bddc-8f84-e4b5-9064-e70ed61da718",
+						name = "Aquad Breath CD <= 3",
+						uuid = "2574fb19-5341-c062-8474-3a4d6622758e",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction1\" ] or _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction2\" ] or _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction4\" ] or _G[\"ACR_\" .. gACRSelectedProfiles[TensorCore.mGetPlayer().job] .. \"_Hotbar_DutyAction5\" ] == true",
+						dequeueIfLuaFalse = true,
+						name = "Is Queued",
+						uuid = "6d66f9d6-18f2-eb73-a646-84cbae9d3e07",
 						version = 3,
 					},
 				},
 			},
-			name = "P. BLU ",
-			uuid = "359d3292-46ca-6740-9bd4-5e4e6bfa6acc",
+			name = "P. Blue Offense",
+			throttleTime = 250,
+			uuid = "720ed207-fa78-661d-96c5-407da5ddf770",
 			version = 2,
 		},
-		inheritedIndex = 59,
+		inheritedIndex = 53,
 	},
 	
 	{
