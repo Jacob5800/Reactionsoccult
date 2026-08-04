@@ -15002,9 +15002,185 @@ local tbl =
 		{
 			actions = 
 			{
+				
+				{
+					data = 
+					{
+						actionID = 49085,
+						conditions = 
+						{
+							
+							{
+								"1b713d82-f3fd-a968-9bc3-fd90412b3fc1",
+								true,
+							},
+							
+							{
+								"a5bec332-6e8c-0651-ba21-336af81c7cb7",
+								true,
+							},
+							
+							{
+								"63586d37-f376-4257-b580-a343d97ea198",
+								true,
+							},
+							
+							{
+								"dd920840-15ef-ddcf-88c5-2a66d33c887f",
+								true,
+							},
+							
+							{
+								"17132334-66c0-fef3-84b4-f9cc99b536d4",
+								true,
+							},
+							
+							{
+								"aeb0d686-d670-5649-8ee7-978d608939b2",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						targetType = "Current Target",
+						uuid = "285cc345-9ad1-342f-af7f-0cec092afc5b",
+						version = 2.1,
+					},
+				},
 			},
 			conditions = 
 			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "1b713d82-f3fd-a968-9bc3-fd90412b3fc1",
+						version = 3,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5333,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Blu mage",
+						uuid = "a5bec332-6e8c-0651-ba21-336af81c7cb7",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						uuid = "63586d37-f376-4257-b580-a343d97ea198",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						hpValue = 30,
+						matchAnyBuff = true,
+						name = "Self Missing Transcendent",
+						uuid = "dd920840-15ef-ddcf-88c5-2a66d33c887f",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "In Occult Crescent",
+						uuid = "17132334-66c0-fef3-84b4-f9cc99b536d4",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5323,
+						name = "Target Ice Weak",
+						uuid = "6912b02e-fc58-3a53-9ee7-7786e8411b9c",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5322,
+						name = "Target Fire Weak",
+						uuid = "0467d545-a0a4-9777-8775-5a451efe7204",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffID = 5324,
+						name = "Target Lightning Weak",
+						uuid = "e0b19b63-72b9-92a9-be07-8ace5a33c23a",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 2,
+						dequeueIfLuaFalse = true,
+						name = "Self Living",
+						uuid = "aeb0d686-d670-5649-8ee7-978d608939b2",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49085,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Aero on cd",
+						uuid = "8812f170-324a-9bd8-aaa1-377bcda5c300",
+						version = 3,
+					},
+					inheritedIndex = 8,
+				},
 			},
 			name = "P. BLU (nothing yet)",
 			uuid = "359d3292-46ca-6740-9bd4-5e4e6bfa6acc",
