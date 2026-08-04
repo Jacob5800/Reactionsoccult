@@ -15050,6 +15050,55 @@ local tbl =
 						version = 2.1,
 					},
 				},
+				
+				{
+					data = 
+					{
+						actionID = 49087,
+						conditions = 
+						{
+							
+							{
+								"1b713d82-f3fd-a968-9bc3-fd90412b3fc1",
+								true,
+							},
+							
+							{
+								"a5bec332-6e8c-0651-ba21-336af81c7cb7",
+								true,
+							},
+							
+							{
+								"63586d37-f376-4257-b580-a343d97ea198",
+								true,
+							},
+							
+							{
+								"dd920840-15ef-ddcf-88c5-2a66d33c887f",
+								true,
+							},
+							
+							{
+								"17132334-66c0-fef3-84b4-f9cc99b536d4",
+								true,
+							},
+							
+							{
+								"aeb0d686-d670-5649-8ee7-978d608939b2",
+								true,
+							},
+							
+							{
+								"34e8bddc-8f84-e4b5-9064-e70ed61da718",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						targetType = "Current Target",
+						uuid = "e5a7fd30-82e0-d92e-a5af-1cfa54845abe",
+						version = 2.1,
+					},
+				},
 			},
 			conditions = 
 			{
@@ -15185,8 +15234,22 @@ local tbl =
 					},
 					inheritedIndex = 8,
 				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 3,
+						actionID = 49087,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						uuid = "34e8bddc-8f84-e4b5-9064-e70ed61da718",
+						version = 3,
+					},
+				},
 			},
-			name = "P. BLU (nothing yet)",
+			name = "P. BLU ",
 			uuid = "359d3292-46ca-6740-9bd4-5e4e6bfa6acc",
 			version = 2,
 		},
@@ -16549,7 +16612,7 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[47308] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47309] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47311] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47312] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47313] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47314] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50554] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50555] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50557] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50558] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50559] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50560] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50561] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41284] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41395] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41315] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41316] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41317] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41830] = {label = \"Barefisted Death\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47073] = {label = \"Garrote\", source = \"Occult Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47152] = {label = \"Sinister Sight\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47191] = {label = \"Stunning Sheen\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49879] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50691] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50692] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41759] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41760] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41761] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41729] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41731] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41733] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41734] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41735] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47310] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50556] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nself.used = true",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[47308] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47309] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47311] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47312] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47313] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47314] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50554] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50555] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50557] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50558] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50559] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50560] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50561] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41284] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41395] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41315] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41316] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41317] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41830] = {label = \"Barefisted Death\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47073] = {label = \"Garrote\", source = \"Occult Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47152] = {label = \"Sinister Sight\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47191] = {label = \"Stunning Sheen\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49879] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50691] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50692] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41759] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41760] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41761] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41729] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41731] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41733] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41734] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41735] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47310] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50556] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47439] = { label = 'Tendon Ripper', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49799] = {label = \"Plaincracker\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49779] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49777] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nself.used = true",
 						conditions = 
 						{
 							
@@ -18614,6 +18677,437 @@ local tbl =
 			eventType = 3,
 			name = "[Forbidden Folios] Draws",
 			uuid = "9836e89a-9906-e9ba-8aa9-4739b26436b3",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local entityID = eventArgs.entityID\nlocal wind = TensorCore.mGetEntity(entityID)\nif not wind or not wind.pos then return end\ndata.northHornBitingWindStars = data.northHornBitingWindStars or {}\n\nlocal old = data.northHornBitingWindStars[entityID]\nif old then\n\tfor _, uuid in ipairs(old) do Argus.deleteTimedShape(uuid) end\nend\n\n-- Tendon Ripper is two 60x8 crosses offset by 45 degrees.  Absolute heading\n-- keeps the eight-pointed star aligned with the logged world-space AOEs while\n-- OnEnt follows the marked wind as it finishes moving into position.\nlocal drawer = TensorCore.getMoogleDrawer()\nif not drawer then return end\ndata.northHornBitingWindStars[entityID] = {\n\tdrawer:addTimedCrossOnEnt(5200, entityID, 60, 8, nil, nil, nil, nil, 0, true),\n\tdrawer:addTimedCrossOnEnt(5200, entityID, 60, 8, nil, nil, nil, nil, math.pi / 4, true),\n}\nself.used = true\n",
+						conditions = 
+						{
+							
+							{
+								"32000043-0000-4000-8000-000000000001",
+								true,
+							},
+							
+							{
+								"32000043-0000-4000-8000-000000000151",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Draw marked wind's eight-pointed star",
+						uuid = "32000043-0000-4000-8000-000000000201",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "North Horn",
+						uuid = "32000043-0000-4000-8000-000000000001",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "local e=TensorCore.mGetEntity(eventArgs.entityID) return eventArgs.markerID == 506 and e and e.contentid == 14506",
+						dequeueIfLuaFalse = true,
+						name = "Marked Biting Wind",
+						uuid = "32000043-0000-4000-8000-000000000151",
+						version = 3,
+					},
+				},
+			},
+			eventType = 4,
+			name = "[North Horn] Abductor - Biting Wind Star",
+			uuid = "5fb56afa-2b33-b5a5-b04a-3d1fe8f7279a",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "if data.appallingBehaviorAOEOrder == nil then\n    data.appallingBehaviorAOEOrder = {}\nend\n\ntable.insert(data.appallingBehaviorAOEOrder, {\n    sourceEntityID = eventArgs.sourceEntityID\n})\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"3c3d939b-16d6-7cc4-9edc-006f4e8bfea7",
+								true,
+							},
+							
+							{
+								"3409826e-49e8-f984-8317-5adf62b912fb",
+								true,
+							},
+							
+							{
+								"f27e8e99-64ab-8f24-b758-530f17ff626a",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Store Order",
+						uuid = "b5fae3cc-f31a-2a88-878a-ae4df4fb6c17",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "In North Horn",
+						uuid = "3c3d939b-16d6-7cc4-9edc-006f4e8bfea7",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						comparator = 3,
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						name = "Old Tether == 0",
+						uuid = "3409826e-49e8-f984-8317-5adf62b912fb",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						comparator = 3,
+						dequeueIfLuaFalse = true,
+						eventArgType = 5,
+						eventIntValue = 14,
+						name = "New Tether == 14",
+						uuid = "f27e8e99-64ab-8f24-b758-530f17ff626a",
+						version = 3,
+					},
+				},
+			},
+			eventType = 15,
+			name = "[AppallingBehavior] Store Order",
+			uuid = "db4af500-8c21-91b0-9d2b-2b18fddec1f9",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "if data.appalingBehaviourAOEOrder == nil then\n    data.appalingBehaviourAOEOrder = {}\nend\n\nlocal lastIndex = #data.appallingBehaviorAOEOrder\n\nif lastIndex > 0 then\n    if eventArgs.a2 == 1 then\n        data.appallingBehaviorAOEOrder[lastIndex].type = \"cone\"\n    elseif eventArgs.a2 == 5 then\n        data.appallingBehaviorAOEOrder[lastIndex].type = \"circle\"\n    end\nend\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"e9acbcc6-dc1e-f791-afbf-64351a1c9e74",
+								true,
+							},
+							
+							{
+								"4dcc6558-a17e-4251-95bd-a3d0bd7e575a",
+								true,
+							},
+							
+							{
+								"4e151852-b0a1-23ef-8882-017a7b376d1d",
+								true,
+							},
+							
+							{
+								"3a88cfc4-3bcf-1701-a911-f98a6e3db192",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Store Cone/Circle",
+						uuid = "955b5f57-e0b8-1e54-8129-887e67487db5",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "In North Horn",
+						uuid = "e9acbcc6-dc1e-f791-afbf-64351a1c9e74",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 2015274,
+						name = "Hidden Entity",
+						uuid = "4dcc6558-a17e-4251-95bd-a3d0bd7e575a",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventIntValue = 1,
+						name = "a2 >= 1",
+						uuid = "4e151852-b0a1-23ef-8882-017a7b376d1d",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						comparator = 2,
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventIntValue = 5,
+						name = "a2 <= 5",
+						uuid = "3a88cfc4-3bcf-1701-a911-f98a6e3db192",
+						version = 3,
+					},
+				},
+			},
+			eventType = 20,
+			name = "[AppallingBehavior] Store Type",
+			uuid = "4cbd8d02-6e99-04ef-b984-8f4fc8b8774c",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "data.appallingBehaviorAOEOrder = nil\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"76a1ab78-39e7-23ef-821d-cef9a605c1df",
+								true,
+							},
+							
+							{
+								"bbac79fd-f3c0-b345-bb27-a839b5319c35",
+								true,
+							},
+							
+							{
+								"1bc2f7e1-77cb-b7d4-8ac9-b5b2f59fbb8f",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Reset Tables",
+						uuid = "21526daa-d113-2cad-bc6c-1dd539908ae6",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "In North Horn",
+						uuid = "76a1ab78-39e7-23ef-821d-cef9a605c1df",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgType = 3,
+						eventBoolValue = 2,
+						name = "Is Visible: False",
+						uuid = "1bc2f7e1-77cb-b7d4-8ac9-b5b2f59fbb8f",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 14715,
+						name = "Palkeeper ContentID",
+						uuid = "bbac79fd-f3c0-b345-bb27-a839b5319c35",
+						version = 3,
+					},
+				},
+			},
+			eventType = 22,
+			name = "[AppallingBehavior] Reset Tables",
+			uuid = "3b19f57d-58a4-62f4-a510-8833dbfc7afe",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local drawer = TensorCore.getMoogleDrawer()\nlocal delayInterval = 4500\n\nfor index, entry in ipairs(data.appallingBehaviorAOEOrder) do\n    local currentDelay = (index - 1) * delayInterval\n\n    if entry.type == \"cone\" then\n        drawer:addTimedConeOnEnt(\n            5000,                  -- timeout\n            entry.sourceEntityID,  -- entID\n            50,                    -- radius\n            math.rad(100),         -- angle\n            nil,                   -- targetID\n            currentDelay           -- delay\n        )\n\n    elseif entry.type == \"circle\" then\n        drawer:addTimedCircleOnEnt(\n            5000,                  -- timeout\n            entry.sourceEntityID,  -- entID\n            30,                    -- radius\n            currentDelay           -- delay\n        )\n    end\nend\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"496521f7-b3be-a575-b1c5-afb970ae8e40",
+								true,
+							},
+							
+							{
+								"d458eb78-1900-c148-9cc0-2ec671568050",
+								true,
+							},
+							
+							{
+								"11911316-cfa1-4f07-9d19-5b52241a2fa9",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Draws",
+						uuid = "2c36b967-917b-2ffb-af81-2c705ec2cd22",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "In North Horn",
+						uuid = "496521f7-b3be-a575-b1c5-afb970ae8e40",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 14714,
+						name = "Pallmagia ContentID",
+						uuid = "d458eb78-1900-c148-9cc0-2ec671568050",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 3,
+						eventArgType = 2,
+						name = "Casts",
+						spellIDList = 
+						{
+							49773,
+							49775,
+						},
+						uuid = "11911316-cfa1-4f07-9d19-5b52241a2fa9",
+						version = 3,
+					},
+				},
+			},
+			eventType = 2,
+			name = "[AppallingBehavior] Draws",
+			uuid = "e69d7ffd-c8a8-b2c9-9014-7eba5c81c0b1",
 			version = 2,
 		},
 	}, 
