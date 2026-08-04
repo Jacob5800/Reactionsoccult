@@ -5892,7 +5892,7 @@ local tbl =
 			uuid = "c9178b74-f32c-817a-950c-32b1fc0a7ee8",
 			version = 2,
 		},
-		inheritedIndex = 71,
+		inheritedIndex = 72,
 	},
 	
 	{
@@ -6163,7 +6163,7 @@ local tbl =
 			uuid = "eb688e35-87ab-c255-a605-63f5423c3c0a",
 			version = 2,
 		},
-		inheritedIndex = 72,
+		inheritedIndex = 73,
 	},
 	
 	{
@@ -6576,7 +6576,7 @@ local tbl =
 			uuid = "1c6bbd54-6018-485a-9f05-9819fa8aa68e",
 			version = 2,
 		},
-		inheritedIndex = 72,
+		inheritedIndex = 73,
 	},
 	
 	{
@@ -7068,7 +7068,7 @@ local tbl =
 			uuid = "9c5b9d73-ae0e-195a-940a-540bca4454b2",
 			version = 2,
 		},
-		inheritedIndex = 72,
+		inheritedIndex = 73,
 	},
 	
 	{
@@ -7210,7 +7210,7 @@ local tbl =
 			uuid = "b175b050-f2bb-2ffe-bd7e-bff2941f8634",
 			version = 2,
 		},
-		inheritedIndex = 73,
+		inheritedIndex = 74,
 	},
 	
 	{
@@ -7424,7 +7424,7 @@ local tbl =
 			uuid = "9278be18-034c-9f92-abab-1d3e0055a418",
 			version = 2,
 		},
-		inheritedIndex = 74,
+		inheritedIndex = 75,
 	},
 	
 	{
@@ -7668,7 +7668,7 @@ local tbl =
 			uuid = "4c3d9549-4ff9-6f51-a0a1-292851ddf5a7",
 			version = 2,
 		},
-		inheritedIndex = 75,
+		inheritedIndex = 76,
 	},
 	
 	{
@@ -7874,7 +7874,7 @@ local tbl =
 			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
 			version = 2,
 		},
-		inheritedIndex = 76,
+		inheritedIndex = 77,
 	},
 	
 	{
@@ -10295,7 +10295,7 @@ local tbl =
 			uuid = "978328eb-ccac-48cf-bcfc-9c31d4cf6f4d",
 			version = 2,
 		},
-		inheritedIndex = 79,
+		inheritedIndex = 80,
 	},
 	
 	{
@@ -15696,7 +15696,7 @@ local tbl =
 			uuid = "78a6c2ef-7e57-09cd-b705-562934c6bedc",
 			version = 2,
 		},
-		inheritedIndex = 63,
+		inheritedIndex = 64,
 	},
 	
 	{
@@ -16656,7 +16656,7 @@ local tbl =
 			uuid = "caa3b091-3ad6-f0cd-a769-4a79b53f5634",
 			version = 2,
 		},
-		inheritedIndex = 60,
+		inheritedIndex = 61,
 	},
 	
 	{
@@ -16672,7 +16672,7 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
-		inheritedIndex = 80,
+		inheritedIndex = 81,
 	},
 	
 	{
@@ -16843,7 +16843,55 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 69,
+		inheritedIndex = 70,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "-- The stock Occult Crescent toggles and blacklist windows. Nothing in here is\n-- special: it is the same public API any other reaction uses to hook in.\n-- Runs once, guarded by the reaction condition:\n--   return OCGUI ~= nil and OCGUI.init == true and OCGUI.builtinsRegistered ~= true\n\n-- name, phantom job buff id, settings window tab.\n-- The tab is just a label: leave it off and the toggle lands on \"Main\", which\n-- is also where anything a third party adds without a tab ends up.\n-- OCGUI.PhantomBuffs returns a table of the buff IDs. You can also just pass the buff ID if you want.\nlocal builtinToggles = {\n\t{\"Chest ESP\", OCGUI.PhantomBuffs.Global, \"Main\"},\n\t{\"Survey ESP\", OCGUI.PhantomBuffs.Global, \"Main\"},\n\t{\"Carrot ESP\", OCGUI.PhantomBuffs.Global, \"Main\"},\n\t{\"Auto Pray\", OCGUI.PhantomBuffs.Knight, \"Combat\"},\n\t{\"Auto Revive\", OCGUI.PhantomBuffs.Chemist, \"Combat\"},\n\t{\"Auto Steal\", OCGUI.PhantomBuffs.Thief, \"Combat\"},\n\t{\"Auto Pilfer\", OCGUI.PhantomBuffs.Thief, \"Combat\"},\n\t{\"Auto Cannon\", OCGUI.PhantomBuffs.Cannoneer, \"Combat\"},\n\t{\"Silver Prio\", OCGUI.PhantomBuffs.Cannoneer, \"Combat\"},\n\t{\"Auto Bell\", OCGUI.PhantomBuffs.Geomancer, \"Combat\"},\n\t{\"Auto Aria\", OCGUI.PhantomBuffs.Bard, \"Combat\"},\n\t{\"Auto Rime\", OCGUI.PhantomBuffs.Bard, \"Combat\"},\n\t{\"Auto Shell\", OCGUI.PhantomBuffs.MysticKnight, \"Combat\"},\n\t{\"Auto Spellblade\", OCGUI.PhantomBuffs.MysticKnight, \"Combat\"},\n\t{\"Auto Weapons\", OCGUI.PhantomBuffs.Gladiator, \"Combat\"},\n\t{\"Auto Defend\", OCGUI.PhantomBuffs.Gladiator, \"Combat\"}\n}\nfor _, toggle in ipairs(builtinToggles) do\n\tOCGUI.AddToggle(toggle[1], {phantom = toggle[2], tab = toggle[3]})\nend\n\nOCGUI.AddListWindow(\n\t\"StealBlacklist\",\n\t{\n\t\ttitle = \"Steal Blacklist Menu\",\n\t\tbuttonLabel = \"Steal Blacklist\",\n\t\tkey = \"StealBlacklistTable\",\n\t\thelp = \"First select a target to blacklist\\nThen press the Add Target button\",\n\t\temptyText = \"Go add some enemies to your blacklist!\"\n\t}\n)\nOCGUI.AddListWindow(\n\t\"StunBlacklist\",\n\t{\n\t\ttitle = \"Stun Blacklist Menu\",\n\t\tbuttonLabel = \"Stun Blacklist\",\n\t\tkey = \"StunBlacklistTable\",\n\t\tsameline = true,\n\t\thelp = \"First select a target to blacklist\\nThen press the Add Target button\",\n\t\temptyText = \"Go add some enemies to your blacklist!\"\n\t}\n)\n\nOCGUI.AddListWindow(\n\t\"UndeadPriority\",\n\t{\n\t\ttitle = \"Undead Priority Menu\",\n\t\tbuttonLabel = \"Undead Priority\",\n\t\tkey = \"UndeadPriorityTable\",\n\t\thelp = \"First select a target to priority\\nThen press the Add Target button\",\n\t\temptyText = \"Go add some enemies to your priority list!\"\n\t}\n)\n\nOCGUI.builtinsRegistered = true\nOCGUI.SaveSettings()\nself.used = true\n",
+						conditions = 
+						{
+							
+							{
+								"215f281f-88e3-ce45-954c-48f460743681",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Example Built-ins",
+						uuid = "d95e8138-1efe-c617-91b9-694de5dacaad",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI ~= nil and OCGUI.init == true and OCGUI.builtinsRegistered ~= true",
+						name = "Examples Registered",
+						uuid = "215f281f-88e3-ce45-954c-48f460743681",
+						version = 3,
+					},
+				},
+			},
+			eventType = 13,
+			name = "[Extra] Example Toggles",
+			uuid = "bf3b5f37-31c4-578f-a0c0-1cab48c9c392",
+			version = 2,
+		},
+		inheritedIndex = 60,
 	},
 	
 	{
@@ -16898,7 +16946,7 @@ local tbl =
 			uuid = "0c591123-b2c0-d2e0-aca9-9e17cf24d43e",
 			version = 2,
 		},
-		inheritedIndex = 66,
+		inheritedIndex = 67,
 	},
 	
 	{
@@ -16969,7 +17017,7 @@ local tbl =
 			uuid = "5dc65816-0d2a-4fd3-9218-ad0eb935e372",
 			version = 2,
 		},
-		inheritedIndex = 69,
+		inheritedIndex = 70,
 	},
 	
 	{
@@ -17039,7 +17087,7 @@ local tbl =
 			uuid = "15ccc7ec-407e-4c0c-ac79-88a64b9cc4b7",
 			version = 2,
 		},
-		inheritedIndex = 62,
+		inheritedIndex = 63,
 	},
 	
 	{
@@ -17110,7 +17158,7 @@ local tbl =
 			uuid = "ef41ca3b-b8b3-b055-9750-acd44ba586ba",
 			version = 2,
 		},
-		inheritedIndex = 64,
+		inheritedIndex = 65,
 	},
 	
 	{
@@ -17178,7 +17226,7 @@ local tbl =
 			uuid = "eb4b56b6-2b74-6468-8fba-53017fc139c8",
 			version = 2,
 		},
-		inheritedIndex = 65,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -17230,7 +17278,7 @@ local tbl =
 			uuid = "ccc078bf-d8c3-16bf-a777-ce9c90a5be43",
 			version = 2,
 		},
-		inheritedIndex = 66,
+		inheritedIndex = 67,
 	},
 	
 	{
@@ -17319,7 +17367,7 @@ local tbl =
 			uuid = "b4dea9fb-caa4-148e-9ae8-92c5564e94af",
 			version = 2,
 		},
-		inheritedIndex = 67,
+		inheritedIndex = 68,
 	},
 	
 	{
@@ -17335,7 +17383,7 @@ local tbl =
 			uuid = "7affaeba-16a3-388a-9c7a-193cccdb0287",
 			version = 2,
 		},
-		inheritedIndex = 70,
+		inheritedIndex = 71,
 	},
 	
 	{
@@ -17454,7 +17502,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 86,
+		inheritedIndex = 87,
 	},
 	
 	{
@@ -17596,7 +17644,7 @@ local tbl =
 			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
 			version = 2,
 		},
-		inheritedIndex = 87,
+		inheritedIndex = 88,
 	},
 	
 	{
@@ -18967,7 +19015,7 @@ local tbl =
 			uuid = "d11651c2-77ca-a156-8136-388eeea52a44",
 			version = 2,
 		},
-		inheritedIndex = 85,
+		inheritedIndex = 86,
 	},
 	
 	{
@@ -19345,23 +19393,23 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "local entityID = eventArgs.entityID\ndata.quarriedGolemCones = data.quarriedGolemCones or {}\n\nlocal old = data.quarriedGolemCones[entityID]\nif old then\n\tArgus.deleteTimedShape(old)\n\tdata.quarriedGolemCones[entityID] = nil\nend\n\n-- wasVisible=false means this callback is the transition into visibility.\n-- One entity-attached timed cone follows both position and facing internally,\n-- replacing two entityList scans plus a Lua draw call on every frame.\nif eventArgs.wasVisible == false then\n\tdata.quarriedGolemCones[entityID] = TensorCore.getMoogleDrawer():addTimedConeOnEnt(600000, entityID, 35, math.rad(90))\nend\nself.used = true\n",
+						actionLua = "local entityID = eventArgs.entityID\ndata.quarriedGolemCones = data.quarriedGolemCones or {}\n\nlocal old = data.quarriedGolemCones[entityID]\nif old then\n\tArgus.deleteTimedShape(old)\n\tdata.quarriedGolemCones[entityID] = nil\nend\n\n-- wasVisible=false means this callback is the transition into visibility.\n-- One entity-attached timed cone follows both position and facing internally,\n-- replacing two entityList scans plus a Lua draw call on every frame.\n-- Acclaim 47157/47158 are logged as 40y, 90-degree cones.\nif eventArgs.wasVisible == false then\n\tdata.quarriedGolemCones[entityID] = TensorCore.getMoogleDrawer():addTimedConeOnEnt(600000, entityID, 40, math.rad(90))\nend\nself.used = true\n",
 						conditions = 
 						{
 							
 							{
-								"32000039-0000-4000-8000-000000000001",
+								"8aa5dab9-07b4-c939-8637-95f047979491",
 								true,
 							},
 							
 							{
-								"32000039-0000-4000-8000-000000000151",
+								"4c39a4d4-1c1f-cdb2-b190-09bd29eef1ce",
 								true,
 							},
 						},
 						gVar = "ACR_RikuMNK3_CD",
 						name = "Attach or remove golem cone",
-						uuid = "32000039-0000-4000-8000-000000000201",
+						uuid = "ae2f290f-c726-f303-ae79-789c4b1af79e",
 						version = 2.1,
 					},
 				},
@@ -19377,7 +19425,7 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						localmapid = 1346,
 						name = "Zone",
-						uuid = "32000039-0000-4000-8000-000000000001",
+						uuid = "8aa5dab9-07b4-c939-8637-95f047979491",
 						version = 3,
 					},
 				},
@@ -19389,14 +19437,14 @@ local tbl =
 						conditionLua = "return eventArgs.entityContentID == 14510",
 						dequeueIfLuaFalse = true,
 						name = "Alabaster Golem visibility",
-						uuid = "32000039-0000-4000-8000-000000000151",
+						uuid = "4c39a4d4-1c1f-cdb2-b190-09bd29eef1ce",
 						version = 3,
 					},
 				},
 			},
 			eventType = 22,
-			name = "[Quarried away] Quarried Away - Golem Cones",
-			uuid = "618e04ac-a500-db18-9af0-80bfb364d1ff",
+			name = "[Quarried Away] Golem Cones",
+			uuid = "e77c80ea-6d38-9334-9c6b-91ef979235a3",
 			version = 2,
 		},
 	}, 
