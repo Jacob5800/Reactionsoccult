@@ -5892,7 +5892,7 @@ local tbl =
 			uuid = "c9178b74-f32c-817a-950c-32b1fc0a7ee8",
 			version = 2,
 		},
-		inheritedIndex = 70,
+		inheritedIndex = 71,
 	},
 	
 	{
@@ -6163,7 +6163,7 @@ local tbl =
 			uuid = "eb688e35-87ab-c255-a605-63f5423c3c0a",
 			version = 2,
 		},
-		inheritedIndex = 71,
+		inheritedIndex = 72,
 	},
 	
 	{
@@ -6576,7 +6576,7 @@ local tbl =
 			uuid = "1c6bbd54-6018-485a-9f05-9819fa8aa68e",
 			version = 2,
 		},
-		inheritedIndex = 71,
+		inheritedIndex = 72,
 	},
 	
 	{
@@ -7068,7 +7068,7 @@ local tbl =
 			uuid = "9c5b9d73-ae0e-195a-940a-540bca4454b2",
 			version = 2,
 		},
-		inheritedIndex = 71,
+		inheritedIndex = 72,
 	},
 	
 	{
@@ -7210,7 +7210,7 @@ local tbl =
 			uuid = "b175b050-f2bb-2ffe-bd7e-bff2941f8634",
 			version = 2,
 		},
-		inheritedIndex = 72,
+		inheritedIndex = 73,
 	},
 	
 	{
@@ -7424,7 +7424,7 @@ local tbl =
 			uuid = "9278be18-034c-9f92-abab-1d3e0055a418",
 			version = 2,
 		},
-		inheritedIndex = 73,
+		inheritedIndex = 74,
 	},
 	
 	{
@@ -7668,7 +7668,7 @@ local tbl =
 			uuid = "4c3d9549-4ff9-6f51-a0a1-292851ddf5a7",
 			version = 2,
 		},
-		inheritedIndex = 74,
+		inheritedIndex = 75,
 	},
 	
 	{
@@ -7874,7 +7874,7 @@ local tbl =
 			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
 			version = 2,
 		},
-		inheritedIndex = 75,
+		inheritedIndex = 76,
 	},
 	
 	{
@@ -10295,7 +10295,7 @@ local tbl =
 			uuid = "978328eb-ccac-48cf-bcfc-9c31d4cf6f4d",
 			version = 2,
 		},
-		inheritedIndex = 78,
+		inheritedIndex = 79,
 	},
 	
 	{
@@ -15452,7 +15452,7 @@ local tbl =
 			uuid = "78a6c2ef-7e57-09cd-b705-562934c6bedc",
 			version = 2,
 		},
-		inheritedIndex = 62,
+		inheritedIndex = 63,
 	},
 	
 	{
@@ -16428,7 +16428,7 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
-		inheritedIndex = 79,
+		inheritedIndex = 80,
 	},
 	
 	{
@@ -16599,7 +16599,7 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 68,
+		inheritedIndex = 69,
 	},
 	
 	{
@@ -16654,7 +16654,7 @@ local tbl =
 			uuid = "0c591123-b2c0-d2e0-aca9-9e17cf24d43e",
 			version = 2,
 		},
-		inheritedIndex = 65,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -16725,7 +16725,7 @@ local tbl =
 			uuid = "5dc65816-0d2a-4fd3-9218-ad0eb935e372",
 			version = 2,
 		},
-		inheritedIndex = 68,
+		inheritedIndex = 69,
 	},
 	
 	{
@@ -16738,18 +16738,18 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "local currentWeather = GetCurrentWeather()\n\nif GlobalCurrentWeather == nil or GlobalCurrentWeather ~= currentWeather then\n    GlobalCurrentWeather = currentWeather\n    if currentWeather == 192 then\n        AnyoneCore.Shotcall(\"Weather for Forked Tower spawned.\", false, 8, true)\n        TensorCore.sendParsedChatMessage(\"/e {color:228,208,10}[Occult Crescent Notification]{color:255,255,255} Weather for forked tower spawned! <se.9>\")\n    end\nend\nself.used = true",
+						actionLua = "local currentWeather = GetCurrentWeather()\n\nif GlobalCurrentWeather == nil or GlobalCurrentWeather ~= currentWeather then\n    GlobalCurrentWeather = currentWeather\n    if currentWeather == 192 then\n        AnyoneCore.Shotcall(\"Weather for Forked Tower spawned.\", false, 8, true)\n        TensorCore.sendParsedChatMessage(\"/e {color:228,208,10}[Occult Crescent Notification]{color:255,255,255} Weather for forked tower spawned! <se.9>\")\n    end\nend\nself.eventConditionMismatch = true\nself.used = true",
 						conditions = 
 						{
 							
 							{
-								"bcca0f60-82e7-833b-ad3e-08fe2b194132",
+								"1c7f8070-dc2f-6ae3-b064-5fd0cbde6520",
 								true,
 							},
 						},
 						gVar = "ACR_RikuWAR3_CD",
 						name = "Weather Shotcall",
-						uuid = "e907fad8-1f1d-e527-921c-763fe3fb1e6e",
+						uuid = "4c2db6d6-f895-2eb9-b512-1ef28440c30b",
 						version = 2.1,
 					},
 				},
@@ -16763,13 +16763,13 @@ local tbl =
 						{
 							
 							{
-								"bcca0f60-82e7-833b-ad3e-08fe2b194132",
+								"1c7f8070-dc2f-6ae3-b064-5fd0cbde6520",
 								true,
 							},
 						},
 						gVar = "ACR_RikuWAR3_CD",
 						name = "empty reaction for throttle",
-						uuid = "67d56c9c-13f2-7092-ac36-25425bedd3e4",
+						uuid = "22b18714-63c5-87a1-a27e-b2298d3218d9",
 						version = 2.1,
 					},
 				},
@@ -16785,17 +16785,17 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						localmapid = 1346,
 						name = "North Horn",
-						uuid = "bcca0f60-82e7-833b-ad3e-08fe2b194132",
+						uuid = "1c7f8070-dc2f-6ae3-b064-5fd0cbde6520",
 						version = 3,
 					},
 				},
 			},
 			name = "[OC] Weather sound shotcall",
 			throttleTime = 5000,
-			uuid = "9ba5faa6-7acc-ce33-8f9a-0e4357579a21",
+			uuid = "15ccc7ec-407e-4c0c-ac79-88a64b9cc4b7",
 			version = 2,
 		},
-		inheritedIndex = 67,
+		inheritedIndex = 62,
 	},
 	
 	{
@@ -16866,7 +16866,7 @@ local tbl =
 			uuid = "ef41ca3b-b8b3-b055-9750-acd44ba586ba",
 			version = 2,
 		},
-		inheritedIndex = 63,
+		inheritedIndex = 64,
 	},
 	
 	{
@@ -16934,7 +16934,7 @@ local tbl =
 			uuid = "eb4b56b6-2b74-6468-8fba-53017fc139c8",
 			version = 2,
 		},
-		inheritedIndex = 64,
+		inheritedIndex = 65,
 	},
 	
 	{
@@ -16986,7 +16986,7 @@ local tbl =
 			uuid = "ccc078bf-d8c3-16bf-a777-ce9c90a5be43",
 			version = 2,
 		},
-		inheritedIndex = 65,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -17075,7 +17075,7 @@ local tbl =
 			uuid = "b4dea9fb-caa4-148e-9ae8-92c5564e94af",
 			version = 2,
 		},
-		inheritedIndex = 66,
+		inheritedIndex = 67,
 	},
 	
 	{
@@ -17091,7 +17091,7 @@ local tbl =
 			uuid = "7affaeba-16a3-388a-9c7a-193cccdb0287",
 			version = 2,
 		},
-		inheritedIndex = 69,
+		inheritedIndex = 70,
 	},
 	
 	{
@@ -17210,7 +17210,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 85,
+		inheritedIndex = 86,
 	},
 	
 	{
@@ -17352,7 +17352,7 @@ local tbl =
 			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
 			version = 2,
 		},
-		inheritedIndex = 86,
+		inheritedIndex = 87,
 	},
 	
 	{
@@ -18723,7 +18723,7 @@ local tbl =
 			uuid = "d11651c2-77ca-a156-8136-388eeea52a44",
 			version = 2,
 		},
-		inheritedIndex = 84,
+		inheritedIndex = 85,
 	},
 	
 	{
