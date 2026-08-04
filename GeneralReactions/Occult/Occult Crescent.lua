@@ -12717,7 +12717,6 @@ local tbl =
 					},
 				},
 			},
-			enabled = false,
 			name = "P. WHM - Rez",
 			throttleTime = 200,
 			uuid = "c1e2e2ba-7ea0-520b-91ff-cb92e4676842",
