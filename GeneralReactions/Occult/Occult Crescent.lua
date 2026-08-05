@@ -19685,6 +19685,75 @@ local tbl =
 			uuid = "b865ed57-a56a-d906-bbac-138706f67f9e",
 			version = 4,
 		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local now = Now()\nif data.northHornTinyCometScanNext and now < data.northHornTinyCometScanNext then\n\tself.used = true\n\treturn\nend\ndata.northHornTinyCometScanNext = now + 200\n\nlocal points = {}\nlocal apprentices = TensorCore.entityList(\"contentid=14796,alive\")\nif table.valid(apprentices) then\n\tfor _, apprentice in pairs(apprentices) do\n\t\tif apprentice.pos and Argus.isEntityVisible(apprentice) then\n\t\t\tpoints[#points + 1] = apprentice.pos\n\t\tend\n\tend\nend\n\nif #points ~= 9 then\n\tfor _, label in pairs(data.northHornTinyCometPrelabels or {}) do\n\t\tAnyoneCore.removeTimedWorldText(label.uuid)\n\tend\n\tdata.northHornTinyCometPrelabels = nil\n\tif #points == 0 or (data.northHornTinyCometDone and now - data.northHornTinyCometDone > 70000) then\n\t\tdata.northHornTinyCometDone = nil\n\tend\n\tself.used = true\n\treturn\nend\nif data.northHornTinyCometPrelabels or data.northHornTinyCometDone then\n\tself.used = true\n\treturn\nend\n\nlocal groups = {}\nwhile #points > 0 do\n\tlocal group = { table.remove(points) }\n\tlocal i = 1\n\twhile i <= #group do\n\t\tlocal point = group[i]\n\t\tfor j = #points, 1, -1 do\n\t\t\tlocal other = points[j]\n\t\t\tlocal dx, dz = point.x - other.x, point.z - other.z\n\t\t\tif dx * dx + dz * dz <= 81 then\n\t\t\t\tgroup[#group + 1] = table.remove(points, j)\n\t\t\tend\n\t\tend\n\t\ti = i + 1\n\tend\n\tgroups[#groups + 1] = group\nend\n\nlocal order = {\n\t[4] = { \"1 - KILL FIRST\", GUI:ColorConvertFloat4ToU32(1.0, 0.25, 0.2, 1.0) },\n\t[3] = { \"2 - KILL SECOND\", GUI:ColorConvertFloat4ToU32(1.0, 0.8, 0.2, 1.0) },\n\t[2] = { \"3 - KILL LAST\", GUI:ColorConvertFloat4ToU32(0.75, 0.85, 1.0, 1.0) },\n}\nif #groups ~= 3 then\n\tself.used = true\n\treturn\nend\nfor _, group in ipairs(groups) do\n\tif not order[#group] then\n\t\tself.used = true\n\t\treturn\n\tend\nend\n\nlocal labels = {}\nfor _, group in ipairs(groups) do\n\tlocal x, y, z = 0, 0, 0\n\tfor _, point in ipairs(group) do\n\t\tx, y, z = x + point.x, y + point.y, z + point.z\n\tend\n\tlocal size = #group\n\tlocal info = order[size]\n\tlocal pos = { x = x / size, y = y / size + 2.5, z = z / size }\n\tlabels[size] = {\n\t\tuuid = AnyoneCore.addTimedWorldText(65000, info[1], pos, info[2], true, 1.5),\n\t\ttext = info[1],\n\t\tcolor = info[2],\n\t\tpos = pos,\n\t}\nend\ndata.northHornTinyCometPrelabels = labels\nd(\"Tiny Terror early comet order\")\nself.used = true\n",
+						conditions = 
+						{
+							
+							{
+								"32000047-0000-4000-8000-000000000001",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Pre-place comet kill order",
+						uuid = "32000047-0000-4000-8000-000000000201",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local labels = data.northHornTinyCometPrelabels\nif not labels then\n\tself.used = true\n\treturn\nend\n\nlocal now = Now()\nif data.northHornTinySphereScanNext and now < data.northHornTinySphereScanNext then\n\tself.used = true\n\treturn\nend\ndata.northHornTinySphereScanNext = now + 200\n\nlocal spheres = {}\nlocal found = TensorCore.entityList(\"contentid=14800,alive\")\nif table.valid(found) then\n\tfor _, sphere in pairs(found) do\n\t\tif sphere.pos and Argus.isEntityVisible(sphere) then spheres[#spheres + 1] = sphere end\n\tend\nend\nif #spheres ~= 3 then\n\tself.used = true\n\treturn\nend\n\nlocal used = {}\nfor _, label in pairs(labels) do\n\tlocal best, distance = nil, math.huge\n\tfor _, sphere in ipairs(spheres) do\n\t\tif not used[sphere.id] then\n\t\t\tlocal dx, dz = label.pos.x - sphere.pos.x, label.pos.z - sphere.pos.z\n\t\t\tlocal d = dx * dx + dz * dz\n\t\t\tif d < distance then best, distance = sphere, d end\n\t\tend\n\tend\n\tused[best.id] = true\n\tAnyoneCore.removeTimedWorldText(label.uuid)\n\tAnyoneCore.addTimedWorldTextOnEnt(58750, label.text, best.id, label.color, true, 1.5, 2.5)\nend\n\ndata.northHornTinyCometPrelabels = nil\ndata.northHornTinyCometDone = now\nd(\"Tiny Terror comet kill order\")\n-- Keep Moogle 48327: the labels complement its Comet AOE.\nself.used = true\n",
+						conditions = 
+						{
+							
+							{
+								"32000047-0000-4000-8000-000000000001",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Attach comet kill order",
+						uuid = "32000047-0000-4000-8000-000000000202",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "North Horn",
+						uuid = "32000047-0000-4000-8000-000000000001",
+						version = 3,
+					},
+				},
+			},
+			eventType = 12,
+			name = "[Tiny Terror] Comet Kill Order",
+			uuid = "db975c9e-7808-7edf-8b6a-c4d9917311f3",
+			version = 2,
+		},
 	}, 
 	inheritedProfiles = 
 	{
