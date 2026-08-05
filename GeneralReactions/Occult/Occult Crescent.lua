@@ -16904,7 +16904,7 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[47308] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47309] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47311] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47312] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47313] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47314] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50554] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50555] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50557] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50558] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50559] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50560] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50561] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41284] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41395] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41315] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41316] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41317] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41830] = {label = \"Barefisted Death\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47073] = {label = \"Garrote\", source = \"Occult Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47152] = {label = \"Sinister Sight\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47191] = {label = \"Stunning Sheen\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49879] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50691] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50692] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41759] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41760] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41761] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41729] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41731] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41733] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41734] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41735] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47310] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50556] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47439] = { label = 'Tendon Ripper', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49799] = {label = \"Plaincracker\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49779] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49777] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47443] = { label = 'Splinter', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47175] = {label = \"Explosion\", source = \"Occult Reactions - Dark Artistry CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47176] = {label = \"Explosion\", source = \"Occult Reactions - Dark Artistry CE\"}\nself.used = true",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[47308] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47309] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47311] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47312] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47313] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47314] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50554] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50555] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50557] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50558] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50559] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50560] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50561] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41284] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41395] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41315] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41316] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41317] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41830] = {label = \"Barefisted Death\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47073] = {label = \"Garrote\", source = \"Occult Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47152] = {label = \"Sinister Sight\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47191] = {label = \"Stunning Sheen\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49879] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50691] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50692] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41759] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41760] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41761] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41729] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41731] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41733] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41734] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41735] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47310] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50556] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47439] = { label = 'Tendon Ripper', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49799] = {label = \"Plaincracker\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49779] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49777] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47443] = { label = 'Splinter', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47175] = {label = \"Explosion\", source = \"Occult Reactions - Dark Artistry CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47176] = {label = \"Explosion\", source = \"Occult Reactions - Dark Artistry CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[48311] = { label = \"Tiny Flare\", source = \"North Horn Reactions - Tiny Terror\" }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[48312] = { label = \"Tiny Holy\", source = \"North Horn Reactions - Tiny Terror\" }\nself.used = true",
 						conditions = 
 						{
 							
@@ -19552,6 +19552,138 @@ local tbl =
 			name = "[DarkArtistry] Draws",
 			uuid = "14fbab9e-c492-5ff4-83fe-0199b05b4660",
 			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local apprentice = TensorCore.mGetEntity(eventArgs.entityID)\nif not apprentice or not apprentice.id or not apprentice.pos or apprentice.pos.h == nil then return end\n\nlocal drawer = TensorCore.getMoogleDrawer()\nif not drawer then return end\n\n-- Arcane Aggregation faces directly toward the fourth and final apprentice.\n-- Resolve that endpoint immediately instead of waiting for the three Recharge\n-- handoffs (the old second-Recharge trigger was one apprentice too early).\nlocal expectedX = apprentice.pos.x - math.sin(apprentice.pos.h) * 14.15\nlocal expectedZ = apprentice.pos.z + math.cos(apprentice.pos.h) * 14.15\nlocal finalApprentice\nlocal bestDistance\nfor _, candidate in pairs(EntityList(\"contentid=14796,maxdistance=50\") or {}) do\n\tif candidate.id ~= apprentice.id and candidate.pos then\n\t\tlocal dx = candidate.pos.x - expectedX\n\t\tlocal dz = candidate.pos.z - expectedZ\n\t\tlocal distance = (dx * dx) + (dz * dz)\n\t\tif not bestDistance or distance < bestDistance then\n\t\t\tbestDistance = distance\n\t\t\tfinalApprentice = candidate\n\t\tend\n\tend\nend\nif not finalApprentice or not bestDistance or bestDistance > 4 then return end\n\nif eventArgs.spellID == 48307 then\n\tdrawer:addTimedCircleOnEnt(16200, finalApprentice.id, 18)\n\td(\"Tiny Mage final passed Flare Sphere\")\nelseif eventArgs.spellID == 48308 then\n\tlocal player = TensorCore.mGetPlayer()\n\tif not player or not player.id then return end\n\t-- Eight-yalm shaft plus two-yalm tip models the roughly 10-yalm knockback.\n\tdrawer:addTimedArrowOnEnt(16200, player.id, 8, 0.7, 2, 2, finalApprentice.id, nil, nil, math.pi, false)\n\td(\"Tiny Mage final passed Holy Sphere\")\nelse\n\treturn\nend\nself.used = true\n",
+						conditions = 
+						{
+							
+							{
+								"63407fab-d304-cbcb-b68d-7b0eb5f3e085",
+								true,
+							},
+							
+							{
+								"223c95d7-038c-5224-bdff-6a513dc8391c",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Pre-draw final handoff apprentice",
+						uuid = "f155aac7-a68f-d3fe-96dc-10a29dc65ee0",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "North Horn",
+						uuid = "63407fab-d304-cbcb-b68d-7b0eb5f3e085",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return eventArgs.entityContentID == 14796 and (eventArgs.spellID == 48307 or eventArgs.spellID == 48308)",
+						dequeueIfLuaFalse = true,
+						name = "Tiny Apprentice sphere setup",
+						uuid = "223c95d7-038c-5224-bdff-6a513dc8391c",
+						version = 3,
+					},
+				},
+			},
+			eventType = 3,
+			name = "[Tiny Terror] Apprentice Spheres",
+			uuid = "25c8d4d1-446b-e6d9-a178-b52c6f84fe8b",
+			version = 3,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local sphere = TensorCore.mGetEntity(eventArgs.sourceEntityID)\nlocal target = TensorCore.mGetEntity(eventArgs.newTargetID)\nif not sphere or not sphere.id or not sphere.pos or not target or not target.pos then return end\n\nlocal drawer = TensorCore.getMoogleDrawer()\nif not drawer then return end\n\n-- The four sphere tethers are emitted in their real resolution order.  Their\n-- endpoints are the actual pair; channel callback adjacency is not stable\n-- across patterns and previously collapsed mixed pairs onto arena centre.\nlocal now = Now()\nlocal state = data.northHornTinyPairTethers\nif not state or now - state.lastSeen > 2000 then\n\tstate = { count = 0, lastSeen = now }\n\tdata.northHornTinyPairTethers = state\nend\nstate.lastSeen = now\nstate.count = state.count + 1\nlocal delay = 4100 + ((state.count - 1) * 3000)\n\nif sphere.contentid == 14797 then\n\tlocal x = (sphere.pos.x + target.pos.x) / 2\n\tlocal y = (sphere.pos.y + target.pos.y) / 2 + 0.02\n\tlocal z = (sphere.pos.z + target.pos.z) / 2\n\tdrawer:addTimedCircle(5000, x, y, z, 18, delay)\n\td(\"Tiny Mage paired Flare Sphere\")\nelseif sphere.contentid == 14798 then\n\tlocal player = TensorCore.mGetPlayer()\n\tif not player or not player.id then return end\n\tdrawer:addTimedArrowOnEnt(5000, player.id, 8, 0.7, 2, 2, sphere.id, delay, nil, math.pi, false)\n\td(\"Tiny Mage paired Holy Sphere\")\nelse\n\treturn\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"07ab1579-78b7-2c69-9b7d-971d443296b5",
+								true,
+							},
+							
+							{
+								"90617d0a-87ff-4651-88ab-4fb6ec78b176",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Draw paired sphere result",
+						uuid = "593f266e-e35c-7aeb-a08e-7d335ce47dd9",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "North Horn",
+						uuid = "07ab1579-78b7-2c69-9b7d-971d443296b5",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "local e=TensorCore.mGetEntity(eventArgs.sourceEntityID) return eventArgs.newTetherID == 415 and e and (e.contentid == 14797 or e.contentid == 14798)",
+						dequeueIfLuaFalse = true,
+						name = "Active paired sphere tether",
+						uuid = "90617d0a-87ff-4651-88ab-4fb6ec78b176",
+						version = 3,
+					},
+				},
+			},
+			eventType = 15,
+			name = "[Tiny Terror] Paired Spheres",
+			uuid = "b865ed57-a56a-d906-bbac-138706f67f9e",
+			version = 4,
 		},
 	}, 
 	inheritedProfiles = 
