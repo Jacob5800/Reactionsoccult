@@ -3450,7 +3450,7 @@ local tbl =
 			uuid = "c18517b0-1e34-1d83-8176-9f1d38d51541",
 			version = 2,
 		},
-		inheritedIndex = 28,
+		inheritedIndex = 30,
 	},
 	
 	{
@@ -3744,7 +3744,7 @@ local tbl =
 			uuid = "a6c7e7ac-46cf-12e7-ae07-883da63ba66c",
 			version = 2,
 		},
-		inheritedIndex = 30,
+		inheritedIndex = 32,
 	},
 	
 	{
@@ -4256,7 +4256,7 @@ local tbl =
 			uuid = "8da73aae-57bf-86ea-9a65-353a607913dc",
 			version = 2,
 		},
-		inheritedIndex = 38,
+		inheritedIndex = 40,
 	},
 	
 	{
@@ -4314,7 +4314,7 @@ local tbl =
 							},
 							
 							{
-								"0a770e84-bd54-271b-b944-bfe7f6c48928",
+								"b5f97cba-d002-f4fc-8dd2-29c135abef9e",
 								true,
 							},
 						},
@@ -4467,10 +4467,10 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "for i=0,3 do\n\tlocal itemList = Inventory:Get(i):GetList()\n\tfor _, item in pairs(itemList) do \n\t\tif item.id == 47740 then\n\t\t\treturn true\n\t\tend\n\tend\nend\n\nreturn false",
+						conditionLua = "return TensorCore.getItem(47740) ~= nil",
 						dequeueIfLuaFalse = true,
 						name = "Has Coffer",
-						uuid = "0a770e84-bd54-271b-b944-bfe7f6c48928",
+						uuid = "b5f97cba-d002-f4fc-8dd2-29c135abef9e",
 						version = 3,
 					},
 				},
@@ -4489,10 +4489,10 @@ local tbl =
 			},
 			name = "P. Sam Zeninage",
 			throttleTime = 1500,
-			uuid = "041c7437-3947-cc16-a091-e42259dcf340",
+			uuid = "f2d1f07e-321c-e1ce-8429-7a0b6d6b913e",
 			version = 2,
 		},
-		inheritedIndex = 44,
+		inheritedIndex = 26,
 	},
 	
 	{
@@ -4649,7 +4649,7 @@ local tbl =
 							},
 							
 							{
-								"d4aba7ee-408d-54ee-9a80-7a426d556e85",
+								"c73165f8-847b-61fa-aac4-a8e97be3aa00",
 								true,
 							},
 						},
@@ -4721,7 +4721,7 @@ local tbl =
 							},
 							
 							{
-								"d4aba7ee-408d-54ee-9a80-7a426d556e85",
+								"c73165f8-847b-61fa-aac4-a8e97be3aa00",
 								false,
 							},
 						},
@@ -5035,10 +5035,10 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "for i=0,3 do\n\tlocal itemList = Inventory:Get(i):GetList()\n\tfor _, item in pairs(itemList) do \n\t\tif item.id == 47740 then\n\t\t\treturn true\n\t\tend\n\tend\nend\n\nreturn false",
+						conditionLua = "return TensorCore.getItem(47740) ~= nil",
 						dequeueIfLuaFalse = true,
 						name = "Has Coffer",
-						uuid = "d4aba7ee-408d-54ee-9a80-7a426d556e85",
+						uuid = "c73165f8-847b-61fa-aac4-a8e97be3aa00",
 						version = 3,
 					},
 				},
@@ -5057,7 +5057,7 @@ local tbl =
 			},
 			name = "P. Sam Iainuki",
 			throttleTime = 100,
-			uuid = "19fa42df-39c6-8e18-b0a7-836c2e7a745e",
+			uuid = "6c2de725-16db-dd09-83c9-eeecf9fdadaf",
 			version = 2,
 		},
 		inheritedIndex = 25,
@@ -5294,7 +5294,7 @@ local tbl =
 			uuid = "5ba3375d-fe3c-b0f3-b109-b09825fc872b",
 			version = 2,
 		},
-		inheritedIndex = 25,
+		inheritedIndex = 27,
 	},
 	
 	{
@@ -5480,7 +5480,7 @@ local tbl =
 			uuid = "f002c1b7-06d1-6521-a194-18da8de47602",
 			version = 2,
 		},
-		inheritedIndex = 26,
+		inheritedIndex = 28,
 	},
 	
 	{
@@ -5892,7 +5892,7 @@ local tbl =
 			uuid = "c9178b74-f32c-817a-950c-32b1fc0a7ee8",
 			version = 2,
 		},
-		inheritedIndex = 72,
+		inheritedIndex = 74,
 	},
 	
 	{
@@ -6163,7 +6163,7 @@ local tbl =
 			uuid = "eb688e35-87ab-c255-a605-63f5423c3c0a",
 			version = 2,
 		},
-		inheritedIndex = 73,
+		inheritedIndex = 75,
 	},
 	
 	{
@@ -6576,7 +6576,7 @@ local tbl =
 			uuid = "1c6bbd54-6018-485a-9f05-9819fa8aa68e",
 			version = 2,
 		},
-		inheritedIndex = 73,
+		inheritedIndex = 75,
 	},
 	
 	{
@@ -7068,7 +7068,7 @@ local tbl =
 			uuid = "9c5b9d73-ae0e-195a-940a-540bca4454b2",
 			version = 2,
 		},
-		inheritedIndex = 73,
+		inheritedIndex = 75,
 	},
 	
 	{
@@ -7210,7 +7210,7 @@ local tbl =
 			uuid = "b175b050-f2bb-2ffe-bd7e-bff2941f8634",
 			version = 2,
 		},
-		inheritedIndex = 74,
+		inheritedIndex = 76,
 	},
 	
 	{
@@ -7424,7 +7424,7 @@ local tbl =
 			uuid = "9278be18-034c-9f92-abab-1d3e0055a418",
 			version = 2,
 		},
-		inheritedIndex = 75,
+		inheritedIndex = 77,
 	},
 	
 	{
@@ -7668,7 +7668,7 @@ local tbl =
 			uuid = "4c3d9549-4ff9-6f51-a0a1-292851ddf5a7",
 			version = 2,
 		},
-		inheritedIndex = 76,
+		inheritedIndex = 78,
 	},
 	
 	{
@@ -7737,7 +7737,7 @@ local tbl =
 			uuid = "608ec0d1-adf2-ec9d-8f73-8e6c280fbb5d",
 			version = 2,
 		},
-		inheritedIndex = 34,
+		inheritedIndex = 36,
 	},
 	
 	{
@@ -7874,7 +7874,7 @@ local tbl =
 			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
 			version = 2,
 		},
-		inheritedIndex = 77,
+		inheritedIndex = 79,
 	},
 	
 	{
@@ -8071,7 +8071,7 @@ local tbl =
 			uuid = "124cd983-fe7a-d7f9-9ed9-ad6f8a38cf30",
 			version = 2,
 		},
-		inheritedIndex = 36,
+		inheritedIndex = 38,
 	},
 	
 	{
@@ -8379,7 +8379,7 @@ local tbl =
 			uuid = "440e18ac-f040-ecee-9e98-d8b712ea8b11",
 			version = 2,
 		},
-		inheritedIndex = 38,
+		inheritedIndex = 40,
 	},
 	
 	{
@@ -8995,7 +8995,7 @@ local tbl =
 			uuid = "cad90044-bdeb-56c9-ae85-48db84ef4abc",
 			version = 2,
 		},
-		inheritedIndex = 40,
+		inheritedIndex = 42,
 	},
 	
 	{
@@ -10154,7 +10154,7 @@ local tbl =
 			uuid = "7a8b0ac9-1ab5-9b70-9c4c-08d91cc31515",
 			version = 2,
 		},
-		inheritedIndex = 40,
+		inheritedIndex = 42,
 	},
 	
 	{
@@ -10295,7 +10295,7 @@ local tbl =
 			uuid = "978328eb-ccac-48cf-bcfc-9c31d4cf6f4d",
 			version = 2,
 		},
-		inheritedIndex = 80,
+		inheritedIndex = 82,
 	},
 	
 	{
@@ -10914,7 +10914,7 @@ local tbl =
 			uuid = "092d9f5c-6e07-66c0-99d7-4ff225118861",
 			version = 2,
 		},
-		inheritedIndex = 39,
+		inheritedIndex = 41,
 	},
 	
 	{
@@ -11375,7 +11375,7 @@ local tbl =
 			uuid = "d2e727cd-fcd5-e189-a64c-96e07f69315a",
 			version = 2,
 		},
-		inheritedIndex = 42,
+		inheritedIndex = 44,
 	},
 	
 	{
@@ -11714,7 +11714,7 @@ local tbl =
 			uuid = "7a4dbf72-e16b-7baf-8724-7fb5955cb362",
 			version = 2,
 		},
-		inheritedIndex = 41,
+		inheritedIndex = 43,
 	},
 	
 	{
@@ -11979,7 +11979,7 @@ local tbl =
 			uuid = "337763c3-1547-f9b4-bd94-5d27cdf7d7ee",
 			version = 2,
 		},
-		inheritedIndex = 46,
+		inheritedIndex = 48,
 	},
 	
 	{
@@ -12028,7 +12028,7 @@ local tbl =
 			uuid = "c2d39c48-9f66-9027-921f-e77b0d24dce1",
 			version = 2,
 		},
-		inheritedIndex = 47,
+		inheritedIndex = 49,
 	},
 	
 	{
@@ -12439,7 +12439,7 @@ local tbl =
 			uuid = "9d280002-40a4-9e37-b14e-081affb3b3ea",
 			version = 2,
 		},
-		inheritedIndex = 49,
+		inheritedIndex = 51,
 	},
 	
 	{
@@ -12722,7 +12722,7 @@ local tbl =
 			uuid = "c1e2e2ba-7ea0-520b-91ff-cb92e4676842",
 			version = 2,
 		},
-		inheritedIndex = 48,
+		inheritedIndex = 50,
 	},
 	
 	{
@@ -13509,7 +13509,7 @@ local tbl =
 			uuid = "e81c0ba8-5548-a1f1-b801-970c817fc455",
 			version = 2,
 		},
-		inheritedIndex = 45,
+		inheritedIndex = 47,
 	},
 	
 	{
@@ -13710,7 +13710,7 @@ local tbl =
 			uuid = "a2c85c0f-8023-3f9f-803e-b42c3527bb7a",
 			version = 2,
 		},
-		inheritedIndex = 50,
+		inheritedIndex = 52,
 	},
 	
 	{
@@ -13962,7 +13962,7 @@ local tbl =
 			uuid = "3bfe4444-df82-7f20-b900-794335d94680",
 			version = 2,
 		},
-		inheritedIndex = 51,
+		inheritedIndex = 53,
 	},
 	
 	{
@@ -14350,7 +14350,7 @@ local tbl =
 			uuid = "384be111-76d5-d45b-af4a-8643d34d5822",
 			version = 2,
 		},
-		inheritedIndex = 56,
+		inheritedIndex = 58,
 	},
 	
 	{
@@ -14997,7 +14997,7 @@ local tbl =
 			uuid = "b154c88e-e0cd-2b0c-bdd5-5a5cb8dc7300",
 			version = 2,
 		},
-		inheritedIndex = 55,
+		inheritedIndex = 57,
 	},
 	
 	{
@@ -15497,7 +15497,7 @@ local tbl =
 			uuid = "720ed207-fa78-661d-96c5-407da5ddf770",
 			version = 2,
 		},
-		inheritedIndex = 53,
+		inheritedIndex = 55,
 	},
 	
 	{
@@ -15696,7 +15696,7 @@ local tbl =
 			uuid = "78a6c2ef-7e57-09cd-b705-562934c6bedc",
 			version = 2,
 		},
-		inheritedIndex = 64,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -16044,7 +16044,7 @@ local tbl =
 			uuid = "001e8bf0-9e11-b65b-8fc4-327132fb50f2",
 			version = 2,
 		},
-		inheritedIndex = 57,
+		inheritedIndex = 59,
 	},
 	
 	{
@@ -16656,7 +16656,7 @@ local tbl =
 			uuid = "caa3b091-3ad6-f0cd-a769-4a79b53f5634",
 			version = 2,
 		},
-		inheritedIndex = 61,
+		inheritedIndex = 63,
 	},
 	
 	{
@@ -16672,7 +16672,7 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
-		inheritedIndex = 81,
+		inheritedIndex = 83,
 	},
 	
 	{
@@ -16755,7 +16755,7 @@ local tbl =
 			uuid = "c7932cb2-aedb-9f4c-8d8b-c5f9c3b85e62",
 			version = 2,
 		},
-		inheritedIndex = 58,
+		inheritedIndex = 60,
 	},
 	
 	{
@@ -16843,7 +16843,7 @@ local tbl =
 			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
 			version = 2,
 		},
-		inheritedIndex = 70,
+		inheritedIndex = 72,
 	},
 	
 	{
@@ -16891,7 +16891,7 @@ local tbl =
 			uuid = "bf3b5f37-31c4-578f-a0c0-1cab48c9c392",
 			version = 2,
 		},
-		inheritedIndex = 60,
+		inheritedIndex = 62,
 	},
 	
 	{
@@ -16904,7 +16904,7 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[47308] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47309] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47311] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47312] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47313] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47314] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50554] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50555] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50557] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50558] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50559] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50560] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50561] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41284] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41395] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41315] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41316] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41317] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41830] = {label = \"Barefisted Death\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47073] = {label = \"Garrote\", source = \"Occult Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47152] = {label = \"Sinister Sight\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47191] = {label = \"Stunning Sheen\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49879] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50691] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50692] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41759] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41760] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41761] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41729] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41731] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41733] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41734] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41735] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47310] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50556] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47439] = { label = 'Tendon Ripper', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49799] = {label = \"Plaincracker\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49779] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49777] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47443] = { label = 'Splinter', source = 'North Horn Reactions - Abductor' }\nself.used = true",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[47308] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47309] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47311] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47312] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47313] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47314] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50554] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50555] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50557] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50558] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50559] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50560] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50561] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41284] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41395] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41315] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41316] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41317] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41830] = {label = \"Barefisted Death\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47073] = {label = \"Garrote\", source = \"Occult Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47152] = {label = \"Sinister Sight\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47191] = {label = \"Stunning Sheen\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49879] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50691] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50692] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41759] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41760] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41761] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41729] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41731] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41733] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41734] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41735] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47310] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50556] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47439] = { label = 'Tendon Ripper', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49799] = {label = \"Plaincracker\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49779] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49777] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47443] = { label = 'Splinter', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47175] = {label = \"Explosion\", source = \"Occult Reactions - Dark Artistry CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47176] = {label = \"Explosion\", source = \"Occult Reactions - Dark Artistry CE\"}\nself.used = true",
 						conditions = 
 						{
 							
@@ -16946,7 +16946,7 @@ local tbl =
 			uuid = "0c591123-b2c0-d2e0-aca9-9e17cf24d43e",
 			version = 2,
 		},
-		inheritedIndex = 67,
+		inheritedIndex = 69,
 	},
 	
 	{
@@ -17017,7 +17017,7 @@ local tbl =
 			uuid = "5dc65816-0d2a-4fd3-9218-ad0eb935e372",
 			version = 2,
 		},
-		inheritedIndex = 70,
+		inheritedIndex = 72,
 	},
 	
 	{
@@ -17087,7 +17087,7 @@ local tbl =
 			uuid = "15ccc7ec-407e-4c0c-ac79-88a64b9cc4b7",
 			version = 2,
 		},
-		inheritedIndex = 63,
+		inheritedIndex = 65,
 	},
 	
 	{
@@ -17158,7 +17158,7 @@ local tbl =
 			uuid = "ef41ca3b-b8b3-b055-9750-acd44ba586ba",
 			version = 2,
 		},
-		inheritedIndex = 65,
+		inheritedIndex = 67,
 	},
 	
 	{
@@ -17226,7 +17226,7 @@ local tbl =
 			uuid = "eb4b56b6-2b74-6468-8fba-53017fc139c8",
 			version = 2,
 		},
-		inheritedIndex = 66,
+		inheritedIndex = 68,
 	},
 	
 	{
@@ -17278,7 +17278,7 @@ local tbl =
 			uuid = "ccc078bf-d8c3-16bf-a777-ce9c90a5be43",
 			version = 2,
 		},
-		inheritedIndex = 67,
+		inheritedIndex = 69,
 	},
 	
 	{
@@ -17367,7 +17367,7 @@ local tbl =
 			uuid = "b4dea9fb-caa4-148e-9ae8-92c5564e94af",
 			version = 2,
 		},
-		inheritedIndex = 68,
+		inheritedIndex = 70,
 	},
 	
 	{
@@ -17383,7 +17383,7 @@ local tbl =
 			uuid = "7affaeba-16a3-388a-9c7a-193cccdb0287",
 			version = 2,
 		},
-		inheritedIndex = 71,
+		inheritedIndex = 73,
 	},
 	
 	{
@@ -17502,7 +17502,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 87,
+		inheritedIndex = 89,
 	},
 	
 	{
@@ -17644,7 +17644,7 @@ local tbl =
 			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
 			version = 2,
 		},
-		inheritedIndex = 88,
+		inheritedIndex = 90,
 	},
 	
 	{
@@ -19015,7 +19015,7 @@ local tbl =
 			uuid = "d11651c2-77ca-a156-8136-388eeea52a44",
 			version = 2,
 		},
-		inheritedIndex = 86,
+		inheritedIndex = 88,
 	},
 	
 	{
@@ -19445,6 +19445,112 @@ local tbl =
 			eventType = 22,
 			name = "[Quarried Away] Golem Cones",
 			uuid = "e77c80ea-6d38-9334-9c6b-91ef979235a3",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local drawer = TensorCore.getMoogleDrawer()\n\ndrawer:addTimedCircleOnEnt(\n    6700,                  -- timeout\n    eventArgs.entityID,    -- entID\n    8,                     -- radius\n    0                      -- delay\n)\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"356a68a7-956f-740f-b561-432590ec3659",
+								true,
+							},
+							
+							{
+								"c9746966-6679-c719-a063-989af125d78f",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Draw Circle",
+						uuid = "91aa7baa-245c-e0db-8b97-13ae7cdac491",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local drawer = TensorCore.getMoogleDrawer()\n\ndrawer:addTimedCrossOnEnt(\n    8500,                  -- timeout\n    eventArgs.entityID,    -- entID\n    80,                    -- length\n    7                      -- width\n)\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"2bd3bb20-e032-f136-b424-3dd1c3c554ac",
+								true,
+							},
+							
+							{
+								"c9746966-6679-c719-a063-989af125d78f",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Draw Cross",
+						uuid = "2c026d19-94c7-dc2e-bc6b-df643fa5f531",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 14515,
+						eventEntityID = 14515,
+						name = "Ent: Long-dead Explorer",
+						uuid = "356a68a7-956f-740f-b561-432590ec3659",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 14514,
+						eventEntityID = 14514,
+						name = "Ent: Long-dead Pirate",
+						uuid = "2bd3bb20-e032-f136-b424-3dd1c3c554ac",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgType = 3,
+						name = "Is Visible: true",
+						uuid = "c9746966-6679-c719-a063-989af125d78f",
+						version = 3,
+					},
+				},
+			},
+			eventType = 22,
+			name = "[DarkArtistry] Draws",
+			uuid = "14fbab9e-c492-5ff4-83fe-0199b05b4660",
 			version = 2,
 		},
 	}, 
