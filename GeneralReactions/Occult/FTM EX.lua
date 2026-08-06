@@ -14,7 +14,7 @@ local tbl =
 			eventType = 2,
 			loop = false,
 			mechanicTime = 0,
-			name = "[FTM] ===v282===",
+			name = "[FTM] ===v357===",
 			throttleTime = 0,
 			timeRange = false,
 			timelineIndex = 0,
@@ -414,6 +414,12 @@ local SPIN = { [49648] = true, [49649] = true, [49650] = true,
 local FLIP = { [50431] = true, [50432] = true, [50433] = true,
                [50434] = true, [50435] = true, [50436] = true }
 if not SPIN[id] and not FLIP[id] then return end
+-- Stamp Spin casts before any guard: the order recorder uses this to
+-- reject post-set resting poses (which land ~1s after a ring's Spin).
+if SPIN[id] then
+    data.b2SpinAt = data.b2SpinAt or {}
+    data.b2SpinAt[a.entityID] = Now()
+end
 if data.b2Rings == nil then return end
 local rec = data.b2Rings[a.entityID]
 if rec == nil or rec.stage == "done" then return end
@@ -447,7 +453,9 @@ end
 if rec.hits >= 2 then
     data.b2RingWipe(rec)
     rec.stage = "done"
-    -- Remove the overlay after the final ring.
+    -- Remove the overlay after the final ring; while others remain
+    -- live (CS3 cascade), rebuild so the retired ring's danger is
+    -- dropped immediately instead of at the next flip.
     local anyLive = false
     for _, r in pairs(data.b2Rings) do
         if r.stage == 1 or r.stage == 2 then anyLive = true break end
@@ -465,10 +473,19 @@ if rec.hits >= 2 then
             AnyoneCore.removeTimedWorldText(data.b2NextText)
             data.b2NextText = nil
         end
+    else
+        data.b2RingOverlay()
+        if data.b2RingNext ~= nil then data.b2RingNext() end
     end
 else
-    -- The flip cast redraws stage two.
-    data.b2RingWipe(rec)
+    -- First hit resolved: advance to stage 2 NOW (the flip cast
+    -- ~1.45s later redraws idempotently) so the ring's danger and
+    -- the overlay pocket roll flush with the hit - in the CS3
+    -- cascade the next beat's pocket must be correct immediately.
+    rec.stage = 2
+    data.b2RingDraw(rec, rec.second, 6000)
+    data.b2RingOverlay()
+    if data.b2RingNext ~= nil then data.b2RingNext() end
 end
 self.used = true
 ]==],
@@ -509,6 +526,10 @@ if ent == nil or ent.pos == nil then return end
 if bd.waveBeat == nil or TimeSince(bd.waveAt or 0) > 1800 then
     bd.waveBeat = (bd.waveBeat or 0) + 1
     bd.cur = {}
+    -- No circle prediction here: guides are mid-walk at wave-cast
+    -- time, so a single poll reads the quad being left. The spot is
+    -- not knowable before the 47651/47652 create; the truth spec
+    -- draws it at ~1.5s lead.
 end
 bd.waveAt = Now()
 -- The caster's edge determines the lane axis.
@@ -550,6 +571,29 @@ elseif bd.waveBeat == 2 and bd.committed == nil and bd.beats[1] ~= nil then
         chain[k] = ((chain[k - 1] - 1 + dir) % 4) + 1
     end
     local y = bd.y or ent.pos.y
+    -- The committed route was wrong: the scheduled danger lanes are too.
+    if bd.laneUuids ~= nil and Argus ~= nil and Argus.deleteTimedShape ~= nil then
+        for _, uid in ipairs(bd.laneUuids) do Argus.deleteTimedShape(uid) end
+    end
+    bd.laneUuids = {}
+    -- Redraw beats 3-4 directly with delayed timed draws (beat 2 is
+    -- firing right now - too late to draw). No pump.
+    local red = TensorCore.getMoogleDrawer()
+    for k = 3, 4 do
+        local q2 = chain[k]
+        local sxs = (q2 == 1 or q2 == 4) and -1 or 1
+        local szs = (q2 == 1 or q2 == 2) and -1 or 1
+        -- Wave 2's cast event IS beat 2's hit; beat k hits (k-2)
+        -- beats later. Flush window ending exactly at the hit.
+        local hitK = Now() + (k - 2) * 3650
+        local at = hitK - 3650
+        if at < Now() then at = Now() end
+        local dur = hitK - at
+        local delay = at - Now()
+        bd.laneUuids[#bd.laneUuids + 1] = red:addTimedCone(dur, bd.cx + sxs * 20, y, bd.cz - szs * 10, 45, math.rad(53), (sxs == 1) and -1.5708 or 1.5708, delay)
+        bd.laneUuids[#bd.laneUuids + 1] = red:addTimedCone(dur, bd.cx - sxs * 10, y, bd.cz - szs * 20, 45, math.rad(53), (szs == 1) and 0.0 or 3.1416, delay)
+        -- Chasing circles come from the 47651/47652 creates, not here.
+    end
     local green = TensorCore.getStaticDrawer(GUI:ColorConvertFloat4ToU32(0.1, 1.0, 0.25, 0.7), 2)
     for k = 2, 4 do
         local p = bd.wm[chain[k]]
@@ -1071,6 +1115,13 @@ S.aoeIDUserBlacklist[47501] = "Dark Current slab (Necrophobia) - " .. src
 S.aoeIDUserBlacklist[47509] = "Severed Dark Current line (Necrophobia) - " .. src
 -- Suppress duplicate Propulsive Shockwave circles.
 S.aoeIDUserBlacklist[48447] = "Propulsive Shockwave circles (Index) - " .. src
+-- Breathy Duet cluster circles are custom-drawn from the marker spots.
+S.aoeIDUserBlacklist[47649] = "Duet Lightning Cluster tick (Aevis) - " .. src
+S.aoeIDUserBlacklist[47650] = "Duet Ice Cluster tick (Aevis) - " .. src
+S.aoeIDUserBlacklist[50699] = "Duet Lightning Cluster marker (Aevis) - " .. src
+S.aoeIDUserBlacklist[50700] = "Duet Ice Cluster marker (Aevis) - " .. src
+S.aoeIDUserBlacklist[50701] = "Duet Lightning Cluster resolve (Aevis) - " .. src
+S.aoeIDUserBlacklist[50702] = "Duet Ice Cluster resolve (Aevis) - " .. src
 if S.aoeIDUserSetCircles ~= nil then
     S.aoeIDUserSetCircles[47639] = { name = "Poison Breath", radius = 18, source = src } -- payload aoeLength=18
     S.aoeIDUserSetCircles[47641] = { name = "Freezing Fugue", radius = 20, source = src } -- payload aoeLength=20
@@ -1220,12 +1271,13 @@ local shape = st.order ~= nil and st.order[st.step] or nil
 local ms = (a.channelTimeMax or 5) * 1000
 local p = ent.pos
 
--- Record the hit schedule for the Noise knockback timer.
+-- Record the hit schedule (predicted time + global blaze number) for
+-- the Noise knockback timer and its "after N" call.
+data.b1BlazeSeq = (data.b1BlazeSeq or 0) + 1
 data.b1BlazeHits = data.b1BlazeHits or {}
 data.b1BlazeHits[cid] = data.b1BlazeHits[cid] or {}
 local hl = data.b1BlazeHits[cid]
-hl[#hl + 1] = Now() + ms
-data.b1BlazeSeq = (data.b1BlazeSeq or 0) + 1
+hl[#hl + 1] = { t = Now() + ms, seq = data.b1BlazeSeq }
 local label
 if shape ~= nil then
     label = tostring(data.b1BlazeSeq) .. (shape == "ring" and " IN" or " OUT")
@@ -1399,16 +1451,46 @@ local bd = data.b1Duet
 
 -- Quad ticks disambiguate the mirrored route.
 if id == 47653 then
-    if TimeSince(bd.tickAt or 0) > 1500 then
+    -- Channel events re-deliver every frame for a tick's full 2.7s;
+    -- batches sit 4.1s apart, so the silent gap is only ~1.4s. The
+    -- batch threshold must sit between the frame interval and that gap.
+    if TimeSince(bd.tickAt or 0) > 700 then
         bd.tickN = bd.tickN + 1
         bd.ticks[bd.tickN] = {}
     end
     bd.tickAt = Now()
+    -- The waves spec polls these guides' live positions; the last
+    -- batch's spots are where the chasing cluster circles land.
+    bd.guideIds = bd.guideIds or {}
+    bd.guideIds[a.entityID] = true
+    bd.tickPos = bd.tickPos or {}
+    bd.tickPos[bd.tickN] = bd.tickPos[bd.tickN] or {}
+    local tp = bd.tickPos[bd.tickN]
+    local dup = false
+    for i = 1, #tp do
+        if math.abs(tp[i].x - ent.pos.x) < 1 and math.abs(tp[i].z - ent.pos.z) < 1 then dup = true end
+    end
+    if not dup then tp[#tp + 1] = { x = ent.pos.x, z = ent.pos.z } end
+    -- Chasing volleys track the guides' live positions and vary per
+    -- instance; exact circles come from the 47651/47652 creates
+    -- (aevis-duet-cluster-truth spec, ~1.5s lead).
     local cx, cz = -900.0, 700.0
     local q
     if ent.pos.x < cx then q = ent.pos.z < cz and 1 or 4
     else q = ent.pos.z < cz and 2 or 3 end
     bd.ticks[bd.tickN][q] = true
+    -- Guide walk: start quad + one consistent rotation direction fully
+    -- determine every later step; chasing circle volley j fires at
+    -- each guide's step-(j+1) quad.
+    bd.guideWalk = bd.guideWalk or {}
+    local g = bd.guideWalk[a.entityID]
+    if g == nil then
+        bd.guideWalk[a.entityID] = { start = q, last = q }
+    elseif g.last ~= q then
+        local delta = (q - g.last) % 4
+        if delta == 1 then g.dir = 1 elseif delta == 3 then g.dir = -1 end
+        g.last = q
+    end
 
     if bd.chain == nil and bd.safe1q ~= nil and bd.tickN >= 3 then
         local valid = {}
@@ -1424,7 +1506,9 @@ if id == 47653 then
         if #valid == 1 then
             bd.chain = valid[1].chain
             local y = bd.y or ent.pos.y
-            local hit1 = (bd.markerAt or Now()) + 19700
+            -- The wave cast event IS the hit; circle volley j pops
+            -- with cone beat j+1.
+            local hit1 = (bd.markerAt or Now()) + 17450
             local green = TensorCore.getStaticDrawer(GUI:ColorConvertFloat4ToU32(0.1, 1.0, 0.25, 0.7), 2)
             for k = 2, 4 do
                 local p = bd.wm[bd.chain[k]]
@@ -1439,6 +1523,58 @@ if id == 47653 then
             end
             if AnyoneCore ~= nil and AnyoneCore.Shotcall ~= nil then
                 AnyoneCore.Shotcall(valid[1].dir == 1 and "Rotate clockwise" or "Rotate counterclockwise", true, 6)
+            end
+            -- Wave casts are instant with no AOE payload - these cones
+            -- are the only telegraph. Column shooter fires from the
+            -- double-kill corner (diagonal to safe), row shooter from
+            -- the safe quad's x side. Beats 2-4 queue as direct timed
+            -- draws one beat ahead (no OnFrame pump); beats 2-3 also
+            -- get the chasing cluster circles at the guides' parked
+            -- spots.
+            local LEAD = 3650
+            bd.hit1 = hit1
+            local red = TensorCore.getMoogleDrawer()
+            for k = 2, 4 do
+                local q2 = bd.chain[k]
+                local sxs = (q2 == 1 or q2 == 4) and -1 or 1
+                local szs = (q2 == 1 or q2 == 2) and -1 or 1
+                local hitK = hit1 + (k - 1) * 3650
+                local at = hitK - LEAD
+                if at < Now() then at = Now() end
+                -- End exactly at the hit - no linger.
+                local dur = hitK - at
+                local delay = at - Now()
+                if dur > 1000 then
+                    bd.laneUuids[#bd.laneUuids + 1] = red:addTimedCone(dur, bd.cx + sxs * 20, y, bd.cz - szs * 10, 45, math.rad(53), (sxs == 1) and -1.5708 or 1.5708, delay)
+                    bd.laneUuids[#bd.laneUuids + 1] = red:addTimedCone(dur, bd.cx - sxs * 10, y, bd.cz - szs * 20, 45, math.rad(53), (szs == 1) and 0.0 or 3.1416, delay)
+                    -- Chasing circle volleys are scheduled below from
+                    -- the guide-walk rule, not per beat here.
+                end
+            end
+            -- Chasing circles: volley j (pops with beat j+1) fires at
+            -- each guide's step-(j+1) quad = start rotated dir*j. The
+            -- create-truth spec audits and corrects with a loud log.
+            local QX = { [1] = -10, [2] = 10, [3] = 10, [4] = -10 }
+            local QZ = { [1] = -10, [2] = -10, [3] = 10, [4] = 10 }
+            bd.predC = {}
+            for gid, g in pairs(bd.guideWalk or {}) do
+                if g.dir == nil then
+                    AnyoneCore.log("[Breathy Duet] Guide direction unknown - circle prediction skipped for one guide.", 5)
+                else
+                    for j = 1, 3 do
+                        local qv = ((g.start - 1 + g.dir * j) % 4) + 1
+                        local vat = hit1 + (j - 1) * 3650
+                        local vdelay = vat - Now()
+                        if vdelay < 0 then vdelay = 0 end
+                        local vx, vz = bd.cx + QX[qv], bd.cz + QZ[qv]
+                        -- Die at the visible pop (~1.25s before beat j+1's hit).
+                        local uid = red:addTimedCircle(2400, vx, y, vz, 15, vdelay)
+                        bd.laneUuids[#bd.laneUuids + 1] = uid
+                        bd.predC[j] = bd.predC[j] or {}
+                        local pj = bd.predC[j]
+                        pj[#pj + 1] = { x = vx, z = vz, uuid = uid }
+                    end
+                end
             end
         end
     end
@@ -1458,10 +1594,17 @@ if iceAxis == nil then
     end
     iceAxis = "row"
 end
+-- Ground-targeted channel: the marked spot is in the payload, NOT the
+-- caster head's position (heads park north-center - live mGetEntity
+-- would misclassify south-row instances).
+local gx = a.castPosX or ent.pos.x
+local gz = a.castPosZ or ent.pos.z
+bd.mkSpots = bd.mkSpots or {}
+bd.mkSpots[#bd.mkSpots + 1] = { x = gx, z = gz }
 if id == 50700 then
-    if iceAxis == "col" then bd.laneCol = ent.pos.x else bd.laneRow = ent.pos.z end
+    if iceAxis == "col" then bd.laneCol = gx else bd.laneRow = gz end
 else
-    if iceAxis == "col" then bd.laneRow = ent.pos.z else bd.laneCol = ent.pos.x end
+    if iceAxis == "col" then bd.laneRow = gz else bd.laneCol = gx end
 end
 if bd.called == nil and bd.laneRow ~= nil and bd.laneCol ~= nil then
     bd.called = true
@@ -1470,7 +1613,8 @@ if bd.called == nil and bd.laneRow ~= nil and bd.laneCol ~= nil then
     local safeX = bd.laneCol < bd.cx and bd.cx + 10 or bd.cx - 10
     local safeZ = bd.laneRow < bd.cz and bd.cz + 10 or bd.cz - 10
     bd.safe1 = { x = safeX, z = safeZ }
-    -- Group waymarks: 1=NW, 2=NE, 3=SE, 4=SW.
+    -- Group waymarks: 1=NW, 2=NE, 3=SE, 4=SW. Spots clear the ~26.5
+    -- deg cone edge by ~1.3y.
     bd.wm = {
         [1] = { x = bd.cx - 5, z = bd.cz - 6.7 },
         [2] = { x = bd.cx + 5, z = bd.cz - 6.7 },
@@ -1493,6 +1637,23 @@ if bd.called == nil and bd.laneRow ~= nil and bd.laneCol ~= nil then
     end
     if AnyoneCore ~= nil and AnyoneCore.Shotcall ~= nil then
         AnyoneCore.Shotcall("Duet, start " .. tostring(bd.safe1q), true, 8)
+    end
+    -- Beat 1: cones draw IMMEDIATELY (start is known right here) and
+    -- end exactly at the hit (markerAt + 17450) - no linger. The
+    -- first circle volley fires with BEAT 2's cones and is queued at
+    -- route commit. Natives are blacklisted in moogle-overrides.
+    local q1 = bd.safe1q
+    local sxs = (q1 == 1 or q1 == 4) and -1 or 1
+    local szs = (q1 == 1 or q1 == 2) and -1 or 1
+    local red = TensorCore.getMoogleDrawer()
+    bd.laneUuids = bd.laneUuids or {}
+    bd.laneUuids[#bd.laneUuids + 1] = red:addTimedCone(17450, bd.cx + sxs * 20, y, bd.cz - szs * 10, 45, math.rad(53), (sxs == 1) and -1.5708 or 1.5708, 0)
+    bd.laneUuids[#bd.laneUuids + 1] = red:addTimedCone(17450, bd.cx - sxs * 10, y, bd.cz - szs * 20, 45, math.rad(53), (szs == 1) and 0.0 or 3.1416, 0)
+    -- Marker circles too: their damage pops with beat 2, but the spots
+    -- are known now - show them alongside the beat-1 cones (window-2
+    -- entries continue them seamlessly through the actual pop).
+    for i = 1, #bd.mkSpots do
+        bd.laneUuids[#bd.laneUuids + 1] = red:addTimedCircle(17450, bd.mkSpots[i].x, y, bd.mkSpots[i].z, 15, 0)
     end
 end
 self.used = true
@@ -1524,51 +1685,64 @@ self.used = true
 local a = eventArgs
 if a == nil or a.spellID == nil then return end
 local id = a.spellID
-local FULG = { [47619] = true, [47629] = true, [50723] = true, [50727] = true, [50725] = true }
-local FREZ = { [50724] = true, [50728] = true, [47620] = true, [47630] = true, [50726] = true }
-if not FULG[id] and not FREZ[id] then return end
+local BODY = { [50725] = "FULG", [50726] = "FREZ" }
+local FULG = { [47619] = true, [47629] = true, [50723] = true, [50727] = true }
+local FREZ = { [50724] = true, [50728] = true, [47620] = true, [47630] = true }
+local lead = BODY[id]
+local color = lead or (FULG[id] and "FULG") or (FREZ[id] and "FREZ")
+if not color then return end
 local ent = TensorCore.mGetEntity(a.entityID)
 if ent == nil or (ent.contentid ~= 14489 and ent.contentid ~= 14490 and ent.contentid ~= 14491) then return end
--- Main/helper channels arrive together, sometimes on different heads.
-local color = FULG[id] and "FULG" or "FREZ"
-if data.b1FugSeen == nil then data.b1FugSeen = {} end
-local seen = data.b1FugSeen[color]
-if seen ~= nil and (Now() - seen) < 3000 then return end
-data.b1FugSeen[color] = Now()
-local fireCid, call
-if FREZ[id] then
-    fireCid, call = 14498, "Out, between green"
-else
-    fireCid, call = 14497, "In, between blue"
+
+local FONT = { FULG = 14497, FREZ = 14498 }
+local CALL = { FULG = "In, between blue", FREZ = "Out, between green" }
+local ms = (a.channelTimeMax or 10) * 1000
+
+local function drawFonts(col, delay, dur)
+    local fonts = data.b1Fonts and data.b1Fonts[FONT[col]]
+    if fonts == nil or #fonts == 0 then
+        AnyoneCore.log("[Aevis AR2] Font positions unavailable for " .. tostring(FONT[col]) .. ".", 5)
+        return
+    end
+    local danger = TensorCore.getMoogleDrawer()
+    for i = 1, #fonts do
+        local f = fonts[i]
+        danger:addTimedCenteredRect(dur, f.x, f.y, f.z, 60, 5, f.h, delay)
+    end
 end
-local fonts = data.b1Fonts and data.b1Fonts[fireCid]
-if fonts == nil or #fonts == 0 then
-    AnyoneCore.log("[Aevis AR2] Font positions unavailable for " .. tostring(fireCid) .. ".", 5)
+
+local set = data.b1ARSet
+if lead then
+    if set ~= nil and TimeSince(set.at) < 30000 then return end
+    -- Body reports 9.9s; the lead head channels run ~10.7s to the hit.
+    data.b1ARSet = { at = Now(), lead = lead, hit1 = Now() + ms + 800, p2 = false }
+    drawFonts(lead, 0, ms + 800 + 1000)
+    if AnyoneCore ~= nil and AnyoneCore.Shotcall ~= nil then
+        AnyoneCore.Shotcall(CALL[lead], true, 8)
+    end
     self.used = true
     return
 end
-local ms = (a.channelTimeMax or 10) * 1000
--- Keep the two font sets from overlapping.
-local delay = 0
-if data.b1AR2Busy ~= nil and data.b1AR2Busy > Now() then
-    delay = data.b1AR2Busy - Now() + 200
-end
-data.b1AR2Busy = Now() + ms
-local dur = ms - delay
-if dur < 1500 then dur = 1500 end
-local danger = TensorCore.getMoogleDrawer()
-for i = 1, #fonts do
-    local f = fonts[i]
-    danger:addTimedCenteredRect(dur, f.x, f.y, f.z, 60, 5, f.h, delay)
-end
 
-if delay > 0 then
-    -- Keep the callout synchronized with the delayed draw.
-    data.b1AR2Call = call
-    data.b1AR2CallTime = Now() + delay
-elseif AnyoneCore ~= nil and AnyoneCore.Shotcall ~= nil then
-    AnyoneCore.Shotcall(call, true, 8)
+if set == nil or TimeSince(set.at) > 30000 then
+    AnyoneCore.log("[Aevis AR2] Head fugue " .. tostring(id) .. " with no body anchor - ignored.", 5)
+    return
 end
+if color == set.lead then
+    -- Same-frame lead head line carries the exact hit-1 channel time.
+    if TimeSince(set.at) < 1000 and Now() + ms > set.hit1 then set.hit1 = Now() + ms end
+    return
+end
+if set.p2 then return end
+set.p2 = true
+local promoteIn = set.hit1 - Now() - 300
+if promoteIn < 0 then promoteIn = 0 end
+local dur = (Now() + ms + 1500) - Now() - promoteIn
+if dur < 1500 then dur = 1500 end
+drawFonts(color, promoteIn, dur)
+-- Callout rides the promoted draw via the deferred-call spec.
+data.b1AR2Call = CALL[color]
+data.b1AR2CallTime = Now() + promoteIn
 self.used = true
 ]==],
 						conditions =
@@ -2402,24 +2576,47 @@ for i = 1, 4 do
 end
 if active == nil then
     data.b1NoiseCalled = nil
+    data.b1NoiseBuffAt = nil
     return
 end
 if data.b1NoiseCalled ~= active.id then
     data.b1NoiseCalled = active.id
-    if AnyoneCore ~= nil and AnyoneCore.Shotcall ~= nil then
-        AnyoneCore.Shotcall(active.call, true, 8)
-    end
+    data.b1NoiseBuffAt = Now()
 end
 local KB = 10
 local px, py, pz = player.pos.x, player.pos.y, player.pos.z
--- Each Noise resolves after its matching head attack.
+-- Each Noise resolves after its matching head attack. Hit times are
+-- PREDICTED from the helper channels (~10s lead) with their global
+-- blaze numbers attached.
 local headCid = (active.id == 5054 or active.id == 5055) and 14491 or 14490
-local kbAt
+local kbAt, kbSeq
 local hl = data.b1BlazeHits and data.b1BlazeHits[headCid]
 if hl ~= nil then
     for i = 1, #hl do
-        local k = hl[i] + 1100
-        if k > Now() - 300 and (kbAt == nil or k < kbAt) then kbAt = k end
+        local e = hl[i]
+        local et = type(e) == "table" and e.t or e
+        local k = et + 1100
+        if k > Now() - 300 and (kbAt == nil or k < kbAt) then
+            kbAt = k
+            kbSeq = type(e) == "table" and e.seq or nil
+        end
+    end
+end
+-- Single early call: direction + hit parity. Your color's head owns
+-- either global hits 1/3 or 2/4, so both KB waves share parity -
+-- derivable from the first matching hit's number (~10s ahead).
+if kbSeq ~= nil and data.b1NoiseSchedCalled ~= active.id then
+    data.b1NoiseSchedCalled = active.id
+    if AnyoneCore ~= nil and AnyoneCore.Shotcall ~= nil then
+        local par = (kbSeq % 2 == 1) and "1 and 3" or "2 and 4"
+        AnyoneCore.Shotcall("Knockback " .. (active.dx > 0 and "east" or "west") .. " after " .. par, true, 8)
+    end
+elseif kbSeq == nil and data.b1NoiseSchedCalled ~= active.id
+    and data.b1NoiseBuffAt ~= nil and TimeSince(data.b1NoiseBuffAt) > 3000 then
+    -- Schedule unknown: fall back to direction only.
+    data.b1NoiseSchedCalled = active.id
+    if AnyoneCore ~= nil and AnyoneCore.Shotcall ~= nil then
+        AnyoneCore.Shotcall(active.call, true, 8)
     end
 end
 -- Use a shrinking ring because label countdowns use a different clock.
@@ -2440,13 +2637,9 @@ if kbAt ~= nil then
         end
     end
 end
+-- No execution TTS: the shrinking ring, red arrow flash, and KB
+-- text carry the timing.
 local imminent = kbAt ~= nil and (kbAt - Now()) <= 2600
-if imminent and data.b1NoiseKbCalled ~= kbAt then
-    data.b1NoiseKbCalled = kbAt
-    if AnyoneCore ~= nil and AnyoneCore.Shotcall ~= nil then
-        AnyoneCore.Shotcall("Knockback now", true, 3)
-    end
-end
 -- Turn red shortly before the knockback resolves.
 local drawer = TensorCore.getStaticFlatDrawer(imminent and 2214592767 or 2214657792)
 if drawer == nil then return end
@@ -2543,7 +2736,7 @@ end
 
 
 -- Point from the player toward the projected landing position.
-local KB = 10
+local KB = 25
 local px, py, pz = player.pos.x, player.pos.y, player.pos.z
 local dx, dz = px - active.x, pz - active.z
 if dx * dx + dz * dz < 0.04 then dz = -1 end
@@ -3203,6 +3396,67 @@ self.used = true
 						aType = "Lua",
 						actionLua = [==[
 local a = eventArgs
+if a == nil or a.aoeID == nil then return end
+if a.aoeID ~= 47651 and a.aoeID ~= 47652 then return end
+if a.x == nil or a.z == nil then return end
+-- Audit the guide-walk prediction: a matching predicted circle stays;
+-- a mismatch deletes that volley's unconfirmed circles and draws
+-- truth. The paired damage AOE (50701/50702) pops at create +0.3s
+-- with 1.0s duration; truth draws cover through the pop.
+local bd = data.b1Duet
+if bd ~= nil then
+    -- Creates arrive as a pair per volley; group by time.
+    if TimeSince(bd.truthAt or 0) > 1500 then bd.truthVolley = (bd.truthVolley or 0) + 1 end
+    bd.truthAt = Now()
+    local pj = bd.predC ~= nil and bd.predC[bd.truthVolley] or nil
+    if pj ~= nil then
+        for i = 1, #pj do
+            local p = pj[i]
+            if p ~= nil and math.abs(p.x - a.x) < 2 and math.abs(p.z - a.z) < 2 then
+                p.ok = true
+                self.used = true
+                return
+            end
+        end
+        for i = 1, #pj do
+            local p = pj[i]
+            if p ~= nil and p.ok ~= true and p.uuid ~= nil and Argus ~= nil and Argus.deleteTimedShape ~= nil then
+                Argus.deleteTimedShape(p.uuid)
+                p.uuid = nil
+            end
+        end
+        AnyoneCore.log("[Duet] Predicted circle mismatched the create - corrected to truth.", 5)
+    end
+end
+local red = TensorCore.getMoogleDrawer()
+red:addTimedCircle(1500, a.x, a.y or -980.0, a.z, 15, 0)
+self.used = true
+]==],
+						conditions =
+						{
+							
+							{
+								"d4738a10-1f5c-4b6e-8a2d-30e1c5f7a900",
+								true,
+							},
+							
+							{
+								"6a9d87ef-8092-4d35-f195-5b9fea1b9244",
+								true,
+							},
+						},
+						name = "B1 - Duet Cluster Truth",
+						uuid = "7b0e98f0-9103-4e46-0206-6c0ffb2c0355",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data =
+					{
+						aType = "Lua",
+						actionLua = [==[
+local a = eventArgs
 if a == nil or a.aoeCastType ~= 10 then return end
 -- Other cast-type 10 AOEs must not match this handler.
 local t = a.aoeType
@@ -3411,6 +3665,17 @@ self.used = true
 					data = 
 					{
 						category = "Lua",
+						conditionLua = "return eventArgs ~= nil and (eventArgs.aoeID == 47651 or eventArgs.aoeID == 47652)",
+						dequeueIfLuaFalse = true,
+						name = "Duet Cluster Creates",
+						uuid = "6a9d87ef-8092-4d35-f195-5b9fea1b9244",
+						version = 3,
+					},
+				},
+				{
+					data = 
+					{
+						category = "Lua",
 						conditionLua = "return eventArgs ~= nil and eventArgs.aoeCastType == 10 and eventArgs.aoeType ~= nil and eventArgs.aoeType >= 750 and eventArgs.aoeType <= 755",
 						dequeueIfLuaFalse = true,
 						name = "Throwing Sword Ring Sweeps",
@@ -3581,12 +3846,21 @@ data.b2RingCount = data.b2RingCount + 1
 
 local R = { [2942] = 10, [2943] = 15, [2944] = 20 }
 local r = R[aura]
--- Pose state remains valid until another pose event replaces it.
+-- Setup tells land ~4s before the spawn aura. A stale record is a
+-- leftover from an earlier set (setup events for THIS set may have
+-- been lost) - never trust it across sets.
 local ord = data.b2RingOrder and data.b2RingOrder[a.entityID]
+if ord ~= nil and ord.at ~= nil and TimeSince(ord.at) > 15000 then ord = nil end
 local firstShape = ord ~= nil and ord.first or nil
+if ord ~= nil and ord.tell == "idle34" then
+    AnyoneCore.log("[B2 Cyclo] r10 donut tell (idle wipe at setup).", 5)
+end
 local donutFirst = firstShape == "donut"
 local p = ent.pos
-local dur = 12000 -- Fallback if cleanup events are missed.
+-- Fallback duration only - the second Spin's cleanup deletes shapes
+-- at set end. Must outlive the longest spawn->hit1 (CS3's staggered
+-- cascade reaches ~18.3s).
+local dur = 20000
 
 if data.b2RingHelpers == nil then
     data.b2RingHelpers = true
@@ -3599,8 +3873,9 @@ if data.b2RingHelpers == nil then
             rec.text = nil
         end
     end
-    -- Unknown order shows outlines of both possible shapes.
-    data.b2RingDraw = function(rec, shape, ms)
+    -- Unknown order shows outlines of both possible shapes. staged =
+    -- CS3 queue: dim fill + queue label instead of "now".
+    data.b2RingDraw = function(rec, shape, ms, staged, ordn)
         data.b2RingWipe(rec)
         if shape == nil then
             local amber = TensorCore.getStaticDrawer(GUI:ColorConvertFloat4ToU32(1.0, 0.8, 0.2, 0.6), 2)
@@ -3611,7 +3886,13 @@ if data.b2RingHelpers == nil then
             end
             return
         end
-        local red = TensorCore.getStaticDrawer(GUI:ColorConvertFloat4ToU32(1.0, 0.3, 0.15, 0.45), 1)
+        -- Kept soft to sit level with the rest of the profile's tints.
+        local red
+        if staged then
+            red = TensorCore.getStaticDrawer(GUI:ColorConvertFloat4ToU32(1.0, 0.55, 0.2, 0.12), 1)
+        else
+            red = TensorCore.getStaticDrawer(GUI:ColorConvertFloat4ToU32(1.0, 0.3, 0.15, 0.30), 1)
+        end
         if shape == "chariot" then
             rec.shapes[#rec.shapes + 1] = red:addTimedCircle(ms, rec.x, rec.y, rec.z, rec.r)
         else
@@ -3619,7 +3900,14 @@ if data.b2RingHelpers == nil then
         end
         if AnyoneCore ~= nil and AnyoneCore.addTimedWorldText ~= nil then
             local lbl = shape == "chariot" and "OUT" or "IN"
-            lbl = lbl .. (rec.assumed and " likely" or " now")
+            if staged then
+                lbl = lbl .. " " .. (ordn or "later")
+            else
+                -- Silent rings are called confidently; rec.assumed
+                -- stays internal so hit-1 validation and elimination
+                -- still correct a miss.
+                lbl = lbl .. " now"
+            end
             rec.text = AnyoneCore.addTimedWorldText(ms, lbl, { x = rec.x, y = rec.y + 2.0, z = rec.z }, GUI:ColorConvertFloat4ToU32(1, 1, 1, 1), true, 1.3)
         end
     end
@@ -3641,6 +3929,33 @@ if data.b2RingHelpers == nil then
         end
         -- The NEXT marker is only useful for multi-ring patterns.
         if #live < 2 then return end
+        -- CS3 (staggered): NEXT = the FOLLOWING beat's pocket - the
+        -- active (earliest stage-1) ring's second shape plus the next
+        -- queued ring's first. Current stage-2 rings are done by then.
+        local minA, maxA
+        for i = 1, #live do
+            local t0 = live[i].auraAt or 0
+            if minA == nil or t0 < minA then minA = t0 end
+            if maxA == nil or t0 > maxA then maxA = t0 end
+        end
+        if (maxA - minA) > 1500 then
+            table.sort(live, function(x2, y2) return (x2.auraAt or 0) < (y2.auraAt or 0) end)
+            local A, B
+            for i = 1, #live do
+                if live[i].stage == 1 then
+                    if A == nil then A = live[i] elseif B == nil then B = live[i] end
+                end
+            end
+            local nx = {}
+            if A ~= nil then
+                nx[#nx + 1] = { x = A.x, y = A.y, z = A.z, r = A.r, second = A.second }
+            end
+            if B ~= nil then
+                nx[#nx + 1] = { x = B.x, y = B.y, z = B.z, r = B.r, second = B.first }
+            end
+            if #nx == 0 then return end
+            live = nx
+        end
         for i = 1, #live do
             -- Treat the factory pose as known until the first hit corrects it.
             if live[i].second == nil then return end
@@ -3686,6 +4001,37 @@ if data.b2RingHelpers == nil then
             data.b2NextText = AnyoneCore.addTimedWorldText(25000, "NEXT", { x = best.x, y = y + 1.6, z = best.z }, GUI:ColorConvertFloat4ToU32(1.0, 0.95, 0.4, 1.0), true, 1.3)
         end
     end
+    -- Every 3-ring set is 2 chariot-first + 1 donut-first: when the
+    -- other two rings are known, derive the third. Keeps rec.assumed
+    -- so hit-1 still validates loudly.
+    data.b2RingElim = function()
+        local recs = {}
+        for _, r2 in pairs(data.b2Rings) do
+            if r2.stage == 1 or r2.stage == 2 then recs[#recs + 1] = r2 end
+        end
+        if #recs ~= 3 then return end
+        local unknown, donuts, knowns = nil, 0, 0
+        for i = 1, #recs do
+            local r2 = recs[i]
+            if r2.assumed or r2.first == nil then
+                if unknown ~= nil then return end
+                unknown = r2
+            else
+                knowns = knowns + 1
+                if r2.first == "donut" then donuts = donuts + 1 end
+            end
+        end
+        if unknown == nil or knowns ~= 2 or unknown.stage ~= 1 then return end
+        local inferred = donuts == 0 and "donut" or "chariot"
+        if unknown.first ~= inferred then
+            unknown.first = inferred
+            unknown.second = inferred == "donut" and "chariot" or "donut"
+            data.b2RingDraw(unknown, unknown.first, 20000)
+            data.b2RingOverlay()
+            if data.b2RingNext ~= nil then data.b2RingNext() end
+            AnyoneCore.log("[B2 Cyclo] Order inferred by elimination: " .. inferred .. "-first.", 5)
+        end
+    end
     -- Build the shared safe overlay from all live rings.
     data.b2RingOverlay = function()
         if ArgusDrawsPlus == nil or ArgusDrawsPlus.getEnabled() ~= true
@@ -3699,8 +4045,54 @@ if data.b2RingHelpers == nil then
         for _, rec in pairs(data.b2Rings) do
             if rec.stage == 1 or rec.stage == 2 then live[#live + 1] = rec end
         end
-        -- Only multi-ring patterns need the safe overlay.
-        if #live < 2 then return end
+        if #live < 1 then return end
+        -- CS3 (staggered auras): shapes never coexist as damage - the
+        -- next beat's danger is the stage-2 rings plus only the
+        -- EARLIEST-activated stage-1 ring. CS2 (same-frame auras)
+        -- keeps the all-live intersection.
+        local minA, maxA
+        for i = 1, #live do
+            local t0 = live[i].auraAt or 0
+            if minA == nil or t0 < minA then minA = t0 end
+            if maxA == nil or t0 > maxA then maxA = t0 end
+        end
+        local staggered = (maxA - minA) > 1500
+        if staggered then
+            local danger = {}
+            local firstS1
+            for i = 1, #live do
+                local rec = live[i]
+                if rec.stage == 2 then
+                    danger[#danger + 1] = rec
+                elseif firstS1 == nil or (rec.auraAt or 0) < (firstS1.auraAt or 0) then
+                    firstS1 = rec
+                end
+            end
+            if firstS1 ~= nil then danger[#danger + 1] = firstS1 end
+            -- Restyle per-ring danger: active beat full ("now"),
+            -- queued rings dim with queue labels (stage-predraw rule).
+            table.sort(live, function(x2, y2) return (x2.auraAt or 0) < (y2.auraAt or 0) end)
+            local qn = 0
+            for i = 1, #live do
+                local rec = live[i]
+                local inSet = false
+                for j = 1, #danger do
+                    if danger[j] == rec then inSet = true break end
+                end
+                local shape = rec.stage == 1 and rec.first or rec.second
+                if inSet then
+                    data.b2RingDraw(rec, shape, 20000)
+                else
+                    qn = qn + 1
+                    data.b2RingDraw(rec, shape, 20000, true, qn == 1 and "next" or "last")
+                end
+            end
+            live = danger
+            if #live < 1 then return end
+        else
+            -- Only multi-ring patterns need the safe overlay.
+            if #live < 2 then return end
+        end
         for i = 1, #live do
             local shape = live[i].stage == 1 and live[i].first or live[i].second
             -- Include rings using the factory pose assumption.
@@ -3717,7 +4109,8 @@ if data.b2RingHelpers == nil then
         local cx, cz = 600.0, 703.975
         local hy = live[1].y + 0.05
         local ss = data.b2SafeShapes
-        local dur2 = 12000
+        -- Same fallback logic as the ring danger (cleanup owns removal).
+        local dur2 = 20000
         local base = TensorCore.getStaticFlatDrawer(green, nil, channel)
         ss[#ss + 1] = base:addTimedCircle(dur2, cx, hy, cz, 29.5, 0, false, true, 0)
         local cut = TensorCore.getStaticFlatDrawer(green, nil, channel)
@@ -3737,7 +4130,7 @@ if data.b2RingHelpers == nil then
             if ch2 == nil then ch2 = channel + 1 end
             data.b2DangerChannel = ch2
         end
-        local redF = TensorCore.getStaticFlatDrawer(GUI:ColorConvertFloat4ToU32(1.0, 0.3, 0.15, 0.32), nil, ch2)
+        local redF = TensorCore.getStaticFlatDrawer(GUI:ColorConvertFloat4ToU32(1.0, 0.3, 0.15, 0.22), nil, ch2)
         for i = 1, #live do
             local rec = live[i]
             local shape = rec.stage == 1 and rec.first or rec.second
@@ -3759,6 +4152,7 @@ local rec = {
     second = f1 == "donut" and "chariot" or "donut",
     assumed = assumed or nil,
     stage = 1, shapes = {}, text = nil,
+    auraAt = Now(),
 }
 data.b2Rings[a.entityID] = rec
 data.b2RingDraw(rec, rec.first, dur)
@@ -3767,6 +4161,7 @@ data.b2RingNext()
 if assumed then
     AnyoneCore.log("[B2 Cyclo] Pose unavailable; using default chariot-first order.", 5)
 end
+if data.b2RingElim ~= nil then data.b2RingElim() end
 
 -- Other actor state exposes ring size but not shape order.
 
@@ -5351,16 +5746,30 @@ self.used = true
 						actionLua = [==[
 local a = eventArgs
 if a == nil or a.entityID == nil or a.newAnimID == nil then return end
+if a.index ~= nil and a.index ~= 1 then return end
 local CIRCLE_FIRST = { [3604] = true, [5896] = true, [6847] = true }
 local DONUT_FIRST = { [210] = true, [211] = true, [209] = true }
 local anim = a.newAnimID
-if not CIRCLE_FIRST[anim] and not DONUT_FIRST[anim] then return end
+local idle34 = anim == 34
+if not CIRCLE_FIRST[anim] and not DONUT_FIRST[anim] and not idle34 then return end
 local ent = TensorCore.mGetEntity(a.entityID)
 if ent == nil or ent.contentid ~= 14825 then return end
+-- Post-set resting pose, not a setup tell.
+local spun = data.b2SpinAt ~= nil and data.b2SpinAt[a.entityID] or nil
+if spun ~= nil and TimeSince(spun) < 10000 then return end
 data.b2RingOrder = data.b2RingOrder or {}
-local first = CIRCLE_FIRST[anim] and "chariot" or "donut"
-data.b2RingOrder[a.entityID] = { first = first, at = Now() }
--- Update an existing unknown ring when its pose arrives late.
+local first
+if idle34 then
+    -- Setup-batch wipe to battle/idle = donut-first r10 (no pose ID
+    -- exists for it). A fresh real pose always wins over the wipe.
+    local prev = data.b2RingOrder[a.entityID]
+    if prev ~= nil and prev.tell ~= "idle34" and prev.at ~= nil and TimeSince(prev.at) < 15000 then return end
+    first = "donut"
+else
+    first = CIRCLE_FIRST[anim] and "chariot" or "donut"
+end
+data.b2RingOrder[a.entityID] = { first = first, at = Now(), tell = idle34 and "idle34" or "pose" }
+-- Update an existing unknown ring when its tell arrives late.
 local rec = data.b2Rings ~= nil and data.b2Rings[a.entityID] or nil
 if rec ~= nil and rec.stage == 1 and (rec.first == nil or rec.assumed) then
     rec.first = first
@@ -5369,6 +5778,7 @@ if rec ~= nil and rec.stage == 1 and (rec.first == nil or rec.assumed) then
     if data.b2RingDraw ~= nil then data.b2RingDraw(rec, rec.first, 12000) end
     if data.b2RingOverlay ~= nil then data.b2RingOverlay() end
     if data.b2RingNext ~= nil then data.b2RingNext() end
+    if data.b2RingElim ~= nil then data.b2RingElim() end
 end
 self.used = true
 ]==],
@@ -5414,7 +5824,7 @@ self.used = true
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return eventArgs ~= nil and (eventArgs.newAnimID == 210 or eventArgs.newAnimID == 3604 or eventArgs.newAnimID == 5896 or eventArgs.newAnimID == 6847)",
+						conditionLua = "local a = eventArgs if a == nil or a.index ~= 1 then return false end local n = a.newAnimID if n == 209 or n == 210 or n == 211 or n == 3604 or n == 5896 or n == 6847 then return true end if n ~= 34 then return false end local e = a.entityID ~= nil and TensorCore.mGetEntity(a.entityID) or nil return e ~= nil and e.contentid == 14825",
 						dequeueIfLuaFalse = true,
 						name = "Cycloswords Idle Pose",
 						uuid = "1a2b3c4d-001b-4b2b-9c1b-b2c1c105a01b",
