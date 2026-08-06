@@ -12611,6 +12611,7 @@ local tbl =
 					},
 				},
 			},
+			enabled = false,
 			eventType = 13,
 			name = "P. WHM - UI",
 			uuid = "c2d39c48-9f66-9027-921f-e77b0d24dce1",
@@ -21061,6 +21062,92 @@ local tbl =
 			eventType = 12,
 			name = "[Tiny Terror] Comet Kill Order",
 			uuid = "db975c9e-7808-7edf-8b6a-c4d9917311f3",
+			version = 2,
+		},
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local dash = TensorCore.mGetEntity(eventArgs.entityID)\nif not dash or not dash.pos or dash.pos.h == nil then return end\n\nlocal finish = TensorCore.getPosInDirection(dash.pos, dash.pos.h, 40)\nif not finish then return end\n\nlocal drawer = TensorCore.getMoogleDrawer()\nif not drawer then return end\n\nlocal vx = finish.x - dash.pos.x\nlocal vz = finish.z - dash.pos.z\nlocal lengthSquared = (vx * vx) + (vz * vz)\nif lengthSquared <= 0 then return end\nlocal timeout = ((eventArgs.channelTimeMax or 6.7) + 1.8) * 1000\nlocal hazes = TensorCore.entityList('contentid=14788')\nif not table.valid(hazes) then return end\n\nd('Claret Dragon Soar lines')\nfor _, haze in pairs(hazes) do\n\tif haze and haze.pos and haze.pos.h ~= nil and Argus.isEntityVisible(haze) then\n\t\tlocal wx = haze.pos.x - dash.pos.x\n\t\tlocal wz = haze.pos.z - dash.pos.z\n\t\tlocal along = ((wx * vx) + (wz * vz)) / lengthSquared\n\t\tif along >= 0 and along <= 1 then\n\t\t\tlocal nearestX = dash.pos.x + (along * vx)\n\t\t\tlocal nearestZ = dash.pos.z + (along * vz)\n\t\t\tlocal dx = haze.pos.x - nearestX\n\t\t\tlocal dz = haze.pos.z - nearestZ\n\t\t\tif ((dx * dx) + (dz * dz)) <= 27.5625 then\n\t\t\t\tdrawer:addTimedRect(timeout, haze.pos.x, haze.pos.y + 0.02, haze.pos.z, 40, 10, haze.pos.h)\n\t\t\tend\n\t\tend\n\tend\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"ef66683c-a406-fca2-987e-566f827347bc",
+								true,
+							},
+							
+							{
+								"6ab4c5d1-0211-eda8-b411-7b0ac55f8cc0",
+								true,
+							},
+							
+							{
+								"f62a609e-1dd5-638e-adbb-b08ff551249f",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Draw dash-activated Necrohaze lines",
+						uuid = "d37d9e96-4a04-667f-a5df-210027642226",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "North Horn zone",
+						uuid = "ef66683c-a406-fca2-987e-566f827347bc",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 14787,
+						name = "Claret Dragon",
+						uuid = "6ab4c5d1-0211-eda8-b411-7b0ac55f8cc0",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventSpellID = 48265,
+						name = "Cauterize dash telegraph",
+						uuid = "f62a609e-1dd5-638e-adbb-b08ff551249f",
+						version = 3,
+					},
+				},
+			},
+			eventType = 3,
+			name = "[Cursed Resurgence] Soar Necrohaze Lines",
+			throttleTime = 500,
+			uuid = "19cc1f22-dfb2-267b-9e70-c0db82a62e7c",
 			version = 2,
 		},
 	}, 
