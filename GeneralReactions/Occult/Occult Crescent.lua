@@ -15696,7 +15696,7 @@ local tbl =
 			uuid = "78a6c2ef-7e57-09cd-b705-562934c6bedc",
 			version = 2,
 		},
-		inheritedIndex = 66,
+		inheritedIndex = 67,
 	},
 	
 	{
@@ -16656,7 +16656,7 @@ local tbl =
 			uuid = "caa3b091-3ad6-f0cd-a769-4a79b53f5634",
 			version = 2,
 		},
-		inheritedIndex = 63,
+		inheritedIndex = 64,
 	},
 	
 	{
@@ -16755,7 +16755,7 @@ local tbl =
 			uuid = "c7932cb2-aedb-9f4c-8d8b-c5f9c3b85e62",
 			version = 2,
 		},
-		inheritedIndex = 60,
+		inheritedIndex = 61,
 	},
 	
 	{
@@ -16768,23 +16768,23 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "local green,yellow,red,blue = 1677786914,1677787134,1677721855,1694449152\ndata.dedoTargetNames = data.dedoTargetNames or {\n-- Add names or contentid you want to track here\n-- after modifying the table you have to trigger onwipe under Debug tab \n-- or reload lua for it to reflect\n\n-- the value can either be a color or a table if you want to force to show invisible ents\n\n    [\"treasure coffer\"] = green,\n    [\"survey point\"] = yellow,\n    [\"2010139\"] = {color = red, forceVisible = true}, \n   -- [\"Random Test Name\"] = blue,\n    \n    \n-- if you want other colors than those 4 you can just put in a u32 color value\n-- color codes can be found in Anyone's Dev Monitor > Tools & Debugging Helper > Color Picker \n-- its the U32 Value you want.\n\n}\n\ndata.dedoArrowEnts = data.dedoArrowEnts or {}\ndata.dedoArrowTime = Now()\ntable.clear(data.dedoArrowEnts)\n\nfor id, ent in pairs(TensorCore.entityList(\"\")) do\n    local lowerName = string.lower(ent.name)\n    local targetConfig = data.dedoTargetNames[lowerName] or data.dedoTargetNames[tostring(ent.contentid)]\n    \n    if targetConfig then\n        local color, forceVisible\n        if type(targetConfig) == \"table\" then\n            color = targetConfig.color\n            forceVisible = targetConfig.forceVisible or false\n        else\n            color = targetConfig\n            forceVisible = false\n        end\n        \n        local dist = TensorCore.getDistance2d(TensorCore.mGetPlayer().pos, ent.pos)\n        local isVisible = Argus.isEntityVisible(ent)\n        \n        if dist > 5 and (isVisible or forceVisible) then\n            data.dedoArrowEnts[id] = {name = ent.name,pos = ent.pos,color = color,dist = dist,}\n        end\n    end\nend\n\nself.used = true",
+						actionLua = "local green,yellow,red,blue = 1677786914,1677787134,1677721855,1694449152\n\ndata.dedoTargetNames = data.dedoTargetNames or {\n    -- Non-treasure objects you want to track.\n    -- Treasure objects are detected by ent.type == 4.\n\n    [\"survey point\"] = yellow,\n    [\"2010139\"] = {color = red, forceVisible = true}, -- Carrots\n    -- [\"Random Test Name\"] = blue,\n\n    -- You can also use any U32 color value from Anyone's Dev Monitor.\n}\n\ndata.dedoArrowEnts = data.dedoArrowEnts or {}\ndata.dedoArrowTime = Now()\ntable.clear(data.dedoArrowEnts)\n\nfor id, ent in pairs(TensorCore.entityList(\"\")) do\n    local targetConfig\n\n    -- Track all treasure objects by type.\n    if ent.type == 4 then\n        targetConfig = green\n    else\n        -- All other tracked objects still use name/contentid matching.\n        local lowerName = string.lower(ent.name)\n        targetConfig = data.dedoTargetNames[lowerName] or data.dedoTargetNames[tostring(ent.contentid)]\n    end\n\n    if targetConfig then\n        local color, forceVisible\n\n        if type(targetConfig) == \"table\" then\n            color = targetConfig.color\n            forceVisible = targetConfig.forceVisible or false\n        else\n            color = targetConfig\n            forceVisible = false\n        end\n\n        local dist = TensorCore.getDistance2d(TensorCore.mGetPlayer().pos, ent.pos)\n\n        if dist > 5 then\n            data.dedoArrowEnts[id] = {\n                name = ent.name,\n                pos = ent.pos,\n                color = color,\n                dist = dist,\n            }\n        end\n    end\nend\n\nself.used = true",
 						conditions = 
 						{
 							
 							{
-								"6cdcc0ad-fa02-e3af-97af-f926c182182f",
+								"2daac994-6b45-bc9f-a201-75cf47112acf",
 								true,
 							},
 							
 							{
-								"c7b2860b-8289-7795-a478-9d3865187c43",
+								"76cf4cc7-0310-8b22-89b8-9ca4d11dfd4c",
 								true,
 							},
 						},
 						gVar = "ACR_RikuMNK3_CD",
 						name = "Modify List",
-						uuid = "dc3172cf-0216-5185-925c-d466070e4db1",
+						uuid = "cd63cd05-6492-be10-a239-d2c45dd18bfa",
 						version = 2.1,
 					},
 				},
@@ -16798,12 +16798,12 @@ local tbl =
 						{
 							
 							{
-								"6cdcc0ad-fa02-e3af-97af-f926c182182f",
+								"2daac994-6b45-bc9f-a201-75cf47112acf",
 								true,
 							},
 						},
 						gVar = "ACR_RikuMNK3_CD",
-						uuid = "c27fb81b-9bdc-0481-a815-bbb07fe0385b",
+						uuid = "b8f1e279-9905-2a5c-9953-de97dcb3a596",
 						version = 2.1,
 					},
 				},
@@ -16823,7 +16823,7 @@ local tbl =
 							1346,
 						},
 						localmapid = 1252,
-						uuid = "6cdcc0ad-fa02-e3af-97af-f926c182182f",
+						uuid = "2daac994-6b45-bc9f-a201-75cf47112acf",
 						version = 3,
 					},
 				},
@@ -16833,17 +16833,18 @@ local tbl =
 					{
 						category = "Lua",
 						conditionLua = "return data.dedoArrowTime == nil or TimeSince(data.dedoArrowTime) > 1000",
-						uuid = "c7b2860b-8289-7795-a478-9d3865187c43",
+						uuid = "76cf4cc7-0310-8b22-89b8-9ca4d11dfd4c",
 						version = 3,
 					},
 				},
 			},
+			enabled = false,
 			eventType = 12,
 			name = "Arrow objects",
-			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
+			uuid = "b4dea9fb-caa4-148e-9ae8-92c5564e94af",
 			version = 2,
 		},
-		inheritedIndex = 72,
+		inheritedIndex = 60,
 	},
 	
 	{
@@ -16891,7 +16892,7 @@ local tbl =
 			uuid = "bf3b5f37-31c4-578f-a0c0-1cab48c9c392",
 			version = 2,
 		},
-		inheritedIndex = 62,
+		inheritedIndex = 63,
 	},
 	
 	{
@@ -17087,7 +17088,7 @@ local tbl =
 			uuid = "15ccc7ec-407e-4c0c-ac79-88a64b9cc4b7",
 			version = 2,
 		},
-		inheritedIndex = 65,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -17158,7 +17159,7 @@ local tbl =
 			uuid = "ef41ca3b-b8b3-b055-9750-acd44ba586ba",
 			version = 2,
 		},
-		inheritedIndex = 67,
+		inheritedIndex = 68,
 	},
 	
 	{
@@ -17279,95 +17280,6 @@ local tbl =
 			version = 2,
 		},
 		inheritedIndex = 69,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local green,yellow,red,blue = 1677786914,1677787134,1677721855,1694449152\n\ndata.dedoTargetNames = data.dedoTargetNames or {\n    -- Non-treasure objects you want to track.\n    -- Treasure objects are detected by ent.type == 4.\n\n    [\"survey point\"] = yellow,\n    [\"2010139\"] = {color = red, forceVisible = true}, -- Carrots\n    -- [\"Random Test Name\"] = blue,\n\n    -- You can also use any U32 color value from Anyone's Dev Monitor.\n}\n\ndata.dedoArrowEnts = data.dedoArrowEnts or {}\ndata.dedoArrowTime = Now()\ntable.clear(data.dedoArrowEnts)\n\nfor id, ent in pairs(TensorCore.entityList(\"\")) do\n    local targetConfig\n\n    -- Track all treasure objects by type.\n    if ent.type == 4 then\n        targetConfig = green\n    else\n        -- All other tracked objects still use name/contentid matching.\n        local lowerName = string.lower(ent.name)\n        targetConfig = data.dedoTargetNames[lowerName] or data.dedoTargetNames[tostring(ent.contentid)]\n    end\n\n    if targetConfig then\n        local color, forceVisible\n\n        if type(targetConfig) == \"table\" then\n            color = targetConfig.color\n            forceVisible = targetConfig.forceVisible or false\n        else\n            color = targetConfig\n            forceVisible = false\n        end\n\n        local dist = TensorCore.getDistance2d(TensorCore.mGetPlayer().pos, ent.pos)\n\n        if dist > 5 then\n            data.dedoArrowEnts[id] = {\n                name = ent.name,\n                pos = ent.pos,\n                color = color,\n                dist = dist,\n            }\n        end\n    end\nend\n\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"2daac994-6b45-bc9f-a201-75cf47112acf",
-								true,
-							},
-							
-							{
-								"76cf4cc7-0310-8b22-89b8-9ca4d11dfd4c",
-								true,
-							},
-						},
-						gVar = "ACR_RikuMNK3_CD",
-						name = "Modify List",
-						uuid = "cd63cd05-6492-be10-a239-d2c45dd18bfa",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local player = TensorCore.mGetPlayer()\nfor id, ent in pairs(data.dedoArrowEnts) do\n\tlocal g = TensorCore.getStaticDrawer(ent.color)\n\tg.colorOutline = 4294967295\n\tg:addArrow(player.pos.x, player.pos.y, player.pos.z,TensorCore.getHeadingToTarget(player.pos, ent.pos),1.5, 0.25, nil, nil, true)\n\tg:addCircle(ent.pos.x, ent.pos.y, ent.pos.z, 1, true)\n\tg.colorOutline = nil\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"2daac994-6b45-bc9f-a201-75cf47112acf",
-								true,
-							},
-						},
-						gVar = "ACR_RikuMNK3_CD",
-						uuid = "b8f1e279-9905-2a5c-9953-de97dcb3a596",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 12,
-						dequeueIfLuaFalse = true,
-						localMapIDList = 
-						{
-							1252,
-							1346,
-						},
-						localmapid = 1252,
-						uuid = "2daac994-6b45-bc9f-a201-75cf47112acf",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return data.dedoArrowTime == nil or TimeSince(data.dedoArrowTime) > 1000",
-						uuid = "76cf4cc7-0310-8b22-89b8-9ca4d11dfd4c",
-						version = 3,
-					},
-				},
-			},
-			enabled = false,
-			eventType = 12,
-			name = "Arrow objects",
-			uuid = "b4dea9fb-caa4-148e-9ae8-92c5564e94af",
-			version = 2,
-		},
-		inheritedIndex = 70,
 	},
 	
 	{
