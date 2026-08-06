@@ -15381,7 +15381,7 @@ local tbl =
 			uuid = "384be111-76d5-d45b-af4a-8643d34d5822",
 			version = 2,
 		},
-		inheritedIndex = 62,
+		inheritedIndex = 63,
 	},
 	
 	{
@@ -17169,7 +17169,7 @@ local tbl =
 			uuid = "001e8bf0-9e11-b65b-8fc4-327132fb50f2",
 			version = 2,
 		},
-		inheritedIndex = 63,
+		inheritedIndex = 64,
 	},
 	
 	{
@@ -17819,7 +17819,7 @@ local tbl =
 			uuid = "caa3b091-3ad6-f0cd-a769-4a79b53f5634",
 			version = 2,
 		},
-		inheritedIndex = 67,
+		inheritedIndex = 68,
 	},
 	
 	{
@@ -18212,6 +18212,95 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
+						actionLua = "local green,yellow,red,blue = 1677786914,1677787134,1677721855,1694449152\n\ndata.dedoTargetNames = data.dedoTargetNames or {\n    -- Non-treasure objects you want to track.\n    -- Treasure objects are detected by ent.type == 4.\n\n    [\"survey point\"] = yellow,\n    [\"2010139\"] = {color = red, forceVisible = true}, -- Carrots\n    -- [\"Random Test Name\"] = blue,\n\n    -- You can also use any U32 color value from Anyone's Dev Monitor.\n}\n\ndata.dedoArrowEnts = data.dedoArrowEnts or {}\ndata.dedoArrowTime = Now()\ntable.clear(data.dedoArrowEnts)\n\nfor id, ent in pairs(TensorCore.entityList(\"\")) do\n    local targetConfig\n\n    -- Track all treasure objects by type.\n    if ent.type == 4 then\n        targetConfig = green\n    else\n        -- All other tracked objects still use name/contentid matching.\n        local lowerName = string.lower(ent.name)\n        targetConfig = data.dedoTargetNames[lowerName] or data.dedoTargetNames[tostring(ent.contentid)]\n    end\n\n    if targetConfig then\n        local color, forceVisible\n\n        if type(targetConfig) == \"table\" then\n            color = targetConfig.color\n            forceVisible = targetConfig.forceVisible or false\n        else\n            color = targetConfig\n            forceVisible = false\n        end\n\n        local dist = TensorCore.getDistance2d(TensorCore.mGetPlayer().pos, ent.pos)\n\n        if dist > 5 then\n            data.dedoArrowEnts[id] = {\n                name = ent.name,\n                pos = ent.pos,\n                color = color,\n                dist = dist,\n            }\n        end\n    end\nend\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"2daac994-6b45-bc9f-a201-75cf47112acf",
+								true,
+							},
+							
+							{
+								"76cf4cc7-0310-8b22-89b8-9ca4d11dfd4c",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Modify List",
+						uuid = "cd63cd05-6492-be10-a239-d2c45dd18bfa",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local player = TensorCore.mGetPlayer()\nfor id, ent in pairs(data.dedoArrowEnts) do\n\tlocal g = TensorCore.getStaticDrawer(ent.color)\n\tg.colorOutline = 4294967295\n\tg:addArrow(player.pos.x, player.pos.y, player.pos.z,TensorCore.getHeadingToTarget(player.pos, ent.pos),1.5, 0.25, nil, nil, true)\n\tg:addCircle(ent.pos.x, ent.pos.y, ent.pos.z, 1, true)\n\tg.colorOutline = nil\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"2daac994-6b45-bc9f-a201-75cf47112acf",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						uuid = "b8f1e279-9905-2a5c-9953-de97dcb3a596",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						localmapid = 1252,
+						uuid = "2daac994-6b45-bc9f-a201-75cf47112acf",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.dedoArrowTime == nil or TimeSince(data.dedoArrowTime) > 1000",
+						uuid = "76cf4cc7-0310-8b22-89b8-9ca4d11dfd4c",
+						version = 3,
+					},
+				},
+			},
+			enabled = false,
+			eventType = 12,
+			name = "Arrow objects (old)",
+			uuid = "b4dea9fb-caa4-148e-9ae8-92c5564e94af",
+			version = 2,
+		},
+		inheritedIndex = 62,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
 						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[47308] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47309] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47311] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47312] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47313] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47314] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50554] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50555] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50557] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50558] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50559] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50560] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50561] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41284] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41395] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41315] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41316] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41317] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41830] = {label = \"Barefisted Death\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47073] = {label = \"Garrote\", source = \"Occult Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47152] = {label = \"Sinister Sight\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47191] = {label = \"Stunning Sheen\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49879] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50691] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50692] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41759] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41760] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41761] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41729] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41731] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41733] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41734] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41735] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47310] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50556] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47439] = { label = 'Tendon Ripper', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49799] = {label = \"Plaincracker\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49779] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49777] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47443] = { label = 'Splinter', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47175] = {label = \"Explosion\", source = \"Occult Reactions - Dark Artistry CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47176] = {label = \"Explosion\", source = \"Occult Reactions - Dark Artistry CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[48311] = { label = \"Tiny Flare\", source = \"North Horn Reactions - Tiny Terror\" }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[48312] = { label = \"Tiny Holy\", source = \"North Horn Reactions - Tiny Terror\" }\nself.used = true",
 						conditions = 
 						{
@@ -18587,95 +18676,6 @@ local tbl =
 			version = 2,
 		},
 		inheritedIndex = 73,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local green,yellow,red,blue = 1677786914,1677787134,1677721855,1694449152\n\ndata.dedoTargetNames = data.dedoTargetNames or {\n    -- Non-treasure objects you want to track.\n    -- Treasure objects are detected by ent.type == 4.\n\n    [\"survey point\"] = yellow,\n    [\"2010139\"] = {color = red, forceVisible = true}, -- Carrots\n    -- [\"Random Test Name\"] = blue,\n\n    -- You can also use any U32 color value from Anyone's Dev Monitor.\n}\n\ndata.dedoArrowEnts = data.dedoArrowEnts or {}\ndata.dedoArrowTime = Now()\ntable.clear(data.dedoArrowEnts)\n\nfor id, ent in pairs(TensorCore.entityList(\"\")) do\n    local targetConfig\n\n    -- Track all treasure objects by type.\n    if ent.type == 4 then\n        targetConfig = green\n    else\n        -- All other tracked objects still use name/contentid matching.\n        local lowerName = string.lower(ent.name)\n        targetConfig = data.dedoTargetNames[lowerName] or data.dedoTargetNames[tostring(ent.contentid)]\n    end\n\n    if targetConfig then\n        local color, forceVisible\n\n        if type(targetConfig) == \"table\" then\n            color = targetConfig.color\n            forceVisible = targetConfig.forceVisible or false\n        else\n            color = targetConfig\n            forceVisible = false\n        end\n\n        local dist = TensorCore.getDistance2d(TensorCore.mGetPlayer().pos, ent.pos)\n\n        if dist > 5 then\n            data.dedoArrowEnts[id] = {\n                name = ent.name,\n                pos = ent.pos,\n                color = color,\n                dist = dist,\n            }\n        end\n    end\nend\n\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"2daac994-6b45-bc9f-a201-75cf47112acf",
-								true,
-							},
-							
-							{
-								"76cf4cc7-0310-8b22-89b8-9ca4d11dfd4c",
-								true,
-							},
-						},
-						gVar = "ACR_RikuMNK3_CD",
-						name = "Modify List",
-						uuid = "cd63cd05-6492-be10-a239-d2c45dd18bfa",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local player = TensorCore.mGetPlayer()\nfor id, ent in pairs(data.dedoArrowEnts) do\n\tlocal g = TensorCore.getStaticDrawer(ent.color)\n\tg.colorOutline = 4294967295\n\tg:addArrow(player.pos.x, player.pos.y, player.pos.z,TensorCore.getHeadingToTarget(player.pos, ent.pos),1.5, 0.25, nil, nil, true)\n\tg:addCircle(ent.pos.x, ent.pos.y, ent.pos.z, 1, true)\n\tg.colorOutline = nil\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"2daac994-6b45-bc9f-a201-75cf47112acf",
-								true,
-							},
-						},
-						gVar = "ACR_RikuMNK3_CD",
-						uuid = "b8f1e279-9905-2a5c-9953-de97dcb3a596",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 12,
-						dequeueIfLuaFalse = true,
-						localMapIDList = 
-						{
-							1252,
-							1346,
-						},
-						localmapid = 1252,
-						uuid = "2daac994-6b45-bc9f-a201-75cf47112acf",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return data.dedoArrowTime == nil or TimeSince(data.dedoArrowTime) > 1000",
-						uuid = "76cf4cc7-0310-8b22-89b8-9ca4d11dfd4c",
-						version = 3,
-					},
-				},
-			},
-			enabled = false,
-			eventType = 12,
-			name = "Arrow objects",
-			uuid = "b4dea9fb-caa4-148e-9ae8-92c5564e94af",
-			version = 2,
-		},
-		inheritedIndex = 74,
 	},
 	
 	{
