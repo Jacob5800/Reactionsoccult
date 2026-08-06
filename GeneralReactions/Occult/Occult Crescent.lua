@@ -375,6 +375,11 @@ local tbl =
 								"77b8eed8-0cfb-695a-a37c-568bb356cfeb",
 								true,
 							},
+							
+							{
+								"f2cd7611-cc8e-4b92-9d1d-772b8439c8ff",
+								true,
+							},
 						},
 						gVar = "ACR_TensorMagnum3_Hotbar_DutyAction3",
 						ignoreWeaveRules = true,
@@ -472,6 +477,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Vigilance\")",
+						name = "Toggle",
+						uuid = "f2cd7611-cc8e-4b92-9d1d-772b8439c8ff",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Thief Vigilance",
 			throttleTime = 1250,
@@ -516,6 +532,11 @@ local tbl =
 							
 							{
 								"5fdd4621-9183-81d3-a553-2ad42b69ce8d",
+								true,
+							},
+							
+							{
+								"d68274ac-885f-3256-8bdb-a4dca4a83c61",
 								true,
 							},
 						},
@@ -630,6 +651,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Steal\")",
+						name = "Toggle",
+						uuid = "d68274ac-885f-3256-8bdb-a4dca4a83c61",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Thief Steal",
 			throttleTime = 1250,
@@ -679,6 +711,11 @@ local tbl =
 							
 							{
 								"0871ec24-fb24-fa3d-97e0-3425718700b7",
+								true,
+							},
+							
+							{
+								"8d9d2da8-b65e-098c-8cef-b8a6705c1440",
 								true,
 							},
 						},
@@ -804,6 +841,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Pilfer\")",
+						name = "Toggle",
+						uuid = "8d9d2da8-b65e-098c-8cef-b8a6705c1440",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Thief Pilfer Weapon",
 			throttleTime = 1250,
@@ -868,6 +916,11 @@ local tbl =
 							
 							{
 								"890d87a5-7537-851b-bb9a-cf6de8658bef",
+								true,
+							},
+							
+							{
+								"bb1fcc3e-5255-7f4d-ac30-119e02416c20",
 								true,
 							},
 						},
@@ -1056,6 +1109,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Heal\")",
+						name = "Toggle",
+						uuid = "bb1fcc3e-5255-7f4d-ac30-119e02416c20",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Knight Occult Heal",
 			throttleTime = 1250,
@@ -1105,6 +1169,11 @@ local tbl =
 							
 							{
 								"411a9ae6-6ddc-6156-8c1f-fdb4c91029f4",
+								true,
+							},
+							
+							{
+								"f43bc8b1-10d0-bcc2-b56d-d4efd476c746",
 								true,
 							},
 						},
@@ -1200,6 +1269,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Pray\")",
+						name = "Toggle",
+						uuid = "f43bc8b1-10d0-bcc2-b56d-d4efd476c746",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Knight Pray",
 			throttleTime = 1250,
@@ -1254,6 +1334,11 @@ local tbl =
 							
 							{
 								"4ff4a8ae-2218-199f-a6f3-0ecf3cd31311",
+								true,
+							},
+							
+							{
+								"58faab06-18d6-be0e-bf5f-e2147c6d201f",
 								true,
 							},
 						},
@@ -1365,6 +1450,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Pledge\")",
+						name = "Toggle",
+						uuid = "58faab06-18d6-be0e-bf5f-e2147c6d201f",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Knight Pledge",
 			throttleTime = 1250,
@@ -1415,6 +1511,11 @@ local tbl =
 							
 							{
 								"21f5a719-634c-c348-b3f6-fe1f01b33d86",
+								true,
+							},
+							
+							{
+								"033dd334-e53a-50c9-8961-510fd3983c06",
 								true,
 							},
 						},
@@ -1515,6 +1616,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Counterstance\")",
+						name = "Toggle",
+						uuid = "033dd334-e53a-50c9-8961-510fd3983c06",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Monk Counterstance",
 			throttleTime = 1000,
@@ -1565,6 +1677,11 @@ local tbl =
 							
 							{
 								"f7205721-6955-3735-ba96-99ffa9c751fd",
+								true,
+							},
+							
+							{
+								"cce22c16-8d03-e200-8087-a3a71db5ef68",
 								true,
 							},
 						},
@@ -1666,6 +1783,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Counter\")",
+						name = "Toggle",
+						uuid = "cce22c16-8d03-e200-8087-a3a71db5ef68",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Monk Counter",
 			throttleTime = 1000,
@@ -1673,75 +1801,6 @@ local tbl =
 			version = 2,
 		},
 		inheritedIndex = 13,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "if not data.pMonkTogglesInitialised then\n\tdata.pMonkForceKickEnabled = false\n\tdata.pMonkNoKickEnabled = false\n\tdata.pMonkTogglesInitialised = true\nend",
-						conditions = 
-						{
-							
-							{
-								"12bed729-8bf4-b235-b279-e5570f4b249b",
-								true,
-							},
-						},
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Init",
-						uuid = "f824ba34-7a6a-8f76-aa79-e805614d632f",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "GUI:SetNextWindowSize(225, 50, GUI.SetCond_Always)\nGUI:Begin(\"Monk Kick Toggles\", true, GUI.WindowFlags_NoTitleBar | GUI.WindowFlags_NoResize)\nlocal buttonWidth = 100\n\nif data.pMonkForceKickEnabled then\n\tGUI:PushStyleColor(GUI.Col_Button, 0.2, 0.7, 0.2, 1.0)\nend\n\nif GUI:Button(\"Force Kick\", buttonWidth, 35) then\n\tif data.pMonkNoKickEnabled then\n\t\tdata.pMonkNoKickEnabled = false\n\tend\n\n\tdata.pMonkForceKickEnabled = not data.pMonkForceKickEnabled\nend\n\nGUI:PopStyleColor()\n\nGUI:SameLine()\n\nif data.pMonkNoKickEnabled then\n\tGUI:PushStyleColor(GUI.Col_Button, 0.2, 0.7, 0.2, 1.0)\nend\n\nif GUI:Button(\"No Kick\", buttonWidth, 35) then\n\tif data.pMonkForceKickEnabled then\n\t\tdata.pMonkForceKickEnabled = false\n\tend\n\n\tdata.pMonkNoKickEnabled = not data.pMonkNoKickEnabled\nend\n\nGUI:PopStyleColor()\n\nGUI:End()",
-						conditions = 
-						{
-							
-							{
-								"12bed729-8bf4-b235-b279-e5570f4b249b",
-								true,
-							},
-						},
-						gVar = "ACR_TensorWeeb3_CD",
-						name = "Draw",
-						uuid = "b84116e5-badb-44c3-b04f-0a372aceb5b3",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						buffID = 4360,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Is P. Monk",
-						uuid = "12bed729-8bf4-b235-b279-e5570f4b249b",
-						version = 3,
-					},
-				},
-			},
-			eventType = 13,
-			name = "P. Monk Kick Toggle",
-			uuid = "4e2f6e7f-2afc-a411-b017-8a8bf5ddc247",
-			version = 2,
-		},
-		inheritedIndex = 14,
 	},
 	
 	{
@@ -1784,8 +1843,8 @@ local tbl =
 							},
 							
 							{
-								"da977cd9-925d-daf0-ba9f-ebaa1f25c7d4",
-								true,
+								"d18561bf-83e5-7df3-805a-ed04694b775d",
+								false,
 							},
 						},
 						endIfUsed = true,
@@ -1943,6 +2002,11 @@ local tbl =
 								"03652a17-e335-3466-965d-ce830120cebe",
 								true,
 							},
+							
+							{
+								"d18561bf-83e5-7df3-805a-ed04694b775d",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
@@ -2093,6 +2157,17 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "AOE Check",
 						uuid = "03652a17-e335-3466-965d-ce830120cebe",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Kick\")",
+						name = "Toggle",
+						uuid = "d18561bf-83e5-7df3-805a-ed04694b775d",
 						version = 3,
 					},
 				},
@@ -2306,7 +2381,7 @@ local tbl =
 			uuid = "d02f1d00-64c8-7239-8291-fef76f74db52",
 			version = 2,
 		},
-		inheritedIndex = 16,
+		inheritedIndex = 15,
 	},
 	
 	{
@@ -2355,6 +2430,11 @@ local tbl =
 							
 							{
 								"f7205721-6955-3735-ba96-99ffa9c751fd",
+								true,
+							},
+							
+							{
+								"4f65d63a-05cf-afe8-ad5d-c92f34e5e8b6",
 								true,
 							},
 						},
@@ -2470,6 +2550,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Chakra\")",
+						name = "Toggle",
+						uuid = "4f65d63a-05cf-afe8-ad5d-c92f34e5e8b6",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Monk Occult Chakra",
 			throttleTime = 1000,
@@ -2488,188 +2579,70 @@ local tbl =
 				{
 					data = 
 					{
-						actionID = 41611,
+						aType = "Lua",
+						actionLua = "local deadPlayers = TensorCore.entityList(\"chartype=4,los,dead,maxdistance=30\")\nlocal raisablePlayers = {}\nlocal raisableChemists = {}\nif (table.valid(deadPlayers)) then\n\tfor id, player in pairs(deadPlayers) do\n\t\tlocal buffs = player.buffs\n\t\tlocal raised = false\n        local outOfRaises = false\n\t\tlocal chemist = false \n\n\t\tif (TableSize(buffs) > 0) then\n\t\t\tfor id, b in pairs(buffs) do\n\t\t\t\tif (b.id == 148) then\n\t\t\t\t\traised = true\n\t\t\t\tend\n                if (b.id == 4263) then\n                    outOfRaises = true\n                end\n\t\t\t\tif (b.id == 4367) then\n\t\t\t\t\tchemist = true\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t\t\n\t\tif(raised == false and outOfRaises == false) then\n\t\t\tif (chemist == true) then\n\t\t\t\ttable.insert(raisableChemists, player)\n\t\t\telse\n\t\t\t\ttable.insert(raisablePlayers, player)\n\t\t\tend\n\t\tend\n\tend\nend\nif (table.valid(raisableChemists)) then\n\tfor id, player in pairs(raisableChemists) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \" (Chemist)\")\n\t\tend\n\t\treturn ActionList:Get(1,41634), player.id, true, true\n\tend\nend\nif (table.valid(raisablePlayers)) then\n\tfor id, player in pairs(raisablePlayers) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \"\")\n\t\tend\n\t\treturn ActionList:Get(1,41634), player.id, true, false\n\tend\nend\nself.used = true",
 						conditions = 
 						{
 							
 							{
-								"a9b88350-2ec7-4cf1-b280-4a09d50599df",
+								"b03aac2a-016b-2f26-a5c1-2548777d6f97",
 								true,
 							},
 							
 							{
-								"15e5b8fb-df9c-820c-b1a5-52018a844a0b",
+								"07ce03aa-d311-aeb9-b4fd-db197c2e53b8",
 								true,
 							},
 							
 							{
-								"c9323a23-d798-92ea-a934-5808aff57633",
+								"1dbbf1df-c207-113b-8789-5b1dc0f4c77e",
 								true,
 							},
 							
 							{
-								"c0b2345f-4fbe-2e11-883b-6f1a10584769",
-								false,
-							},
-							
-							{
-								"29f23351-52ca-b461-91cc-93f0b0e10321",
+								"214333af-724c-d8c7-bc32-505803dec7ff",
 								true,
 							},
 							
 							{
-								"f66ceece-6cb6-90e8-b592-76a5836dbf06",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_CD",
-						ignoreWeaveRules = true,
-						name = "Battle Bell Not In Combat",
-						uuid = "17997d14-5af1-4dea-9340-bdbc1e2c0b93",
-						version = 2.1,
-					},
-					inheritedIndex = 1,
-				},
-				
-				{
-					data = 
-					{
-						actionID = 41611,
-						conditions = 
-						{
-							
-							{
-								"a9b88350-2ec7-4cf1-b280-4a09d50599df",
+								"53a42934-6ab6-14a3-96e9-c921a5497ccc",
 								true,
 							},
 							
 							{
-								"15e5b8fb-df9c-820c-b1a5-52018a844a0b",
+								"203788d4-5555-4dc5-9150-53a4e73f8ca9",
 								true,
 							},
 							
 							{
-								"bfce063d-cda4-aae4-8cb4-47aaa5bd4c9e",
+								"bfddab2c-d0ed-0214-8f2c-19399c9e83ff",
 								true,
 							},
 							
 							{
-								"c9323a23-d798-92ea-a934-5808aff57633",
+								"f4134215-666b-a827-a19b-25d2f60e72a2",
 								true,
 							},
 							
 							{
-								"c0b2345f-4fbe-2e11-883b-6f1a10584769",
+								"9f0a3c38-9a4e-d767-b930-2a10131c4ce2",
 								true,
 							},
 							
 							{
-								"29f23351-52ca-b461-91cc-93f0b0e10321",
+								"5b9ed4c1-4133-fce0-9f9a-9db445c50390",
 								true,
 							},
 							
 							{
-								"f66ceece-6cb6-90e8-b592-76a5836dbf06",
+								"88666735-cd00-8475-a526-0e8d0b29d8ea",
 								true,
 							},
 						},
-						gVar = "ACR_RikuWAR3_CD",
-						name = "Battle Bell In Combat",
-						uuid = "86fc8ed6-5ccb-dbf3-bcb5-e4e38d195053",
-						version = 2.1,
-					},
-					inheritedIndex = 2,
-					inheritedOverwrites = 
-					{
-						conditions = 
-						{
-							
-							{
-								type = "remove",
-								value = 
-								{
-									"d8720967-962e-a798-b184-d2ca5366f741",
-									true,
-								},
-							},
-							
-							{
-								position = 1,
-								type = "add",
-								value = 
-								{
-									"4bf7209d-8c34-782c-a4dd-63b77e3e4ae6",
-									true,
-								},
-							},
-							
-							{
-								type = "add",
-								value = 
-								{
-									"c4ae7583-ea9c-83b4-819e-c3f5d969fec1",
-									true,
-								},
-							},
-							
-							{
-								type = "add",
-								value = 
-								{
-									"1bd49bca-4e66-cdf9-b946-1b57d123c7d8",
-									true,
-								},
-							},
-						},
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionID = 41611,
-						conditions = 
-						{
-							
-							{
-								"a9b88350-2ec7-4cf1-b280-4a09d50599df",
-								true,
-							},
-							
-							{
-								"15e5b8fb-df9c-820c-b1a5-52018a844a0b",
-								true,
-							},
-							
-							{
-								"bfce063d-cda4-aae4-8cb4-47aaa5bd4c9e",
-								true,
-							},
-							
-							{
-								"c9323a23-d798-92ea-a934-5808aff57633",
-								true,
-							},
-							
-							{
-								"c0b2345f-4fbe-2e11-883b-6f1a10584769",
-								true,
-							},
-							
-							{
-								"29f23351-52ca-b461-91cc-93f0b0e10321",
-								true,
-							},
-							
-							{
-								"f66ceece-6cb6-90e8-b592-76a5836dbf06",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_CD",
-						name = "Battle Bell Tank",
-						targetType = "Target of Current Target",
-						uuid = "8c8bb21a-4351-26f6-b8e2-4a528e484a5b",
+						endIfUsed = true,
+						gVar = "ACR_RikuRDM3_CD",
+						luaReturnsAction = true,
+						uuid = "fd116bd7-85d4-2c0e-b230-7cfb407015d7",
 						version = 2.1,
 					},
 				},
@@ -2680,24 +2653,40 @@ local tbl =
 				{
 					data = 
 					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						category = "Self",
+						conditionType = 12,
 						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "a9b88350-2ec7-4cf1-b280-4a09d50599df",
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "In Occult Crescent",
+						uuid = "07ce03aa-d311-aeb9-b4fd-db197c2e53b8",
 						version = 3,
 					},
-					inheritedIndex = 1,
 				},
 				
 				{
 					data = 
 					{
-						buffID = 4364,
+						buffID = 4367,
 						category = "Self",
 						dequeueIfLuaFalse = true,
-						name = "Is P. Geomancer",
-						uuid = "15e5b8fb-df9c-820c-b1a5-52018a844a0b",
+						name = "Is Chemist",
+						uuid = "1dbbf1df-c207-113b-8789-5b1dc0f4c77e",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "214333af-724c-d8c7-bc32-505803dec7ff",
 						version = 3,
 					},
 				},
@@ -2708,24 +2697,7 @@ local tbl =
 						category = "Self",
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
-						name = "In Combat",
-						uuid = "bfce063d-cda4-aae4-8cb4-47aaa5bd4c9e",
-						version = 3,
-					},
-					inheritedIndex = 3,
-				},
-				
-				{
-					data = 
-					{
-						actionCDValue = 1.5,
-						actionID = 41611,
-						category = "Self",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						name = "Battle Bell CD <= 1.5s",
-						uuid = "c9323a23-d798-92ea-a934-5808aff57633",
+						uuid = "53a42934-6ab6-14a3-96e9-c921a5497ccc",
 						version = 3,
 					},
 				},
@@ -2733,13 +2705,11 @@ local tbl =
 				{
 					data = 
 					{
-						buffCheckType = 3,
-						buffDuration = 3,
-						buffID = 4251,
 						category = "Self",
+						conditionType = 2,
 						dequeueIfLuaFalse = true,
-						name = "Has Battle Bell",
-						uuid = "c0b2345f-4fbe-2e11-883b-6f1a10584769",
+						name = "Self Living",
+						uuid = "203788d4-5555-4dc5-9150-53a4e73f8ca9",
 						version = 3,
 					},
 				},
@@ -2755,10 +2725,26 @@ local tbl =
 							148,
 						},
 						category = "Self",
+						comparator = 2,
 						dequeueIfLuaFalse = true,
+						hpValue = 30,
 						matchAnyBuff = true,
-						name = "Not Invuln",
-						uuid = "29f23351-52ca-b461-91cc-93f0b0e10321",
+						name = "Self Missing Transcendent",
+						uuid = "bfddab2c-d0ed-0214-8f2c-19399c9e83ff",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 41634,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Revive CD",
+						uuid = "9f0a3c38-9a4e-d767-b930-2a10131c4ce2",
 						version = 3,
 					},
 				},
@@ -2767,20 +2753,56 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
+						conditionLua = "return (ActionList:Get(5,33):CanCastResult() ~= 579)",
 						dequeueIfLuaFalse = true,
-						name = "Check Rezz Timer",
-						uuid = "f66ceece-6cb6-90e8-b592-76a5836dbf06",
+						name = "Revive Unlocked",
+						uuid = "f4134215-666b-a827-a19b-25d2f60e72a2",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return TableSize(TensorCore.entityList(\"chartype=4,los,dead,maxdistance=30\")) ~= 0",
+						dequeueIfLuaFalse = true,
+						filterTargetType = "Party",
+						name = "Dead Player",
+						uuid = "5b9ed4c1-4133-fce0-9f9a-9db445c50390",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return true",
+						dequeueIfLuaFalse = true,
+						name = "Flip To Disable Action",
+						uuid = "b03aac2a-016b-2f26-a5c1-2548777d6f97",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Chem Raise\")",
+						name = "Toggle",
+						uuid = "88666735-cd00-8475-a526-0e8d0b29d8ea",
 						version = 3,
 					},
 				},
 			},
-			name = "P. Geomancer Battle Bell",
-			throttleTime = 1250,
-			uuid = "f54a354e-293a-9e76-98e9-0251950cb971",
+			name = "P. Chemist Rez",
+			throttleTime = 1000,
+			uuid = "81a55341-b483-4aea-a0bc-9664bb0d30a7",
 			version = 2,
 		},
-		inheritedIndex = 18,
+		inheritedIndex = 16,
 	},
 	
 	{
@@ -2849,6 +2871,11 @@ local tbl =
 							
 							{
 								"0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
+								true,
+							},
+							
+							{
+								"c19ff60f-3e3d-09dc-9583-cb2c364d0741",
 								true,
 							},
 						},
@@ -3053,232 +3080,24 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Hero's Rime\")",
+						name = "Toggle",
+						uuid = "c19ff60f-3e3d-09dc-9583-cb2c364d0741",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Bard Hero's Rime",
 			throttleTime = 1500,
 			uuid = "89545ebd-870b-9599-8f64-ead285ce22cd",
 			version = 2,
 		},
-		inheritedIndex = 23,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local deadPlayers = TensorCore.entityList(\"chartype=4,los,dead,maxdistance=30\")\nlocal raisablePlayers = {}\nlocal raisableChemists = {}\nif (table.valid(deadPlayers)) then\n\tfor id, player in pairs(deadPlayers) do\n\t\tlocal buffs = player.buffs\n\t\tlocal raised = false\n        local outOfRaises = false\n\t\tlocal chemist = false \n\n\t\tif (TableSize(buffs) > 0) then\n\t\t\tfor id, b in pairs(buffs) do\n\t\t\t\tif (b.id == 148) then\n\t\t\t\t\traised = true\n\t\t\t\tend\n                if (b.id == 4263) then\n                    outOfRaises = true\n                end\n\t\t\t\tif (b.id == 4367) then\n\t\t\t\t\tchemist = true\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\t\t\n\t\tif(raised == false and outOfRaises == false) then\n\t\t\tif (chemist == true) then\n\t\t\t\ttable.insert(raisableChemists, player)\n\t\t\telse\n\t\t\t\ttable.insert(raisablePlayers, player)\n\t\t\tend\n\t\tend\n\tend\nend\nif (table.valid(raisableChemists)) then\n\tfor id, player in pairs(raisableChemists) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \" (Chemist)\")\n\t\tend\n\t\treturn ActionList:Get(1,41634), player.id, true, true\n\tend\nend\nif (table.valid(raisablePlayers)) then\n\tfor id, player in pairs(raisablePlayers) do\n\t\tif (data.lastRaiseNotification == nil or TimeSince(data.lastRaiseNotification) > 5000) then\n\t\t\tdata.lastRaiseNotification = Now()\n\t\t\tSendTextCommand(\"/e Raising \" .. player.name .. \"\")\n\t\tend\n\t\treturn ActionList:Get(1,41634), player.id, true, false\n\tend\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"b03aac2a-016b-2f26-a5c1-2548777d6f97",
-								true,
-							},
-							
-							{
-								"07ce03aa-d311-aeb9-b4fd-db197c2e53b8",
-								true,
-							},
-							
-							{
-								"1dbbf1df-c207-113b-8789-5b1dc0f4c77e",
-								true,
-							},
-							
-							{
-								"214333af-724c-d8c7-bc32-505803dec7ff",
-								true,
-							},
-							
-							{
-								"53a42934-6ab6-14a3-96e9-c921a5497ccc",
-								true,
-							},
-							
-							{
-								"203788d4-5555-4dc5-9150-53a4e73f8ca9",
-								true,
-							},
-							
-							{
-								"bfddab2c-d0ed-0214-8f2c-19399c9e83ff",
-								true,
-							},
-							
-							{
-								"f4134215-666b-a827-a19b-25d2f60e72a2",
-								true,
-							},
-							
-							{
-								"9f0a3c38-9a4e-d767-b930-2a10131c4ce2",
-								true,
-							},
-							
-							{
-								"5b9ed4c1-4133-fce0-9f9a-9db445c50390",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuRDM3_CD",
-						luaReturnsAction = true,
-						uuid = "fd116bd7-85d4-2c0e-b230-7cfb407015d7",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 12,
-						dequeueIfLuaFalse = true,
-						localMapIDList = 
-						{
-							1252,
-							1346,
-						},
-						name = "In Occult Crescent",
-						uuid = "07ce03aa-d311-aeb9-b4fd-db197c2e53b8",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffID = 4367,
-						category = "Self",
-						dequeueIfLuaFalse = true,
-						name = "Is Chemist",
-						uuid = "1dbbf1df-c207-113b-8789-5b1dc0f4c77e",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
-						dequeueIfLuaFalse = true,
-						name = "Bot Running",
-						uuid = "214333af-724c-d8c7-bc32-505803dec7ff",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 7,
-						dequeueIfLuaFalse = true,
-						uuid = "53a42934-6ab6-14a3-96e9-c921a5497ccc",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 2,
-						dequeueIfLuaFalse = true,
-						name = "Self Living",
-						uuid = "203788d4-5555-4dc5-9150-53a4e73f8ca9",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						buffCheckType = 2,
-						buffID = 418,
-						buffIDList = 
-						{
-							418,
-							148,
-						},
-						category = "Self",
-						comparator = 2,
-						dequeueIfLuaFalse = true,
-						hpValue = 30,
-						matchAnyBuff = true,
-						name = "Self Missing Transcendent",
-						uuid = "bfddab2c-d0ed-0214-8f2c-19399c9e83ff",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						actionID = 41634,
-						category = "Self",
-						comparator = 2,
-						conditionType = 4,
-						dequeueIfLuaFalse = true,
-						name = "Revive CD",
-						uuid = "9f0a3c38-9a4e-d767-b930-2a10131c4ce2",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return (ActionList:Get(5,33):CanCastResult() ~= 579)",
-						dequeueIfLuaFalse = true,
-						name = "Revive Unlocked",
-						uuid = "f4134215-666b-a827-a19b-25d2f60e72a2",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return TableSize(TensorCore.entityList(\"chartype=4,los,dead,maxdistance=30\")) ~= 0",
-						dequeueIfLuaFalse = true,
-						filterTargetType = "Party",
-						name = "Dead Player",
-						uuid = "5b9ed4c1-4133-fce0-9f9a-9db445c50390",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return true",
-						dequeueIfLuaFalse = true,
-						name = "Flip To Disable Action",
-						uuid = "b03aac2a-016b-2f26-a5c1-2548777d6f97",
-						version = 3,
-					},
-				},
-			},
-			name = "P. Chemist Rez",
-			throttleTime = 1000,
-			uuid = "81a55341-b483-4aea-a0bc-9664bb0d30a7",
-			version = 2,
-		},
-		inheritedIndex = 20,
+		inheritedIndex = 22,
 	},
 	
 	{
@@ -3326,6 +3145,11 @@ local tbl =
 							
 							{
 								"ab8ab672-de83-07a8-9e0d-d32ef9196663",
+								true,
+							},
+							
+							{
+								"cc5f4120-16a4-de1f-b971-732ecd7451fd",
 								true,
 							},
 						},
@@ -3444,13 +3268,24 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Mighty March\")",
+						name = "Toggle",
+						uuid = "cc5f4120-16a4-de1f-b971-732ecd7451fd",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Bard Mighty March",
 			throttleTime = 1500,
 			uuid = "c18517b0-1e34-1d83-8176-9f1d38d51541",
 			version = 2,
 		},
-		inheritedIndex = 30,
+		inheritedIndex = 29,
 	},
 	
 	{
@@ -3517,6 +3352,11 @@ local tbl =
 								"f94d6587-e826-5a9f-8436-eafbd600aa75",
 								true,
 							},
+							
+							{
+								"76798336-a69d-7ce8-bc4c-88f1a3d0b5a3",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuRDM3_Hotbar_DutyAction1",
@@ -3577,6 +3417,11 @@ local tbl =
 							
 							{
 								"f94d6587-e826-5a9f-8436-eafbd600aa75",
+								true,
+							},
+							
+							{
+								"76798336-a69d-7ce8-bc4c-88f1a3d0b5a3",
 								true,
 							},
 						},
@@ -3738,13 +3583,24 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Aria\")",
+						name = "Toggle",
+						uuid = "76798336-a69d-7ce8-bc4c-88f1a3d0b5a3",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Bard Aria",
 			throttleTime = 1500,
 			uuid = "a6c7e7ac-46cf-12e7-ae07-883da63ba66c",
 			version = 2,
 		},
-		inheritedIndex = 32,
+		inheritedIndex = 31,
 	},
 	
 	{
@@ -3849,6 +3705,11 @@ local tbl =
 								"6105b516-3945-472a-ac0d-73d1c8d2ca9a",
 								true,
 							},
+							
+							{
+								"15e7aab5-9869-0a8a-97b9-b244bfa85813",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_TensorMagnum3_CD",
@@ -3910,6 +3771,11 @@ local tbl =
 								"6105b516-3945-472a-ac0d-73d1c8d2ca9a",
 								true,
 							},
+							
+							{
+								"15e7aab5-9869-0a8a-97b9-b244bfa85813",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_TensorMagnum3_CD",
@@ -3964,6 +3830,11 @@ local tbl =
 							
 							{
 								"5b3f266a-5288-d0e4-80b4-04427cb46548",
+								true,
+							},
+							
+							{
+								"15e7aab5-9869-0a8a-97b9-b244bfa85813",
 								true,
 							},
 						},
@@ -4022,6 +3893,11 @@ local tbl =
 								"5b3f266a-5288-d0e4-80b4-04427cb46548",
 								true,
 							},
+							
+							{
+								"15e7aab5-9869-0a8a-97b9-b244bfa85813",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_TensorMagnum3_CD",
@@ -4066,6 +3942,11 @@ local tbl =
 							
 							{
 								"e7a10bc3-099f-e3a0-9120-15eaf7e935ea",
+								true,
+							},
+							
+							{
+								"15e7aab5-9869-0a8a-97b9-b244bfa85813",
 								true,
 							},
 						},
@@ -4250,6 +4131,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Cannons\")",
+						name = "Toggle",
+						uuid = "15e7aab5-9869-0a8a-97b9-b244bfa85813",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Cannoneer Cannons",
 			throttleTime = 1500,
@@ -4315,6 +4207,11 @@ local tbl =
 							
 							{
 								"b5f97cba-d002-f4fc-8dd2-29c135abef9e",
+								true,
+							},
+							
+							{
+								"9c87688b-fb6f-d65b-a3f5-d40a5dd3518b",
 								true,
 							},
 						},
@@ -4486,13 +4383,24 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Zeninage\")",
+						name = "Toggle",
+						uuid = "9c87688b-fb6f-d65b-a3f5-d40a5dd3518b",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Sam Zeninage",
 			throttleTime = 1500,
 			uuid = "f2d1f07e-321c-e1ce-8429-7a0b6d6b913e",
 			version = 2,
 		},
-		inheritedIndex = 26,
+		inheritedIndex = 25,
 	},
 	
 	{
@@ -4652,6 +4560,11 @@ local tbl =
 								"c73165f8-847b-61fa-aac4-a8e97be3aa00",
 								true,
 							},
+							
+							{
+								"3bc6bf88-c464-ed93-a311-22656148e5ba",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
@@ -4724,6 +4637,11 @@ local tbl =
 								"c73165f8-847b-61fa-aac4-a8e97be3aa00",
 								false,
 							},
+							
+							{
+								"3bc6bf88-c464-ed93-a311-22656148e5ba",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
@@ -4791,6 +4709,11 @@ local tbl =
 								"0fea0543-e595-327d-80dd-e9f35b887881",
 								false,
 							},
+							
+							{
+								"3bc6bf88-c464-ed93-a311-22656148e5ba",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
@@ -4846,6 +4769,11 @@ local tbl =
 							
 							{
 								"308fe1f4-9f25-e900-a28a-288e162e0fbb",
+								true,
+							},
+							
+							{
+								"3bc6bf88-c464-ed93-a311-22656148e5ba",
 								true,
 							},
 						},
@@ -5054,13 +4982,24 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Iainuki\")",
+						name = "Toggle",
+						uuid = "3bc6bf88-c464-ed93-a311-22656148e5ba",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Sam Iainuki",
 			throttleTime = 100,
 			uuid = "6c2de725-16db-dd09-83c9-eeecf9fdadaf",
 			version = 2,
 		},
-		inheritedIndex = 25,
+		inheritedIndex = 24,
 	},
 	
 	{
@@ -5124,6 +5063,11 @@ local tbl =
 							
 							{
 								"4d153190-820e-68f0-a7f6-cc91e785fd38",
+								true,
+							},
+							
+							{
+								"288a1c8f-7303-8c70-9784-735929074a67",
 								true,
 							},
 						},
@@ -5288,13 +5232,24 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Deadly Blow\")",
+						name = "Toggle",
+						uuid = "288a1c8f-7303-8c70-9784-735929074a67",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Berserker Deadly Blow",
 			throttleTime = 100,
 			uuid = "5ba3375d-fe3c-b0f3-b109-b09825fc872b",
 			version = 2,
 		},
-		inheritedIndex = 27,
+		inheritedIndex = 26,
 	},
 	
 	{
@@ -5474,13 +5429,24 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Mage Masher\")",
+						name = "Toggle",
+						uuid = "1295ad69-4be0-ddd8-9da2-61874c2f64cd",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Tmage Mage Masher",
 			throttleTime = 1250,
 			uuid = "f002c1b7-06d1-6521-a194-18da8de47602",
 			version = 2,
 		},
-		inheritedIndex = 28,
+		inheritedIndex = 27,
 	},
 	
 	{
@@ -5892,7 +5858,7 @@ local tbl =
 			uuid = "c9178b74-f32c-817a-950c-32b1fc0a7ee8",
 			version = 2,
 		},
-		inheritedIndex = 74,
+		inheritedIndex = 77,
 	},
 	
 	{
@@ -6163,7 +6129,7 @@ local tbl =
 			uuid = "eb688e35-87ab-c255-a605-63f5423c3c0a",
 			version = 2,
 		},
-		inheritedIndex = 75,
+		inheritedIndex = 78,
 	},
 	
 	{
@@ -6244,6 +6210,11 @@ local tbl =
 								"b77c75a7-c8bf-d56b-9d04-5a7f236d29d5",
 								true,
 							},
+							
+							{
+								"60d03392-f834-a5a4-97c8-50ff6b2bdd06",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
@@ -6319,6 +6290,11 @@ local tbl =
 							
 							{
 								"0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
+								true,
+							},
+							
+							{
+								"60d03392-f834-a5a4-97c8-50ff6b2bdd06",
 								true,
 							},
 						},
@@ -6570,13 +6546,24 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Quick\")",
+						name = "Toggle",
+						uuid = "60d03392-f834-a5a4-97c8-50ff6b2bdd06",
+						version = 3,
+					},
+				},
 			},
 			name = "P. TMage Quick",
 			throttleTime = 1500,
 			uuid = "1c6bbd54-6018-485a-9f05-9819fa8aa68e",
 			version = 2,
 		},
-		inheritedIndex = 75,
+		inheritedIndex = 78,
 	},
 	
 	{
@@ -6777,6 +6764,11 @@ local tbl =
 								"79eb5ff3-df2c-678d-a1a8-a37bc9759ab1",
 								true,
 							},
+							
+							{
+								"3817f0f4-5ac6-f43c-8ca8-c727d7a0eb5b",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuRDM3_Hotbar_DutyAction4",
@@ -6846,6 +6838,11 @@ local tbl =
 							
 							{
 								"0c8bbab7-4820-17c9-a40c-f1c3e4572b6e",
+								true,
+							},
+							
+							{
+								"3817f0f4-5ac6-f43c-8ca8-c727d7a0eb5b",
 								true,
 							},
 						},
@@ -7062,13 +7059,24 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Vigilance\")",
+						name = "Toggle",
+						uuid = "3817f0f4-5ac6-f43c-8ca8-c727d7a0eb5b",
+						version = 3,
+					},
+				},
 			},
 			name = "P. TMage Comet",
 			throttleTime = 100,
 			uuid = "9c5b9d73-ae0e-195a-940a-540bca4454b2",
 			version = 2,
 		},
-		inheritedIndex = 75,
+		inheritedIndex = 78,
 	},
 	
 	{
@@ -7210,7 +7218,7 @@ local tbl =
 			uuid = "b175b050-f2bb-2ffe-bd7e-bff2941f8634",
 			version = 2,
 		},
-		inheritedIndex = 76,
+		inheritedIndex = 79,
 	},
 	
 	{
@@ -7424,7 +7432,7 @@ local tbl =
 			uuid = "9278be18-034c-9f92-abab-1d3e0055a418",
 			version = 2,
 		},
-		inheritedIndex = 77,
+		inheritedIndex = 80,
 	},
 	
 	{
@@ -7483,6 +7491,11 @@ local tbl =
 							
 							{
 								"6c4525ee-9fd0-41dd-bc57-c766de237b22",
+								true,
+							},
+							
+							{
+								"f3241bd8-b216-c3e0-8805-e07f3bc8eacb",
 								true,
 							},
 						},
@@ -7661,6 +7674,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Predict\")",
+						name = "Toggle",
+						uuid = "f3241bd8-b216-c3e0-8805-e07f3bc8eacb",
+						version = 3,
+					},
+				},
 			},
 			enabled = false,
 			name = "P. Oracle Use Predict[NOT SAFE]",
@@ -7668,7 +7692,337 @@ local tbl =
 			uuid = "4c3d9549-4ff9-6f51-a0a1-292851ddf5a7",
 			version = 2,
 		},
-		inheritedIndex = 78,
+		inheritedIndex = 81,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						actionID = 41611,
+						conditions = 
+						{
+							
+							{
+								"a9b88350-2ec7-4cf1-b280-4a09d50599df",
+								true,
+							},
+							
+							{
+								"15e5b8fb-df9c-820c-b1a5-52018a844a0b",
+								true,
+							},
+							
+							{
+								"c9323a23-d798-92ea-a934-5808aff57633",
+								true,
+							},
+							
+							{
+								"c0b2345f-4fbe-2e11-883b-6f1a10584769",
+								false,
+							},
+							
+							{
+								"29f23351-52ca-b461-91cc-93f0b0e10321",
+								true,
+							},
+							
+							{
+								"f66ceece-6cb6-90e8-b592-76a5836dbf06",
+								true,
+							},
+							
+							{
+								"ec8a837a-ead4-8ece-848f-a8126fa4dc34",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						ignoreWeaveRules = true,
+						name = "Battle Bell Not In Combat",
+						uuid = "17997d14-5af1-4dea-9340-bdbc1e2c0b93",
+						version = 2.1,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						actionID = 41611,
+						conditions = 
+						{
+							
+							{
+								"a9b88350-2ec7-4cf1-b280-4a09d50599df",
+								true,
+							},
+							
+							{
+								"15e5b8fb-df9c-820c-b1a5-52018a844a0b",
+								true,
+							},
+							
+							{
+								"bfce063d-cda4-aae4-8cb4-47aaa5bd4c9e",
+								true,
+							},
+							
+							{
+								"c9323a23-d798-92ea-a934-5808aff57633",
+								true,
+							},
+							
+							{
+								"c0b2345f-4fbe-2e11-883b-6f1a10584769",
+								true,
+							},
+							
+							{
+								"29f23351-52ca-b461-91cc-93f0b0e10321",
+								true,
+							},
+							
+							{
+								"f66ceece-6cb6-90e8-b592-76a5836dbf06",
+								true,
+							},
+							
+							{
+								"ec8a837a-ead4-8ece-848f-a8126fa4dc34",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Battle Bell In Combat",
+						uuid = "86fc8ed6-5ccb-dbf3-bcb5-e4e38d195053",
+						version = 2.1,
+					},
+					inheritedIndex = 2,
+					inheritedOverwrites = 
+					{
+						conditions = 
+						{
+							
+							{
+								type = "remove",
+								value = 
+								{
+									"d8720967-962e-a798-b184-d2ca5366f741",
+									true,
+								},
+							},
+							
+							{
+								position = 1,
+								type = "add",
+								value = 
+								{
+									"4bf7209d-8c34-782c-a4dd-63b77e3e4ae6",
+									true,
+								},
+							},
+							
+							{
+								type = "add",
+								value = 
+								{
+									"c4ae7583-ea9c-83b4-819e-c3f5d969fec1",
+									true,
+								},
+							},
+							
+							{
+								type = "add",
+								value = 
+								{
+									"1bd49bca-4e66-cdf9-b946-1b57d123c7d8",
+									true,
+								},
+							},
+						},
+					},
+				},
+				
+				{
+					data = 
+					{
+						actionID = 41611,
+						conditions = 
+						{
+							
+							{
+								"a9b88350-2ec7-4cf1-b280-4a09d50599df",
+								true,
+							},
+							
+							{
+								"15e5b8fb-df9c-820c-b1a5-52018a844a0b",
+								true,
+							},
+							
+							{
+								"bfce063d-cda4-aae4-8cb4-47aaa5bd4c9e",
+								true,
+							},
+							
+							{
+								"c9323a23-d798-92ea-a934-5808aff57633",
+								true,
+							},
+							
+							{
+								"c0b2345f-4fbe-2e11-883b-6f1a10584769",
+								true,
+							},
+							
+							{
+								"29f23351-52ca-b461-91cc-93f0b0e10321",
+								true,
+							},
+							
+							{
+								"f66ceece-6cb6-90e8-b592-76a5836dbf06",
+								true,
+							},
+							
+							{
+								"ec8a837a-ead4-8ece-848f-a8126fa4dc34",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Battle Bell Tank",
+						targetType = "Target of Current Target",
+						uuid = "8c8bb21a-4351-26f6-b8e2-4a528e484a5b",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						dequeueIfLuaFalse = true,
+						name = "Bot Running",
+						uuid = "a9b88350-2ec7-4cf1-b280-4a09d50599df",
+						version = 3,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						buffID = 4364,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Is P. Geomancer",
+						uuid = "15e5b8fb-df9c-820c-b1a5-52018a844a0b",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						name = "In Combat",
+						uuid = "bfce063d-cda4-aae4-8cb4-47aaa5bd4c9e",
+						version = 3,
+					},
+					inheritedIndex = 3,
+				},
+				
+				{
+					data = 
+					{
+						actionCDValue = 1.5,
+						actionID = 41611,
+						category = "Self",
+						comparator = 2,
+						conditionType = 4,
+						dequeueIfLuaFalse = true,
+						name = "Battle Bell CD <= 1.5s",
+						uuid = "c9323a23-d798-92ea-a934-5808aff57633",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 3,
+						buffDuration = 3,
+						buffID = 4251,
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						name = "Has Battle Bell",
+						uuid = "c0b2345f-4fbe-2e11-883b-6f1a10584769",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						buffCheckType = 2,
+						buffID = 418,
+						buffIDList = 
+						{
+							418,
+							148,
+						},
+						category = "Self",
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "Not Invuln",
+						uuid = "29f23351-52ca-b461-91cc-93f0b0e10321",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.rezzTimer == nil or TimeSince(data.rezzTimer) >= 1000",
+						dequeueIfLuaFalse = true,
+						name = "Check Rezz Timer",
+						uuid = "f66ceece-6cb6-90e8-b592-76a5836dbf06",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Battle Bell\")",
+						name = "Toggle",
+						uuid = "ec8a837a-ead4-8ece-848f-a8126fa4dc34",
+						version = 3,
+					},
+				},
+			},
+			name = "P. Geomancer Battle Bell",
+			throttleTime = 1250,
+			uuid = "f54a354e-293a-9e76-98e9-0251950cb971",
+			version = 2,
+		},
+		inheritedIndex = 32,
 	},
 	
 	{
@@ -7732,6 +8086,7 @@ local tbl =
 					},
 				},
 			},
+			enabled = false,
 			eventType = 13,
 			name = "P. Geomancer Levitate Toggle",
 			uuid = "608ec0d1-adf2-ec9d-8f73-8e6c280fbb5d",
@@ -7772,6 +8127,11 @@ local tbl =
 								"86e868dc-33c3-6f2a-9a8b-1a3eb2fffe94",
 								true,
 							},
+							
+							{
+								"4d8e016f-b320-19ea-88a8-c12221eb79d2",
+								true,
+							},
 						},
 						gVar = "ACR_RikuWAR3_Hotbar_ArmsLength",
 						targetType = "Detection Target",
@@ -7800,7 +8160,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return data.pGeoLevitatePartyEnabled",
+						conditionLua = "return OCGUI.GetToggle(\"Levitate\")",
 						dequeueIfLuaFalse = true,
 						name = "Button Enabled",
 						uuid = "5c84db7a-5a39-f23e-be46-a4cb18d08ff8",
@@ -7869,12 +8229,23 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Suspend\")",
+						name = "Toggle",
+						uuid = "4d8e016f-b320-19ea-88a8-c12221eb79d2",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Geomancer Levitate Party",
 			uuid = "228a73f9-c34a-52ed-8402-2b3ccba1f5c1",
 			version = 2,
 		},
-		inheritedIndex = 79,
+		inheritedIndex = 82,
 	},
 	
 	{
@@ -7912,6 +8283,11 @@ local tbl =
 							
 							{
 								"545c4e2e-fb48-d9e3-b695-3ab27bf011ad",
+								true,
+							},
+							
+							{
+								"8f2bd06a-156f-77f1-8d4b-6642ebeec189",
 								true,
 							},
 						},
@@ -7953,6 +8329,11 @@ local tbl =
 							{
 								"545c4e2e-fb48-d9e3-b695-3ab27bf011ad",
 								false,
+							},
+							
+							{
+								"8f2bd06a-156f-77f1-8d4b-6642ebeec189",
+								true,
 							},
 						},
 						gVar = "ACR_RikuWAR3_CD",
@@ -8066,6 +8447,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Ringing Respite\")",
+						name = "Toggle",
+						uuid = "8f2bd06a-156f-77f1-8d4b-6642ebeec189",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Geomancer Ringing Respite",
 			uuid = "124cd983-fe7a-d7f9-9ed9-ad6f8a38cf30",
@@ -8124,6 +8516,11 @@ local tbl =
 							
 							{
 								"4d153190-820e-68f0-a7f6-cc91e785fd38",
+								true,
+							},
+							
+							{
+								"ad103bca-ec76-a629-b028-f2bcac28294c",
 								true,
 							},
 						},
@@ -8197,6 +8594,11 @@ local tbl =
 							
 							{
 								"4d153190-820e-68f0-a7f6-cc91e785fd38",
+								true,
+							},
+							
+							{
+								"ad103bca-ec76-a629-b028-f2bcac28294c",
 								true,
 							},
 						},
@@ -8373,6 +8775,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Quickstep\")",
+						name = "Toggle",
+						uuid = "ad103bca-ec76-a629-b028-f2bcac28294c",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Dancer Quickstep",
 			throttleTime = 100,
@@ -8433,6 +8846,11 @@ local tbl =
 							
 							{
 								"4d153190-820e-68f0-a7f6-cc91e785fd38",
+								true,
+							},
+							
+							{
+								"3ce16bf9-491f-aa67-9f46-79c56d2ff009",
 								true,
 							},
 						},
@@ -8505,6 +8923,11 @@ local tbl =
 							
 							{
 								"4d153190-820e-68f0-a7f6-cc91e785fd38",
+								true,
+							},
+							
+							{
+								"3ce16bf9-491f-aa67-9f46-79c56d2ff009",
 								true,
 							},
 						},
@@ -8580,6 +9003,11 @@ local tbl =
 								"4d153190-820e-68f0-a7f6-cc91e785fd38",
 								true,
 							},
+							
+							{
+								"3ce16bf9-491f-aa67-9f46-79c56d2ff009",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuDRK3_Hotbar_DutyAction1",
@@ -8653,6 +9081,11 @@ local tbl =
 								"4d153190-820e-68f0-a7f6-cc91e785fd38",
 								true,
 							},
+							
+							{
+								"3ce16bf9-491f-aa67-9f46-79c56d2ff009",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuDRK3_Hotbar_DutyAction1",
@@ -8724,6 +9157,11 @@ local tbl =
 							
 							{
 								"4d153190-820e-68f0-a7f6-cc91e785fd38",
+								true,
+							},
+							
+							{
+								"3ce16bf9-491f-aa67-9f46-79c56d2ff009",
 								true,
 							},
 						},
@@ -8986,6 +9424,17 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Flip To Disable Action",
 						uuid = "4d153190-820e-68f0-a7f6-cc91e785fd38",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Dance\")",
+						name = "Toggle",
+						uuid = "3ce16bf9-491f-aa67-9f46-79c56d2ff009",
 						version = 3,
 					},
 				},
@@ -10295,7 +10744,7 @@ local tbl =
 			uuid = "978328eb-ccac-48cf-bcfc-9c31d4cf6f4d",
 			version = 2,
 		},
-		inheritedIndex = 82,
+		inheritedIndex = 85,
 	},
 	
 	{
@@ -10357,6 +10806,11 @@ local tbl =
 							
 							{
 								"b2873652-fafa-8116-85c3-0bcf9e9f225e",
+								true,
+							},
+							
+							{
+								"85fc5f4c-f677-695e-b820-0f32505fcee4",
 								true,
 							},
 						},
@@ -10423,6 +10877,11 @@ local tbl =
 								"76763df1-edbf-8932-8e24-33bea7bf4fc3",
 								true,
 							},
+							
+							{
+								"85fc5f4c-f677-695e-b820-0f32505fcee4",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_TensorMagnum3_CD",
@@ -10485,6 +10944,11 @@ local tbl =
 							
 							{
 								"e69d5f82-fbef-17bd-8b3a-06007b5000ad",
+								true,
+							},
+							
+							{
+								"85fc5f4c-f677-695e-b820-0f32505fcee4",
 								true,
 							},
 						},
@@ -10550,6 +11014,11 @@ local tbl =
 							{
 								"951c9b82-5570-bfd1-bfd6-30d778f703f4",
 								false,
+							},
+							
+							{
+								"85fc5f4c-f677-695e-b820-0f32505fcee4",
+								true,
 							},
 						},
 						endIfUsed = true,
@@ -10620,6 +11089,11 @@ local tbl =
 								"e69d5f82-fbef-17bd-8b3a-06007b5000ad",
 								false,
 							},
+							
+							{
+								"85fc5f4c-f677-695e-b820-0f32505fcee4",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_TensorMagnum3_CD",
@@ -10674,6 +11148,11 @@ local tbl =
 							
 							{
 								"fb8ebcda-f865-6a5c-a568-729538b3195d",
+								true,
+							},
+							
+							{
+								"85fc5f4c-f677-695e-b820-0f32505fcee4",
 								true,
 							},
 						},
@@ -10908,6 +11387,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Msytic Skills\")",
+						name = "Toggle",
+						uuid = "85fc5f4c-f677-695e-b820-0f32505fcee4",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Mystic Knight",
 			throttleTime = 1000,
@@ -10969,6 +11459,11 @@ local tbl =
 								"407cb2a4-43fa-1a39-b3e4-2340f7c3711d",
 								true,
 							},
+							
+							{
+								"bf3be3cc-85f5-a4b1-90b4-ec3cdc5b966c",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuSGE3_Hotbar_DutyAction1",
@@ -11026,6 +11521,11 @@ local tbl =
 							
 							{
 								"475c4ff9-1c1a-9878-821b-6576f35b3d53",
+								true,
+							},
+							
+							{
+								"9f2b8c8a-5827-0292-90e6-6b1494da7402",
 								true,
 							},
 						},
@@ -11087,6 +11587,11 @@ local tbl =
 								"81bc93ec-9729-d286-b830-236c236d9ceb",
 								true,
 							},
+							
+							{
+								"9f2b8c8a-5827-0292-90e6-6b1494da7402",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuSGE3_Hotbar_DutyAction4",
@@ -11135,6 +11640,11 @@ local tbl =
 							
 							{
 								"64ec0aae-a61e-8a4a-8be8-dfabf7eb0b79",
+								true,
+							},
+							
+							{
+								"2cdf9b3d-99ce-7a1e-be68-91c3317da656",
 								true,
 							},
 						},
@@ -11368,6 +11878,39 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Shuriken\")",
+						name = "Toggle - Shuriken",
+						uuid = "bf3be3cc-85f5-a4b1-90b4-ec3cdc5b966c",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Scrolls\")",
+						name = "Toggle - Scrolls",
+						uuid = "9f2b8c8a-5827-0292-90e6-6b1494da7402",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Smoke\")",
+						name = "Toggle - Smoke",
+						uuid = "2cdf9b3d-99ce-7a1e-be68-91c3317da656",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Ninja",
 			throttleTime = 250,
@@ -11426,6 +11969,11 @@ local tbl =
 								"3467bf01-4832-8358-bfb3-087527be05c8",
 								true,
 							},
+							
+							{
+								"03cac638-88ff-d7f7-999e-c9e6b50817d5",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuRDM3_CD",
@@ -11475,6 +12023,11 @@ local tbl =
 							
 							{
 								"7ffacc39-e30e-5ce9-b423-8c90e71fb765",
+								true,
+							},
+							
+							{
+								"03cac638-88ff-d7f7-999e-c9e6b50817d5",
 								true,
 							},
 						},
@@ -11531,6 +12084,11 @@ local tbl =
 							
 							{
 								"7e7e1198-54bb-5886-bf01-c3736b9fb5be",
+								true,
+							},
+							
+							{
+								"03cac638-88ff-d7f7-999e-c9e6b50817d5",
 								true,
 							},
 						},
@@ -11708,6 +12266,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"GLD Skills\")",
+						name = "Toggle",
+						uuid = "03cac638-88ff-d7f7-999e-c9e6b50817d5",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Gladiator Auto Weaponskills",
 			throttleTime = 1000,
@@ -11809,6 +12378,11 @@ local tbl =
 								"20840724-ed31-adac-bb7f-9a94958e814e",
 								false,
 							},
+							
+							{
+								"10b590cb-b6fc-cfa3-a6da-57460e85f7e0",
+								true,
+							},
 						},
 						gVar = "ACR_RikuWAR3_Hotbar_DutyAction5",
 						name = "Occult Holy",
@@ -11846,6 +12420,11 @@ local tbl =
 							
 							{
 								"93b471e5-9a85-d70d-b386-507f7561930c",
+								true,
+							},
+							
+							{
+								"10b590cb-b6fc-cfa3-a6da-57460e85f7e0",
 								true,
 							},
 						},
@@ -11968,6 +12547,17 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Is Occult Holy queued",
 						uuid = "93b471e5-9a85-d70d-b386-507f7561930c",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"WHM Attacks\")",
+						name = "Toggle",
+						uuid = "10b590cb-b6fc-cfa3-a6da-57460e85f7e0",
 						version = 3,
 					},
 				},
@@ -12113,6 +12703,11 @@ local tbl =
 								"e2762103-a99f-86dc-ad49-b79f66f96561",
 								true,
 							},
+							
+							{
+								"e88c419c-58eb-63ef-9ec1-9c0990ab3857",
+								true,
+							},
 						},
 						gVar = "ACR_RikuWAR3_Hotbar_DutyAction1",
 						name = "Occult Cure II",
@@ -12163,6 +12758,11 @@ local tbl =
 							
 							{
 								"e2762103-a99f-86dc-ad49-b79f66f96561",
+								true,
+							},
+							
+							{
+								"e88c419c-58eb-63ef-9ec1-9c0990ab3857",
 								true,
 							},
 						},
@@ -12431,6 +13031,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"WHM Heals\")",
+						name = "Toggle",
+						uuid = "e88c419c-58eb-63ef-9ec1-9c0990ab3857",
+						version = 3,
+					},
+				},
 			},
 			enabled = false,
 			name = "P. WHM - Heals",
@@ -12495,6 +13106,11 @@ local tbl =
 								"d6bd6de2-7c2e-1cd1-baa7-df189d738b97",
 								true,
 							},
+							
+							{
+								"3d5dfb18-3249-4580-9909-11d5fe959bab",
+								true,
+							},
 						},
 						gVar = "ACR_RikuWAR3_CD",
 						name = "Set Rez Target",
@@ -12548,6 +13164,11 @@ local tbl =
 							
 							{
 								"62d1c136-27c2-976c-a86e-7f0062efe2f4",
+								true,
+							},
+							
+							{
+								"3d5dfb18-3249-4580-9909-11d5fe959bab",
 								true,
 							},
 						},
@@ -12716,6 +13337,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"WHM Raise\")",
+						name = "Toggle",
+						uuid = "3d5dfb18-3249-4580-9909-11d5fe959bab",
+						version = 3,
+					},
+				},
 			},
 			name = "P. WHM - Rez",
 			throttleTime = 200,
@@ -12831,6 +13463,11 @@ local tbl =
 								"aacd0685-3c44-ba18-86ef-df2d9f1c8a3b",
 								true,
 							},
+							
+							{
+								"204aa835-edbd-6801-9e41-6157156bf8e5",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuSGE3_Hotbar_DutyAction5",
@@ -12909,6 +13546,11 @@ local tbl =
 								"7ae11b51-a023-a1a9-a351-9c4827a33a82",
 								true,
 							},
+							
+							{
+								"204aa835-edbd-6801-9e41-6157156bf8e5",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuSGE3_Hotbar_DutyAction1",
@@ -12978,6 +13620,11 @@ local tbl =
 							
 							{
 								"a18d17a7-36b7-b794-8e24-938c04369a92",
+								true,
+							},
+							
+							{
+								"204aa835-edbd-6801-9e41-6157156bf8e5",
 								true,
 							},
 						},
@@ -13053,6 +13700,11 @@ local tbl =
 								"7bc51f84-db08-eecf-a9ac-eade5b39d44a",
 								true,
 							},
+							
+							{
+								"204aa835-edbd-6801-9e41-6157156bf8e5",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuSGE3_Hotbar_DutyAction4",
@@ -13120,6 +13772,11 @@ local tbl =
 							
 							{
 								"aacd0685-3c44-ba18-86ef-df2d9f1c8a3b",
+								true,
+							},
+							
+							{
+								"204aa835-edbd-6801-9e41-6157156bf8e5",
 								true,
 							},
 						},
@@ -13502,6 +14159,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Summons\")",
+						name = "Toggle",
+						uuid = "204aa835-edbd-6801-9e41-6157156bf8e5",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Summoner",
 			throttleTime = 250,
@@ -13568,6 +14236,11 @@ local tbl =
 							
 							{
 								"36e0cdc9-6f67-832d-af9d-962934e8d8cc",
+								true,
+							},
+							
+							{
+								"d9fc1dde-2dbf-78a8-805a-26a426f2e206",
 								true,
 							},
 						},
@@ -13704,6 +14377,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Aim\")",
+						name = "Toggle",
+						uuid = "d9fc1dde-2dbf-78a8-805a-26a426f2e206",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Ranger Phantom Aim",
 			throttleTime = 1000,
@@ -13765,6 +14449,11 @@ local tbl =
 								"7da229c0-f7ce-9c1c-966d-53b7f743c519",
 								true,
 							},
+							
+							{
+								"8def9f3f-9a1d-8430-b1ec-cbf1fa495fef",
+								true,
+							},
 						},
 						gVar = "ACR_RikuMNK3_CD",
 						targetType = "Current Target",
@@ -13818,6 +14507,11 @@ local tbl =
 							
 							{
 								"7da229c0-f7ce-9c1c-966d-53b7f743c519",
+								true,
+							},
+							
+							{
+								"063da332-385b-9a3c-b790-e93273ff6d8e",
 								true,
 							},
 						},
@@ -13957,6 +14651,28 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Jump\")",
+						name = "Toggle - Jump",
+						uuid = "8def9f3f-9a1d-8430-b1ec-cbf1fa495fef",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Lance\")",
+						name = "Toggle - Lance",
+						uuid = "063da332-385b-9a3c-b790-e93273ff6d8e",
+						version = 3,
+					},
+				},
 			},
 			name = "p. Dragoon (Jump not safe)",
 			uuid = "3bfe4444-df82-7f20-b900-794335d94680",
@@ -14033,6 +14749,11 @@ local tbl =
 								"7c1c9a3e-654e-c38a-8a7a-42752dec5c88",
 								true,
 							},
+							
+							{
+								"51dc004c-96c3-a3e6-ba5a-c843757e279c",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuDRK3_Hotbar_DutyAction3",
@@ -14106,6 +14827,11 @@ local tbl =
 							{
 								"44c9ceba-564a-3630-8970-d25e51cb9847",
 								false,
+							},
+							
+							{
+								"51dc004c-96c3-a3e6-ba5a-c843757e279c",
+								true,
 							},
 						},
 						endIfUsed = true,
@@ -14343,6 +15069,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Libra\")",
+						name = "Toggle",
+						uuid = "51dc004c-96c3-a3e6-ba5a-c843757e279c",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Red Mage Libra",
 			throttleTime = 1250,
@@ -14350,7 +15087,7 @@ local tbl =
 			uuid = "384be111-76d5-d45b-af4a-8643d34d5822",
 			version = 2,
 		},
-		inheritedIndex = 58,
+		inheritedIndex = 61,
 	},
 	
 	{
@@ -14465,6 +15202,11 @@ local tbl =
 								"aacd0685-3c44-ba18-86ef-df2d9f1c8a3b",
 								true,
 							},
+							
+							{
+								"b613834c-5be0-64cd-ad4e-92a2fc55e702",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuDRK3_Hotbar_DutyAction1",
@@ -14544,6 +15286,11 @@ local tbl =
 							
 							{
 								"aacd0685-3c44-ba18-86ef-df2d9f1c8a3b",
+								true,
+							},
+							
+							{
+								"b613834c-5be0-64cd-ad4e-92a2fc55e702",
 								true,
 							},
 						},
@@ -14627,6 +15374,11 @@ local tbl =
 								"aacd0685-3c44-ba18-86ef-df2d9f1c8a3b",
 								true,
 							},
+							
+							{
+								"b613834c-5be0-64cd-ad4e-92a2fc55e702",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_RikuDRK3_Hotbar_DutyAction5",
@@ -14699,6 +15451,11 @@ local tbl =
 							
 							{
 								"aacd0685-3c44-ba18-86ef-df2d9f1c8a3b",
+								true,
+							},
+							
+							{
+								"b613834c-5be0-64cd-ad4e-92a2fc55e702",
 								true,
 							},
 						},
@@ -14990,6 +15747,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"RDM Skills\")",
+						name = "Toggle",
+						uuid = "b613834c-5be0-64cd-ad4e-92a2fc55e702",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Red Mage",
 			throttleTime = 250,
@@ -14997,7 +15765,7 @@ local tbl =
 			uuid = "b154c88e-e0cd-2b0c-bdd5-5a5cb8dc7300",
 			version = 2,
 		},
-		inheritedIndex = 57,
+		inheritedIndex = 60,
 	},
 	
 	{
@@ -15117,6 +15885,11 @@ local tbl =
 								"89eb4ac1-6022-83e2-9bee-122b96f1155e",
 								true,
 							},
+							
+							{
+								"f67f2616-57fb-6fd4-a12e-c0589fc1425e",
+								true,
+							},
 						},
 						gVar = "ACR_RikuDRK3_Hotbar_DutyAction1",
 						name = "Occult Aero",
@@ -15194,6 +15967,11 @@ local tbl =
 							
 							{
 								"2574fb19-5341-c062-8474-3a4d6622758e",
+								true,
+							},
+							
+							{
+								"f67f2616-57fb-6fd4-a12e-c0589fc1425e",
 								true,
 							},
 						},
@@ -15491,6 +16269,17 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"BLU Skills\")",
+						name = "Toggle",
+						uuid = "f67f2616-57fb-6fd4-a12e-c0589fc1425e",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Blue Offense",
 			throttleTime = 250,
@@ -15550,6 +16339,11 @@ local tbl =
 							
 							{
 								"4eefd4f3-8b3d-f524-b53a-fd0b29a1c402",
+								true,
+							},
+							
+							{
+								"e202feb7-6b71-f99e-941f-9ce00c5426d2",
 								true,
 							},
 						},
@@ -15691,12 +16485,23 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Drain Touch\")",
+						name = "Toggle",
+						uuid = "e202feb7-6b71-f99e-941f-9ce00c5426d2",
+						version = 3,
+					},
+				},
 			},
 			name = "P. Necromancer (USE on warrior)",
 			uuid = "78a6c2ef-7e57-09cd-b705-562934c6bedc",
 			version = 2,
 		},
-		inheritedIndex = 67,
+		inheritedIndex = 69,
 	},
 	
 	{
@@ -15749,6 +16554,11 @@ local tbl =
 							
 							{
 								"4118ed3d-9985-9fed-ba1b-0692f3d87ef3",
+								true,
+							},
+							
+							{
+								"d0e4b497-04d7-1142-9a34-aa44079c41f9",
 								true,
 							},
 						},
@@ -15805,6 +16615,11 @@ local tbl =
 								"4118ed3d-9985-9fed-ba1b-0692f3d87ef3",
 								true,
 							},
+							
+							{
+								"d0e4b497-04d7-1142-9a34-aa44079c41f9",
+								true,
+							},
 						},
 						gVar = "ACR_RikuMNK3_CD",
 						targetType = "Current Target",
@@ -15857,6 +16672,11 @@ local tbl =
 							
 							{
 								"4118ed3d-9985-9fed-ba1b-0692f3d87ef3",
+								true,
+							},
+							
+							{
+								"d0e4b497-04d7-1142-9a34-aa44079c41f9",
 								true,
 							},
 						},
@@ -16038,13 +16858,24 @@ local tbl =
 						version = 3,
 					},
 				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"Necro Skills\")",
+						name = "Toggle",
+						uuid = "d0e4b497-04d7-1142-9a34-aa44079c41f9",
+						version = 3,
+					},
+				},
 			},
 			enabled = false,
 			name = "P. Necromancer (Disabled by def)",
 			uuid = "001e8bf0-9e11-b65b-8fc4-327132fb50f2",
 			version = 2,
 		},
-		inheritedIndex = 59,
+		inheritedIndex = 62,
 	},
 	
 	{
@@ -16052,6 +16883,76 @@ local tbl =
 		{
 			actions = 
 			{
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						clusterMinTarget = 0,
+						clusterRadius = 5,
+						conditions = 
+						{
+							
+							{
+								"9352f316-0b87-58b2-9925-9e52f9eaf999",
+								true,
+							},
+							
+							{
+								"fa12a1b5-576e-c38b-962f-cd36b59c3686",
+								true,
+							},
+							
+							{
+								"68ffdc57-38d6-2993-be46-969f767c278d",
+								true,
+							},
+							
+							{
+								"74748392-3717-36df-a079-fc75a02dcf22",
+								true,
+							},
+							
+							{
+								"57557896-4ccd-2e37-8814-6c11a09cc2d8",
+								true,
+							},
+							
+							{
+								"65c23125-414a-35fc-aa05-29de4729582e",
+								true,
+							},
+							
+							{
+								"d89d9a36-ce2b-8495-a04d-0a5bdd112475",
+								false,
+							},
+							
+							{
+								"7f6fb411-f42d-391a-aa0e-da3549b1f675",
+								true,
+							},
+							
+							{
+								"f02cb8c6-8caa-a0f8-bf06-93dcd07d6986",
+								true,
+							},
+							
+							{
+								"ddc9803b-018e-c200-8aba-78173484c211",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_Hotbar_DutyAction3",
+						name = "Occult Thunder III",
+						targetType = "Most Clustered Enemy",
+						uuid = "d6b5e0d2-6979-f582-be5f-dd16a09be702",
+						variableIsHover = true,
+						variableTogglesType = 2,
+						version = 2.1,
+					},
+					inheritedIndex = 1,
+				},
 				
 				{
 					data = 
@@ -16140,6 +17041,11 @@ local tbl =
 								"7f6fb411-f42d-391a-aa0e-da3549b1f675",
 								true,
 							},
+							
+							{
+								"ddc9803b-018e-c200-8aba-78173484c211",
+								true,
+							},
 						},
 						gVar = "ACR_RikuWAR3_Hotbar_DutyAction5",
 						name = "Occult Flare",
@@ -16202,6 +17108,11 @@ local tbl =
 							
 							{
 								"70c6f43f-b954-5fe2-9bab-cdad00513a82",
+								true,
+							},
+							
+							{
+								"ddc9803b-018e-c200-8aba-78173484c211",
 								true,
 							},
 						},
@@ -16268,75 +17179,16 @@ local tbl =
 								"b2d42f2b-3438-a153-b386-ed63324010cd",
 								true,
 							},
+							
+							{
+								"ddc9803b-018e-c200-8aba-78173484c211",
+								true,
+							},
 						},
 						gVar = "ACR_RikuWAR3_Hotbar_DutyAction2",
 						name = "Occult Blizzard III",
 						targetType = "Most Clustered Enemy",
 						uuid = "0ced8d07-c5a6-c2ae-a5cf-c84350318918",
-						variableIsHover = true,
-						variableTogglesType = 2,
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "ACR",
-						clusterMinTarget = 0,
-						clusterRadius = 5,
-						conditions = 
-						{
-							
-							{
-								"9352f316-0b87-58b2-9925-9e52f9eaf999",
-								true,
-							},
-							
-							{
-								"fa12a1b5-576e-c38b-962f-cd36b59c3686",
-								true,
-							},
-							
-							{
-								"68ffdc57-38d6-2993-be46-969f767c278d",
-								true,
-							},
-							
-							{
-								"74748392-3717-36df-a079-fc75a02dcf22",
-								true,
-							},
-							
-							{
-								"57557896-4ccd-2e37-8814-6c11a09cc2d8",
-								true,
-							},
-							
-							{
-								"65c23125-414a-35fc-aa05-29de4729582e",
-								true,
-							},
-							
-							{
-								"d89d9a36-ce2b-8495-a04d-0a5bdd112475",
-								false,
-							},
-							
-							{
-								"7f6fb411-f42d-391a-aa0e-da3549b1f675",
-								true,
-							},
-							
-							{
-								"f02cb8c6-8caa-a0f8-bf06-93dcd07d6986",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_Hotbar_DutyAction3",
-						name = "Occult Thunder III",
-						targetType = "Most Clustered Enemy",
-						uuid = "d6b5e0d2-6979-f582-be5f-dd16a09be702",
 						variableIsHover = true,
 						variableTogglesType = 2,
 						version = 2.1,
@@ -16389,6 +17241,11 @@ local tbl =
 							
 							{
 								"7f6fb411-f42d-391a-aa0e-da3549b1f675",
+								true,
+							},
+							
+							{
+								"ddc9803b-018e-c200-8aba-78173484c211",
 								true,
 							},
 						},
@@ -16584,6 +17441,18 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
+						conditionLua = "return OCGUI.GetToggle(\"BLM Skills\")",
+						name = "Toggle",
+						uuid = "ddc9803b-018e-c200-8aba-78173484c211",
+						version = 3,
+					},
+					inheritedIndex = 12,
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
 						conditionLua = "return TensorCore.mGetPlayer():IsMoving()",
 						dequeueIfLuaFalse = true,
 						name = "Player Moving",
@@ -16656,7 +17525,7 @@ local tbl =
 			uuid = "caa3b091-3ad6-f0cd-a769-4a79b53f5634",
 			version = 2,
 		},
-		inheritedIndex = 64,
+		inheritedIndex = 66,
 	},
 	
 	{
@@ -16672,7 +17541,7 @@ local tbl =
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
 		},
-		inheritedIndex = 83,
+		inheritedIndex = 86,
 	},
 	
 	{
@@ -16755,7 +17624,675 @@ local tbl =
 			uuid = "c7932cb2-aedb-9f4c-8d8b-c5f9c3b85e62",
 			version = 2,
 		},
-		inheritedIndex = 61,
+		inheritedIndex = 57,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "--[[ ============================================================================\n\tOCGUI - Occult Crescent shared toggle GUI\n\n\tThree files live in LuaMods\\ffxivminion\\occultgui\\ :\n\t  Settings.lua      GUI prefs, each toggle's on/off state, the target lists\n\t  Toggles.lua       every toggle definition ever added, in display order\n\t  ListWindows.lua   every target list window ever added\n\n\tAnything added through AddToggle / AddListWindow is written to disk and is\n\tpermanent: it comes back on its own next session even if nothing registers\n\tit again. Use RemoveToggle / RemoveListWindow to actually get rid of one.\n\n\tPublic API (call these from any other reaction):\n\n\t  OCGUI.AddToggle(name, opts)   add/refresh a toggle. Safe to re-call.\n\t      opts.default    bool   value the first time it is ever seen   (true)\n\t      opts.shown      bool   listed on the on-screen toggle bar     (true)\n\t      opts.group      num    which toggle bar window it lives in    (1)\n\t      opts.job        str    \"global\" or an OCGUI.JobTable value    (\"global\")\n\t      opts.phantom    num    phantom job buff id, 0 = always        (0)\n\t      opts.tab        str    settings window tab it is listed under  (\"Main\")\n\t      opts.index      num    insert position in the list            (append)\n\t      opts.tooltip    str    hover text in the settings window      (nil)\n\t      opts.condition  func   function(name) return bool end, extra availability\n\t                             check. NOT saved - functions cannot be written to\n\t                             disk, so re-register each session to reapply it.\n\n\t  OCGUI.RemoveToggle(name)      delete it, from memory and from Toggles.lua\n\t  OCGUI.IsAvailable(name)       does this toggle exist\n\t  OCGUI.IsActive(name)          exists AND phantom job/condition satisfied\n\t  OCGUI.IsEnabled(name)         exists AND switched on\n\t  OCGUI.GetToggle(name)         current value, or nil if it does not exist\n\t  OCGUI.SetToggle(name, value)  set + save\n\t  OCGUI.SetShown(name, value)   show/hide on the toggle bar + save\n\t  OCGUI.ResetToggles()          every toggle back to its default value\n\n\t  Tabs group toggles in the settings window only; the on-screen toggle bar\n\t  is still split by opts.group. A tab appears as soon as something asks for\n\t  it, and the strip is hidden while everything is on one tab. Past\n\t  OCGUI.settings.TogglesPerColumn (10) entries a tab spills into a new column.\n\n\t  OCGUI.GetTabs()               tab names, in the order they first appear\n\t  OCGUI.GetTabToggles(tab)      the toggles on a tab, current job only\n\t  OCGUI.GetActiveTab()          returns activeTabName, tabNames\n\t  OCGUI.SetActiveTab(name)      switch tab + save\n\n\t  OCGUI.AddListWindow(id, opts) target list window, saved to ListWindows.lua\n\t      opts.key        str    OCGUI.settings[key] holds the [contentid]=name\n\t                             table, so other reactions can read it directly\n\t      opts.title, opts.buttonLabel, opts.help, opts.emptyText,\n\t      opts.sameline, opts.width, opts.height\n\t  OCGUI.RemoveListWindow(id)\n\t  OCGUI.GetList(key) / OCGUI.InList(key, contentid)\n\n\t  OCGUI.AddButton(label, fn, opts)   button in \"Additional Settings\"\n\t  OCGUI.AddWindow(id, opts)          custom window, opts.draw = function(win)\n\t                                     runtime only, draw functions cannot be saved\n\t  OCGUI.OpenWindow(id, open)         open/close/flip a window\n\n\tHooking in from another reaction. Register once, on a condition that goes\n\tfalse again as soon as the work is done:\n\n\t  condition:  return OCGUI ~= nil and OCGUI.init == true\n\t                  and not OCGUI.IsAvailable(\"My Toggle\")\n\t  action:     OCGUI.AddToggle(\"My Toggle\", {phantom = 4369})\n\n\tRead the value later with OCGUI.IsEnabled(\"My Toggle\"), which is nil safe\n\teven before the toggle exists. See the \"[Extra] Example Toggles\" reaction\n\tfor a working example.\n============================================================================ ]]\n\nif OCGUI == nil then\n\tOCGUI = {}\nend\nif OCGUI.init ~= true then\n\tOCGUI.lastTick = Now()\n\n\t-- Saved to Toggles.lua / ListWindows.lua. Arrays, because the order they\n\t-- sit in is the order they are drawn in.\n\tOCGUI.toggles = {}\n\tOCGUI.listWindows = {}\n\n\t-- Runtime only. registry indexes OCGUI.toggles by name; windows and buttons\n\t-- hold live draw state and closures, which cannot be written to disk.\n\tOCGUI.registry = {}\n\tOCGUI.windows = {}\n\tOCGUI.buttons = {}\n\n\tOCGUI.GUI = {\n\t\topen = false,\n\t\tvisible = false\n\t}\n\n\t-- Saved to Settings.lua. Toggles.data is the user's on/off state only.\n\tOCGUI.settings = {\n\t\tLockedToggles = false,\n\t\tToggleColorEnable = {a = 1, b = 0.519, g = 0.268, r = 0.114},\n\t\tToggleColorDisable = {r = 0.070, g = 0.070, b = 0.070, a = .749},\n\t\tToggleBGAlpha = 0.45,\n\t\tToggleScale = 1,\n\t\tToggleHeight = 30,\n\t\tToggleWidth = 105,\n\t\tTogglesPerColumn = 10, -- settings window starts a new column past this many\n\t\tActiveTab = \"Main\",\n\t\tToggles = {\n\t\t\tdata = {}\n\t\t}\n\t}\n\n\tOCGUI.PhantomBuffs =\n\t{\n\t\tGlobal = 0,\n\t\tFreelancer = 4242,\n\t\tKnight = 4358,\n\t\tBerserker = 4359,\n\t\tMonk = 4360,\n\t\tRanger = 4361,\n\t\tSamurai = 4362,\n\t\tBard = 4363,\n\t\tGeomancer = 4364,\n\t\tTimeMage = 4365,\n\t\tCannoneer = 4366,\n\t\tChemist = 4397,\n\t\tOracle = 4368,\n\t\tThief = 4369,\n\t\tMysticKnight = 4803,\n\t\tGladiator = 4804,\n\t\tDancer = 4805,\n\t\tNinja = 5328,\n\t\tWhiteMage = 5329,\n\t\tBlackMage = 5330,\n\t\tDragoon = 5331,\n\t\tSummoner = 5332,\n\t\tBlueMage = 5333,\n\t\tRedMage = 5334,\n\t\tNecromancer = 5335\n\t}\n\n\tOCGUI.JobTable = {\n\t}\n\n\tOCGUI.LuaPath = GetLuaModsPath()\n\tOCGUI.SettingsPath = OCGUI.LuaPath .. [[ffxivminion\\occultgui\\]]\n\tOCGUI.SettingsFile = OCGUI.SettingsPath .. [[Settings.lua]]\n\tOCGUI.TogglesFile = OCGUI.SettingsPath .. [[Toggles.lua]]\n\tOCGUI.ListWindowsFile = OCGUI.SettingsPath .. [[ListWindows.lua]]\n\n\tlocal v = table.valid\n\tfunction OCGUI.valid(...)\n\t\tlocal tbl = {...}\n\t\tlocal size = #tbl\n\t\tif size > 0 then\n\t\t\tlocal count = tbl[1]\n\t\t\tif type(count) == \"number\" then\n\t\t\t\tif size == (count + 1) then\n\t\t\t\t\tfor i = 2, size do\n\t\t\t\t\t\tif not v(tbl[i]) then\n\t\t\t\t\t\t\treturn false\n\t\t\t\t\t\tend\n\t\t\t\t\tend\n\t\t\t\t\treturn true\n\t\t\t\tend\n\t\t\telse\n\t\t\t\tfor i = 1, size do\n\t\t\t\t\tif not v(tbl[i]) then\n\t\t\t\t\t\treturn false\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\t\treturn true\n\t\t\tend\n\t\tend\n\t\treturn false\n\tend\n\tlocal valid = OCGUI.valid\n\n\tlocal function ensureFolder()\n\t\tif (not FolderExists(OCGUI.SettingsPath)) then\n\t\t\tFolderCreate(OCGUI.SettingsPath)\n\t\tend\n\tend\n\n\t-- ===================== settings =====================\n\n\tfunction OCGUI.LoadSettings()\n\t\tensureFolder()\n\t\tlocal tbl = FileLoad(OCGUI.SettingsFile)\n\t\tlocal function scan(tbl, tbl2, depth)\n\t\t\tdepth = depth or 0\n\t\t\tif valid(2, tbl, tbl2) then\n\t\t\t\tfor k, v in pairs(tbl2) do\n\t\t\t\t\tif type(v) == \"table\" then\n\t\t\t\t\t\tif tbl[k] and valid(tbl[k]) then\n\t\t\t\t\t\t\ttbl[k] = table.merge(tbl[k], scan(tbl[k], v, depth + 1))\n\t\t\t\t\t\telse\n\t\t\t\t\t\t\ttbl[k] = v\n\t\t\t\t\t\tend\n\t\t\t\t\telse\n\t\t\t\t\t\tif tbl[k] ~= tbl2[k] then\n\t\t\t\t\t\t\ttbl[k] = tbl2[k]\n\t\t\t\t\t\tend\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\tend\n\t\t\treturn tbl\n\t\tend\n\t\tOCGUI.settings = scan(OCGUI.settings, tbl)\n\t\t-- definitions used to live in here; they have their own file now\n\t\tOCGUI.settings.Toggles.order = nil\n\tend\n\n\tfunction OCGUI.SaveSettings()\n\t\tif table.deepcompare(OCGUI.settings, OCGUI.PreviousSave) then\n\t\t\treturn\n\t\tend\n\t\tensureFolder()\n\n\t\tFileSave(OCGUI.SettingsFile, OCGUI.settings)\n\t\tOCGUI.PreviousSave = table.deepcopy(OCGUI.settings)\n\t\td(\"[OCGUI] Settings saved\")\n\tend\n\n\t-- ===================== toggles =====================\n\n\t-- Only these fields go to disk. Anything else on a definition (condition,\n\t-- active) is runtime and would break FileSave or go stale.\n\tlocal function toggleRecord(def)\n\t\treturn {\n\t\t\tname = def.name,\n\t\t\ttab = def.tab,\n\t\t\tgroup = def.group,\n\t\t\tjob = def.job,\n\t\t\tphantom = def.phantom,\n\t\t\ttooltip = def.tooltip,\n\t\t\tdefault = def.default,\n\t\t\tdefaultShown = def.defaultShown\n\t\t}\n\tend\n\n\tfunction OCGUI.SaveToggles()\n\t\tlocal records = {}\n\t\tfor i, def in ipairs(OCGUI.toggles) do\n\t\t\trecords[i] = toggleRecord(def)\n\t\tend\n\t\tif table.deepcompare(records, OCGUI.PreviousToggles) then\n\t\t\treturn\n\t\tend\n\t\tensureFolder()\n\n\t\tFileSave(OCGUI.TogglesFile, records)\n\t\tOCGUI.PreviousToggles = table.deepcopy(records)\n\t\td(\"[OCGUI] Toggles saved (\" .. #records .. \")\")\n\tend\n\n\tlocal function makeToggleDef(name, opts)\n\t\tlocal tab = opts.tab\n\t\tif type(tab) ~= \"string\" or tab == \"\" then\n\t\t\ttab = \"Main\"\n\t\tend\n\t\treturn {\n\t\t\tname = name,\n\t\t\ttab = tab,\n\t\t\tgroup = opts.group or 1,\n\t\t\tjob = opts.job or \"global\",\n\t\t\tphantom = opts.phantom or 0,\n\t\t\ttooltip = opts.tooltip,\n\t\t\tdefault = (opts.default ~= false),\n\t\t\tdefaultShown = (opts.shown ~= false)\n\t\t}\n\tend\n\n\t-- Adds the definition, or refreshes one that is already there. Never saves,\n\t-- so it can be used both by the loader and by AddToggle.\n\tlocal function applyToggle(def, index)\n\t\tlocal existing = OCGUI.registry[def.name]\n\t\tif existing ~= nil then\n\t\t\texisting.tab = def.tab\n\t\t\texisting.group = def.group\n\t\t\texisting.job = def.job\n\t\t\texisting.phantom = def.phantom\n\t\t\texisting.tooltip = def.tooltip\n\t\t\texisting.default = def.default\n\t\t\texisting.defaultShown = def.defaultShown\n\t\t\tdef = existing\n\t\telse\n\t\t\tlocal pos = #OCGUI.toggles + 1\n\t\t\tif type(index) == \"number\" then\n\t\t\t\tpos = math.max(1, math.min(math.floor(index), pos))\n\t\t\tend\n\t\t\ttable.insert(OCGUI.toggles, pos, def)\n\t\t\tOCGUI.registry[def.name] = def\n\t\tend\n\n\t\tif OCGUI.settings.Toggles.data[def.name] == nil then\n\t\t\tOCGUI.settings.Toggles.data[def.name] = {bool = def.default, shown = def.defaultShown}\n\t\tend\n\t\treturn def\n\tend\n\n\tfunction OCGUI.LoadToggles()\n\t\tOCGUI.toggles = {}\n\t\tOCGUI.registry = {}\n\n\t\tlocal stored = FileLoad(OCGUI.TogglesFile)\n\t\tif table.valid(stored) then\n\t\t\tfor _, rec in ipairs(stored) do\n\t\t\t\tif type(rec) == \"table\" and type(rec.name) == \"string\" and rec.name ~= \"\" then\n\t\t\t\t\tapplyToggle(\n\t\t\t\t\t\tmakeToggleDef(\n\t\t\t\t\t\t\trec.name,\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\ttab = rec.tab,\n\t\t\t\t\t\t\t\tgroup = rec.group,\n\t\t\t\t\t\t\t\tjob = rec.job,\n\t\t\t\t\t\t\t\tphantom = rec.phantom,\n\t\t\t\t\t\t\t\ttooltip = rec.tooltip,\n\t\t\t\t\t\t\t\tdefault = rec.default,\n\t\t\t\t\t\t\t\tshown = rec.defaultShown\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\n\t\tlocal records = {}\n\t\tfor i, def in ipairs(OCGUI.toggles) do\n\t\t\trecords[i] = toggleRecord(def)\n\t\tend\n\t\tOCGUI.PreviousToggles = records\n\tend\n\n\tfunction OCGUI.AddToggle(name, opts)\n\t\tif type(name) ~= \"string\" or name == \"\" then\n\t\t\td(\"[OCGUI] AddToggle needs a non-empty string name\")\n\t\t\treturn false\n\t\tend\n\t\topts = opts or {}\n\n\t\tlocal def = applyToggle(makeToggleDef(name, opts), opts.index)\n\t\tdef.condition = opts.condition -- runtime only, never saved\n\t\tdef.active = OCGUI.EvaluateToggle(name)\n\n\t\tOCGUI.SaveToggles()\n\t\tOCGUI.SaveSettings()\n\t\treturn true\n\tend\n\n\tfunction OCGUI.RemoveToggle(name)\n\t\tif OCGUI.registry[name] == nil then\n\t\t\treturn false\n\t\tend\n\t\tOCGUI.registry[name] = nil\n\t\tfor i = #OCGUI.toggles, 1, -1 do\n\t\t\tif OCGUI.toggles[i].name == name then\n\t\t\t\ttable.remove(OCGUI.toggles, i)\n\t\t\tend\n\t\tend\n\t\tOCGUI.settings.Toggles.data[name] = nil\n\n\t\tOCGUI.SaveToggles()\n\t\tOCGUI.SaveSettings()\n\t\treturn true\n\tend\n\n\tfunction OCGUI.IsAvailable(name)\n\t\treturn OCGUI.registry[name] ~= nil\n\tend\n\n\t-- Is the phantom job equipped / custom condition satisfied right now?\n\tfunction OCGUI.EvaluateToggle(name)\n\t\tlocal def = OCGUI.registry[name]\n\t\tif def == nil then\n\t\t\treturn false\n\t\tend\n\t\tif def.condition ~= nil then\n\t\t\tif not def.condition(name) then\n\t\t\t\treturn false\n\t\t\tend\n\t\tend\n\t\tif def.phantom ~= 0 then\n\t\t\tlocal player = TensorCore.mGetPlayer()\n\t\t\tif player == nil or not HasBuffs(player, def.phantom) then\n\t\t\t\treturn false\n\t\t\tend\n\t\tend\n\t\treturn true\n\tend\n\n\tfunction OCGUI.RefreshToggles()\n\t\tfor _, def in ipairs(OCGUI.toggles) do\n\t\t\tdef.active = OCGUI.EvaluateToggle(def.name)\n\t\tend\n\tend\n\n\tfunction OCGUI.IsActive(name)\n\t\tlocal def = OCGUI.registry[name]\n\t\treturn def ~= nil and def.active == true\n\tend\n\n\tfunction OCGUI.IsEnabled(name)\n\t\tlocal entry = OCGUI.settings.Toggles.data[name]\n\t\treturn OCGUI.registry[name] ~= nil and entry ~= nil and entry.bool == true\n\tend\n\n\tfunction OCGUI.GetToggle(name)\n\t\tlocal entry = OCGUI.settings.Toggles.data[name]\n\t\tif OCGUI.registry[name] == nil or entry == nil then\n\t\t\treturn nil\n\t\tend\n\t\treturn entry.bool\n\tend\n\n\tfunction OCGUI.SetToggle(name, value)\n\t\tlocal entry = OCGUI.settings.Toggles.data[name]\n\t\tif entry == nil then\n\t\t\treturn false\n\t\tend\n\t\tentry.bool = (value == true)\n\t\tOCGUI.SaveSettings()\n\t\treturn true\n\tend\n\n\tfunction OCGUI.SetShown(name, value)\n\t\tlocal entry = OCGUI.settings.Toggles.data[name]\n\t\tif entry == nil then\n\t\t\treturn false\n\t\tend\n\t\tentry.shown = (value == true)\n\t\tOCGUI.SaveSettings()\n\t\treturn true\n\tend\n\n\t-- Does this toggle belong to the job we are on?\n\tfunction OCGUI.MatchesJob(name)\n\t\tlocal def = OCGUI.registry[name]\n\t\tif def == nil then\n\t\t\treturn false\n\t\tend\n\t\tif def.job == \"global\" then\n\t\t\treturn true\n\t\tend\n\t\tlocal player = TensorCore.mGetPlayer()\n\t\treturn player ~= nil and def.job == OCGUI.JobTable[player.job]\n\tend\n\n\t-- ===================== tabs =====================\n\t-- Settings window only. The on-screen toggle bar is still split by group.\n\n\t-- Tab names in the order their first toggle appears, skipping tabs whose\n\t-- toggles all belong to another job.\n\tfunction OCGUI.GetTabs()\n\t\tlocal tabs, seen = {}, {}\n\t\tfor _, def in ipairs(OCGUI.toggles) do\n\t\t\tif not seen[def.tab] and OCGUI.MatchesJob(def.name) then\n\t\t\t\tseen[def.tab] = true\n\t\t\t\ttable.insert(tabs, def.tab)\n\t\t\tend\n\t\tend\n\t\treturn tabs\n\tend\n\n\t---@param tab string\n\tfunction OCGUI.GetTabToggles(tab)\n\t\tlocal out = {}\n\t\tfor _, def in ipairs(OCGUI.toggles) do\n\t\t\tif def.tab == tab and OCGUI.MatchesJob(def.name) then\n\t\t\t\ttable.insert(out, def)\n\t\t\tend\n\t\tend\n\t\treturn out\n\tend\n\n\t-- The saved tab, or the first one if it has gone away. Also hands back the\n\t-- tab list so the caller does not have to build it twice.\n\tfunction OCGUI.GetActiveTab()\n\t\tlocal tabs = OCGUI.GetTabs()\n\t\tfor _, name in ipairs(tabs) do\n\t\t\tif name == OCGUI.settings.ActiveTab then\n\t\t\t\treturn name, tabs\n\t\t\tend\n\t\tend\n\t\treturn tabs[1], tabs\n\tend\n\n\tfunction OCGUI.SetActiveTab(name)\n\t\tif type(name) ~= \"string\" or name == \"\" then\n\t\t\treturn false\n\t\tend\n\t\tif OCGUI.settings.ActiveTab ~= name then\n\t\t\tOCGUI.settings.ActiveTab = name\n\t\t\tOCGUI.SaveSettings()\n\t\tend\n\t\treturn true\n\tend\n\n\t-- Values only. The definitions stay, that is the point of them being saved.\n\tfunction OCGUI.ResetToggles()\n\t\tfor _, def in ipairs(OCGUI.toggles) do\n\t\t\tOCGUI.settings.Toggles.data[def.name] = {bool = def.default, shown = def.defaultShown}\n\t\tend\n\t\tOCGUI.SaveSettings()\n\tend\n\n\t-- ===================== buttons & windows =====================\n\n\tfunction OCGUI.AddButton(label, callback, opts)\n\t\topts = opts or {}\n\t\tfor _, button in ipairs(OCGUI.buttons) do\n\t\t\tif button.label == label then\n\t\t\t\tbutton.callback = callback\n\t\t\t\tbutton.sameline = (opts.sameline == true)\n\t\t\t\treturn true\n\t\t\tend\n\t\tend\n\t\ttable.insert(\n\t\t\tOCGUI.buttons,\n\t\t\t{label = label, callback = callback, sameline = (opts.sameline == true)}\n\t\t)\n\t\treturn true\n\tend\n\n\tfunction OCGUI.RemoveButton(label)\n\t\tfor i, button in ipairs(OCGUI.buttons) do\n\t\t\tif button.label == label then\n\t\t\t\ttable.remove(OCGUI.buttons, i)\n\t\t\t\treturn true\n\t\t\tend\n\t\tend\n\t\treturn false\n\tend\n\n\t-- Runtime only: opts.draw is a function, so this cannot be saved.\n\t-- opts: title, width, height, draw(win), button (false to skip the auto\n\t-- button), buttonLabel, sameline\n\tfunction OCGUI.AddWindow(id, opts)\n\t\tif type(id) ~= \"string\" or id == \"\" then\n\t\t\td(\"[OCGUI] AddWindow needs a non-empty string id\")\n\t\t\treturn nil\n\t\tend\n\t\topts = opts or {}\n\n\t\tlocal win = OCGUI.windows[id] or {id = id, open = false, visible = false}\n\t\twin.title = opts.title or id\n\t\twin.width = opts.width or 350\n\t\twin.height = opts.height or 500\n\t\twin.draw = opts.draw\n\t\twin.buttonLabel = opts.buttonLabel or win.title\n\t\tOCGUI.windows[id] = win\n\n\t\tif opts.button ~= false then\n\t\t\tOCGUI.AddButton(\n\t\t\t\twin.buttonLabel,\n\t\t\t\tfunction()\n\t\t\t\t\twin.open = not win.open\n\t\t\t\tend,\n\t\t\t\t{sameline = opts.sameline}\n\t\t\t)\n\t\tend\n\t\treturn win\n\tend\n\n\tfunction OCGUI.RemoveWindow(id)\n\t\tlocal win = OCGUI.windows[id]\n\t\tif win == nil then\n\t\t\treturn false\n\t\tend\n\t\tOCGUI.RemoveButton(win.buttonLabel or win.title)\n\t\tOCGUI.windows[id] = nil\n\t\treturn true\n\tend\n\n\t-- open = true/false, or nil to flip\n\tfunction OCGUI.OpenWindow(id, open)\n\t\tlocal win = OCGUI.windows[id]\n\t\tif win == nil then\n\t\t\treturn false\n\t\tend\n\t\tif open == nil then\n\t\t\twin.open = not win.open\n\t\telse\n\t\t\twin.open = (open == true)\n\t\tend\n\t\treturn true\n\tend\n\n\t-- ===================== list windows =====================\n\n\tfunction OCGUI.GetList(key)\n\t\treturn OCGUI.settings[key]\n\tend\n\n\tfunction OCGUI.InList(key, contentid)\n\t\tlocal list = OCGUI.settings[key]\n\t\treturn list ~= nil and list[contentid] ~= nil\n\tend\n\n\t-- Shared body of every target list window.\n\tfunction OCGUI.DrawTargetList(win, rec)\n\t\tlocal list = OCGUI.settings[rec.key]\n\t\tif list == nil then\n\t\t\tlist = {}\n\t\t\tOCGUI.settings[rec.key] = list\n\t\tend\n\n\t\tGUI:Text(rec.help or \"First select a target to add\\nThen press the Add Target button\")\n\t\tGUI:SameLine()\n\t\tlocal width = GUI:GetContentRegionAvailWidth()\n\t\tGUI:Dummy((width - 90), 0)\n\t\tGUI:SameLine()\n\t\tif GUI:Button(\"Add Target##\" .. win.id) then\n\t\t\tlocal target = TensorCore.mGetTarget()\n\t\t\tif target ~= nil then\n\t\t\t\tif target.attackable and target.contentid ~= 0 then\n\t\t\t\t\tif not list[target.contentid] then\n\t\t\t\t\t\tlist[target.contentid] = target.name\n\t\t\t\t\t\tOCGUI.SaveSettings()\n\t\t\t\t\telse\n\t\t\t\t\t\tAnyoneCore.Shotcall(\"Entry for \" .. target.name .. \" already exists!\", false, 5, false)\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\telse\n\t\t\t\td(\"No target to add\")\n\t\t\tend\n\t\tend\n\n\t\tGUI:Text(\"Filter\")\n\t\tGUI:SameLine()\n\t\tGUI:PushItemWidth(GUI:GetContentRegionAvailWidth())\n\t\tlocal newText, changed = GUI:InputText(\"##filter\" .. win.id, win.filter or \"\", 256)\n\t\tGUI:PopItemWidth()\n\t\tif changed then\n\t\t\twin.filter = newText\n\t\tend\n\n\t\tGUI:BeginChild(win.id .. \"ScrollRegion\", 0, 0, true)\n\t\tif table.valid(list) then\n\t\t\tlocal filter = string.lower(win.filter or \"\")\n\t\t\tfor contentid, name in pairs(list) do\n\t\t\t\tlocal combined = name .. \" [\" .. contentid .. \"]\"\n\t\t\t\t-- plain find, so \"(\" in a name cannot blow up the filter\n\t\t\t\tif filter == \"\" or string.find(string.lower(combined), filter, 1, true) then\n\t\t\t\t\tif GUI:Button(\"Remove##\" .. win.id .. contentid) then\n\t\t\t\t\t\tlist[contentid] = nil\n\t\t\t\t\t\tOCGUI.SaveSettings()\n\t\t\t\t\tend\n\t\t\t\t\tGUI:SameLine()\n\t\t\t\t\tGUI:Text(combined)\n\t\t\t\tend\n\t\t\tend\n\t\telse\n\t\t\tGUI:Text(rec.emptyText or \"Nothing in here yet! :>\")\n\t\tend\n\t\tGUI:EndChild()\n\tend\n\n\tlocal function listWindowRecord(rec)\n\t\treturn {\n\t\t\tid = rec.id,\n\t\t\ttitle = rec.title,\n\t\t\tbuttonLabel = rec.buttonLabel,\n\t\t\tkey = rec.key,\n\t\t\thelp = rec.help,\n\t\t\temptyText = rec.emptyText,\n\t\t\tsameline = rec.sameline,\n\t\t\twidth = rec.width,\n\t\t\theight = rec.height\n\t\t}\n\tend\n\n\tfunction OCGUI.SaveListWindows()\n\t\tlocal records = {}\n\t\tfor i, rec in ipairs(OCGUI.listWindows) do\n\t\t\trecords[i] = listWindowRecord(rec)\n\t\tend\n\t\tif table.deepcompare(records, OCGUI.PreviousListWindows) then\n\t\t\treturn\n\t\tend\n\t\tensureFolder()\n\n\t\tFileSave(OCGUI.ListWindowsFile, records)\n\t\tOCGUI.PreviousListWindows = table.deepcopy(records)\n\t\td(\"[OCGUI] List windows saved (\" .. #records .. \")\")\n\tend\n\n\t-- Builds the live window for a stored record. No saving, so the loader and\n\t-- AddListWindow can share it.\n\tlocal function applyListWindow(rec)\n\t\tif OCGUI.settings[rec.key] == nil then\n\t\t\tOCGUI.settings[rec.key] = {}\n\t\tend\n\n\t\tlocal win =\n\t\t\tOCGUI.AddWindow(\n\t\t\trec.id,\n\t\t\t{\n\t\t\t\ttitle = rec.title,\n\t\t\t\twidth = rec.width,\n\t\t\t\theight = rec.height,\n\t\t\t\tbuttonLabel = rec.buttonLabel,\n\t\t\t\tsameline = rec.sameline,\n\t\t\t\tdraw = function(w)\n\t\t\t\t\tOCGUI.DrawTargetList(w, rec)\n\t\t\t\tend\n\t\t\t}\n\t\t)\n\t\tif win ~= nil then\n\t\t\twin.filter = win.filter or \"\"\n\t\t\twin.listKey = rec.key\n\t\tend\n\t\treturn win\n\tend\n\n\tlocal function makeListWindowRec(id, opts)\n\t\treturn {\n\t\t\tid = id,\n\t\t\ttitle = opts.title or id,\n\t\t\tbuttonLabel = opts.buttonLabel or opts.title or id,\n\t\t\tkey = opts.key or id,\n\t\t\thelp = opts.help,\n\t\t\temptyText = opts.emptyText,\n\t\t\tsameline = (opts.sameline == true),\n\t\t\twidth = opts.width or 350,\n\t\t\theight = opts.height or 500\n\t\t}\n\tend\n\n\tlocal function findListWindow(id)\n\t\tfor i, rec in ipairs(OCGUI.listWindows) do\n\t\t\tif rec.id == id then\n\t\t\t\treturn i, rec\n\t\t\tend\n\t\tend\n\t\treturn nil\n\tend\n\n\tfunction OCGUI.LoadListWindows()\n\t\tOCGUI.listWindows = {}\n\n\t\tlocal stored = FileLoad(OCGUI.ListWindowsFile)\n\t\tif table.valid(stored) then\n\t\t\tfor _, rec in ipairs(stored) do\n\t\t\t\tif type(rec) == \"table\" and type(rec.id) == \"string\" and rec.id ~= \"\" then\n\t\t\t\t\tlocal built = makeListWindowRec(rec.id, rec)\n\t\t\t\t\ttable.insert(OCGUI.listWindows, built)\n\t\t\t\t\tapplyListWindow(built)\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\n\t\tlocal records = {}\n\t\tfor i, rec in ipairs(OCGUI.listWindows) do\n\t\t\trecords[i] = listWindowRecord(rec)\n\t\tend\n\t\tOCGUI.PreviousListWindows = records\n\tend\n\n\tfunction OCGUI.AddListWindow(id, opts)\n\t\tif type(id) ~= \"string\" or id == \"\" then\n\t\t\td(\"[OCGUI] AddListWindow needs a non-empty string id\")\n\t\t\treturn nil\n\t\tend\n\t\topts = opts or {}\n\n\t\tlocal built = makeListWindowRec(id, opts)\n\t\tlocal index = findListWindow(id)\n\t\tif index ~= nil then\n\t\t\tOCGUI.listWindows[index] = built\n\t\telse\n\t\t\ttable.insert(OCGUI.listWindows, built)\n\t\tend\n\n\t\tlocal win = applyListWindow(built)\n\t\tOCGUI.SaveListWindows()\n\t\tOCGUI.SaveSettings()\n\t\treturn win\n\tend\n\n\tfunction OCGUI.RemoveListWindow(id)\n\t\tlocal index = findListWindow(id)\n\t\tif index == nil then\n\t\t\treturn false\n\t\tend\n\t\ttable.remove(OCGUI.listWindows, index)\n\t\tOCGUI.RemoveWindow(id)\n\t\tOCGUI.SaveListWindows()\n\t\treturn true\n\tend\n\n\t-- ===================== start up =====================\n\n\tOCGUI.LoadSettings()\n\tOCGUI.LoadToggles()\n\tOCGUI.LoadListWindows()\n\tOCGUI.RefreshToggles()\n\n\t-- Nothing is registered here on purpose. The stock toggles and list windows\n\t-- live in the \"[Extra] Example Toggles\" reaction, which hooks into this API\n\t-- exactly the way a third party reaction would. Anything either of them adds\n\t-- is saved, so it survives on its own from then on.\n\tOCGUI.init = true\n\tOCGUI.SaveSettings()\nend\nself.used = true\n",
+						conditions = 
+						{
+							
+							{
+								"1d38aceb-831a-88f5-8452-17c4b312c663",
+								false,
+							},
+							
+							{
+								"c9ab060f-fb19-9be7-97f2-bca853a67c87",
+								true,
+							},
+						},
+						gVar = "ACR_RikuAST2_CD",
+						name = "Init",
+						uuid = "be19cab4-1f6d-bf2f-9928-e3acf5ba49c3",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "if OCGUI.GUI.open then\n\tGUI:SetNextWindowSize(280, 0, GUI.SetCond_Appearing)\n\tOCGUI.GUI.visible, OCGUI.GUI.open = GUI:Begin(\"Occult Crescent Settings\", OCGUI.GUI.open)\n\tif OCGUI.GUI.visible then\n\t\tlocal changed\n\t\tOCGUI.settings.LockedToggles, changed =\n\t\t\tGUI:Checkbox(GetString(\"Lock Toggle GUI\"), OCGUI.settings.LockedToggles)\n\t\tif changed then\n\t\t\tOCGUI.SaveSettings()\n\t\tend\n\n\t\tGUI:Separator()\n\n\t\t-- This ImGui build has no BeginTabBar, so the tab strip is a row of\n\t\t-- buttons with the active one tinted. Hidden entirely while everything\n\t\t-- sits on one tab.\n\t\tlocal tabsPerRow = 5\n\t\tlocal tabStripWidth = 0\n\t\tlocal active, tabs = OCGUI.GetActiveTab()\n\t\tif #tabs > 1 then\n    \t\tlocal rowWidth = 0\n    \t\tfor i, tab in ipairs(tabs) do\n        \t\tlocal tabWidth = GUI:CalcTextSize(tab) + 16\n        \t\tif (i % tabsPerRow) == 1 then\n            \t\trowWidth = tabWidth          -- start a new row\n        \t\telse\n            \tGUI:SameLine()\n            \trowWidth = rowWidth + 8 + tabWidth\n        \t\tend\n        \t\tif rowWidth > tabStripWidth then\n            \t\ttabStripWidth = rowWidth     -- widest row wins\n        \t\tend\n\n\t\t\t\tlocal isActive = (tab == active)\n\t\t\t\tif isActive then\n\t\t\t\t\tlocal c = OCGUI.settings.ToggleColorEnable\n\t\t\t\t\tGUI:PushStyleColor(GUI.Col_Button, c.r, c.g, c.b, c.a)\n\t\t\t\tend\n\t\t\t\tif GUI:Button(tab .. \"##ocguitab\") then\n\t\t\t\t\tOCGUI.SetActiveTab(tab)\n\t\t\t\tend\n\t\t\t\tif isActive then\n\t\t\t\t\tGUI:PopStyleColor()\n\t\t\t\tend\n\t\t\tend\n\t\t\tGUI:Separator()\n\t\tend\n\n\t\tGUI:Text(\"Toggles:\")\n\n\t\tlocal data = OCGUI.settings.Toggles.data\n\t\tlocal visible = {}\n\t\tif active ~= nil then\n\t\t\tvisible = OCGUI.GetTabToggles(active)\n\t\tend\n\n\t\t-- Spill into a new column every TogglesPerColumn entries.\n\t\tlocal perColumn = OCGUI.settings.TogglesPerColumn or 10\n\t\tlocal columns = 1\n\t\tif perColumn > 0 and #visible > perColumn then\n\t\t\tcolumns = math.ceil(#visible / perColumn)\n\t\tend\n\t\tif columns > 1 then\n\t\t\tGUI:Columns(columns, \"##ocguitogglecols\", false)\n\t\tend\n\n\t\tfor i, def in ipairs(visible) do\n\t\t\tlocal key = def.name\n\t\t\tlocal entry = data[key]\n\t\t\tif entry ~= nil then\n\t\t\t\tlocal shown, changed = GUI:Checkbox(GetString(\"##\" .. key), entry.shown)\n\t\t\t\tif changed then\n\t\t\t\t\tOCGUI.SetShown(key, shown)\n\t\t\t\tend\n\t\t\t\tGUI:SameLine()\n\n\t\t\t\tif entry.bool == true then\n\t\t\t\t\tGUI:TextColored(1, 1, 1, 1, key)\n\t\t\t\telse\n\t\t\t\t\tGUI:TextColored(1, 0.10, 0.10, 1, key)\n\t\t\t\tend\n\n\t\t\t\tif GUI:IsItemHovered() then\n\t\t\t\t\tif def.tooltip ~= nil then\n\t\t\t\t\t\tGUI:SetTooltip(def.tooltip)\n\t\t\t\t\tend\n\t\t\t\t\tif GUI:IsItemClicked(0) then\n\t\t\t\t\t\tOCGUI.SetToggle(key, not entry.bool)\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tif columns > 1 and (i % perColumn) == 0 and i < #visible then\n\t\t\t\tGUI:NextColumn()\n\t\t\tend\n\t\tend\n\n\t\tif columns > 1 then\n\t\t\tGUI:Columns(1)\n\t\tend\n\n\t\tif GUI:Button(\"Reset/Restore Toggles\") then\n\t\t\tOCGUI.ResetToggles()\n\t\tend\n\n\t\tif #OCGUI.buttons > 0 then\n\t\t\tGUI:NewLine()\n\t\t\tGUI:Text(\"Additional Settings: \")\n\n\t\t\tfor i, button in ipairs(OCGUI.buttons) do\n\t\t\t\tif button.sameline and i > 1 then\n\t\t\t\t\tGUI:SameLine()\n\t\t\t\tend\n\t\t\t\tif GUI:Button(button.label) then\n\t\t\t\t\tif type(button.callback) == \"function\" then\n\t\t\t\t\t\tbutton.callback()\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\n\t\tlocal windowWidth = 280 + ((columns - 1) * 150)\n\t\tif (tabStripWidth + 16) > windowWidth then\n    \t\twindowWidth = tabStripWidth + 16     -- +16 = WindowPadding.x both sides\n\t\tend\n\t\tGUI:SetWindowSize(windowWidth, 0)\n\tend\n\n\tGUI:End()\nend\nself.used = true\n",
+						conditions = 
+						{
+							
+							{
+								"1d38aceb-831a-88f5-8452-17c4b312c663",
+								true,
+							},
+							
+							{
+								"c9ab060f-fb19-9be7-97f2-bca853a67c87",
+								true,
+							},
+						},
+						gVar = "ACR_RikuAST2_CD",
+						name = "Settings Menu",
+						uuid = "0e9b1755-ef8a-4a48-bbf9-ea005b5b9759",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "-- Draws every window registered through OCGUI.AddWindow / OCGUI.AddListWindow.\nfor _, win in pairs(OCGUI.windows) do\n\tif win.open then\n\t\tGUI:SetNextWindowSize(win.width, win.height, GUI.SetCond_Appearing)\n\t\twin.visible, win.open = GUI:Begin(win.title, win.open)\n\t\tif win.visible and type(win.draw) == \"function\" then\n\t\t\twin.draw(win)\n\t\tend\n\t\tGUI:End()\n\tend\nend\nself.used = true\n",
+						conditions = 
+						{
+							
+							{
+								"1d38aceb-831a-88f5-8452-17c4b312c663",
+								true,
+							},
+							
+							{
+								"c9ab060f-fb19-9be7-97f2-bca853a67c87",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Sub Windows",
+						uuid = "6c4a38d3-8dcb-7098-b03a-d7d72ef61ab0",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "if OCGUI.init == true and #OCGUI.toggles > 0 then\n\tif TimeSince(OCGUI.lastTick) > 1000 then\n\t\tOCGUI.RefreshToggles()\n\t\tOCGUI.lastTick = Now()\n\tend\n\n\tlocal settings = OCGUI.settings\n\tlocal scale = settings.ToggleScale\n\tlocal winFlags =\n\t\t(GUI.WindowFlags_NoTitleBar + GUI.WindowFlags_AlwaysAutoResize + GUI.WindowFlags_NoScrollbar +\n\t\tGUI.WindowFlags_NoCollapse)\n\tif settings.LockedToggles == true then\n\t\twinFlags = winFlags + GUI.WindowFlags_NoMove\n\tend\n\n\tfor _, def in ipairs(OCGUI.toggles) do\n\t\tlocal key = def.name\n\t\tlocal entry = settings.Toggles.data[key]\n\n\t\tif entry ~= nil and def.active == true and entry.shown == true and def.group ~= 0 then\n\t\t\tGUI:SetNextWindowSize(0, 0, GUI.SetCond_Always)\n\t\t\tGUI:PushStyleColor(GUI.Col_WindowBg, 0.070, 0.070, 0.070, settings.ToggleBGAlpha or 0.45)\n\t\t\tGUI:Begin(\"OCGUIToggles\" .. def.group, true, winFlags)\n\t\t\tGUI:PopStyleColor()\n\t\t\tGUI:SetWindowFontSize(scale)\n\n\t\t\tlocal color = settings.ToggleColorDisable\n\t\t\tif entry.bool == true then\n\t\t\t\tcolor = settings.ToggleColorEnable\n\t\t\tend\n\n\t\t\tGUI:PushStyleVar(GUI.StyleVar_ChildWindowRounding, 5)\n\t\t\tGUI:PushStyleVar(GUI.StyleVar_ItemSpacing, 3, 3)\n\t\t\tGUI:PushStyleColor(GUI.Col_ChildWindowBg, color.r, color.g, color.b, color.a)\n\n\t\t\tlocal strlenght = GUI:CalcTextSize(key)\n\t\t\tlocal btnWidth = settings.ToggleWidth\n\t\t\tlocal btnHeight = settings.ToggleHeight\n\t\t\tlocal btnSpacing = GUI:GetTextLineHeightWithSpacing()\n\t\t\tGUI:BeginChild(key .. \"##extra1\", btnWidth, btnHeight, false, GUI.WindowFlags_AlwaysAutoResize)\n\t\t\tGUI:SetWindowFontSize(scale)\n\t\t\tGUI:SetCursorPosX((btnWidth - strlenght) * 0.5)\n\t\t\tGUI:SetCursorPosY((btnHeight - btnSpacing) * 0.5)\n\n\t\t\tGUI:Text(key)\n\t\t\tGUI:EndChild()\n\n\t\t\tif (GUI:IsItemHovered()) then\n\t\t\t\tif (GUI:IsMouseClicked(0)) then\n\t\t\t\t\tOCGUI.SetToggle(key, not entry.bool)\n\t\t\t\tend\n\t\t\t\tif GUI:IsMouseClicked(1) then\n\t\t\t\t\tOCGUI.GUI.open = not OCGUI.GUI.open\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tGUI:PopStyleColor()\n\t\t\tGUI:PopStyleVar()\n\t\t\tGUI:PopStyleVar()\n\n\t\t\t-- paired with the Begin above, unlike the old loop\n\t\t\tGUI:End()\n\t\tend\n\tend\nend\nself.used = true\n",
+						conditions = 
+						{
+							
+							{
+								"1d38aceb-831a-88f5-8452-17c4b312c663",
+								true,
+							},
+							
+							{
+								"c9ab060f-fb19-9be7-97f2-bca853a67c87",
+								true,
+							},
+						},
+						gVar = "ACR_RikuAST2_CD",
+						name = "Toggles Draw",
+						uuid = "3c5ea42e-06f2-f5cd-a2cc-a784ae3aab27",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI ~= nil",
+						name = "OCGUI Init",
+						uuid = "1d38aceb-831a-88f5-8452-17c4b312c663",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1278,
+							1252,
+							1346,
+						},
+						uuid = "c9ab060f-fb19-9be7-97f2-bca853a67c87",
+						version = 3,
+					},
+				},
+			},
+			eventType = 13,
+			name = "[Extra] Occult GUI",
+			uuid = "404d6d8c-bfd9-0576-ba82-f04184b6c8ed",
+			version = 2,
+		},
+		inheritedIndex = 58,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "-- The stock Occult Crescent toggles and blacklist windows. Nothing in here is\n-- special: it is the same public API any other reaction uses to hook in.\n-- Runs once, guarded by the reaction condition:\n--   return OCGUI ~= nil and OCGUI.init == true and OCGUI.builtinsRegistered ~= true\n\n-- name, phantom job buff id, settings window tab.\n-- The tab is just a label: leave it off and the toggle lands on \"Main\", which\n-- is also where anything a third party adds without a tab ends up.\n-- OCGUI.PhantomBuffs returns a table of the buff IDs. You can also just pass the buff ID if you want.\n\nlocal builtinToggles = {\n\t-- IDK what the fuck you guys do for your ESP, but you can make these available. IDK?\n\t{\"Chest ESP\", OCGUI.PhantomBuffs.Global, \"Main\"},\n\t--{\"Survey ESP\", OCGUI.PhantomBuffs.Global, \"Main\"},\n\t{\"Carrot ESP\", OCGUI.PhantomBuffs.Global, \"Main\"},\n\t{\"Chem Raise\", OCGUI.PhantomBuffs.Chemist, \"Combat\"},\n\t{\"Vigilance\", OCGUI.PhantomBuffs.Thief, \"Thief\"},\n\t{\"Steal\", OCGUI.PhantomBuffs.Thief, \"Thief\"},\n\t{\"Pilfer\", OCGUI.PhantomBuffs.Thief, \"Thief\"},\n\t{\"Heal\", OCGUI.PhantomBuffs.Knight, \"Knight\"},\n\t{\"Pray\", OCGUI.PhantomBuffs.Knight, \"Knight\"},\n\t{\"Pledge\", OCGUI.PhantomBuffs.Knight, \"Knight\"},\n\t{\"Heal\", OCGUI.PhantomBuffs.Knight, \"Knight\"},\n\t{\"Counterstance\", OCGUI.PhantomBuffs.Monk, \"Monk\"},\n\t{\"Counter\", OCGUI.PhantomBuffs.Monk, \"Monk\"},\n\t{\"Kick\", OCGUI.PhantomBuffs.Monk, \"Monk\"},\n\t{\"Chakra\", OCGUI.PhantomBuffs.Monk, \"Monk\"},\n\t{\"Hero's Rime\", OCGUI.PhantomBuffs.Bard, \"Bard\"},\n\t{\"Mighty March\", OCGUI.PhantomBuffs.Bard, \"Bard\"},\n\t{\"Aria\", OCGUI.PhantomBuffs.Bard, \"Bard\"},\n\t{\"Cannons\", OCGUI.PhantomBuffs.Cannoneer, \"Combat\"},\n\t{\"Zeninage\", OCGUI.PhantomBuffs.Samurai, \"Samurai\"},\n\t{\"Iainuki\", OCGUI.PhantomBuffs.Samurai, \"Samurai\"},\n\t{\"Deadly Blow\", OCGUI.PhantomBuffs.Berserker, \"Combat\"},\n\t{\"Mage Masher\", OCGUI.PhantomBuffs.TimeMage, \"Time Mage\"},\n\t{\"Quick\", OCGUI.PhantomBuffs.TimeMage, \"Time Mage\"},\n\t{\"Comet\", OCGUI.PhantomBuffs.TimeMage, \"Time Mage\"},\n\t{\"Predict\", OCGUI.PhantomBuffs.Oracle, \"Combat\"},\n\t{\"Battle Bell\", OCGUI.PhantomBuffs.Geomancer, \"Geomancer\"},\n\t{\"Suspend\", OCGUI.PhantomBuffs.Geomancer, \"Geomancer\"},\n\t{\"Ringing Respite\", OCGUI.PhantomBuffs.Geomancer, \"Geomancer\"},\n\t{\"Quickstep\", OCGUI.PhantomBuffs.Dancer, \"Dancer\"},\n\t{\"Dance\", OCGUI.PhantomBuffs.Dancer, \"Dancer\"},\n\t{\"Mystic Skills\", OCGUI.PhantomBuffs.MysticKnight, \"Combat\"},\n\t{\"Shuriken\", OCGUI.PhantomBuffs.Ninja, \"Ninja\"},\n\t{\"Scrolls\", OCGUI.PhantomBuffs.Ninja, \"Ninja\"},\n\t{\"Smoke\", OCGUI.PhantomBuffs.Ninja, \"Ninja\"},\n\t{\"GLD Skills\", OCGUI.PhantomBuffs.Gladiator, \"Combat\"},\n\t{\"WHM Attacks\", OCGUI.PhantomBuffs.WhiteMage, \"White Mage\"},\n\t{\"WHM Heals\", OCGUI.PhantomBuffs.WhiteMage, \"White Mage\"},\n\t{\"WHM Raise\", OCGUI.PhantomBuffs.WhiteMage, \"White Mage\"},\n\t{\"Summons\", OCGUI.PhantomBuffs.Summoner, \"Combat\"},\n\t{\"Aim\", OCGUI.PhantomBuffs.Ranger, \"Combat\"},\n\t{\"Jump\", OCGUI.PhantomBuffs.Dragoon, \"Dragoon\"},\n\t{\"Lance\", OCGUI.PhantomBuffs.Dragoon, \"Dragoon\"},\n\t{\"Libra\", OCGUI.PhantomBuffs.RedMage, \"Red Mage\"},\n\t{\"RDM Skills\", OCGUI.PhantomBuffs.RedMage, \"Red Mage\"},\n\t{\"BLU Skills\", OCGUI.PhantomBuffs.BlueMage, \"Combat\"},\n\t{\"Drain Touch\", OCGUI.PhantomBuffs.Necromancer, \"Necromancer\"},\n\t{\"Necro Skills\", OCGUI.PhantomBuffs.Necromancer, \"Necromancer\"},\n\t{\"BLM Skills\", OCGUI.PhantomBuffs.BlackMage, \"Combat\"},\n}\n\nfor _, toggle in ipairs(builtinToggles) do\n\tOCGUI.AddToggle(toggle[1], {phantom = toggle[2], tab = toggle[3]})\nend\n\n--[[\nOCGUI.AddListWindow(\n\t\"StealBlacklist\",\n\t{\n\t\ttitle = \"Steal Blacklist Menu\",\n\t\tbuttonLabel = \"Steal Blacklist\",\n\t\tkey = \"StealBlacklistTable\",\n\t\thelp = \"First select a target to blacklist\\nThen press the Add Target button\",\n\t\temptyText = \"Go add some enemies to your blacklist!\"\n\t}\n)\nOCGUI.AddListWindow(\n\t\"StunBlacklist\",\n\t{\n\t\ttitle = \"Stun Blacklist Menu\",\n\t\tbuttonLabel = \"Stun Blacklist\",\n\t\tkey = \"StunBlacklistTable\",\n\t\tsameline = true,\n\t\thelp = \"First select a target to blacklist\\nThen press the Add Target button\",\n\t\temptyText = \"Go add some enemies to your blacklist!\"\n\t}\n)\n\nOCGUI.AddListWindow(\n\t\"UndeadPriority\",\n\t{\n\t\ttitle = \"Undead Priority Menu\",\n\t\tbuttonLabel = \"Undead Priority\",\n\t\tkey = \"UndeadPriorityTable\",\n\t\thelp = \"First select a target to priority\\nThen press the Add Target button\",\n\t\temptyText = \"Go add some enemies to your priority list!\"\n\t}\n)\n]]--\n\nOCGUI.builtinsRegistered = true\nOCGUI.SaveSettings()\nself.used = true\n",
+						conditions = 
+						{
+							
+							{
+								"215f281f-88e3-ce45-954c-48f460743681",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Example Built-ins",
+						uuid = "d95e8138-1efe-c617-91b9-694de5dacaad",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return OCGUI ~= nil and OCGUI.init == true and OCGUI.builtinsRegistered ~= true",
+						name = "Examples Registered",
+						uuid = "215f281f-88e3-ce45-954c-48f460743681",
+						version = 3,
+					},
+				},
+			},
+			eventType = 13,
+			name = "[Extra] Occult GUI Built-in Toggles",
+			uuid = "6effb3c9-bff2-6d30-98a3-655b2bd77f62",
+			version = 2,
+		},
+		inheritedIndex = 59,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local green,yellow,red,blue = 1677786914,1677787134,1677721855,1694449152\ndata.dedoTargetNames = data.dedoTargetNames or {\n-- Add names or contentid you want to track here\n-- after modifying the table you have to trigger onwipe under Debug tab \n-- or reload lua for it to reflect\n\n-- the value can either be a color or a table if you want to force to show invisible ents\n\n    [\"treasure coffer\"] = green,\n    [\"survey point\"] = yellow,\n    [\"2010139\"] = {color = red, forceVisible = true}, \n   -- [\"Random Test Name\"] = blue,\n    \n    \n-- if you want other colors than those 4 you can just put in a u32 color value\n-- color codes can be found in Anyone's Dev Monitor > Tools & Debugging Helper > Color Picker \n-- its the U32 Value you want.\n\n}\n\ndata.dedoArrowEnts = data.dedoArrowEnts or {}\ndata.dedoArrowTime = Now()\ntable.clear(data.dedoArrowEnts)\n\nfor id, ent in pairs(TensorCore.entityList(\"\")) do\n    local lowerName = string.lower(ent.name)\n    local targetConfig = data.dedoTargetNames[lowerName] or data.dedoTargetNames[tostring(ent.contentid)]\n    \n    if targetConfig then\n        local color, forceVisible\n        if type(targetConfig) == \"table\" then\n            color = targetConfig.color\n            forceVisible = targetConfig.forceVisible or false\n        else\n            color = targetConfig\n            forceVisible = false\n        end\n        \n        local dist = TensorCore.getDistance2d(TensorCore.mGetPlayer().pos, ent.pos)\n        local isVisible = Argus.isEntityVisible(ent)\n        \n        if dist > 5 and (isVisible or forceVisible) then\n            data.dedoArrowEnts[id] = {name = ent.name,pos = ent.pos,color = color,dist = dist,}\n        end\n    end\nend\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"6cdcc0ad-fa02-e3af-97af-f926c182182f",
+								true,
+							},
+							
+							{
+								"c7b2860b-8289-7795-a478-9d3865187c43",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Modify List",
+						uuid = "dc3172cf-0216-5185-925c-d466070e4db1",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local player = TensorCore.mGetPlayer()\nfor id, ent in pairs(data.dedoArrowEnts) do\n\tlocal g = TensorCore.getStaticDrawer(ent.color)\n\tg.colorOutline = 4294967295\n\tg:addArrow(player.pos.x, player.pos.y, player.pos.z,TensorCore.getHeadingToTarget(player.pos, ent.pos),1.5, 0.25, nil, nil, true)\n\tg:addCircle(ent.pos.x, ent.pos.y, ent.pos.z, 1, true)\n\tg.colorOutline = nil\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"6cdcc0ad-fa02-e3af-97af-f926c182182f",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						uuid = "c27fb81b-9bdc-0481-a815-bbb07fe0385b",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						localmapid = 1252,
+						uuid = "6cdcc0ad-fa02-e3af-97af-f926c182182f",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return data.dedoArrowTime == nil or TimeSince(data.dedoArrowTime) > 1000",
+						uuid = "c7b2860b-8289-7795-a478-9d3865187c43",
+						version = 3,
+					},
+				},
+			},
+			eventType = 12,
+			name = "Arrow objects",
+			uuid = "6d0328b9-df88-b08a-a5f2-c23e5dd03dd9",
+			version = 2,
+		},
+		inheritedIndex = 75,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[47308] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47309] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47311] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47312] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47313] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47314] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50554] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50555] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50557] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50558] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50559] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50560] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50561] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41284] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41395] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41315] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41316] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41317] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41830] = {label = \"Barefisted Death\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47073] = {label = \"Garrote\", source = \"Occult Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47152] = {label = \"Sinister Sight\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47191] = {label = \"Stunning Sheen\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49879] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50691] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50692] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41759] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41760] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41761] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41729] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41731] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41733] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41734] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41735] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47310] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50556] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47439] = { label = 'Tendon Ripper', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49799] = {label = \"Plaincracker\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49779] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49777] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47443] = { label = 'Splinter', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47175] = {label = \"Explosion\", source = \"Occult Reactions - Dark Artistry CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47176] = {label = \"Explosion\", source = \"Occult Reactions - Dark Artistry CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[48311] = { label = \"Tiny Flare\", source = \"North Horn Reactions - Tiny Terror\" }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[48312] = { label = \"Tiny Holy\", source = \"North Horn Reactions - Tiny Terror\" }\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"07fa8a6f-9963-dc2a-b0a3-3d17971ac0a4",
+								true,
+							},
+						},
+						endIfUsed = true,
+						gVar = "ACR_RikuMNK3_CD",
+						uuid = "c8a70073-5277-c09f-9529-db7c9ea85b0a",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						dequeueIfLuaFalse = true,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						localmapid = 1252,
+						name = "South Horn",
+						uuid = "07fa8a6f-9963-dc2a-b0a3-3d17971ac0a4",
+						version = 3,
+					},
+				},
+			},
+			eventType = 11,
+			name = "Blacklist+draws moogle (enable this)",
+			uuid = "0c591123-b2c0-d2e0-aca9-9e17cf24d43e",
+			version = 2,
+		},
+		inheritedIndex = 72,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local currentWeather = GetCurrentWeather()\n\nif GlobalCurrentWeather == nil or GlobalCurrentWeather ~= currentWeather then\n    GlobalCurrentWeather = currentWeather\n    if currentWeather == 192 then\n       TensorCore.showRaidWarning(\"Weather for Forked Tower spawned!\", 0, 15)\n\t   TensorCore.sendParsedChatMessage(\"/e {color:228,208,10}[Occult Crescent Notification]{color:255,255,255} Weather for forked tower spawned!\")\n    end\nend\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"4b9ce06b-2e8a-4bb6-aef8-63b65ecbe699",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Weather Shotcall",
+						uuid = "e25652c9-033a-4802-8191-96fe1fc4ed69",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "self.used = true",
+						conditions = 
+						{
+							
+							{
+								"4b9ce06b-2e8a-4bb6-aef8-63b65ecbe699",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "empty reaction for throttle",
+						uuid = "ed9f9916-a111-4703-8ea8-2ee55de2e3a0",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "North Horn",
+						uuid = "4b9ce06b-2e8a-4bb6-aef8-63b65ecbe699",
+						version = 3,
+					},
+				},
+			},
+			enabled = false,
+			name = "[OC] Weather Text Shotcall",
+			throttleTime = 5000,
+			uuid = "5dc65816-0d2a-4fd3-9218-ad0eb935e372",
+			version = 2,
+		},
+		inheritedIndex = 75,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local currentWeather = GetCurrentWeather()\n\nif GlobalCurrentWeather == nil or GlobalCurrentWeather ~= currentWeather then\n    GlobalCurrentWeather = currentWeather\n    if currentWeather == 192 then\n        AnyoneCore.Shotcall(\"Weather for Forked Tower spawned.\", false, 8, true)\n        TensorCore.sendParsedChatMessage(\"/e {color:228,208,10}[Occult Crescent Notification]{color:255,255,255} Weather for forked tower spawned! <se.9>\")\n    end\nend\nself.eventConditionMismatch = true\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"1c7f8070-dc2f-6ae3-b064-5fd0cbde6520",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Weather Shotcall",
+						uuid = "4c2db6d6-f895-2eb9-b512-1ef28440c30b",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "self.used = true",
+						conditions = 
+						{
+							
+							{
+								"1c7f8070-dc2f-6ae3-b064-5fd0cbde6520",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "empty reaction for throttle",
+						uuid = "22b18714-63c5-87a1-a27e-b2298d3218d9",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "North Horn",
+						uuid = "1c7f8070-dc2f-6ae3-b064-5fd0cbde6520",
+						version = 3,
+					},
+				},
+			},
+			name = "[OC] Weather sound shotcall",
+			throttleTime = 5000,
+			uuid = "15ccc7ec-407e-4c0c-ac79-88a64b9cc4b7",
+			version = 2,
+		},
+		inheritedIndex = 68,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local id = eventArgs.entityID\nlocal e = TensorCore.mGetEntity(id)\n\nlocal gaze = {\n    id          = id,\n    addedAt     = Now(),\n    channelTime = (eventArgs.channelTimeMax + .25 ) * 1000,\n    pos         = e.pos,\n}\n\nif data.gaze1 == nil then\n    data.gaze1 = gaze\nelseif data.gaze2 == nil then\n    data.gaze2 = gaze\nelseif data.gaze1.addedAt <= data.gaze2.addedAt then\n    data.gaze1 = gaze\nelse\n    data.gaze2 = gaze\nend\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"580991dc-6fa1-8a65-a6ab-73874302a058",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						uuid = "2be71a66-6f6f-9645-991c-6b5ef5206778",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "Occult Crescent",
+						uuid = "8585bf26-81c3-8633-a4a7-6fa2ea58a7b5",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						eventArgOptionType = 3,
+						eventArgType = 2,
+						eventSpellID = 47152,
+						name = "Gaze Channels",
+						spellIDList = 
+						{
+							47152,
+							47148,
+							47191,
+						},
+						uuid = "580991dc-6fa1-8a65-a6ab-73874302a058",
+						version = 3,
+					},
+				},
+			},
+			eventType = 3,
+			name = "[Extra] Gaze Tracker",
+			uuid = "ef41ca3b-b8b3-b055-9750-acd44ba586ba",
+			version = 2,
+		},
+		inheritedIndex = 70,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "local g1, g2 = data.gaze1, data.gaze2\n\nif g1 ~= nil and TimeSince(g1.addedAt) >= g1.channelTime then\n    data.gaze1, g1 = nil, nil\nend\nif g2 ~= nil and TimeSince(g2.addedAt) >= g2.channelTime then\n    data.gaze2, g2 = nil, nil\nend\n\nif g1 == nil and g2 == nil then\n    -- nothing live -- release the lock, but only if we were the one holding it\n    if data.gazeLocked then\n        TensorCore.API.TensorACR.toggleLockFace(false)\n        data.gazeLocked = nil\n    end\nelse\n    local h\n    local p = TensorCore.mGetPlayer()\n   \n\n    if g1 ~= nil and g2 ~= nil then\n        h = TensorCore.Avoidance.getHeadingBetweenPos(p.pos, TensorCore.mGetEntity(g1.id).pos, TensorCore.mGetEntity(g2.id).pos)\n    elseif g1 ~= nil then\n        h = TensorCore.getHeadingToTarget(p.pos, TensorCore.mGetEntity(g1.id).pos)\n    elseif g2 ~= nil then\n        h = TensorCore.getHeadingToTarget(p.pos, TensorCore.mGetEntity(g2.id).pos)\n\tend\n\n    h = h + math.pi\n    TensorCore.API.TensorACR.setLockFaceHeading(h)\n\n    if not data.gazeLocked then\n        TensorCore.API.TensorACR.toggleLockFace(true)\n        data.gazeLocked = true\n    end\nend\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"82688da5-fbc1-d9ce-8558-f22096750a4b",
+								true,
+							},
+							
+							{
+								"c466a5b4-da07-b94c-8d31-302e253a99d0",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						uuid = "5e58978f-57b2-7b38-8327-6269b5b4be39",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "Occult Crescent",
+						uuid = "82688da5-fbc1-d9ce-8558-f22096750a4b",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true",
+						name = "Bot Running",
+						uuid = "c466a5b4-da07-b94c-8d31-302e253a99d0",
+						version = 3,
+					},
+				},
+			},
+			eventType = 12,
+			name = "[Extra] Gaze Resolver",
+			uuid = "eb4b56b6-2b74-6468-8fba-53017fc139c8",
+			version = 2,
+		},
+		inheritedIndex = 71,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "-- Gaze Tracker display  (companion to the channel-event tracker)\n-- Reads the shared globals: data.gaze1 / data.gaze2\nlocal GUI_FLAGS = 97\n\n-- ── tuning ──────────────────────────────────────────────────────────\nlocal WARN_MS   = 2000    -- remaining <= this -> yellow\nlocal DANGER_MS = 750     -- remaining <= this -> red\n-- ────────────────────────────────────────────────────────────────────\n\nif data.gazeAutoClear == nil then data.gazeAutoClear = true end\n\nlocal function fmtPos(p)\n    if p == nil then return \"n/a\" end\n    return string.format(\"%.1f, %.1f, %.1f\", p.x or 0, p.y or 0, p.z or 0)\nend\n\n-- entity may have despawned since it was captured, so guard the lookup\nlocal function liveEntity(id)\n    local ok, e = pcall(TensorCore.mGetEntity, id)\n    if ok then return e end\n    return nil\nend\n\nlocal function drawSlot(label, g)\n    GUI:TextColored(0.55, 0.55, 0.55, 1.0, label)\n\n    if g == nil then\n        GUI:Text(\"   -- empty --\")\n        return nil\n    end\n\n    local remaining = (g.addedAt + g.channelTime) - Now()\n    if remaining < 0 then remaining = 0 end\n\n    local r, gr, b = 0.3, 1.0, 0.4\n    if remaining <= DANGER_MS then\n        r, gr, b = 1.0, 0.25, 0.25\n    elseif remaining <= WARN_MS then\n        r, gr, b = 1.0, 0.85, 0.2\n    end\n\n    local e    = liveEntity(g.id)\n    local name = (e and e.name) or \"?\"\n\n    GUI:Text(string.format(\"   %s  (id %d)\", tostring(name), g.id))\n    GUI:TextColored(r, gr, b, 1.0,\n        string.format(\"   %.2fs left  /  %.2fs total\",\n            remaining / 1000, g.channelTime / 1000))\n    GUI:Text(\"   spawn pos: \" .. fmtPos(g.pos))\n    if e and e.pos then\n        GUI:Text(\"   live  pos: \" .. fmtPos(e.pos))\n    else\n        GUI:TextColored(0.8, 0.5, 0.5, 1.0, \"   live  pos: entity gone\")\n    end\n\n    return remaining\nend\n\nGUI:Begin(\"GazeTracker#Cherry\", true, GUI_FLAGS)\n\nGUI:SetWindowFontSize(1.25)\nGUI:TextColored(0, 1, 1, 1.0, \"Gaze Tracker\")\nGUI:SetWindowFontSize(1.0)\n\nlocal rem1 = drawSlot(\"Gaze 1\", data.gaze1)\nGUI:Separator()\nlocal rem2 = drawSlot(\"Gaze 2\", data.gaze2)\nGUI:Separator()\n\ndata.gazeAutoClear = GUI:Checkbox(\"Auto-clear expired\", data.gazeAutoClear)\nif GUI:Button(\"Clear both\") then\n    data.gaze1 = nil\n    data.gaze2 = nil\nend\n\nif data.gazeAutoClear then\n    if rem1 ~= nil and rem1 <= 0 then data.gaze1 = nil end\n    if rem2 ~= nil and rem2 <= 0 then data.gaze2 = nil end\nend\n\nGUI:End()\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"054370dc-acb1-d5a6-bf38-116bddca4aae",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						uuid = "dc89f476-dba2-4fde-9e93-74c9f1654c5c",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						localMapIDList = 
+						{
+							1252,
+							1346,
+						},
+						name = "Occult Crescent",
+						uuid = "054370dc-acb1-d5a6-bf38-116bddca4aae",
+						version = 3,
+					},
+				},
+			},
+			eventType = 12,
+			name = "[Extra] Gaze Display",
+			uuid = "ccc078bf-d8c3-16bf-a777-ce9c90a5be43",
+			version = 2,
+		},
+		inheritedIndex = 72,
 	},
 	
 	{
@@ -16844,442 +18381,7 @@ local tbl =
 			uuid = "b4dea9fb-caa4-148e-9ae8-92c5564e94af",
 			version = 2,
 		},
-		inheritedIndex = 60,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "-- The stock Occult Crescent toggles and blacklist windows. Nothing in here is\n-- special: it is the same public API any other reaction uses to hook in.\n-- Runs once, guarded by the reaction condition:\n--   return OCGUI ~= nil and OCGUI.init == true and OCGUI.builtinsRegistered ~= true\n\n-- name, phantom job buff id, settings window tab.\n-- The tab is just a label: leave it off and the toggle lands on \"Main\", which\n-- is also where anything a third party adds without a tab ends up.\n-- OCGUI.PhantomBuffs returns a table of the buff IDs. You can also just pass the buff ID if you want.\nlocal builtinToggles = {\n\t{\"Chest ESP\", OCGUI.PhantomBuffs.Global, \"Main\"},\n\t{\"Survey ESP\", OCGUI.PhantomBuffs.Global, \"Main\"},\n\t{\"Carrot ESP\", OCGUI.PhantomBuffs.Global, \"Main\"},\n\t{\"Auto Pray\", OCGUI.PhantomBuffs.Knight, \"Combat\"},\n\t{\"Auto Revive\", OCGUI.PhantomBuffs.Chemist, \"Combat\"},\n\t{\"Auto Steal\", OCGUI.PhantomBuffs.Thief, \"Combat\"},\n\t{\"Auto Pilfer\", OCGUI.PhantomBuffs.Thief, \"Combat\"},\n\t{\"Auto Cannon\", OCGUI.PhantomBuffs.Cannoneer, \"Combat\"},\n\t{\"Silver Prio\", OCGUI.PhantomBuffs.Cannoneer, \"Combat\"},\n\t{\"Auto Bell\", OCGUI.PhantomBuffs.Geomancer, \"Combat\"},\n\t{\"Auto Aria\", OCGUI.PhantomBuffs.Bard, \"Combat\"},\n\t{\"Auto Rime\", OCGUI.PhantomBuffs.Bard, \"Combat\"},\n\t{\"Auto Shell\", OCGUI.PhantomBuffs.MysticKnight, \"Combat\"},\n\t{\"Auto Spellblade\", OCGUI.PhantomBuffs.MysticKnight, \"Combat\"},\n\t{\"Auto Weapons\", OCGUI.PhantomBuffs.Gladiator, \"Combat\"},\n\t{\"Auto Defend\", OCGUI.PhantomBuffs.Gladiator, \"Combat\"}\n}\nfor _, toggle in ipairs(builtinToggles) do\n\tOCGUI.AddToggle(toggle[1], {phantom = toggle[2], tab = toggle[3]})\nend\n\nOCGUI.AddListWindow(\n\t\"StealBlacklist\",\n\t{\n\t\ttitle = \"Steal Blacklist Menu\",\n\t\tbuttonLabel = \"Steal Blacklist\",\n\t\tkey = \"StealBlacklistTable\",\n\t\thelp = \"First select a target to blacklist\\nThen press the Add Target button\",\n\t\temptyText = \"Go add some enemies to your blacklist!\"\n\t}\n)\nOCGUI.AddListWindow(\n\t\"StunBlacklist\",\n\t{\n\t\ttitle = \"Stun Blacklist Menu\",\n\t\tbuttonLabel = \"Stun Blacklist\",\n\t\tkey = \"StunBlacklistTable\",\n\t\tsameline = true,\n\t\thelp = \"First select a target to blacklist\\nThen press the Add Target button\",\n\t\temptyText = \"Go add some enemies to your blacklist!\"\n\t}\n)\n\nOCGUI.AddListWindow(\n\t\"UndeadPriority\",\n\t{\n\t\ttitle = \"Undead Priority Menu\",\n\t\tbuttonLabel = \"Undead Priority\",\n\t\tkey = \"UndeadPriorityTable\",\n\t\thelp = \"First select a target to priority\\nThen press the Add Target button\",\n\t\temptyText = \"Go add some enemies to your priority list!\"\n\t}\n)\n\nOCGUI.builtinsRegistered = true\nOCGUI.SaveSettings()\nself.used = true\n",
-						conditions = 
-						{
-							
-							{
-								"215f281f-88e3-ce45-954c-48f460743681",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_CD",
-						name = "Example Built-ins",
-						uuid = "d95e8138-1efe-c617-91b9-694de5dacaad",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return OCGUI ~= nil and OCGUI.init == true and OCGUI.builtinsRegistered ~= true",
-						name = "Examples Registered",
-						uuid = "215f281f-88e3-ce45-954c-48f460743681",
-						version = 3,
-					},
-				},
-			},
-			eventType = 13,
-			name = "[Extra] Example Toggles",
-			uuid = "bf3b5f37-31c4-578f-a0c0-1cab48c9c392",
-			version = 2,
-		},
-		inheritedIndex = 63,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[47308] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47309] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47311] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47312] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47313] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47314] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50554] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50555] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50557] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50558] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50559] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50560] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50561] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41284] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41395] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41315] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41316] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41317] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41830] = {label = \"Barefisted Death\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47073] = {label = \"Garrote\", source = \"Occult Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47152] = {label = \"Sinister Sight\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47191] = {label = \"Stunning Sheen\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49879] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50691] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50692] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41759] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41760] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41761] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41729] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41731] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41733] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41734] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41735] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47310] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50556] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47439] = { label = 'Tendon Ripper', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49799] = {label = \"Plaincracker\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49779] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49777] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47443] = { label = 'Splinter', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47175] = {label = \"Explosion\", source = \"Occult Reactions - Dark Artistry CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47176] = {label = \"Explosion\", source = \"Occult Reactions - Dark Artistry CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[48311] = { label = \"Tiny Flare\", source = \"North Horn Reactions - Tiny Terror\" }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[48312] = { label = \"Tiny Holy\", source = \"North Horn Reactions - Tiny Terror\" }\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"07fa8a6f-9963-dc2a-b0a3-3d17971ac0a4",
-								true,
-							},
-						},
-						endIfUsed = true,
-						gVar = "ACR_RikuMNK3_CD",
-						uuid = "c8a70073-5277-c09f-9529-db7c9ea85b0a",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 12,
-						dequeueIfLuaFalse = true,
-						localMapIDList = 
-						{
-							1252,
-							1346,
-						},
-						localmapid = 1252,
-						name = "South Horn",
-						uuid = "07fa8a6f-9963-dc2a-b0a3-3d17971ac0a4",
-						version = 3,
-					},
-				},
-			},
-			eventType = 11,
-			name = "Blacklist+draws moogle (enable this)",
-			uuid = "0c591123-b2c0-d2e0-aca9-9e17cf24d43e",
-			version = 2,
-		},
-		inheritedIndex = 69,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local currentWeather = GetCurrentWeather()\n\nif GlobalCurrentWeather == nil or GlobalCurrentWeather ~= currentWeather then\n    GlobalCurrentWeather = currentWeather\n    if currentWeather == 192 then\n       TensorCore.showRaidWarning(\"Weather for Forked Tower spawned!\", 0, 15)\n\t   TensorCore.sendParsedChatMessage(\"/e {color:228,208,10}[Occult Crescent Notification]{color:255,255,255} Weather for forked tower spawned!\")\n    end\nend\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"4b9ce06b-2e8a-4bb6-aef8-63b65ecbe699",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_CD",
-						name = "Weather Shotcall",
-						uuid = "e25652c9-033a-4802-8191-96fe1fc4ed69",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "self.used = true",
-						conditions = 
-						{
-							
-							{
-								"4b9ce06b-2e8a-4bb6-aef8-63b65ecbe699",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_CD",
-						name = "empty reaction for throttle",
-						uuid = "ed9f9916-a111-4703-8ea8-2ee55de2e3a0",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1346,
-						name = "North Horn",
-						uuid = "4b9ce06b-2e8a-4bb6-aef8-63b65ecbe699",
-						version = 3,
-					},
-				},
-			},
-			enabled = false,
-			name = "[OC] Weather Text Shotcall",
-			throttleTime = 5000,
-			uuid = "5dc65816-0d2a-4fd3-9218-ad0eb935e372",
-			version = 2,
-		},
-		inheritedIndex = 72,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local currentWeather = GetCurrentWeather()\n\nif GlobalCurrentWeather == nil or GlobalCurrentWeather ~= currentWeather then\n    GlobalCurrentWeather = currentWeather\n    if currentWeather == 192 then\n        AnyoneCore.Shotcall(\"Weather for Forked Tower spawned.\", false, 8, true)\n        TensorCore.sendParsedChatMessage(\"/e {color:228,208,10}[Occult Crescent Notification]{color:255,255,255} Weather for forked tower spawned! <se.9>\")\n    end\nend\nself.eventConditionMismatch = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"1c7f8070-dc2f-6ae3-b064-5fd0cbde6520",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_CD",
-						name = "Weather Shotcall",
-						uuid = "4c2db6d6-f895-2eb9-b512-1ef28440c30b",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "self.used = true",
-						conditions = 
-						{
-							
-							{
-								"1c7f8070-dc2f-6ae3-b064-5fd0cbde6520",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_CD",
-						name = "empty reaction for throttle",
-						uuid = "22b18714-63c5-87a1-a27e-b2298d3218d9",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						dequeueIfLuaFalse = true,
-						localmapid = 1346,
-						name = "North Horn",
-						uuid = "1c7f8070-dc2f-6ae3-b064-5fd0cbde6520",
-						version = 3,
-					},
-				},
-			},
-			name = "[OC] Weather sound shotcall",
-			throttleTime = 5000,
-			uuid = "15ccc7ec-407e-4c0c-ac79-88a64b9cc4b7",
-			version = 2,
-		},
-		inheritedIndex = 66,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local id = eventArgs.entityID\nlocal e = TensorCore.mGetEntity(id)\n\nlocal gaze = {\n    id          = id,\n    addedAt     = Now(),\n    channelTime = (eventArgs.channelTimeMax + .25 ) * 1000,\n    pos         = e.pos,\n}\n\nif data.gaze1 == nil then\n    data.gaze1 = gaze\nelseif data.gaze2 == nil then\n    data.gaze2 = gaze\nelseif data.gaze1.addedAt <= data.gaze2.addedAt then\n    data.gaze1 = gaze\nelse\n    data.gaze2 = gaze\nend\n\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"580991dc-6fa1-8a65-a6ab-73874302a058",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_CD",
-						uuid = "2be71a66-6f6f-9645-991c-6b5ef5206778",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 12,
-						localMapIDList = 
-						{
-							1252,
-							1346,
-						},
-						name = "Occult Crescent",
-						uuid = "8585bf26-81c3-8633-a4a7-6fa2ea58a7b5",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Event",
-						eventArgOptionType = 3,
-						eventArgType = 2,
-						eventSpellID = 47152,
-						name = "Gaze Channels",
-						spellIDList = 
-						{
-							47152,
-							47148,
-							47191,
-						},
-						uuid = "580991dc-6fa1-8a65-a6ab-73874302a058",
-						version = 3,
-					},
-				},
-			},
-			eventType = 3,
-			name = "[Extra] Gaze Tracker",
-			uuid = "ef41ca3b-b8b3-b055-9750-acd44ba586ba",
-			version = 2,
-		},
-		inheritedIndex = 68,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "local g1, g2 = data.gaze1, data.gaze2\n\nif g1 ~= nil and TimeSince(g1.addedAt) >= g1.channelTime then\n    data.gaze1, g1 = nil, nil\nend\nif g2 ~= nil and TimeSince(g2.addedAt) >= g2.channelTime then\n    data.gaze2, g2 = nil, nil\nend\n\nif g1 == nil and g2 == nil then\n    -- nothing live -- release the lock, but only if we were the one holding it\n    if data.gazeLocked then\n        TensorCore.API.TensorACR.toggleLockFace(false)\n        data.gazeLocked = nil\n    end\nelse\n    local h\n    local p = TensorCore.mGetPlayer()\n   \n\n    if g1 ~= nil and g2 ~= nil then\n        h = TensorCore.Avoidance.getHeadingBetweenPos(p.pos, TensorCore.mGetEntity(g1.id).pos, TensorCore.mGetEntity(g2.id).pos)\n    elseif g1 ~= nil then\n        h = TensorCore.getHeadingToTarget(p.pos, TensorCore.mGetEntity(g1.id).pos)\n    elseif g2 ~= nil then\n        h = TensorCore.getHeadingToTarget(p.pos, TensorCore.mGetEntity(g2.id).pos)\n\tend\n\n    h = h + math.pi\n    TensorCore.API.TensorACR.setLockFaceHeading(h)\n\n    if not data.gazeLocked then\n        TensorCore.API.TensorACR.toggleLockFace(true)\n        data.gazeLocked = true\n    end\nend\n\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"82688da5-fbc1-d9ce-8558-f22096750a4b",
-								true,
-							},
-							
-							{
-								"c466a5b4-da07-b94c-8d31-302e253a99d0",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_CD",
-						uuid = "5e58978f-57b2-7b38-8327-6269b5b4be39",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 12,
-						localMapIDList = 
-						{
-							1252,
-							1346,
-						},
-						name = "Occult Crescent",
-						uuid = "82688da5-fbc1-d9ce-8558-f22096750a4b",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
-						name = "Bot Running",
-						uuid = "c466a5b4-da07-b94c-8d31-302e253a99d0",
-						version = 3,
-					},
-				},
-			},
-			eventType = 12,
-			name = "[Extra] Gaze Resolver",
-			uuid = "eb4b56b6-2b74-6468-8fba-53017fc139c8",
-			version = 2,
-		},
-		inheritedIndex = 68,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "-- Gaze Tracker display  (companion to the channel-event tracker)\n-- Reads the shared globals: data.gaze1 / data.gaze2\nlocal GUI_FLAGS = 97\n\n-- ── tuning ──────────────────────────────────────────────────────────\nlocal WARN_MS   = 2000    -- remaining <= this -> yellow\nlocal DANGER_MS = 750     -- remaining <= this -> red\n-- ────────────────────────────────────────────────────────────────────\n\nif data.gazeAutoClear == nil then data.gazeAutoClear = true end\n\nlocal function fmtPos(p)\n    if p == nil then return \"n/a\" end\n    return string.format(\"%.1f, %.1f, %.1f\", p.x or 0, p.y or 0, p.z or 0)\nend\n\n-- entity may have despawned since it was captured, so guard the lookup\nlocal function liveEntity(id)\n    local ok, e = pcall(TensorCore.mGetEntity, id)\n    if ok then return e end\n    return nil\nend\n\nlocal function drawSlot(label, g)\n    GUI:TextColored(0.55, 0.55, 0.55, 1.0, label)\n\n    if g == nil then\n        GUI:Text(\"   -- empty --\")\n        return nil\n    end\n\n    local remaining = (g.addedAt + g.channelTime) - Now()\n    if remaining < 0 then remaining = 0 end\n\n    local r, gr, b = 0.3, 1.0, 0.4\n    if remaining <= DANGER_MS then\n        r, gr, b = 1.0, 0.25, 0.25\n    elseif remaining <= WARN_MS then\n        r, gr, b = 1.0, 0.85, 0.2\n    end\n\n    local e    = liveEntity(g.id)\n    local name = (e and e.name) or \"?\"\n\n    GUI:Text(string.format(\"   %s  (id %d)\", tostring(name), g.id))\n    GUI:TextColored(r, gr, b, 1.0,\n        string.format(\"   %.2fs left  /  %.2fs total\",\n            remaining / 1000, g.channelTime / 1000))\n    GUI:Text(\"   spawn pos: \" .. fmtPos(g.pos))\n    if e and e.pos then\n        GUI:Text(\"   live  pos: \" .. fmtPos(e.pos))\n    else\n        GUI:TextColored(0.8, 0.5, 0.5, 1.0, \"   live  pos: entity gone\")\n    end\n\n    return remaining\nend\n\nGUI:Begin(\"GazeTracker#Cherry\", true, GUI_FLAGS)\n\nGUI:SetWindowFontSize(1.25)\nGUI:TextColored(0, 1, 1, 1.0, \"Gaze Tracker\")\nGUI:SetWindowFontSize(1.0)\n\nlocal rem1 = drawSlot(\"Gaze 1\", data.gaze1)\nGUI:Separator()\nlocal rem2 = drawSlot(\"Gaze 2\", data.gaze2)\nGUI:Separator()\n\ndata.gazeAutoClear = GUI:Checkbox(\"Auto-clear expired\", data.gazeAutoClear)\nif GUI:Button(\"Clear both\") then\n    data.gaze1 = nil\n    data.gaze2 = nil\nend\n\nif data.gazeAutoClear then\n    if rem1 ~= nil and rem1 <= 0 then data.gaze1 = nil end\n    if rem2 ~= nil and rem2 <= 0 then data.gaze2 = nil end\nend\n\nGUI:End()\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"054370dc-acb1-d5a6-bf38-116bddca4aae",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_CD",
-						uuid = "dc89f476-dba2-4fde-9e93-74c9f1654c5c",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 12,
-						localMapIDList = 
-						{
-							1252,
-							1346,
-						},
-						name = "Occult Crescent",
-						uuid = "054370dc-acb1-d5a6-bf38-116bddca4aae",
-						version = 3,
-					},
-				},
-			},
-			eventType = 12,
-			name = "[Extra] Gaze Display",
-			uuid = "ccc078bf-d8c3-16bf-a777-ce9c90a5be43",
-			version = 2,
-		},
-		inheritedIndex = 69,
+		inheritedIndex = 73,
 	},
 	
 	{
@@ -17295,7 +18397,7 @@ local tbl =
 			uuid = "7affaeba-16a3-388a-9c7a-193cccdb0287",
 			version = 2,
 		},
-		inheritedIndex = 73,
+		inheritedIndex = 76,
 	},
 	
 	{
@@ -17414,7 +18516,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 89,
+		inheritedIndex = 92,
 	},
 	
 	{
@@ -17556,7 +18658,7 @@ local tbl =
 			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
 			version = 2,
 		},
-		inheritedIndex = 90,
+		inheritedIndex = 93,
 	},
 	
 	{
@@ -17564,30 +18666,6 @@ local tbl =
 		{
 			actions = 
 			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "if eventArgs.newTetherID == 303 then \n\tTensorCore.getMoogleDrawer():addTimedCircleOnEnt(5000,eventArgs.newTargetID,16) \nend\n\nif eventArgs.newTetherID == 304 then \n\tTensorCore.getMoogleDrawer():addTimedCrossOnEnt(5000,eventArgs.newTargetID,40,10) \nend\n--TensorCore.getMoogleDrawer()\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"710d381b-ee90-f727-8e57-5926dbc9e986",
-								true,
-							},
-							
-							{
-								"288e0df2-3cf0-27dc-a47c-64b16757ff8e",
-								true,
-							},
-						},
-						gVar = "ACR_RikuMNK3_CD",
-						uuid = "6d55eaa6-366c-5347-9562-23b1ce614437",
-						version = 2.1,
-					},
-				},
 				
 				{
 					data = 
@@ -17611,6 +18689,31 @@ local tbl =
 						uuid = "91386d48-3d93-419d-8463-2aab6cfb7cbc",
 						version = 2.1,
 					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "if eventArgs.newTetherID == 303 then \n\tTensorCore.getMoogleDrawer():addTimedCircleOnEnt(5000,eventArgs.newTargetID,16) \nend\n\nif eventArgs.newTetherID == 304 then \n\tTensorCore.getMoogleDrawer():addTimedCrossOnEnt(5000,eventArgs.newTargetID,40,10) \nend\n--TensorCore.getMoogleDrawer()\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"710d381b-ee90-f727-8e57-5926dbc9e986",
+								true,
+							},
+							
+							{
+								"288e0df2-3cf0-27dc-a47c-64b16757ff8e",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						uuid = "6d55eaa6-366c-5347-9562-23b1ce614437",
+						version = 2.1,
+					},
+					inheritedIndex = 2,
 				},
 			},
 			conditions = 
@@ -18927,7 +20030,7 @@ local tbl =
 			uuid = "d11651c2-77ca-a156-8136-388eeea52a44",
 			version = 2,
 		},
-		inheritedIndex = 88,
+		inheritedIndex = 91,
 	},
 	
 	{
