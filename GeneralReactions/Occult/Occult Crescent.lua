@@ -20800,6 +20800,36 @@ local tbl =
 					data =
 					{
 						aType = "Lua",
+						actionLua = "local token = data.northHornBeastTopazWaveToken or 0\nlocal committed = data.northHornBeastCommittedCells\nif not committed or committed.token ~= token then return end\n\nlocal circles = data.northHornBeastTopazCircles or {}\nfor entityID, uuid in pairs(circles) do\n\tlocal stone = TensorCore.mGetEntity(entityID)\n\tif uuid and stone and stone.pos then\n\t\tlocal column = math.max(0, math.min(3, math.floor((stone.pos.x - 218) / 10)))\n\t\tlocal row = math.max(0, math.min(3, math.floor((stone.pos.z - 332) / 10)))\n\t\tlocal cell = (row * 4) + column\n\t\tif committed.cells[cell] then\n\t\t\tArgus.deleteTimedShape(uuid)\n\t\t\tcircles[entityID] = nil\n\t\tend\n\tend\nend\nself.used = true\n",
+						conditions =
+						{
+
+							{
+								"32000116-0000-4000-8000-000000000001",
+								true,
+							},
+
+							{
+								"32000116-0000-4000-8000-000000000002",
+								true,
+							},
+
+							{
+								"32000116-0000-4000-8000-000000000003",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Remove covered Topaz circles",
+						uuid = "32000116-0000-4000-8000-000000000103",
+						version = 2.1,
+					},
+				},
+
+				{
+					data =
+					{
+						aType = "Lua",
 						actionLua = "local token = data.northHornBeastTopazWaveToken or 0\nlocal committed = data.northHornBeastCommittedCells\nif committed and committed.token == token then\n\tself.used = true\n\treturn\nend\n\nlocal controller = TensorCore.mGetEntity(eventArgs.entityID)\nif not controller or not controller.pos then return end\nlocal visible = data.northHornBeastVisibleStones or {}\nlocal rooms = {}\nlocal roomCount = 0\nlocal floorY = controller.pos.y or 15\n\nfor entityID in pairs(visible) do\n\tlocal stone = TensorCore.mGetEntity(entityID)\n\tif stone and stone.pos and Argus.isEntityVisible(stone) then\n\t\tlocal x, z = stone.pos.x, stone.pos.z\n\t\tfloorY = stone.pos.y or floorY\n\t\tlocal insideX = x >= 218 and x <= 258\n\t\tlocal insideZ = z >= 332 and z <= 372\n\t\tlocal hitsVertical = insideZ and\n\t\t\t(math.abs(x - 218) <= 4.25 or math.abs(x - 238) <= 4.25 or\n\t\t\t math.abs(x - 258) <= 4.25)\n\t\tlocal hitsHorizontal = insideX and\n\t\t\t(math.abs(z - 332) <= 4.25 or math.abs(z - 352) <= 4.25 or\n\t\t\t math.abs(z - 372) <= 4.25)\n\t\tif hitsVertical or hitsHorizontal then\n\t\t\tlocal qx = x < 238 and 0 or 2\n\t\t\tlocal qz = z < 352 and 0 or 2\n\t\t\tlocal key = qx .. \":\" .. qz\n\t\t\tif not rooms[key] then\n\t\t\t\trooms[key] = { qx, qz }\n\t\t\t\troomCount = roomCount + 1\n\t\t\tend\n\t\tend\n\tend\nend\n\nif roomCount == 2 then\n\tlocal cells = {}\n\tfor _, room in pairs(rooms) do\n\t\tfor row = room[2], room[2] + 1 do\n\t\t\tfor column = room[1], room[1] + 1 do\n\t\t\t\tcells[(row * 4) + column] = true\n\t\t\tend\n\t\tend\n\tend\n\n\tfor _, uuid in ipairs(data.northHornBeastEarlyFixedDraws or {}) do\n\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\tend\n\tlocal dangerDrawer = TensorCore.getStaticFlatDrawer(2818572543)\n\tlocal roomDraws = {}\n\tfor cell in pairs(cells) do\n\t\tlocal x = 223 + ((cell % 4) * 10)\n\t\tlocal z = 337 + (math.floor(cell / 4) * 10)\n\t\tlocal uuid = dangerDrawer:addTimedCenteredRect(20000, x, floorY + 0.02, z, 10, 10, 0)\n\t\tif uuid then roomDraws[#roomDraws + 1] = uuid end\n\tend\n\tdata.northHornBeastEarlyFixedDraws = roomDraws\n\tdata.northHornBeastEarlyFixedWaveToken = token\n\tdata.northHornBeastCommittedCells = { token = token, cells = cells }\n\td(\"A Beast Unleashed opening rooms\")\nend\nself.used = true\n",
 						conditions =
 						{
