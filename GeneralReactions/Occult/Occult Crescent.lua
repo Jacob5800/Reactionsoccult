@@ -18302,7 +18302,7 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[47308] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47309] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47311] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47312] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47313] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47314] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50554] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50555] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50557] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50558] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50559] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50560] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50561] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41284] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41395] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41315] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41316] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41317] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41830] = {label = \"Barefisted Death\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47073] = {label = \"Garrote\", source = \"Occult Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47152] = {label = \"Sinister Sight\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47191] = {label = \"Stunning Sheen\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49879] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50691] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50692] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41759] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41760] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41761] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41729] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41731] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41733] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41734] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41735] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47310] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50556] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47439] = { label = 'Tendon Ripper', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49799] = {label = \"Plaincracker\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49779] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49777] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47443] = { label = 'Splinter', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47175] = {label = \"Explosion\", source = \"Occult Reactions - Dark Artistry CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47176] = {label = \"Explosion\", source = \"Occult Reactions - Dark Artistry CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[48311] = { label = \"Tiny Flare\", source = \"North Horn Reactions - Tiny Terror\" }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[48312] = { label = \"Tiny Holy\", source = \"North Horn Reactions - Tiny Terror\" }\nself.used = true",
+						actionLua = "MoogleTelegraphs.Settings.aoeIDUserBlacklist[47308] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47309] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47311] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47312] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47313] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47314] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50554] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50555] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50557] = {label = \"Knowledge Level 5 Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50558] = {label = \"Knowledge Level 3 Flare\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50559] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50560] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50561] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41284] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41395] = {label = \"Ancient Holy\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41315] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41316] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41317] = {label = \"Lethal Nails\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[41830] = {label = \"Barefisted Death\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47073] = {label = \"Garrote\", source = \"Occult Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47152] = {label = \"Sinister Sight\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47191] = {label = \"Stunning Sheen\", source = \"Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49879] = {label = \"Prime Knowledge Level Death\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50691] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetCones[50692] = {name=\"Dual Cut\",angle=180,source=\"Occult Crescent Reactions - Double Trouble CE\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41759] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41760] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41761] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41729] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41731] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41733] = {name=\"Crystallized Chaos\",radius=7,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41734] = {name=\"Crystallized Chaos\",radius=13,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserSetDonuts[41735] = {name=\"Crystallized Chaos\",radius=19,source=\"CE: Trial by Claw Occult Reactions\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47310] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[50556] = {label = \"Knowledge Level 4 Holy\", source = \"Occult Reactions - Folios CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47439] = { label = 'Tendon Ripper', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49799] = {label = \"Plaincracker\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49779] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[49777] = {label = \"Bad Breath\", source = \"Occult Reactions - Appaling Behavior CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47443] = { label = 'Splinter', source = 'North Horn Reactions - Abductor' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47175] = {label = \"Explosion\", source = \"Occult Reactions - Dark Artistry CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[47176] = {label = \"Explosion\", source = \"Occult Reactions - Dark Artistry CE\"}\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[48311] = { label = \"Tiny Flare\", source = \"North Horn Reactions - Tiny Terror\" }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[48312] = { label = \"Tiny Holy\", source = \"North Horn Reactions - Tiny Terror\" }\n\n-- Topaz circles follow stone visibility. Wall-contact rooms are pre-drawn from\n-- the room controller, with the AOE packet retained as a fallback.\n-- 48296/48297 are instant follow-up hits and create no Moogle AOE.\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[48281] = { label = 'Topaz Ray wall-contact room', source = 'North Horn Reactions - A Beast Unleashed' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[48282] = { label = 'Topaz Ray early stone circle', source = 'North Horn Reactions - A Beast Unleashed' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[48294] = { label = 'Claw to Tail', source = 'North Horn Reactions - A Beast Unleashed' }\nMoogleTelegraphs.Settings.aoeIDUserBlacklist[48295] = { label = 'Tail to Claw', source = 'North Horn Reactions - A Beast Unleashed' }\n\n-- lint: allow moogle-blacklist,\n-- Cleanup loops below never populate Settings overrides.\n-- Reset Beast-owned timed shapes and state when this profile is loaded.\nfor _, uuid in pairs(data.northHornBeastTopazCircles or {}) do\n\tif uuid then Argus.deleteTimedShape(uuid) end\nend\nfor _, uuid in ipairs(data.northHornBeastEarlyFixedDraws or {}) do\n\tif uuid then Argus.deleteTimedShape(uuid) end\nend\nlocal oldRoomState = data.northHornBeastTopazRoomWave\nif oldRoomState and oldRoomState.provisional then\n\tfor _, uuid in ipairs(oldRoomState.provisional) do\n\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\tend\nend\n\ndata.northHornBeastBossID = nil\ndata.northHornBeastTopazCircles = {}\ndata.northHornBeastVisibleStones = {}\ndata.northHornBeastLRoomTilings = {\n\t{{0,4,8,1},{12,5,9,13},{2,6,10,3},{14,7,11,15}},\n\t{{0,4,8,9},{12,13,10,14},{1,5,2,3},{6,7,11,15}},\n\t{{0,4,1,2},{8,12,9,10},{5,6,3,7},{13,14,11,15}},\n\t{{0,4,5,6},{8,12,13,14},{1,2,3,7},{9,10,11,15}},\n\t{{0,1,5,9},{4,8,12,13},{2,3,7,11},{6,10,14,15}},\n\t{{0,1,2,6},{4,8,12,5},{9,13,14,15},{10,3,7,11}},\n}\ndata.northHornBeastTopazWaveToken = 0\ndata.northHornBeastCommittedCells = nil\ndata.northHornBeastEarlyFixedDraws = nil\ndata.northHornBeastEarlyFixedWaveToken = nil\ndata.northHornBeastTopazRoomWave = nil\n\n-- A one-time reload recovery scan is acceptable; the live mechanics are event-driven.\nlocal bosses = TensorCore.entityList(\"contentid=14791,attackable,maxdistance=80\") or {}\nfor _, boss in pairs(bosses) do\n\tif boss.id and Argus.isEntityVisible(boss) and\n\t\tArgus.getEntityModel(boss) == 19535 then\n\t\tdata.northHornBeastBossID = boss.id\n\t\tbreak\n\tend\nend\n\nself.used = true",
 						conditions = 
 						{
 							
@@ -20760,6 +20760,354 @@ local tbl =
 		},
 	},
 	
+	{
+		data =
+		{
+			actions =
+			{
+
+				{
+					data =
+					{
+						aType = "Lua",
+						actionLua = "local token = data.northHornBeastTopazWaveToken or 0\nlocal committed = data.northHornBeastCommittedCells\nif committed and committed.token == token then\n\tself.used = true\n\treturn\nend\n\nlocal controller = TensorCore.mGetEntity(eventArgs.entityID)\nif not controller or not controller.pos then return end\nlocal index = eventArgs.a2\nlocal vertical = math.abs(math.sin(controller.pos.h or 0)) > 0.5\nlocal tilingIndex\nif vertical then\n\ttilingIndex = index == 5 and 1 or index == 9 and 3 or index == 13 and 2 or nil\nelse\n\ttilingIndex = index == 5 and 4 or index == 9 and 5 or index == 13 and 6 or nil\nend\nif not tilingIndex then return end\n\nlocal tilings = data.northHornBeastLRoomTilings\nif not tilings then return end\nlocal tiling = tilings[tilingIndex]\nlocal roomForCell = {}\nfor roomIndex, room in ipairs(tiling) do\n\tfor _, cell in ipairs(room) do roomForCell[cell] = roomIndex end\nend\n\nlocal unsafeRooms = {}\nlocal visible = data.northHornBeastVisibleStones or {}\nlocal floorY = controller.pos.y or 15\nfor entityID in pairs(visible) do\n\tlocal stone = TensorCore.mGetEntity(entityID)\n\tif stone and stone.pos and Argus.isEntityVisible(stone) then\n\t\tfloorY = stone.pos.y or floorY\n\t\tlocal column = math.max(0, math.min(3, math.floor((stone.pos.x - 218) / 10)))\n\t\tlocal row = math.max(0, math.min(3, math.floor((stone.pos.z - 332) / 10)))\n\t\tlocal cell = (row * 4) + column\n\t\tlocal roomIndex = roomForCell[cell]\n\t\tif roomIndex then\n\t\t\tlocal roomCells = {}\n\t\t\tfor _, roomCell in ipairs(tiling[roomIndex]) do roomCells[roomCell] = true end\n\t\t\tlocal left = stone.pos.x - (218 + column * 10)\n\t\t\tlocal right = (228 + column * 10) - stone.pos.x\n\t\t\tlocal top = stone.pos.z - (332 + row * 10)\n\t\t\tlocal bottom = (342 + row * 10) - stone.pos.z\n\t\t\tlocal hitsWall =\n\t\t\t\t(left <= 4.25 and (column == 0 or not roomCells[cell - 1])) or\n\t\t\t\t(right <= 4.25 and (column == 3 or not roomCells[cell + 1])) or\n\t\t\t\t(top <= 4.25 and (row == 0 or not roomCells[cell - 4])) or\n\t\t\t\t(bottom <= 4.25 and (row == 3 or not roomCells[cell + 4]))\n\t\t\tif hitsWall then unsafeRooms[roomIndex] = true end\n\t\tend\n\tend\nend\nif next(unsafeRooms) == nil then return end\n\nlocal cells = {}\nfor roomIndex in pairs(unsafeRooms) do\n\tfor _, cell in ipairs(tiling[roomIndex]) do cells[cell] = true end\nend\nfor _, uuid in ipairs(data.northHornBeastEarlyFixedDraws or {}) do\n\tif uuid then Argus.deleteTimedShape(uuid) end\nend\nlocal dangerDrawer = TensorCore.getStaticFlatDrawer(2818572543)\nlocal roomDraws = {}\nfor cell in pairs(cells) do\n\tlocal x = 223 + ((cell % 4) * 10)\n\tlocal z = 337 + (math.floor(cell / 4) * 10)\n\tlocal uuid = dangerDrawer:addTimedCenteredRect(30000, x, floorY + 0.02, z, 10, 10, 0)\n\tif uuid then roomDraws[#roomDraws + 1] = uuid end\nend\ndata.northHornBeastEarlyFixedDraws = roomDraws\ndata.northHornBeastEarlyFixedWaveToken = token\ndata.northHornBeastCommittedCells = { token = token, cells = cells }\n\nd(\"A Beast Unleashed pre-drawn rooms: tiling \" .. tostring(tilingIndex))\nself.used = true\n",
+						conditions =
+						{
+
+							{
+								"32000116-0000-4000-8000-000000000001",
+								true,
+							},
+
+							{
+								"32000116-0000-4000-8000-000000000002",
+								true,
+							},
+
+							{
+								"32000116-0000-4000-8000-000000000003",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Pre-draw dangerous Topaz rooms",
+						uuid = "32000116-0000-4000-8000-000000000101",
+						version = 2.1,
+					},
+				},
+
+				{
+					data =
+					{
+						aType = "Lua",
+						actionLua = "local token = data.northHornBeastTopazWaveToken or 0\nlocal committed = data.northHornBeastCommittedCells\nif committed and committed.token == token then\n\tself.used = true\n\treturn\nend\n\nlocal controller = TensorCore.mGetEntity(eventArgs.entityID)\nif not controller or not controller.pos then return end\nlocal visible = data.northHornBeastVisibleStones or {}\nlocal rooms = {}\nlocal roomCount = 0\nlocal floorY = controller.pos.y or 15\n\nfor entityID in pairs(visible) do\n\tlocal stone = TensorCore.mGetEntity(entityID)\n\tif stone and stone.pos and Argus.isEntityVisible(stone) then\n\t\tlocal x, z = stone.pos.x, stone.pos.z\n\t\tfloorY = stone.pos.y or floorY\n\t\tlocal insideX = x >= 218 and x <= 258\n\t\tlocal insideZ = z >= 332 and z <= 372\n\t\tlocal hitsVertical = insideZ and\n\t\t\t(math.abs(x - 218) <= 4.25 or math.abs(x - 238) <= 4.25 or\n\t\t\t math.abs(x - 258) <= 4.25)\n\t\tlocal hitsHorizontal = insideX and\n\t\t\t(math.abs(z - 332) <= 4.25 or math.abs(z - 352) <= 4.25 or\n\t\t\t math.abs(z - 372) <= 4.25)\n\t\tif hitsVertical or hitsHorizontal then\n\t\t\tlocal qx = x < 238 and 0 or 2\n\t\t\tlocal qz = z < 352 and 0 or 2\n\t\t\tlocal key = qx .. \":\" .. qz\n\t\t\tif not rooms[key] then\n\t\t\t\trooms[key] = { qx, qz }\n\t\t\t\troomCount = roomCount + 1\n\t\t\tend\n\t\tend\n\tend\nend\n\nif roomCount == 2 then\n\tlocal cells = {}\n\tfor _, room in pairs(rooms) do\n\t\tfor row = room[2], room[2] + 1 do\n\t\t\tfor column = room[1], room[1] + 1 do\n\t\t\t\tcells[(row * 4) + column] = true\n\t\t\tend\n\t\tend\n\tend\n\n\tfor _, uuid in ipairs(data.northHornBeastEarlyFixedDraws or {}) do\n\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\tend\n\tlocal dangerDrawer = TensorCore.getStaticFlatDrawer(2818572543)\n\tlocal roomDraws = {}\n\tfor cell in pairs(cells) do\n\t\tlocal x = 223 + ((cell % 4) * 10)\n\t\tlocal z = 337 + (math.floor(cell / 4) * 10)\n\t\tlocal uuid = dangerDrawer:addTimedCenteredRect(20000, x, floorY + 0.02, z, 10, 10, 0)\n\t\tif uuid then roomDraws[#roomDraws + 1] = uuid end\n\tend\n\tdata.northHornBeastEarlyFixedDraws = roomDraws\n\tdata.northHornBeastEarlyFixedWaveToken = token\n\tdata.northHornBeastCommittedCells = { token = token, cells = cells }\n\td(\"A Beast Unleashed opening rooms\")\nend\nself.used = true\n",
+						conditions =
+						{
+
+							{
+								"32000116-0000-4000-8000-000000000001",
+								true,
+							},
+
+							{
+								"32000116-0000-4000-8000-000000000004",
+								true,
+							},
+
+							{
+								"32000116-0000-4000-8000-000000000005",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Pre-draw opening Topaz rooms",
+						uuid = "32000116-0000-4000-8000-000000000102",
+						version = 2.1,
+					},
+				},
+			},
+			conditions =
+			{
+
+				{
+					data =
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "Zone",
+						uuid = "32000116-0000-4000-8000-000000000001",
+						version = 3,
+					},
+				},
+
+				{
+					data =
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 2015302,
+						name = "Room controller",
+						uuid = "32000116-0000-4000-8000-000000000002",
+						version = 3,
+					},
+				},
+
+				{
+					data =
+					{
+						category = "Lua",
+						conditionLua = "-- lint: allow lua-native-condition, three layout indices share one action.\nlocal boss = data.northHornBeastBossID and TensorCore.mGetEntity(data.northHornBeastBossID)\nlocal index = eventArgs.a2\nreturn boss and boss.incombat and eventArgs.a3 == 0 and (index == 5 or index == 9 or index == 13)\n",
+						dequeueIfLuaFalse = true,
+						name = "Active Beast layout signal",
+						uuid = "32000116-0000-4000-8000-000000000003",
+						version = 3,
+					},
+				},
+
+				{
+					data =
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 2015301,
+						name = "Opening room controller",
+						uuid = "32000116-0000-4000-8000-000000000004",
+						version = 3,
+					},
+				},
+
+				{
+					data =
+					{
+						category = "Lua",
+						conditionLua = "-- lint: allow lua-native-condition, a2 is the controller layout index.\nlocal boss = data.northHornBeastBossID and TensorCore.mGetEntity(data.northHornBeastBossID)\nreturn boss and boss.incombat and eventArgs.a2 == 1 and eventArgs.a3 == 0\n",
+						dequeueIfLuaFalse = true,
+						name = "Active opening layout signal",
+						uuid = "32000116-0000-4000-8000-000000000005",
+						version = 3,
+					},
+				},
+			},
+			eventType = 20,
+			name = "[A Beast Unleashed] Room Pre-draw",
+			timeout = 15,
+			uuid = "32000116-0000-4000-8000-000000000999",
+			version = 2,
+		},
+		inheritedIndex = 4,
+	},
+
+	{
+		data =
+		{
+			actions =
+			{
+
+				{
+					data =
+					{
+						aType = "Lua",
+						actionLua = "-- data.northHornBeastBossID: real model-19535 encounter owner.\n-- data.northHornBeastTopazCircles: entity-attached crystal pre-draw UUIDs.\n-- data.northHornBeastVisibleStones: current visibility wave.\n-- data.northHornBeastEarlyFixedDraws: pre-drawn dangerous-room floor UUIDs.\nlocal entityID = eventArgs.entityID\nlocal model = Argus.getEntityModel(entityID)\nif model ~= 19535 and data.northHornBeastBossID ~= entityID then\n\tself.used = true\n\treturn\nend\n\nlocal function clearBeastState()\n\tfor _, uuid in pairs(data.northHornBeastTopazCircles or {}) do\n\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\tend\n\tfor _, uuid in ipairs(data.northHornBeastEarlyFixedDraws or {}) do\n\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\tend\n\tlocal roomState = data.northHornBeastTopazRoomWave\n\tif roomState and roomState.provisional then\n\t\tfor _, uuid in ipairs(roomState.provisional) do\n\t\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\t\tend\n\tend\n\tdata.northHornBeastTopazCircles = {}\n\tdata.northHornBeastVisibleStones = {}\n\tdata.northHornBeastTopazWaveToken = 0\n\tdata.northHornBeastCommittedCells = nil\n\tdata.northHornBeastEarlyFixedDraws = nil\n\tdata.northHornBeastEarlyFixedWaveToken = nil\n\tdata.northHornBeastTopazRoomWave = nil\nend\n\nif eventArgs.wasVisible == false then\n\tif data.northHornBeastBossID ~= entityID then\n\t\tclearBeastState()\n\t\tdata.northHornBeastBossID = entityID\n\tend\nelseif data.northHornBeastBossID == entityID then\n\tclearBeastState()\n\tdata.northHornBeastBossID = nil\nend\nself.used = true\n",
+						conditions =
+						{
+
+							{
+								"32000109-0000-4000-8000-000000000001",
+								true,
+							},
+
+							{
+								"32000109-0000-4000-8000-000000000301",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Reset or clean up the real boss",
+						uuid = "32000109-0000-4000-8000-000000000201",
+						version = 2.1,
+					},
+				},
+
+				{
+					data =
+					{
+						aType = "Lua",
+						actionLua = "local entityID = eventArgs.entityID\nlocal circles = data.northHornBeastTopazCircles or {}\nlocal visible = data.northHornBeastVisibleStones or {}\ndata.northHornBeastTopazCircles = circles\ndata.northHornBeastVisibleStones = visible\n\nif eventArgs.wasVisible == false then\n\tif not data.northHornBeastBossID then\n\t\tself.used = true\n\t\treturn\n\tend\n\tlocal stone = TensorCore.mGetEntity(entityID)\n\tif not stone or not stone.pos or Argus.getEntityModel(stone) ~= 19536 then\n\t\tself.used = true\n\t\treturn\n\tend\n\n\tif next(visible) == nil then\n\t\tfor _, uuid in ipairs(data.northHornBeastEarlyFixedDraws or {}) do\n\t\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\t\tend\n\t\tlocal oldState = data.northHornBeastTopazRoomWave\n\t\tif oldState and oldState.provisional then\n\t\t\tfor _, uuid in ipairs(oldState.provisional) do\n\t\t\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\t\t\tend\n\t\tend\n\t\tdata.northHornBeastTopazWaveToken =\n\t\t\t(data.northHornBeastTopazWaveToken or 0) + 1\n\t\tdata.northHornBeastCommittedCells = nil\n\t\tdata.northHornBeastEarlyFixedDraws = nil\n\t\tdata.northHornBeastEarlyFixedWaveToken = nil\n\t\tdata.northHornBeastTopazRoomWave = nil\n\tend\n\n\tvisible[entityID] = true\n\tcircles[entityID] =\n\t\tTensorCore.getMoogleDrawer():addTimedCircleOnEnt(600000, entityID, 4)\nelse\n\tlocal uuid = circles[entityID]\n\tif uuid then Argus.deleteTimedShape(uuid) end\n\tcircles[entityID] = nil\n\tvisible[entityID] = nil\n\n\tif next(visible) == nil then\n\t\tfor _, earlyUUID in ipairs(data.northHornBeastEarlyFixedDraws or {}) do\n\t\t\tif earlyUUID then Argus.deleteTimedShape(earlyUUID) end\n\t\tend\n\t\tlocal roomState = data.northHornBeastTopazRoomWave\n\t\tif roomState and roomState.provisional then\n\t\t\tfor _, provisionalUUID in ipairs(roomState.provisional) do\n\t\t\t\tif provisionalUUID then Argus.deleteTimedShape(provisionalUUID) end\n\t\t\tend\n\t\tend\n\t\tdata.northHornBeastCommittedCells = nil\n\t\tdata.northHornBeastEarlyFixedDraws = nil\n\t\tdata.northHornBeastEarlyFixedWaveToken = nil\n\t\tdata.northHornBeastTopazRoomWave = nil\n\tend\nend\nself.used = true\n",
+						conditions =
+						{
+
+							{
+								"32000109-0000-4000-8000-000000000001",
+								true,
+							},
+
+							{
+								"32000109-0000-4000-8000-000000000302",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Attach or remove Topaz circles",
+						uuid = "32000109-0000-4000-8000-000000000202",
+						version = 2.1,
+					},
+				},
+			},
+			conditions =
+			{
+
+				{
+					data =
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "Zone",
+						uuid = "32000109-0000-4000-8000-000000000001",
+						version = 3,
+					},
+				},
+
+				{
+					data =
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 14791,
+						name = "Atlas Carbuncle visibility",
+						uuid = "32000109-0000-4000-8000-000000000301",
+						version = 3,
+					},
+				},
+
+				{
+					data =
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 14792,
+						name = "Topaz Stone visibility",
+						uuid = "32000109-0000-4000-8000-000000000302",
+						version = 3,
+					},
+				},
+			},
+			eventType = 22,
+			name = "[A Beast Unleashed] Visibility Lifecycle",
+			uuid = "32000109-0000-4000-8000-000000000999",
+			version = 2,
+		},
+	},
+
+	{
+		data =
+		{
+			actions =
+			{
+
+				{
+					data =
+					{
+						aType = "Lua",
+						actionLua = "local token = data.northHornBeastTopazWaveToken or 0\nif data.northHornBeastEarlyFixedWaveToken == token then\n\tself.used = true\n\treturn\nend\n\nlocal now = Now()\nlocal timeout = ((eventArgs.duration or 2.7) + 0.35) * 1000\nlocal state = data.northHornBeastTopazRoomWave\nif not state or now - state.lastSeen > 1500 then\n\tstate = { lastSeen = now, contacts = {}, provisional = {}, committed = false }\n\tdata.northHornBeastTopazRoomWave = state\nend\nstate.lastSeen = now\nif state.committed then\n\tself.used = true\n\treturn\nend\n\nlocal column = math.max(0, math.min(3, math.floor((eventArgs.x - 218) / 10)))\nlocal row = math.max(0, math.min(3, math.floor((eventArgs.z - 332) / 10)))\nlocal centerX = 223 + (column * 10)\nlocal centerZ = 337 + (row * 10)\nlocal dx, dz = eventArgs.x - centerX, eventArgs.z - centerZ\nlocal wallDX, wallDZ = 0, 0\nif math.abs(dx) > math.abs(dz) then\n\twallDX = dx > 0 and 1 or -1\nelse\n\twallDZ = dz > 0 and 1 or -1\nend\n\nlocal key = column .. \":\" .. row\nfor _, contact in ipairs(state.contacts) do\n\tif contact.key == key then\n\t\tself.used = true\n\t\treturn\n\tend\nend\nstate.contacts[#state.contacts + 1] =\n\t{ key = key, x = column, z = row, dx = wallDX, dz = wallDZ }\n\nlocal dangerDrawer = TensorCore.getStaticFlatDrawer(2818572543)\nif #state.contacts < 3 then\n\tlocal qx = math.floor(column / 2) * 2\n\tlocal qz = math.floor(row / 2) * 2\n\tfor rz = qz, qz + 1 do\n\t\tfor cx = qx, qx + 1 do\n\t\t\tlocal x = 223 + (cx * 10)\n\t\t\tlocal z = 337 + (rz * 10)\n\t\t\tlocal uuid = dangerDrawer:addTimedCenteredRect(\n\t\t\t\tmath.max(100, timeout - 350), x, eventArgs.y + 0.02,\n\t\t\t\tz, 10, 10, 0, 350)\n\t\t\tif uuid then state.provisional[#state.provisional + 1] = uuid end\n\t\tend\n\tend\n\tself.used = true\n\treturn\nend\n\nfor _, uuid in ipairs(state.provisional) do\n\tif uuid then Argus.deleteTimedShape(uuid) end\nend\nstate.provisional = {}\n\nlocal tilings = data.northHornBeastLRoomTilings\nif not tilings then return end\n\nlocal matches = {}\nfor _, tiling in ipairs(tilings) do\n\tlocal roomForCell = {}\n\tfor roomIndex, room in ipairs(tiling) do\n\t\tfor _, cell in ipairs(room) do roomForCell[cell] = roomIndex end\n\tend\n\n\tlocal valid = true\n\tfor _, contact in ipairs(state.contacts) do\n\t\tlocal cell = (contact.z * 4) + contact.x\n\t\tlocal neighbour =\n\t\t\t((contact.z + contact.dz) * 4) + contact.x + contact.dx\n\t\tif roomForCell[cell] == roomForCell[neighbour] then\n\t\t\tvalid = false\n\t\t\tbreak\n\t\tend\n\tend\n\tif valid then\n\t\tmatches[#matches + 1] = { tiling = tiling, roomForCell = roomForCell }\n\tend\nend\n\nlocal cells = {}\nfor _, match in ipairs(matches) do\n\tfor _, contact in ipairs(state.contacts) do\n\t\tlocal cell = (contact.z * 4) + contact.x\n\t\tlocal room = match.tiling[match.roomForCell[cell]]\n\t\tfor _, roomCell in ipairs(room) do cells[roomCell] = true end\n\tend\nend\nif #matches == 0 then\n\tfor _, contact in ipairs(state.contacts) do\n\t\tcells[(contact.z * 4) + contact.x] = true\n\tend\nend\n\nfor cell in pairs(cells) do\n\tlocal x = 223 + ((cell % 4) * 10)\n\tlocal z = 337 + (math.floor(cell / 4) * 10)\n\tdangerDrawer:addTimedCenteredRect(\n\t\ttimeout, x, eventArgs.y + 0.02, z, 10, 10, 0)\nend\ndata.northHornBeastCommittedCells = { token = token, cells = cells }\nstate.committed = true\nd(\"A Beast Unleashed L-room matches: \" .. tostring(#matches))\nself.used = true\n",
+						conditions =
+						{
+
+							{
+								"32000112-0000-4000-8000-000000000001",
+								true,
+							},
+
+							{
+								"32000112-0000-4000-8000-000000000301",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Draw dangerous Topaz rooms",
+						uuid = "32000112-0000-4000-8000-000000000201",
+						version = 2.1,
+					},
+				},
+
+				{
+					data =
+					{
+						aType = "Lua",
+						actionLua = "local drawer = TensorCore.getMoogleDrawer()\nlocal duration = eventArgs.duration or 5.7\nlocal firstTimeout = (duration + 0.3) * 1000\ndrawer:addTimedCone(\n\tfirstTimeout, eventArgs.x, eventArgs.y, eventArgs.z,\n\teventArgs.aoeLength or 45, math.pi, eventArgs.heading)\ndrawer:addTimedCone(\n\t3300, eventArgs.x, eventArgs.y, eventArgs.z,\n\teventArgs.aoeLength or 45, math.pi, eventArgs.heading + math.pi,\n\tfirstTimeout)\nd(\"A Beast Unleashed Claw/Tail\")\nself.used = true\n",
+						conditions =
+						{
+
+							{
+								"32000112-0000-4000-8000-000000000001",
+								true,
+							},
+
+							{
+								"32000112-0000-4000-8000-000000000302",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Draw Claw and Tail sequence",
+						uuid = "32000112-0000-4000-8000-000000000202",
+						version = 2.1,
+					},
+				},
+			},
+			conditions =
+			{
+
+				{
+					data =
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "Zone",
+						uuid = "32000112-0000-4000-8000-000000000001",
+						version = 3,
+					},
+				},
+
+				{
+					data =
+					{
+						category = "Lua",
+						conditionLua = "return eventArgs.contentID == 14792 and eventArgs.aoeID == 48281\n",
+						dequeueIfLuaFalse = true,
+						name = "Topaz room contact AOE",
+						uuid = "32000112-0000-4000-8000-000000000301",
+						version = 3,
+					},
+				},
+
+				{
+					data =
+					{
+						category = "Lua",
+						conditionLua = "local id = eventArgs.aoeID\nreturn eventArgs.contentID == 14791 and (id == 48294 or id == 48295)\n",
+						dequeueIfLuaFalse = true,
+						name = "Claw or Tail AOE",
+						uuid = "32000112-0000-4000-8000-000000000302",
+						version = 3,
+					},
+				},
+			},
+			eventType = 18,
+			name = "[A Beast Unleashed] AOE Draws",
+			uuid = "32000112-0000-4000-8000-000000000999",
+			version = 2,
+		},
+	},
 	{
 		data = 
 		{
