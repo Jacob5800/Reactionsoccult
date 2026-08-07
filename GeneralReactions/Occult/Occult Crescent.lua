@@ -20205,7 +20205,7 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "local entityID = eventArgs.entityID\nlocal wind = TensorCore.mGetEntity(entityID)\nif not wind or not wind.pos then return end\ndata.northHornBitingWindStars = data.northHornBitingWindStars or {}\n\nlocal old = data.northHornBitingWindStars[entityID]\nif old then\n\tfor _, uuid in ipairs(old) do Argus.deleteTimedShape(uuid) end\nend\n\n-- Tendon Ripper is two 60x8 crosses offset by 45 degrees.  Absolute heading\n-- keeps the eight-pointed star aligned with the logged world-space AOEs while\n-- OnEnt follows the marked wind as it finishes moving into position.\nlocal drawer = TensorCore.getMoogleDrawer()\nif not drawer then return end\ndata.northHornBitingWindStars[entityID] = {\n\tdrawer:addTimedCrossOnEnt(5200, entityID, 60, 8, nil, nil, nil, nil, 0, true),\n\tdrawer:addTimedCrossOnEnt(5200, entityID, 60, 8, nil, nil, nil, nil, math.pi / 4, true),\n}\nself.used = true\n",
+						actionLua = "local entityID = eventArgs.entityID\nlocal wind = TensorCore.mGetEntity(entityID)\nif not wind or not wind.pos then return end\ndata.northHornBitingWindStars = data.northHornBitingWindStars or {}\n\nlocal old = data.northHornBitingWindStars[entityID]\nif old then\n\tfor _, uuid in ipairs(old) do Argus.deleteTimedShape(uuid) end\nend\n\nlocal centerX, centerZ = -150, -860\nlocal dx, dz = wind.pos.x - centerX, wind.pos.z - centerZ\nlocal markerRadius = math.sqrt(dx * dx + dz * dz)\nif markerRadius < 0.01 then return end\n\nlocal finalRadius = markerRadius < 16 and 12 or 20\nlocal turn = markerRadius < 16 and 0.6074 or 0.7012\nlocal motion = data.northHornBitingWindMotion and data.northHornBitingWindMotion[entityID]\n-- Inner and outer winds can reverse between sets. Their recent angular motion,\n-- rather than entity heading, determines which way the marked wind will turn.\nlocal direction = motion and motion.direction\nif not direction then direction = markerRadius < 16 and 1 or -1 end\nlocal finalAngle = math.atan2(dz, dx) + direction * turn\nlocal finalX = centerX + finalRadius * math.cos(finalAngle)\nlocal finalZ = centerZ + finalRadius * math.sin(finalAngle)\n\nlocal drawer = TensorCore.getMoogleDrawer()\nif not drawer then return end\ndata.northHornBitingWindStars[entityID] = {\n\tdrawer:addTimedCross(5200, finalX, wind.pos.y + 0.02, finalZ, 60, 8, 0),\n\tdrawer:addTimedCross(5200, finalX, wind.pos.y + 0.02, finalZ, 60, 8, math.pi / 4),\n}\nself.used = true\n",
 						conditions = 
 						{
 							
@@ -20255,12 +20255,79 @@ local tbl =
 				},
 			},
 			eventType = 4,
-			name = "[Lost on the Wind] Abductor - Biting Wind Star",
+			name = "[Lost on the Wind] Tendon Ripper",
 			uuid = "5fb56afa-2b33-b5a5-b04a-3d1fe8f7279a",
 			version = 2,
 		},
 	},
 	
+	{
+		data =
+		{
+			actions =
+			{
+
+				{
+					data =
+					{
+						aType = "Lua",
+						actionLua = "-- data.northHornBitingWindMotion: recent angle and turn direction by wind entity.\n-- data.northHornBitingWindSeen: reusable per-tick visibility set.\nlocal now = Now()\nlocal motionStates = data.northHornBitingWindMotion or {}\nlocal seenWinds = data.northHornBitingWindSeen or {}\ndata.northHornBitingWindMotion = motionStates\ndata.northHornBitingWindSeen = seenWinds\nfor entityID in pairs(seenWinds) do seenWinds[entityID] = nil end\n\nfor _, wind in pairs(TensorCore.entityList(\"contentid=14506,maxdistance=100\") or {}) do\n\tif wind.id and wind.pos and Argus.getEntityModel(wind) == 19426 and Argus.isEntityVisible(wind) then\n\t\tseenWinds[wind.id] = true\n\t\tlocal angle = math.atan2(wind.pos.z + 860, wind.pos.x + 150)\n\t\tlocal state = motionStates[wind.id] or {}\n\t\tif state.angle then\n\t\t\tlocal delta = angle - state.angle\n\t\t\twhile delta > math.pi do delta = delta - 2 * math.pi end\n\t\t\twhile delta < -math.pi do delta = delta + 2 * math.pi end\n\t\t\t-- Reject stationary jitter and replay discontinuities.\n\t\t\tif math.abs(delta) > 0.002 and math.abs(delta) < 0.25 then\n\t\t\t\tstate.direction = delta > 0 and 1 or -1\n\t\t\tend\n\t\tend\n\t\tstate.angle = angle\n\t\tstate.seen = now\n\t\tmotionStates[wind.id] = state\n\tend\nend\n\nfor entityID, state in pairs(motionStates) do\n\tif not seenWinds[entityID] and now - (state.seen or 0) > 20000 then\n\t\tmotionStates[entityID] = nil\n\tend\nend\nself.used = true\n",
+						conditions =
+						{
+
+							{
+								"32000115-0000-4000-8000-000000000001",
+								true,
+							},
+
+							{
+								"32000115-0000-4000-8000-000000000002",
+								true,
+							},
+						},
+						gVar = "ACR_RikuMNK3_CD",
+						name = "Track Biting Wind rotation",
+						uuid = "32000115-0000-4000-8000-000000000101",
+						version = 2.1,
+					},
+				},
+			},
+			conditions =
+			{
+
+				{
+					data =
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "North Horn",
+						uuid = "32000115-0000-4000-8000-000000000001",
+						version = 3,
+					},
+				},
+
+				{
+					data =
+					{
+						category = "Self",
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						name = "In Combat",
+						uuid = "32000115-0000-4000-8000-000000000002",
+						version = 3,
+					},
+				},
+			},
+			eventType = 12,
+			name = "[Lost on the Wind] Tendon Ripper Tracking",
+			throttleTime = 100,
+			uuid = "32000115-0000-4000-8000-000000000999",
+			version = 2,
+		},
+	},
+
 	{
 		data = 
 		{
