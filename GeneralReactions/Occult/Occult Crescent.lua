@@ -21119,23 +21119,18 @@ local tbl =
 					data = 
 					{
 						aType = "Lua",
-						actionLua = "local entityID = eventArgs.entityID\ndata.quarriedGolemCones = data.quarriedGolemCones or {}\n\nlocal old = data.quarriedGolemCones[entityID]\nif old then\n\tArgus.deleteTimedShape(old)\n\tdata.quarriedGolemCones[entityID] = nil\nend\n\n-- wasVisible=false means this callback is the transition into visibility.\n-- One entity-attached timed cone follows both position and facing internally,\n-- replacing two entityList scans plus a Lua draw call on every frame.\n-- Acclaim 47157/47158 are logged as 40y, 90-degree cones.\nif eventArgs.wasVisible == false then\n\tdata.quarriedGolemCones[entityID] = TensorCore.getMoogleDrawer():addTimedConeOnEnt(600000, entityID, 40, math.rad(90))\nend\nself.used = true\n",
+						actionLua = "local now = Now()\nif data.northHornQuarriedScanNext and now < data.northHornQuarriedScanNext then\n\tself.used = true\n\treturn\nend\ndata.northHornQuarriedScanNext = now + 100\n\nlocal predictions = data.northHornQuarriedGolemPredictions or {}\ndata.northHornQuarriedGolemPredictions = predictions\n\nlocal bosses = TensorCore.entityList(\"contentid=14509,maxdistance=80\")\nif not table.valid(bosses) then\n\tfor entityID, prediction in pairs(predictions) do\n\t\tfor _, uuid in ipairs(prediction.draws or {}) do\n\t\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\t\tend\n\t\tpredictions[entityID] = nil\n\tend\n\tdata.northHornQuarriedSeenAOEs = {}\n\tself.used = true\n\treturn\nend\n\nlocal drawer = TensorCore.getMoogleDrawer()\nif not drawer then return end\n\n-- Visibility fixes the first cone before its AOE exists. Helper model 20157\n-- exposes aura 2843/2844/2845/2846 for three/two/one/zero left turns.\nlocal visible = data.northHornQuarriedVisibleScratch or {}\ndata.northHornQuarriedVisibleScratch = visible\nfor entityID in pairs(visible) do visible[entityID] = nil end\n\nfor _, golem in pairs(TensorCore.entityList(\"contentid=14510,maxdistance=80\") or {}) do\n\tif golem.id and golem.pos and golem.pos.h ~= nil and Argus.isEntityVisible(golem) then\n\t\tvisible[golem.id] = true\n\t\tif not predictions[golem.id] then\n\t\t\tlocal uuid = drawer:addTimedCone(13400, golem.pos.x, golem.pos.y + 0.02,\n\t\t\t\tgolem.pos.z, 40, math.pi / 2, golem.pos.h)\n\t\t\tpredictions[golem.id] = {\n\t\t\t\tdraws = { uuid },\n\t\t\t\tfutureDraws = {},\n\t\t\t\tfutureHeadings = {},\n\t\t\t\tx = golem.pos.x,\n\t\t\t\ty = golem.pos.y + 0.02,\n\t\t\t\tz = golem.pos.z,\n\t\t\t\theading = golem.pos.h,\n\t\t\t\tfirstEndAt = now + 13400,\n\t\t\t\tfollowSeen = 0,\n\t\t\t}\n\t\tend\n\tend\nend\nfor entityID, prediction in pairs(predictions) do\n\tif not visible[entityID] then\n\t\tfor _, uuid in ipairs(prediction.draws or {}) do\n\t\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\t\tend\n\t\tpredictions[entityID] = nil\n\tend\nend\n\nfor _, arrow in pairs(TensorCore.entityList(\"contentid=108,maxdistance=80\") or {}) do\n\tif arrow.id and Argus.getEntityModel(arrow) == 20157 then\n\t\tlocal persistentAura, activeAura1, activeAura2 = Argus.getEntityAuras(arrow)\n\t\tlocal turnAura = activeAura1\n\t\tif not turnAura or turnAura < 2843 or turnAura > 2846 then\n\t\t\tturnAura = activeAura2\n\t\tend\n\t\tif not turnAura or turnAura < 2843 or turnAura > 2846 then\n\t\t\tturnAura = persistentAura\n\t\tend\n\t\tif not turnAura or turnAura < 2843 or turnAura > 2846 then\n\t\t\tturnAura = nil\n\t\tend\n\t\tif turnAura then\n\t\t\tlocal golem = TensorCore.mGetEntity(arrow.id + 1)\n\t\t\tlocal prediction = golem and predictions[golem.id]\n\t\t\tif prediction and prediction.turnAura ~= turnAura then\n\t\t\t\tfor _, uuid in ipairs(prediction.futureDraws or {}) do\n\t\t\t\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\t\t\t\tend\n\t\t\t\tprediction.futureDraws = {}\n\t\t\t\tprediction.futureHeadings = {}\n\t\t\t\tprediction.followSeen = 0\n\t\t\t\tprediction.turnAura = turnAura\n\t\t\t\tprediction.heading = golem.pos.h\n\t\t\t\tlocal turns = math.max(0, math.min(3, 2846 - turnAura))\n\t\t\t\tlocal firstEndAt = prediction.firstEndAt or (now + 10400)\n\t\t\t\tlocal startOffsets = { 0, 8350, 15900 }\n\t\t\t\tlocal durations = { 8350, 7550, 7550 }\n\t\t\t\tfor index = 1, 3 do\n\t\t\t\t\tlocal heading = prediction.heading\n\t\t\t\t\t\t- (math.min(index, turns) * (math.pi / 2))\n\t\t\t\t\tprediction.futureHeadings[index] = heading\n\n\t\t\t\t\tlocal startAt = firstEndAt + startOffsets[index]\n\t\t\t\t\tlocal endAt = startAt + durations[index]\n\t\t\t\t\tif endAt > now then\n\t\t\t\t\t\tlocal delay = math.max(0, startAt - now)\n\t\t\t\t\t\tlocal timeout = endAt - math.max(now, startAt)\n\t\t\t\t\t\tlocal uuid = drawer:addTimedCone(timeout,\n\t\t\t\t\t\t\tprediction.x, prediction.y, prediction.z, 40,\n\t\t\t\t\t\t\tmath.pi / 2, heading, delay)\n\t\t\t\t\t\tprediction.futureDraws[index] = uuid\n\t\t\t\t\t\tprediction.draws[#prediction.draws + 1] = uuid\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\tend\nend\n\nlocal seenAOEs = data.northHornQuarriedSeenAOEs or {}\ndata.northHornQuarriedSeenAOEs = seenAOEs\nfor _, aoe in ipairs(Argus.getCurrentAOEs() or {}) do\n\tlocal id = aoe.aoeID\n\tlocal isGolem = aoe.contentID == 14510 and (id == 47157 or id == 47158)\n\tlocal isCombination = aoe.contentID == 14509 and (id == 47166 or id == 47167)\n\tif (isGolem or isCombination) and aoe.x and aoe.y and aoe.z and aoe.heading ~= nil then\n\t\tlocal key = string.format(\"%s:%s:%.2f:%.2f:%.3f:%s\",\n\t\t\taoe.entityID or 0, id, aoe.x, aoe.z, aoe.heading, aoe.startTime or 0)\n\t\tif not seenAOEs[key] then\n\t\t\tseenAOEs[key] = now\n\t\t\tlocal duration = aoe.duration or (id == 47157 and 11.7 or 2.7)\n\t\t\tif isCombination then\n\t\t\t\tduration = aoe.duration or 4.7\n\t\t\t\tdrawer:addTimedCone((duration + 0.3) * 1000, aoe.x, aoe.y, aoe.z,\n\t\t\t\t\taoe.aoeLength or 40, math.pi, aoe.heading)\n\t\t\t\tdrawer:addTimedCone(2500, aoe.x, aoe.y, aoe.z,\n\t\t\t\t\taoe.aoeLength or 40, math.pi, aoe.heading + math.pi, duration * 1000)\n\t\t\t\td(\"Quarried Away Left/Right Combination\")\n\t\t\telseif id == 47157 then\n\t\t\t\tlocal prediction = predictions[aoe.entityID]\n\t\t\t\tlocal samePrediction = prediction\n\t\t\t\t\tand math.abs(prediction.x - aoe.x) < 0.5\n\t\t\t\t\tand math.abs(prediction.z - aoe.z) < 0.5\n\t\t\t\t\tand math.abs(math.atan2(math.sin(prediction.heading - aoe.heading), math.cos(prediction.heading - aoe.heading))) < 0.05\n\t\t\t\tif not samePrediction then\n\t\t\t\t\tif prediction then\n\t\t\t\t\t\tfor _, uuid in ipairs(prediction.draws or {}) do\n\t\t\t\t\t\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\t\t\t\t\t\tend\n\t\t\t\t\tend\n\t\t\t\t\tlocal firstTimeout = (duration + 0.3) * 1000\n\t\t\t\t\tlocal uuid = drawer:addTimedCone(firstTimeout,\n\t\t\t\t\t\taoe.x, aoe.y, aoe.z, aoe.aoeLength or 40, math.pi / 2, aoe.heading)\n\t\t\t\t\tpredictions[aoe.entityID] = {\n\t\t\t\t\t\tdraws = { uuid },\n\t\t\t\t\t\tfutureDraws = {},\n\t\t\t\t\t\tfutureHeadings = {},\n\t\t\t\t\t\tx = aoe.x,\n\t\t\t\t\t\ty = aoe.y,\n\t\t\t\t\t\tz = aoe.z,\n\t\t\t\t\t\theading = aoe.heading,\n\t\t\t\t\t\tfirstEndAt = now + firstTimeout,\n\t\t\t\t\t\tfollowSeen = 0,\n\t\t\t\t\t}\n\t\t\t\tend\n\t\t\telse\n\t\t\t\tlocal prediction = predictions[aoe.entityID]\n\t\t\t\tlocal followIndex = prediction and ((prediction.followSeen or 0) + 1)\n\t\t\t\tlocal expected = followIndex and prediction.futureHeadings[followIndex]\n\t\t\t\tlocal samePrediction = expected\n\t\t\t\t\tand math.abs(math.atan2(math.sin(expected - aoe.heading), math.cos(expected - aoe.heading))) < 0.05\n\t\t\t\tif prediction then prediction.followSeen = followIndex end\n\t\t\t\tif not samePrediction then\n\t\t\t\t\tlocal wrong = prediction and prediction.futureDraws[followIndex]\n\t\t\t\t\tif wrong then Argus.deleteTimedShape(wrong) end\n\t\t\t\t\tdrawer:addTimedCone((duration + 0.3) * 1000,\n\t\t\t\t\t\taoe.x, aoe.y, aoe.z, aoe.aoeLength or 40,\n\t\t\t\t\t\tmath.pi / 2, aoe.heading)\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\tend\nend\n\nfor key, lastSeen in pairs(seenAOEs) do\n\tif now - lastSeen > 20000 then seenAOEs[key] = nil end\nend\nself.used = true",
 						conditions = 
 						{
 							
 							{
-								"8aa5dab9-07b4-c939-8637-95f047979491",
-								true,
-							},
-							
-							{
-								"4c39a4d4-1c1f-cdb2-b190-09bd29eef1ce",
+								"32000026-0000-4000-8000-000000000001",
 								true,
 							},
 						},
 						gVar = "ACR_RikuMNK3_CD",
-						name = "Attach or remove golem cone",
-						uuid = "ae2f290f-c726-f303-ae79-789c4b1af79e",
+						name = "Scan Quarried Away mechanics",
+						uuid = "32000026-0000-4000-8000-000000000101",
 						version = 2.1,
 					},
 				},
@@ -21150,29 +21145,19 @@ local tbl =
 						conditionType = 8,
 						dequeueIfLuaFalse = true,
 						localmapid = 1346,
-						name = "Zone",
-						uuid = "8aa5dab9-07b4-c939-8637-95f047979491",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return eventArgs.entityContentID == 14510",
-						dequeueIfLuaFalse = true,
-						name = "Alabaster Golem visibility",
-						uuid = "4c39a4d4-1c1f-cdb2-b190-09bd29eef1ce",
+						name = "North Horn zone",
+						uuid = "32000026-0000-4000-8000-000000000001",
 						version = 3,
 					},
 				},
 			},
-			eventType = 22,
-			name = "[Quarried Away] Golem Cones",
-			uuid = "e77c80ea-6d38-9334-9c6b-91ef979235a3",
+			eventType = 12,
+			name = "[Quarried Away] Draws",
+			throttleTime = 100,
+			uuid = "c5f4f5bb-2ed9-59b0-b7b5-11a50aeb7af0",
 			version = 2,
 		},
+		inheritedIndex = 91,
 	},
 	
 	{
