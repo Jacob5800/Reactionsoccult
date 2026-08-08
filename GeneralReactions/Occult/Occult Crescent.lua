@@ -195,7 +195,6 @@ local tbl =
 					{
 						buffID = 148,
 						category = "Self",
-						dequeueIfLuaFalse = true,
 						name = "Is Rezzed",
 						uuid = "0ace1003-5839-1467-a022-b288a25b9b23",
 						version = 3,
@@ -280,7 +279,6 @@ local tbl =
 						buffCheckType = 2,
 						buffID = 148,
 						category = "Self",
-						dequeueIfLuaFalse = true,
 						name = "Is Rezzing",
 						uuid = "ef2ee77d-190e-cd39-a12d-01014fccf2ca",
 						version = 3,
@@ -439,7 +437,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "77b8eed8-0cfb-695a-a37c-568bb356cfeb",
@@ -458,7 +456,6 @@ local tbl =
 							148,
 						},
 						category = "Self",
-						dequeueIfLuaFalse = true,
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "269ed8e2-ad8e-db38-bd40-81e0877c72b2",
@@ -613,7 +610,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "5fdd4621-9183-81d3-a553-2ad42b69ce8d",
@@ -632,7 +629,6 @@ local tbl =
 							148,
 						},
 						category = "Self",
-						dequeueIfLuaFalse = true,
 						matchAnyBuff = true,
 						name = "Not Invuln",
 						uuid = "7c1ff095-31ec-f18b-a239-a2c53c4b9b18",
@@ -803,7 +799,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "0871ec24-fb24-fa3d-97e0-3425718700b7",
@@ -939,7 +935,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "f4209989-03cd-661a-b174-709466776706",
@@ -1191,7 +1187,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "db68b232-24e2-2a01-ac29-564ead6c714c",
@@ -1356,7 +1352,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "db68b232-24e2-2a01-ac29-564ead6c714c",
@@ -1537,7 +1533,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "d6d91e2f-272b-5401-ad3f-f0a5c81c766e",
@@ -1704,7 +1700,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "5236742b-6d45-ba4b-9afc-fb4fc5a75597",
@@ -2056,7 +2052,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
@@ -2295,7 +2291,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "8cda3bac-be8c-b63c-8e06-ca48d73102b1",
@@ -2456,7 +2452,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "5236742b-6d45-ba4b-9afc-fb4fc5a75597",
@@ -2683,7 +2679,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "214333af-724c-d8c7-bc32-505803dec7ff",
@@ -2931,7 +2927,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "e7de50ca-b2f8-752a-b528-db724f2d7054",
@@ -3167,7 +3163,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "8cd3436d-3f52-7195-90f3-7354696e0e09",
@@ -3440,7 +3436,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "9f487160-bb6b-c2c6-9ed3-d248843da14e",
@@ -3967,7 +3963,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "6ede6f2b-f21f-34fc-ac8f-17712a883aee",
@@ -4267,7 +4263,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "c4e0c01f-1174-3e48-956e-41193f15da26",
@@ -4829,7 +4825,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "25526db7-3e90-fe08-8df1-b0585e2b38fc",
@@ -5118,7 +5114,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Is Bot Running",
 						uuid = "ffcb081e-e4a0-b915-a944-7bd08ffdac93",
@@ -5648,7 +5644,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "e7de50ca-b2f8-752a-b528-db724f2d7054",
@@ -5957,7 +5953,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "e7de50ca-b2f8-752a-b528-db724f2d7054",
@@ -6350,7 +6346,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "e7de50ca-b2f8-752a-b528-db724f2d7054",
@@ -6899,7 +6895,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "e7de50ca-b2f8-752a-b528-db724f2d7054",
@@ -7134,7 +7130,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "2f5da793-8d62-b900-91b7-d2287c31ad94",
@@ -7359,7 +7355,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "c98fc8ca-3024-f3e1-b80d-5a6ca8a4846b",
@@ -7550,7 +7546,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "2ade3bb0-fe6c-ce0d-8fb3-6e7565b3a2e2",
@@ -7912,7 +7908,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "a9b88350-2ec7-4cf1-b280-4a09d50599df",
@@ -8172,7 +8168,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Assist Enabled",
 						uuid = "0a49f18a-75ad-dbf1-9ca1-e4c496d8eead",
@@ -8358,7 +8354,7 @@ local tbl =
 							1252,
 							1346,
 						},
-						name = "South Horn",
+						name = "In Occult Crescent",
 						uuid = "d8720967-962e-a798-b184-d2ca5366f741",
 						version = 3,
 					},
@@ -8395,7 +8391,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "4bf7209d-8c34-782c-a4dd-63b77e3e4ae6",
@@ -8648,7 +8644,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Is Bot Running",
 						uuid = "ffcb081e-e4a0-b915-a944-7bd08ffdac93",
@@ -9253,7 +9249,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Is Bot Running",
 						uuid = "ffcb081e-e4a0-b915-a944-7bd08ffdac93",
@@ -9467,6 +9463,11 @@ local tbl =
 							},
 							
 							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
+								true,
+							},
+							
+							{
 								"90bd2c89-b805-648a-943e-2651ec846a83",
 								true,
 							},
@@ -9499,12 +9500,17 @@ local tbl =
 							},
 							
 							{
-								"3d9c3f4a-8ce0-f2d3-b8b1-12171b7f545a",
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
 								true,
 							},
 							
 							{
 								"89cd4f40-9c8d-d5df-9afd-70c398c173b4",
+								true,
+							},
+							
+							{
+								"3d9c3f4a-8ce0-f2d3-b8b1-12171b7f545a",
 								true,
 							},
 						},
@@ -9526,6 +9532,11 @@ local tbl =
 							
 							{
 								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
 								true,
 							},
 							
@@ -9561,6 +9572,11 @@ local tbl =
 							},
 							
 							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
+								true,
+							},
+							
+							{
 								"93783665-3a39-218a-b4c7-05aeb1a3a810",
 								true,
 							},
@@ -9588,6 +9604,11 @@ local tbl =
 							
 							{
 								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
 								true,
 							},
 							
@@ -9623,6 +9644,11 @@ local tbl =
 							},
 							
 							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
+								true,
+							},
+							
+							{
 								"93783665-3a39-218a-b4c7-05aeb1a3a810",
 								true,
 							},
@@ -9654,6 +9680,11 @@ local tbl =
 							},
 							
 							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
+								true,
+							},
+							
+							{
 								"93783665-3a39-218a-b4c7-05aeb1a3a810",
 								true,
 							},
@@ -9681,6 +9712,11 @@ local tbl =
 							
 							{
 								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
 								true,
 							},
 							
@@ -9721,6 +9757,11 @@ local tbl =
 							},
 							
 							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
+								true,
+							},
+							
+							{
 								"93783665-3a39-218a-b4c7-05aeb1a3a810",
 								true,
 							},
@@ -9757,6 +9798,11 @@ local tbl =
 							},
 							
 							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
+								true,
+							},
+							
+							{
 								"93bd23e8-5273-57ec-8a76-b5c3e6af25c2",
 								true,
 							},
@@ -9784,6 +9830,11 @@ local tbl =
 							
 							{
 								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
 								true,
 							},
 							
@@ -9820,6 +9871,11 @@ local tbl =
 							},
 							
 							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
+								true,
+							},
+							
+							{
 								"93bd23e8-5273-57ec-8a76-b5c3e6af25c2",
 								true,
 							},
@@ -9851,6 +9907,11 @@ local tbl =
 							},
 							
 							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
+								true,
+							},
+							
+							{
 								"93bd23e8-5273-57ec-8a76-b5c3e6af25c2",
 								true,
 							},
@@ -9878,6 +9939,11 @@ local tbl =
 							
 							{
 								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
 								true,
 							},
 							
@@ -9923,6 +9989,11 @@ local tbl =
 							},
 							
 							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
+								true,
+							},
+							
+							{
 								"902b4fee-08f0-ccc3-93e5-8387b8bdba36",
 								true,
 							},
@@ -9950,6 +10021,11 @@ local tbl =
 							
 							{
 								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
 								true,
 							},
 							
@@ -9985,6 +10061,11 @@ local tbl =
 							},
 							
 							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
+								true,
+							},
+							
+							{
 								"902b4fee-08f0-ccc3-93e5-8387b8bdba36",
 								true,
 							},
@@ -10012,6 +10093,11 @@ local tbl =
 							
 							{
 								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
 								true,
 							},
 							
@@ -10052,6 +10138,11 @@ local tbl =
 							},
 							
 							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
+								true,
+							},
+							
+							{
 								"902b4fee-08f0-ccc3-93e5-8387b8bdba36",
 								true,
 							},
@@ -10088,6 +10179,11 @@ local tbl =
 							},
 							
 							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
+								true,
+							},
+							
+							{
 								"90d5d356-377c-d333-89cc-42097385bb58",
 								true,
 							},
@@ -10115,6 +10211,11 @@ local tbl =
 							
 							{
 								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
 								true,
 							},
 							
@@ -10150,6 +10251,11 @@ local tbl =
 							},
 							
 							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
+								true,
+							},
+							
+							{
 								"90d5d356-377c-d333-89cc-42097385bb58",
 								true,
 							},
@@ -10177,6 +10283,11 @@ local tbl =
 							
 							{
 								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
 								true,
 							},
 							
@@ -10212,6 +10323,11 @@ local tbl =
 							},
 							
 							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
+								true,
+							},
+							
+							{
 								"90d5d356-377c-d333-89cc-42097385bb58",
 								true,
 							},
@@ -10239,6 +10355,11 @@ local tbl =
 							
 							{
 								"b7995653-e4e2-e753-91d9-89e71703711c",
+								true,
+							},
+							
+							{
+								"1dab3d74-cd88-7842-9407-fc9bf278a861",
 								true,
 							},
 							
@@ -10293,6 +10414,19 @@ local tbl =
 						uuid = "b7995653-e4e2-e753-91d9-89e71703711c",
 						version = 3,
 					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
+						dequeueIfLuaFalse = true,
+						name = "Is Bot Running",
+						uuid = "1dab3d74-cd88-7842-9407-fc9bf278a861",
+						version = 3,
+					},
+					inheritedIndex = 2,
 				},
 				
 				{
@@ -10660,7 +10794,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "ffbc6bd6-f41a-fea3-a827-6c080a314acc",
@@ -11200,7 +11334,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "6500ed18-f48e-10a5-9639-02727a1485c8",
@@ -11664,7 +11798,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
@@ -12135,7 +12269,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "99c73f6d-ab4e-f13c-a138-49090c198497",
@@ -12485,7 +12619,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "2313ec24-56c9-f3da-9dae-cd45fa21c991",
@@ -12689,11 +12823,6 @@ local tbl =
 							},
 							
 							{
-								"73fada43-7a3e-1eb8-bcbb-9c455c2e639b",
-								true,
-							},
-							
-							{
 								"4422212c-3126-2a92-a5fe-15dcceb5fb00",
 								false,
 							},
@@ -12742,11 +12871,6 @@ local tbl =
 							
 							{
 								"59a38c75-1a1a-984b-9728-4c51ae771b49",
-								true,
-							},
-							
-							{
-								"c42bc024-b3fc-93de-b4ab-3a9ee2948f9d",
 								true,
 							},
 							
@@ -12839,7 +12963,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "205ce590-576c-805f-bb70-b65b01a445fe",
@@ -12987,30 +13111,6 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return PWHMToggles.ST ~= nil and PWHMToggles.ST",
-						dequeueIfLuaFalse = true,
-						name = "Toggle - ST",
-						uuid = "73fada43-7a3e-1eb8-bcbb-9c455c2e639b",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return PWHMToggles.AOE ~= nil and PWHMToggles.AOE",
-						dequeueIfLuaFalse = true,
-						name = "Toggle - AOE",
-						uuid = "c42bc024-b3fc-93de-b4ab-3a9ee2948f9d",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
 						conditionLua = "return TensorCore.mGetPlayer():IsMoving()",
 						dequeueIfLuaFalse = true,
 						name = "Player Moving",
@@ -13096,11 +13196,6 @@ local tbl =
 							},
 							
 							{
-								"e9bfbe47-e08d-28e8-939a-b4a325a77760",
-								true,
-							},
-							
-							{
 								"d6bd6de2-7c2e-1cd1-baa7-df189d738b97",
 								true,
 							},
@@ -13152,11 +13247,6 @@ local tbl =
 							
 							{
 								"0ac69ed7-0bd3-2295-bbb9-13e0fbe2ce86",
-								true,
-							},
-							
-							{
-								"e9bfbe47-e08d-28e8-939a-b4a325a77760",
 								true,
 							},
 							
@@ -13232,7 +13322,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "b50f7454-821a-9ac2-9385-6e4ab6cd8506",
@@ -13280,7 +13370,6 @@ local tbl =
 						category = "Self",
 						comparator = 2,
 						conditionType = 4,
-						dequeueIfLuaFalse = true,
 						name = "Occult Raise CD",
 						uuid = "74f495a6-8cbc-e212-95dd-7fe47b47f817",
 						version = 3,
@@ -13295,18 +13384,6 @@ local tbl =
 						dequeueIfLuaFalse = true,
 						name = "Occult Raise Unlocked",
 						uuid = "0ac69ed7-0bd3-2295-bbb9-13e0fbe2ce86",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return PWHMToggles.Rez ~= nil and PWHMToggles.Rez",
-						dequeueIfLuaFalse = true,
-						name = "Toggle - Rez",
-						uuid = "e9bfbe47-e08d-28e8-939a-b4a325a77760",
 						version = 3,
 					},
 				},
@@ -13843,7 +13920,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "1e7919a1-6e5f-2acd-ac59-94cfa6d99365",
@@ -14198,6 +14275,11 @@ local tbl =
 							},
 							
 							{
+								"78cf5b62-d614-da94-b357-a31d3c93f225",
+								true,
+							},
+							
+							{
 								"a4bae7f0-15e7-e380-89ed-28e6f8f500ff",
 								true,
 							},
@@ -14264,6 +14346,19 @@ local tbl =
 						uuid = "2312ae26-c802-ad39-bbbf-0830ed918dac",
 						version = 3,
 					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
+						dequeueIfLuaFalse = true,
+						name = "Is Bot Running",
+						uuid = "78cf5b62-d614-da94-b357-a31d3c93f225",
+						version = 3,
+					},
+					inheritedIndex = 2,
 				},
 				
 				{
@@ -14545,7 +14640,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Is Bot Running",
 						uuid = "3f34d46e-8ad1-9e64-abed-166c78a10efe",
@@ -14839,7 +14934,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Is Bot Running",
 						uuid = "00cca2d5-06a8-314e-ac4f-42d45e6d661d",
@@ -15147,7 +15242,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "1e7919a1-6e5f-2acd-ac59-94cfa6d99365",
@@ -15819,7 +15914,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "1e7919a1-6e5f-2acd-ac59-94cfa6d99365",
@@ -16341,7 +16436,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "7fdcd281-14f9-063b-a49d-42de65643f64",
@@ -16686,7 +16781,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Is Bot Running",
 						uuid = "f24daf54-6067-71ab-a584-757a29445a83",
@@ -16818,6 +16913,11 @@ local tbl =
 							},
 							
 							{
+								"092c811b-68b8-d1a9-acd0-92ffa3a2f971",
+								true,
+							},
+							
+							{
 								"10a8596d-b51f-0488-bc9e-80f55d2995cf",
 								true,
 							},
@@ -16877,6 +16977,11 @@ local tbl =
 							},
 							
 							{
+								"092c811b-68b8-d1a9-acd0-92ffa3a2f971",
+								true,
+							},
+							
+							{
 								"10a8596d-b51f-0488-bc9e-80f55d2995cf",
 								true,
 							},
@@ -16932,6 +17037,11 @@ local tbl =
 							
 							{
 								"08200ceb-e12f-422c-996e-47fcdd5dc467",
+								true,
+							},
+							
+							{
+								"092c811b-68b8-d1a9-acd0-92ffa3a2f971",
 								true,
 							},
 							
@@ -17006,9 +17116,21 @@ local tbl =
 				{
 					data = 
 					{
+						category = "Lua",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
+						dequeueIfLuaFalse = true,
+						name = "Is Bot Running",
+						uuid = "092c811b-68b8-d1a9-acd0-92ffa3a2f971",
+						version = 3,
+					},
+					inheritedIndex = 2,
+				},
+				
+				{
+					data = 
+					{
 						category = "Self",
 						conditionType = 2,
-						dequeueIfLuaFalse = true,
 						hpValue = 99,
 						uuid = "10a8596d-b51f-0488-bc9e-80f55d2995cf",
 						version = 3,
@@ -17032,7 +17154,6 @@ local tbl =
 					{
 						category = "Self",
 						conditionType = 7,
-						dequeueIfLuaFalse = true,
 						uuid = "d41beda5-2a4b-487c-80a9-a29bb94e874d",
 						version = 3,
 					},
@@ -17061,7 +17182,6 @@ local tbl =
 						category = "Self",
 						comparator = 2,
 						conditionType = 4,
-						dequeueIfLuaFalse = true,
 						name = "Deep freeze on CD",
 						uuid = "779ef1d5-2e1c-6eb4-aba8-5538338ab096",
 						version = 3,
@@ -17076,7 +17196,6 @@ local tbl =
 						category = "Self",
 						comparator = 2,
 						conditionType = 4,
-						dequeueIfLuaFalse = true,
 						name = "Hell wind on cd",
 						uuid = "49226ef3-e891-e41d-9506-4602c4259620",
 						version = 3,
@@ -17092,7 +17211,6 @@ local tbl =
 						category = "Self",
 						comparator = 2,
 						conditionType = 4,
-						dequeueIfLuaFalse = true,
 						name = "Chaos Drive on cd",
 						uuid = "dd0e530f-6084-ce35-89bf-553e8012c13e",
 						version = 3,
@@ -17104,7 +17222,6 @@ local tbl =
 					data = 
 					{
 						buffID = 5324,
-						dequeueIfLuaFalse = true,
 						name = "Target Lightning Weak",
 						uuid = "723894dc-b212-6550-a413-ce46a9457bff",
 						version = 3,
@@ -17115,7 +17232,6 @@ local tbl =
 					data = 
 					{
 						buffID = 5323,
-						dequeueIfLuaFalse = true,
 						name = "Target Ice Weak",
 						uuid = "acfab9f6-e13a-546f-8cdd-f508c1da8a2a",
 						version = 3,
@@ -17126,7 +17242,6 @@ local tbl =
 					data = 
 					{
 						buffID = 5325,
-						dequeueIfLuaFalse = true,
 						name = "Target Wind Weak",
 						uuid = "e9a87634-6087-4465-bbf0-e0c7a8b4e2c4",
 						version = 3,
@@ -17145,7 +17260,6 @@ local tbl =
 						},
 						category = "Self",
 						comparator = 2,
-						dequeueIfLuaFalse = true,
 						hpValue = 30,
 						matchAnyBuff = true,
 						name = "Self Missing Transcendent",
@@ -17159,6 +17273,7 @@ local tbl =
 					{
 						category = "Lua",
 						conditionLua = "return OCGUI.GetToggle(\"Necro Skills\")",
+						dequeueIfLuaFalse = true,
 						name = "Toggle",
 						uuid = "d0e4b497-04d7-1142-9a34-aa44079c41f9",
 						version = 3,
@@ -17703,7 +17818,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning",
+						conditionLua = "return FFXIV_Common_BotRunning == true or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "74748392-3717-36df-a079-fc75a02dcf22",
@@ -17832,6 +17947,7 @@ local tbl =
 			conditions = 
 			{
 			},
+			enabled = false,
 			name = "-- Utility reactions below here --",
 			uuid = "dc22849f-d549-0cd1-ae73-c86f4d770c5a",
 			version = 2,
@@ -18688,7 +18804,8 @@ local tbl =
 			conditions = 
 			{
 			},
-			name = "-- Occulant Crescent",
+			enabled = false,
+			name = "-- Occult Crescent",
 			uuid = "7affaeba-16a3-388a-9c7a-193cccdb0287",
 			version = 2,
 		},
@@ -18704,6 +18821,7 @@ local tbl =
 			conditions = 
 			{
 			},
+			enabled = false,
 			name = "-- Draw reactions below here --",
 			uuid = "0bc71c45-b3d2-c6f5-9741-0c714a0380a6",
 			version = 2,
@@ -18811,7 +18929,7 @@ local tbl =
 			uuid = "063b86b6-c420-08c8-b4d6-9f5efd9b1e6a",
 			version = 2,
 		},
-		inheritedIndex = 93,
+		inheritedIndex = 95,
 	},
 	
 	{
@@ -18953,7 +19071,7 @@ local tbl =
 			uuid = "9221989a-79a6-6bde-834c-88fc67082d1c",
 			version = 2,
 		},
-		inheritedIndex = 94,
+		inheritedIndex = 96,
 	},
 	
 	{
@@ -20325,7 +20443,7 @@ local tbl =
 			uuid = "d11651c2-77ca-a156-8136-388eeea52a44",
 			version = 2,
 		},
-		inheritedIndex = 92,
+		inheritedIndex = 94,
 	},
 	
 	{
@@ -20687,36 +20805,255 @@ local tbl =
 				},
 			},
 			eventType = 2,
-			name = "[AppallingBehavior] Draws",
+			name = "[AppallingBehavior] OnEntityCast Draws",
 			uuid = "e69d7ffd-c8a8-b2c9-9014-7eba5c81c0b1",
 			version = 2,
 		},
 	},
 	
 	{
-		data =
+		data = 
 		{
-			actions =
+			actions = 
 			{
-
+				
 				{
-					data =
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "-- Event Type: OnEventObjectScript\n-- External conditions:\n--   Event entity ContentID == 2015276\n--   eventArgs.a2 == 4\n--   eventArgs.a3 == 16 OR eventArgs.a3 == 32\n--   eventArgs.a4 == 0\n-- eventArgs.a3 is 16 for counterclockwise and 32 for clockwise.\n\nlocal ring = TensorCore.mGetEntity(eventArgs.entityID)\nif not ring then\n    self.used = true\n    return\nend\n\nlocal param1 = eventArgs.a2\nlocal param2 = eventArgs.a3\nlocal param3 = eventArgs.a4\n\nlocal isClockwise = param2 == 32\nlocal direction = isClockwise and -1 or 1\n\nlocal arenaCenter = {\n    x = 807,\n    y = ring.pos.y,\n    z = -562,\n}\n\n-- The inner danger sectors are 120 degrees wide. The safe gaps between\n-- the two opposing danger sectors are therefore 60 degrees wide.\nlocal dangerHeading = ring.pos.h\n    + math.rad(120) * direction\n    + math.rad(-60)\nlocal safeHeading = dangerHeading + math.pi / 2\nlocal safeAngle = math.rad(60)\n\nlocal renderFlags = Argus2.RenderFlags.FLAG_RENDER_OVERLAY\nlocal safeDrawer = TensorCore.getCachedDrawer(\n    0x6000FF00,\n    0x6000FF00,\n    0x6000FF00,\n    0xFF00FF00,\n    2,\n    0,\n    renderFlags\n)\n\nsafeDrawer:addTimedDonutCone(\n    10300,\n    arenaCenter.x, arenaCenter.y, arenaCenter.z,\n    5, 12,\n    safeAngle,\n    safeHeading,\n    0,\n    false,\n    true,\n    renderFlags\n)\n\nsafeDrawer:addTimedDonutCone(\n    10300,\n    arenaCenter.x, arenaCenter.y, arenaCenter.z,\n    5, 12,\n    safeAngle,\n    safeHeading + math.pi,\n    0,\n    false,\n    true,\n    renderFlags\n)\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"390cbbd5-27f2-6dda-9b3a-8d837fbde340",
+								true,
+							},
+							
+							{
+								"b1914d93-b2a0-9a2f-ab33-f4c9ba95bb8b",
+								true,
+							},
+							
+							{
+								"5b610aae-cfc4-a3e9-9ff7-0f4b0f777bd9",
+								true,
+							},
+							
+							{
+								"af8ce7a6-4f02-3fa5-8fe6-60bf31642331",
+								true,
+							},
+							
+							{
+								"cb71fa4a-cc19-68c4-a56f-53de2df52c31",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Inner Ring",
+						uuid = "f874959a-4236-3f8b-ae4a-1eb610241557",
+						version = 2.1,
+					},
+				},
+				
+				{
+					data = 
+					{
+						aType = "Lua",
+						actionLua = "-- Event Type: OnEventObjectScript\n-- External conditions:\n--   Event entity ContentID == 2015275\n--   eventArgs.a2 == 4\n--   eventArgs.a3 == 16 OR eventArgs.a3 == 32\n--   eventArgs.a4 == 0\n-- eventArgs.a3 is 16 for counterclockwise and 32 for clockwise.\n\nlocal ring = TensorCore.mGetEntity(eventArgs.entityID)\nif not ring then\n    self.used = true\n    return\nend\n\nlocal param1 = eventArgs.a2\nlocal param2 = eventArgs.a3\nlocal param3 = eventArgs.a4\n\nlocal isClockwise = param2 == 32\nlocal direction = isClockwise and -1 or 1\n\nlocal arenaCenter = {\n    x = 807,\n    y = ring.pos.y,\n    z = -562,\n}\n\n-- The outer danger sectors are 135 degrees wide. The safe gaps between\n-- the two opposing danger sectors are therefore 45 degrees wide.\nlocal dangerHeading = ring.pos.h\n    + math.rad(67.5) * direction\n    + math.rad(22.5)\nlocal safeHeading = dangerHeading + math.pi / 2\nlocal safeAngle = math.rad(45)\n\nlocal renderFlags = Argus2.RenderFlags.FLAG_RENDER_OVERLAY\nlocal safeDrawer = TensorCore.getCachedDrawer(\n    0x6000FF00,\n    0x6000FF00,\n    0x6000FF00,\n    0xFF00FF00,\n    2,\n    0,\n    renderFlags\n)\n\nsafeDrawer:addTimedDonutCone(\n    10300,\n    arenaCenter.x, arenaCenter.y, arenaCenter.z,\n    12, 20,\n    safeAngle,\n    safeHeading,\n    0,\n    false,\n    true,\n    renderFlags\n)\n\nsafeDrawer:addTimedDonutCone(\n    10300,\n    arenaCenter.x, arenaCenter.y, arenaCenter.z,\n    12, 20,\n    safeAngle,\n    safeHeading + math.pi,\n    0,\n    false,\n    true,\n    renderFlags\n)\n\nself.used = true",
+						conditions = 
+						{
+							
+							{
+								"390cbbd5-27f2-6dda-9b3a-8d837fbde340",
+								true,
+							},
+							
+							{
+								"342519fd-835c-cae6-a30c-6f09252009b5",
+								true,
+							},
+							
+							{
+								"5b610aae-cfc4-a3e9-9ff7-0f4b0f777bd9",
+								true,
+							},
+							
+							{
+								"af8ce7a6-4f02-3fa5-8fe6-60bf31642331",
+								true,
+							},
+							
+							{
+								"cb71fa4a-cc19-68c4-a56f-53de2df52c31",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "Outer Ring",
+						uuid = "7823fc9e-ce5e-4911-9215-e0118a92e329",
+						version = 2.1,
+					},
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 8,
+						dequeueIfLuaFalse = true,
+						localmapid = 1346,
+						name = "In North Horn",
+						uuid = "390cbbd5-27f2-6dda-9b3a-8d837fbde340",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 2015276,
+						name = "Event: Content ID 2015276",
+						uuid = "b1914d93-b2a0-9a2f-ab33-f4c9ba95bb8b",
+						version = 3,
+					},
+					inheritedIndex = 2,
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						dequeueIfLuaFalse = true,
+						eventArgOptionType = 2,
+						eventEntityContentID = 2015275,
+						name = "Event: Content ID 2015275",
+						uuid = "342519fd-835c-cae6-a30c-6f09252009b5",
+						version = 3,
+					},
+					inheritedIndex = 3,
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						comparator = 3,
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventIntValue = 4,
+						name = "Event: a2 == 4",
+						uuid = "5b610aae-cfc4-a3e9-9ff7-0f4b0f777bd9",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						comparator = 3,
+						dequeueIfLuaFalse = true,
+						eventArgType = 3,
+						eventIntValue = 16,
+						name = "Event: a3 == 16",
+						uuid = "80fd06a8-8054-6451-b89e-e98522b4a8af",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						comparator = 3,
+						eventArgType = 3,
+						eventIntValue = 32,
+						name = "Event: a3 == 32",
+						uuid = "7260f008-2dd5-01d1-9e3a-93a6d1110d3b",
+						version = 3,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						comparator = 3,
+						dequeueIfLuaFalse = true,
+						eventArgType = 4,
+						name = "Event: a4 == 0",
+						uuid = "af8ce7a6-4f02-3fa5-8fe6-60bf31642331",
+						version = 3,
+					},
+					inheritedIndex = 5,
+				},
+				
+				{
+					data = 
+					{
+						category = "Filter",
+						conditions = 
+						{
+							
+							{
+								"80fd06a8-8054-6451-b89e-e98522b4a8af",
+								true,
+							},
+							
+							{
+								"7260f008-2dd5-01d1-9e3a-93a6d1110d3b",
+								true,
+							},
+						},
+						dequeueIfLuaFalse = true,
+						matchAnyBuff = true,
+						name = "OR Gate: a3 16 or 32",
+						partyTargetNumber = 0,
+						uuid = "cb71fa4a-cc19-68c4-a56f-53de2df52c31",
+						version = 3,
+					},
+				},
+			},
+			eventType = 19,
+			name = "[AppallingBehavior] Roulette Safe Spot",
+			uuid = "315e9ecf-074f-933d-ac0b-6a8add1e9855",
+			version = 2,
+		},
+		inheritedIndex = 90,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
 					{
 						aType = "Lua",
 						actionLua = "local token = data.northHornBeastTopazWaveToken or 0\nlocal committed = data.northHornBeastCommittedCells\nif committed and committed.token == token then\n\tself.used = true\n\treturn\nend\n\nlocal controller = TensorCore.mGetEntity(eventArgs.entityID)\nif not controller or not controller.pos then return end\nlocal index = eventArgs.a2\nlocal vertical = math.abs(math.sin(controller.pos.h or 0)) > 0.5\nlocal tilingIndex\nif vertical then\n\ttilingIndex = index == 5 and 1 or index == 9 and 3 or index == 13 and 2 or nil\nelse\n\ttilingIndex = index == 5 and 4 or index == 9 and 5 or index == 13 and 6 or nil\nend\nif not tilingIndex then return end\n\nlocal tilings = data.northHornBeastLRoomTilings\nif not tilings then\n\ttilings = {\n\t\t{{0,4,8,1},{12,5,9,13},{2,6,10,3},{14,7,11,15}},\n\t\t{{0,4,8,9},{12,13,10,14},{1,5,2,3},{6,7,11,15}},\n\t\t{{0,4,1,2},{8,12,9,10},{5,6,3,7},{13,14,11,15}},\n\t\t{{0,4,5,6},{8,12,13,14},{1,2,3,7},{9,10,11,15}},\n\t\t{{0,1,5,9},{4,8,12,13},{2,3,7,11},{6,10,14,15}},\n\t\t{{0,1,2,6},{4,8,12,5},{9,13,14,15},{10,3,7,11}},\n\t}\n\tdata.northHornBeastLRoomTilings = tilings\nend\nlocal tiling = tilings[tilingIndex]\nlocal roomForCell = {}\nfor roomIndex, room in ipairs(tiling) do\n\tfor _, cell in ipairs(room) do roomForCell[cell] = roomIndex end\nend\n\nlocal unsafeRooms = {}\nlocal visible = data.northHornBeastVisibleStones or {}\nlocal stoneCells = data.northHornBeastStoneCells or {}\nlocal floorY = controller.pos.y or 15\nlocal stoneCount = 0\nfor entityID in pairs(visible) do\n\tlocal stone = TensorCore.mGetEntity(entityID)\n\tif stone and stone.pos and Argus.isEntityVisible(stone) then\n\t\tstoneCount = stoneCount + 1\n\t\tfloorY = stone.pos.y or floorY\n\t\tlocal column = math.max(0, math.min(3, math.floor((stone.pos.x - 218) / 10)))\n\t\tlocal row = math.max(0, math.min(3, math.floor((stone.pos.z - 332) / 10)))\n\t\tlocal cell = (row * 4) + column\n\t\tstoneCells[entityID] = cell\n\t\tlocal roomIndex = roomForCell[cell]\n\t\tif roomIndex then\n\t\t\tlocal roomCells = {}\n\t\t\tfor _, roomCell in ipairs(tiling[roomIndex]) do roomCells[roomCell] = true end\n\t\t\tlocal left = stone.pos.x - (218 + column * 10)\n\t\t\tlocal right = (228 + column * 10) - stone.pos.x\n\t\t\tlocal top = stone.pos.z - (332 + row * 10)\n\t\t\tlocal bottom = (342 + row * 10) - stone.pos.z\n\t\t\tlocal hitsWall =\n\t\t\t\t(left <= 4.25 and (column == 0 or not roomCells[cell - 1])) or\n\t\t\t\t(right <= 4.25 and (column == 3 or not roomCells[cell + 1])) or\n\t\t\t\t(top <= 4.25 and (row == 0 or not roomCells[cell - 4])) or\n\t\t\t\t(bottom <= 4.25 and (row == 3 or not roomCells[cell + 4]))\n\t\t\tif hitsWall then unsafeRooms[roomIndex] = true end\n\t\tend\n\tend\nend\nif stoneCount == 0 or next(unsafeRooms) == nil then return end\n\nlocal cells = {}\nfor roomIndex in pairs(unsafeRooms) do\n\tfor _, cell in ipairs(tiling[roomIndex]) do cells[cell] = true end\nend\nfor _, uuid in ipairs(data.northHornBeastEarlyFixedDraws or {}) do\n\tif uuid then Argus.deleteTimedShape(uuid) end\nend\nlocal dangerDrawer = TensorCore.getStaticFlatDrawer(2818572543)\nlocal roomDraws = {}\nfor cell in pairs(cells) do\n\tlocal x = 223 + ((cell % 4) * 10)\n\tlocal z = 337 + (math.floor(cell / 4) * 10)\n\tlocal uuid = dangerDrawer:addTimedCenteredRect(30000, x, floorY + 0.02, z, 10, 10, 0)\n\tif uuid then roomDraws[#roomDraws + 1] = uuid end\nend\ndata.northHornBeastEarlyFixedDraws = roomDraws\ndata.northHornBeastEarlyFixedWaveToken = token\ndata.northHornBeastCommittedCells = { token = token, cells = cells }\ndata.northHornBeastStoneCells = stoneCells\n\nd(\"A Beast Unleashed pre-drawn rooms: tiling \" .. tostring(tilingIndex))\nself.used = true\n",
-						conditions =
+						conditions = 
 						{
-
+							
 							{
 								"32000116-0000-4000-8000-000000000001",
 								true,
 							},
-
+							
 							{
 								"32000116-0000-4000-8000-000000000002",
 								true,
 							},
-
+							
 							{
 								"32000116-0000-4000-8000-000000000003",
 								true,
@@ -20728,26 +21065,25 @@ local tbl =
 						version = 2.1,
 					},
 				},
-
-
+				
 				{
-					data =
+					data = 
 					{
 						aType = "Lua",
 						actionLua = "local token = data.northHornBeastTopazWaveToken or 0\nlocal committed = data.northHornBeastCommittedCells\nif committed and committed.token == token then\n\tself.used = true\n\treturn\nend\n\nlocal controller = TensorCore.mGetEntity(eventArgs.entityID)\nif not controller or not controller.pos then return end\nlocal visible = data.northHornBeastVisibleStones or {}\nlocal rooms = {}\nlocal roomCount = 0\nlocal floorY = controller.pos.y or 15\n\nfor entityID in pairs(visible) do\n\tlocal stone = TensorCore.mGetEntity(entityID)\n\tif stone and stone.pos and Argus.isEntityVisible(stone) then\n\t\tlocal x, z = stone.pos.x, stone.pos.z\n\t\tfloorY = stone.pos.y or floorY\n\t\tlocal insideX = x >= 218 and x <= 258\n\t\tlocal insideZ = z >= 332 and z <= 372\n\t\tlocal hitsVertical = insideZ and\n\t\t\t(math.abs(x - 218) <= 4.25 or math.abs(x - 238) <= 4.25 or\n\t\t\t math.abs(x - 258) <= 4.25)\n\t\tlocal hitsHorizontal = insideX and\n\t\t\t(math.abs(z - 332) <= 4.25 or math.abs(z - 352) <= 4.25 or\n\t\t\t math.abs(z - 372) <= 4.25)\n\t\tif hitsVertical or hitsHorizontal then\n\t\t\tlocal qx = x < 238 and 0 or 2\n\t\t\tlocal qz = z < 352 and 0 or 2\n\t\t\tlocal key = qx .. \":\" .. qz\n\t\t\tif not rooms[key] then\n\t\t\t\trooms[key] = { qx, qz }\n\t\t\t\troomCount = roomCount + 1\n\t\t\tend\n\t\tend\n\tend\nend\n\nif roomCount == 2 then\n\tlocal cells = {}\n\tfor _, room in pairs(rooms) do\n\t\tfor row = room[2], room[2] + 1 do\n\t\t\tfor column = room[1], room[1] + 1 do\n\t\t\t\tcells[(row * 4) + column] = true\n\t\t\tend\n\t\tend\n\tend\n\n\tfor _, uuid in ipairs(data.northHornBeastEarlyFixedDraws or {}) do\n\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\tend\n\tlocal dangerDrawer = TensorCore.getStaticFlatDrawer(2818572543)\n\tlocal roomDraws = {}\n\tfor cell in pairs(cells) do\n\t\tlocal x = 223 + ((cell % 4) * 10)\n\t\tlocal z = 337 + (math.floor(cell / 4) * 10)\n\t\tlocal uuid = dangerDrawer:addTimedCenteredRect(20000, x, floorY + 0.02, z, 10, 10, 0)\n\t\tif uuid then roomDraws[#roomDraws + 1] = uuid end\n\tend\n\tdata.northHornBeastEarlyFixedDraws = roomDraws\n\tdata.northHornBeastEarlyFixedWaveToken = token\n\tdata.northHornBeastCommittedCells = { token = token, cells = cells }\n\td(\"A Beast Unleashed opening rooms\")\nend\nself.used = true\n",
-						conditions =
+						conditions = 
 						{
-
+							
 							{
 								"32000116-0000-4000-8000-000000000001",
 								true,
 							},
-
+							
 							{
 								"32000116-0000-4000-8000-000000000004",
 								true,
 							},
-
+							
 							{
 								"32000116-0000-4000-8000-000000000005",
 								true,
@@ -20760,11 +21096,11 @@ local tbl =
 					},
 				},
 			},
-			conditions =
+			conditions = 
 			{
-
+				
 				{
-					data =
+					data = 
 					{
 						category = "Self",
 						conditionType = 8,
@@ -20775,9 +21111,9 @@ local tbl =
 						version = 3,
 					},
 				},
-
+				
 				{
-					data =
+					data = 
 					{
 						category = "Event",
 						dequeueIfLuaFalse = true,
@@ -20788,9 +21124,9 @@ local tbl =
 						version = 3,
 					},
 				},
-
+				
 				{
-					data =
+					data = 
 					{
 						category = "Lua",
 						conditionLua = "-- lint: allow lua-native-condition, three layout indices share one action.\nlocal boss = data.northHornBeastBossID and TensorCore.mGetEntity(data.northHornBeastBossID)\nlocal index = eventArgs.a2\nreturn boss and boss.incombat and eventArgs.a3 == 0 and (index == 5 or index == 9 or index == 13)\n",
@@ -20800,9 +21136,9 @@ local tbl =
 						version = 3,
 					},
 				},
-
+				
 				{
-					data =
+					data = 
 					{
 						category = "Event",
 						dequeueIfLuaFalse = true,
@@ -20813,9 +21149,9 @@ local tbl =
 						version = 3,
 					},
 				},
-
+				
 				{
-					data =
+					data = 
 					{
 						category = "Lua",
 						conditionLua = "-- lint: allow lua-native-condition, a2 is the controller layout index.\nlocal boss = data.northHornBeastBossID and TensorCore.mGetEntity(data.northHornBeastBossID)\nreturn boss and boss.incombat and eventArgs.a2 == 1 and eventArgs.a3 == 0\n",
@@ -20834,26 +21170,26 @@ local tbl =
 		},
 		inheritedIndex = 4,
 	},
-
+	
 	{
-		data =
+		data = 
 		{
-			actions =
+			actions = 
 			{
-
+				
 				{
-					data =
+					data = 
 					{
 						aType = "Lua",
 						actionLua = "-- data.northHornBeastBossID: real model-19535 encounter owner.\n-- data.northHornBeastTopazCircles: entity-attached crystal pre-draw UUIDs.\n-- data.northHornBeastVisibleStones / StoneCells: current visibility wave.\n-- data.northHornBeastEarlyFixedDraws: pre-drawn dangerous-room floor UUIDs.\nlocal entityID = eventArgs.entityID\nlocal model = Argus.getEntityModel(entityID)\nif model ~= 19535 and data.northHornBeastBossID ~= entityID then\n\tself.used = true\n\treturn\nend\n\nlocal function clearBeastState()\n\tfor _, uuid in pairs(data.northHornBeastTopazCircles or {}) do\n\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\tend\n\tfor _, uuid in ipairs(data.northHornBeastEarlyFixedDraws or {}) do\n\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\tend\n\tlocal roomState = data.northHornBeastTopazRoomWave\n\tif roomState and roomState.provisional then\n\t\tfor _, uuid in ipairs(roomState.provisional) do\n\t\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\t\tend\n\tend\n\tdata.northHornBeastTopazCircles = {}\n\tdata.northHornBeastVisibleStones = {}\n\tdata.northHornBeastStoneCells = {}\n\tdata.northHornBeastTopazWaveToken = 0\n\tdata.northHornBeastCommittedCells = nil\n\tdata.northHornBeastEarlyFixedDraws = nil\n\tdata.northHornBeastEarlyFixedWaveToken = nil\n\tdata.northHornBeastTopazRoomWave = nil\nend\n\nif eventArgs.wasVisible == false then\n\tif data.northHornBeastBossID ~= entityID then\n\t\tclearBeastState()\n\t\tdata.northHornBeastBossID = entityID\n\tend\nelseif data.northHornBeastBossID == entityID then\n\tclearBeastState()\n\tdata.northHornBeastBossID = nil\nend\nself.used = true\n",
-						conditions =
+						conditions = 
 						{
-
+							
 							{
 								"32000109-0000-4000-8000-000000000001",
 								true,
 							},
-
+							
 							{
 								"32000109-0000-4000-8000-000000000301",
 								true,
@@ -20865,20 +21201,20 @@ local tbl =
 						version = 2.1,
 					},
 				},
-
+				
 				{
-					data =
+					data = 
 					{
 						aType = "Lua",
 						actionLua = "local entityID = eventArgs.entityID\nlocal circles = data.northHornBeastTopazCircles or {}\nlocal visible = data.northHornBeastVisibleStones or {}\nlocal stoneCells = data.northHornBeastStoneCells or {}\ndata.northHornBeastTopazCircles = circles\ndata.northHornBeastVisibleStones = visible\ndata.northHornBeastStoneCells = stoneCells\n\nif eventArgs.wasVisible == false then\n\tif not data.northHornBeastBossID then\n\t\tself.used = true\n\t\treturn\n\tend\n\tlocal stone = TensorCore.mGetEntity(entityID)\n\tif not stone or not stone.pos or Argus.getEntityModel(stone) ~= 19536 then\n\t\tself.used = true\n\t\treturn\n\tend\n\n\tif next(visible) == nil then\n\t\tfor _, uuid in ipairs(data.northHornBeastEarlyFixedDraws or {}) do\n\t\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\t\tend\n\t\tlocal oldState = data.northHornBeastTopazRoomWave\n\t\tif oldState and oldState.provisional then\n\t\t\tfor _, uuid in ipairs(oldState.provisional) do\n\t\t\t\tif uuid then Argus.deleteTimedShape(uuid) end\n\t\t\tend\n\t\tend\n\t\tdata.northHornBeastTopazWaveToken =\n\t\t\t(data.northHornBeastTopazWaveToken or 0) + 1\n\t\tdata.northHornBeastCommittedCells = nil\n\t\tdata.northHornBeastEarlyFixedDraws = nil\n\t\tdata.northHornBeastEarlyFixedWaveToken = nil\n\t\tdata.northHornBeastTopazRoomWave = nil\n\tend\n\n\tvisible[entityID] = true\n\tlocal column = math.max(0, math.min(3, math.floor((stone.pos.x - 218) / 10)))\n\tlocal row = math.max(0, math.min(3, math.floor((stone.pos.z - 332) / 10)))\n\tlocal cell = (row * 4) + column\n\tstoneCells[entityID] = cell\n\n\tcircles[entityID] =\n\t\tTensorCore.getMoogleDrawer():addTimedCircleOnEnt(600000, entityID, 4)\nelse\n\tlocal uuid = circles[entityID]\n\tif uuid then Argus.deleteTimedShape(uuid) end\n\tcircles[entityID] = nil\n\tvisible[entityID] = nil\n\tstoneCells[entityID] = nil\n\n\tif next(visible) == nil then\n\t\tfor _, earlyUUID in ipairs(data.northHornBeastEarlyFixedDraws or {}) do\n\t\t\tif earlyUUID then Argus.deleteTimedShape(earlyUUID) end\n\t\tend\n\t\tlocal roomState = data.northHornBeastTopazRoomWave\n\t\tif roomState and roomState.provisional then\n\t\t\tfor _, provisionalUUID in ipairs(roomState.provisional) do\n\t\t\t\tif provisionalUUID then Argus.deleteTimedShape(provisionalUUID) end\n\t\t\tend\n\t\tend\n\t\tdata.northHornBeastCommittedCells = nil\n\t\tdata.northHornBeastEarlyFixedDraws = nil\n\t\tdata.northHornBeastEarlyFixedWaveToken = nil\n\t\tdata.northHornBeastTopazRoomWave = nil\n\tend\nend\nself.used = true\n",
-						conditions =
+						conditions = 
 						{
-
+							
 							{
 								"32000109-0000-4000-8000-000000000001",
 								true,
 							},
-
+							
 							{
 								"32000109-0000-4000-8000-000000000302",
 								true,
@@ -20891,11 +21227,11 @@ local tbl =
 					},
 				},
 			},
-			conditions =
+			conditions = 
 			{
-
+				
 				{
-					data =
+					data = 
 					{
 						category = "Self",
 						conditionType = 8,
@@ -20906,9 +21242,9 @@ local tbl =
 						version = 3,
 					},
 				},
-
+				
 				{
-					data =
+					data = 
 					{
 						category = "Event",
 						dequeueIfLuaFalse = true,
@@ -20919,9 +21255,9 @@ local tbl =
 						version = 3,
 					},
 				},
-
+				
 				{
-					data =
+					data = 
 					{
 						category = "Event",
 						dequeueIfLuaFalse = true,
@@ -20939,26 +21275,26 @@ local tbl =
 			version = 2,
 		},
 	},
-
+	
 	{
-		data =
+		data = 
 		{
-			actions =
+			actions = 
 			{
-
+				
 				{
-					data =
+					data = 
 					{
 						aType = "Lua",
 						actionLua = "local token = data.northHornBeastTopazWaveToken or 0\nif data.northHornBeastEarlyFixedWaveToken == token then\n\tself.used = true\n\treturn\nend\n\nlocal now = Now()\nlocal timeout = ((eventArgs.duration or 2.7) + 0.35) * 1000\nlocal state = data.northHornBeastTopazRoomWave\nif not state or now - state.lastSeen > 1500 then\n\tstate = { lastSeen = now, contacts = {}, provisional = {}, committed = false }\n\tdata.northHornBeastTopazRoomWave = state\nend\nstate.lastSeen = now\nif state.committed then\n\tself.used = true\n\treturn\nend\n\nlocal column = math.max(0, math.min(3, math.floor((eventArgs.x - 218) / 10)))\nlocal row = math.max(0, math.min(3, math.floor((eventArgs.z - 332) / 10)))\nlocal centerX = 223 + (column * 10)\nlocal centerZ = 337 + (row * 10)\nlocal dx, dz = eventArgs.x - centerX, eventArgs.z - centerZ\nlocal wallDX, wallDZ = 0, 0\nif math.abs(dx) > math.abs(dz) then\n\twallDX = dx > 0 and 1 or -1\nelse\n\twallDZ = dz > 0 and 1 or -1\nend\n\nlocal key = column .. \":\" .. row\nfor _, contact in ipairs(state.contacts) do\n\tif contact.key == key then\n\t\tself.used = true\n\t\treturn\n\tend\nend\nstate.contacts[#state.contacts + 1] =\n\t{ key = key, x = column, z = row, dx = wallDX, dz = wallDZ }\n\nlocal dangerDrawer = TensorCore.getStaticFlatDrawer(2818572543)\nif #state.contacts < 3 then\n\tlocal qx = math.floor(column / 2) * 2\n\tlocal qz = math.floor(row / 2) * 2\n\tfor rz = qz, qz + 1 do\n\t\tfor cx = qx, qx + 1 do\n\t\t\tlocal x = 223 + (cx * 10)\n\t\t\tlocal z = 337 + (rz * 10)\n\t\t\tlocal uuid = dangerDrawer:addTimedCenteredRect(\n\t\t\t\tmath.max(100, timeout - 350), x, eventArgs.y + 0.02,\n\t\t\t\tz, 10, 10, 0, 350)\n\t\t\tif uuid then state.provisional[#state.provisional + 1] = uuid end\n\t\tend\n\tend\n\tself.used = true\n\treturn\nend\n\nfor _, uuid in ipairs(state.provisional) do\n\tif uuid then Argus.deleteTimedShape(uuid) end\nend\nstate.provisional = {}\n\nlocal tilings = data.northHornBeastLRoomTilings\nif not tilings then\n\ttilings = {\n\t\t{{0,4,8,1},{12,5,9,13},{2,6,10,3},{14,7,11,15}},\n\t\t{{0,4,8,9},{12,13,10,14},{1,5,2,3},{6,7,11,15}},\n\t\t{{0,4,1,2},{8,12,9,10},{5,6,3,7},{13,14,11,15}},\n\t\t{{0,4,5,6},{8,12,13,14},{1,2,3,7},{9,10,11,15}},\n\t\t{{0,1,5,9},{4,8,12,13},{2,3,7,11},{6,10,14,15}},\n\t\t{{0,1,2,6},{4,8,12,5},{9,13,14,15},{10,3,7,11}},\n\t}\n\tdata.northHornBeastLRoomTilings = tilings\nend\n\nlocal matches = {}\nfor _, tiling in ipairs(tilings) do\n\tlocal valid = true\n\tfor _, contact in ipairs(state.contacts) do\n\t\tlocal cell = (contact.z * 4) + contact.x\n\t\tlocal neighbour =\n\t\t\t((contact.z + contact.dz) * 4) + contact.x + contact.dx\n\t\tfor _, room in ipairs(tiling) do\n\t\t\tlocal containsCell, containsNeighbour = false, false\n\t\t\tfor _, roomCell in ipairs(room) do\n\t\t\t\tif roomCell == cell then containsCell = true end\n\t\t\t\tif roomCell == neighbour then containsNeighbour = true end\n\t\t\tend\n\t\t\tif containsCell and containsNeighbour then\n\t\t\t\tvalid = false\n\t\t\t\tbreak\n\t\t\tend\n\t\tend\n\t\tif not valid then break end\n\tend\n\tif valid then matches[#matches + 1] = tiling end\nend\n\nlocal cells = {}\nfor _, tiling in ipairs(matches) do\n\tfor _, contact in ipairs(state.contacts) do\n\t\tlocal cell = (contact.z * 4) + contact.x\n\t\tfor _, room in ipairs(tiling) do\n\t\t\tlocal hit = false\n\t\t\tfor _, roomCell in ipairs(room) do\n\t\t\t\tif roomCell == cell then hit = true break end\n\t\t\tend\n\t\t\tif hit then\n\t\t\t\tfor _, roomCell in ipairs(room) do cells[roomCell] = true end\n\t\t\tend\n\t\tend\n\tend\nend\nif #matches == 0 then\n\tfor _, contact in ipairs(state.contacts) do\n\t\tcells[(contact.z * 4) + contact.x] = true\n\tend\nend\n\nfor cell in pairs(cells) do\n\tlocal x = 223 + ((cell % 4) * 10)\n\tlocal z = 337 + (math.floor(cell / 4) * 10)\n\tdangerDrawer:addTimedCenteredRect(\n\t\ttimeout, x, eventArgs.y + 0.02, z, 10, 10, 0)\nend\ndata.northHornBeastCommittedCells = { token = token, cells = cells }\nstate.committed = true\nd(\"A Beast Unleashed L-room matches: \" .. tostring(#matches))\nself.used = true\n",
-						conditions =
+						conditions = 
 						{
-
+							
 							{
 								"32000112-0000-4000-8000-000000000001",
 								true,
 							},
-
+							
 							{
 								"32000112-0000-4000-8000-000000000301",
 								true,
@@ -20970,20 +21306,20 @@ local tbl =
 						version = 2.1,
 					},
 				},
-
+				
 				{
-					data =
+					data = 
 					{
 						aType = "Lua",
 						actionLua = "local drawer = TensorCore.getMoogleDrawer()\nlocal duration = eventArgs.duration or 5.7\nlocal firstTimeout = (duration + 0.3) * 1000\ndrawer:addTimedCone(\n\tfirstTimeout, eventArgs.x, eventArgs.y, eventArgs.z,\n\teventArgs.aoeLength or 45, math.pi, eventArgs.heading)\ndrawer:addTimedCone(\n\t3300, eventArgs.x, eventArgs.y, eventArgs.z,\n\teventArgs.aoeLength or 45, math.pi, eventArgs.heading + math.pi,\n\tfirstTimeout)\nd(\"A Beast Unleashed Claw/Tail\")\nself.used = true\n",
-						conditions =
+						conditions = 
 						{
-
+							
 							{
 								"32000112-0000-4000-8000-000000000001",
 								true,
 							},
-
+							
 							{
 								"32000112-0000-4000-8000-000000000302",
 								true,
@@ -20996,11 +21332,11 @@ local tbl =
 					},
 				},
 			},
-			conditions =
+			conditions = 
 			{
-
+				
 				{
-					data =
+					data = 
 					{
 						category = "Self",
 						conditionType = 8,
@@ -21011,9 +21347,9 @@ local tbl =
 						version = 3,
 					},
 				},
-
+				
 				{
-					data =
+					data = 
 					{
 						category = "Lua",
 						conditionLua = "return eventArgs.contentID == 14792 and eventArgs.aoeID == 48281\n",
@@ -21023,9 +21359,9 @@ local tbl =
 						version = 3,
 					},
 				},
-
+				
 				{
-					data =
+					data = 
 					{
 						category = "Lua",
 						conditionLua = "local id = eventArgs.aoeID\nreturn eventArgs.contentID == 14791 and (id == 48294 or id == 48295)\n",
@@ -21042,6 +21378,7 @@ local tbl =
 			version = 2,
 		},
 	},
+	
 	{
 		data = 
 		{
@@ -21090,7 +21427,7 @@ local tbl =
 			uuid = "c5f4f5bb-2ed9-59b0-b7b5-11a50aeb7af0",
 			version = 2,
 		},
-		inheritedIndex = 91,
+		inheritedIndex = 93,
 	},
 	
 	{
