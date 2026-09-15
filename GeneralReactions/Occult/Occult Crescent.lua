@@ -157,7 +157,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "e7de50ca-b2f8-752a-b528-db724f2d7054",
@@ -394,7 +394,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "8cd3436d-3f52-7195-90f3-7354696e0e09",
@@ -668,7 +668,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "9f487160-bb6b-c2c6-9ed3-d248843da14e",
@@ -958,7 +958,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Is Bot Running",
 						uuid = "ffcb081e-e4a0-b915-a944-7bd08ffdac93",
@@ -1633,7 +1633,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "74748392-3717-36df-a079-fc75a02dcf22",
@@ -2042,7 +2042,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "7fdcd281-14f9-063b-a49d-42de65643f64",
@@ -2660,7 +2660,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "6ede6f2b-f21f-34fc-ac8f-17712a883aee",
@@ -2968,7 +2968,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "214333af-724c-d8c7-bc32-505803dec7ff",
@@ -3283,7 +3283,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Is Bot Running",
 						uuid = "ffcb081e-e4a0-b915-a944-7bd08ffdac93",
@@ -3889,7 +3889,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Is Bot Running",
 						uuid = "ffcb081e-e4a0-b915-a944-7bd08ffdac93",
@@ -4250,7 +4250,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Is Bot Running",
 						uuid = "00cca2d5-06a8-314e-ac4f-42d45e6d661d",
@@ -4615,7 +4615,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "a9b88350-2ec7-4cf1-b280-4a09d50599df",
@@ -4960,7 +4960,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "4bf7209d-8c34-782c-a4dd-63b77e3e4ae6",
@@ -5096,7 +5096,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Assist Enabled",
 						uuid = "0a49f18a-75ad-dbf1-9ca1-e4c496d8eead",
@@ -5397,7 +5397,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "99c73f6d-ab4e-f13c-a138-49090c198497",
@@ -5637,7 +5637,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "f4209989-03cd-661a-b174-709466776706",
@@ -5890,7 +5890,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "db68b232-24e2-2a01-ac29-564ead6c714c",
@@ -6056,7 +6056,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "db68b232-24e2-2a01-ac29-564ead6c714c",
@@ -6248,7 +6248,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "d6d91e2f-272b-5401-ad3f-f0a5c81c766e",
@@ -6416,7 +6416,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "5236742b-6d45-ba4b-9afc-fb4fc5a75597",
@@ -6769,7 +6769,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "80fa16e8-d4b7-cb1c-8e8c-59e26259ec36",
@@ -7009,7 +7009,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "8cda3bac-be8c-b63c-8e06-ca48d73102b1",
@@ -7171,7 +7171,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "5236742b-6d45-ba4b-9afc-fb4fc5a75597",
@@ -7749,7 +7749,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "6500ed18-f48e-10a5-9639-02727a1485c8",
@@ -8190,7 +8190,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Is Bot Running",
 						uuid = "092c811b-68b8-d1a9-acd0-92ffa3a2f971",
@@ -8464,7 +8464,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Is Bot Running",
 						uuid = "f24daf54-6067-71ab-a584-757a29445a83",
@@ -8845,7 +8845,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "eff9d535-b1b3-97ff-81d8-1b1d46d44cae",
@@ -10090,7 +10090,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Is Bot Running",
 						uuid = "1dab3d74-cd88-7842-9407-fc9bf278a861",
@@ -10466,7 +10466,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "2f5da793-8d62-b900-91b7-d2287c31ad94",
@@ -10692,7 +10692,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "c98fc8ca-3024-f3e1-b80d-5a6ca8a4846b",
@@ -10884,7 +10884,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "2ade3bb0-fe6c-ce0d-8fb3-6e7565b3a2e2",
@@ -11084,7 +11084,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "ffbc6bd6-f41a-fea3-a827-6c080a314acc",
@@ -11279,7 +11279,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Is Bot Running",
 						uuid = "78cf5b62-d614-da94-b357-a31d3c93f225",
@@ -11862,7 +11862,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "1e7919a1-6e5f-2acd-ac59-94cfa6d99365",
@@ -12278,7 +12278,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "1e7919a1-6e5f-2acd-ac59-94cfa6d99365",
@@ -12953,7 +12953,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "25526db7-3e90-fe08-8df1-b0585e2b38fc",
@@ -13243,7 +13243,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "c4e0c01f-1174-3e48-956e-41193f15da26",
@@ -13878,7 +13878,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "1e7919a1-6e5f-2acd-ac59-94cfa6d99365",
@@ -14320,7 +14320,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "77b8eed8-0cfb-695a-a37c-568bb356cfeb",
@@ -14494,7 +14494,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "5fdd4621-9183-81d3-a553-2ad42b69ce8d",
@@ -14684,7 +14684,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "0871ec24-fb24-fa3d-97e0-3425718700b7",
@@ -14880,7 +14880,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "0871ec24-fb24-fa3d-97e0-3425718700b7",
@@ -15150,7 +15150,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "e7de50ca-b2f8-752a-b528-db724f2d7054",
@@ -15460,7 +15460,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "e7de50ca-b2f8-752a-b528-db724f2d7054",
@@ -15854,7 +15854,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "e7de50ca-b2f8-752a-b528-db724f2d7054",
@@ -16404,7 +16404,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "e7de50ca-b2f8-752a-b528-db724f2d7054",
@@ -16794,7 +16794,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "2313ec24-56c9-f3da-9dae-cd45fa21c991",
@@ -17102,7 +17102,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "b50f7454-821a-9ac2-9385-6e4ab6cd8506",
@@ -17422,7 +17422,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "205ce590-576c-805f-bb70-b65b01a445fe",
@@ -17706,7 +17706,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						dequeueIfLuaFalse = true,
 						name = "Bot Running",
 						uuid = "01f3fe13-c40c-3ce8-8d19-23ddba44f5bb",
@@ -18399,7 +18399,7 @@ local tbl =
 					data = 
 					{
 						category = "Lua",
-						conditionLua = "return FFXIV_Common_BotRunning == true\n    or (HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running())\n    or false",
+						conditionLua = "return FFXIV_Common_BotRunning or (HusbandoMaxStatus and HusbandoMaxStatus()) or false",
 						name = "Bot Running",
 						uuid = "c466a5b4-da07-b94c-8d31-302e253a99d0",
 						version = 3,
@@ -22108,118 +22108,6 @@ local tbl =
 			version = 2,
 		},
 		inheritedIndex = 142,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "HusbandoMaxAddons.Resistance.API.ResetSeenScouting()\nself.eventConditionMismatch = true\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"169a01cd-731a-0fbf-9608-694c42f1b743",
-								true,
-							},
-							
-							{
-								"b28514da-6594-33d2-b069-82316728204c",
-								true,
-							},
-							
-							{
-								"a1ec47ee-d170-5cb4-a2cb-1c04280a0b17",
-								true,
-							},
-							
-							{
-								"5950a0d5-c6f5-e84c-9639-66323d78d785",
-								true,
-							},
-							
-							{
-								"6b64ac29-d230-28d4-ba53-a444bc1065d3",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_CD",
-						name = "Reset Scotuing",
-						uuid = "6412558a-c30c-c37a-b283-6e74ff41aa75",
-						version = 2.1,
-					},
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return HusbandoMaxAddons ~= nil and HusbandoMaxAddons.Resistance.Running() or false",
-						dequeueIfLuaFalse = true,
-						name = "Resistance running",
-						uuid = "169a01cd-731a-0fbf-9608-694c42f1b743",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "local player = TensorCore.mGetPlayer()\nreturn TensorCore.getDistance2d(player.pos, { h = 0, x = 880, y = 258, z = 880 }) < 25",
-						name = "In Spawn Arena",
-						uuid = "b28514da-6594-33d2-b069-82316728204c",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return HusbandoMaxAddons.Resistance.API.GetSilver() <= 8999",
-						name = "Silver <= 8999",
-						uuid = "a1ec47ee-d170-5cb4-a2cb-1c04280a0b17",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return HusbandoMaxAddons.Resistance.API.GetGold() <= 8399",
-						name = "Gold <= 8399",
-						uuid = "5950a0d5-c6f5-e84c-9639-66323d78d785",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Lua",
-						conditionLua = "return HusbandoMaxAddons.Resistance.API.GetScoutingCooldown() > 0",
-						name = "Scouting Cooldown >= 0",
-						uuid = "6b64ac29-d230-28d4-ba53-a444bc1065d3",
-						version = 3,
-					},
-				},
-			},
-			name = "[Resistance] Reset Scouting",
-			throttleTime = 1000,
-			uuid = "32db8a31-a1c3-baf5-97e2-c7fb6ffc5c0a",
-			version = 2,
-		},
 	}, 
 	inheritedProfiles = 
 	{
